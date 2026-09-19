@@ -1,0 +1,131 @@
+{
+ "ticker": "GDX",
+ "name": "VanEck Gold Miners ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/",
+ "dataFile": "./funds/GDX/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.51%",
+ "terValue": 0.51,
+ "nav": {
+  "display": "$95.67",
+  "value": 95.67,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 95.67,
+ "aum": {
+  "display": "$28.42B",
+  "value": 28418567995.87,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 28418567995.87,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 16 2006",
+ "exchange": "—",
+ "closePrice": "$95.48",
+ "closePriceValue": 95.48,
+ "premiumDiscount": {
+  "display": "-0.19%",
+  "value": -0.19
+ },
+ "premiumDiscountValue": -0.19,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [],
+  "rows": []
+ },
+ "returns": {
+  "derivedFrom": "official VanEck fund-page YTD return",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 11.22,
+   "ytdText": "11.22%"
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 11.22,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": null,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck fund-page YTD return"
+ },
+ "distributionFrequency": "Unknown",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.51%",
+ "terGrossValue": 0.51,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 66,
+  "pageSize": 25,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
+  "pageCount": 3,
+  "pages": [
+   "holdings/001.json",
+   "holdings/002.json",
+   "holdings/003.json"
+  ]
+ },
+ "history": {
+  "totalRows": 33,
+  "pageSize": 25,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)",
+  "pageCount": 2,
+  "pages": [
+   "history/001.json",
+   "history/002.json"
+  ]
+ },
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GDX",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.51%",
+  "value": 0.51,
+  "gross": "0.51%",
+  "grossValue": 0.51
+ },
+ "marketPrice": {
+  "display": "$95.48",
+  "value": 95.48,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

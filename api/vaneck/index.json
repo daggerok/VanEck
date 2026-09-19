@@ -1,0 +1,5130 @@
+{
+ "generatedAt": "2026-09-19T23:03:51Z",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "market": "us",
+  "site": "https://www.vaneck.com",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "catalogNote": "Official VanEck ETF Guide (AUM as of 06/30/2026); the Investment Finder tables are client-rendered and cannot be read without a browser.",
+  "fundPages": "https://www.vaneck.com/us/en/investments/<slug>/",
+  "holdings": "https://www.vaneck.com/us/en/investments/<slug>/downloads/holdings/",
+  "history": "https://www.vaneck.com/us/en/investments/<slug>/downloads/fundhistoprices/",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "distributions": "Yahoo Finance public chart API"
+ },
+ "counts": {
+  "funds": 88,
+  "holdings": 121,
+  "history": 33
+ },
+ "funds": [
+  {
+   "ticker": "AFK",
+   "name": "VanEck Africa Index ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/",
+   "dataFile": "./funds/AFK/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.76%",
+   "terValue": 0.76,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$100.00 M",
+   "aumValue": 100000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.76%",
+   "terGrossValue": 0.76,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "ANGL",
+   "name": "VanEck Fallen Angel High Yield Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-angl/",
+   "dataFile": "./funds/ANGL/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.25%",
+   "terValue": 0.25,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$3,118.00 M",
+   "aumValue": 3118000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Corporate Bond",
+   "terGross": "0.25%",
+   "terGrossValue": 0.25,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "BBH",
+   "name": "VanEck Biotech ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-bbh/",
+   "dataFile": "./funds/BBH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.35%",
+   "terValue": 0.35,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$396.00 M",
+   "aumValue": 396000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.35%",
+   "terGrossValue": 0.35,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "BIZD",
+   "name": "VanEck BDC Income ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-bizd/",
+   "dataFile": "./funds/BIZD/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "9.69%",
+   "terValue": 9.69,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1,632.00 M",
+   "aumValue": 1632000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Floating Rate",
+   "terGross": "9.69%",
+   "terGrossValue": 9.69,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "BRF",
+   "name": "VanEck Brazil Small-Cap ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-brf/",
+   "dataFile": "./funds/BRF/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.60%",
+   "terValue": 0.6,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$22.00 M",
+   "aumValue": 22000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "1.17%",
+   "terGrossValue": 1.17,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "BUZZ",
+   "name": "VanEck Social Sentiment ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-buzz/",
+   "dataFile": "./funds/BUZZ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.76%",
+   "terValue": 0.76,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$105.00 M",
+   "aumValue": 105000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "U.S. Equity",
+   "terGross": "0.76%",
+   "terGrossValue": 0.76,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CBON",
+   "name": "VanEck China Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-cbon/",
+   "dataFile": "./funds/CBON/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.50%",
+   "terValue": 0.5,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$24.00 M",
+   "aumValue": 24000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.91%",
+   "terGrossValue": 0.91,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CLOB",
+   "name": "VanEck AA-BB CLO ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-clob/",
+   "dataFile": "./funds/CLOB/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.45%",
+   "terValue": 0.45,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$177.00 M",
+   "aumValue": 177000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Floating Rate",
+   "terGross": "0.45%",
+   "terGrossValue": 0.45,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CLOI",
+   "name": "VanEck CLO ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-cloi/",
+   "dataFile": "./funds/CLOI/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.36%",
+   "terValue": 0.36,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1,424.00 M",
+   "aumValue": 1424000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Floating Rate",
+   "terGross": "0.36%",
+   "terGrossValue": 0.36,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CMCI",
+   "name": "VanEck CMCI Commodity Strategy ETF",
+   "category": "Real Assets | Commodities",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-cmci/",
+   "dataFile": "./funds/CMCI/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.67%",
+   "terValue": 0.67,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$3.00 M",
+   "aumValue": 3000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Commodity",
+   "terGross": "4.95%",
+   "terGrossValue": 4.95,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CNXT",
+   "name": "VanEck ChiNext Innovators ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-cnxt/",
+   "dataFile": "./funds/CNXT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.65%",
+   "terValue": 0.65,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$141.00 M",
+   "aumValue": 141000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "1.00%",
+   "terGrossValue": 1,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "CRAK",
+   "name": "VanEck Oil Refiners ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-crak/",
+   "dataFile": "./funds/CRAK/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.61%",
+   "terValue": 0.61,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$146.00 M",
+   "aumValue": 146000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.94%",
+   "terGrossValue": 0.94,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "DAPP",
+   "name": "VanEck Digital Transformation ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-dapp/",
+   "dataFile": "./funds/DAPP/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.52%",
+   "terValue": 0.52,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$346.00 M",
+   "aumValue": 346000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.52%",
+   "terGrossValue": 0.52,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "DESK",
+   "name": "VanEck Office and Commercial REIT ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/",
+   "dataFile": "./funds/DESK/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.51%",
+   "terValue": 0.51,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$3.00 M",
+   "aumValue": 3000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Income",
+   "terGross": "0.51%",
+   "terGrossValue": 0.51,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "DGIN",
+   "name": "VanEck Digital India ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-dgin/",
+   "dataFile": "./funds/DGIN/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.70%",
+   "terValue": 0.7,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$15.00 M",
+   "aumValue": 15000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.70%",
+   "terGrossValue": 0.7,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "DURA",
+   "name": "VanEck Durable High Dividend ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-dura/",
+   "dataFile": "./funds/DURA/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.30%",
+   "terValue": 0.3,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$37.00 M",
+   "aumValue": 37000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Income",
+   "terGross": "0.30%",
+   "terGrossValue": 0.3,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "EINC",
+   "name": "VanEck Energy Income ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc/",
+   "dataFile": "./funds/EINC/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.46%",
+   "terValue": 0.46,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$109.00 M",
+   "aumValue": 109000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Income",
+   "terGross": "0.46%",
+   "terGrossValue": 0.46,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "EMBX",
+   "name": "VanEck EM Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-embx/",
+   "dataFile": "./funds/EMBX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.76%",
+   "terValue": 0.76,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$246.00 M",
+   "aumValue": 246000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.76%",
+   "terGrossValue": 0.76,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "EMET",
+   "name": "VanEck Copper and Electrification Metals ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-emet/",
+   "dataFile": "./funds/EMET/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.62%",
+   "terValue": 0.62,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$34.00 M",
+   "aumValue": 34000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.62%",
+   "terGrossValue": 0.62,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "EMLC",
+   "name": "VanEck JPM EM Local Curr. Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-emlc/",
+   "dataFile": "./funds/EMLC/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.30%",
+   "terValue": 0.3,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$4,872.00 M",
+   "aumValue": 4872000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.31%",
+   "terGrossValue": 0.31,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "ESPO",
+   "name": "VanEck Video Gaming and eSports ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-espo/",
+   "dataFile": "./funds/ESPO/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.55%",
+   "terValue": 0.55,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$239.00 M",
+   "aumValue": 239000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.55%",
+   "terGrossValue": 0.55,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "ETHV",
+   "name": "VanEck Ethereum ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-ethv/",
+   "dataFile": "./funds/ETHV/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.20%",
+   "terValue": 0.2,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$77.00 M",
+   "aumValue": 77000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.20%",
+   "terGrossValue": 0.2,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "EVX",
+   "name": "VanEck Environmental Services ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-evx/",
+   "dataFile": "./funds/EVX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.55%",
+   "terValue": 0.55,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$101.00 M",
+   "aumValue": 101000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.62%",
+   "terGrossValue": 0.62,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "FLTR",
+   "name": "VanEck IG Floating Rate ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-fltr/",
+   "dataFile": "./funds/FLTR/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.14%",
+   "terValue": 0.14,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2,831.00 M",
+   "aumValue": 2831000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Floating Rate",
+   "terGross": "0.14%",
+   "terGrossValue": 0.14,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "GDX",
+   "name": "VanEck Gold Miners ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/",
+   "dataFile": "./funds/GDX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.51%",
+   "terValue": 0.51,
+   "nav": "$95.67",
+   "navValue": 95.67,
+   "aum": "$28.42B",
+   "aumValue": 28418567995.87,
+   "asOfDate": "Sep 18 2026",
+   "inceptionDate": "May 16 2006",
+   "exchange": "—",
+   "closePrice": "$95.48",
+   "closePriceValue": 95.48,
+   "premiumDiscount": "-0.19%",
+   "premiumDiscountValue": -0.19,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "Sep 18 2026",
+     "ytd": 11.22,
+     "ytdText": "11.22%"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": 11.22,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "official VanEck fund-page YTD return"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.51%",
+   "terGrossValue": 0.51,
+   "netAssetsAsOf": "Sep 18 2026",
+   "holdings": 66,
+   "history": 33
+  },
+  {
+   "ticker": "GDXJ",
+   "name": "VanEck Junior Gold Miners ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-gdxj/",
+   "dataFile": "./funds/GDXJ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.52%",
+   "terValue": 0.52,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$7,078.00 M",
+   "aumValue": 7078000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.52%",
+   "terGrossValue": 0.52,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "GENZ",
+   "name": "VanEck Digital Native Economy ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-genz/",
+   "dataFile": "./funds/GENZ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.51%",
+   "terValue": 0.51,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$18.00 M",
+   "aumValue": 18000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.51%",
+   "terGrossValue": 0.51,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "GLIN",
+   "name": "VanEck India Growth Leaders ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-glin/",
+   "dataFile": "./funds/GLIN/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.72%",
+   "terValue": 0.72,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$99.00 M",
+   "aumValue": 99000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.80%",
+   "terGrossValue": 0.8,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "GPZ",
+   "name": "VanEck Alternative Asset Manager ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-gpz/",
+   "dataFile": "./funds/GPZ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.40%",
+   "terValue": 0.4,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$224.00 M",
+   "aumValue": 224000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.40%",
+   "terGrossValue": 0.4,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "GRNB",
+   "name": "VanEck Green Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-grnb/",
+   "dataFile": "./funds/GRNB/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.20%",
+   "terValue": 0.2,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$183.00 M",
+   "aumValue": 183000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.20%",
+   "terGrossValue": 0.2,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "HAP",
+   "name": "VanEck Natural Resources ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-hap/",
+   "dataFile": "./funds/HAP/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.41%",
+   "terValue": 0.41,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$299.00 M",
+   "aumValue": 299000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.41%",
+   "terGrossValue": 0.41,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "HODL",
+   "name": "VanEck Bitcoin ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-hodl/",
+   "dataFile": "./funds/HODL/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.20%",
+   "terValue": 0.2,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$952.00 M",
+   "aumValue": 952000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.20%",
+   "terGrossValue": 0.2,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "HYD",
+   "name": "VanEck High Yield Muni ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-hyd/",
+   "dataFile": "./funds/HYD/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.32%",
+   "terValue": 0.32,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$4,522.00 M",
+   "aumValue": 4522000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "0.32%",
+   "terGrossValue": 0.32,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "HYEM",
+   "name": "VanEck EM High Yield Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-hyem/",
+   "dataFile": "./funds/HYEM/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.40%",
+   "terValue": 0.4,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$534.00 M",
+   "aumValue": 534000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.40%",
+   "terGrossValue": 0.4,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "IBOT",
+   "name": "VanEck Robotics ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-ibot/",
+   "dataFile": "./funds/IBOT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.47%",
+   "terValue": 0.47,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$98.00 M",
+   "aumValue": 98000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.47%",
+   "terGrossValue": 0.47,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "IDX",
+   "name": "VanEck Indonesia Index ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-idx/",
+   "dataFile": "./funds/IDX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.57%",
+   "terValue": 0.57,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$27.00 M",
+   "aumValue": 27000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.86%",
+   "terGrossValue": 0.86,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "IHY",
+   "name": "VanEck International High Yield Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-ihy/",
+   "dataFile": "./funds/IHY/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.40%",
+   "terValue": 0.4,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$43.00 M",
+   "aumValue": 43000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "International Bond",
+   "terGross": "0.40%",
+   "terGrossValue": 0.4,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "INDZ",
+   "name": "VanEck India Select ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-indz/",
+   "dataFile": "./funds/INDZ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.75%",
+   "terValue": 0.75,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$3.00 M",
+   "aumValue": 3000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.75%",
+   "terGrossValue": 0.75,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "ISRA",
+   "name": "VanEck Israel ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-isra/",
+   "dataFile": "./funds/ISRA/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.59%",
+   "terValue": 0.59,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$153.00 M",
+   "aumValue": 153000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.64%",
+   "terGrossValue": 0.64,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "ITM",
+   "name": "VanEck Intermediate Muni ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-itm/",
+   "dataFile": "./funds/ITM/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.18%",
+   "terValue": 0.18,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2,190.00 M",
+   "aumValue": 2190000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "0.18%",
+   "terGrossValue": 0.18,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "JULV",
+   "name": "VanEck U.S. Equity Buffer ETF - July",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-julv/",
+   "dataFile": "./funds/JULV/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.50%",
+   "terValue": 0.5,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$66.00 M",
+   "aumValue": 66000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "U.S. Equity",
+   "terGross": "0.50%",
+   "terGrossValue": 0.5,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "LFEQ",
+   "name": "VanEck Long/Flat Trend ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-lfeq/",
+   "dataFile": "./funds/LFEQ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.58%",
+   "terValue": 0.58,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$28.00 M",
+   "aumValue": 28000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "U.S. Equity",
+   "terGross": "0.83%",
+   "terGrossValue": 0.83,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MBBB",
+   "name": "VanEck Moody's Analyt. BBB Corp Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-mbbb/",
+   "dataFile": "./funds/MBBB/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.25%",
+   "terValue": 0.25,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$5.00 M",
+   "aumValue": 5000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Corporate Bond",
+   "terGross": "0.25%",
+   "terGrossValue": 0.25,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MIG",
+   "name": "VanEck Moody's Analyt. IG Corp Bond ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-mig/",
+   "dataFile": "./funds/MIG/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.20%",
+   "terValue": 0.2,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$19.00 M",
+   "aumValue": 19000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Corporate Bond",
+   "terGross": "0.20%",
+   "terGrossValue": 0.2,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MLN",
+   "name": "VanEck Long Muni ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-mln/",
+   "dataFile": "./funds/MLN/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.24%",
+   "terValue": 0.24,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$700.00 M",
+   "aumValue": 700000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "0.24%",
+   "terGrossValue": 0.24,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MOAT",
+   "name": "VanEck Morningstar Wide Moat ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-moat/",
+   "dataFile": "./funds/MOAT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.46%",
+   "terValue": 0.46,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$11,625.00 M",
+   "aumValue": 11625000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Moat Investing",
+   "terGross": "0.46%",
+   "terGrossValue": 0.46,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MOO",
+   "name": "VanEck Agribusiness ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-moo/",
+   "dataFile": "./funds/MOO/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.56%",
+   "terValue": 0.56,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$944.00 M",
+   "aumValue": 944000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.56%",
+   "terGrossValue": 0.56,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MORT",
+   "name": "VanEck Mortgage REIT Income ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-mort/",
+   "dataFile": "./funds/MORT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.43%",
+   "terValue": 0.43,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$400.00 M",
+   "aumValue": 400000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Income",
+   "terGross": "0.43%",
+   "terGrossValue": 0.43,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MOTG",
+   "name": "VanEck Morningstar Global Wide Moat ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-motg/",
+   "dataFile": "./funds/MOTG/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.52%",
+   "terValue": 0.52,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$17.00 M",
+   "aumValue": 17000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Moat Investing",
+   "terGross": "1.14%",
+   "terGrossValue": 1.14,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MOTI",
+   "name": "VanEck Morningstar International Moat ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-moti/",
+   "dataFile": "./funds/MOTI/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.58%",
+   "terValue": 0.58,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$70.00 M",
+   "aumValue": 70000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Moat Investing",
+   "terGross": "0.63%",
+   "terGrossValue": 0.63,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "MVAL",
+   "name": "VanEck Morningstar Wide Moat Value ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-mval/",
+   "dataFile": "./funds/MVAL/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.50%",
+   "terValue": 0.5,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2.00 M",
+   "aumValue": 2000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Moat Investing",
+   "terGross": "2.09%",
+   "terGrossValue": 2.09,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "NLR",
+   "name": "VanEck Uranium and Nuclear Energy ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-nlr/",
+   "dataFile": "./funds/NLR/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.52%",
+   "terValue": 0.52,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$4,214.00 M",
+   "aumValue": 4214000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.52%",
+   "terGrossValue": 0.52,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "NODE",
+   "name": "VanEck Onchain Economy ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-node/",
+   "dataFile": "./funds/NODE/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.67%",
+   "terValue": 0.67,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$73.00 M",
+   "aumValue": 73000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.69%",
+   "terGrossValue": 0.69,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "OIH",
+   "name": "VanEck Oil Services ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-oih/",
+   "dataFile": "./funds/OIH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.35%",
+   "terValue": 0.35,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1,992.00 M",
+   "aumValue": 1992000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.35%",
+   "terGrossValue": 0.35,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 27,
+   "history": 0
+  },
+  {
+   "ticker": "OUNZ",
+   "name": "VanEck Merk Gold ETF",
+   "category": "Real Assets | Commodities",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-ounz/",
+   "dataFile": "./funds/OUNZ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.25%",
+   "terValue": 0.25,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2,500.00 M",
+   "aumValue": 2500000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Commodity",
+   "terGross": "0.25%",
+   "terGrossValue": 0.25,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "PFXF",
+   "name": "VanEck Prefer Securities exFinancials ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-pfxf/",
+   "dataFile": "./funds/PFXF/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.40%",
+   "terValue": 0.4,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2,629.00 M",
+   "aumValue": 2629000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Income",
+   "terGross": "0.40%",
+   "terGrossValue": 0.4,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "PIT",
+   "name": "VanEck Commodity Strategy ETF",
+   "category": "Real Assets | Commodities",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-pit/",
+   "dataFile": "./funds/PIT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.55%",
+   "terValue": 0.55,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$260.00 M",
+   "aumValue": 260000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Commodity",
+   "terGross": "0.55%",
+   "terGrossValue": 0.55,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "PPH",
+   "name": "VanEck Pharmaceutical ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-pph/",
+   "dataFile": "./funds/PPH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.36%",
+   "terValue": 0.36,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$879.00 M",
+   "aumValue": 879000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.36%",
+   "terGrossValue": 0.36,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "RAAX",
+   "name": "VanEck Real Assets ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-raax/",
+   "dataFile": "./funds/RAAX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.69%",
+   "terValue": 0.69,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1,054.00 M",
+   "aumValue": 1054000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.89%",
+   "terGrossValue": 0.89,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "RACK",
+   "name": "VanEck Data Center Supply Chain ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-rack/",
+   "dataFile": "./funds/RACK/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.50%",
+   "terValue": 0.5,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$31.00 M",
+   "aumValue": 31000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.50%",
+   "terGrossValue": 0.5,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "REMX",
+   "name": "VanEck Rare Earth and Strategic Metals ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-remx/",
+   "dataFile": "./funds/REMX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.53%",
+   "terValue": 0.53,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2,695.00 M",
+   "aumValue": 2695000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.53%",
+   "terGrossValue": 0.53,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "RTH",
+   "name": "VanEck Retail ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-rth/",
+   "dataFile": "./funds/RTH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.35%",
+   "terValue": 0.35,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$248.00 M",
+   "aumValue": 248000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.35%",
+   "terGrossValue": 0.35,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SHYD",
+   "name": "VanEck Short High Yield Muni ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-shyd/",
+   "dataFile": "./funds/SHYD/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.32%",
+   "terValue": 0.32,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$451.00 M",
+   "aumValue": 451000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "0.32%",
+   "terGrossValue": 0.32,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SLX",
+   "name": "VanEck Steel ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-slx/",
+   "dataFile": "./funds/SLX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.55%",
+   "terValue": 0.55,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$170.00 M",
+   "aumValue": 170000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.64%",
+   "terGrossValue": 0.64,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SMB",
+   "name": "VanEck Short Muni ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-smb/",
+   "dataFile": "./funds/SMB/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.07%",
+   "terValue": 0.07,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$314.00 M",
+   "aumValue": 314000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "0.07%",
+   "terGrossValue": 0.07,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SMH",
+   "name": "VanEck Semiconductor ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/",
+   "dataFile": "./funds/SMH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.35%",
+   "terValue": 0.35,
+   "nav": "$572.84",
+   "navValue": 572.84,
+   "aum": "$74.06B",
+   "aumValue": 74060000000,
+   "asOfDate": "Sep 18 2026",
+   "inceptionDate": "Dec 20 2011",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "Sep 18 2026",
+     "ytd": 59.07,
+     "ytdText": "59.07%"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": 59.07,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "official VanEck fund-page YTD return"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.35%",
+   "terGrossValue": 0.35,
+   "netAssetsAsOf": "Sep 18 2026",
+   "holdings": 28,
+   "history": 0
+  },
+  {
+   "ticker": "SMHC",
+   "name": "VanEck China Semiconductor ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-smhc/",
+   "dataFile": "./funds/SMHC/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.65%",
+   "terValue": 0.65,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$7.00 M",
+   "aumValue": 7000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.65%",
+   "terGrossValue": 0.65,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SMHX",
+   "name": "VanEck Fabless Semiconductor ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-smhx/",
+   "dataFile": "./funds/SMHX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.35%",
+   "terValue": 0.35,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$297.00 M",
+   "aumValue": 297000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.35%",
+   "terGrossValue": 0.35,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SMOG",
+   "name": "VanEck Low Carbon Energy ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-smog/",
+   "dataFile": "./funds/SMOG/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.64%",
+   "terValue": 0.64,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$144.00 M",
+   "aumValue": 144000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Natural Resources",
+   "terGross": "0.64%",
+   "terGrossValue": 0.64,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "SMOT",
+   "name": "VanEck Morningstar SMID Moat ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-smot/",
+   "dataFile": "./funds/SMOT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.49%",
+   "terValue": 0.49,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$334.00 M",
+   "aumValue": 334000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Moat Investing",
+   "terGross": "0.49%",
+   "terGrossValue": 0.49,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUC",
+   "name": "VanEck Communication Services TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-truc/",
+   "dataFile": "./funds/TRUC/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.14%",
+   "terValue": 0.14,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$47.00 M",
+   "aumValue": 47000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.14%",
+   "terGrossValue": 0.14,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUD",
+   "name": "VanEck Consumer Discretionary TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trud/",
+   "dataFile": "./funds/TRUD/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.16%",
+   "terValue": 0.16,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$33.00 M",
+   "aumValue": 33000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.16%",
+   "terGrossValue": 0.16,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUF",
+   "name": "VanEck Financials TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-truf/",
+   "dataFile": "./funds/TRUF/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.10%",
+   "terValue": 0.1,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1.00 M",
+   "aumValue": 1000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.10%",
+   "terGrossValue": 0.1,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUH",
+   "name": "VanEck Healthcare TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-truh/",
+   "dataFile": "./funds/TRUH/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.10%",
+   "terValue": 0.1,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$1.00 M",
+   "aumValue": 1000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.10%",
+   "terGrossValue": 0.1,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUI",
+   "name": "VanEck Industrials TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trui/",
+   "dataFile": "./funds/TRUI/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.10%",
+   "terValue": 0.1,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.10%",
+   "terGrossValue": 0.1,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUM",
+   "name": "VanEck Materials TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trum/",
+   "dataFile": "./funds/TRUM/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.15%",
+   "terValue": 0.15,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.15%",
+   "terGrossValue": 0.15,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUN",
+   "name": "VanEck Energy TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trun/",
+   "dataFile": "./funds/TRUN/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.16%",
+   "terValue": 0.16,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.16%",
+   "terGrossValue": 0.16,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUO",
+   "name": "VanEck Consumer Staples TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-truo/",
+   "dataFile": "./funds/TRUO/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.14%",
+   "terValue": 0.14,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.14%",
+   "terGrossValue": 0.14,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUR",
+   "name": "VanEck Real Estate TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trur/",
+   "dataFile": "./funds/TRUR/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.17%",
+   "terValue": 0.17,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.17%",
+   "terGrossValue": 0.17,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUT",
+   "name": "VanEck Technology TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-trut/",
+   "dataFile": "./funds/TRUT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.14%",
+   "terValue": 0.14,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$163.00 M",
+   "aumValue": 163000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.14%",
+   "terGrossValue": 0.14,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "TRUU",
+   "name": "VanEck Utilities TruSector ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-truu/",
+   "dataFile": "./funds/TRUU/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.10%",
+   "terValue": 0.1,
+   "nav": "—",
+   "navValue": null,
+   "aum": "—",
+   "aumValue": null,
+   "asOfDate": "—",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "TruSectors",
+   "terGross": "0.10%",
+   "terGrossValue": 0.1,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "VAVX",
+   "name": "VanEck Avalanche ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-vavx/",
+   "dataFile": "./funds/VAVX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.20%",
+   "terValue": 0.2,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$11.00 M",
+   "aumValue": 11000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.20%",
+   "terGrossValue": 0.2,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "VBNB",
+   "name": "VanEck BNB ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-vbnb/",
+   "dataFile": "./funds/VBNB/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.39%",
+   "terValue": 0.39,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$2.00 M",
+   "aumValue": 2000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.39%",
+   "terGrossValue": 0.39,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "VEFA",
+   "name": "VanEck MSCI EAFE Analyst Sentiment ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-vefa/",
+   "dataFile": "./funds/VEFA/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.30%",
+   "terValue": 0.3,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$4.00 M",
+   "aumValue": 4000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.30%",
+   "terGrossValue": 0.3,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "VNM",
+   "name": "VanEck Vietnam ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-vnm/",
+   "dataFile": "./funds/VNM/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.66%",
+   "terValue": 0.66,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$565.00 M",
+   "aumValue": 565000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.66%",
+   "terGrossValue": 0.66,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "VSOL",
+   "name": "VanEck Solana ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-vsol/",
+   "dataFile": "./funds/VSOL/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.30%",
+   "terValue": 0.3,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$14.00 M",
+   "aumValue": 14000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.30%",
+   "terGrossValue": 0.3,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "WARP",
+   "name": "VanEck Space ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-warp/",
+   "dataFile": "./funds/WARP/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.50%",
+   "terValue": 0.5,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$58.00 M",
+   "aumValue": 58000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.50%",
+   "terGrossValue": 0.5,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  },
+  {
+   "ticker": "XMPT",
+   "name": "VanEck CEF Municipal Income ETF",
+   "category": "Income",
+   "fundPage": "https://www.vaneck.com/us/en/investments/etf-xmpt/",
+   "dataFile": "./funds/XMPT/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "1.97%",
+   "terValue": 1.97,
+   "nav": "—",
+   "navValue": null,
+   "aum": "$221.00 M",
+   "aumValue": 221000000,
+   "asOfDate": "Jun 30 2026",
+   "inceptionDate": "—",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "—",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": null,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": null,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "not yet refreshed from vaneck.com"
+   },
+   "distributionFrequency": "Unknown",
+   "providerCategory": "Municipal Bond",
+   "terGross": "1.97%",
+   "terGrossValue": 1.97,
+   "netAssetsAsOf": "Jun 30 2026",
+   "holdings": 0,
+   "history": 0
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "verifiedAt": "2026-09-19T00:00:00Z",
+  "method": "fetch_page proxy (server-rendered HTML)",
+  "fundPage": {
+    "requested": "https://www.vaneck.com/us/en/investments/etf-einc/",
+    "resolved": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc/overview/",
+    "canonical": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc/",
+    "status": "etf-einc 302 → dynamic-high-income-etf-inc → 404 (greedy substring bug); canonical 200",
+    "ssr": {
+      "nav": "$118.95 as of Sep 18 2026",
+      "ytdReturn": "27.25% as of Sep 18 2026",
+      "totalNetAssets": "$85.01M as of Sep 18 2026",
+      "expenseRatio": "0.46%",
+      "inceptionDate": "03/12/2012 → Mar 12 2012",
+      "secYield": "3.49% as of 09/18/2026"
+    }
+  },
+  "holdings": {
+    "canonical": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc/downloads/holdings/",
+    "etfTickerForm": "https://www.vaneck.com/us/en/investments/etf-einc/downloads/holdings/ → 302 to overview (not holdings)",
+    "note": "Canonical holdings URL returns table; etf-<ticker> form 302s to overview and causes Bun redirect loop"
+  },
+  "afkHoldings": {
+    "canonical": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/",
+    "verified": "81 rows as of Sep 17 2026 via fetch_page 2026-09-19",
+    "etfTickerForm": "https://www.vaneck.com/us/en/investments/etf-afk/downloads/holdings/ → 302 to /africa-index-etf-afk/overview/?redirectVE=generic (not holdings)"
+  },
+  "slugSource": "https://www.vaneck.com/us/en/etf-mutual-fund-finder/etfs/?InvType=etf&tab=ov chunks 0-7/11 (2026-09-19)",
+  "slugCount": 88,
+  "slugTable": "scripts/vaneck-slugs.ts VANECK_SLUGS"
+}

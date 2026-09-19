@@ -1,0 +1,120 @@
+{
+ "ticker": "FLTR",
+ "name": "VanEck IG Floating Rate ETF",
+ "category": "Income",
+ "fundPage": "https://www.vaneck.com/us/en/investments/etf-fltr/",
+ "dataFile": "./funds/FLTR/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.14%",
+ "terValue": 0.14,
+ "nav": {
+  "display": "—",
+  "value": null,
+  "asOfDate": "Jun 30 2026"
+ },
+ "navValue": null,
+ "aum": {
+  "display": "$2,831.00 M",
+  "value": 2831000000,
+  "asOfDate": "Jun 30 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 2831000000,
+ "asOfDate": "Jun 30 2026",
+ "inceptionDate": "—",
+ "exchange": "—",
+ "closePrice": "—",
+ "closePriceValue": null,
+ "premiumDiscount": {
+  "display": "—",
+  "value": null
+ },
+ "premiumDiscountValue": null,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [],
+  "rows": []
+ },
+ "returns": {
+  "derivedFrom": "not yet refreshed from vaneck.com",
+  "monthEnd": {
+   "asOfDate": "—"
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": null,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "not yet refreshed from vaneck.com"
+ },
+ "distributionFrequency": "Unknown",
+ "providerCategory": "Floating Rate",
+ "terGross": "0.14%",
+ "terGrossValue": 0.14,
+ "netAssetsAsOf": "Jun 30 2026",
+ "holdings": {
+  "pages": [],
+  "pageSize": 25,
+  "totalRows": 0,
+  "asOfDate": "—",
+  "source": "—"
+ },
+ "history": {
+  "pages": [],
+  "pageSize": 25,
+  "totalRows": 0,
+  "asOf": "—",
+  "source": "—"
+ },
+ "categoryPath": "Income > Floating Rate",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/etf-fltr/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/etf-fltr/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/etf-fltr/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/FLTR",
+  "holdingsSource": "—",
+  "historySource": "—"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.14%",
+  "value": 0.14,
+  "gross": "0.14%",
+  "grossValue": 0.14
+ },
+ "marketPrice": {
+  "display": "—",
+  "value": null,
+  "asOfDate": "Jun 30 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

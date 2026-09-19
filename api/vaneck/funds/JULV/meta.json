@@ -1,0 +1,120 @@
+{
+ "ticker": "JULV",
+ "name": "VanEck U.S. Equity Buffer ETF - July",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/etf-julv/",
+ "dataFile": "./funds/JULV/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.50%",
+ "terValue": 0.5,
+ "nav": {
+  "display": "—",
+  "value": null,
+  "asOfDate": "Jun 30 2026"
+ },
+ "navValue": null,
+ "aum": {
+  "display": "$66.00 M",
+  "value": 66000000,
+  "asOfDate": "Jun 30 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 66000000,
+ "asOfDate": "Jun 30 2026",
+ "inceptionDate": "—",
+ "exchange": "—",
+ "closePrice": "—",
+ "closePriceValue": null,
+ "premiumDiscount": {
+  "display": "—",
+  "value": null
+ },
+ "premiumDiscountValue": null,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [],
+  "rows": []
+ },
+ "returns": {
+  "derivedFrom": "not yet refreshed from vaneck.com",
+  "monthEnd": {
+   "asOfDate": "—"
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": null,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "not yet refreshed from vaneck.com"
+ },
+ "distributionFrequency": "Unknown",
+ "providerCategory": "U.S. Equity",
+ "terGross": "0.50%",
+ "terGrossValue": 0.5,
+ "netAssetsAsOf": "Jun 30 2026",
+ "holdings": {
+  "pages": [],
+  "pageSize": 25,
+  "totalRows": 0,
+  "asOfDate": "—",
+  "source": "—"
+ },
+ "history": {
+  "pages": [],
+  "pageSize": 25,
+  "totalRows": 0,
+  "asOf": "—",
+  "source": "—"
+ },
+ "categoryPath": "Equity > U.S. Equity",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/etf-julv/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/etf-julv/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/etf-julv/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/JULV",
+  "holdingsSource": "—",
+  "historySource": "—"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.50%",
+  "value": 0.5,
+  "gross": "0.50%",
+  "grossValue": 0.5
+ },
+ "marketPrice": {
+  "display": "—",
+  "value": null,
+  "asOfDate": "Jun 30 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}
