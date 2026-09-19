@@ -69,17 +69,18 @@
  "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
   "totalRows": 28,
-  "pageSize": 250,
+  "pageSize": 25,
   "asOfDate": "Sep 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/holdings/)",
-  "pageCount": 1,
+  "pageCount": 2,
   "pages": [
-   "holdings/001.json"
+   "holdings/001.json",
+   "holdings/002.json"
   ]
  },
  "history": {
   "pages": [],
-  "pageSize": 1000,
+  "pageSize": 25,
   "totalRows": 0,
   "asOf": "—",
   "source": "—"

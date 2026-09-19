@@ -1,7 +1,7 @@
 {
  "ticker": "SMH",
  "page": 1,
- "pageSize": 250,
+ "pageSize": 25,
  "totalRows": 28,
  "headers": [
   "Name",
@@ -263,36 +263,6 @@
    "Market Value": "$240,808,985.24",
    "Notional Value": "",
    "Weight": "0.33%"
-  },
-  {
-   "Name": "Skyworks Solutions Inc",
-   "Ticker": "SWKS",
-   "Identifier": "BBG000KLB4Q1",
-   "Shares Held": "1,915,977",
-   "Asset Category": "Stock",
-   "Market Value": "$174,967,019.64",
-   "Notional Value": "",
-   "Weight": "0.24%"
-  },
-  {
-   "Name": "",
-   "Ticker": "-USD CASH-",
-   "Identifier": "",
-   "Shares Held": "-15,402,357",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$-15,402,357.31",
-   "Notional Value": "",
-   "Weight": "-0.02%"
-  },
-  {
-   "Name": "Other/Cash",
-   "Ticker": "",
-   "Identifier": "",
-   "Shares Held": "",
-   "Asset Category": "Cash",
-   "Market Value": "$39,510,865.94",
-   "Notional Value": "",
-   "Weight": "0.05%"
   }
  ]
 }

@@ -428,21 +428,90 @@ function errorMessage(error: unknown): string {
 
 const RETRY_STATUS = new Set([408, 425, 429, 500, 502, 503, 504]);
 
+/**
+ * VanEck sits behind a WAF that uses a `redirectVE=generic` cookie dance:
+ *   /investments/<slug>/  → 302 to /investments/<slug>/overview/?redirectVE=generic
+ *   + Set-Cookie: redirectVE=generic
+ *   the next request must send Cookie: redirectVE=generic or it loops.
+ * Bun's default `redirect:follow` does not preserve Set-Cookie across
+ * hops, so it hits "redirected too many times" (20 hops) for every
+ * fund. We handle VanEck manually with a tiny cookie jar.
+ */
+async function fetchVanEckWithManualRedirect(
+  url: string,
+  init: RequestInit,
+  label: string,
+): Promise<Response> {
+  let currentUrl = url;
+  let cookieJar = '';
+  const baseHeaders = { ...((init.headers as Record<string, string>) ?? {}) };
+  // Support `verbose: true` in the second arg like the error message suggests
+  const verbose = (init as Record<string, unknown>).verbose === true;
+  for (let redirects = 0; redirects < 10; redirects++) {
+    const headers: Record<string, string> = { ...baseHeaders };
+    if (cookieJar) headers['Cookie'] = cookieJar;
+    // VanEck's downloads check Referer; without it some holdings URLs 302 to overview
+    if (!headers['Referer'] && currentUrl.includes('/downloads/')) {
+      headers['Referer'] = VANECK_SITE + '/us/en/investments/';
+    }
+    if (verbose) console.warn(`  · ${label}: fetch ${currentUrl}${cookieJar ? ` (Cookie: ${cookieJar.slice(0, 80)})` : ''}`);
+    const res = await fetch(currentUrl, { ...init, headers, redirect: 'manual' as RequestRedirect });
+    // Collect Set-Cookie (Bun/undici may expose getSetCookie())
+    let setCookies: string[] = [];
+    const anyHeaders = res.headers as unknown as Record<string, unknown>;
+    if (typeof (anyHeaders as { getSetCookie?: () => string[] }).getSetCookie === 'function') {
+      setCookies = (anyHeaders as { getSetCookie: () => string[] }).getSetCookie();
+    } else {
+      const single = res.headers.get('set-cookie');
+      if (single) {
+        // Single header may contain multiple cookies comma-separated, but Expires
+        // also contains commas. Split conservatively on ", " where next token looks like cookie name.
+        // Fallback: treat whole thing as one cookie's first part.
+        if (single.includes('Expires=')) {
+          // VanEck only sets redirectVE, so simple split is fine
+          setCookies = [single];
+        } else {
+          setCookies = single.split(',').map(s => s.trim()).filter(Boolean);
+        }
+      }
+    }
+    if (setCookies.length) {
+      const parts = setCookies.map(c => c.split(';')[0].trim()).filter(Boolean);
+      const joined = parts.join('; ');
+      cookieJar = cookieJar ? `${cookieJar}; ${joined}` : joined;
+      if (verbose) console.warn(`  · ${label}: Set-Cookie → ${joined}`);
+    }
+    if (res.status >= 300 && res.status < 400) {
+      const loc = res.headers.get('location');
+      if (!loc) return res;
+      const nextUrl = new URL(loc, currentUrl).toString();
+      if (verbose) console.warn(`  · ${label}: ${res.status} → ${nextUrl}`);
+      // Detect the WAF loop: /overview/?redirectVE=generic ↔ /overview/?redirectVE=generic
+      if (nextUrl === currentUrl && redirects >= 2) {
+        throw new Error(`The response redirected too many times. ${label} -> ${nextUrl} (cookie=${cookieJar})`);
+      }
+      currentUrl = nextUrl;
+      continue;
+    }
+    return res;
+  }
+  throw new Error(`The response redirected too many times. ${label} (manual redirect loop after 10 hops, last=${currentUrl}, cookie=${cookieJar})`);
+}
+
 export async function fetchWithRetry(
   url: string,
   init: RequestInit,
   config: UpdaterConfig,
   label = url,
 ): Promise<Response> {
+  const isVanEck = url.includes('vaneck.com');
   let attempt = 0;
   for (;;) {
     await paceRequests(config);
     try {
-      // Use explicit follow and preserve headers on redirect. Bun's default
-      // can loop on VanEck's `?redirectVE=generic` cookie dance when the slug
-      // is wrong (etf-<ticker>). With canonical slugs this path is rarely hit,
-      // but we defend against it here.
-      const response = await fetch(url, { ...init, redirect: 'follow' } as RequestInit);
+      const response = isVanEck
+        ? await fetchVanEckWithManualRedirect(url, init, label)
+        : await fetch(url, init);
       // VanEck sits behind a WAF that answers 403 while throttling, so a 403 is
       // retried like a 429 (bounded) rather than treated as "not found".
       if (response.ok || (!RETRY_STATUS.has(response.status) && response.status !== 403)) return response;
@@ -451,13 +520,15 @@ export async function fetchWithRetry(
     } catch (error) {
       const msg = errorMessage(error);
       const isRedirectLoop = /redirect(ed)? too many times/i.test(msg);
-      const isNetwork = isRedirectLoop || /fetch failed|network|ECONNRESET|ETIMEDOUT/i.test(msg);
+      const isNetwork = isRedirectLoop || /fetch failed|network|ECONNRESET|ETIMEDOUT|Client network socket disconnected/i.test(msg);
       if (attempt >= config.maxRetries || (!isNetwork && !isRedirectLoop)) throw error;
       console.warn(`  ! ${label}: ${msg} (retry ${attempt + 1}/${config.maxRetries})`);
-      // Redirect loop almost always means the `etf-<ticker>` fallback resolved
-      // to the wrong canonical (e.g. etf-einc → inc). No point retrying the
-      // same URL 3× at 15s intervals — fail fast and let the caller keep the
-      // catalog value. With the slug table this branch is dead code.
+      if (isRedirectLoop && isVanEck && attempt < config.maxRetries) {
+        // For VanEck a loop is usually a transient WAF hiccup; back off and retry the whole jar
+        await sleep(8000 * (attempt + 1));
+        attempt += 1;
+        continue;
+      }
       if (isRedirectLoop) throw error;
     }
     attempt += 1;
