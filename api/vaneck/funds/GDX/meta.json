@@ -69,25 +69,22 @@
  "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
   "totalRows": 66,
-  "pageSize": 25,
+  "pageSize": 250,
   "asOfDate": "Sep 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
-  "pageCount": 3,
+  "pageCount": 1,
   "pages": [
-   "holdings/001.json",
-   "holdings/002.json",
-   "holdings/003.json"
+   "holdings/001.json"
   ]
  },
  "history": {
   "totalRows": 33,
-  "pageSize": 25,
+  "pageSize": 1000,
   "asOfDate": "Sep 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)",
-  "pageCount": 2,
+  "pageCount": 1,
   "pages": [
-   "history/001.json",
-   "history/002.json"
+   "history/001.json"
   ]
  },
  "totalNetAssets": 28420000000,

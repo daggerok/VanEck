@@ -67,18 +67,17 @@
  "netAssetsAsOf": "Jun 30 2026",
  "holdings": {
   "totalRows": 27,
-  "pageSize": 25,
+  "pageSize": 250,
   "asOfDate": "Sep 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
-  "pageCount": 2,
+  "pageCount": 1,
   "pages": [
-   "holdings/001.json",
-   "holdings/002.json"
+   "holdings/001.json"
   ]
  },
  "history": {
   "pages": [],
-  "pageSize": 25,
+  "pageSize": 1000,
   "totalRows": 0,
   "asOf": "—",
   "source": "—"
