@@ -6,14 +6,14 @@
  "dataFile": "./funds/XMPT/meta.json",
  "cusip": null,
  "isin": null,
- "ter": "1.97%",
- "terValue": 1.97,
+ "ter": "3.40%",
+ "terValue": 3.4,
  "nav": {
-  "display": "—",
-  "value": null,
+  "display": "$20.19",
+  "value": 20.19,
   "asOfDate": "Sep 18 2026"
  },
- "navValue": null,
+ "navValue": 20.19,
  "aum": {
   "display": "$204.43M",
   "value": 204428580.07,
@@ -58,8 +58,8 @@
   "siAnn": null,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
+  "secYield": 6.34,
+  "secYieldText": "6.34%",
   "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
@@ -91,6 +91,8 @@
   ]
  },
  "totalNetAssets": 204430000,
+ "secYield": "6.34%",
+ "secYieldValue": 6.34,
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -109,8 +111,8 @@
   "figi": "published per holding, not per fund"
  },
  "expenseRatio": {
-  "display": "1.97%",
-  "value": 1.97,
+  "display": "3.40%",
+  "value": 3.4,
   "gross": "1.97%",
   "grossValue": 1.97
  },

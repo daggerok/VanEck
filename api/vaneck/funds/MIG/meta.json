@@ -9,11 +9,11 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "—",
-  "value": null,
+  "display": "$20.60",
+  "value": 20.6,
   "asOfDate": "Sep 18 2026"
  },
- "navValue": null,
+ "navValue": 20.6,
  "aum": {
   "display": "$16.48M",
   "value": 16478108.78,
@@ -58,8 +58,8 @@
   "siAnn": null,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
+  "secYield": 5.4,
+  "secYieldText": "5.40%",
   "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
@@ -90,6 +90,8 @@
   ]
  },
  "totalNetAssets": 16480000,
+ "secYield": "5.40%",
+ "secYieldValue": 5.4,
  "categoryPath": "Income > Corporate Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",

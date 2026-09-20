@@ -893,7 +893,21 @@ export type ParsedFundPage = {
  * "Known value limitations").
  */
 export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundPage {
-  const text = decodeHtmlEntities(html);
+  // Some fund pages carry a JSON-LD FAQ schema (<script type="application/ld+json">)
+  // whose copy happens to say "NAV" (or another stat label) before the real
+  // header stat does in document order — e.g. GDXJ's FAQ answers "What is the
+  // NAV indicator symbol?" ahead of the actual NAV block. `<script>`/`<style>`
+  // contents are never visible page text, so drop them whole before searching.
+  const withoutScripts = html.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/gi, '');
+  // NAV and the two expense-ratio stats each carry a hidden
+  // `subscription-tooltip-content` disclaimer (`style="display:none;"`)
+  // sitting between the stat's label and its value in DOM order. Stripped
+  // naively, that disclaimer's text lands inside the 260-char window `near()`
+  // reads after the label, so the value itself is never reached — the fund
+  // page fetch "succeeds" but nav/grossExpenseRatio/netExpenseRatio come back
+  // null for every fund. Drop these hidden blocks before de-tagging.
+  const withoutTooltips = withoutScripts.replace(/<div class="subscription-tooltip-content"[^>]*>[\s\S]*?<\/div>\s*<\/div>/g, '');
+  const text = decodeHtmlEntities(withoutTooltips);
   const plain = text.replace(/<[^>]*>/g, '\n').replace(/&nbsp;/g, ' ');
   const near = (label: RegExp): string => {
     const match = label.exec(plain);
@@ -1512,14 +1526,20 @@ export async function main(env: Record<string, string | undefined> = process.env
 
   const byTicker = new Map<string, CatalogEntry>();
   const queue = candidates.slice();
+  const total = candidates.length;
+  let processed = 0;
   const workers = Array.from({ length: Math.max(1, config.concurrency) }, async () => {
     for (;;) {
       const seed = queue.shift();
       if (!seed) return;
       try {
-        byTicker.set(seed.ticker, await updateFund(seed, config, stats));
+        const entry = await updateFund(seed, config, stats);
+        byTicker.set(seed.ticker, entry);
+        processed += 1;
+        console.log(`  [${String(processed).padStart(2)}/${total}] ${seed.ticker.padEnd(5)} holdings=${entry.holdings ?? 0} history=${entry.history ?? 0}`);
       } catch (error) {
-        console.warn(`  ! ${seed.ticker}: ${errorMessage(error)}`);
+        processed += 1;
+        console.warn(`  [${String(processed).padStart(2)}/${total}] ${seed.ticker.padEnd(5)} ! ${errorMessage(error)}`);
         stats.failed += 1;
       }
     }

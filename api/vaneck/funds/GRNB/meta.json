@@ -9,11 +9,11 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "—",
-  "value": null,
+  "display": "$23.49",
+  "value": 23.49,
   "asOfDate": "Sep 18 2026"
  },
- "navValue": null,
+ "navValue": 23.49,
  "aum": {
   "display": "$187.93M",
   "value": 187930714.54,
@@ -58,8 +58,8 @@
   "siAnn": null,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
+  "secYield": 5.2,
+  "secYieldText": "5.20%",
   "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
@@ -91,6 +91,8 @@
   ]
  },
  "totalNetAssets": 187930000,
+ "secYield": "5.20%",
+ "secYieldValue": 5.2,
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
