@@ -732,38 +732,41 @@ describe("generated feed", () => {
     }
   });
 
-  test("no fund invents a metric VanEck does not publish server-side", () => {
-    // Multi-year returns and CUSIP/ISIN are not readable from the
-    // server-rendered VanEck pages, so they must be null in the feed
-    // (and therefore "—" in the UI) rather than guessed. The 30-day SEC
-    // yield *is* server-rendered for a subset of funds (e.g. EINC, DESK,
-    // OIH) and may therefore be present; the same holds for YTD which is
-    // present for every fund whose page is fetched.
-    const neverPublished = [
+  test("no fund carries an invented, ungrounded metric", () => {
+    // TR/CAGR/SI Ann. come from VanEck's own Average Annual Total Returns
+    // block (see parseVanEckPerformance) and are legitimately present for
+    // most funds; a too-young fund gets a real `null` from VanEck itself
+    // for a tenor it hasn't existed long enough to report (never invented
+    // as 0 or guessed). dividendYield is derived from VanEck's own
+    // Distribution History (or Yahoo as a fallback), so it too is a real
+    // number wherever a distribution has ever been paid, and null
+    // otherwise. Every one of these must be a finite number or exactly
+    // null — never NaN, a string, or undefined.
+    const numericOrNull = [
       "tr1y", "tr3y", "tr5y", "tr10y",
       "cagr3y", "cagr5y", "cagr10y",
-      "siAnn", "dividendYield",
+      "siAnn", "dividendYield", "secYield",
     ] as const;
     let ytdCount = 0;
+    let tr1yCount = 0;
     for (const fund of index.funds) {
-      // Exchange / CUSIP / ISIN are only reliably present when the live
-      // fund page has been fetched; snapshots keep them null.
       const metrics = fund.metrics;
       expect(metrics).toBeDefined();
-      for (const key of neverPublished) {
-        expect(metrics[key]).toBeNull();
+      for (const key of numericOrNull) {
+        const value = metrics[key];
+        if (value !== null) expect(typeof value).toBe("number");
+        if (value !== null) expect(Number.isFinite(value)).toBe(true);
         const text = metrics[`${key}Text`];
-        if (text !== undefined) expect(text).toBe("—");
+        if (text !== undefined) {
+          if (value === null) expect(text).toBe("—");
+          else expect(text).toMatch(/%/);
+        }
       }
       if (metrics.ytd !== null) ytdCount += 1;
-      // secYield is null for most funds but may be a number where VanEck
-      // server-renders "30-Day SEC Yield" — assert type, not value.
-      if (metrics.secYield !== null) expect(typeof metrics.secYield).toBe("number");
-      if (metrics.secYieldText !== undefined && metrics.secYield !== null) {
-        expect(metrics.secYieldText).toMatch(/%/);
-      }
+      if (metrics.tr1y !== null) tr1yCount += 1;
     }
     expect(ytdCount).toBeGreaterThanOrEqual(2); // at least GDX and SMH snapshots
+    expect(tr1yCount).toBeGreaterThanOrEqual(2);
   });
 
   test("every fund records where its figures would come from", () => {

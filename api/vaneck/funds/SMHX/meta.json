@@ -34,35 +34,56 @@
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.0090"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.0111"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 50.1,
-   "ytdText": "50.10%"
+   "ytdText": "50.10%",
+   "yr1": 58.22,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 48.12
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 50.1,
-  "tr1y": null,
+  "tr1y": 58.22,
   "tr3y": null,
   "tr5y": null,
   "tr10y": null,
   "cagr3y": null,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": null,
+  "siAnn": 48.12,
   "dividendYield": null,
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "00 - Unknown",
  "providerCategory": "Equity Thematic",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
@@ -119,11 +140,11 @@
  "yields": {
   "dividendYield": null,
   "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

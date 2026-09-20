@@ -32,35 +32,146 @@
  },
  "premiumDiscountValue": 0.2,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "frequency": "Monthly",
+  "paymentsPerYear": 12,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Sep 01 2026",
+    "Payable Date": "Sep 04 2026",
+    "Dividend": "$0.0266"
+   },
+   {
+    "Ex-Date": "Aug 03 2026",
+    "Payable Date": "Aug 06 2026",
+    "Dividend": "$0.0260"
+   },
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.0283"
+   },
+   {
+    "Ex-Date": "Jun 01 2026",
+    "Payable Date": "Jun 04 2026",
+    "Dividend": "$0.0267"
+   },
+   {
+    "Ex-Date": "May 01 2026",
+    "Payable Date": "May 06 2026",
+    "Dividend": "$0.0264"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.0344"
+   },
+   {
+    "Ex-Date": "Mar 02 2026",
+    "Payable Date": "Mar 05 2026",
+    "Dividend": "$0.0277"
+   },
+   {
+    "Ex-Date": "Feb 02 2026",
+    "Payable Date": "Feb 05 2026",
+    "Dividend": "$0.0311"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.0137"
+   },
+   {
+    "Ex-Date": "Nov 28 2025",
+    "Payable Date": "Dec 03 2025",
+    "Dividend": "$0.0132"
+   },
+   {
+    "Ex-Date": "Nov 03 2025",
+    "Payable Date": "Nov 06 2025",
+    "Dividend": "$0.0139"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.0136"
+   },
+   {
+    "Ex-Date": "Sep 02 2025",
+    "Payable Date": "Sep 05 2025",
+    "Dividend": "$0.0132"
+   },
+   {
+    "Ex-Date": "Aug 01 2025",
+    "Payable Date": "Aug 06 2025",
+    "Dividend": "$0.0146"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.0143"
+   },
+   {
+    "Ex-Date": "Jun 02 2025",
+    "Payable Date": "Jun 05 2025",
+    "Dividend": "$0.0152"
+   },
+   {
+    "Ex-Date": "May 01 2025",
+    "Payable Date": "May 06 2025",
+    "Dividend": "$0.0151"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.0143"
+   },
+   {
+    "Ex-Date": "Mar 03 2025",
+    "Payable Date": "Mar 06 2025",
+    "Dividend": "$0.0133"
+   },
+   {
+    "Ex-Date": "Feb 03 2025",
+    "Payable Date": "Feb 06 2025",
+    "Dividend": "$0.0134"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "not yet refreshed from vaneck.com",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
-   "asOfDate": "—"
+   "asOfDate": "—",
+   "yr1": 8.04,
+   "yr3": 5.23,
+   "yr5": 1.99,
+   "yr10": 2.92,
+   "sinceInception": 2.46
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": null,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
-  "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
-  "cagr10y": null,
-  "siAnn": null,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "tr1y": 8.04,
+  "tr3y": 16.51,
+  "tr5y": 10.35,
+  "tr10y": 33.38,
+  "cagr3y": 5.23,
+  "cagr5y": 1.99,
+  "cagr10y": 2.92,
+  "siAnn": 2.46,
+  "dividendYield": 1.33,
+  "dividendYieldText": "1.33%",
   "secYield": 1.04,
   "secYieldText": "1.04%",
-  "returnsBasis": "not yet refreshed from vaneck.com"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
  "terGross": "0.91%",
  "terGrossValue": 0.91,
@@ -120,13 +231,13 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYield": 1.33,
+  "dividendYieldText": "1.33%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYield": 1.04,
+  "secYieldText": "1.04%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

@@ -32,37 +32,138 @@
  },
  "premiumDiscountValue": -0.64,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$3.1661"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.6142"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$3.2580"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$1.1093"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$1.0910"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$1.0964"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$1.1787"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$1.9360"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$2.3820"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.7190"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$1.4860"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$1.2730"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.3330"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$1.8960"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$5.7960"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$3.1920"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$1.2540"
+   },
+   {
+    "Ex-Date": "Dec 24 2007",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$5.8350"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -12.37,
-   "ytdText": "-12.37%"
+   "ytdText": "-12.37%",
+   "yr1": 2.34,
+   "yr3": 25.92,
+   "yr5": 19.89,
+   "yr10": 12.52,
+   "sinceInception": 3.25
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": -12.37,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
-  "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
-  "cagr10y": null,
-  "siAnn": null,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "tr1y": 2.34,
+  "tr3y": 99.67,
+  "tr5y": 147.65,
+  "tr10y": 225.35,
+  "cagr3y": 25.92,
+  "cagr5y": 19.89,
+  "cagr10y": 12.52,
+  "siAnn": 3.25,
+  "dividendYield": 2.92,
+  "dividendYieldText": "2.92%",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
  "terGross": "0.52%",
  "terGrossValue": 0.52,
@@ -122,13 +223,13 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYield": 2.92,
+  "dividendYieldText": "2.92%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

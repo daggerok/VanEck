@@ -20,26 +20,33 @@ empty but never removed.
 | 6 | `NAV` | `navValue` | fund page header | `—` until a networked run |
 | 7 | `Net Assets` | `aumValue` | fund page header, else ETF Guide | ETF Guide figures are as of 6/30/2026 |
 | 8 | `Expense` | `terValue` | fund page / ETF Guide | Net where VanEck prints Gross and Net separately |
-| 9 | `Dividend Yield` | `dividendYield` | indicated, from Yahoo | labelled *indicated* where present |
-| 10 | `SEC Yield` | `secYield` | **not published** | always `—` |
+| 9 | `Dividend Yield` | `dividendYield` | indicated, from VanEck's own Distribution History (Yahoo Finance fallback) | labelled *indicated* where present; `—` only if never distributed |
+| 10 | `SEC Yield` | `secYield` | fund page header, where server-rendered | `—` for funds that don't publish it |
 | 11 | `Frequency` | `dividendFrequency` | derived, see below | coded for sorting |
-| 12 | `YTD Return` | `ytd` | fund page header | published for GDX and SMH in this feed |
-| 13 | `TR 1Y` | `yr1` | **not readable** | always `—` |
-| 14 | `TR 3Y` | `tr3y` | **not readable** | always `—` |
-| 15 | `TR 5Y` | `tr5y` | **not readable** | always `—` |
-| 16 | `TR 10Y` | `tr10y` | **not readable** | always `—` |
-| 17 | `CAGR 3Y` | `cagr3y` | **not readable** | always `—` |
-| 18 | `CAGR 5Y` | `cagr5y` | **not readable** | always `—` |
-| 19 | `CAGR 10Y` | `cagr10y` | **not readable** | always `—` |
-| 20 | `SI Ann.` | `si` | **not readable** | always `—` |
+| 12 | `YTD Return` | `ytd` | fund page header | published for every fund whose page is fetched |
+| 13 | `TR 1Y` | `yr1` | VanEck's Average Annual Total Returns block (NAV) | see *Performance* below |
+| 14 | `TR 3Y` | `tr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
+| 15 | `TR 5Y` | `tr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
+| 16 | `TR 10Y` | `tr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
+| 17 | `CAGR 3Y` | `cagr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
+| 18 | `CAGR 5Y` | `cagr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
+| 19 | `CAGR 10Y` | `cagr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
+| 20 | `SI Ann.` | `si` | VanEck's Average Annual Total Returns block (NAV) | since-inception annualized |
 | 21 | `Return As Of` | `returnAsOf` | fund page | as-of date for the figures above |
 | 22 | `Inception` | `inceptionDate` | fund page header | |
 | 23 | `Holdings` | `holdings` | generated feed | row count |
 | 24 | `History` | `history` | generated feed | row count |
 | 25 | `As Of` | `asOfDate` | feed | NAV / AUM as-of date |
 
-"not readable" means the value sits in a panel VanEck renders client-side, so a
-static updater cannot see it. See the README's *Known value limitations*.
+## Performance
+
+`TR *`, `CAGR *` and `SI Ann.` are hydrated client-side on the fund page, but
+the widget itself calls a plain, unauthenticated JSON endpoint
+(`/Main/PerformanceHistoryBlock/GetContent/?blockid=…&pageid=…&ticker=…`) that
+`scripts/update-data.ts` calls directly — no browser needed. See the README's
+*Performance and distributions* section. `—` means the fund hasn't existed
+long enough to report that tenor (VanEck itself returns `null`, never a
+guessed or backfilled value), not that the figure is unreachable.
 
 ## Coded Frequency
 
@@ -102,11 +109,14 @@ in the catalog is explained by:
 1. the column's `title` tooltip (`COLUMN_TOOLTIPS` in `app.tsx`), and
 2. a provenance row in the fund's **Overview** tab.
 
-The feed stores `null` for these values under `meta.json.metrics`, and
-`scripts/update-data.test.ts` asserts that no fund carries an invented
-`secYield`, `tr1y`…`tr10y`, `cagr3y`…`cagr10y`, `siAnn`, `dividendYield`,
-`cusip` or `isin` — and that wherever a matching `*Text` display field exists
-it is exactly `—`, never an empty cell.
+The feed stores `null` for a metric VanEck itself hasn't published for that
+fund yet (a too-young tenor, `cusip`/`isin` where the Fund Details panel
+doesn't server-render it, `secYield` outside the subset VanEck SSRs it for),
+and `scripts/update-data.test.ts` asserts every one of `secYield`,
+`tr1y`…`tr10y`, `cagr3y`…`cagr10y`, `siAnn`, `dividendYield`, `cusip` and
+`isin` is either a finite number/string or exactly `null` — never `NaN`, an
+empty string, or a guessed/backfilled value — and that wherever a matching
+`*Text` display field exists it is exactly `—` when the value is `null`.
 
 The Overview tab's `Fund` section carries the matching provenance rows
 (`Holdings Source`, `History Source`, `Provider`, `CUSIP`, `ISIN`, `Benchmark

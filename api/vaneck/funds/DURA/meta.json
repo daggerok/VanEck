@@ -32,37 +32,203 @@
  },
  "premiumDiscountValue": -0.04,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "frequency": "Quarterly",
+  "paymentsPerYear": 4,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.2697"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.2986"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.4155"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.2252"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.3059"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.2683"
+   },
+   {
+    "Ex-Date": "Dec 27 2024",
+    "Payable Date": "Dec 30 2024",
+    "Dividend": "$0.3866"
+   },
+   {
+    "Ex-Date": "Oct 01 2024",
+    "Payable Date": "Oct 04 2024",
+    "Dividend": "$0.2509"
+   },
+   {
+    "Ex-Date": "Jul 01 2024",
+    "Payable Date": "Jul 05 2024",
+    "Dividend": "$0.2212"
+   },
+   {
+    "Ex-Date": "Apr 01 2024",
+    "Payable Date": "Apr 05 2024",
+    "Dividend": "$0.2259"
+   },
+   {
+    "Ex-Date": "Dec 27 2023",
+    "Payable Date": "Dec 29 2023",
+    "Dividend": "$0.3078"
+   },
+   {
+    "Ex-Date": "Oct 02 2023",
+    "Payable Date": "Oct 06 2023",
+    "Dividend": "$0.2943"
+   },
+   {
+    "Ex-Date": "Jul 03 2023",
+    "Payable Date": "Jul 07 2023",
+    "Dividend": "$0.2566"
+   },
+   {
+    "Ex-Date": "Apr 03 2023",
+    "Payable Date": "Apr 10 2023",
+    "Dividend": "$0.2507"
+   },
+   {
+    "Ex-Date": "Dec 28 2022",
+    "Payable Date": "Dec 30 2022",
+    "Dividend": "$0.2536"
+   },
+   {
+    "Ex-Date": "Oct 03 2022",
+    "Payable Date": "Oct 07 2022",
+    "Dividend": "$0.2527"
+   },
+   {
+    "Ex-Date": "Jul 01 2022",
+    "Payable Date": "Jul 08 2022",
+    "Dividend": "$0.1974"
+   },
+   {
+    "Ex-Date": "Apr 01 2022",
+    "Payable Date": "Apr 07 2022",
+    "Dividend": "$0.2570"
+   },
+   {
+    "Ex-Date": "Dec 29 2021",
+    "Payable Date": "Dec 31 2021",
+    "Dividend": "$0.2615"
+   },
+   {
+    "Ex-Date": "Oct 01 2021",
+    "Payable Date": "Oct 07 2021",
+    "Dividend": "$0.2459"
+   },
+   {
+    "Ex-Date": "Jul 01 2021",
+    "Payable Date": "Jul 08 2021",
+    "Dividend": "$0.1872"
+   },
+   {
+    "Ex-Date": "Apr 01 2021",
+    "Payable Date": "Apr 08 2021",
+    "Dividend": "$0.2344"
+   },
+   {
+    "Ex-Date": "Dec 29 2020",
+    "Payable Date": "Jan 05 2021",
+    "Dividend": "$0.2522"
+   },
+   {
+    "Ex-Date": "Oct 01 2020",
+    "Payable Date": "Oct 07 2020",
+    "Dividend": "$0.2400"
+   },
+   {
+    "Ex-Date": "Jul 01 2020",
+    "Payable Date": "Jul 08 2020",
+    "Dividend": "$0.3075"
+   },
+   {
+    "Ex-Date": "Apr 01 2020",
+    "Payable Date": "Apr 07 2020",
+    "Dividend": "$0.2004"
+   },
+   {
+    "Ex-Date": "Dec 30 2019",
+    "Payable Date": "Jan 06 2020",
+    "Dividend": "$0.1910"
+   },
+   {
+    "Ex-Date": "Oct 01 2019",
+    "Payable Date": "Oct 07 2019",
+    "Dividend": "$0.2029"
+   },
+   {
+    "Ex-Date": "Jul 01 2019",
+    "Payable Date": "Jul 08 2019",
+    "Dividend": "$0.2001"
+   },
+   {
+    "Ex-Date": "Apr 01 2019",
+    "Payable Date": "Apr 05 2019",
+    "Dividend": "$0.1257"
+   },
+   {
+    "Ex-Date": "Dec 27 2018",
+    "Payable Date": "Jan 03 2019",
+    "Dividend": "$0.1600"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 16.89,
-   "ytdText": "16.89%"
+   "ytdText": "16.89%",
+   "yr1": 19.68,
+   "yr3": 11.72,
+   "yr5": 7.86,
+   "yr10": null,
+   "sinceInception": 9.45
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 16.89,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
+  "tr1y": 19.68,
+  "tr3y": 39.44,
+  "tr5y": 45.98,
   "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
+  "cagr3y": 11.72,
+  "cagr5y": 7.86,
   "cagr10y": null,
-  "siAnn": null,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "siAnn": 9.45,
+  "dividendYield": 2.77,
+  "dividendYieldText": "2.77%",
   "secYield": 2.7,
   "secYieldText": "2.70%",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
@@ -121,13 +287,13 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYield": 2.77,
+  "dividendYieldText": "2.77%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYield": 2.7,
+  "secYieldText": "2.70%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

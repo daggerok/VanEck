@@ -34,35 +34,45 @@
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 1.3,
-   "ytdText": "1.30%"
+   "ytdText": "1.30%",
+   "yr1": 28.59,
+   "yr3": 31.56,
+   "yr5": 19.35,
+   "yr10": 12.67,
+   "sinceInception": 10.18
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 1.3,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
-  "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
-  "cagr10y": null,
-  "siAnn": null,
+  "tr1y": 28.59,
+  "tr3y": 127.71,
+  "tr5y": 142.21,
+  "tr10y": 229.74,
+  "cagr3y": 31.56,
+  "cagr5y": 19.35,
+  "cagr10y": 12.67,
+  "siAnn": 10.18,
   "dividendYield": null,
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "00 - Unknown",
  "providerCategory": "Commodity",
  "terGross": "0.25%",
  "terGrossValue": 0.25,
@@ -120,11 +130,11 @@
  "yields": {
   "dividendYield": null,
   "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from Yahoo Finance chart feed (fallback: VanEck distributions unavailable)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

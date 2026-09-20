@@ -34,35 +34,56 @@
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.5808"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$1.8776"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 26.42,
-   "ytdText": "26.42%"
+   "ytdText": "26.42%",
+   "yr1": 9.48,
+   "yr3": 46.51,
+   "yr5": -4.67,
+   "yr10": null,
+   "sinceInception": -8.33
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 26.42,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
+  "tr1y": 9.48,
+  "tr3y": 214.51,
+  "tr5y": -21.26,
   "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
+  "cagr3y": 46.51,
+  "cagr5y": -4.67,
   "cagr10y": null,
-  "siAnn": null,
+  "siAnn": -8.33,
   "dividendYield": null,
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "00 - Unknown",
  "providerCategory": "Equity Thematic",
  "terGross": "0.52%",
  "terGrossValue": 0.52,
@@ -120,11 +141,11 @@
  "yields": {
   "dividendYield": null,
   "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

@@ -34,35 +34,45 @@
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -7.07,
-   "ytdText": "-7.07%"
+   "ytdText": "-7.07%",
+   "yr1": -27.12,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 24.07
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": -7.07,
-  "tr1y": null,
+  "tr1y": -27.12,
   "tr3y": null,
   "tr5y": null,
   "tr10y": null,
   "cagr3y": null,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": null,
+  "siAnn": 24.07,
   "dividendYield": null,
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "00 - Unknown",
  "providerCategory": "Equity Thematic",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
@@ -119,11 +129,11 @@
  "yields": {
   "dividendYield": null,
   "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from Yahoo Finance chart feed (fallback: VanEck distributions unavailable)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

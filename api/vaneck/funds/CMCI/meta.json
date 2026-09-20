@@ -32,37 +32,63 @@
  },
  "premiumDiscountValue": 0,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 30 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$2.1712"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.9600"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.3950"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 32.38,
-   "ytdText": "32.38%"
+   "ytdText": "32.38%",
+   "yr1": 35.22,
+   "yr3": 12.61,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 13.11
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 32.38,
-  "tr1y": null,
-  "tr3y": null,
+  "tr1y": 35.22,
+  "tr3y": 42.8,
   "tr5y": null,
   "tr10y": null,
-  "cagr3y": null,
+  "cagr3y": 12.61,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": null,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "siAnn": 13.11,
+  "dividendYield": 6.86,
+  "dividendYieldText": "6.86%",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "12 - Annually",
  "providerCategory": "Commodity",
  "terGross": "4.95%",
  "terGrossValue": 4.95,
@@ -118,13 +144,13 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYield": 6.86,
+  "dividendYieldText": "6.86%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

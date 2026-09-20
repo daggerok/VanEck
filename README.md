@@ -49,13 +49,24 @@ VanEck ships two different holdings column sets from the same URL:
 
 Both are normalised onto one shared column contract by `parseVanEckHoldings()`, which detects the fixed-income sheet by the presence of a `Maturity` header. `OUNZ` (a physically-backed gold trust) publishes no holdings workbook at all, same as SPDR's `GLD`/`SLV`.
 
+#### Performance and distributions (client-hydrated, but a plain JSON endpoint)
+
+The fund page's "Average Annual Total Returns" and "Distribution History" widgets are populated by a React component after load, but the component itself just calls a plain, unauthenticated JSON endpoint keyed by the block's own id — no browser or JS execution is needed:
+
+```
+GET /Main/PerformanceHistoryBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<TICKER>&reactlang=en&reactctr=us&epieditmode=false&latest=false&contextmode=Default
+GET /Main/NavDistributionsBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<TICKER>&…
+```
+
+`parseVanEckFundPage()` reads each block's `blockid`/`pageid` straight off the page's own `<ve-performancehistoryblock>` / `<ve-navdistributionsblock>` tags (they differ per fund and are never guessed), then `fetchVanEckPerformance()` / `fetchVanEckDistributions()` call the endpoint directly. `PerformanceHistoryBlock` returns both a NAV-basis and a Market-Price-basis row; this feed uses the NAV row, matching every other return figure. A too-young fund's longer tenors come back JSON `null` from VanEck itself (verified against ETHV, a 2024-inception fund) — never invented as 0 or backfilled.
+
 ### Known value limitations
 
 | Metric | Status | Reason |
 | --- | --- | --- |
-| **TR 1Y / 3Y / 5Y / 10Y, CAGR 3Y / 5Y / 10Y, SI Ann.** | `—` | The Performance panel is loaded by client-side script the static updater cannot read |
+| **TR 1Y / 3Y / 5Y / 10Y, CAGR 3Y / 5Y / 10Y, SI Ann.** | published from VanEck's own Average Annual Total Returns block; `—` only for a tenor the fund hasn't existed long enough to report | See *Performance and distributions* above |
 | **SEC Yield (30-day)** | published only where VanEck server-renders it in the fund header (a subset of income funds) | Otherwise `null` → `—` |
-| **Dividend Yield** | `—` unless a distribution history exists | An *indicated* yield is derived from Yahoo Finance distributions where available |
+| **Dividend Yield** | indicated yield (latest distribution x payments per year / NAV); `—` only if the fund has never distributed | Derived from VanEck's own Distribution History, Yahoo Finance as a fallback |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
 ### Update controls

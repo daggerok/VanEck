@@ -32,37 +32,338 @@
  },
  "premiumDiscountValue": 0.04,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
-  "headers": [],
-  "rows": []
+  "frequency": "Quarterly",
+  "paymentsPerYear": 4,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Aug 03 2026",
+    "Payable Date": "Aug 06 2026",
+    "Dividend": "$2.0107"
+   },
+   {
+    "Ex-Date": "May 01 2026",
+    "Payable Date": "May 06 2026",
+    "Dividend": "$0.8067"
+   },
+   {
+    "Ex-Date": "Feb 02 2026",
+    "Payable Date": "Feb 05 2026",
+    "Dividend": "$0.5418"
+   },
+   {
+    "Ex-Date": "Nov 03 2025",
+    "Payable Date": "Nov 06 2025",
+    "Dividend": "$0.6845"
+   },
+   {
+    "Ex-Date": "Aug 01 2025",
+    "Payable Date": "Aug 06 2025",
+    "Dividend": "$0.1143"
+   },
+   {
+    "Ex-Date": "May 01 2025",
+    "Payable Date": "May 06 2025",
+    "Dividend": "$1.0087"
+   },
+   {
+    "Ex-Date": "Feb 03 2025",
+    "Payable Date": "Feb 06 2025",
+    "Dividend": "$0.4708"
+   },
+   {
+    "Ex-Date": "Nov 01 2024",
+    "Payable Date": "Nov 06 2024",
+    "Dividend": "$0.6649"
+   },
+   {
+    "Ex-Date": "Aug 01 2024",
+    "Payable Date": "Aug 06 2024",
+    "Dividend": "$0.0517"
+   },
+   {
+    "Ex-Date": "May 01 2024",
+    "Payable Date": "May 07 2024",
+    "Dividend": "$0.0726"
+   },
+   {
+    "Ex-Date": "Feb 01 2024",
+    "Payable Date": "Feb 07 2024",
+    "Dividend": "$0.0424"
+   },
+   {
+    "Ex-Date": "Nov 01 2023",
+    "Payable Date": "Nov 07 2023",
+    "Dividend": "$0.3784"
+   },
+   {
+    "Ex-Date": "Aug 01 2023",
+    "Payable Date": "Aug 10 2023",
+    "Dividend": "$0.6112"
+   },
+   {
+    "Ex-Date": "May 01 2023",
+    "Payable Date": "May 05 2023",
+    "Dividend": "$0.2942"
+   },
+   {
+    "Ex-Date": "Feb 01 2023",
+    "Payable Date": "Feb 07 2023",
+    "Dividend": "$0.3087"
+   },
+   {
+    "Ex-Date": "Nov 01 2022",
+    "Payable Date": "Nov 07 2022",
+    "Dividend": "$0.3130"
+   },
+   {
+    "Ex-Date": "Aug 01 2022",
+    "Payable Date": "Aug 05 2022",
+    "Dividend": "$0.4268"
+   },
+   {
+    "Ex-Date": "May 02 2022",
+    "Payable Date": "May 06 2022",
+    "Dividend": "$0.7431"
+   },
+   {
+    "Ex-Date": "Feb 01 2022",
+    "Payable Date": "Feb 07 2022",
+    "Dividend": "$0.3032"
+   },
+   {
+    "Ex-Date": "Nov 15 2021",
+    "Payable Date": "Nov 19 2021",
+    "Dividend": "$0.7817"
+   },
+   {
+    "Ex-Date": "Aug 16 2021",
+    "Payable Date": "Aug 20 2021",
+    "Dividend": "$1.2972"
+   },
+   {
+    "Ex-Date": "May 17 2021",
+    "Payable Date": "May 21 2021",
+    "Dividend": "$0.7437"
+   },
+   {
+    "Ex-Date": "Feb 17 2021",
+    "Payable Date": "Feb 23 2021",
+    "Dividend": "$0.3943"
+   },
+   {
+    "Ex-Date": "Nov 09 2020",
+    "Payable Date": "Nov 13 2020",
+    "Dividend": "$0.6571"
+   },
+   {
+    "Ex-Date": "Aug 10 2020",
+    "Payable Date": "Aug 14 2020",
+    "Dividend": "$0.6601"
+   },
+   {
+    "Ex-Date": "May 11 2020",
+    "Payable Date": "May 15 2020",
+    "Dividend": "$0.5745"
+   },
+   {
+    "Ex-Date": "Feb 10 2020",
+    "Payable Date": "Feb 14 2020",
+    "Dividend": "$0.8535"
+   },
+   {
+    "Ex-Date": "Nov 12 2019",
+    "Payable Date": "Nov 18 2019",
+    "Dividend": "$1.0722"
+   },
+   {
+    "Ex-Date": "Aug 12 2019",
+    "Payable Date": "Aug 16 2019",
+    "Dividend": "$1.5000"
+   },
+   {
+    "Ex-Date": "May 13 2019",
+    "Payable Date": "May 17 2019",
+    "Dividend": "$1.3986"
+   },
+   {
+    "Ex-Date": "Feb 11 2019",
+    "Payable Date": "Feb 15 2019",
+    "Dividend": "$1.3257"
+   },
+   {
+    "Ex-Date": "Nov 09 2018",
+    "Payable Date": "Nov 16 2018",
+    "Dividend": "$1.0200"
+   },
+   {
+    "Ex-Date": "Aug 13 2018",
+    "Payable Date": "Aug 17 2018",
+    "Dividend": "$1.2600"
+   },
+   {
+    "Ex-Date": "May 14 2018",
+    "Payable Date": "May 18 2018",
+    "Dividend": "$1.2900"
+   },
+   {
+    "Ex-Date": "Feb 12 2018",
+    "Payable Date": "Feb 16 2018",
+    "Dividend": "$2.2500"
+   },
+   {
+    "Ex-Date": "Nov 13 2017",
+    "Payable Date": "Nov 17 2017",
+    "Dividend": "$1.2675"
+   },
+   {
+    "Ex-Date": "Aug 14 2017",
+    "Payable Date": "Aug 18 2017",
+    "Dividend": "$1.5000"
+   },
+   {
+    "Ex-Date": "May 15 2017",
+    "Payable Date": "May 19 2017",
+    "Dividend": "$1.5825"
+   },
+   {
+    "Ex-Date": "Feb 13 2017",
+    "Payable Date": "Feb 17 2017",
+    "Dividend": "$1.6200"
+   },
+   {
+    "Ex-Date": "Nov 14 2016",
+    "Payable Date": "Nov 18 2016",
+    "Dividend": "$1.4700"
+   },
+   {
+    "Ex-Date": "Aug 15 2016",
+    "Payable Date": "Aug 19 2016",
+    "Dividend": "$1.8000"
+   },
+   {
+    "Ex-Date": "May 16 2016",
+    "Payable Date": "May 20 2016",
+    "Dividend": "$1.5000"
+   },
+   {
+    "Ex-Date": "Feb 12 2016",
+    "Payable Date": "Feb 18 2016",
+    "Dividend": "$2.8500"
+   },
+   {
+    "Ex-Date": "Nov 12 2015",
+    "Payable Date": "Nov 17 2015",
+    "Dividend": "$4.4250"
+   },
+   {
+    "Ex-Date": "Aug 13 2015",
+    "Payable Date": "Aug 18 2015",
+    "Dividend": "$4.6500"
+   },
+   {
+    "Ex-Date": "May 14 2015",
+    "Payable Date": "May 19 2015",
+    "Dividend": "$5.2500"
+   },
+   {
+    "Ex-Date": "Feb 13 2015",
+    "Payable Date": "Feb 19 2015",
+    "Dividend": "$5.7000"
+   },
+   {
+    "Ex-Date": "Nov 12 2014",
+    "Payable Date": "Nov 18 2014",
+    "Dividend": "$5.7000"
+   },
+   {
+    "Ex-Date": "Aug 13 2014",
+    "Payable Date": "Aug 19 2014",
+    "Dividend": "$5.7000"
+   },
+   {
+    "Ex-Date": "May 14 2014",
+    "Payable Date": "May 20 2014",
+    "Dividend": "$5.7000"
+   },
+   {
+    "Ex-Date": "Feb 12 2014",
+    "Payable Date": "Feb 19 2014",
+    "Dividend": "$6.1611"
+   },
+   {
+    "Ex-Date": "Nov 13 2013",
+    "Payable Date": "Nov 19 2013",
+    "Dividend": "$6.1611"
+   },
+   {
+    "Ex-Date": "Aug 14 2013",
+    "Payable Date": "Aug 20 2013",
+    "Dividend": "$6.1550"
+   },
+   {
+    "Ex-Date": "May 15 2013",
+    "Payable Date": "May 21 2013",
+    "Dividend": "$6.1519"
+   },
+   {
+    "Ex-Date": "Feb 13 2013",
+    "Payable Date": "Feb 20 2013",
+    "Dividend": "$6.1509"
+   },
+   {
+    "Ex-Date": "Nov 14 2012",
+    "Payable Date": "Nov 20 2012",
+    "Dividend": "$6.0781"
+   },
+   {
+    "Ex-Date": "Aug 15 2012",
+    "Payable Date": "Aug 21 2012",
+    "Dividend": "$6.0766"
+   },
+   {
+    "Ex-Date": "May 15 2012",
+    "Payable Date": "May 21 2012",
+    "Dividend": "$6.0075"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page YTD return",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 27.25,
-   "ytdText": "27.25%"
+   "ytdText": "27.25%",
+   "yr1": 31.36,
+   "yr3": 28.08,
+   "yr5": 23.51,
+   "yr10": 11.31,
+   "sinceInception": 1.21
   },
   "quarterEnd": {}
  },
  "metrics": {
   "ytd": 27.25,
-  "tr1y": null,
-  "tr3y": null,
-  "tr5y": null,
-  "tr10y": null,
-  "cagr3y": null,
-  "cagr5y": null,
-  "cagr10y": null,
-  "siAnn": null,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "tr1y": 31.36,
+  "tr3y": 110.12,
+  "tr5y": 187.37,
+  "tr10y": 191.87,
+  "cagr3y": 28.08,
+  "cagr5y": 23.51,
+  "cagr10y": 11.31,
+  "siAnn": 1.21,
+  "dividendYield": 6.76,
+  "dividendYieldText": "6.76%",
   "secYield": 3.49,
   "secYieldText": "3.49%",
-  "returnsBasis": "official VanEck fund-page YTD return"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
  },
- "distributionFrequency": "Unknown",
+ "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
  "terGross": "0.46%",
  "terGrossValue": 0.46,
@@ -123,13 +424,13 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV) from Yahoo Finance; unavailable until a networked run",
+  "dividendYield": 6.76,
+  "dividendYieldText": "6.76%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not available: vaneck.com serves its 30-day SEC yield from a client-side widget the static updater cannot read"
+  "secYield": 3.49,
+  "secYieldText": "3.49%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }
