@@ -1,0 +1,140 @@
+{
+ "ticker": "OUNZ",
+ "name": "VanEck Merk Gold ETF",
+ "category": "Real Assets | Commodities",
+ "fundPage": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/",
+ "dataFile": "./funds/OUNZ/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.25%",
+ "terValue": 0.25,
+ "nav": {
+  "display": "$42.05",
+  "value": 42.05,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 42.05,
+ "aum": {
+  "display": "$2.83B",
+  "value": 2825206287.69,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 2825206287.69,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 16 2014",
+ "exchange": "—",
+ "closePrice": "$42.02",
+ "closePriceValue": 42.02,
+ "premiumDiscount": {
+  "display": "-0.02%",
+  "value": -0.02
+ },
+ "premiumDiscountValue": -0.02,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 1.3,
+   "ytdText": "1.30%",
+   "yr1": 28.59,
+   "yr3": 31.56,
+   "yr5": 19.35,
+   "yr10": 12.67,
+   "sinceInception": 10.18
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 1.3,
+  "tr1y": 28.59,
+  "tr3y": 127.71,
+  "tr5y": 142.21,
+  "tr10y": 229.74,
+  "cagr3y": 31.56,
+  "cagr5y": 19.35,
+  "cagr10y": 12.67,
+  "siAnn": 10.18,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "00 - Unknown",
+ "providerCategory": "Commodity",
+ "terGross": "0.25%",
+ "terGrossValue": 0.25,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "pages": [],
+  "pageSize": 250,
+  "totalRows": 0,
+  "asOfDate": "—",
+  "source": "—"
+ },
+ "history": {
+  "totalRows": 4509,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 2830000000,
+ "categoryPath": "Real Assets | Commodities > Commodity",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/OUNZ",
+  "holdingsSource": "—",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.25%",
+  "value": 0.25,
+  "gross": "0.25%",
+  "grossValue": 0.25
+ },
+ "marketPrice": {
+  "display": "$42.02",
+  "value": 42.02,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from Yahoo Finance chart feed (fallback: VanEck distributions unavailable)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

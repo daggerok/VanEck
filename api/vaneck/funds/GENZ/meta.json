@@ -1,0 +1,236 @@
+{
+ "ticker": "GENZ",
+ "name": "VanEck Digital Native Economy ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/",
+ "dataFile": "./funds/GENZ/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.51%",
+ "terValue": 0.51,
+ "nav": {
+  "display": "$37.54",
+  "value": 37.54,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 37.54,
+ "aum": {
+  "display": "$18.77M",
+  "value": 18772341.26,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 18772341.26,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Jan 22 2008",
+ "exchange": "—",
+ "closePrice": "$37.47",
+ "closePriceValue": 37.47,
+ "premiumDiscount": {
+  "display": "-0.07%",
+  "value": -0.07
+ },
+ "premiumDiscountValue": -0.07,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$1.3636"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$1.1667"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.7111"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.1683"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.3494"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.2222"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$1.2308"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$1.1330"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$1.0770"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.0660"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$1.2990"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$1.8840"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.5180"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$1.3820"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$0.6290"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$0.8130"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$0.5130"
+   },
+   {
+    "Ex-Date": "Dec 26 2008",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$0.2300"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": -7.89,
+   "ytdText": "-7.89%",
+   "yr1": -12.87,
+   "yr3": -0.59,
+   "yr5": -3.26,
+   "yr10": 3.71,
+   "sinceInception": 2.38
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": -7.89,
+  "tr1y": -12.87,
+  "tr3y": -1.76,
+  "tr5y": -15.27,
+  "tr10y": 43.91,
+  "cagr3y": -0.59,
+  "cagr5y": -3.26,
+  "cagr10y": 3.71,
+  "siAnn": 2.38,
+  "dividendYield": 3.63,
+  "dividendYieldText": "3.63%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Equity Thematic",
+ "terGross": "0.51%",
+ "terGrossValue": 0.51,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 41,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 6815,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/fundhistoprices/)",
+  "pageCount": 7,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json",
+   "history/006.json",
+   "history/007.json"
+  ]
+ },
+ "totalNetAssets": 18770000,
+ "categoryPath": "Equity > Equity Thematic",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GENZ",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.51%",
+  "value": 0.51,
+  "gross": "0.51%",
+  "grossValue": 0.51
+ },
+ "marketPrice": {
+  "display": "$37.47",
+  "value": 37.47,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 3.63,
+  "dividendYieldText": "3.63%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

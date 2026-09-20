@@ -1,0 +1,214 @@
+{
+ "ticker": "REMX",
+ "name": "VanEck Rare Earth and Strategic Metals ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/",
+ "dataFile": "./funds/REMX/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.53%",
+ "terValue": 0.53,
+ "nav": {
+  "display": "$68.70",
+  "value": 68.7,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 68.7,
+ "aum": {
+  "display": "$1.97B",
+  "value": 1973276260.99,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 1973276260.99,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Oct 27 2010",
+ "exchange": "—",
+ "closePrice": "$69.06",
+ "closePriceValue": 69.06,
+ "premiumDiscount": {
+  "display": "0.36%",
+  "value": 0.36
+ },
+ "premiumDiscountValue": 0.36,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$1.3008"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.9971"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$1.1867"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$5.8917"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.5348"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$0.6441"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$5.0550"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$2.6100"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.1400"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$1.9170"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$1.1580"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.2490"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$2.7240"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$11.4360"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": -6.81,
+   "ytdText": "-6.81%",
+   "yr1": 26.46,
+   "yr3": 4.58,
+   "yr5": -5.89,
+   "yr10": 7.59,
+   "sinceInception": -4.13
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": -6.81,
+  "tr1y": 26.46,
+  "tr3y": 14.37,
+  "tr5y": -26.2,
+  "tr10y": 107.81,
+  "cagr3y": 4.58,
+  "cagr5y": -5.89,
+  "cagr10y": 7.59,
+  "siAnn": -4.13,
+  "dividendYield": 1.89,
+  "dividendYieldText": "1.89%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.53%",
+ "terGrossValue": 0.53,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 38,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4347,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 1970000000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/REMX",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.53%",
+  "value": 0.53,
+  "gross": "0.53%",
+  "grossValue": 0.53
+ },
+ "marketPrice": {
+  "display": "$69.06",
+  "value": 69.06,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 1.89,
+  "dividendYieldText": "1.89%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

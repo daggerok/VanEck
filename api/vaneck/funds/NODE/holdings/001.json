@@ -1,0 +1,498 @@
+{
+ "ticker": "NODE",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 48,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "VanEck Bitcoin ETF",
+   "Ticker": "HODL",
+   "Identifier": "BBG01KY678Y1",
+   "Shares Held": "502,764",
+   "Asset Category": "Stock",
+   "Market Value": "$10,874,785.32",
+   "Notional Value": "",
+   "Weight": "14.87%"
+  },
+  {
+   "Name": "Figure Technology Solutions Inc",
+   "Ticker": "FIGR",
+   "Identifier": "BBG01NGH78G1",
+   "Shares Held": "120,545",
+   "Asset Category": "Stock",
+   "Market Value": "$4,063,571.95",
+   "Notional Value": "",
+   "Weight": "5.56%"
+  },
+  {
+   "Name": "Iren Ltd",
+   "Ticker": "IREN",
+   "Identifier": "BBG010J28KQ2",
+   "Shares Held": "92,155",
+   "Asset Category": "Stock",
+   "Market Value": "$4,006,899.40",
+   "Notional Value": "",
+   "Weight": "5.48%"
+  },
+  {
+   "Name": "Hut 8 Corp",
+   "Ticker": "HUT",
+   "Identifier": "BBG00K8H39V2",
+   "Shares Held": "43,673",
+   "Asset Category": "Stock",
+   "Market Value": "$3,973,806.27",
+   "Notional Value": "",
+   "Weight": "5.43%"
+  },
+  {
+   "Name": "Terawulf Inc",
+   "Ticker": "WULF",
+   "Identifier": "BBG0122MC900",
+   "Shares Held": "222,478",
+   "Asset Category": "Stock",
+   "Market Value": "$3,664,212.66",
+   "Notional Value": "",
+   "Weight": "5.01%"
+  },
+  {
+   "Name": "Cipher Mining Inc",
+   "Ticker": "CIFR",
+   "Identifier": "BBG00XYHY0K2",
+   "Shares Held": "214,858",
+   "Asset Category": "Stock",
+   "Market Value": "$3,639,694.52",
+   "Notional Value": "",
+   "Weight": "4.98%"
+  },
+  {
+   "Name": "Cleanspark Inc",
+   "Ticker": "CLSK",
+   "Identifier": "BBG001MB89V6",
+   "Shares Held": "225,579",
+   "Asset Category": "Stock",
+   "Market Value": "$3,011,479.65",
+   "Notional Value": "",
+   "Weight": "4.12%"
+  },
+  {
+   "Name": "Riot Platforms Inc",
+   "Ticker": "RIOT",
+   "Identifier": "BBG000BQ4512",
+   "Shares Held": "136,082",
+   "Asset Category": "Stock",
+   "Market Value": "$2,977,474.16",
+   "Notional Value": "",
+   "Weight": "4.07%"
+  },
+  {
+   "Name": "Applied Digital Corp",
+   "Ticker": "APLD",
+   "Identifier": "BBG000DSJYS8",
+   "Shares Held": "98,988",
+   "Asset Category": "Stock",
+   "Market Value": "$2,611,303.44",
+   "Notional Value": "",
+   "Weight": "3.57%"
+  },
+  {
+   "Name": "Mara Holdings Inc",
+   "Ticker": "MARA",
+   "Identifier": "BBG001K7WBT8",
+   "Shares Held": "201,508",
+   "Asset Category": "Stock",
+   "Market Value": "$2,345,553.12",
+   "Notional Value": "",
+   "Weight": "3.21%"
+  },
+  {
+   "Name": "Bitdeer Technologies Group",
+   "Ticker": "BTDR",
+   "Identifier": "BBG0142Q8P97",
+   "Shares Held": "200,545",
+   "Asset Category": "Stock",
+   "Market Value": "$2,254,125.80",
+   "Notional Value": "",
+   "Weight": "3.08%"
+  },
+  {
+   "Name": "Core Scientific Inc",
+   "Ticker": "CORZ",
+   "Identifier": "BBG01L5GH011",
+   "Shares Held": "126,712",
+   "Asset Category": "Stock",
+   "Market Value": "$2,171,843.68",
+   "Notional Value": "",
+   "Weight": "2.97%"
+  },
+  {
+   "Name": "Circle Internet Group Inc",
+   "Ticker": "CRCL",
+   "Identifier": "BBG01T61V2V3",
+   "Shares Held": "23,050",
+   "Asset Category": "Stock",
+   "Market Value": "$1,961,324.50",
+   "Notional Value": "",
+   "Weight": "2.68%"
+  },
+  {
+   "Name": "The Zcash ETF",
+   "Ticker": "ZCSH",
+   "Identifier": "BBG0133B2R11",
+   "Shares Held": "13,058",
+   "Asset Category": "Other",
+   "Market Value": "$1,568,135.22",
+   "Notional Value": "",
+   "Weight": "2.14%"
+  },
+  {
+   "Name": "Galaxy Digital Inc",
+   "Ticker": "GLXY",
+   "Identifier": "BBG0120SWLS0",
+   "Shares Held": "65,766",
+   "Asset Category": "Stock",
+   "Market Value": "$1,465,266.48",
+   "Notional Value": "",
+   "Weight": "2.00%"
+  },
+  {
+   "Name": "Block Inc",
+   "Ticker": "XYZ",
+   "Identifier": "BBG0018SLC07",
+   "Shares Held": "18,268",
+   "Asset Category": "Stock",
+   "Market Value": "$1,396,953.96",
+   "Notional Value": "",
+   "Weight": "1.91%"
+  },
+  {
+   "Name": "Aker Asa",
+   "Ticker": "AKER NO",
+   "Identifier": "BBG000C2P156",
+   "Shares Held": "8,174",
+   "Asset Category": "Stock",
+   "Market Value": "$1,379,724.51",
+   "Notional Value": "",
+   "Weight": "1.89%"
+  },
+  {
+   "Name": "Vistra Corp",
+   "Ticker": "VST",
+   "Identifier": "BBG00DXDL6Q1",
+   "Shares Held": "9,056",
+   "Asset Category": "Stock",
+   "Market Value": "$1,300,079.36",
+   "Notional Value": "",
+   "Weight": "1.78%"
+  },
+  {
+   "Name": "Talen Energy Corp",
+   "Ticker": "TLN",
+   "Identifier": "BBG01GWQVVD3",
+   "Shares Held": "4,384",
+   "Asset Category": "Stock",
+   "Market Value": "$1,285,871.04",
+   "Notional Value": "",
+   "Weight": "1.76%"
+  },
+  {
+   "Name": "Sk Hynix Inc",
+   "Ticker": "000660 KS",
+   "Identifier": "BBG000GQVT51",
+   "Shares Held": "939",
+   "Asset Category": "Stock",
+   "Market Value": "$1,222,196.12",
+   "Notional Value": "",
+   "Weight": "1.67%"
+  },
+  {
+   "Name": "Solaris Energy Infrastructure Inc",
+   "Ticker": "SEI",
+   "Identifier": "BBG00G7D6C05",
+   "Shares Held": "15,946",
+   "Asset Category": "Stock",
+   "Market Value": "$1,103,782.12",
+   "Notional Value": "",
+   "Weight": "1.51%"
+  },
+  {
+   "Name": "Global Unichip Corp",
+   "Ticker": "3443 TT",
+   "Identifier": "BBG000FM8B65",
+   "Shares Held": "5,000",
+   "Asset Category": "Stock",
+   "Market Value": "$1,037,893.99",
+   "Notional Value": "",
+   "Weight": "1.42%"
+  },
+  {
+   "Name": "Keel Infrastructure Corp",
+   "Ticker": "KEEL",
+   "Identifier": "BBG021DN5TF5",
+   "Shares Held": "285,642",
+   "Asset Category": "Stock",
+   "Market Value": "$1,031,167.62",
+   "Notional Value": "",
+   "Weight": "1.41%"
+  },
+  {
+   "Name": "VanEck Ethereum ETF",
+   "Ticker": "ETHV",
+   "Identifier": "BBG01NX8ZGV6",
+   "Shares Held": "28,308",
+   "Asset Category": "Stock",
+   "Market Value": "$1,012,860.24",
+   "Notional Value": "",
+   "Weight": "1.39%"
+  },
+  {
+   "Name": "Constellation Energy Corp",
+   "Ticker": "CEG",
+   "Identifier": "BBG014KFRNP7",
+   "Shares Held": "3,782",
+   "Asset Category": "Stock",
+   "Market Value": "$993,909.60",
+   "Notional Value": "",
+   "Weight": "1.36%"
+  },
+  {
+   "Name": "Coinbase Global Inc",
+   "Ticker": "COIN",
+   "Identifier": "BBG00ZGF7771",
+   "Shares Held": "5,695",
+   "Asset Category": "Stock",
+   "Market Value": "$990,759.15",
+   "Notional Value": "",
+   "Weight": "1.35%"
+  },
+  {
+   "Name": "Bullish",
+   "Ticker": "BLSH",
+   "Identifier": "BBG01W8QW0N1",
+   "Shares Held": "26,928",
+   "Asset Category": "Stock",
+   "Market Value": "$940,056.48",
+   "Notional Value": "",
+   "Weight": "1.29%"
+  },
+  {
+   "Name": "Nvidia Corp",
+   "Ticker": "NVDA",
+   "Identifier": "BBG000BBJQV0",
+   "Shares Held": "4,151",
+   "Asset Category": "Stock",
+   "Market Value": "$910,480.34",
+   "Notional Value": "",
+   "Weight": "1.25%"
+  },
+  {
+   "Name": "Robinhood Markets Inc",
+   "Ticker": "HOOD",
+   "Identifier": "BBG008NMBXN8",
+   "Shares Held": "7,920",
+   "Asset Category": "Stock",
+   "Market Value": "$869,695.20",
+   "Notional Value": "",
+   "Weight": "1.19%"
+  },
+  {
+   "Name": "Innio Nv",
+   "Ticker": "INIO",
+   "Identifier": "BBG01XNSQ6K5",
+   "Shares Held": "40,143",
+   "Asset Category": "Stock",
+   "Market Value": "$841,397.28",
+   "Notional Value": "",
+   "Weight": "1.15%"
+  },
+  {
+   "Name": "Vertiv Holdings Co",
+   "Ticker": "VRT",
+   "Identifier": "BBG00L2B8KW8",
+   "Shares Held": "3,363",
+   "Asset Category": "Stock",
+   "Market Value": "$812,130.87",
+   "Notional Value": "",
+   "Weight": "1.11%"
+  },
+  {
+   "Name": "Strategy Inc",
+   "Ticker": "MSTR",
+   "Identifier": "BBG000GQJPZ0",
+   "Shares Held": "6,094",
+   "Asset Category": "Stock",
+   "Market Value": "$805,931.50",
+   "Notional Value": "",
+   "Weight": "1.10%"
+  },
+  {
+   "Name": "Raspberry Pi Holdings Plc",
+   "Ticker": "RPI LN",
+   "Identifier": "BBG01N605KK9",
+   "Shares Held": "94,648",
+   "Asset Category": "Stock",
+   "Market Value": "$684,973.17",
+   "Notional Value": "",
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Tokyo Electric Power Co Holdings Inc",
+   "Ticker": "9501 JP",
+   "Identifier": "BBG000BKJW74",
+   "Shares Held": "186,700",
+   "Asset Category": "Stock",
+   "Market Value": "$671,243.72",
+   "Notional Value": "",
+   "Weight": "0.92%"
+  },
+  {
+   "Name": "Whitefiber Inc",
+   "Ticker": "WYFI",
+   "Identifier": "BBG01W3459T0",
+   "Shares Held": "33,141",
+   "Asset Category": "Stock",
+   "Market Value": "$591,898.26",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Dpc Holdings Ltd",
+   "Ticker": "DPC",
+   "Identifier": "BBG022LFL119",
+   "Shares Held": "14,617",
+   "Asset Category": "Stock",
+   "Market Value": "$590,526.80",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "VanEck Solana ETF",
+   "Ticker": "VSOL",
+   "Identifier": "BBG01YJKBZM5",
+   "Shares Held": "40,131",
+   "Asset Category": "Stock",
+   "Market Value": "$544,112.15",
+   "Notional Value": "",
+   "Weight": "0.74%"
+  },
+  {
+   "Name": "21shares Hyperliquid Staking ETF",
+   "Ticker": "THYP",
+   "Identifier": "BBG0222RPZ79",
+   "Shares Held": "9,572",
+   "Asset Category": "Stock",
+   "Market Value": "$461,849.00",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "Shopify Inc",
+   "Ticker": "SHOP",
+   "Identifier": "BBG008HBD923",
+   "Shares Held": "3,212",
+   "Asset Category": "Stock",
+   "Market Value": "$413,063.20",
+   "Notional Value": "",
+   "Weight": "0.56%"
+  },
+  {
+   "Name": "Abaxx Technologies Inc",
+   "Ticker": "ABXX CN",
+   "Identifier": "BBG000GR78Q9",
+   "Shares Held": "16,255",
+   "Asset Category": "Stock",
+   "Market Value": "$210,472.99",
+   "Notional Value": "",
+   "Weight": "0.29%"
+  },
+  {
+   "Name": "Canton Strategic Holdings Inc",
+   "Ticker": "CNTN",
+   "Identifier": "BBG012QFR2V4",
+   "Shares Held": "72,985",
+   "Asset Category": "Stock",
+   "Market Value": "$153,268.50",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "282,822",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$282,822.07",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-KRW CASH-",
+   "Identifier": "",
+   "Shares Held": "299",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$.22",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-JPY CASH-",
+   "Identifier": "",
+   "Shares Held": "782",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$5.02",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-GBP CASH-",
+   "Identifier": "",
+   "Shares Held": "25",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$33.22",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-EUR CASH-",
+   "Identifier": "",
+   "Shares Held": "29",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$33.28",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-NOK CASH-",
+   "Identifier": "",
+   "Shares Held": "-587",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-62.27",
+   "Notional Value": "",
+   "Weight": "-0.00%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$-4,281.68",
+   "Notional Value": "",
+   "Weight": "-0.01%"
+  }
+ ]
+}

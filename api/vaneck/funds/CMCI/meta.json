@@ -1,0 +1,156 @@
+{
+ "ticker": "CMCI",
+ "name": "VanEck CMCI Commodity Strategy ETF",
+ "category": "Real Assets | Commodities",
+ "fundPage": "https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/",
+ "dataFile": "./funds/CMCI/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.67%",
+ "terValue": 0.67,
+ "nav": {
+  "display": "$31.65",
+  "value": 31.65,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 31.65,
+ "aum": {
+  "display": "$3.17M",
+  "value": 3165460.04,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 3165460.04,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Aug 21 2023",
+ "exchange": "—",
+ "closePrice": "$31.65",
+ "closePriceValue": 31.65,
+ "premiumDiscount": {
+  "display": "0.00%",
+  "value": 0
+ },
+ "premiumDiscountValue": 0,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 30 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$2.1712"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.9600"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.3950"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 32.38,
+   "ytdText": "32.38%",
+   "yr1": 35.22,
+   "yr3": 12.61,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 13.11
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 32.38,
+  "tr1y": 35.22,
+  "tr3y": 42.8,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": 12.61,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 13.11,
+  "dividendYield": 6.86,
+  "dividendYieldText": "6.86%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Commodity",
+ "terGross": "4.95%",
+ "terGrossValue": 4.95,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 19,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 1123,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/fundhistoprices/)",
+  "pageCount": 2,
+  "pages": [
+   "history/001.json",
+   "history/002.json"
+  ]
+ },
+ "totalNetAssets": 3170000,
+ "categoryPath": "Real Assets | Commodities > Commodity",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CMCI",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cmci-commodity-strategy-etf-cmci/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.67%",
+  "value": 0.67,
+  "gross": "4.95%",
+  "grossValue": 4.95
+ },
+ "marketPrice": {
+  "display": "$31.65",
+  "value": 31.65,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 6.86,
+  "dividendYieldText": "6.86%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

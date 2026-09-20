@@ -1,0 +1,456 @@
+{
+ "ticker": "MORT",
+ "name": "VanEck Mortgage REIT Income ETF",
+ "category": "Income",
+ "fundPage": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/",
+ "dataFile": "./funds/MORT/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.43%",
+ "terValue": 0.43,
+ "nav": {
+  "display": "$9.03",
+  "value": 9.03,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 9.03,
+ "aum": {
+  "display": "$334.58M",
+  "value": 334582202.34,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 334582202.34,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Aug 16 2011",
+ "exchange": "—",
+ "closePrice": "$9.03",
+ "closePriceValue": 9.03,
+ "premiumDiscount": {
+  "display": "0.00%",
+  "value": 0
+ },
+ "premiumDiscountValue": 0,
+ "distributions": {
+  "frequency": "Quarterly",
+  "paymentsPerYear": 4,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.4253"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.3585"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.2634"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.2825"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.2027"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.2952"
+   },
+   {
+    "Ex-Date": "Dec 27 2024",
+    "Payable Date": "Dec 30 2024",
+    "Dividend": "$0.2728"
+   },
+   {
+    "Ex-Date": "Oct 01 2024",
+    "Payable Date": "Oct 04 2024",
+    "Dividend": "$0.2390"
+   },
+   {
+    "Ex-Date": "Jul 01 2024",
+    "Payable Date": "Jul 05 2024",
+    "Dividend": "$0.1896"
+   },
+   {
+    "Ex-Date": "Apr 01 2024",
+    "Payable Date": "Apr 05 2024",
+    "Dividend": "$0.2819"
+   },
+   {
+    "Ex-Date": "Dec 27 2023",
+    "Payable Date": "Dec 29 2023",
+    "Dividend": "$0.3086"
+   },
+   {
+    "Ex-Date": "Oct 02 2023",
+    "Payable Date": "Oct 06 2023",
+    "Dividend": "$0.3081"
+   },
+   {
+    "Ex-Date": "Jul 03 2023",
+    "Payable Date": "Jul 07 2023",
+    "Dividend": "$0.2595"
+   },
+   {
+    "Ex-Date": "Apr 03 2023",
+    "Payable Date": "Apr 10 2023",
+    "Dividend": "$0.4718"
+   },
+   {
+    "Ex-Date": "Dec 28 2022",
+    "Payable Date": "Dec 30 2022",
+    "Dividend": "$0.3990"
+   },
+   {
+    "Ex-Date": "Oct 03 2022",
+    "Payable Date": "Oct 07 2022",
+    "Dividend": "$0.4125"
+   },
+   {
+    "Ex-Date": "Jul 01 2022",
+    "Payable Date": "Jul 08 2022",
+    "Dividend": "$0.3265"
+   },
+   {
+    "Ex-Date": "Apr 01 2022",
+    "Payable Date": "Apr 07 2022",
+    "Dividend": "$0.3898"
+   },
+   {
+    "Ex-Date": "Dec 29 2021",
+    "Payable Date": "Dec 31 2021",
+    "Dividend": "$0.4384"
+   },
+   {
+    "Ex-Date": "Oct 01 2021",
+    "Payable Date": "Oct 07 2021",
+    "Dividend": "$0.4077"
+   },
+   {
+    "Ex-Date": "Jul 01 2021",
+    "Payable Date": "Jul 08 2021",
+    "Dividend": "$0.3010"
+   },
+   {
+    "Ex-Date": "Apr 01 2021",
+    "Payable Date": "Apr 08 2021",
+    "Dividend": "$0.3274"
+   },
+   {
+    "Ex-Date": "Dec 29 2020",
+    "Payable Date": "Jan 05 2021",
+    "Dividend": "$0.3536"
+   },
+   {
+    "Ex-Date": "Oct 01 2020",
+    "Payable Date": "Oct 07 2020",
+    "Dividend": "$0.3373"
+   },
+   {
+    "Ex-Date": "Jul 01 2020",
+    "Payable Date": "Jul 08 2020",
+    "Dividend": "$0.2997"
+   },
+   {
+    "Ex-Date": "Apr 01 2020",
+    "Payable Date": "Apr 07 2020",
+    "Dividend": "$0.3680"
+   },
+   {
+    "Ex-Date": "Dec 30 2019",
+    "Payable Date": "Jan 06 2020",
+    "Dividend": "$0.6388"
+   },
+   {
+    "Ex-Date": "Oct 01 2019",
+    "Payable Date": "Oct 07 2019",
+    "Dividend": "$0.3846"
+   },
+   {
+    "Ex-Date": "Jul 01 2019",
+    "Payable Date": "Jul 08 2019",
+    "Dividend": "$0.3648"
+   },
+   {
+    "Ex-Date": "Apr 01 2019",
+    "Payable Date": "Apr 05 2019",
+    "Dividend": "$0.3770"
+   },
+   {
+    "Ex-Date": "Dec 27 2018",
+    "Payable Date": "Jan 03 2019",
+    "Dividend": "$0.4604"
+   },
+   {
+    "Ex-Date": "Oct 01 2018",
+    "Payable Date": "Oct 05 2018",
+    "Dividend": "$0.4801"
+   },
+   {
+    "Ex-Date": "Jul 02 2018",
+    "Payable Date": "Jul 09 2018",
+    "Dividend": "$0.3821"
+   },
+   {
+    "Ex-Date": "Apr 02 2018",
+    "Payable Date": "Apr 06 2018",
+    "Dividend": "$0.4237"
+   },
+   {
+    "Ex-Date": "Dec 27 2017",
+    "Payable Date": "Jan 03 2018",
+    "Dividend": "$0.6120"
+   },
+   {
+    "Ex-Date": "Oct 02 2017",
+    "Payable Date": "Oct 06 2017",
+    "Dividend": "$0.4650"
+   },
+   {
+    "Ex-Date": "Jul 03 2017",
+    "Payable Date": "Jul 10 2017",
+    "Dividend": "$0.3861"
+   },
+   {
+    "Ex-Date": "Apr 03 2017",
+    "Payable Date": "Apr 07 2017",
+    "Dividend": "$0.4200"
+   },
+   {
+    "Ex-Date": "Dec 28 2016",
+    "Payable Date": "Jan 04 2017",
+    "Dividend": "$0.4850"
+   },
+   {
+    "Ex-Date": "Oct 03 2016",
+    "Payable Date": "Oct 07 2016",
+    "Dividend": "$0.4722"
+   },
+   {
+    "Ex-Date": "Jul 01 2016",
+    "Payable Date": "Jul 08 2016",
+    "Dividend": "$0.3490"
+   },
+   {
+    "Ex-Date": "Apr 01 2016",
+    "Payable Date": "Apr 07 2016",
+    "Dividend": "$0.4900"
+   },
+   {
+    "Ex-Date": "Dec 29 2015",
+    "Payable Date": "Jan 05 2016",
+    "Dividend": "$0.5000"
+   },
+   {
+    "Ex-Date": "Oct 01 2015",
+    "Payable Date": "Oct 07 2015",
+    "Dividend": "$0.4800"
+   },
+   {
+    "Ex-Date": "Jul 01 2015",
+    "Payable Date": "Jul 08 2015",
+    "Dividend": "$0.5000"
+   },
+   {
+    "Ex-Date": "Apr 01 2015",
+    "Payable Date": "Apr 08 2015",
+    "Dividend": "$0.4550"
+   },
+   {
+    "Ex-Date": "Dec 29 2014",
+    "Payable Date": "Jan 05 2015",
+    "Dividend": "$0.4600"
+   },
+   {
+    "Ex-Date": "Dec 29 2014",
+    "Payable Date": "Jan 05 2015",
+    "Dividend": "$0.4584"
+   },
+   {
+    "Ex-Date": "Oct 01 2014",
+    "Payable Date": "Oct 07 2014",
+    "Dividend": "$0.4700"
+   },
+   {
+    "Ex-Date": "Jul 01 2014",
+    "Payable Date": "Jul 08 2014",
+    "Dividend": "$0.4500"
+   },
+   {
+    "Ex-Date": "Apr 01 2014",
+    "Payable Date": "Apr 07 2014",
+    "Dividend": "$0.5500"
+   },
+   {
+    "Ex-Date": "Dec 27 2013",
+    "Payable Date": "Jan 03 2014",
+    "Dividend": "$0.8704"
+   },
+   {
+    "Ex-Date": "Dec 27 2013",
+    "Payable Date": "Jan 03 2014",
+    "Dividend": "$0.5800"
+   },
+   {
+    "Ex-Date": "Oct 01 2013",
+    "Payable Date": "Oct 07 2013",
+    "Dividend": "$0.6150"
+   },
+   {
+    "Ex-Date": "Jul 01 2013",
+    "Payable Date": "Jul 08 2013",
+    "Dividend": "$0.6000"
+   },
+   {
+    "Ex-Date": "Apr 01 2013",
+    "Payable Date": "Apr 05 2013",
+    "Dividend": "$0.5924"
+   },
+   {
+    "Ex-Date": "Dec 27 2012",
+    "Payable Date": "Jan 03 2013",
+    "Dividend": "$0.7800"
+   },
+   {
+    "Ex-Date": "Oct 01 2012",
+    "Payable Date": "Oct 05 2012",
+    "Dividend": "$0.6480"
+   },
+   {
+    "Ex-Date": "Jul 02 2012",
+    "Payable Date": "Jul 09 2012",
+    "Dividend": "$0.7030"
+   },
+   {
+    "Ex-Date": "Apr 02 2012",
+    "Payable Date": "Apr 09 2012",
+    "Dividend": "$0.6270"
+   },
+   {
+    "Ex-Date": "Dec 28 2011",
+    "Payable Date": "Jan 04 2012",
+    "Dividend": "$0.6200"
+   },
+   {
+    "Ex-Date": "Oct 03 2011",
+    "Payable Date": "Oct 07 2011",
+    "Dividend": "$0.6800"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": -7.23,
+   "ytdText": "-7.23%",
+   "yr1": 2.57,
+   "yr3": 5.99,
+   "yr5": -1.54,
+   "yr10": 2.02,
+   "sinceInception": 4.21
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": -7.23,
+  "tr1y": 2.57,
+  "tr3y": 19.05,
+  "tr5y": -7.45,
+  "tr10y": 22.18,
+  "cagr3y": 5.99,
+  "cagr5y": -1.54,
+  "cagr10y": 2.02,
+  "siAnn": 4.21,
+  "dividendYield": 18.84,
+  "dividendYieldText": "18.84%",
+  "secYield": 14.6,
+  "secYieldText": "14.60%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "04 - Quarterly",
+ "providerCategory": "Equity Income",
+ "terGross": "0.43%",
+ "terGrossValue": 0.43,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 29,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4145,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 334580000,
+ "secYield": "14.60%",
+ "secYieldValue": 14.6,
+ "categoryPath": "Income > Equity Income",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MORT",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.43%",
+  "value": 0.43,
+  "gross": "0.43%",
+  "grossValue": 0.43
+ },
+ "marketPrice": {
+  "display": "$9.03",
+  "value": 9.03,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 18.84,
+  "dividendYieldText": "18.84%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": 14.6,
+  "secYieldText": "14.60%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

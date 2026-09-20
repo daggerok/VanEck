@@ -1,0 +1,198 @@
+{
+ "ticker": "DESK",
+ "name": "VanEck Office and Commercial REIT ETF",
+ "category": "Income",
+ "fundPage": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/",
+ "dataFile": "./funds/DESK/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.51%",
+ "terValue": 0.51,
+ "nav": {
+  "display": "$38.36",
+  "value": 38.36,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 38.36,
+ "aum": {
+  "display": "$6.52M",
+  "value": 6520515.68,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 6520515.68,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Sep 19 2023",
+ "exchange": "—",
+ "closePrice": "$38.34",
+ "closePriceValue": 38.34,
+ "premiumDiscount": {
+  "display": "-0.01%",
+  "value": -0.01
+ },
+ "premiumDiscountValue": -0.01,
+ "distributions": {
+  "frequency": "Quarterly",
+  "paymentsPerYear": 4,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.3645"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.6410"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.2395"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.2622"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.1713"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.3092"
+   },
+   {
+    "Ex-Date": "Dec 27 2024",
+    "Payable Date": "Dec 30 2024",
+    "Dividend": "$0.2348"
+   },
+   {
+    "Ex-Date": "Oct 01 2024",
+    "Payable Date": "Oct 04 2024",
+    "Dividend": "$0.1900"
+   },
+   {
+    "Ex-Date": "Jul 01 2024",
+    "Payable Date": "Jul 05 2024",
+    "Dividend": "$0.2328"
+   },
+   {
+    "Ex-Date": "Apr 01 2024",
+    "Payable Date": "Apr 05 2024",
+    "Dividend": "$0.1884"
+   },
+   {
+    "Ex-Date": "Dec 27 2023",
+    "Payable Date": "Dec 29 2023",
+    "Dividend": "$0.4659"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 7.54,
+   "ytdText": "7.54%",
+   "yr1": 2.42,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 9.92
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 7.54,
+  "tr1y": 2.42,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 9.92,
+  "dividendYield": 3.8,
+  "dividendYieldText": "3.80%",
+  "secYield": 4.16,
+  "secYieldText": "4.16%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "04 - Quarterly",
+ "providerCategory": "Equity Income",
+ "terGross": "0.51%",
+ "terGrossValue": 0.51,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 27,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 1096,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/fundhistoprices/)",
+  "pageCount": 2,
+  "pages": [
+   "history/001.json",
+   "history/002.json"
+  ]
+ },
+ "totalNetAssets": 6520000,
+ "secYield": "4.16%",
+ "secYieldValue": 4.16,
+ "categoryPath": "Income > Equity Income",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DESK",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.51%",
+  "value": 0.51,
+  "gross": "0.51%",
+  "grossValue": 0.51
+ },
+ "marketPrice": {
+  "display": "$38.34",
+  "value": 38.34,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 3.8,
+  "dividendYieldText": "3.80%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": 4.16,
+  "secYieldText": "4.16%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

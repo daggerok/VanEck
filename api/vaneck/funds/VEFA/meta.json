@@ -1,0 +1,143 @@
+{
+ "ticker": "VEFA",
+ "name": "VanEck MSCI EAFE Analyst Sentiment ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/",
+ "dataFile": "./funds/VEFA/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.30%",
+ "terValue": 0.3,
+ "nav": {
+  "display": "$81.77",
+  "value": 81.77,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 81.77,
+ "aum": {
+  "display": "$4.09M",
+  "value": 4088460.62,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 4088460.62,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Apr 01 2026",
+ "exchange": "—",
+ "closePrice": "$82.23",
+ "closePriceValue": 82.23,
+ "premiumDiscount": {
+  "display": "0.46%",
+  "value": 0.46
+ },
+ "premiumDiscountValue": 0.46,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.6235"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "—",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 16.27
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 16.27,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "00 - Unknown",
+ "providerCategory": "Country/Regional",
+ "terGross": "0.30%",
+ "terGrossValue": 0.3,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 110,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 171,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
+ },
+ "totalNetAssets": 4090000,
+ "categoryPath": "Equity > Country/Regional",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VEFA",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.30%",
+  "value": 0.3,
+  "gross": "0.30%",
+  "grossValue": 0.3
+ },
+ "marketPrice": {
+  "display": "$82.23",
+  "value": 82.23,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

@@ -1,0 +1,143 @@
+{
+ "ticker": "TRUC",
+ "name": "VanEck Communication Services TruSector ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/",
+ "dataFile": "./funds/TRUC/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.14%",
+ "terValue": 0.14,
+ "nav": {
+  "display": "$25.50",
+  "value": 25.5,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 25.5,
+ "aum": {
+  "display": "$66.04M",
+  "value": 66035955.88,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 66035955.88,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Feb 18 2026",
+ "exchange": "—",
+ "closePrice": "$25.48",
+ "closePriceValue": 25.48,
+ "premiumDiscount": {
+  "display": "-0.02%",
+  "value": -0.02
+ },
+ "premiumDiscountValue": -0.02,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.0574"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "—",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 0.71
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 0.71,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "00 - Unknown",
+ "providerCategory": "TruSectors",
+ "terGross": "0.14%",
+ "terGrossValue": 0.14,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 9,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 213,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
+ },
+ "totalNetAssets": 66040000.00000001,
+ "categoryPath": "Equity > TruSectors",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/TRUC",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.14%",
+  "value": 0.14,
+  "gross": "0.14%",
+  "grossValue": 0.14
+ },
+ "marketPrice": {
+  "display": "$25.48",
+  "value": 25.48,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

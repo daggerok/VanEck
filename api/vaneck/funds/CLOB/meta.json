@@ -1,0 +1,257 @@
+{
+ "ticker": "CLOB",
+ "name": "VanEck AA-BB CLO ETF",
+ "category": "Income",
+ "fundPage": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/",
+ "dataFile": "./funds/CLOB/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.45%",
+ "terValue": 0.45,
+ "nav": {
+  "display": "$50.35",
+  "value": 50.35,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 50.35,
+ "aum": {
+  "display": "$186.31M",
+  "value": 186309783.66,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 186309783.66,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Sep 24 2024",
+ "exchange": "—",
+ "closePrice": "$50.34",
+ "closePriceValue": 50.34,
+ "premiumDiscount": {
+  "display": "-0.02%",
+  "value": -0.02
+ },
+ "premiumDiscountValue": -0.02,
+ "distributions": {
+  "frequency": "Monthly",
+  "paymentsPerYear": 12,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Sep 01 2026",
+    "Payable Date": "Sep 04 2026",
+    "Dividend": "$0.2494"
+   },
+   {
+    "Ex-Date": "Aug 03 2026",
+    "Payable Date": "Aug 06 2026",
+    "Dividend": "$0.2505"
+   },
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.2517"
+   },
+   {
+    "Ex-Date": "Jun 01 2026",
+    "Payable Date": "Jun 04 2026",
+    "Dividend": "$0.2496"
+   },
+   {
+    "Ex-Date": "May 01 2026",
+    "Payable Date": "May 06 2026",
+    "Dividend": "$0.2410"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.2528"
+   },
+   {
+    "Ex-Date": "Mar 02 2026",
+    "Payable Date": "Mar 05 2026",
+    "Dividend": "$0.2321"
+   },
+   {
+    "Ex-Date": "Feb 02 2026",
+    "Payable Date": "Feb 05 2026",
+    "Dividend": "$0.2380"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.2630"
+   },
+   {
+    "Ex-Date": "Nov 28 2025",
+    "Payable Date": "Dec 03 2025",
+    "Dividend": "$0.2629"
+   },
+   {
+    "Ex-Date": "Nov 03 2025",
+    "Payable Date": "Nov 06 2025",
+    "Dividend": "$0.2836"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.2640"
+   },
+   {
+    "Ex-Date": "Sep 02 2025",
+    "Payable Date": "Sep 05 2025",
+    "Dividend": "$0.2754"
+   },
+   {
+    "Ex-Date": "Aug 01 2025",
+    "Payable Date": "Aug 06 2025",
+    "Dividend": "$0.3046"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.3049"
+   },
+   {
+    "Ex-Date": "Jun 02 2025",
+    "Payable Date": "Jun 05 2025",
+    "Dividend": "$0.2791"
+   },
+   {
+    "Ex-Date": "May 01 2025",
+    "Payable Date": "May 06 2025",
+    "Dividend": "$0.2883"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.2693"
+   },
+   {
+    "Ex-Date": "Mar 03 2025",
+    "Payable Date": "Mar 06 2025",
+    "Dividend": "$0.2042"
+   },
+   {
+    "Ex-Date": "Feb 03 2025",
+    "Payable Date": "Feb 06 2025",
+    "Dividend": "$0.2843"
+   },
+   {
+    "Ex-Date": "Dec 27 2024",
+    "Payable Date": "Dec 30 2024",
+    "Dividend": "$0.2851"
+   },
+   {
+    "Ex-Date": "Dec 02 2024",
+    "Payable Date": "Dec 05 2024",
+    "Dividend": "$0.3181"
+   },
+   {
+    "Ex-Date": "Nov 01 2024",
+    "Payable Date": "Nov 06 2024",
+    "Dividend": "$0.2296"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 3.35,
+   "ytdText": "3.35%",
+   "yr1": 5.08,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 6.72
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 3.35,
+  "tr1y": 5.08,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 6.72,
+  "dividendYield": 5.94,
+  "dividendYieldText": "5.94%",
+  "secYield": 5.72,
+  "secYieldText": "5.72%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "01 - Monthly",
+ "providerCategory": "Floating Rate",
+ "terGross": "0.45%",
+ "terGrossValue": 0.45,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 71,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 725,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
+ },
+ "totalNetAssets": 186310000,
+ "secYield": "5.72%",
+ "secYieldValue": 5.72,
+ "categoryPath": "Income > Floating Rate",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CLOB",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.45%",
+  "value": 0.45,
+  "gross": "0.45%",
+  "grossValue": 0.45
+ },
+ "marketPrice": {
+  "display": "$50.34",
+  "value": 50.34,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 5.94,
+  "dividendYieldText": "5.94%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": 5.72,
+  "secYieldText": "5.72%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

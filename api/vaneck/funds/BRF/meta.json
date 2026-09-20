@@ -1,0 +1,239 @@
+{
+ "ticker": "BRF",
+ "name": "VanEck Brazil Small-Cap ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/",
+ "dataFile": "./funds/BRF/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.60%",
+ "terValue": 0.6,
+ "nav": {
+  "display": "$16.30",
+  "value": 16.3,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 16.3,
+ "aum": {
+  "display": "$22.01M",
+  "value": 22011078.57,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 22011078.57,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 12 2009",
+ "exchange": "—",
+ "closePrice": "$16.20",
+ "closePriceValue": 16.2,
+ "premiumDiscount": {
+  "display": "-0.10%",
+  "value": -0.1
+ },
+ "premiumDiscountValue": -0.1,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.8889"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.4483"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.8824"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.5571"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.4877"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.3529"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$0.6972"
+   },
+   {
+    "Ex-Date": "Dec 27 2018",
+    "Payable Date": "Jan 03 2019",
+    "Dividend": "$0.0680"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.5110"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$1.0630"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$0.6760"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.3990"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$0.8920"
+   },
+   {
+    "Ex-Date": "Dec 27 2013",
+    "Payable Date": "Jan 03 2014",
+    "Dividend": "$0.0180"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.5300"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$0.6160"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$1.1180"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$0.7840"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$0.1990"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 0.98,
+   "ytdText": "0.98%",
+   "yr1": 7.24,
+   "yr3": 2.41,
+   "yr5": -1.82,
+   "yr10": 2.91,
+   "sinceInception": 1.44
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 0.98,
+  "tr1y": 7.24,
+  "tr3y": 7.41,
+  "tr5y": -8.76,
+  "tr10y": 33.17,
+  "cagr3y": 2.41,
+  "cagr5y": -1.82,
+  "cagr10y": 2.91,
+  "siAnn": 1.44,
+  "dividendYield": 5.45,
+  "dividendYieldText": "5.45%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Country/Regional",
+ "terGross": "1.17%",
+ "terGrossValue": 1.17,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 95,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4716,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 22010000,
+ "categoryPath": "Equity > Country/Regional",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/BRF",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.60%",
+  "value": 0.6,
+  "gross": "1.17%",
+  "grossValue": 1.17
+ },
+ "marketPrice": {
+  "display": "$16.20",
+  "value": 16.2,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 5.45,
+  "dividendYieldText": "5.45%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

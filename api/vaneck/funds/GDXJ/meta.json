@@ -1,0 +1,219 @@
+{
+ "ticker": "GDXJ",
+ "name": "VanEck Junior Gold Miners ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/",
+ "dataFile": "./funds/GDXJ/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.52%",
+ "terValue": 0.52,
+ "nav": {
+  "display": "$124.27",
+  "value": 124.27,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 124.27,
+ "aum": {
+  "display": "$9.18B",
+  "value": 9175865562.83,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 9175865562.83,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Nov 10 2009",
+ "exchange": "—",
+ "closePrice": "$124.44",
+ "closePriceValue": 124.44,
+ "premiumDiscount": {
+  "display": "0.17%",
+  "value": 0.17
+ },
+ "premiumDiscountValue": 0.17,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$2.6494"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$1.1144"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.2736"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.1825"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.7454"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.8554"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$0.1638"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.1360"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$0.0110"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.5070"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.1390"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$0.1780"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$3.0000"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$4.8480"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$11.7160"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 8.79,
+   "ytdText": "8.79%",
+   "yr1": 65.23,
+   "yr3": 55.42,
+   "yr5": 26.28,
+   "yr10": 13.57,
+   "sinceInception": 3.63
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 8.79,
+  "tr1y": 65.23,
+  "tr3y": 275.46,
+  "tr5y": 221.16,
+  "tr10y": 257.02,
+  "cagr3y": 55.42,
+  "cagr5y": 26.28,
+  "cagr10y": 13.57,
+  "siAnn": 3.63,
+  "dividendYield": 2.13,
+  "dividendYieldText": "2.13%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.52%",
+ "terGrossValue": 0.52,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 163,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4589,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 9180000000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GDXJ",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.52%",
+  "value": 0.52,
+  "gross": "0.52%",
+  "grossValue": 0.52
+ },
+ "marketPrice": {
+  "display": "$124.44",
+  "value": 124.44,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 2.13,
+  "dividendYieldText": "2.13%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

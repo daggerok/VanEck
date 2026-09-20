@@ -1,0 +1,247 @@
+{
+ "ticker": "EVX",
+ "name": "VanEck Environmental Services ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/",
+ "dataFile": "./funds/EVX/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.55%",
+ "terValue": 0.55,
+ "nav": {
+  "display": "$39.43",
+  "value": 39.43,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 39.43,
+ "aum": {
+  "display": "$96.80M",
+  "value": 96797184.08,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 96797184.08,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Oct 10 2006",
+ "exchange": "—",
+ "closePrice": "$39.48",
+ "closePriceValue": 39.48,
+ "premiumDiscount": {
+  "display": "0.05%",
+  "value": 0.05
+ },
+ "premiumDiscountValue": 0.05,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.0714"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.1591"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.2900"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.1118"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.0741"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.0781"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$0.0943"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.0634"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$0.1550"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$0.1062"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.1360"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$0.2104"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.1500"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$0.1576"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$0.1240"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$0.1000"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$0.0752"
+   },
+   {
+    "Ex-Date": "Dec 26 2008",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$0.0730"
+   },
+   {
+    "Ex-Date": "Dec 24 2007",
+    "Payable Date": "Dec 31 2007",
+    "Dividend": "$0.1080"
+   },
+   {
+    "Ex-Date": "Dec 21 2006",
+    "Payable Date": "Dec 29 2006",
+    "Dividend": "$0.0100"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 3.25,
+   "ytdText": "3.25%",
+   "yr1": 1.92,
+   "yr3": 9.95,
+   "yr5": 6.98,
+   "yr10": 11.85,
+   "sinceInception": 9.37
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 3.25,
+  "tr1y": 1.92,
+  "tr3y": 32.91,
+  "tr5y": 40.09,
+  "tr10y": 206.31,
+  "cagr3y": 9.95,
+  "cagr5y": 6.98,
+  "cagr10y": 11.85,
+  "siAnn": 9.37,
+  "dividendYield": 0.18,
+  "dividendYieldText": "0.18%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Equity Thematic",
+ "terGross": "0.62%",
+ "terGrossValue": 0.62,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 30,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 7284,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/)",
+  "pageCount": 8,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json",
+   "history/006.json",
+   "history/007.json",
+   "history/008.json"
+  ]
+ },
+ "totalNetAssets": 96800000,
+ "categoryPath": "Equity > Equity Thematic",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/EVX",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.55%",
+  "value": 0.55,
+  "gross": "0.62%",
+  "grossValue": 0.62
+ },
+ "marketPrice": {
+  "display": "$39.48",
+  "value": 39.48,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 0.18,
+  "dividendYieldText": "0.18%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

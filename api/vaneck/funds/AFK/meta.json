@@ -1,0 +1,229 @@
+{
+ "ticker": "AFK",
+ "name": "VanEck Africa Index ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/",
+ "dataFile": "./funds/AFK/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.76%",
+ "terValue": 0.76,
+ "nav": {
+  "display": "$28.64",
+  "value": 28.64,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 28.64,
+ "aum": {
+  "display": "$103.12M",
+  "value": 103116297.64,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 103116297.64,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Jul 10 2008",
+ "exchange": "—",
+ "closePrice": "$28.98",
+ "closePriceValue": 28.98,
+ "premiumDiscount": {
+  "display": "0.34%",
+  "value": 0.34
+ },
+ "premiumDiscountValue": 0.34,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.2716"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.3136"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.5759"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.8390"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.7960"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$1.2858"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.3360"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$0.4940"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$0.5280"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.3850"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$0.7570"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.8290"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$1.0630"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$0.9710"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$0.3840"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$0.2290"
+   },
+   {
+    "Ex-Date": "Dec 26 2008",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$0.1900"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 9.46,
+   "ytdText": "9.46%",
+   "yr1": 33.92,
+   "yr3": 26.8,
+   "yr5": 8.45,
+   "yr10": 6.57,
+   "sinceInception": 0.71
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 9.46,
+  "tr1y": 33.92,
+  "tr3y": 103.88,
+  "tr5y": 50.02,
+  "tr10y": 89.01,
+  "cagr3y": 26.8,
+  "cagr5y": 8.45,
+  "cagr10y": 6.57,
+  "siAnn": 0.71,
+  "dividendYield": 0.95,
+  "dividendYieldText": "0.95%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Country/Regional",
+ "terGross": "0.76%",
+ "terGrossValue": 0.76,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 83,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4927,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 103120000,
+ "categoryPath": "Equity > Country/Regional",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/AFK",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.76%",
+  "value": 0.76,
+  "gross": "0.76%",
+  "grossValue": 0.76
+ },
+ "marketPrice": {
+  "display": "$28.98",
+  "value": 28.98,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 0.95,
+  "dividendYieldText": "0.95%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

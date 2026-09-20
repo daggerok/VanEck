@@ -1,0 +1,137 @@
+{
+ "ticker": "TRUM",
+ "name": "VanEck Materials TruSector ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/",
+ "dataFile": "./funds/TRUM/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.15%",
+ "terValue": 0.15,
+ "nav": {
+  "display": "$24.71",
+  "value": 24.71,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 24.71,
+ "aum": {
+  "display": "$247113.67",
+  "value": 247113.67,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 247113.67,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Jul 07 2026",
+ "exchange": "—",
+ "closePrice": "$24.71",
+ "closePriceValue": 24.71,
+ "premiumDiscount": {
+  "display": "0.00%",
+  "value": 0
+ },
+ "premiumDiscountValue": 0,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "—",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 2.86
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 2.86,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "00 - Unknown",
+ "providerCategory": "TruSectors",
+ "terGross": "0.15%",
+ "terGrossValue": 0.15,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 28,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 74,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
+ },
+ "totalNetAssets": 247.11,
+ "categoryPath": "Equity > TruSectors",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/TRUM",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/materials-trusector-etf-trum/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.15%",
+  "value": 0.15,
+  "gross": "0.15%",
+  "grossValue": 0.15
+ },
+ "marketPrice": {
+  "display": "$24.71",
+  "value": 24.71,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

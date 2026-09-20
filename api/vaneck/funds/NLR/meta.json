@@ -1,0 +1,235 @@
+{
+ "ticker": "NLR",
+ "name": "VanEck Uranium and Nuclear Energy ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/",
+ "dataFile": "./funds/NLR/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.52%",
+ "terValue": 0.52,
+ "nav": {
+  "display": "$108.33",
+  "value": 108.33,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 108.33,
+ "aum": {
+  "display": "$3.74B",
+  "value": 3741929200.8,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 3741929200.8,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Aug 13 2007",
+ "exchange": "—",
+ "closePrice": "$107.69",
+ "closePriceValue": 107.69,
+ "premiumDiscount": {
+  "display": "-0.64%",
+  "value": -0.64
+ },
+ "premiumDiscountValue": -0.64,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$3.1661"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.6142"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$3.2580"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$1.1093"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$1.0910"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$1.0964"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$1.1787"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$1.9360"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$2.3820"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.7190"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$1.4860"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$1.2730"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.3330"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$1.8960"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$5.7960"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$3.1920"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$1.2540"
+   },
+   {
+    "Ex-Date": "Dec 24 2007",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$5.8350"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": -12.37,
+   "ytdText": "-12.37%",
+   "yr1": 2.34,
+   "yr3": 25.92,
+   "yr5": 19.89,
+   "yr10": 12.52,
+   "sinceInception": 3.25
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": -12.37,
+  "tr1y": 2.34,
+  "tr3y": 99.67,
+  "tr5y": 147.65,
+  "tr10y": 225.35,
+  "cagr3y": 25.92,
+  "cagr5y": 19.89,
+  "cagr10y": 12.52,
+  "siAnn": 3.25,
+  "dividendYield": 2.92,
+  "dividendYieldText": "2.92%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.52%",
+ "terGrossValue": 0.52,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 29,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 5156,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/fundhistoprices/)",
+  "pageCount": 6,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json",
+   "history/006.json"
+  ]
+ },
+ "totalNetAssets": 3740000000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/NLR",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.52%",
+  "value": 0.52,
+  "gross": "0.52%",
+  "grossValue": 0.52
+ },
+ "marketPrice": {
+  "display": "$107.69",
+  "value": 107.69,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 2.92,
+  "dividendYieldText": "2.92%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

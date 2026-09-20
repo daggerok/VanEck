@@ -1,0 +1,393 @@
+{
+ "ticker": "CLOI",
+ "name": "VanEck CLO ETF",
+ "category": "Income",
+ "fundPage": "https://www.vaneck.com/us/en/investments/clo-etf-cloi/",
+ "dataFile": "./funds/CLOI/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.36%",
+ "terValue": 0.36,
+ "nav": {
+  "display": "$52.90",
+  "value": 52.9,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 52.9,
+ "aum": {
+  "display": "$1.65B",
+  "value": 1650602987.74,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 1650602987.74,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Jun 21 2022",
+ "exchange": "—",
+ "closePrice": "$52.94",
+ "closePriceValue": 52.94,
+ "premiumDiscount": {
+  "display": "0.04%",
+  "value": 0.04
+ },
+ "premiumDiscountValue": 0.04,
+ "distributions": {
+  "frequency": "Monthly",
+  "paymentsPerYear": 12,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Sep 01 2026",
+    "Payable Date": "Sep 04 2026",
+    "Dividend": "$0.2247"
+   },
+   {
+    "Ex-Date": "Aug 03 2026",
+    "Payable Date": "Aug 06 2026",
+    "Dividend": "$0.2153"
+   },
+   {
+    "Ex-Date": "Jul 01 2026",
+    "Payable Date": "Jul 07 2026",
+    "Dividend": "$0.2051"
+   },
+   {
+    "Ex-Date": "Jun 01 2026",
+    "Payable Date": "Jun 04 2026",
+    "Dividend": "$0.2234"
+   },
+   {
+    "Ex-Date": "May 01 2026",
+    "Payable Date": "May 06 2026",
+    "Dividend": "$0.2185"
+   },
+   {
+    "Ex-Date": "Apr 01 2026",
+    "Payable Date": "Apr 07 2026",
+    "Dividend": "$0.2216"
+   },
+   {
+    "Ex-Date": "Mar 02 2026",
+    "Payable Date": "Mar 05 2026",
+    "Dividend": "$0.2002"
+   },
+   {
+    "Ex-Date": "Feb 02 2026",
+    "Payable Date": "Feb 05 2026",
+    "Dividend": "$0.2334"
+   },
+   {
+    "Ex-Date": "Dec 29 2025",
+    "Payable Date": "Dec 31 2025",
+    "Dividend": "$0.2332"
+   },
+   {
+    "Ex-Date": "Nov 28 2025",
+    "Payable Date": "Dec 03 2025",
+    "Dividend": "$0.2279"
+   },
+   {
+    "Ex-Date": "Nov 03 2025",
+    "Payable Date": "Nov 06 2025",
+    "Dividend": "$0.2454"
+   },
+   {
+    "Ex-Date": "Oct 01 2025",
+    "Payable Date": "Oct 06 2025",
+    "Dividend": "$0.2416"
+   },
+   {
+    "Ex-Date": "Sep 02 2025",
+    "Payable Date": "Sep 05 2025",
+    "Dividend": "$0.2502"
+   },
+   {
+    "Ex-Date": "Aug 01 2025",
+    "Payable Date": "Aug 06 2025",
+    "Dividend": "$0.2486"
+   },
+   {
+    "Ex-Date": "Jul 01 2025",
+    "Payable Date": "Jul 07 2025",
+    "Dividend": "$0.2431"
+   },
+   {
+    "Ex-Date": "Jun 02 2025",
+    "Payable Date": "Jun 05 2025",
+    "Dividend": "$0.2617"
+   },
+   {
+    "Ex-Date": "May 01 2025",
+    "Payable Date": "May 06 2025",
+    "Dividend": "$0.2359"
+   },
+   {
+    "Ex-Date": "Apr 01 2025",
+    "Payable Date": "Apr 04 2025",
+    "Dividend": "$0.2596"
+   },
+   {
+    "Ex-Date": "Mar 03 2025",
+    "Payable Date": "Mar 06 2025",
+    "Dividend": "$0.2175"
+   },
+   {
+    "Ex-Date": "Feb 03 2025",
+    "Payable Date": "Feb 06 2025",
+    "Dividend": "$0.2612"
+   },
+   {
+    "Ex-Date": "Dec 27 2024",
+    "Payable Date": "Dec 30 2024",
+    "Dividend": "$0.2782"
+   },
+   {
+    "Ex-Date": "Dec 02 2024",
+    "Payable Date": "Dec 05 2024",
+    "Dividend": "$0.2520"
+   },
+   {
+    "Ex-Date": "Nov 01 2024",
+    "Payable Date": "Nov 06 2024",
+    "Dividend": "$0.2643"
+   },
+   {
+    "Ex-Date": "Oct 01 2024",
+    "Payable Date": "Oct 04 2024",
+    "Dividend": "$0.2620"
+   },
+   {
+    "Ex-Date": "Sep 03 2024",
+    "Payable Date": "Sep 06 2024",
+    "Dividend": "$0.3091"
+   },
+   {
+    "Ex-Date": "Aug 01 2024",
+    "Payable Date": "Aug 06 2024",
+    "Dividend": "$0.2840"
+   },
+   {
+    "Ex-Date": "Jul 01 2024",
+    "Payable Date": "Jul 05 2024",
+    "Dividend": "$0.3120"
+   },
+   {
+    "Ex-Date": "Jun 03 2024",
+    "Payable Date": "Jun 06 2024",
+    "Dividend": "$0.2947"
+   },
+   {
+    "Ex-Date": "May 01 2024",
+    "Payable Date": "May 07 2024",
+    "Dividend": "$0.2747"
+   },
+   {
+    "Ex-Date": "Apr 01 2024",
+    "Payable Date": "Apr 05 2024",
+    "Dividend": "$0.2971"
+   },
+   {
+    "Ex-Date": "Mar 01 2024",
+    "Payable Date": "Mar 07 2024",
+    "Dividend": "$0.2635"
+   },
+   {
+    "Ex-Date": "Feb 01 2024",
+    "Payable Date": "Feb 07 2024",
+    "Dividend": "$0.3305"
+   },
+   {
+    "Ex-Date": "Dec 27 2023",
+    "Payable Date": "Dec 29 2023",
+    "Dividend": "$0.2648"
+   },
+   {
+    "Ex-Date": "Dec 01 2023",
+    "Payable Date": "Dec 07 2023",
+    "Dividend": "$0.2235"
+   },
+   {
+    "Ex-Date": "Nov 01 2023",
+    "Payable Date": "Nov 07 2023",
+    "Dividend": "$0.2518"
+   },
+   {
+    "Ex-Date": "Oct 02 2023",
+    "Payable Date": "Oct 06 2023",
+    "Dividend": "$0.2317"
+   },
+   {
+    "Ex-Date": "Sep 01 2023",
+    "Payable Date": "Sep 08 2023",
+    "Dividend": "$0.2816"
+   },
+   {
+    "Ex-Date": "Aug 01 2023",
+    "Payable Date": "Aug 10 2023",
+    "Dividend": "$0.2327"
+   },
+   {
+    "Ex-Date": "Jul 03 2023",
+    "Payable Date": "Jul 07 2023",
+    "Dividend": "$0.2399"
+   },
+   {
+    "Ex-Date": "Jun 01 2023",
+    "Payable Date": "Jun 07 2023",
+    "Dividend": "$0.2728"
+   },
+   {
+    "Ex-Date": "May 01 2023",
+    "Payable Date": "May 05 2023",
+    "Dividend": "$0.2189"
+   },
+   {
+    "Ex-Date": "Apr 03 2023",
+    "Payable Date": "Apr 10 2023",
+    "Dividend": "$0.2505"
+   },
+   {
+    "Ex-Date": "Mar 01 2023",
+    "Payable Date": "Mar 07 2023",
+    "Dividend": "$0.1732"
+   },
+   {
+    "Ex-Date": "Feb 01 2023",
+    "Payable Date": "Feb 07 2023",
+    "Dividend": "$0.2848"
+   },
+   {
+    "Ex-Date": "Dec 28 2022",
+    "Payable Date": "Dec 30 2022",
+    "Dividend": "$0.2144"
+   },
+   {
+    "Ex-Date": "Dec 01 2022",
+    "Payable Date": "Dec 07 2022",
+    "Dividend": "$0.2351"
+   },
+   {
+    "Ex-Date": "Nov 01 2022",
+    "Payable Date": "Nov 07 2022",
+    "Dividend": "$0.1815"
+   },
+   {
+    "Ex-Date": "Oct 03 2022",
+    "Payable Date": "Oct 07 2022",
+    "Dividend": "$0.1623"
+   },
+   {
+    "Ex-Date": "Sep 01 2022",
+    "Payable Date": "Sep 08 2022",
+    "Dividend": "$0.1830"
+   },
+   {
+    "Ex-Date": "Aug 01 2022",
+    "Payable Date": "Aug 05 2022",
+    "Dividend": "$0.1520"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 3.62,
+   "ytdText": "3.62%",
+   "yr1": 5.25,
+   "yr3": 6.71,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 7.14
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 3.62,
+  "tr1y": 5.25,
+  "tr3y": 21.52,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": 6.71,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 7.14,
+  "dividendYield": 5.1,
+  "dividendYieldText": "5.10%",
+  "secYield": 4.98,
+  "secYieldText": "4.98%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "01 - Monthly",
+ "providerCategory": "Floating Rate",
+ "terGross": "0.36%",
+ "terGrossValue": 0.36,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 176,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 1416,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/fundhistoprices/)",
+  "pageCount": 2,
+  "pages": [
+   "history/001.json",
+   "history/002.json"
+  ]
+ },
+ "totalNetAssets": 1650000000,
+ "secYield": "4.98%",
+ "secYieldValue": 4.98,
+ "categoryPath": "Income > Floating Rate",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/clo-etf-cloi/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CLOI",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.36%",
+  "value": 0.36,
+  "gross": "0.36%",
+  "grossValue": 0.36
+ },
+ "marketPrice": {
+  "display": "$52.94",
+  "value": 52.94,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 5.1,
+  "dividendYieldText": "5.10%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": 4.98,
+  "secYieldText": "4.98%",
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

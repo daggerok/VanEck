@@ -1,0 +1,214 @@
+{
+ "ticker": "OIH",
+ "name": "VanEck Oil Services ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/oil-services-etf-oih/",
+ "dataFile": "./funds/OIH/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.35%",
+ "terValue": 0.35,
+ "nav": {
+  "display": "$398.46",
+  "value": 398.46,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 398.46,
+ "aum": {
+  "display": "$2.07B",
+  "value": 2072200311.75,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 2072200311.75,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Dec 20 2011",
+ "exchange": "—",
+ "closePrice": "$398.71",
+ "closePriceValue": 398.71,
+ "premiumDiscount": {
+  "display": "0.25%",
+  "value": 0.25
+ },
+ "premiumDiscountValue": 0.25,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$4.8690"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$5.4394"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$4.2235"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$2.8887"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$1.8075"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$1.8911"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$5.8100"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$5.9800"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$13.5598"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$9.3198"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$12.6598"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$17.1000"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$10.8398"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$8.0598"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 40.07,
+   "ytdText": "40.07%",
+   "yr1": 69.9,
+   "yr3": 9.84,
+   "yr5": 19.89,
+   "yr10": -0.91,
+   "sinceInception": -2.29
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 40.07,
+  "tr1y": 69.9,
+  "tr3y": 32.54,
+  "tr5y": 147.7,
+  "tr10y": -8.77,
+  "cagr3y": 9.84,
+  "cagr5y": 19.89,
+  "cagr10y": -0.91,
+  "siAnn": -2.29,
+  "dividendYield": 1.22,
+  "dividendYieldText": "1.22%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.35%",
+ "terGrossValue": 0.35,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 27,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 4057,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
+ },
+ "totalNetAssets": 2069999999.9999998,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/oil-services-etf-oih/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/OIH",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.35%",
+  "value": 0.35,
+  "gross": "0.35%",
+  "grossValue": 0.35
+ },
+ "marketPrice": {
+  "display": "$398.71",
+  "value": 398.71,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 1.22,
+  "dividendYieldText": "1.22%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

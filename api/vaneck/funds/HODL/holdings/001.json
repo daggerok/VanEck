@@ -1,0 +1,38 @@
+{
+ "ticker": "HODL",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 2,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Bitcoin",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "14,768",
+   "Asset Category": "",
+   "Market Value": "$1,129,920,845.73",
+   "Notional Value": "",
+   "Weight": "100.01%"
+  },
+  {
+   "Name": "Other Cash And Liabilities",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "",
+   "Market Value": "$-108,678.07",
+   "Notional Value": "",
+   "Weight": "-0.01%"
+  }
+ ]
+}

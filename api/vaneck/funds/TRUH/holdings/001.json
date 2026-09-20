@@ -1,0 +1,638 @@
+{
+ "ticker": "TRUH",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 62,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Eli Lilly & Co",
+   "Ticker": "LLY",
+   "Identifier": "BBG000BNBDC2",
+   "Shares Held": "77",
+   "Asset Category": "Stock",
+   "Market Value": "$88,737.88",
+   "Notional Value": "",
+   "Weight": "15.07%"
+  },
+  {
+   "Name": "Johnson & Johnson",
+   "Ticker": "JNJ",
+   "Identifier": "BBG000BMHYD1",
+   "Shares Held": "233",
+   "Asset Category": "Stock",
+   "Market Value": "$62,961.26",
+   "Notional Value": "",
+   "Weight": "10.69%"
+  },
+  {
+   "Name": "Abbvie Inc",
+   "Ticker": "ABBV",
+   "Identifier": "BBG0025Y4RY4",
+   "Shares Held": "171",
+   "Asset Category": "Stock",
+   "Market Value": "$45,147.42",
+   "Notional Value": "",
+   "Weight": "7.67%"
+  },
+  {
+   "Name": "Merck & Co Inc",
+   "Ticker": "MRK",
+   "Identifier": "BBG000BPD168",
+   "Shares Held": "239",
+   "Asset Category": "Stock",
+   "Market Value": "$35,168.85",
+   "Notional Value": "",
+   "Weight": "5.97%"
+  },
+  {
+   "Name": "Unitedhealth Group Inc",
+   "Ticker": "UNH",
+   "Identifier": "BBG000CH5208",
+   "Shares Held": "88",
+   "Asset Category": "Stock",
+   "Market Value": "$33,018.48",
+   "Notional Value": "",
+   "Weight": "5.61%"
+  },
+  {
+   "Name": "Thermo Fisher Scientific Inc",
+   "Ticker": "TMO",
+   "Identifier": "BBG000BVDLH9",
+   "Shares Held": "36",
+   "Asset Category": "Stock",
+   "Market Value": "$23,699.52",
+   "Notional Value": "",
+   "Weight": "4.02%"
+  },
+  {
+   "Name": "Amgen Inc",
+   "Ticker": "AMGN",
+   "Identifier": "BBG000BBS2Y0",
+   "Shares Held": "52",
+   "Asset Category": "Stock",
+   "Market Value": "$19,748.56",
+   "Notional Value": "",
+   "Weight": "3.35%"
+  },
+  {
+   "Name": "Gilead Sciences Inc",
+   "Ticker": "GILD",
+   "Identifier": "BBG000CKGBP2",
+   "Shares Held": "121",
+   "Asset Category": "Stock",
+   "Market Value": "$18,257.69",
+   "Notional Value": "",
+   "Weight": "3.10%"
+  },
+  {
+   "Name": "Abbott Laboratories",
+   "Ticker": "ABT",
+   "Identifier": "BBG000B9ZXB4",
+   "Shares Held": "169",
+   "Asset Category": "Stock",
+   "Market Value": "$17,276.87",
+   "Notional Value": "",
+   "Weight": "2.93%"
+  },
+  {
+   "Name": "Pfizer Inc",
+   "Ticker": "PFE",
+   "Identifier": "BBG000BR2B91",
+   "Shares Held": "553",
+   "Asset Category": "Stock",
+   "Market Value": "$15,284.92",
+   "Notional Value": "",
+   "Weight": "2.60%"
+  },
+  {
+   "Name": "Intuitive Surgical Inc",
+   "Ticker": "ISRG",
+   "Identifier": "BBG000BJPDZ1",
+   "Shares Held": "35",
+   "Asset Category": "Stock",
+   "Market Value": "$13,423.90",
+   "Notional Value": "",
+   "Weight": "2.28%"
+  },
+  {
+   "Name": "Danaher Corp",
+   "Ticker": "DHR",
+   "Identifier": "BBG000BH3JF8",
+   "Shares Held": "61",
+   "Asset Category": "Stock",
+   "Market Value": "$12,962.50",
+   "Notional Value": "",
+   "Weight": "2.20%"
+  },
+  {
+   "Name": "Vertex Pharmaceuticals Inc",
+   "Ticker": "VRTX",
+   "Identifier": "BBG000C1S2X2",
+   "Shares Held": "25",
+   "Asset Category": "Stock",
+   "Market Value": "$12,908.50",
+   "Notional Value": "",
+   "Weight": "2.19%"
+  },
+  {
+   "Name": "Bristol-Myers Squibb Co",
+   "Ticker": "BMY",
+   "Identifier": "BBG000DQLV23",
+   "Shares Held": "198",
+   "Asset Category": "Stock",
+   "Market Value": "$12,442.32",
+   "Notional Value": "",
+   "Weight": "2.11%"
+  },
+  {
+   "Name": "Medtronic Plc",
+   "Ticker": "MDT",
+   "Identifier": "BBG000BNWG87",
+   "Shares Held": "125",
+   "Asset Category": "Stock",
+   "Market Value": "$11,596.25",
+   "Notional Value": "",
+   "Weight": "1.97%"
+  },
+  {
+   "Name": "Cvs Health Corp",
+   "Ticker": "CVS",
+   "Identifier": "BBG000BGRY34",
+   "Shares Held": "124",
+   "Asset Category": "Stock",
+   "Market Value": "$11,193.48",
+   "Notional Value": "",
+   "Weight": "1.90%"
+  },
+  {
+   "Name": "Mckesson Corp",
+   "Ticker": "MCK",
+   "Identifier": "BBG000DYGNW7",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$9,675.27",
+   "Notional Value": "",
+   "Weight": "1.64%"
+  },
+  {
+   "Name": "Stryker Corp",
+   "Ticker": "SYK",
+   "Identifier": "BBG000DN7P92",
+   "Shares Held": "33",
+   "Asset Category": "Stock",
+   "Market Value": "$9,244.29",
+   "Notional Value": "",
+   "Weight": "1.57%"
+  },
+  {
+   "Name": "Elevance Health Inc",
+   "Ticker": "ELV",
+   "Identifier": "BBG000BCG930",
+   "Shares Held": "21",
+   "Asset Category": "Stock",
+   "Market Value": "$8,699.46",
+   "Notional Value": "",
+   "Weight": "1.48%"
+  },
+  {
+   "Name": "Regeneron Pharmaceuticals Inc",
+   "Ticker": "REGN",
+   "Identifier": "BBG000C734W3",
+   "Shares Held": "10",
+   "Asset Category": "Stock",
+   "Market Value": "$7,894.50",
+   "Notional Value": "",
+   "Weight": "1.34%"
+  },
+  {
+   "Name": "Cigna Group/The",
+   "Ticker": "CI",
+   "Identifier": "BBG00KXRCDP0",
+   "Shares Held": "25",
+   "Asset Category": "Stock",
+   "Market Value": "$6,900.00",
+   "Notional Value": "",
+   "Weight": "1.17%"
+  },
+  {
+   "Name": "Hca Healthcare Inc",
+   "Ticker": "HCA",
+   "Identifier": "BBG000QW7VC1",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$6,435.60",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "Boston Scientific Corp",
+   "Ticker": "BSX",
+   "Identifier": "BBG000C0LW92",
+   "Shares Held": "144",
+   "Asset Category": "Stock",
+   "Market Value": "$6,271.20",
+   "Notional Value": "",
+   "Weight": "1.06%"
+  },
+  {
+   "Name": "Cencora Inc",
+   "Ticker": "COR",
+   "Identifier": "BBG000MDCQC2",
+   "Shares Held": "19",
+   "Asset Category": "Stock",
+   "Market Value": "$5,878.79",
+   "Notional Value": "",
+   "Weight": "1.00%"
+  },
+  {
+   "Name": "Moderna Inc",
+   "Ticker": "MRNA",
+   "Identifier": "BBG003PHHZT1",
+   "Shares Held": "34",
+   "Asset Category": "Stock",
+   "Market Value": "$5,374.38",
+   "Notional Value": "",
+   "Weight": "0.91%"
+  },
+  {
+   "Name": "Cardinal Health Inc",
+   "Ticker": "CAH",
+   "Identifier": "BBG000D898T9",
+   "Shares Held": "23",
+   "Asset Category": "Stock",
+   "Market Value": "$5,205.82",
+   "Notional Value": "",
+   "Weight": "0.88%"
+  },
+  {
+   "Name": "Edwards Lifesciences Corp",
+   "Ticker": "EW",
+   "Identifier": "BBG000BRXP69",
+   "Shares Held": "56",
+   "Asset Category": "Stock",
+   "Market Value": "$4,942.00",
+   "Notional Value": "",
+   "Weight": "0.84%"
+  },
+  {
+   "Name": "Becton Dickinson & Co",
+   "Ticker": "BDX",
+   "Identifier": "BBG000BCZYD3",
+   "Shares Held": "27",
+   "Asset Category": "Stock",
+   "Market Value": "$4,897.26",
+   "Notional Value": "",
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Iqvia Holdings Inc",
+   "Ticker": "IQV",
+   "Identifier": "BBG00333FYS2",
+   "Shares Held": "16",
+   "Asset Category": "Stock",
+   "Market Value": "$4,311.04",
+   "Notional Value": "",
+   "Weight": "0.73%"
+  },
+  {
+   "Name": "Humana Inc",
+   "Ticker": "HUM",
+   "Identifier": "BBG000BLKK03",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$4,229.72",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "Agilent Technologies Inc",
+   "Ticker": "A",
+   "Identifier": "BBG000C2V3D6",
+   "Shares Held": "27",
+   "Asset Category": "Stock",
+   "Market Value": "$4,221.18",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "Veeva Systems Inc",
+   "Ticker": "VEEV",
+   "Identifier": "BBG001CGB489",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$3,956.25",
+   "Notional Value": "",
+   "Weight": "0.67%"
+  },
+  {
+   "Name": "Waters Corp",
+   "Ticker": "WAT",
+   "Identifier": "BBG000FQRVM3",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$3,867.48",
+   "Notional Value": "",
+   "Weight": "0.66%"
+  },
+  {
+   "Name": "Idexx Laboratories Inc",
+   "Ticker": "IDXX",
+   "Identifier": "BBG000BLRT07",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$3,545.36",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "Dexcom Inc",
+   "Ticker": "DXCM",
+   "Identifier": "BBG000QTF8K1",
+   "Shares Held": "37",
+   "Asset Category": "Stock",
+   "Market Value": "$3,253.41",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "Resmed Inc",
+   "Ticker": "RMD",
+   "Identifier": "BBG000L4M7F1",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$3,197.88",
+   "Notional Value": "",
+   "Weight": "0.54%"
+  },
+  {
+   "Name": "Biogen Inc",
+   "Ticker": "BIIB",
+   "Identifier": "BBG000C17X76",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$3,066.70",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Centene Corp",
+   "Ticker": "CNC",
+   "Identifier": "BBG000BDXCJ5",
+   "Shares Held": "45",
+   "Asset Category": "Stock",
+   "Market Value": "$3,019.50",
+   "Notional Value": "",
+   "Weight": "0.51%"
+  },
+  {
+   "Name": "Zoetis Inc",
+   "Ticker": "ZTS",
+   "Identifier": "BBG0039320N9",
+   "Shares Held": "41",
+   "Asset Category": "Stock",
+   "Market Value": "$2,993.82",
+   "Notional Value": "",
+   "Weight": "0.51%"
+  },
+  {
+   "Name": "Ge Healthcare Technologies Inc",
+   "Ticker": "GEHC",
+   "Identifier": "BBG01BFR8YV1",
+   "Shares Held": "44",
+   "Asset Category": "Stock",
+   "Market Value": "$2,835.58",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Mettler-Toledo International Inc",
+   "Ticker": "MTD",
+   "Identifier": "BBG000BZCKH3",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$2,820.88",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Quest Diagnostics Inc",
+   "Ticker": "DGX",
+   "Identifier": "BBG000BN84F3",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$2,721.95",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Labcorp Holdings Inc",
+   "Ticker": "LH",
+   "Identifier": "BBG01MMT6PL7",
+   "Shares Held": "8",
+   "Asset Category": "Stock",
+   "Market Value": "$2,581.84",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "West Pharmaceutical Services Inc",
+   "Ticker": "WST",
+   "Identifier": "BBG000BX24N8",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$2,566.20",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Incyte Corp",
+   "Ticker": "INCY",
+   "Identifier": "BBG000BNPSQ9",
+   "Shares Held": "16",
+   "Asset Category": "Stock",
+   "Market Value": "$2,041.92",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Viatris Inc",
+   "Ticker": "VTRS",
+   "Identifier": "BBG00Y4RQNH4",
+   "Shares Held": "113",
+   "Asset Category": "Stock",
+   "Market Value": "$1,935.69",
+   "Notional Value": "",
+   "Weight": "0.33%"
+  },
+  {
+   "Name": "Steris Plc",
+   "Ticker": "STE",
+   "Identifier": "BBG00MRHG523",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$1,872.36",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Zimmer Biomet Holdings Inc",
+   "Ticker": "ZBH",
+   "Identifier": "BBG000BKPL53",
+   "Shares Held": "19",
+   "Asset Category": "Stock",
+   "Market Value": "$1,790.75",
+   "Notional Value": "",
+   "Weight": "0.30%"
+  },
+  {
+   "Name": "Revvity Inc",
+   "Ticker": "RVTY",
+   "Identifier": "BBG000FXW512",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$1,614.03",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Charles River Laboratories Internationa",
+   "Ticker": "CRL",
+   "Identifier": "BBG000BG5BL8",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$1,408.35",
+   "Notional Value": "",
+   "Weight": "0.24%"
+  },
+  {
+   "Name": "Solventum Corp",
+   "Ticker": "SOLV",
+   "Identifier": "BBG018YZH6T3",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$1,225.42",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Baxter International Inc",
+   "Ticker": "BAX",
+   "Identifier": "BBG000BCVJ77",
+   "Shares Held": "50",
+   "Asset Category": "Stock",
+   "Market Value": "$1,151.00",
+   "Notional Value": "",
+   "Weight": "0.20%"
+  },
+  {
+   "Name": "Bio-Techne Corp",
+   "Ticker": "TECH",
+   "Identifier": "BBG000C15114",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$1,086.15",
+   "Notional Value": "",
+   "Weight": "0.18%"
+  },
+  {
+   "Name": "Align Technology Inc",
+   "Ticker": "ALGN",
+   "Identifier": "BBG000BRNLL2",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$1,047.97",
+   "Notional Value": "",
+   "Weight": "0.18%"
+  },
+  {
+   "Name": "Cooper Cos Inc/The",
+   "Ticker": "COO",
+   "Identifier": "BBG000BG3445",
+   "Shares Held": "19",
+   "Asset Category": "Stock",
+   "Market Value": "$1,021.73",
+   "Notional Value": "",
+   "Weight": "0.17%"
+  },
+  {
+   "Name": "Insulet Corp",
+   "Ticker": "PODD",
+   "Identifier": "BBG000R7XX87",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$990.85",
+   "Notional Value": "",
+   "Weight": "0.17%"
+  },
+  {
+   "Name": "Universal Health Services Inc",
+   "Ticker": "UHS",
+   "Identifier": "BBG000CB8Q50",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$903.75",
+   "Notional Value": "",
+   "Weight": "0.15%"
+  },
+  {
+   "Name": "Henry Schein Inc",
+   "Ticker": "HSIC",
+   "Identifier": "BBG000BNMMJ3",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$765.36",
+   "Notional Value": "",
+   "Weight": "0.13%"
+  },
+  {
+   "Name": "Davita Inc",
+   "Ticker": "DVA",
+   "Identifier": "BBG000MQ1SN9",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$549.27",
+   "Notional Value": "",
+   "Weight": "0.09%"
+  },
+  {
+   "Name": "Tpg Inc",
+   "Ticker": "2602335D",
+   "Identifier": "BBG01Y2F01K3",
+   "Shares Held": "22",
+   "Asset Category": "Stock",
+   "Market Value": "$.22",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "429",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$429.30",
+   "Notional Value": "",
+   "Weight": "0.07%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$637.52",
+   "Notional Value": "",
+   "Weight": "0.11%"
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "ticker": "TRUC",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 9,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "State Street Communication Services Sel",
+   "Ticker": "XLC",
+   "Identifier": "BBG00L5F9F38",
+   "Shares Held": "387,701",
+   "Asset Category": "Stock",
+   "Market Value": "$43,558,207.35",
+   "Notional Value": "",
+   "Weight": "65.24%"
+  },
+  {
+   "Name": "Alphabet Inc",
+   "Ticker": "GOOGL",
+   "Identifier": "BBG009S39JX6",
+   "Shares Held": "27,173",
+   "Asset Category": "Stock",
+   "Market Value": "$9,437,998.09",
+   "Notional Value": "",
+   "Weight": "14.14%"
+  },
+  {
+   "Name": "Alphabet Inc",
+   "Ticker": "GOOG",
+   "Identifier": "BBG009S3NB30",
+   "Shares Held": "18,338",
+   "Asset Category": "Stock",
+   "Market Value": "$6,302,403.84",
+   "Notional Value": "",
+   "Weight": "9.44%"
+  },
+  {
+   "Name": "Meta Platforms Inc",
+   "Ticker": "META",
+   "Identifier": "BBG000MM2P62",
+   "Shares Held": "8,230",
+   "Asset Category": "Stock",
+   "Market Value": "$5,615,411.30",
+   "Notional Value": "",
+   "Weight": "8.41%"
+  },
+  {
+   "Name": "Netflix Inc",
+   "Ticker": "NFLX",
+   "Identifier": "BBG000CL9VN6",
+   "Shares Held": "16,001",
+   "Asset Category": "Stock",
+   "Market Value": "$1,205,035.31",
+   "Notional Value": "",
+   "Weight": "1.80%"
+  },
+  {
+   "Name": "Verizon Communications Inc",
+   "Ticker": "VZ",
+   "Identifier": "BBG000HS77T5",
+   "Shares Held": "7,632",
+   "Asset Category": "Stock",
+   "Market Value": "$368,854.56",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "Walt Disney Co/The",
+   "Ticker": "DIS",
+   "Identifier": "BBG000BH4R78",
+   "Shares Held": "3,462",
+   "Asset Category": "Stock",
+   "Market Value": "$364,721.70",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "-86,122",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-86,121.64",
+   "Notional Value": "",
+   "Weight": "-0.13%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$-3,018.61",
+   "Notional Value": "",
+   "Weight": "-0.00%"
+  }
+ ]
+}

@@ -1,0 +1,668 @@
+{
+ "ticker": "EMET",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 65,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Freeport-Mcmoran Inc",
+   "Ticker": "FCX",
+   "Identifier": "BBG000BJDB15",
+   "Shares Held": "44,340",
+   "Asset Category": "Stock",
+   "Market Value": "$3,141,489.00",
+   "Notional Value": "",
+   "Weight": "8.71%"
+  },
+  {
+   "Name": "Anglo American Plc",
+   "Ticker": "AAL LN",
+   "Identifier": "BBG000BWF7M0",
+   "Shares Held": "55,211",
+   "Asset Category": "Stock",
+   "Market Value": "$2,982,619.39",
+   "Notional Value": "",
+   "Weight": "8.27%"
+  },
+  {
+   "Name": "Grupo Mexico Sab De Cv",
+   "Ticker": "GMEXICOB MF",
+   "Identifier": "BBG000BQC9K4",
+   "Shares Held": "211,585",
+   "Asset Category": "Stock",
+   "Market Value": "$2,671,468.08",
+   "Notional Value": "",
+   "Weight": "7.40%"
+  },
+  {
+   "Name": "Teck Resources Ltd",
+   "Ticker": "TECK",
+   "Identifier": "BBG000BSJTT0",
+   "Shares Held": "37,331",
+   "Asset Category": "Stock",
+   "Market Value": "$2,434,727.82",
+   "Notional Value": "",
+   "Weight": "6.75%"
+  },
+  {
+   "Name": "Antofagasta Plc",
+   "Ticker": "ANTO LN",
+   "Identifier": "BBG000BD4SC9",
+   "Shares Held": "34,040",
+   "Asset Category": "Stock",
+   "Market Value": "$1,681,094.38",
+   "Notional Value": "",
+   "Weight": "4.66%"
+  },
+  {
+   "Name": "Southern Copper Corp",
+   "Ticker": "SCCO",
+   "Identifier": "BBG000BSHH72",
+   "Shares Held": "7,492",
+   "Asset Category": "Stock",
+   "Market Value": "$1,469,256.12",
+   "Notional Value": "",
+   "Weight": "4.07%"
+  },
+  {
+   "Name": "Valterra Platinum Ltd",
+   "Ticker": "VAL SJ",
+   "Identifier": "BBG000BTXNT5",
+   "Shares Held": "15,032",
+   "Asset Category": "Stock",
+   "Market Value": "$1,352,463.60",
+   "Notional Value": "",
+   "Weight": "3.75%"
+  },
+  {
+   "Name": "Boliden Ab",
+   "Ticker": "BOL SS",
+   "Identifier": "BBG000C2VT85",
+   "Shares Held": "22,446",
+   "Asset Category": "Stock",
+   "Market Value": "$1,227,568.31",
+   "Notional Value": "",
+   "Weight": "3.40%"
+  },
+  {
+   "Name": "First Quantum Minerals Ltd",
+   "Ticker": "FM CN",
+   "Identifier": "BBG000BX7818",
+   "Shares Held": "37,665",
+   "Asset Category": "Stock",
+   "Market Value": "$1,183,822.54",
+   "Notional Value": "",
+   "Weight": "3.28%"
+  },
+  {
+   "Name": "Lundin Mining Corp",
+   "Ticker": "LUN CN",
+   "Identifier": "BBG000K1XDF3",
+   "Shares Held": "46,952",
+   "Asset Category": "Stock",
+   "Market Value": "$1,115,179.24",
+   "Notional Value": "",
+   "Weight": "3.09%"
+  },
+  {
+   "Name": "Sumitomo Metal Mining Co Ltd",
+   "Ticker": "5713 JP",
+   "Identifier": "BBG000BB13F8",
+   "Shares Held": "17,900",
+   "Asset Category": "Stock",
+   "Market Value": "$1,091,271.96",
+   "Notional Value": "",
+   "Weight": "3.02%"
+  },
+  {
+   "Name": "Impala Platinum Holdings Ltd",
+   "Ticker": "IMP SJ",
+   "Identifier": "BBG000BTZK82",
+   "Shares Held": "64,853",
+   "Asset Category": "Stock",
+   "Market Value": "$946,965.23",
+   "Notional Value": "",
+   "Weight": "2.62%"
+  },
+  {
+   "Name": "Kghm Polska Miedz Sa",
+   "Ticker": "KGH PW",
+   "Identifier": "BBG000CJ6JT5",
+   "Shares Held": "9,916",
+   "Asset Category": "Stock",
+   "Market Value": "$888,167.06",
+   "Notional Value": "",
+   "Weight": "2.46%"
+  },
+  {
+   "Name": "Albemarle Corp",
+   "Ticker": "ALB",
+   "Identifier": "BBG000BJ26K7",
+   "Shares Held": "7,640",
+   "Asset Category": "Stock",
+   "Market Value": "$878,982.00",
+   "Notional Value": "",
+   "Weight": "2.44%"
+  },
+  {
+   "Name": "Hudbay Minerals Inc",
+   "Ticker": "HBM",
+   "Identifier": "BBG000PM99H6",
+   "Shares Held": "29,962",
+   "Asset Category": "Stock",
+   "Market Value": "$792,195.28",
+   "Notional Value": "",
+   "Weight": "2.20%"
+  },
+  {
+   "Name": "Capstone Copper Corp",
+   "Ticker": "CS CN",
+   "Identifier": "BBG017Z2HFP1",
+   "Shares Held": "59,507",
+   "Asset Category": "Stock",
+   "Market Value": "$605,004.50",
+   "Notional Value": "",
+   "Weight": "1.68%"
+  },
+  {
+   "Name": "Pilbara Minerals Ltd",
+   "Ticker": "PLS AU",
+   "Identifier": "BBG000RLN524",
+   "Shares Held": "188,266",
+   "Asset Category": "Stock",
+   "Market Value": "$569,522.94",
+   "Notional Value": "",
+   "Weight": "1.58%"
+  },
+  {
+   "Name": "Mp Materials Corp",
+   "Ticker": "MP",
+   "Identifier": "BBG00TJGL0F0",
+   "Shares Held": "10,899",
+   "Asset Category": "Stock",
+   "Market Value": "$538,192.62",
+   "Notional Value": "",
+   "Weight": "1.49%"
+  },
+  {
+   "Name": "China Northern Rare Earth Group High-Te",
+   "Ticker": "600111 C1",
+   "Identifier": "BBG00709HF84",
+   "Shares Held": "96,168",
+   "Asset Category": "Stock",
+   "Market Value": "$528,688.62",
+   "Notional Value": "",
+   "Weight": "1.47%"
+  },
+  {
+   "Name": "Lynas Rare Earths Ltd",
+   "Ticker": "LYC AU",
+   "Identifier": "BBG000BSCDH5",
+   "Shares Held": "50,791",
+   "Asset Category": "Stock",
+   "Market Value": "$497,429.75",
+   "Notional Value": "",
+   "Weight": "1.38%"
+  },
+  {
+   "Name": "Northam Platinum Holdings Ltd",
+   "Ticker": "NPH SJ",
+   "Identifier": "BBG0125542Z0",
+   "Shares Held": "26,566",
+   "Asset Category": "Stock",
+   "Market Value": "$488,941.74",
+   "Notional Value": "",
+   "Weight": "1.36%"
+  },
+  {
+   "Name": "Sibanye Stillwater Ltd",
+   "Ticker": "SBSW",
+   "Identifier": "BBG00RRGP445",
+   "Shares Held": "42,068",
+   "Asset Category": "Stock",
+   "Market Value": "$485,947.62",
+   "Notional Value": "",
+   "Weight": "1.35%"
+  },
+  {
+   "Name": "Aurubis Ag",
+   "Ticker": "NDA GR",
+   "Identifier": "BBG000BGKM37",
+   "Shares Held": "2,308",
+   "Asset Category": "Stock",
+   "Market Value": "$445,257.21",
+   "Notional Value": "",
+   "Weight": "1.23%"
+  },
+  {
+   "Name": "Ivanhoe Mines Ltd",
+   "Ticker": "IVN CN",
+   "Identifier": "BBG003CSCHG0",
+   "Shares Held": "46,721",
+   "Asset Category": "Stock",
+   "Market Value": "$401,186.29",
+   "Notional Value": "",
+   "Weight": "1.11%"
+  },
+  {
+   "Name": "Sandfire Resources Ltd",
+   "Ticker": "SFR AU",
+   "Identifier": "BBG000JTYKD9",
+   "Shares Held": "26,045",
+   "Asset Category": "Stock",
+   "Market Value": "$399,054.16",
+   "Notional Value": "",
+   "Weight": "1.11%"
+  },
+  {
+   "Name": "Mmg Ltd",
+   "Ticker": "1208 HK",
+   "Identifier": "BBG000BCSPD0",
+   "Shares Held": "358,400",
+   "Asset Category": "Stock",
+   "Market Value": "$394,328.76",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "Amman Mineral Internasional Pt",
+   "Ticker": "AMMN IJ",
+   "Identifier": "BBG01GVLB759",
+   "Shares Held": "1,348,300",
+   "Asset Category": "Stock",
+   "Market Value": "$374,492.42",
+   "Notional Value": "",
+   "Weight": "1.04%"
+  },
+  {
+   "Name": "Sociedad Quimica Y Minera De Chile Sa",
+   "Ticker": "SQM",
+   "Identifier": "BBG000BKK4S1",
+   "Shares Held": "5,069",
+   "Asset Category": "Stock",
+   "Market Value": "$363,954.20",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "Jiangxi Copper Co Ltd",
+   "Ticker": "600362 C1",
+   "Identifier": "BBG00709HNM1",
+   "Shares Held": "55,203",
+   "Asset Category": "Stock",
+   "Market Value": "$358,647.85",
+   "Notional Value": "",
+   "Weight": "0.99%"
+  },
+  {
+   "Name": "Western Mining Co Ltd",
+   "Ticker": "601168 C1",
+   "Identifier": "BBG00709J9C1",
+   "Shares Held": "63,500",
+   "Asset Category": "Stock",
+   "Market Value": "$337,622.30",
+   "Notional Value": "",
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Johnson Matthey Plc",
+   "Ticker": "JMAT LN",
+   "Identifier": "BBG000BDNS10",
+   "Shares Held": "9,038",
+   "Asset Category": "Stock",
+   "Market Value": "$285,963.91",
+   "Notional Value": "",
+   "Weight": "0.79%"
+  },
+  {
+   "Name": "Mitsubishi Materials Corp",
+   "Ticker": "5711 JP",
+   "Identifier": "BBG000BGFBD6",
+   "Shares Held": "8,400",
+   "Asset Category": "Stock",
+   "Market Value": "$273,666.68",
+   "Notional Value": "",
+   "Weight": "0.76%"
+  },
+  {
+   "Name": "Tongling Nonferrous Metals Group Co Ltd",
+   "Ticker": "000630 C2",
+   "Identifier": "BBG00F136D67",
+   "Shares Held": "296,700",
+   "Asset Category": "Stock",
+   "Market Value": "$268,031.43",
+   "Notional Value": "",
+   "Weight": "0.74%"
+  },
+  {
+   "Name": "Zhejiang Huayou Cobalt Co Ltd",
+   "Ticker": "603799 C1",
+   "Identifier": "BBG00JCQD422",
+   "Shares Held": "50,130",
+   "Asset Category": "Stock",
+   "Market Value": "$264,207.49",
+   "Notional Value": "",
+   "Weight": "0.73%"
+  },
+  {
+   "Name": "Tianqi Lithium Corp",
+   "Ticker": "002466 C2",
+   "Identifier": "BBG00F137W64",
+   "Shares Held": "39,300",
+   "Asset Category": "Stock",
+   "Market Value": "$251,394.41",
+   "Notional Value": "",
+   "Weight": "0.70%"
+  },
+  {
+   "Name": "Mongolia Xingye Silver&Tin Mining Co Lt",
+   "Ticker": "000426 C2",
+   "Identifier": "BBG00F1366Z0",
+   "Shares Held": "47,200",
+   "Asset Category": "Stock",
+   "Market Value": "$245,759.94",
+   "Notional Value": "",
+   "Weight": "0.68%"
+  },
+  {
+   "Name": "Trekor Metals Ltd",
+   "Ticker": "TGB",
+   "Identifier": "BBG000BCTV91",
+   "Shares Held": "29,199",
+   "Asset Category": "Stock",
+   "Market Value": "$244,687.62",
+   "Notional Value": "",
+   "Weight": "0.68%"
+  },
+  {
+   "Name": "Jinduicheng Molybdenum Co Ltd",
+   "Ticker": "601958 C1",
+   "Identifier": "BBG00709JG26",
+   "Shares Held": "80,200",
+   "Asset Category": "Stock",
+   "Market Value": "$240,633.62",
+   "Notional Value": "",
+   "Weight": "0.67%"
+  },
+  {
+   "Name": "China Nonferrous Mining Corp Ltd",
+   "Ticker": "1258 HK",
+   "Identifier": "BBG002ZGM195",
+   "Shares Held": "114,000",
+   "Asset Category": "Stock",
+   "Market Value": "$226,396.36",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "China Minmetals Rare Earth Co Ltd",
+   "Ticker": "000831 C2",
+   "Identifier": "BBG00LBJC942",
+   "Shares Held": "28,200",
+   "Asset Category": "Stock",
+   "Market Value": "$225,182.27",
+   "Notional Value": "",
+   "Weight": "0.62%"
+  },
+  {
+   "Name": "Igo Ltd",
+   "Ticker": "IGO AU",
+   "Identifier": "BBG000BB1BP9",
+   "Shares Held": "44,919",
+   "Asset Category": "Stock",
+   "Market Value": "$222,428.59",
+   "Notional Value": "",
+   "Weight": "0.62%"
+  },
+  {
+   "Name": "Ganfeng Lithium Group Co Ltd",
+   "Ticker": "002460 C2",
+   "Identifier": "BBG00F137VQ4",
+   "Shares Held": "32,220",
+   "Asset Category": "Stock",
+   "Market Value": "$221,389.29",
+   "Notional Value": "",
+   "Weight": "0.61%"
+  },
+  {
+   "Name": "Yunnan Tin Co Ltd",
+   "Ticker": "000960 C2",
+   "Identifier": "BBG00F136QV0",
+   "Shares Held": "43,785",
+   "Asset Category": "Stock",
+   "Market Value": "$216,966.43",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "Ero Copper Corp",
+   "Ticker": "ERO",
+   "Identifier": "BBG00J09YMM8",
+   "Shares Held": "6,477",
+   "Asset Category": "Stock",
+   "Market Value": "$215,554.56",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "Ngex Minerals Ltd",
+   "Ticker": "NGEX CN",
+   "Identifier": "BBG00NZJ2JH7",
+   "Shares Held": "11,519",
+   "Asset Category": "Stock",
+   "Market Value": "$205,730.25",
+   "Notional Value": "",
+   "Weight": "0.57%"
+  },
+  {
+   "Name": "Merdeka Copper Gold Tbk Pt",
+   "Ticker": "MDKA IJ",
+   "Identifier": "BBG008NVSB85",
+   "Shares Held": "1,213,300",
+   "Asset Category": "Stock",
+   "Market Value": "$197,299.53",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "Yunnan Chihong Zinc & Germanium Co Ltd",
+   "Ticker": "600497 C1",
+   "Identifier": "BBG00709HSP7",
+   "Shares Held": "134,200",
+   "Asset Category": "Stock",
+   "Market Value": "$189,181.47",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Baiyin Nonferrous Group Co Ltd",
+   "Ticker": "601212 C1",
+   "Identifier": "BBG00JCQBNQ6",
+   "Shares Held": "197,100",
+   "Asset Category": "Stock",
+   "Market Value": "$179,094.23",
+   "Notional Value": "",
+   "Weight": "0.50%"
+  },
+  {
+   "Name": "Shenghe Resources Holding Co Ltd",
+   "Ticker": "600392 C1",
+   "Identifier": "BBG00L1KMZR6",
+   "Shares Held": "46,600",
+   "Asset Category": "Stock",
+   "Market Value": "$148,888.25",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Jiangsu Boqian New Materials Stock Co L",
+   "Ticker": "605376 C1",
+   "Identifier": "BBG013Y4DD58",
+   "Shares Held": "7,000",
+   "Asset Category": "Stock",
+   "Market Value": "$142,175.99",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Iluka Resources Ltd",
+   "Ticker": "ILU AU",
+   "Identifier": "BBG000C13PJ4",
+   "Shares Held": "32,831",
+   "Asset Category": "Stock",
+   "Market Value": "$141,711.67",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Yunnan Copper Co Ltd",
+   "Ticker": "000878 C2",
+   "Identifier": "BBG00F136N65",
+   "Shares Held": "53,400",
+   "Asset Category": "Stock",
+   "Market Value": "$130,845.83",
+   "Notional Value": "",
+   "Weight": "0.36%"
+  },
+  {
+   "Name": "Liontown Resources Ltd",
+   "Ticker": "LTR AU",
+   "Identifier": "BBG000F21113",
+   "Shares Held": "177,318",
+   "Asset Category": "Stock",
+   "Market Value": "$128,549.76",
+   "Notional Value": "",
+   "Weight": "0.36%"
+  },
+  {
+   "Name": "Gem Co Ltd",
+   "Ticker": "002340 C2",
+   "Identifier": "BBG00F137M20",
+   "Shares Held": "135,200",
+   "Asset Category": "Stock",
+   "Market Value": "$124,714.29",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Chengxin Lithium Group Co Ltd",
+   "Ticker": "002240 C2",
+   "Identifier": "BBG00JN039H1",
+   "Shares Held": "24,400",
+   "Asset Category": "Stock",
+   "Market Value": "$99,104.90",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Lithium Americas Corp",
+   "Ticker": "LAC",
+   "Identifier": "BBG01JLDH7S1",
+   "Shares Held": "27,101",
+   "Asset Category": "Stock",
+   "Market Value": "$78,321.89",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Beijing Easpring Material Technology Co",
+   "Ticker": "300073 C2",
+   "Identifier": "BBG00FNDHC25",
+   "Shares Held": "13,500",
+   "Asset Category": "Stock",
+   "Market Value": "$77,647.43",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Gmk Norilskiy Nickel Pao",
+   "Ticker": "MNOD LI",
+   "Identifier": "BBG000KRLH06",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Gmk Norilskiy Nickel Pao",
+   "Ticker": "GMKN RM",
+   "Identifier": "BBG004731489",
+   "Shares Held": "440,500",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "115,743",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$115,743.36",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-HKD CASH-",
+   "Identifier": "",
+   "Shares Held": "9,936",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$1,266.38",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-PLN CASH-",
+   "Identifier": "",
+   "Shares Held": "70",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$18.52",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-EUR CASH-",
+   "Identifier": "",
+   "Shares Held": "7",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$7.99",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-CAD CASH-",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$.04",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$76,077.63",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "ticker": "EMET",
+ "name": "VanEck Copper and Electrification Metals ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/",
+ "dataFile": "./funds/EMET/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.62%",
+ "terValue": 0.62,
+ "nav": {
+  "display": "$42.20",
+  "value": 42.2,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 42.2,
+ "aum": {
+  "display": "$35.87M",
+  "value": 35869530.8,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 35869530.8,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Nov 09 2021",
+ "exchange": "—",
+ "closePrice": "$42.45",
+ "closePriceValue": 42.45,
+ "premiumDiscount": {
+  "display": "0.25%",
+  "value": 0.25
+ },
+ "premiumDiscountValue": 0.25,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.6827"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$0.3941"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$0.4909"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.7250"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 13.9,
+   "ytdText": "13.90%",
+   "yr1": 71.62,
+   "yr3": 23.46,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 7.65
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 13.9,
+  "tr1y": 71.62,
+  "tr3y": 88.2,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": 23.46,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 7.65,
+  "dividendYield": 1.62,
+  "dividendYieldText": "1.62%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.62%",
+ "terGrossValue": 0.62,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 65,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 1775,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/)",
+  "pageCount": 2,
+  "pages": [
+   "history/001.json",
+   "history/002.json"
+  ]
+ },
+ "totalNetAssets": 35870000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/EMET",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.62%",
+  "value": 0.62,
+  "gross": "0.62%",
+  "grossValue": 0.62
+ },
+ "marketPrice": {
+  "display": "$42.45",
+  "value": 42.45,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 1.62,
+  "dividendYieldText": "1.62%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

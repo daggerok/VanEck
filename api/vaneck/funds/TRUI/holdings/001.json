@@ -1,0 +1,868 @@
+{
+ "ticker": "TRUI",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 85,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Caterpillar Inc",
+   "Ticker": "CAT",
+   "Identifier": "BBG000BF0K17",
+   "Shares Held": "21",
+   "Asset Category": "Stock",
+   "Market Value": "$16,769.97",
+   "Notional Value": "",
+   "Weight": "6.93%"
+  },
+  {
+   "Name": "General Aerospace Co",
+   "Ticker": "GE",
+   "Identifier": "BBG000BK6MB5",
+   "Shares Held": "48",
+   "Asset Category": "Stock",
+   "Market Value": "$15,046.56",
+   "Notional Value": "",
+   "Weight": "6.22%"
+  },
+  {
+   "Name": "Rtx Corp",
+   "Ticker": "RTX",
+   "Identifier": "BBG000BW8S60",
+   "Shares Held": "61",
+   "Asset Category": "Stock",
+   "Market Value": "$11,805.94",
+   "Notional Value": "",
+   "Weight": "4.88%"
+  },
+  {
+   "Name": "Ge Vernova Llc",
+   "Ticker": "GEV",
+   "Identifier": "BBG013G17W31",
+   "Shares Held": "12",
+   "Asset Category": "Stock",
+   "Market Value": "$11,099.16",
+   "Notional Value": "",
+   "Weight": "4.59%"
+  },
+  {
+   "Name": "Union Pacific Corp",
+   "Ticker": "UNP",
+   "Identifier": "BBG000BW3299",
+   "Shares Held": "27",
+   "Asset Category": "Stock",
+   "Market Value": "$7,626.96",
+   "Notional Value": "",
+   "Weight": "3.15%"
+  },
+  {
+   "Name": "Deere & Co",
+   "Ticker": "DE",
+   "Identifier": "BBG000BH1NH9",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$7,541.93",
+   "Notional Value": "",
+   "Weight": "3.12%"
+  },
+  {
+   "Name": "Eaton Corp Plc",
+   "Ticker": "ETN",
+   "Identifier": "BBG000BJ3PD2",
+   "Shares Held": "18",
+   "Asset Category": "Stock",
+   "Market Value": "$7,370.28",
+   "Notional Value": "",
+   "Weight": "3.05%"
+  },
+  {
+   "Name": "Boeing Co/The",
+   "Ticker": "BA",
+   "Identifier": "BBG000BCSST7",
+   "Shares Held": "36",
+   "Asset Category": "Stock",
+   "Market Value": "$7,092.00",
+   "Notional Value": "",
+   "Weight": "2.93%"
+  },
+  {
+   "Name": "Uber Technologies Inc",
+   "Ticker": "UBER",
+   "Identifier": "BBG002B04MT8",
+   "Shares Held": "93",
+   "Asset Category": "Stock",
+   "Market Value": "$6,590.91",
+   "Notional Value": "",
+   "Weight": "2.72%"
+  },
+  {
+   "Name": "Parker-Hannifin Corp",
+   "Ticker": "PH",
+   "Identifier": "BBG000BR3KL6",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$5,551.74",
+   "Notional Value": "",
+   "Weight": "2.30%"
+  },
+  {
+   "Name": "Automatic Data Processing Inc",
+   "Ticker": "ADP",
+   "Identifier": "BBG000JG0547",
+   "Shares Held": "18",
+   "Asset Category": "Stock",
+   "Market Value": "$4,900.32",
+   "Notional Value": "",
+   "Weight": "2.03%"
+  },
+  {
+   "Name": "Lockheed Martin Corp",
+   "Ticker": "LMT",
+   "Identifier": "BBG000C1BW00",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$4,842.81",
+   "Notional Value": "",
+   "Weight": "2.00%"
+  },
+  {
+   "Name": "Quanta Services Inc",
+   "Ticker": "PWR",
+   "Identifier": "BBG000BBL8V7",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$4,315.78",
+   "Notional Value": "",
+   "Weight": "1.78%"
+  },
+  {
+   "Name": "General Dynamics Corp",
+   "Ticker": "GD",
+   "Identifier": "BBG000BK67C7",
+   "Shares Held": "12",
+   "Asset Category": "Stock",
+   "Market Value": "$4,271.40",
+   "Notional Value": "",
+   "Weight": "1.77%"
+  },
+  {
+   "Name": "Trane Technologies Plc",
+   "Ticker": "TT",
+   "Identifier": "BBG000BM6788",
+   "Shares Held": "10",
+   "Asset Category": "Stock",
+   "Market Value": "$4,233.30",
+   "Notional Value": "",
+   "Weight": "1.75%"
+  },
+  {
+   "Name": "Vertiv Holdings Co",
+   "Ticker": "VRT",
+   "Identifier": "BBG00L2B8KW8",
+   "Shares Held": "17",
+   "Asset Category": "Stock",
+   "Market Value": "$4,105.33",
+   "Notional Value": "",
+   "Weight": "1.70%"
+  },
+  {
+   "Name": "Csx Corp",
+   "Ticker": "CSX",
+   "Identifier": "BBG000BGJRC8",
+   "Shares Held": "85",
+   "Asset Category": "Stock",
+   "Market Value": "$4,071.50",
+   "Notional Value": "",
+   "Weight": "1.68%"
+  },
+  {
+   "Name": "Howmet Aerospace Inc",
+   "Ticker": "HWM",
+   "Identifier": "BBG00DYNJGH9",
+   "Shares Held": "18",
+   "Asset Category": "Stock",
+   "Market Value": "$4,063.68",
+   "Notional Value": "",
+   "Weight": "1.68%"
+  },
+  {
+   "Name": "3m Co",
+   "Ticker": "MMM",
+   "Identifier": "BBG000BP52R2",
+   "Shares Held": "24",
+   "Asset Category": "Stock",
+   "Market Value": "$3,953.04",
+   "Notional Value": "",
+   "Weight": "1.63%"
+  },
+  {
+   "Name": "Johnson Controls International Plc",
+   "Ticker": "JCI",
+   "Identifier": "BBG000BVWLJ6",
+   "Shares Held": "28",
+   "Asset Category": "Stock",
+   "Market Value": "$3,949.68",
+   "Notional Value": "",
+   "Weight": "1.63%"
+  },
+  {
+   "Name": "Emerson Electric Co",
+   "Ticker": "EMR",
+   "Identifier": "BBG000BHX7N2",
+   "Shares Held": "26",
+   "Asset Category": "Stock",
+   "Market Value": "$3,832.40",
+   "Notional Value": "",
+   "Weight": "1.58%"
+  },
+  {
+   "Name": "Waste Management Inc",
+   "Ticker": "WM",
+   "Identifier": "BBG000BWVSR1",
+   "Shares Held": "17",
+   "Asset Category": "Stock",
+   "Market Value": "$3,626.61",
+   "Notional Value": "",
+   "Weight": "1.50%"
+  },
+  {
+   "Name": "United Parcel Service Inc",
+   "Ticker": "UPS",
+   "Identifier": "BBG000L9CV04",
+   "Shares Held": "34",
+   "Asset Category": "Stock",
+   "Market Value": "$3,405.78",
+   "Notional Value": "",
+   "Weight": "1.41%"
+  },
+  {
+   "Name": "Transdigm Group Inc",
+   "Ticker": "TDG",
+   "Identifier": "",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$3,228.03",
+   "Notional Value": "",
+   "Weight": "1.33%"
+  },
+  {
+   "Name": "Illinois Tool Works Inc",
+   "Ticker": "ITW",
+   "Identifier": "BBG000BMBL90",
+   "Shares Held": "12",
+   "Asset Category": "Stock",
+   "Market Value": "$3,210.12",
+   "Notional Value": "",
+   "Weight": "1.33%"
+  },
+  {
+   "Name": "Norfolk Southern Corp",
+   "Ticker": "NSC",
+   "Identifier": "BBG000BQ5DS5",
+   "Shares Held": "10",
+   "Asset Category": "Stock",
+   "Market Value": "$3,189.70",
+   "Notional Value": "",
+   "Weight": "1.32%"
+  },
+  {
+   "Name": "Comfort Systems Usa Inc",
+   "Ticker": "FIX",
+   "Identifier": "BBG000BWN2Y9",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$3,147.92",
+   "Notional Value": "",
+   "Weight": "1.30%"
+  },
+  {
+   "Name": "Northrop Grumman Corp",
+   "Ticker": "NOC",
+   "Identifier": "BBG000BQ2C28",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$3,144.00",
+   "Notional Value": "",
+   "Weight": "1.30%"
+  },
+  {
+   "Name": "Cummins Inc",
+   "Ticker": "CMI",
+   "Identifier": "BBG000BGPTV6",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$3,143.28",
+   "Notional Value": "",
+   "Weight": "1.30%"
+  },
+  {
+   "Name": "Fedex Corp",
+   "Ticker": "FDX",
+   "Identifier": "BBG000BJF1Z8",
+   "Shares Held": "10",
+   "Asset Category": "Stock",
+   "Market Value": "$3,058.80",
+   "Notional Value": "",
+   "Weight": "1.26%"
+  },
+  {
+   "Name": "United Rentals Inc",
+   "Ticker": "URI",
+   "Identifier": "BBG000BXMFC3",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$3,007.59",
+   "Notional Value": "",
+   "Weight": "1.24%"
+  },
+  {
+   "Name": "Cintas Corp",
+   "Ticker": "CTAS",
+   "Identifier": "BBG000H3YXF8",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$2,969.40",
+   "Notional Value": "",
+   "Weight": "1.23%"
+  },
+  {
+   "Name": "Honeywell International Inc",
+   "Ticker": "HON",
+   "Identifier": "BBG000H556T9",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$2,890.86",
+   "Notional Value": "",
+   "Weight": "1.20%"
+  },
+  {
+   "Name": "Paccar Inc",
+   "Ticker": "PCAR",
+   "Identifier": "BBG000BQVTF5",
+   "Shares Held": "24",
+   "Asset Category": "Stock",
+   "Market Value": "$2,816.64",
+   "Notional Value": "",
+   "Weight": "1.16%"
+  },
+  {
+   "Name": "Fastenal Co",
+   "Ticker": "FAST",
+   "Identifier": "BBG000BJ8YN7",
+   "Shares Held": "52",
+   "Asset Category": "Stock",
+   "Market Value": "$2,557.36",
+   "Notional Value": "",
+   "Weight": "1.06%"
+  },
+  {
+   "Name": "Ww Grainger Inc",
+   "Ticker": "GWW",
+   "Identifier": "BBG000BKR1D6",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$2,525.22",
+   "Notional Value": "",
+   "Weight": "1.04%"
+  },
+  {
+   "Name": "Delta Air Lines Inc",
+   "Ticker": "DAL",
+   "Identifier": "BBG000R7Z112",
+   "Shares Held": "30",
+   "Asset Category": "Stock",
+   "Market Value": "$2,382.90",
+   "Notional Value": "",
+   "Weight": "0.99%"
+  },
+  {
+   "Name": "Ametek Inc",
+   "Ticker": "AME",
+   "Identifier": "BBG000B9XG87",
+   "Shares Held": "10",
+   "Asset Category": "Stock",
+   "Market Value": "$2,343.20",
+   "Notional Value": "",
+   "Weight": "0.97%"
+  },
+  {
+   "Name": "Honeywell Aerospace Inc",
+   "Ticker": "HONA",
+   "Identifier": "BBG020QYV152",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$2,339.82",
+   "Notional Value": "",
+   "Weight": "0.97%"
+  },
+  {
+   "Name": "Westinghouse Air Brake Technologies Cor",
+   "Ticker": "WAB",
+   "Identifier": "BBG000BDD940",
+   "Shares Held": "8",
+   "Asset Category": "Stock",
+   "Market Value": "$2,230.56",
+   "Notional Value": "",
+   "Weight": "0.92%"
+  },
+  {
+   "Name": "Rockwell Automation Inc",
+   "Ticker": "ROK",
+   "Identifier": "BBG000BBCDZ2",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$2,050.25",
+   "Notional Value": "",
+   "Weight": "0.85%"
+  },
+  {
+   "Name": "L3harris Technologies Inc",
+   "Ticker": "LHX",
+   "Identifier": "BBG000BLGFJ9",
+   "Shares Held": "8",
+   "Asset Category": "Stock",
+   "Market Value": "$2,003.68",
+   "Notional Value": "",
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Republic Services Inc",
+   "Ticker": "RSG",
+   "Identifier": "BBG000BPXVJ6",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$1,970.37",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Carrier Global Corp",
+   "Ticker": "CARR",
+   "Identifier": "BBG00RP5HYS8",
+   "Shares Held": "36",
+   "Asset Category": "Stock",
+   "Market Value": "$1,958.04",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Ferguson Enterprises Inc",
+   "Ticker": "FERG",
+   "Identifier": "BBG01NMRD768",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$1,928.34",
+   "Notional Value": "",
+   "Weight": "0.80%"
+  },
+  {
+   "Name": "Axon Enterprise Inc",
+   "Ticker": "AXON",
+   "Identifier": "BBG000BHJWG1",
+   "Shares Held": "4",
+   "Asset Category": "Stock",
+   "Market Value": "$1,814.00",
+   "Notional Value": "",
+   "Weight": "0.75%"
+  },
+  {
+   "Name": "Paychex Inc",
+   "Ticker": "PAYX",
+   "Identifier": "BBG000BQSQ38",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$1,747.65",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "United Airlines Holdings Inc",
+   "Ticker": "UAL",
+   "Identifier": "BBG000M65M61",
+   "Shares Held": "15",
+   "Asset Category": "Stock",
+   "Market Value": "$1,614.60",
+   "Notional Value": "",
+   "Weight": "0.67%"
+  },
+  {
+   "Name": "Emcor Group Inc",
+   "Ticker": "EME",
+   "Identifier": "BBG000BBRPL4",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$1,458.52",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "Old Dominion Freight Line Inc",
+   "Ticker": "ODFL",
+   "Identifier": "BBG000CHSS88",
+   "Shares Held": "8",
+   "Asset Category": "Stock",
+   "Market Value": "$1,400.72",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Copart Inc",
+   "Ticker": "CPRT",
+   "Identifier": "BBG000BM9RH1",
+   "Shares Held": "40",
+   "Asset Category": "Stock",
+   "Market Value": "$1,186.40",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Xylem Inc/Ny",
+   "Ticker": "XYL",
+   "Identifier": "BBG001D8R5D0",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$1,183.60",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Otis Worldwide Corp",
+   "Ticker": "OTIS",
+   "Identifier": "BBG00RP60KV0",
+   "Shares Held": "17",
+   "Asset Category": "Stock",
+   "Market Value": "$1,167.90",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Ingersoll Rand Inc",
+   "Ticker": "IR",
+   "Identifier": "BBG002R1CW27",
+   "Shares Held": "16",
+   "Asset Category": "Stock",
+   "Market Value": "$1,162.40",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Dover Corp",
+   "Ticker": "DOV",
+   "Identifier": "BBG000BHB3M6",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$1,135.44",
+   "Notional Value": "",
+   "Weight": "0.47%"
+  },
+  {
+   "Name": "Expeditors International Of Washington",
+   "Ticker": "EXPD",
+   "Identifier": "BBG000BJ5GK2",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$1,134.48",
+   "Notional Value": "",
+   "Weight": "0.47%"
+  },
+  {
+   "Name": "Verisk Analytics Inc",
+   "Ticker": "VRSK",
+   "Identifier": "BBG000BCZL41",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$1,058.88",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Veralto Corp",
+   "Ticker": "VLTO",
+   "Identifier": "BBG019Q32XJ9",
+   "Shares Held": "11",
+   "Asset Category": "Stock",
+   "Market Value": "$1,047.75",
+   "Notional Value": "",
+   "Weight": "0.43%"
+  },
+  {
+   "Name": "Southwest Airlines Co",
+   "Ticker": "LUV",
+   "Identifier": "BBG000BNJHS8",
+   "Shares Held": "22",
+   "Asset Category": "Stock",
+   "Market Value": "$887.48",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Hubbell Inc",
+   "Ticker": "HUBB",
+   "Identifier": "BBG000BLK267",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$886.46",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Broadridge Financial Solutions Inc",
+   "Ticker": "BR",
+   "Identifier": "BBG000PPFKQ7",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$821.55",
+   "Notional Value": "",
+   "Weight": "0.34%"
+  },
+  {
+   "Name": "Equifax Inc",
+   "Ticker": "EFX",
+   "Identifier": "BBG000BHPL78",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$805.85",
+   "Notional Value": "",
+   "Weight": "0.33%"
+  },
+  {
+   "Name": "Leidos Holdings Inc",
+   "Ticker": "LDOS",
+   "Identifier": "BBG000C23PB0",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$785.76",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Fortive Corp",
+   "Ticker": "FTV",
+   "Identifier": "BBG00BLVZ228",
+   "Shares Held": "14",
+   "Asset Category": "Stock",
+   "Market Value": "$770.98",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Dupont De Nemours Inc",
+   "Ticker": "DD",
+   "Identifier": "BBG00BN961G4",
+   "Shares Held": "6",
+   "Asset Category": "Stock",
+   "Market Value": "$770.76",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Ch Robinson Worldwide Inc",
+   "Ticker": "CHRW",
+   "Identifier": "BBG000BTCH57",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$769.10",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Snap-On Inc",
+   "Ticker": "SNA",
+   "Identifier": "BBG000BT7JW9",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$743.24",
+   "Notional Value": "",
+   "Weight": "0.31%"
+  },
+  {
+   "Name": "Jacobs Solutions Inc",
+   "Ticker": "J",
+   "Identifier": "BBG019C1BQR4",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$720.80",
+   "Notional Value": "",
+   "Weight": "0.30%"
+  },
+  {
+   "Name": "Jb Hunt Transport Services Inc",
+   "Ticker": "JBHT",
+   "Identifier": "BBG000BMDBZ1",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$710.40",
+   "Notional Value": "",
+   "Weight": "0.29%"
+  },
+  {
+   "Name": "Idex Corp",
+   "Ticker": "IEX",
+   "Identifier": "BBG000C1HN22",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$665.67",
+   "Notional Value": "",
+   "Weight": "0.28%"
+  },
+  {
+   "Name": "Textron Inc",
+   "Ticker": "TXT",
+   "Identifier": "",
+   "Shares Held": "8",
+   "Asset Category": "Stock",
+   "Market Value": "$647.28",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Stanley Black & Decker Inc",
+   "Ticker": "SWK",
+   "Identifier": "BBG000BTQR96",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$623.84",
+   "Notional Value": "",
+   "Weight": "0.26%"
+  },
+  {
+   "Name": "Nordson Corp",
+   "Ticker": "NDSN",
+   "Identifier": "BBG000BPWGR1",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$623.48",
+   "Notional Value": "",
+   "Weight": "0.26%"
+  },
+  {
+   "Name": "Generac Holdings Inc",
+   "Ticker": "GNRC",
+   "Identifier": "BBG000PQ4W72",
+   "Shares Held": "3",
+   "Asset Category": "Stock",
+   "Market Value": "$621.69",
+   "Notional Value": "",
+   "Weight": "0.26%"
+  },
+  {
+   "Name": "Allegion Plc",
+   "Ticker": "ALLE",
+   "Identifier": "BBG003PS7JV1",
+   "Shares Held": "4",
+   "Asset Category": "Stock",
+   "Market Value": "$614.52",
+   "Notional Value": "",
+   "Weight": "0.25%"
+  },
+  {
+   "Name": "Masco Corp",
+   "Ticker": "MAS",
+   "Identifier": "BBG000BNNKG9",
+   "Shares Held": "9",
+   "Asset Category": "Stock",
+   "Market Value": "$614.07",
+   "Notional Value": "",
+   "Weight": "0.25%"
+  },
+  {
+   "Name": "Fedex Freight Holding Co Inc",
+   "Ticker": "FDXF",
+   "Identifier": "BBG01ZPB91C4",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$611.85",
+   "Notional Value": "",
+   "Weight": "0.25%"
+  },
+  {
+   "Name": "Huntington Ingalls Industries Inc",
+   "Ticker": "HII",
+   "Identifier": "BBG001KJ2HM9",
+   "Shares Held": "2",
+   "Asset Category": "Stock",
+   "Market Value": "$554.28",
+   "Notional Value": "",
+   "Weight": "0.23%"
+  },
+  {
+   "Name": "Rollins Inc",
+   "Ticker": "ROL",
+   "Identifier": "BBG000BSBBP1",
+   "Shares Held": "13",
+   "Asset Category": "Stock",
+   "Market Value": "$429.00",
+   "Notional Value": "",
+   "Weight": "0.18%"
+  },
+  {
+   "Name": "Pentair Plc",
+   "Ticker": "PNR",
+   "Identifier": "BBG000C221G9",
+   "Shares Held": "7",
+   "Asset Category": "Stock",
+   "Market Value": "$390.04",
+   "Notional Value": "",
+   "Weight": "0.16%"
+  },
+  {
+   "Name": "Lennox International Inc",
+   "Ticker": "LII",
+   "Identifier": "BBG000BB5B84",
+   "Shares Held": "1",
+   "Asset Category": "Stock",
+   "Market Value": "$359.08",
+   "Notional Value": "",
+   "Weight": "0.15%"
+  },
+  {
+   "Name": "Builders Firstsource Inc",
+   "Ticker": "BLDR",
+   "Identifier": "BBG000BKD3K9",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$288.40",
+   "Notional Value": "",
+   "Weight": "0.12%"
+  },
+  {
+   "Name": "A O Smith Corp",
+   "Ticker": "AOS",
+   "Identifier": "BBG000BC1L02",
+   "Shares Held": "5",
+   "Asset Category": "Stock",
+   "Market Value": "$284.65",
+   "Notional Value": "",
+   "Weight": "0.12%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "426",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$425.93",
+   "Notional Value": "",
+   "Weight": "0.18%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$175.44",
+   "Notional Value": "",
+   "Weight": "0.07%"
+  }
+ ]
+}

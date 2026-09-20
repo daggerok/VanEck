@@ -1,0 +1,137 @@
+{
+ "ticker": "INDZ",
+ "name": "VanEck India Select ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/india-select-etf-indz/",
+ "dataFile": "./funds/INDZ/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.75%",
+ "terValue": 0.75,
+ "nav": {
+  "display": "$24.74",
+  "value": 24.74,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 24.74,
+ "aum": {
+  "display": "$5.44M",
+  "value": 5442414.58,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 5442414.58,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Feb 18 2026",
+ "exchange": "—",
+ "closePrice": "$24.65",
+ "closePriceValue": 24.65,
+ "premiumDiscount": {
+  "display": "-0.09%",
+  "value": -0.09
+ },
+ "premiumDiscountValue": -0.09,
+ "distributions": {
+  "frequency": "Unknown",
+  "paymentsPerYear": null,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "—",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 1.99
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": null,
+  "tr1y": null,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": null,
+  "cagr5y": null,
+  "cagr10y": null,
+  "siAnn": 1.99,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "00 - Unknown",
+ "providerCategory": "Country/Regional",
+ "terGross": "0.75%",
+ "terGrossValue": 0.75,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 73,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 213,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
+ },
+ "totalNetAssets": 5440000,
+ "categoryPath": "Equity > Country/Regional",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/india-select-etf-indz/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/INDZ",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.75%",
+  "value": 0.75,
+  "gross": "0.75%",
+  "grossValue": 0.75
+ },
+ "marketPrice": {
+  "display": "$24.65",
+  "value": 24.65,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

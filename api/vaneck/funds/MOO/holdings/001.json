@@ -1,0 +1,578 @@
+{
+ "ticker": "MOO",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 56,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Deere & Co",
+   "Ticker": "DE",
+   "Identifier": "BBG000BH1NH9",
+   "Shares Held": "162,915",
+   "Asset Category": "Stock",
+   "Market Value": "$111,699,411.45",
+   "Notional Value": "",
+   "Weight": "8.81%"
+  },
+  {
+   "Name": "Bayer Ag",
+   "Ticker": "BAYN GR",
+   "Identifier": "BBG000BBWDG1",
+   "Shares Held": "1,952,908",
+   "Asset Category": "Stock",
+   "Market Value": "$109,985,192.26",
+   "Notional Value": "",
+   "Weight": "8.68%"
+  },
+  {
+   "Name": "Corteva Inc",
+   "Ticker": "CTVA",
+   "Identifier": "BBG00BN969C1",
+   "Shares Held": "1,225,378",
+   "Asset Category": "Stock",
+   "Market Value": "$99,905,068.34",
+   "Notional Value": "",
+   "Weight": "7.88%"
+  },
+  {
+   "Name": "Nutrien Ltd",
+   "Ticker": "NTR",
+   "Identifier": "BBG00JM9XLN6",
+   "Shares Held": "1,139,984",
+   "Asset Category": "Stock",
+   "Market Value": "$89,967,537.28",
+   "Notional Value": "",
+   "Weight": "7.10%"
+  },
+  {
+   "Name": "Archer-Daniels-Midland Co",
+   "Ticker": "ADM",
+   "Identifier": "BBG000BB6WG8",
+   "Shares Held": "771,755",
+   "Asset Category": "Stock",
+   "Market Value": "$67,983,897.95",
+   "Notional Value": "",
+   "Weight": "5.36%"
+  },
+  {
+   "Name": "Cf Industries Holdings Inc",
+   "Ticker": "CF",
+   "Identifier": "BBG000BWJFZ4",
+   "Shares Held": "469,733",
+   "Asset Category": "Stock",
+   "Market Value": "$62,859,670.06",
+   "Notional Value": "",
+   "Weight": "4.96%"
+  },
+  {
+   "Name": "Zoetis Inc",
+   "Ticker": "ZTS",
+   "Identifier": "BBG0039320N9",
+   "Shares Held": "841,815",
+   "Asset Category": "Stock",
+   "Market Value": "$61,469,331.30",
+   "Notional Value": "",
+   "Weight": "4.85%"
+  },
+  {
+   "Name": "Kubota Corp",
+   "Ticker": "6326 JP",
+   "Identifier": "BBG000BGGYY2",
+   "Shares Held": "3,278,300",
+   "Asset Category": "Stock",
+   "Market Value": "$59,141,939.18",
+   "Notional Value": "",
+   "Weight": "4.67%"
+  },
+  {
+   "Name": "Tyson Foods Inc",
+   "Ticker": "TSN",
+   "Identifier": "BBG000DKCC19",
+   "Shares Held": "884,909",
+   "Asset Category": "Stock",
+   "Market Value": "$46,245,344.34",
+   "Notional Value": "",
+   "Weight": "3.65%"
+  },
+  {
+   "Name": "Bunge Global Sa",
+   "Ticker": "BG",
+   "Identifier": "BBG01JZ8VL91",
+   "Shares Held": "366,819",
+   "Asset Category": "Stock",
+   "Market Value": "$43,765,174.89",
+   "Notional Value": "",
+   "Weight": "3.45%"
+  },
+  {
+   "Name": "Mowi Asa",
+   "Ticker": "MOWI NO",
+   "Identifier": "BBG000JDLY02",
+   "Shares Held": "1,721,087",
+   "Asset Category": "Stock",
+   "Market Value": "$37,024,782.52",
+   "Notional Value": "",
+   "Weight": "2.92%"
+  },
+  {
+   "Name": "Cnh Industrial Nv",
+   "Ticker": "CNH",
+   "Identifier": "BBG0059JSF49",
+   "Shares Held": "2,663,903",
+   "Asset Category": "Stock",
+   "Market Value": "$36,095,885.65",
+   "Notional Value": "",
+   "Weight": "2.85%"
+  },
+  {
+   "Name": "Darling Ingredients Inc",
+   "Ticker": "DAR",
+   "Identifier": "BBG000BN8ZK8",
+   "Shares Held": "518,990",
+   "Asset Category": "Stock",
+   "Market Value": "$34,507,645.10",
+   "Notional Value": "",
+   "Weight": "2.72%"
+  },
+  {
+   "Name": "Wilmar International Ltd",
+   "Ticker": "WIL SP",
+   "Identifier": "BBG000BM10Z8",
+   "Shares Held": "10,540,900",
+   "Asset Category": "Stock",
+   "Market Value": "$30,828,746.41",
+   "Notional Value": "",
+   "Weight": "2.43%"
+  },
+  {
+   "Name": "Yara International Asa",
+   "Ticker": "YAR NO",
+   "Identifier": "BBG000KDG7R6",
+   "Shares Held": "623,577",
+   "Asset Category": "Stock",
+   "Market Value": "$30,580,447.51",
+   "Notional Value": "",
+   "Weight": "2.41%"
+  },
+  {
+   "Name": "Toro Co/The",
+   "Ticker": "TTC",
+   "Identifier": "BBG000BVQRY3",
+   "Shares Held": "291,540",
+   "Asset Category": "Stock",
+   "Market Value": "$26,877,072.60",
+   "Notional Value": "",
+   "Weight": "2.12%"
+  },
+  {
+   "Name": "China Mengniu Dairy Co Ltd",
+   "Ticker": "2319 HK",
+   "Identifier": "BBG000PXTGY5",
+   "Shares Held": "10,646,000",
+   "Asset Category": "Stock",
+   "Market Value": "$24,584,596.74",
+   "Notional Value": "",
+   "Weight": "1.94%"
+  },
+  {
+   "Name": "Mosaic Co/The",
+   "Ticker": "MOS",
+   "Identifier": "BBG000BFXHL6",
+   "Shares Held": "915,044",
+   "Asset Category": "Stock",
+   "Market Value": "$23,232,967.16",
+   "Notional Value": "",
+   "Weight": "1.83%"
+  },
+  {
+   "Name": "Agco Corp",
+   "Ticker": "AGCO",
+   "Identifier": "BBG000DCCZW2",
+   "Shares Held": "183,566",
+   "Asset Category": "Stock",
+   "Market Value": "$22,316,118.62",
+   "Notional Value": "",
+   "Weight": "1.76%"
+  },
+  {
+   "Name": "Salmar Asa",
+   "Ticker": "SALM NO",
+   "Identifier": "BBG000P3KW39",
+   "Shares Held": "326,131",
+   "Asset Category": "Stock",
+   "Market Value": "$19,474,899.81",
+   "Notional Value": "",
+   "Weight": "1.54%"
+  },
+  {
+   "Name": "Elanco Animal Health Inc",
+   "Ticker": "ELAN",
+   "Identifier": "BBG00LJYS1P8",
+   "Shares Held": "708,193",
+   "Asset Category": "Stock",
+   "Market Value": "$16,104,308.82",
+   "Notional Value": "",
+   "Weight": "1.27%"
+  },
+  {
+   "Name": "Charoen Pokphand Foods Pcl",
+   "Ticker": "CPF-R TB",
+   "Identifier": "BBG000BMC8H9",
+   "Shares Held": "20,581,100",
+   "Asset Category": "Stock",
+   "Market Value": "$14,088,229.83",
+   "Notional Value": "",
+   "Weight": "1.11%"
+  },
+  {
+   "Name": "Rumo Sa",
+   "Ticker": "RAIL3 BZ",
+   "Identifier": "BBG00G6D37M6",
+   "Shares Held": "4,788,300",
+   "Asset Category": "Stock",
+   "Market Value": "$13,871,729.38",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "Sime Darby Plantation Bhd",
+   "Ticker": "SDG MK",
+   "Identifier": "BBG00J88MJM2",
+   "Shares Held": "8,315,300",
+   "Asset Category": "Stock",
+   "Market Value": "$12,780,285.44",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "K+s Ag",
+   "Ticker": "SDF GR",
+   "Identifier": "BBG000BC8MY6",
+   "Shares Held": "661,501",
+   "Asset Category": "Stock",
+   "Market Value": "$12,588,415.13",
+   "Notional Value": "",
+   "Weight": "0.99%"
+  },
+  {
+   "Name": "Icl Group Ltd",
+   "Ticker": "ICL",
+   "Identifier": "BBG000BXH0Q7",
+   "Shares Held": "2,107,384",
+   "Asset Category": "Stock",
+   "Market Value": "$11,653,833.52",
+   "Notional Value": "",
+   "Weight": "0.92%"
+  },
+  {
+   "Name": "Nh Foods Ltd",
+   "Ticker": "2282 JP",
+   "Identifier": "BBG000BHN6G3",
+   "Shares Held": "285,400",
+   "Asset Category": "Stock",
+   "Market Value": "$11,512,281.90",
+   "Notional Value": "",
+   "Weight": "0.91%"
+  },
+  {
+   "Name": "Cal-Maine Foods Inc",
+   "Ticker": "CALM",
+   "Identifier": "BBG000CDMJW6",
+   "Shares Held": "152,673",
+   "Asset Category": "Stock",
+   "Market Value": "$11,311,542.57",
+   "Notional Value": "",
+   "Weight": "0.89%"
+  },
+  {
+   "Name": "Dyno Nobel Ltd",
+   "Ticker": "DNL AU",
+   "Identifier": "BBG000PTL148",
+   "Shares Held": "3,668,744",
+   "Asset Category": "Stock",
+   "Market Value": "$10,907,805.62",
+   "Notional Value": "",
+   "Weight": "0.86%"
+  },
+  {
+   "Name": "Bucher Industries Ag",
+   "Ticker": "BUCN SW",
+   "Identifier": "BBG000BLZXN4",
+   "Shares Held": "25,102",
+   "Asset Category": "Stock",
+   "Market Value": "$9,777,437.77",
+   "Notional Value": "",
+   "Weight": "0.77%"
+  },
+  {
+   "Name": "Treasury Wine Estates Ltd",
+   "Ticker": "TWE AU",
+   "Identifier": "BBG000QZ1QQ6",
+   "Shares Held": "2,427,411",
+   "Asset Category": "Stock",
+   "Market Value": "$9,174,530.20",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "Kuala Lumpur Kepong Bhd",
+   "Ticker": "KLK MK",
+   "Identifier": "BBG000BD1WK4",
+   "Shares Held": "1,529,500",
+   "Asset Category": "Stock",
+   "Market Value": "$8,440,320.93",
+   "Notional Value": "",
+   "Weight": "0.67%"
+  },
+  {
+   "Name": "Neogen Corp",
+   "Ticker": "NEOG",
+   "Identifier": "BBG000C1BCK2",
+   "Shares Held": "645,365",
+   "Asset Category": "Stock",
+   "Market Value": "$8,280,032.95",
+   "Notional Value": "",
+   "Weight": "0.65%"
+  },
+  {
+   "Name": "Bakkafrost P/F",
+   "Ticker": "BAKKA NO",
+   "Identifier": "BBG000QF8SK5",
+   "Shares Held": "163,238",
+   "Asset Category": "Stock",
+   "Market Value": "$7,491,248.37",
+   "Notional Value": "",
+   "Weight": "0.59%"
+  },
+  {
+   "Name": "Golden Agri-Resources Ltd",
+   "Ticker": "GGR SP",
+   "Identifier": "BBG000BK1581",
+   "Shares Held": "27,776,900",
+   "Asset Category": "Stock",
+   "Market Value": "$7,403,979.46",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Ioi Corp Bhd",
+   "Ticker": "IOI MK",
+   "Identifier": "BBG000BDC923",
+   "Shares Held": "6,209,300",
+   "Asset Category": "Stock",
+   "Market Value": "$7,367,329.15",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Nippon Suisan Kaisha Ltd",
+   "Ticker": "1332 JP",
+   "Identifier": "BBG000BH5GX2",
+   "Shares Held": "942,900",
+   "Asset Category": "Stock",
+   "Market Value": "$7,305,494.63",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Schouw & Co A/S",
+   "Ticker": "SCHO DC",
+   "Identifier": "BBG000BZVM24",
+   "Shares Held": "51,552",
+   "Asset Category": "Stock",
+   "Market Value": "$6,412,164.37",
+   "Notional Value": "",
+   "Weight": "0.51%"
+  },
+  {
+   "Name": "Genus Plc",
+   "Ticker": "GNS LN",
+   "Identifier": "BBG000CTMKX7",
+   "Shares Held": "205,749",
+   "Asset Category": "Stock",
+   "Market Value": "$5,871,709.59",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Leroy Seafood Group Asa",
+   "Ticker": "LSG NO",
+   "Identifier": "BBG000C9S737",
+   "Shares Held": "1,202,580",
+   "Asset Category": "Stock",
+   "Market Value": "$5,461,827.22",
+   "Notional Value": "",
+   "Weight": "0.43%"
+  },
+  {
+   "Name": "Pilgrim's Pride Corp",
+   "Ticker": "PPC",
+   "Identifier": "BBG000BFLXV3",
+   "Shares Held": "184,011",
+   "Asset Category": "Stock",
+   "Market Value": "$5,439,365.16",
+   "Notional Value": "",
+   "Weight": "0.43%"
+  },
+  {
+   "Name": "Charoen Pokphand Indonesia Tbk Pt",
+   "Ticker": "CPIN IJ",
+   "Identifier": "BBG000BF2H49",
+   "Shares Held": "26,760,400",
+   "Asset Category": "Stock",
+   "Market Value": "$4,703,702.84",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Maruha Nichiro Corp",
+   "Ticker": "1333 JP",
+   "Identifier": "BBG001HX4YF1",
+   "Shares Held": "549,500",
+   "Asset Category": "Stock",
+   "Market Value": "$4,612,008.01",
+   "Notional Value": "",
+   "Weight": "0.36%"
+  },
+  {
+   "Name": "Ppb Group Bhd",
+   "Ticker": "PEP MK",
+   "Identifier": "BBG000BDYNQ2",
+   "Shares Held": "1,829,800",
+   "Asset Category": "Stock",
+   "Market Value": "$4,338,117.43",
+   "Notional Value": "",
+   "Weight": "0.34%"
+  },
+  {
+   "Name": "Taiwan Fertilizer Co Ltd",
+   "Ticker": "1722 TT",
+   "Identifier": "BBG000BCVKZ3",
+   "Shares Held": "3,206,000",
+   "Asset Category": "Stock",
+   "Market Value": "$4,244,328.00",
+   "Notional Value": "",
+   "Weight": "0.33%"
+  },
+  {
+   "Name": "Fmc Corp",
+   "Ticker": "FMC",
+   "Identifier": "BBG000BJP882",
+   "Shares Held": "397,604",
+   "Asset Category": "Stock",
+   "Market Value": "$4,055,560.80",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Phosagro Pjsc",
+   "Ticker": "PHOR RM",
+   "Identifier": "BBG004S689R0",
+   "Shares Held": "97,916",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Private",
+   "Ticker": ".PHOR2 RU",
+   "Identifier": "BBG0175TL3N9",
+   "Shares Held": "1,892",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Private",
+   "Ticker": ".PHOR1 RU",
+   "Identifier": "BBG0175TKDG6",
+   "Shares Held": "1",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "4,646,455",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$4,646,455.19",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-SGD CASH-",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$.01",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-JPY CASH-",
+   "Identifier": "",
+   "Shares Held": "1",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$.01",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-EUR CASH-",
+   "Identifier": "",
+   "Shares Held": "280",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$321.81",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-BRL CASH-",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-.01",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-AUD CASH-",
+   "Identifier": "",
+   "Shares Held": "140",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$99.92",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$-669,692.19",
+   "Notional Value": "",
+   "Weight": "-0.05%"
+  }
+ ]
+}

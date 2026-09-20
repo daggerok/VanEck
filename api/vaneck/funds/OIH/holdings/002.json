@@ -1,0 +1,38 @@
+{
+ "ticker": "OIH",
+ "page": 2,
+ "pageSize": 25,
+ "totalRows": 27,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "2,126,916",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$2,126,916.31",
+   "Notional Value": "",
+   "Weight": "0.10%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$3,575,401.85",
+   "Notional Value": "",
+   "Weight": "0.17%"
+  }
+ ]
+}

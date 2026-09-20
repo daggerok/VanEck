@@ -1,0 +1,38 @@
+{
+ "ticker": "VAVX",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 2,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Avax",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "1,825,830",
+   "Asset Category": "",
+   "Market Value": "$13,849,011.71",
+   "Notional Value": "",
+   "Weight": "100.03%"
+  },
+  {
+   "Name": "Other Cash And Liabilities",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "",
+   "Market Value": "$-4,405.06",
+   "Notional Value": "",
+   "Weight": "-0.03%"
+  }
+ ]
+}

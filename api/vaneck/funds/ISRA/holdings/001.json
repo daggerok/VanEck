@@ -1,0 +1,848 @@
+{
+ "ticker": "ISRA",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 83,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Palo Alto Networks Inc",
+   "Ticker": "PANW",
+   "Identifier": "BBG0014GJCT9",
+   "Shares Held": "57,204",
+   "Asset Category": "Stock",
+   "Market Value": "$21,454,932.24",
+   "Notional Value": "",
+   "Weight": "13.31%"
+  },
+  {
+   "Name": "Teva Pharmaceutical Industries Ltd",
+   "Ticker": "TEVA",
+   "Identifier": "BBG000HD3FM1",
+   "Shares Held": "311,926",
+   "Asset Category": "Stock",
+   "Market Value": "$12,224,379.94",
+   "Notional Value": "",
+   "Weight": "7.59%"
+  },
+  {
+   "Name": "Bank Leumi Le-Israel Bm",
+   "Ticker": "LUMI IT",
+   "Identifier": "BBG000BXB0V7",
+   "Shares Held": "364,801",
+   "Asset Category": "Stock",
+   "Market Value": "$9,394,825.48",
+   "Notional Value": "",
+   "Weight": "5.83%"
+  },
+  {
+   "Name": "Bank Hapoalim Bm",
+   "Ticker": "POLI IT",
+   "Identifier": "BBG000F23M06",
+   "Shares Held": "321,925",
+   "Asset Category": "Stock",
+   "Market Value": "$8,485,109.57",
+   "Notional Value": "",
+   "Weight": "5.27%"
+  },
+  {
+   "Name": "Elbit Systems Ltd",
+   "Ticker": "ESLT",
+   "Identifier": "BBG000CRN4P5",
+   "Shares Held": "8,389",
+   "Asset Category": "Stock",
+   "Market Value": "$6,279,669.84",
+   "Notional Value": "",
+   "Weight": "3.90%"
+  },
+  {
+   "Name": "Tower Semiconductor Ltd",
+   "Ticker": "TSEM",
+   "Identifier": "BBG000BH91G0",
+   "Shares Held": "26,044",
+   "Asset Category": "Stock",
+   "Market Value": "$5,709,886.56",
+   "Notional Value": "",
+   "Weight": "3.54%"
+  },
+  {
+   "Name": "Phoenix Holdings Ltd/The",
+   "Ticker": "PHOE IT",
+   "Identifier": "BBG000G2KHT6",
+   "Shares Held": "60,843",
+   "Asset Category": "Stock",
+   "Market Value": "$3,734,207.91",
+   "Notional Value": "",
+   "Weight": "2.32%"
+  },
+  {
+   "Name": "Israel Discount Bank Ltd",
+   "Ticker": "DSCT IT",
+   "Identifier": "BBG000HVQG80",
+   "Shares Held": "312,539",
+   "Asset Category": "Stock",
+   "Market Value": "$3,720,987.76",
+   "Notional Value": "",
+   "Weight": "2.31%"
+  },
+  {
+   "Name": "Mizrahi Tefahot Bank Ltd",
+   "Ticker": "MZTF IT",
+   "Identifier": "BBG000J72HD9",
+   "Shares Held": "46,769",
+   "Asset Category": "Stock",
+   "Market Value": "$3,695,391.17",
+   "Notional Value": "",
+   "Weight": "2.29%"
+  },
+  {
+   "Name": "Jfrog Ltd",
+   "Ticker": "FROG",
+   "Identifier": "BBG006PWZX16",
+   "Shares Held": "38,043",
+   "Asset Category": "Stock",
+   "Market Value": "$3,575,281.14",
+   "Notional Value": "",
+   "Weight": "2.22%"
+  },
+  {
+   "Name": "Check Point Software Technologies Ltd",
+   "Ticker": "CHKP",
+   "Identifier": "BBG000K82ZT8",
+   "Shares Held": "22,723",
+   "Asset Category": "Stock",
+   "Market Value": "$3,095,554.29",
+   "Notional Value": "",
+   "Weight": "1.92%"
+  },
+  {
+   "Name": "Harel Insurance Investments & Financial",
+   "Ticker": "HARL IT",
+   "Identifier": "BBG000G28QX5",
+   "Shares Held": "41,432",
+   "Asset Category": "Stock",
+   "Market Value": "$2,730,002.63",
+   "Notional Value": "",
+   "Weight": "1.69%"
+  },
+  {
+   "Name": "Sentinelone Inc",
+   "Ticker": "S",
+   "Identifier": "BBG00B6F2F09",
+   "Shares Held": "113,181",
+   "Asset Category": "Stock",
+   "Market Value": "$2,624,667.39",
+   "Notional Value": "",
+   "Weight": "1.63%"
+  },
+  {
+   "Name": "Clal Insurance Enterprises Holdings Ltd",
+   "Ticker": "CLIS IT",
+   "Identifier": "BBG000BK0F62",
+   "Shares Held": "24,075",
+   "Asset Category": "Stock",
+   "Market Value": "$2,306,277.48",
+   "Notional Value": "",
+   "Weight": "1.43%"
+  },
+  {
+   "Name": "Nice Ltd",
+   "Ticker": "NICE",
+   "Identifier": "BBG000KC17R4",
+   "Shares Held": "21,494",
+   "Asset Category": "Stock",
+   "Market Value": "$2,262,458.44",
+   "Notional Value": "",
+   "Weight": "1.40%"
+  },
+  {
+   "Name": "Nova Ltd",
+   "Ticker": "NVMI",
+   "Identifier": "BBG000BSY1Y8",
+   "Shares Held": "6,431",
+   "Asset Category": "Stock",
+   "Market Value": "$2,238,438.17",
+   "Notional Value": "",
+   "Weight": "1.39%"
+  },
+  {
+   "Name": "Enlight Renewable Energy Ltd",
+   "Ticker": "ENLT IT",
+   "Identifier": "BBG000NQKK36",
+   "Shares Held": "27,680",
+   "Asset Category": "Stock",
+   "Market Value": "$2,089,384.37",
+   "Notional Value": "",
+   "Weight": "1.30%"
+  },
+  {
+   "Name": "Azrieli Group Ltd",
+   "Ticker": "AZRG IT",
+   "Identifier": "BBG000G9PL35",
+   "Shares Held": "15,242",
+   "Asset Category": "Stock",
+   "Market Value": "$1,966,747.86",
+   "Notional Value": "",
+   "Weight": "1.22%"
+  },
+  {
+   "Name": "Varonis Systems Inc",
+   "Ticker": "VRNS",
+   "Identifier": "BBG001Y04TN6",
+   "Shares Held": "40,854",
+   "Asset Category": "Stock",
+   "Market Value": "$1,953,229.74",
+   "Notional Value": "",
+   "Weight": "1.21%"
+  },
+  {
+   "Name": "Bezeq The Israeli Telecommunication Cor",
+   "Ticker": "BEZQ IT",
+   "Identifier": "BBG000BJDD39",
+   "Shares Held": "777,767",
+   "Asset Category": "Stock",
+   "Market Value": "$1,934,070.18",
+   "Notional Value": "",
+   "Weight": "1.20%"
+  },
+  {
+   "Name": "Global-E Online Ltd",
+   "Ticker": "GLBE",
+   "Identifier": "BBG00ZKY1P71",
+   "Shares Held": "48,081",
+   "Asset Category": "Stock",
+   "Market Value": "$1,845,348.78",
+   "Notional Value": "",
+   "Weight": "1.15%"
+  },
+  {
+   "Name": "Amdocs Ltd",
+   "Ticker": "DOX",
+   "Identifier": "BBG000C3MXG5",
+   "Shares Held": "30,496",
+   "Asset Category": "Stock",
+   "Market Value": "$1,845,312.96",
+   "Notional Value": "",
+   "Weight": "1.15%"
+  },
+  {
+   "Name": "Tel Aviv Stock Exchange Ltd",
+   "Ticker": "TASE IT",
+   "Identifier": "BBG00PT8N3Y6",
+   "Shares Held": "37,108",
+   "Asset Category": "Stock",
+   "Market Value": "$1,801,951.41",
+   "Notional Value": "",
+   "Weight": "1.12%"
+  },
+  {
+   "Name": "Menora Mivtachim Holdings Ltd",
+   "Ticker": "MMHD IT",
+   "Identifier": "BBG000G28FC2",
+   "Shares Held": "9,683",
+   "Asset Category": "Stock",
+   "Market Value": "$1,759,815.16",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "First International Bank Of Israel Ltd/",
+   "Ticker": "FIBI IT",
+   "Identifier": "BBG000BK0KV3",
+   "Shares Held": "21,402",
+   "Asset Category": "Stock",
+   "Market Value": "$1,673,421.45",
+   "Notional Value": "",
+   "Weight": "1.04%"
+  },
+  {
+   "Name": "Next Vision Stabilized Systems Ltd",
+   "Ticker": "NXSN IT",
+   "Identifier": "BBG011DFGX71",
+   "Shares Held": "21,323",
+   "Asset Category": "Stock",
+   "Market Value": "$1,643,557.24",
+   "Notional Value": "",
+   "Weight": "1.02%"
+  },
+  {
+   "Name": "Migdal Insurance & Financial Holdings L",
+   "Ticker": "MGDL IT",
+   "Identifier": "BBG000BHCC81",
+   "Shares Held": "231,045",
+   "Asset Category": "Stock",
+   "Market Value": "$1,627,565.40",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "Monday.Com Ltd",
+   "Ticker": "MNDY",
+   "Identifier": "BBG00GF8K4W4",
+   "Shares Held": "17,408",
+   "Asset Category": "Stock",
+   "Market Value": "$1,571,768.32",
+   "Notional Value": "",
+   "Weight": "0.98%"
+  },
+  {
+   "Name": "Zim Integrated Shipping Services Ltd",
+   "Ticker": "ZIM",
+   "Identifier": "BBG00YQ7XR05",
+   "Shares Held": "50,729",
+   "Asset Category": "Stock",
+   "Market Value": "$1,540,132.44",
+   "Notional Value": "",
+   "Weight": "0.96%"
+  },
+  {
+   "Name": "Ondas Holdings Inc",
+   "Ticker": "ONDS",
+   "Identifier": "BBG009HYYCD9",
+   "Shares Held": "199,578",
+   "Asset Category": "Stock",
+   "Market Value": "$1,474,881.42",
+   "Notional Value": "",
+   "Weight": "0.92%"
+  },
+  {
+   "Name": "Ormat Technologies Inc",
+   "Ticker": "ORA",
+   "Identifier": "BBG000Q5BQ63",
+   "Shares Held": "15,030",
+   "Asset Category": "Stock",
+   "Market Value": "$1,463,471.10",
+   "Notional Value": "",
+   "Weight": "0.91%"
+  },
+  {
+   "Name": "Camtek Ltd/Israel",
+   "Ticker": "CAMT",
+   "Identifier": "BBG000BJ4M84",
+   "Shares Held": "9,738",
+   "Asset Category": "Stock",
+   "Market Value": "$1,404,316.98",
+   "Notional Value": "",
+   "Weight": "0.87%"
+  },
+  {
+   "Name": "Opc Energy Ltd",
+   "Ticker": "OPCE IT",
+   "Identifier": "BBG00H50SMD3",
+   "Shares Held": "43,748",
+   "Asset Category": "Stock",
+   "Market Value": "$1,360,439.79",
+   "Notional Value": "",
+   "Weight": "0.84%"
+  },
+  {
+   "Name": "Delek Group Ltd",
+   "Ticker": "DLEKG IT",
+   "Identifier": "BBG000BQGBF1",
+   "Shares Held": "43,705",
+   "Asset Category": "Stock",
+   "Market Value": "$1,284,094.75",
+   "Notional Value": "",
+   "Weight": "0.80%"
+  },
+  {
+   "Name": "Icl Group Ltd",
+   "Ticker": "ICL",
+   "Identifier": "BBG000BXH0Q7",
+   "Shares Held": "231,203",
+   "Asset Category": "Stock",
+   "Market Value": "$1,278,552.59",
+   "Notional Value": "",
+   "Weight": "0.79%"
+  },
+  {
+   "Name": "Lemonade Inc",
+   "Ticker": "LMND",
+   "Identifier": "BBG00BM5YC05",
+   "Shares Held": "25,045",
+   "Asset Category": "Stock",
+   "Market Value": "$1,216,686.10",
+   "Notional Value": "",
+   "Weight": "0.75%"
+  },
+  {
+   "Name": "Big Shopping Centers Ltd",
+   "Ticker": "BIG IT",
+   "Identifier": "BBG000Q6J2W7",
+   "Shares Held": "5,279",
+   "Asset Category": "Stock",
+   "Market Value": "$1,198,063.41",
+   "Notional Value": "",
+   "Weight": "0.74%"
+  },
+  {
+   "Name": "Melisron Ltd",
+   "Ticker": "MLSR IT",
+   "Identifier": "BBG000BNJKK9",
+   "Shares Held": "8,683",
+   "Asset Category": "Stock",
+   "Market Value": "$1,158,214.45",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "Oil Refineries Ltd",
+   "Ticker": "ORL IT",
+   "Identifier": "BBG000Q9GM78",
+   "Shares Held": "1,530,246",
+   "Asset Category": "Stock",
+   "Market Value": "$1,113,113.13",
+   "Notional Value": "",
+   "Weight": "0.69%"
+  },
+  {
+   "Name": "Wix.Com Ltd",
+   "Ticker": "WIX",
+   "Identifier": "BBG005CM7J89",
+   "Shares Held": "12,840",
+   "Asset Category": "Stock",
+   "Market Value": "$1,025,916.00",
+   "Notional Value": "",
+   "Weight": "0.64%"
+  },
+  {
+   "Name": "Plus500 Ltd",
+   "Ticker": "PLUS LN",
+   "Identifier": "BBG004V7D7S1",
+   "Shares Held": "21,397",
+   "Asset Category": "Stock",
+   "Market Value": "$1,002,248.24",
+   "Notional Value": "",
+   "Weight": "0.62%"
+  },
+  {
+   "Name": "First International Bank Of Israel Ltd",
+   "Ticker": "FIBIH IT",
+   "Identifier": "BBG000BK0GY9",
+   "Shares Held": "9,989",
+   "Asset Category": "Stock",
+   "Market Value": "$1,000,999.04",
+   "Notional Value": "",
+   "Weight": "0.62%"
+  },
+  {
+   "Name": "Matrix It Ltd",
+   "Ticker": "MTRX IT",
+   "Identifier": "BBG000PB0382",
+   "Shares Held": "28,977",
+   "Asset Category": "Stock",
+   "Market Value": "$980,203.88",
+   "Notional Value": "",
+   "Weight": "0.61%"
+  },
+  {
+   "Name": "Payoneer Global Inc",
+   "Ticker": "PAYO",
+   "Identifier": "BBG00Z5JLLB3",
+   "Shares Held": "134,696",
+   "Asset Category": "Stock",
+   "Market Value": "$957,688.56",
+   "Notional Value": "",
+   "Weight": "0.59%"
+  },
+  {
+   "Name": "Pagaya Technologies Ltd",
+   "Ticker": "PGY",
+   "Identifier": "BBG00VJFX5J9",
+   "Shares Held": "46,327",
+   "Asset Category": "Stock",
+   "Market Value": "$952,483.12",
+   "Notional Value": "",
+   "Weight": "0.59%"
+  },
+  {
+   "Name": "Paz Retail And Energy Ltd",
+   "Ticker": "PAZ IT",
+   "Identifier": "BBG000NB3443",
+   "Shares Held": "3,308",
+   "Asset Category": "Stock",
+   "Market Value": "$927,915.82",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Cellebrite Di Ltd",
+   "Ticker": "CLBT",
+   "Identifier": "BBG000BK00N6",
+   "Shares Held": "75,354",
+   "Asset Category": "Stock",
+   "Market Value": "$890,684.28",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "Energean Plc",
+   "Ticker": "ENOG LN",
+   "Identifier": "BBG00K4LLFZ9",
+   "Shares Held": "81,458",
+   "Asset Category": "Stock",
+   "Market Value": "$865,784.17",
+   "Notional Value": "",
+   "Weight": "0.54%"
+  },
+  {
+   "Name": "Etoro Group Ltd",
+   "Ticker": "ETOR",
+   "Identifier": "BBG00KG5TXN7",
+   "Shares Held": "30,792",
+   "Asset Category": "Stock",
+   "Market Value": "$860,020.56",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Strauss Group Ltd",
+   "Ticker": "STRS IT",
+   "Identifier": "BBG000G2KKM6",
+   "Shares Held": "23,661",
+   "Asset Category": "Stock",
+   "Market Value": "$851,903.66",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Mobileye Global Inc",
+   "Ticker": "MBLY",
+   "Identifier": "BBG019X46Z37",
+   "Shares Held": "103,969",
+   "Asset Category": "Stock",
+   "Market Value": "$835,910.76",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Novocure Ltd",
+   "Ticker": "NVCR",
+   "Identifier": "BBG009XW8PY2",
+   "Shares Held": "48,283",
+   "Asset Category": "Stock",
+   "Market Value": "$807,291.76",
+   "Notional Value": "",
+   "Weight": "0.50%"
+  },
+  {
+   "Name": "Hilan Ltd",
+   "Ticker": "HLAN IT",
+   "Identifier": "BBG000DZ2XT1",
+   "Shares Held": "9,879",
+   "Asset Category": "Stock",
+   "Market Value": "$794,420.72",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Solaredge Technologies Inc",
+   "Ticker": "SEDG",
+   "Identifier": "BBG0084BBZY6",
+   "Shares Held": "22,028",
+   "Asset Category": "Stock",
+   "Market Value": "$793,008.00",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Inmode Ltd",
+   "Ticker": "INMD",
+   "Identifier": "BBG00PPS73P4",
+   "Shares Held": "53,538",
+   "Asset Category": "Stock",
+   "Market Value": "$778,442.52",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Energix-Renewable Energies Ltd",
+   "Ticker": "ENRG IT",
+   "Identifier": "BBG001MFMTP4",
+   "Shares Held": "116,297",
+   "Asset Category": "Stock",
+   "Market Value": "$777,586.37",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Doral Group Renewable Energy Resources",
+   "Ticker": "DORL IT",
+   "Identifier": "BBG00V3L5L54",
+   "Shares Held": "43,284",
+   "Asset Category": "Stock",
+   "Market Value": "$774,421.65",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Fattal Holdings 1998 Ltd",
+   "Ticker": "FTAL IT",
+   "Identifier": "BBG00JVVZC91",
+   "Shares Held": "3,510",
+   "Asset Category": "Stock",
+   "Market Value": "$772,447.58",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Shufersal Ltd",
+   "Ticker": "SAE IT",
+   "Identifier": "BBG000BSSJX7",
+   "Shares Held": "63,542",
+   "Asset Category": "Stock",
+   "Market Value": "$770,279.61",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Shapir Engineering And Industry Ltd",
+   "Ticker": "SPEN IT",
+   "Identifier": "BBG007PB6MQ9",
+   "Shares Held": "53,903",
+   "Asset Category": "Stock",
+   "Market Value": "$766,621.35",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Shikun & Binui Ltd",
+   "Ticker": "SKBN IT",
+   "Identifier": "BBG000C35FH2",
+   "Shares Held": "126,035",
+   "Asset Category": "Stock",
+   "Market Value": "$761,103.51",
+   "Notional Value": "",
+   "Weight": "0.47%"
+  },
+  {
+   "Name": "Amot Investments Ltd",
+   "Ticker": "AMOT IT",
+   "Identifier": "BBG000PRSVW8",
+   "Shares Held": "109,673",
+   "Asset Category": "Stock",
+   "Market Value": "$729,893.37",
+   "Notional Value": "",
+   "Weight": "0.45%"
+  },
+  {
+   "Name": "Alony Hetz Properties & Investments Ltd",
+   "Ticker": "ALHE IT",
+   "Identifier": "BBG000FKRYJ4",
+   "Shares Held": "71,901",
+   "Asset Category": "Stock",
+   "Market Value": "$729,369.53",
+   "Notional Value": "",
+   "Weight": "0.45%"
+  },
+  {
+   "Name": "Radware Ltd",
+   "Ticker": "RDWR",
+   "Identifier": "BBG000BKWR89",
+   "Shares Held": "23,735",
+   "Asset Category": "Stock",
+   "Market Value": "$725,104.25",
+   "Notional Value": "",
+   "Weight": "0.45%"
+  },
+  {
+   "Name": "One Software Technologies Ltd",
+   "Ticker": "ONE IT",
+   "Identifier": "BBG000LL6MR5",
+   "Shares Held": "31,730",
+   "Asset Category": "Stock",
+   "Market Value": "$719,559.97",
+   "Notional Value": "",
+   "Weight": "0.45%"
+  },
+  {
+   "Name": "Rami Levy Chain Stores Hashikma Marketi",
+   "Ticker": "RMLI IT",
+   "Identifier": "BBG000NS1R38",
+   "Shares Held": "6,242",
+   "Asset Category": "Stock",
+   "Market Value": "$709,002.46",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Opko Health Inc",
+   "Ticker": "OPK",
+   "Identifier": "BBG000N49069",
+   "Shares Held": "437,505",
+   "Asset Category": "Stock",
+   "Market Value": "$708,758.10",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Airport City Ltd",
+   "Ticker": "ARPT IT",
+   "Identifier": "BBG000PX04R1",
+   "Shares Held": "40,022",
+   "Asset Category": "Stock",
+   "Market Value": "$707,969.97",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Mivne Real Estate Kd Ltd",
+   "Ticker": "MVNE IT",
+   "Identifier": "BBG000BJGMM5",
+   "Shares Held": "167,222",
+   "Asset Category": "Stock",
+   "Market Value": "$702,421.17",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Delta Galil Industries Ltd",
+   "Ticker": "DELG IT",
+   "Identifier": "BBG000BJWBF9",
+   "Shares Held": "11,404",
+   "Asset Category": "Stock",
+   "Market Value": "$680,997.55",
+   "Notional Value": "",
+   "Weight": "0.42%"
+  },
+  {
+   "Name": "Electra Ltd/Israel",
+   "Ticker": "ELTR IT",
+   "Identifier": "BBG000G2KCG1",
+   "Shares Held": "17,789",
+   "Asset Category": "Stock",
+   "Market Value": "$670,013.46",
+   "Notional Value": "",
+   "Weight": "0.42%"
+  },
+  {
+   "Name": "Kenon Holdings Ltd/Singapore",
+   "Ticker": "KEN IT",
+   "Identifier": "BBG007LYGD28",
+   "Shares Held": "10,106",
+   "Asset Category": "Stock",
+   "Market Value": "$667,755.41",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Formula Systems 1985 Ltd",
+   "Ticker": "FORTY IT",
+   "Identifier": "BBG000JN58H7",
+   "Shares Held": "5,772",
+   "Asset Category": "Stock",
+   "Market Value": "$660,184.57",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Isracard Ltd",
+   "Ticker": "ISCD IT",
+   "Identifier": "BBG00NW1JGV1",
+   "Shares Held": "180,087",
+   "Asset Category": "Stock",
+   "Market Value": "$655,685.67",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Israel Corp Ltd",
+   "Ticker": "ILCO IT",
+   "Identifier": "BBG000BV48T5",
+   "Shares Held": "24,169",
+   "Asset Category": "Stock",
+   "Market Value": "$640,186.92",
+   "Notional Value": "",
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "Kornit Digital Ltd",
+   "Ticker": "KRNT",
+   "Identifier": "BBG0086KNBP4",
+   "Shares Held": "39,329",
+   "Asset Category": "Stock",
+   "Market Value": "$604,880.02",
+   "Notional Value": "",
+   "Weight": "0.38%"
+  },
+  {
+   "Name": "Stratasys Ltd",
+   "Ticker": "SSYS",
+   "Identifier": "BBG002S5ZRF9",
+   "Shares Held": "74,433",
+   "Asset Category": "Stock",
+   "Market Value": "$595,464.00",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Ashtrom Group Ltd",
+   "Ticker": "ASHG IT",
+   "Identifier": "BBG006M6THM5",
+   "Shares Held": "29,087",
+   "Asset Category": "Stock",
+   "Market Value": "$546,465.62",
+   "Notional Value": "",
+   "Weight": "0.34%"
+  },
+  {
+   "Name": "Taboola.Com Ltd",
+   "Ticker": "TBLA",
+   "Identifier": "BBG011MN6XD8",
+   "Shares Held": "147,781",
+   "Asset Category": "Stock",
+   "Market Value": "$543,834.08",
+   "Notional Value": "",
+   "Weight": "0.34%"
+  },
+  {
+   "Name": "Delek Yizum Nechasim Ltd",
+   "Ticker": "DLAS IT",
+   "Identifier": "BBG023DVJ7M8",
+   "Shares Held": "4,370",
+   "Asset Category": "Stock",
+   "Market Value": "$101,492.87",
+   "Notional Value": "",
+   "Weight": "0.06%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "24,216",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$24,215.66",
+   "Notional Value": "",
+   "Weight": "0.02%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-ILS CASH-",
+   "Identifier": "",
+   "Shares Held": "-32,014",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-10,555.53",
+   "Notional Value": "",
+   "Weight": "-0.01%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$364,916.93",
+   "Notional Value": "",
+   "Weight": "0.23%"
+  }
+ ]
+}

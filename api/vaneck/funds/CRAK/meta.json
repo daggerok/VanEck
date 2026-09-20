@@ -1,0 +1,198 @@
+{
+ "ticker": "CRAK",
+ "name": "VanEck Oil Refiners ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
+ "dataFile": "./funds/CRAK/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.61%",
+ "terValue": 0.61,
+ "nav": {
+  "display": "$65.46",
+  "value": 65.46,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 65.46,
+ "aum": {
+  "display": "$597.32M",
+  "value": 597315893.63,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 597315893.63,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Aug 18 2015",
+ "exchange": "—",
+ "closePrice": "$65.39",
+ "closePriceValue": 65.39,
+ "premiumDiscount": {
+  "display": "-0.07%",
+  "value": -0.07
+ },
+ "premiumDiscountValue": -0.07,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$0.7561"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$1.5394"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$1.2500"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$0.9600"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.6483"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.6600"
+   },
+   {
+    "Ex-Date": "Dec 23 2019",
+    "Payable Date": "Dec 30 2019",
+    "Dividend": "$0.4134"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.5170"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$0.3910"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$0.7130"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.0920"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 74.28,
+   "ytdText": "74.28%",
+   "yr1": 76.56,
+   "yr3": 26.5,
+   "yr5": 20.75,
+   "yr10": 15.38,
+   "sinceInception": 13.65
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 74.28,
+  "tr1y": 76.56,
+  "tr3y": 102.44,
+  "tr5y": 156.65,
+  "tr10y": 318.14,
+  "cagr3y": 26.5,
+  "cagr5y": 20.75,
+  "cagr10y": 15.38,
+  "siAnn": 13.65,
+  "dividendYield": 1.16,
+  "dividendYieldText": "1.16%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.94%",
+ "terGrossValue": 0.94,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 32,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 3138,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/fundhistoprices/)",
+  "pageCount": 4,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json"
+  ]
+ },
+ "totalNetAssets": 597320000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.61%",
+  "value": 0.61,
+  "gross": "0.94%",
+  "grossValue": 0.94
+ },
+ "marketPrice": {
+  "display": "$65.39",
+  "value": 65.39,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 1.16,
+  "dividendYieldText": "1.16%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

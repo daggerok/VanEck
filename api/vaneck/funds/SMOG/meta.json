@@ -1,0 +1,230 @@
+{
+ "ticker": "SMOG",
+ "name": "VanEck Low Carbon Energy ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/",
+ "dataFile": "./funds/SMOG/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.64%",
+ "terValue": 0.64,
+ "nav": {
+  "display": "$136.54",
+  "value": 136.54,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 136.54,
+ "aum": {
+  "display": "$130.85M",
+  "value": 130849350.53,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 130849350.53,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 03 2007",
+ "exchange": "—",
+ "closePrice": "$136.47",
+ "closePriceValue": 136.47,
+ "premiumDiscount": {
+  "display": "-0.07%",
+  "value": -0.07
+ },
+ "premiumDiscountValue": -0.07,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [
+   {
+    "Ex-Date": "Dec 22 2025",
+    "Payable Date": "Dec 26 2025",
+    "Dividend": "$2.0340"
+   },
+   {
+    "Ex-Date": "Dec 23 2024",
+    "Payable Date": "Dec 24 2024",
+    "Dividend": "$1.6217"
+   },
+   {
+    "Ex-Date": "Dec 18 2023",
+    "Payable Date": "Dec 22 2023",
+    "Dividend": "$1.7529"
+   },
+   {
+    "Ex-Date": "Dec 19 2022",
+    "Payable Date": "Dec 23 2022",
+    "Dividend": "$1.4580"
+   },
+   {
+    "Ex-Date": "Dec 20 2021",
+    "Payable Date": "Dec 27 2021",
+    "Dividend": "$0.7116"
+   },
+   {
+    "Ex-Date": "Dec 21 2020",
+    "Payable Date": "Dec 28 2020",
+    "Dividend": "$0.0918"
+   },
+   {
+    "Ex-Date": "Dec 20 2018",
+    "Payable Date": "Dec 27 2018",
+    "Dividend": "$0.3370"
+   },
+   {
+    "Ex-Date": "Dec 18 2017",
+    "Payable Date": "Dec 22 2017",
+    "Dividend": "$0.7670"
+   },
+   {
+    "Ex-Date": "Dec 19 2016",
+    "Payable Date": "Dec 23 2016",
+    "Dividend": "$1.0710"
+   },
+   {
+    "Ex-Date": "Dec 21 2015",
+    "Payable Date": "Dec 28 2015",
+    "Dividend": "$0.3090"
+   },
+   {
+    "Ex-Date": "Dec 22 2014",
+    "Payable Date": "Dec 29 2014",
+    "Dividend": "$0.1130"
+   },
+   {
+    "Ex-Date": "Dec 23 2013",
+    "Payable Date": "Dec 30 2013",
+    "Dividend": "$0.5540"
+   },
+   {
+    "Ex-Date": "Dec 24 2012",
+    "Payable Date": "Dec 31 2012",
+    "Dividend": "$0.6210"
+   },
+   {
+    "Ex-Date": "Dec 23 2011",
+    "Payable Date": "Dec 30 2011",
+    "Dividend": "$1.0440"
+   },
+   {
+    "Ex-Date": "Dec 23 2010",
+    "Payable Date": "Dec 30 2010",
+    "Dividend": "$0.5700"
+   },
+   {
+    "Ex-Date": "Dec 23 2009",
+    "Payable Date": "Dec 30 2009",
+    "Dividend": "$0.0360"
+   },
+   {
+    "Ex-Date": "Dec 26 2008",
+    "Payable Date": "Dec 31 2008",
+    "Dividend": "$0.4200"
+   }
+  ],
+  "source": "VanEck Distribution History (official)"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 5.31,
+   "ytdText": "5.31%",
+   "yr1": 19.96,
+   "yr3": 8.17,
+   "yr5": -1.7,
+   "yr10": 11.39,
+   "sinceInception": 1.81
+  },
+  "quarterEnd": {}
+ },
+ "metrics": {
+  "ytd": 5.31,
+  "tr1y": 19.96,
+  "tr3y": 26.56,
+  "tr5y": -8.21,
+  "tr10y": 194.05,
+  "cagr3y": 8.17,
+  "cagr5y": -1.7,
+  "cagr10y": 11.39,
+  "siAnn": 1.81,
+  "dividendYield": 1.49,
+  "dividendYieldText": "1.49%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Natural Resources",
+ "terGross": "0.64%",
+ "terGrossValue": 0.64,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "totalRows": 63,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
+ },
+ "history": {
+  "totalRows": 5226,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/fundhistoprices/)",
+  "pageCount": 6,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json",
+   "history/006.json"
+  ]
+ },
+ "totalNetAssets": 130850000,
+ "categoryPath": "Equity > Natural Resources",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMOG",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/fundhistoprices/)"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund"
+ },
+ "expenseRatio": {
+  "display": "0.64%",
+  "value": 0.64,
+  "gross": "0.64%",
+  "grossValue": 0.64
+ },
+ "marketPrice": {
+  "display": "$136.47",
+  "value": 136.47,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": 1.49,
+  "dividendYieldText": "1.49%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published on the official VanEck fund page for this fund"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}
