@@ -816,26 +816,31 @@ describe("generated feed", () => {
     expect(first.Weight).toBe("10.89%");
   });
 
-  test("catalog-only funds stay catalog-only, with an explanatory empty state", () => {
-    const withHoldings = index.funds.filter((f: any) => Number(f.holdings) > 0);
-    expect(withHoldings.map((f: any) => f.ticker).sort()).toEqual(["GDX", "OIH", "SMH"]);
+  test("a fund with no holdings download still gets a valid, explanatory empty state", () => {
+    // OUNZ is a physically-backed gold trust: it publishes no holdings
+    // workbook at all, the same as GLD/SLV on daggerok/SPDR. Every other
+    // fund in the 88-fund seed has a real holdings download.
     const catalogOnly = index.funds.filter((f: any) => !Number(f.holdings));
-    expect(catalogOnly.length).toBe(85);
+    expect(catalogOnly.map((f: any) => f.ticker)).toEqual(["OUNZ"]);
     for (const fund of catalogOnly) {
-      expect(fund.holdings ?? 0).toBe(0);
-      expect(fund.history ?? 0).toBe(0);
+      const meta = feedJson(`funds/${fund.ticker}/meta.json`);
+      expect(meta.holdings.totalRows).toBe(0);
+      expect(meta.holdings.pages).toEqual([]);
+      // A fund can still publish NAV history with no holdings download.
+      expect(meta.history.totalRows).toBeGreaterThan(0);
     }
   });
 
   test("history pages are consistent with their manifest", () => {
     const meta = feedJson("funds/GDX/meta.json");
-    expect(meta.history.pageCount).toBe(2);
-    expect(meta.history.pageSize).toBe(25);
+    expect(meta.history.pageCount).toBe(meta.history.pages.length);
     let total = 0;
     for (const page of meta.history.pages) {
       total += feedJson(`funds/GDX/${page}`).rows.length;
     }
     expect(total).toBe(meta.history.totalRows);
-    expect(total).toBe(33);
+    // GDX has traded since 2006; a full live pull carries thousands of daily
+    // rows, not the old bounded snapshot's 33.
+    expect(total).toBeGreaterThan(1000);
   });
 });

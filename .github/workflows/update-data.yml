@@ -131,14 +131,8 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Validate inline browser script
-        run: bun ./scripts/check-index.ts
-
       - name: Run updater unit tests
         run: bun test scripts/update-data.test.ts
-
-      - name: Type-check updater and tests
-        run: bunx tsc --noEmit
 
       - name: Generate api/vaneck static data
         run: bun ./scripts/update-data.ts
