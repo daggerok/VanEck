@@ -1,0 +1,718 @@
+{
+ "ticker": "IBOT",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 70,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Nvidia Corp",
+   "Ticker": "NVDA",
+   "Identifier": "BBG000BBJQV0",
+   "Shares Held": "25,081",
+   "Asset Category": "Stock",
+   "Market Value": "$5,501,266.54",
+   "Notional Value": "",
+   "Weight": "5.59%"
+  },
+  {
+   "Name": "Keyence Corp",
+   "Ticker": "6861 JP",
+   "Identifier": "BBG000BQF869",
+   "Shares Held": "11,200",
+   "Asset Category": "Stock",
+   "Market Value": "$5,495,667.64",
+   "Notional Value": "",
+   "Weight": "5.59%"
+  },
+  {
+   "Name": "Emerson Electric Co",
+   "Ticker": "EMR",
+   "Identifier": "BBG000BHX7N2",
+   "Shares Held": "36,658",
+   "Asset Category": "Stock",
+   "Market Value": "$5,403,389.20",
+   "Notional Value": "",
+   "Weight": "5.49%"
+  },
+  {
+   "Name": "Abb Ltd",
+   "Ticker": "ABBN SW",
+   "Identifier": "BBG000DM2M32",
+   "Shares Held": "50,320",
+   "Asset Category": "Stock",
+   "Market Value": "$4,848,305.46",
+   "Notional Value": "",
+   "Weight": "4.93%"
+  },
+  {
+   "Name": "Asml Holding Nv",
+   "Ticker": "ASML",
+   "Identifier": "BBG000K6MRN4",
+   "Shares Held": "2,884",
+   "Asset Category": "Stock",
+   "Market Value": "$4,699,968.28",
+   "Notional Value": "",
+   "Weight": "4.78%"
+  },
+  {
+   "Name": "Autodesk Inc",
+   "Ticker": "ADSK",
+   "Identifier": "BBG000BM7HL0",
+   "Shares Held": "17,492",
+   "Asset Category": "Stock",
+   "Market Value": "$3,824,450.88",
+   "Notional Value": "",
+   "Weight": "3.89%"
+  },
+  {
+   "Name": "Rockwell Automation Inc",
+   "Ticker": "ROK",
+   "Identifier": "BBG000BBCDZ2",
+   "Shares Held": "8,425",
+   "Asset Category": "Stock",
+   "Market Value": "$3,454,671.25",
+   "Notional Value": "",
+   "Weight": "3.51%"
+  },
+  {
+   "Name": "Fanuc Corp",
+   "Ticker": "6954 JP",
+   "Identifier": "BBG000BM3TW6",
+   "Shares Held": "69,700",
+   "Asset Category": "Stock",
+   "Market Value": "$2,626,075.01",
+   "Notional Value": "",
+   "Weight": "2.67%"
+  },
+  {
+   "Name": "Technipfmc Plc",
+   "Ticker": "FTI",
+   "Identifier": "BBG00DL8NMV2",
+   "Shares Held": "34,034",
+   "Asset Category": "Stock",
+   "Market Value": "$2,475,633.16",
+   "Notional Value": "",
+   "Weight": "2.52%"
+  },
+  {
+   "Name": "Teledyne Technologies Inc",
+   "Ticker": "TDY",
+   "Identifier": "BBG000BMT9T6",
+   "Shares Held": "3,830",
+   "Asset Category": "Stock",
+   "Market Value": "$2,305,583.40",
+   "Notional Value": "",
+   "Weight": "2.34%"
+  },
+  {
+   "Name": "Hexagon Ab",
+   "Ticker": "HEXAB SS",
+   "Identifier": "BBG000BF1LW0",
+   "Shares Held": "210,459",
+   "Asset Category": "Stock",
+   "Market Value": "$2,037,401.52",
+   "Notional Value": "",
+   "Weight": "2.07%"
+  },
+  {
+   "Name": "Lincoln Electric Holdings Inc",
+   "Ticker": "LECO",
+   "Identifier": "BBG000BB72K8",
+   "Shares Held": "7,746",
+   "Asset Category": "Stock",
+   "Market Value": "$1,990,722.00",
+   "Notional Value": "",
+   "Weight": "2.02%"
+  },
+  {
+   "Name": "Dassault Systemes Se",
+   "Ticker": "DSY FP",
+   "Identifier": "BBG000GVXC37",
+   "Shares Held": "82,409",
+   "Asset Category": "Stock",
+   "Market Value": "$1,945,235.38",
+   "Notional Value": "",
+   "Weight": "1.98%"
+  },
+  {
+   "Name": "Imi Plc",
+   "Ticker": "IMI LN",
+   "Identifier": "BBG000BDNBG1",
+   "Shares Held": "46,248",
+   "Asset Category": "Stock",
+   "Market Value": "$1,900,523.04",
+   "Notional Value": "",
+   "Weight": "1.93%"
+  },
+  {
+   "Name": "Konecranes Oyj",
+   "Ticker": "KCR FH",
+   "Identifier": "BBG000GFPW64",
+   "Shares Held": "55,658",
+   "Asset Category": "Stock",
+   "Market Value": "$1,876,592.59",
+   "Notional Value": "",
+   "Weight": "1.91%"
+  },
+  {
+   "Name": "Autostore Holdings Ltd",
+   "Ticker": "AUTO NO",
+   "Identifier": "BBG0130YK040",
+   "Shares Held": "1,118,615",
+   "Asset Category": "Stock",
+   "Market Value": "$1,828,135.82",
+   "Notional Value": "",
+   "Weight": "1.86%"
+  },
+  {
+   "Name": "Omron Corp",
+   "Ticker": "6645 JP",
+   "Identifier": "BBG000BGJC59",
+   "Shares Held": "45,600",
+   "Asset Category": "Stock",
+   "Market Value": "$1,803,486.85",
+   "Notional Value": "",
+   "Weight": "1.83%"
+  },
+  {
+   "Name": "Andritz Ag",
+   "Ticker": "ANDR AV",
+   "Identifier": "BBG000DN0V14",
+   "Shares Held": "18,090",
+   "Asset Category": "Stock",
+   "Market Value": "$1,759,967.86",
+   "Notional Value": "",
+   "Weight": "1.79%"
+  },
+  {
+   "Name": "Daifuku Co Ltd",
+   "Ticker": "6383 JP",
+   "Identifier": "BBG000BLQSJ0",
+   "Shares Held": "47,900",
+   "Asset Category": "Stock",
+   "Market Value": "$1,680,383.98",
+   "Notional Value": "",
+   "Weight": "1.71%"
+  },
+  {
+   "Name": "Oceaneering International Inc",
+   "Ticker": "OII",
+   "Identifier": "BBG000CPBCL8",
+   "Shares Held": "36,061",
+   "Asset Category": "Stock",
+   "Market Value": "$1,666,018.20",
+   "Notional Value": "",
+   "Weight": "1.69%"
+  },
+  {
+   "Name": "Yokogawa Electric Corp",
+   "Ticker": "6841 JP",
+   "Identifier": "BBG000BDCQP0",
+   "Shares Held": "52,600",
+   "Asset Category": "Stock",
+   "Market Value": "$1,596,230.52",
+   "Notional Value": "",
+   "Weight": "1.62%"
+  },
+  {
+   "Name": "Symbotic Inc",
+   "Ticker": "SYM",
+   "Identifier": "BBG00Z72HCV1",
+   "Shares Held": "33,521",
+   "Asset Category": "Stock",
+   "Market Value": "$1,495,371.81",
+   "Notional Value": "",
+   "Weight": "1.52%"
+  },
+  {
+   "Name": "Azbil Corp",
+   "Ticker": "6845 JP",
+   "Identifier": "BBG000BDD272",
+   "Shares Held": "152,200",
+   "Asset Category": "Stock",
+   "Market Value": "$1,443,965.20",
+   "Notional Value": "",
+   "Weight": "1.47%"
+  },
+  {
+   "Name": "Renishaw Plc",
+   "Ticker": "RSW LN",
+   "Identifier": "BBG000BDZV65",
+   "Shares Held": "20,894",
+   "Asset Category": "Stock",
+   "Market Value": "$1,442,364.30",
+   "Notional Value": "",
+   "Weight": "1.47%"
+  },
+  {
+   "Name": "Fuji Corp/Aichi",
+   "Ticker": "6134 JP",
+   "Identifier": "BBG000BCMC18",
+   "Shares Held": "31,700",
+   "Asset Category": "Stock",
+   "Market Value": "$1,413,853.05",
+   "Notional Value": "",
+   "Weight": "1.44%"
+  },
+  {
+   "Name": "Krones Ag",
+   "Ticker": "KRN GR",
+   "Identifier": "BBG000BMJGN7",
+   "Shares Held": "10,735",
+   "Asset Category": "Stock",
+   "Market Value": "$1,380,090.61",
+   "Notional Value": "",
+   "Weight": "1.40%"
+  },
+  {
+   "Name": "Amada Co Ltd",
+   "Ticker": "6113 JP",
+   "Identifier": "BBG000BLGN39",
+   "Shares Held": "86,800",
+   "Asset Category": "Stock",
+   "Market Value": "$1,373,434.90",
+   "Notional Value": "",
+   "Weight": "1.40%"
+  },
+  {
+   "Name": "Kardex Holding Ag",
+   "Ticker": "KARN SW",
+   "Identifier": "BBG000BC43V5",
+   "Shares Held": "4,814",
+   "Asset Category": "Stock",
+   "Market Value": "$1,330,040.33",
+   "Notional Value": "",
+   "Weight": "1.35%"
+  },
+  {
+   "Name": "Applied Materials Inc",
+   "Ticker": "AMAT",
+   "Identifier": "BBG000BBPFB9",
+   "Shares Held": "3,153",
+   "Asset Category": "Stock",
+   "Market Value": "$1,316,062.20",
+   "Notional Value": "",
+   "Weight": "1.34%"
+  },
+  {
+   "Name": "Novanta Inc",
+   "Ticker": "NOVT",
+   "Identifier": "BBG000JB24Q5",
+   "Shares Held": "9,853",
+   "Asset Category": "Stock",
+   "Market Value": "$1,315,868.15",
+   "Notional Value": "",
+   "Weight": "1.34%"
+  },
+  {
+   "Name": "Lam Research Corp",
+   "Ticker": "LRCX",
+   "Identifier": "BBG000BNFLM9",
+   "Shares Held": "4,851",
+   "Asset Category": "Stock",
+   "Market Value": "$1,306,422.81",
+   "Notional Value": "",
+   "Weight": "1.33%"
+  },
+  {
+   "Name": "Kadant Inc",
+   "Ticker": "KAI",
+   "Identifier": "BBG000BKRSZ3",
+   "Shares Held": "4,866",
+   "Asset Category": "Stock",
+   "Market Value": "$1,299,805.92",
+   "Notional Value": "",
+   "Weight": "1.32%"
+  },
+  {
+   "Name": "Interroll Holding Ag",
+   "Ticker": "INRN SW",
+   "Identifier": "BBG000BW8SN1",
+   "Shares Held": "745",
+   "Asset Category": "Stock",
+   "Market Value": "$1,269,953.26",
+   "Notional Value": "",
+   "Weight": "1.29%"
+  },
+  {
+   "Name": "Yaskawa Electric Corp",
+   "Ticker": "6506 JP",
+   "Identifier": "BBG000BDCF47",
+   "Shares Held": "44,500",
+   "Asset Category": "Stock",
+   "Market Value": "$1,247,331.02",
+   "Notional Value": "",
+   "Weight": "1.27%"
+  },
+  {
+   "Name": "Dmg Mori Co Ltd",
+   "Ticker": "6141 JP",
+   "Identifier": "BBG000BLJ688",
+   "Shares Held": "67,600",
+   "Asset Category": "Stock",
+   "Market Value": "$1,246,896.77",
+   "Notional Value": "",
+   "Weight": "1.27%"
+  },
+  {
+   "Name": "Duerr Ag",
+   "Ticker": "DUE GR",
+   "Identifier": "BBG000BF8LY1",
+   "Shares Held": "60,752",
+   "Asset Category": "Stock",
+   "Market Value": "$1,168,064.33",
+   "Notional Value": "",
+   "Weight": "1.19%"
+  },
+  {
+   "Name": "Ptc Inc",
+   "Ticker": "PTC",
+   "Identifier": "BBG000C2VBB0",
+   "Shares Held": "8,665",
+   "Asset Category": "Stock",
+   "Market Value": "$1,164,922.60",
+   "Notional Value": "",
+   "Weight": "1.18%"
+  },
+  {
+   "Name": "Texas Instruments Inc",
+   "Ticker": "TXN",
+   "Identifier": "BBG000BVV7G1",
+   "Shares Held": "4,195",
+   "Asset Category": "Stock",
+   "Market Value": "$1,082,897.30",
+   "Notional Value": "",
+   "Weight": "1.10%"
+  },
+  {
+   "Name": "Ubtech Robotics Corp Ltd",
+   "Ticker": "9880 HK",
+   "Identifier": "BBG01KPDM897",
+   "Shares Held": "106,350",
+   "Asset Category": "Stock",
+   "Market Value": "$1,079,480.85",
+   "Notional Value": "",
+   "Weight": "1.10%"
+  },
+  {
+   "Name": "Cognex Corp",
+   "Ticker": "CGNX",
+   "Identifier": "BBG000BPBVW5",
+   "Shares Held": "16,385",
+   "Asset Category": "Stock",
+   "Market Value": "$997,027.25",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "Ats Corp",
+   "Ticker": "ATS",
+   "Identifier": "BBG000BZ6164",
+   "Shares Held": "51,400",
+   "Asset Category": "Stock",
+   "Market Value": "$985,338.00",
+   "Notional Value": "",
+   "Weight": "1.00%"
+  },
+  {
+   "Name": "Analog Devices Inc",
+   "Ticker": "ADI",
+   "Identifier": "BBG000BB6G37",
+   "Shares Held": "2,550",
+   "Asset Category": "Stock",
+   "Market Value": "$924,757.50",
+   "Notional Value": "",
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Kla Corp",
+   "Ticker": "KLAC",
+   "Identifier": "BBG000BMTFR4",
+   "Shares Held": "5,469",
+   "Asset Category": "Stock",
+   "Market Value": "$924,151.62",
+   "Notional Value": "",
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Advantest Corp",
+   "Ticker": "6857 JP",
+   "Identifier": "BBG000BGN014",
+   "Shares Held": "4,200",
+   "Asset Category": "Stock",
+   "Market Value": "$839,901.71",
+   "Notional Value": "",
+   "Weight": "0.85%"
+  },
+  {
+   "Name": "Intuitive Surgical Inc",
+   "Ticker": "ISRG",
+   "Identifier": "BBG000BJPDZ1",
+   "Shares Held": "2,183",
+   "Asset Category": "Stock",
+   "Market Value": "$837,267.82",
+   "Notional Value": "",
+   "Weight": "0.85%"
+  },
+  {
+   "Name": "Tokyo Electron Ltd",
+   "Ticker": "8035 JP",
+   "Identifier": "BBG000BB59S7",
+   "Shares Held": "1,900",
+   "Asset Category": "Stock",
+   "Market Value": "$631,363.88",
+   "Notional Value": "",
+   "Weight": "0.64%"
+  },
+  {
+   "Name": "Teradyne Inc",
+   "Ticker": "TER",
+   "Identifier": "BBG000BV4DR6",
+   "Shares Held": "1,758",
+   "Asset Category": "Stock",
+   "Market Value": "$620,802.54",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "Bentley Systems Inc",
+   "Ticker": "BSY",
+   "Identifier": "BBG000BMSRR9",
+   "Shares Held": "18,965",
+   "Asset Category": "Stock",
+   "Market Value": "$595,690.65",
+   "Notional Value": "",
+   "Weight": "0.61%"
+  },
+  {
+   "Name": "Asm International Nv",
+   "Ticker": "ASM NA",
+   "Identifier": "BBG000F5L454",
+   "Shares Held": "584",
+   "Asset Category": "Stock",
+   "Market Value": "$528,661.85",
+   "Notional Value": "",
+   "Weight": "0.54%"
+  },
+  {
+   "Name": "Ambarella Inc",
+   "Ticker": "AMBA",
+   "Identifier": "BBG001QZCPJ2",
+   "Shares Held": "7,432",
+   "Asset Category": "Stock",
+   "Market Value": "$497,275.12",
+   "Notional Value": "",
+   "Weight": "0.51%"
+  },
+  {
+   "Name": "Microchip Technology Inc",
+   "Ticker": "MCHP",
+   "Identifier": "BBG000BHCP19",
+   "Shares Held": "6,635",
+   "Asset Category": "Stock",
+   "Market Value": "$469,890.70",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Onto Innovation Inc",
+   "Ticker": "ONTO",
+   "Identifier": "BBG000BPRN29",
+   "Shares Held": "1,869",
+   "Asset Category": "Stock",
+   "Market Value": "$467,306.07",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Renesas Electronics Corp",
+   "Ticker": "6723 JP",
+   "Identifier": "BBG000MHQMB8",
+   "Shares Held": "22,500",
+   "Asset Category": "Stock",
+   "Market Value": "$465,504.69",
+   "Notional Value": "",
+   "Weight": "0.47%"
+  },
+  {
+   "Name": "Tkh Group Nv",
+   "Ticker": "TWEKA NA",
+   "Identifier": "BBG000BBT7H7",
+   "Shares Held": "7,427",
+   "Asset Category": "Stock",
+   "Market Value": "$450,460.83",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Lasertec Corp",
+   "Ticker": "6920 JP",
+   "Identifier": "BBG000BMRC48",
+   "Shares Held": "1,900",
+   "Asset Category": "Stock",
+   "Market Value": "$448,234.74",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Stmicroelectronics Nv",
+   "Ticker": "STM",
+   "Identifier": "BBG000BD4GX2",
+   "Shares Held": "8,855",
+   "Asset Category": "Stock",
+   "Market Value": "$430,441.55",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Ouster Inc",
+   "Ticker": "OUST",
+   "Identifier": "BBG00XRTSTR1",
+   "Shares Held": "11,948",
+   "Asset Category": "Stock",
+   "Market Value": "$417,582.60",
+   "Notional Value": "",
+   "Weight": "0.42%"
+  },
+  {
+   "Name": "Lattice Semiconductor Corp",
+   "Ticker": "LSCC",
+   "Identifier": "BBG000C2D1C1",
+   "Shares Held": "3,770",
+   "Asset Category": "Stock",
+   "Market Value": "$409,158.10",
+   "Notional Value": "",
+   "Weight": "0.42%"
+  },
+  {
+   "Name": "Disco Corp",
+   "Ticker": "6146 JP",
+   "Identifier": "BBG000BKFJQ6",
+   "Shares Held": "1,200",
+   "Asset Category": "Stock",
+   "Market Value": "$398,250.25",
+   "Notional Value": "",
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "On Semiconductor Corp",
+   "Ticker": "ON",
+   "Identifier": "BBG000DV7MX4",
+   "Shares Held": "5,061",
+   "Asset Category": "Stock",
+   "Market Value": "$345,666.30",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Nova Ltd",
+   "Ticker": "NVMI",
+   "Identifier": "BBG000BSY1Y8",
+   "Shares Held": "986",
+   "Asset Category": "Stock",
+   "Market Value": "$343,197.02",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Argo Graphics Inc",
+   "Ticker": "7595 JP",
+   "Identifier": "BBG000CCP9G5",
+   "Shares Held": "38,600",
+   "Asset Category": "Stock",
+   "Market Value": "$319,438.47",
+   "Notional Value": "",
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "Gpixel Changchun Microelectronics Inc",
+   "Ticker": "3277 HK",
+   "Identifier": "BBG021HQY6Z0",
+   "Shares Held": "27,000",
+   "Asset Category": "Stock",
+   "Market Value": "$266,549.97",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Optex Group Co Ltd",
+   "Ticker": "6914 JP",
+   "Identifier": "BBG000BNLSC8",
+   "Shares Held": "12,800",
+   "Asset Category": "Stock",
+   "Market Value": "$261,261.54",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Basler Ag",
+   "Ticker": "BSL GR",
+   "Identifier": "BBG000BR3LP0",
+   "Shares Held": "9,891",
+   "Asset Category": "Stock",
+   "Market Value": "$250,598.23",
+   "Notional Value": "",
+   "Weight": "0.25%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "101,441",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$101,441.09",
+   "Notional Value": "",
+   "Weight": "0.10%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-EUR CASH-",
+   "Identifier": "",
+   "Shares Held": "49",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$56.67",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-NOK CASH-",
+   "Identifier": "",
+   "Shares Held": "187",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$19.83",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-CHF CASH-",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-.01",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$45,487.68",
+   "Notional Value": "",
+   "Weight": "0.05%"
+  }
+ ]
+}

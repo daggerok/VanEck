@@ -36,7 +36,11 @@ import {
   parseRange,
   parseVanEckFundPage,
   parseVanEckHistory,
+  parseVanEckHistoryXlsx,
   parseVanEckHoldings,
+  parseVanEckHoldingsXlsx,
+  parseXlsxSheet,
+  loadSharedStrings,
   paymentsPerYear,
   premiumDiscount,
   sanitizeTicker,
@@ -54,6 +58,119 @@ const API_ROOT = path.join(REPO_ROOT, "api", "vaneck");
 
 function feedJson(relative: string): any {
   return JSON.parse(readFileSync(path.join(API_ROOT, relative), "utf8"));
+}
+
+// ---------------------------------------------------------------------------
+// Minimal in-memory ZIP (STORE method) writer for building XLSX fixtures,
+// so the XLSX-parsing tests stay dependency-free like the updater itself.
+// ---------------------------------------------------------------------------
+
+const CRC_TABLE = (() => {
+  const table = new Uint32Array(256);
+  for (let i = 0; i < 256; i++) {
+    let value = i;
+    for (let bit = 0; bit < 8; bit++) value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1;
+    table[i] = value >>> 0;
+  }
+  return table;
+})();
+
+function crc32(bytes: Uint8Array): number {
+  let crc = 0xffffffff;
+  for (const byte of bytes) crc = CRC_TABLE[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function buildZip(files: Map<string, Uint8Array>): Uint8Array {
+  const encoder = new TextEncoder();
+  const locals: Uint8Array[] = [];
+  const centrals: Uint8Array[] = [];
+  let offset = 0;
+  for (const [name, data] of files) {
+    const nameBytes = encoder.encode(name);
+    const crc = crc32(data);
+    const local = new Uint8Array(30 + nameBytes.length + data.length);
+    const localView = new DataView(local.buffer);
+    localView.setUint32(0, 0x04034b50, true);
+    localView.setUint16(4, 20, true);
+    localView.setUint32(14, crc, true);
+    localView.setUint32(18, data.length, true);
+    localView.setUint32(22, data.length, true);
+    localView.setUint16(26, nameBytes.length, true);
+    local.set(nameBytes, 30);
+    local.set(data, 30 + nameBytes.length);
+
+    const central = new Uint8Array(46 + nameBytes.length);
+    const centralView = new DataView(central.buffer);
+    centralView.setUint32(0, 0x02014b50, true);
+    centralView.setUint16(4, 20, true);
+    centralView.setUint16(6, 20, true);
+    centralView.setUint32(16, crc, true);
+    centralView.setUint32(20, data.length, true);
+    centralView.setUint32(24, data.length, true);
+    centralView.setUint16(28, nameBytes.length, true);
+    centralView.setUint32(42, offset, true);
+    central.set(nameBytes, 46);
+
+    locals.push(local);
+    centrals.push(central);
+    offset += local.length;
+  }
+  const centralSize = centrals.reduce((sum, chunk) => sum + chunk.length, 0);
+  const eocd = new Uint8Array(22);
+  const eocdView = new DataView(eocd.buffer);
+  eocdView.setUint32(0, 0x06054b50, true);
+  eocdView.setUint16(8, files.size, true);
+  eocdView.setUint16(10, files.size, true);
+  eocdView.setUint32(12, centralSize, true);
+  eocdView.setUint32(16, offset, true);
+  const out = new Uint8Array(offset + centralSize + 22);
+  let position = 0;
+  for (const chunk of [...locals, ...centrals, eocd]) {
+    out.set(chunk, position);
+    position += chunk.length;
+  }
+  return out;
+}
+
+function escapeXml(text: string): string {
+  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/**
+ * Builds a worksheet XML. `namespaced` mirrors what VanEck's own downloads
+ * actually emit (`<x:row>`/`<x:c>`/`<x:v>` under an `xmlns:x=` worksheet), as
+ * opposed to the bare `<row>`/`<c>`/`<v>` some other providers emit — the
+ * parser must tolerate both.
+ */
+function sheetXml(rows: string[][], namespaced: boolean): string {
+  const p = namespaced ? "x:" : "";
+  const body = rows
+    .map((row, rowIndex) => {
+      const cells = row
+        .map(
+          (value, columnIndex) =>
+            `<${p}c r="${String.fromCharCode(65 + columnIndex)}${rowIndex + 1}" t="inlineStr"><${p}is><${p}t>${escapeXml(value)}</${p}t></${p}is></${p}c>`,
+        )
+        .join("");
+      return `<${p}row r="${rowIndex + 1}">${cells}</${p}row>`;
+    })
+    .join("");
+  const root = namespaced
+    ? `<x:worksheet xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`
+    : `<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`;
+  const rootClose = namespaced ? "</x:worksheet>" : "</worksheet>";
+  return `<?xml version="1.0" encoding="UTF-8"?>${root}<${p}sheetData>${body}</${p}sheetData>${rootClose}`;
+}
+
+function buildXlsx(rows: string[][], namespaced = true): Uint8Array {
+  const encoder = new TextEncoder();
+  return buildZip(
+    new Map<string, Uint8Array>([
+      ["xl/workbook.xml", encoder.encode("<?xml version=\"1.0\"?><workbook/>")],
+      ["xl/worksheets/sheet1.xml", encoder.encode(sheetXml(rows, namespaced))],
+    ]),
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -245,25 +362,24 @@ describe("HTML table extraction", () => {
 // 7. Holdings parsing — the equity sheet
 // ---------------------------------------------------------------------------
 
-const EQUITY_HOLDINGS_HTML = `
-<div>Daily Holdings (%) &nbsp;09/17/2026</div>
-<table>
-  <tr><td>Number</td><td>Ticker</td><td>Holding Name</td><td>Identifier (FIGI)</td>
-      <td>Shares</td><td>Asset Class</td><td>Market Value (US$)</td>
-      <td>Notional Value</td><td>% of Net Assets</td></tr>
-  <tr><td>1</td><td>NEM</td><td>Newmont Corp</td><td>BBG000BPWXK1</td>
-      <td>24,875,719</td><td>Stock</td><td>$3,094,290,686.41</td><td>--</td><td>10.89</td></tr>
-  <tr><td>2</td><td>NST AU</td><td>Northern Star Resources Ltd</td><td>BBG00X7YS2P3</td>
-      <td>9,000,000</td><td>Stock</td><td>$100,000,000.00</td><td>--</td><td>0.35</td></tr>
-  <tr><td>3</td><td>-USD CASH-</td><td></td><td></td>
-      <td>0</td><td>Cash</td><td>$57,000,000.00</td><td>--</td><td>0.20</td></tr>
-  <tr><td>4</td><td>--</td><td>Other/Cash</td><td>--</td>
-      <td>--</td><td>Cash</td><td>$31,792,656.80</td><td>--</td><td>0.11</td></tr>
-  <tr><td colspan="9">This information is not recommendations to buy or to sell any security.</td></tr>
-</table>`;
+// VanEck's holdings/history "downloads" endpoints do not serve HTML — they
+// serve a real .xlsx workbook (verified against the live downloads on
+// 2026-09-19; see parseXlsxSheet). parseVanEckHoldings/parseVanEckHistory
+// take the worksheet's raw rows directly, so these fixtures are rows of cell
+// text rather than markup.
+const EQUITY_HOLDINGS_ROWS = [
+  ["Daily Holdings (%)  09/17/2026"],
+  [],
+  ["Number", "Ticker", "Holding Name", "Identifier (FIGI)", "Shares", "Asset Class", "Market Value (US$)", "Notional Value", "% of Net Assets"],
+  ["1", "NEM", "Newmont Corp", "BBG000BPWXK1", "24,875,719", "Stock", "$3,094,290,686.41", "--", "10.89"],
+  ["2", "NST AU", "Northern Star Resources Ltd", "BBG00X7YS2P3", "9,000,000", "Stock", "$100,000,000.00", "--", "0.35"],
+  ["3", "-USD CASH-", "", "", "0", "Cash", "$57,000,000.00", "--", "0.20"],
+  ["4", "--", "Other/Cash", "--", "--", "Cash", "$31,792,656.80", "--", "0.11"],
+  ["This information is not recommendations to buy or to sell any security."],
+];
 
 describe("parseVanEckHoldings (equity sheet)", () => {
-  const parsed = parseVanEckHoldings(EQUITY_HOLDINGS_HTML);
+  const parsed = parseVanEckHoldings(EQUITY_HOLDINGS_ROWS);
 
   test("the as-of date comes from the 'Daily Holdings (%)' header line", () => {
     expect(parsed.asOfDate).toBe("Sep 17 2026");
@@ -311,8 +427,8 @@ describe("parseVanEckHoldings (equity sheet)", () => {
     expect(parsed.rows.length).toBe(4);
   });
 
-  test("a page with no recognizable holdings table yields zero rows, never a throw", () => {
-    const empty = parseVanEckHoldings("<html><body><p>Nothing here</p></body></html>");
+  test("a sheet with no recognizable holdings table yields zero rows, never a throw", () => {
+    const empty = parseVanEckHoldings([["Nothing here"]]);
     expect(empty.rows).toEqual([]);
     expect(empty.headers).toEqual(HOLDINGS_HEADERS);
   });
@@ -322,24 +438,17 @@ describe("parseVanEckHoldings (equity sheet)", () => {
 // 8. Holdings parsing — the fixed-income sheet (no Ticker column at all)
 // ---------------------------------------------------------------------------
 
-const FIXED_INCOME_HOLDINGS_HTML = `
-<div>Daily Holdings (%) &nbsp;09/17/2026</div>
-<table>
-  <tr><td>Number</td><td>Holding Name</td><td>Maturity</td><td>Identifier (FIGI)</td>
-      <td>Coupon</td><td>Asset Class</td><td>Par Value/ Contracts</td>
-      <td>Market Value</td><td>Notional Value</td><td>% of Net Assets</td>
-      <td>Country</td><td>Currency</td></tr>
-  <tr><td>1</td><td>Celanese US Holdings Inc</td><td>04/01/2027</td><td>BBG00K1ABC23</td>
-      <td>6.05</td><td>Corporate</td><td>$1,000,000</td><td>$1,020,000</td><td>--</td>
-      <td>1.42</td><td>United States</td><td>USD</td></tr>
-  <tr><td>2</td><td>Celanese US Holdings Inc</td><td>07/15/2029</td><td>BBG00K1XYZ89</td>
-      <td>5.75</td><td>Corporate</td><td>$800,000</td><td>$790,000</td><td>--</td>
-      <td>1.10</td><td>United States</td><td>USD</td></tr>
-  <tr><td colspan="12">This information is not recommendations to buy or to sell any security.</td></tr>
-</table>`;
+const FIXED_INCOME_HOLDINGS_ROWS = [
+  ["Daily Holdings (%)  09/17/2026"],
+  [],
+  ["Number", "Holding Name", "Maturity", "Identifier (FIGI)", "Coupon", "Asset Class", "Par Value/ Contracts", "Market Value", "Notional Value", "% of Net Assets", "Country", "Currency"],
+  ["1", "Celanese US Holdings Inc", "04/01/2027", "BBG00K1ABC23", "6.05", "Corporate", "$1,000,000", "$1,020,000", "--", "1.42", "United States", "USD"],
+  ["2", "Celanese US Holdings Inc", "07/15/2029", "BBG00K1XYZ89", "5.75", "Corporate", "$800,000", "$790,000", "--", "1.10", "United States", "USD"],
+  ["This information is not recommendations to buy or to sell any security."],
+];
 
 describe("parseVanEckHoldings (fixed-income sheet)", () => {
-  const parsed = parseVanEckHoldings(FIXED_INCOME_HOLDINGS_HTML);
+  const parsed = parseVanEckHoldings(FIXED_INCOME_HOLDINGS_ROWS);
 
   test("a Maturity column switches the parser to the fixed-income column set", () => {
     expect(parsed.headers).toEqual([
@@ -376,19 +485,15 @@ describe("parseVanEckHoldings (fixed-income sheet)", () => {
 // 9. History parsing
 // ---------------------------------------------------------------------------
 
-const HISTORY_HTML = `
-<table>
-  <tr><td>Date</td><td>NAV</td><td>Change</td><td>% Change</td><td>Last Trade</td>
-      <td>Volume</td><td>Premium/Discount</td><td>% Premium/Discount</td>
-      <td>AUM</td><td>Index Level</td></tr>
-  <tr><td>09/18/2026</td><td>95.67</td><td>0.42</td><td>0.44</td><td>95.48</td>
-      <td>5,000,000</td><td>-0.19</td><td>-0.20</td><td>28,418,567,995.87</td><td>1,234.56</td></tr>
-  <tr><td>09/17/2026</td><td>95.25</td><td>-1.10</td><td>-1.14</td><td>95.30</td>
-      <td>4,800,000</td><td>0.05</td><td>0.05</td><td>28,300,000,000.00</td><td>1,229.10</td></tr>
-</table>`;
+const HISTORY_ROWS = [
+  ["VanEck Gold Miners ETF - GDX"],
+  ["Date", "NAV", "Change", "% Change", "Last Trade", "Volume", "Premium/Discount", "% Premium/Discount", "AUM", "Index Level"],
+  ["09/18/2026", "95.67", "0.42", "0.44", "95.48", "5,000,000", "-0.19", "-0.20", "28,418,567,995.87", "1,234.56"],
+  ["09/17/2026", "95.25", "-1.10", "-1.14", "95.30", "4,800,000", "0.05", "0.05", "28,300,000,000.00", "1,229.10"],
+];
 
 describe("parseVanEckHistory", () => {
-  const parsed = parseVanEckHistory(HISTORY_HTML);
+  const parsed = parseVanEckHistory(HISTORY_ROWS);
 
   test("the descending provider order is preserved", () => {
     expect(parsed.headers[0]).toBe("Date");
@@ -405,8 +510,54 @@ describe("parseVanEckHistory", () => {
     expect(parsed.rows[0][parsed.headers.indexOf("Total Net Assets")]).toBe("28,418,567,995.87");
   });
 
-  test("a page without a history table yields zero rows", () => {
-    expect(parseVanEckHistory("<p>No table</p>").rows).toEqual([]);
+  test("a sheet without a history table yields zero rows", () => {
+    expect(parseVanEckHistory([["No table"]]).rows).toEqual([]);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 9b. XLSX byte parsing — the holdings/history "downloads" endpoints serve a
+// real .xlsx workbook, not HTML. VanEck's own worksheet XML namespaces every
+// element (`<x:row>`, `<x:c>`, `<x:v>`); a parser only built for bare
+// `<row>`/`<c>`/`<v>` silently reads zero rows from the real file (this was a
+// real regression, not a hypothetical one).
+// ---------------------------------------------------------------------------
+
+describe("parseXlsxSheet", () => {
+  test("reads a namespaced worksheet (the shape VanEck actually serves)", () => {
+    const bytes = buildXlsx(EQUITY_HOLDINGS_ROWS, true);
+    const rows = parseXlsxSheet(bytes, loadSharedStrings(bytes));
+    expect(rows[2]).toEqual(EQUITY_HOLDINGS_ROWS[2]);
+    expect(rows[3][2]).toBe("Newmont Corp");
+  });
+
+  test("also reads a bare, non-namespaced worksheet", () => {
+    const bytes = buildXlsx(EQUITY_HOLDINGS_ROWS, false);
+    const rows = parseXlsxSheet(bytes, loadSharedStrings(bytes));
+    expect(rows[3][2]).toBe("Newmont Corp");
+  });
+});
+
+describe("parseVanEckHoldingsXlsx / parseVanEckHistoryXlsx (end to end from bytes)", () => {
+  test("equity holdings workbook", () => {
+    const parsed = parseVanEckHoldingsXlsx(buildXlsx(EQUITY_HOLDINGS_ROWS));
+    expect(parsed.asOfDate).toBe("Sep 17 2026");
+    expect(parsed.rows.length).toBe(4);
+    expect(parsed.rows[0][parsed.headers.indexOf("Name")]).toBe("Newmont Corp");
+    expect(parsed.rows[0][parsed.headers.indexOf("Weight")]).toBe("10.89%");
+  });
+
+  test("fixed-income holdings workbook", () => {
+    const parsed = parseVanEckHoldingsXlsx(buildXlsx(FIXED_INCOME_HOLDINGS_ROWS));
+    expect(parsed.headers).not.toContain("Ticker");
+    expect(parsed.rows.length).toBe(2);
+    expect(parsed.rows[0][parsed.headers.indexOf("Maturity")]).toBe("Apr 01 2027");
+  });
+
+  test("NAV history workbook", () => {
+    const parsed = parseVanEckHistoryXlsx(buildXlsx(HISTORY_ROWS));
+    expect(parsed.rows.length).toBe(2);
+    expect(parsed.rows[0][0]).toBe("Sep 18 2026");
   });
 });
 

@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$47.00 M",
-  "value": 47000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$66.04M",
+  "value": 66035955.88,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 47000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 66035955.88,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Feb 18 2026",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$25.48",
+ "closePriceValue": 25.48,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -64,21 +64,28 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 9,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 213,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
  },
+ "totalNetAssets": 66040000.00000001,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +95,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/TRUC",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +110,9 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$25.48",
+  "value": 25.48,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

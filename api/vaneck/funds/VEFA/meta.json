@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$4.00 M",
-  "value": 4000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$4.09M",
+  "value": 4088460.62,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 4088460.62,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Apr 01 2026",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$82.23",
+ "closePriceValue": 82.23,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "0.46%",
+  "value": 0.46
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": 0.46,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -64,21 +64,28 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 110,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 171,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
  },
+ "totalNetAssets": 4090000,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +95,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VEFA",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +110,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$82.23",
+  "value": 82.23,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

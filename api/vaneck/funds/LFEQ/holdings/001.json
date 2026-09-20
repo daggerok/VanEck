@@ -1,0 +1,48 @@
+{
+ "ticker": "LFEQ",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 3,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Vanguard S&P 500 ETF",
+   "Ticker": "VOO",
+   "Identifier": "BBG0015VYNT4",
+   "Shares Held": "38,829",
+   "Asset Category": "Stock",
+   "Market Value": "$27,220,293.87",
+   "Notional Value": "",
+   "Weight": "99.77%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "108,541",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$108,540.96",
+   "Notional Value": "",
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$-44,893.83",
+   "Notional Value": "",
+   "Weight": "-0.16%"
+  }
+ ]
+}

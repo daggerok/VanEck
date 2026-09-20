@@ -23,6 +23,7 @@
  */
 /// <reference types="bun" />
 import { mkdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { inflateRawSync } from 'node:zlib';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -559,6 +560,12 @@ async function fetchText(url: string, headers: Record<string, string>, config: U
   return response.text();
 }
 
+async function fetchBytes(url: string, headers: Record<string, string>, config: UpdaterConfig, label = url): Promise<Uint8Array> {
+  const response = await fetchWithRetry(url, { headers }, config, label);
+  if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
+  return new Uint8Array(await response.arrayBuffer());
+}
+
 // ---------------------------------------------------------------------------
 // VanEck HTML table parsing
 // ---------------------------------------------------------------------------
@@ -629,6 +636,118 @@ function cleanCell(raw: string): string {
   return MISSING_CELL.has(text.toLowerCase()) ? '' : text;
 }
 
+// ---------------------------------------------------------------------------
+// VanEck XLSX download parsing
+//
+// The holdings and NAV-history "downloads" endpoints do not serve HTML —
+// they serve a real .xlsx (OOXML SpreadsheetML) workbook. This is a minimal
+// ZIP reader (STORE + DEFLATE via node:zlib) plus just enough of the
+// SpreadsheetML schema to read the first worksheet into rows of cell text,
+// with no dependency. VanEck's own sheet XML namespaces every element
+// (`<x:row>`, `<x:c>`, `<x:v>`), unlike a bare `<row>`, so every tag pattern
+// here tolerates an optional `prefix:`.
+// ---------------------------------------------------------------------------
+
+function findEndOfCentralDirectory(bytes: Uint8Array): { offset: number; entries: number } {
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  const minOffset = Math.max(0, bytes.length - 66_000);
+  for (let i = bytes.length - 22; i >= minOffset; i -= 1) {
+    if (view.getUint32(i, true) === 0x06054b50) return { offset: i, entries: view.getUint16(i + 10, true) };
+  }
+  throw new Error('ZIP: end of central directory not found');
+}
+
+export function readZipEntries(bytes: Uint8Array): Map<string, Uint8Array> {
+  const eocd = findEndOfCentralDirectory(bytes);
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  const entries = new Map<string, Uint8Array>();
+  let offset = view.getUint32(eocd.offset + 16, true);
+  for (let index = 0; index < eocd.entries; index += 1) {
+    if (view.getUint32(offset, true) !== 0x02014b50) throw new Error(`ZIP: bad central directory entry at ${offset}`);
+    const method = view.getUint16(offset + 10, true);
+    const compressedSize = view.getUint32(offset + 20, true);
+    const nameLength = view.getUint16(offset + 28, true);
+    const extraLength = view.getUint16(offset + 30, true);
+    const commentLength = view.getUint16(offset + 32, true);
+    const localOffset = view.getUint32(offset + 42, true);
+    const name = new TextDecoder().decode(bytes.subarray(offset + 46, offset + 46 + nameLength));
+    const localNameLength = view.getUint16(localOffset + 26, true);
+    const localExtraLength = view.getUint16(localOffset + 28, true);
+    const dataStart = localOffset + 30 + localNameLength + localExtraLength;
+    const data = bytes.subarray(dataStart, dataStart + compressedSize);
+    if (method === 0) entries.set(name, data);
+    else if (method === 8) entries.set(name, new Uint8Array(inflateRawSync(Buffer.from(data))));
+    else throw new Error(`ZIP: unsupported compression method ${method} for ${name}`);
+    offset += 46 + nameLength + extraLength + commentLength;
+  }
+  return entries;
+}
+
+function xmlText(xml: string): string {
+  return decodeHtmlEntities(xml.replace(/<!\[CDATA\[([\s\S]*?)]]>/g, '$1'));
+}
+
+function parseSharedStrings(xml: string): string[] {
+  const strings: string[] = [];
+  const items = xml.match(/<(?:\w+:)?si[\s>][\s\S]*?<\/(?:\w+:)?si>|<(?:\w+:)?si\/>/g) || [];
+  for (const item of items) {
+    const parts = item.match(/<(?:\w+:)?t[^>]*>[\s\S]*?<\/(?:\w+:)?t>/g) || [];
+    strings.push(xmlText(parts.map((part) => part.replace(/^<(?:\w+:)?t[^>]*>/, '').replace(/<\/(?:\w+:)?t>$/, '')).join('')));
+  }
+  return strings;
+}
+
+/** Column letters to zero-based index ("C7" -> 2). */
+function columnIndex(reference: string): number {
+  const letters = reference.replace(/\d+/g, '');
+  let index = 0;
+  for (const letter of letters) index = index * 26 + (letter.charCodeAt(0) - 64);
+  return index - 1;
+}
+
+/** Parses the first worksheet of an XLSX file into rows of raw cell strings. */
+export function parseXlsxSheet(bytes: Uint8Array, sharedStrings: string[]): HtmlTable {
+  const entries = readZipEntries(bytes);
+  const names = [...entries.keys()];
+  const sheetName =
+    names.find((name) => /^xl\/worksheets\/sheet1\.xml$/.test(name)) ||
+    names.find((name) => /^xl\/worksheets\/sheet\d+\.xml$/.test(name)) ||
+    names.find((name) => /^xl\/worksheets\/.+\.xml$/.test(name));
+  if (!sheetName) throw new Error('XLSX: worksheet not found');
+  const xml = new TextDecoder().decode(entries.get(sheetName)!);
+  const rows: string[][] = [];
+  const rowMatches = xml.match(/<(?:\w+:)?row[\s>][\s\S]*?<\/(?:\w+:)?row>|<(?:\w+:)?row\/>/g) || [];
+  for (const rowXml of rowMatches) {
+    const cells: string[] = [];
+    const cellMatches = rowXml.match(/<(?:\w+:)?c[^>]*\/>|<(?:\w+:)?c[^>]*>[\s\S]*?<\/(?:\w+:)?c>/g) || [];
+    for (const cellXml of cellMatches) {
+      const reference = /r="([A-Z]+\d+)"/.exec(cellXml)?.[1] || '';
+      const target = reference ? columnIndex(reference) : cells.length;
+      const type = /t="([^"]+)"/.exec(cellXml)?.[1] || 'n';
+      const value = /<(?:\w+:)?v[^>]*>([\s\S]*?)<\/(?:\w+:)?v>/.exec(cellXml)?.[1];
+      const inlineMatches = cellXml.match(/<(?:\w+:)?is>[\s\S]*?<\/(?:\w+:)?is>/g) || [];
+      let text = '';
+      if (value !== undefined) {
+        text = type === 's' ? (sharedStrings[Number(value)] ?? '') : xmlText(value);
+      } else if (inlineMatches.length) {
+        const inline = inlineMatches[0] ?? '';
+        const parts = inline.match(/<(?:\w+:)?t[^>]*>[\s\S]*?<\/(?:\w+:)?t>/g) || [];
+        text = xmlText(parts.map((part) => part.replace(/^<(?:\w+:)?t[^>]*>/, '').replace(/<\/(?:\w+:)?t>$/, '')).join(''));
+      }
+      while (cells.length < target) cells.push('');
+      cells[target] = text.trim();
+    }
+    rows.push(cells);
+  }
+  return rows;
+}
+
+export function loadSharedStrings(bytes: Uint8Array): string[] {
+  const xml = readZipEntries(bytes).get('xl/sharedStrings.xml');
+  if (!xml) return [];
+  return parseSharedStrings(new TextDecoder().decode(xml));
+}
+
 /**
  * Parses the daily holdings download.
  *
@@ -643,21 +762,19 @@ function cleanCell(raw: string): string {
  * only identifier, which is exactly why the Watchlist dedupe chain must fall
  * through to it.
  */
-export function parseVanEckHoldings(html: string): ParsedHoldings {
-  const asOfMatch = /Daily Holdings \(%\)\s*([\d/]{8,10})/i.exec(decodeHtmlEntities(html));
+export function parseVanEckHoldings(sheet: HtmlTable): ParsedHoldings {
+  const asOfMatch = /Daily Holdings \(%\)\s*([\d/]{8,10})/i.exec(decodeHtmlEntities(sheet[0]?.[0] ?? ''));
   const asOfDate = asOfMatch ? formatVanEckDate(asOfMatch[1]) : '—';
-  const tables = parseHtmlTables(html);
-  for (const table of tables) {
-    const headerIndex = findHeaderRowIndex(table, ['Holding Name', '% of Net Assets']);
-    if (headerIndex < 0) continue;
-    const header = table[headerIndex];
+  const headerIndex = findHeaderRowIndex(sheet, ['Holding Name', '% of Net Assets']);
+  if (headerIndex >= 0) {
+    const header = sheet[headerIndex];
     const isFixedIncome = header.some((h) => /maturity/i.test(h));
     const headers = isFixedIncome
       ? ['Name', 'Maturity', 'Identifier', 'Coupon', 'Asset Category', 'Par Value', 'Market Value', 'Weight', 'Country', 'Currency']
       : ['Name', 'Ticker', 'Identifier', 'Shares Held', 'Asset Category', 'Market Value', 'Notional Value', 'Weight'];
     const rows: string[][] = [];
-    for (let i = headerIndex + 1; i < table.length; i++) {
-      const row = table[i];
+    for (let i = headerIndex + 1; i < sheet.length; i++) {
+      const row = sheet[i];
       if (!row.length) continue;
       // The trailing legal-disclosure row is not a position.
       if (/not recommendations to buy or to sell/i.test(row.join(' '))) continue;
@@ -703,6 +820,11 @@ export function parseVanEckHoldings(html: string): ParsedHoldings {
   return { asOfDate, headers: HOLDINGS_HEADERS, rows: [] };
 }
 
+/** Reads the first worksheet of a VanEck holdings/history XLSX download into rows of cell text. */
+export function parseVanEckHoldingsXlsx(bytes: Uint8Array): ParsedHoldings {
+  return parseVanEckHoldings(parseXlsxSheet(bytes, loadSharedStrings(bytes)));
+}
+
 export type ParsedHistory = { headers: string[]; rows: string[][] };
 
 /**
@@ -712,17 +834,15 @@ export type ParsedHistory = { headers: string[]; rows: string[][] };
  * Weekend rows repeat the previous NAV with an empty Volume cell; they are kept
  * because VanEck publishes them and dropping rows would misstate the count.
  */
-export function parseVanEckHistory(html: string): ParsedHistory {
-  const tables = parseHtmlTables(html);
-  for (const table of tables) {
-    const headerIndex = findHeaderRowIndex(table, ['Date', 'NAV', 'Last Trade']);
-    if (headerIndex < 0) continue;
-    const header = table[headerIndex];
+export function parseVanEckHistory(sheet: HtmlTable): ParsedHistory {
+  const headerIndex = findHeaderRowIndex(sheet, ['Date', 'NAV', 'Last Trade']);
+  if (headerIndex >= 0) {
+    const header = sheet[headerIndex];
     const index = (name: string): number =>
       header.findIndex((h) => h.toLowerCase().replace(/[^a-z0-9]/g, '').includes(name));
     const rows: string[][] = [];
-    for (let i = headerIndex + 1; i < table.length; i++) {
-      const row = table[i];
+    for (let i = headerIndex + 1; i < sheet.length; i++) {
+      const row = sheet[i];
       const date = cleanCell(row[index('date')] ?? '');
       if (!/^\d{2}\/\d{2}\/\d{4}$/.test(date)) continue;
       rows.push([
@@ -738,6 +858,11 @@ export function parseVanEckHistory(html: string): ParsedHistory {
     if (rows.length) return { headers: HISTORY_HEADERS, rows };
   }
   return { headers: HISTORY_HEADERS, rows: [] };
+}
+
+/** Reads the first worksheet of a VanEck NAV/premium-discount history XLSX download into rows of cell text. */
+export function parseVanEckHistoryXlsx(bytes: Uint8Array): ParsedHistory {
+  return parseVanEckHistory(parseXlsxSheet(bytes, loadSharedStrings(bytes)));
 }
 
 export type ParsedFundPage = {
@@ -1286,7 +1411,7 @@ export async function updateFund(
   let holdings: ParsedHoldings | null = null;
   if (!config.skipVanEck && !config.offlineSeed) {
     try {
-      holdings = parseVanEckHoldings(await fetchText(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`));
+      holdings = parseVanEckHoldingsXlsx(await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`));
     } catch (error) {
       console.warn(`  ! ${ticker}: holdings unavailable (${errorMessage(error)})`);
     }
@@ -1306,7 +1431,7 @@ export async function updateFund(
   let history: ParsedHistory | null = null;
   if (!config.skipVanEck && !config.offlineSeed) {
     try {
-      history = parseVanEckHistory(await fetchText(source.navDownload, browserHeaders(), config, `${ticker} NAV history`));
+      history = parseVanEckHistoryXlsx(await fetchBytes(source.navDownload, browserHeaders(), config, `${ticker} NAV history`));
     } catch (error) {
       console.warn(`  ! ${ticker}: NAV history unavailable (${errorMessage(error)})`);
     }

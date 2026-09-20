@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$4,522.00 M",
-  "value": 4522000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$4.03B",
+  "value": 4030180334.36,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4522000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 4030180334.36,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Feb 04 2009",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$48.98",
+ "closePriceValue": 48.98,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "-0.11%",
+  "value": -0.11
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": -0.11,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -38,14 +38,16 @@
   "rows": []
  },
  "returns": {
-  "derivedFrom": "not yet refreshed from vaneck.com",
+  "derivedFrom": "official VanEck fund-page YTD return",
   "monthEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Sep 18 2026",
+   "ytd": -0.25,
+   "ytdText": "-0.25%"
   },
   "quarterEnd": {}
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -0.25,
   "tr1y": null,
   "tr3y": null,
   "tr5y": null,
@@ -58,27 +60,46 @@
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "not yet refreshed from vaneck.com"
+  "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
  "providerCategory": "Municipal Bond",
  "terGross": "0.32%",
  "terGrossValue": 0.32,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 2040,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/holdings/)",
+  "pageCount": 9,
+  "pages": [
+   "holdings/001.json",
+   "holdings/002.json",
+   "holdings/003.json",
+   "holdings/004.json",
+   "holdings/005.json",
+   "holdings/006.json",
+   "holdings/007.json",
+   "holdings/008.json",
+   "holdings/009.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 4783,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
  },
+ "totalNetAssets": 4030000000.0000005,
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +109,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/HYD",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +124,9 @@
   "grossValue": 0.32
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$48.98",
+  "value": 48.98,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

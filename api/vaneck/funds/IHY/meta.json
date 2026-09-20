@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$43.00 M",
-  "value": 43000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$42.69M",
+  "value": 42693672.27,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 43000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 42693672.27,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Apr 02 2012",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$21.33",
+ "closePriceValue": 21.33,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -38,14 +38,16 @@
   "rows": []
  },
  "returns": {
-  "derivedFrom": "not yet refreshed from vaneck.com",
+  "derivedFrom": "official VanEck fund-page YTD return",
   "monthEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Sep 18 2026",
+   "ytd": 1,
+   "ytdText": "1.00%"
   },
   "quarterEnd": {}
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 1,
   "tr1y": null,
   "tr3y": null,
   "tr5y": null,
@@ -58,27 +60,39 @@
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "not yet refreshed from vaneck.com"
+  "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
  "providerCategory": "International Bond",
  "terGross": "0.40%",
  "terGrossValue": 0.4,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 520,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/holdings/)",
+  "pageCount": 3,
+  "pages": [
+   "holdings/001.json",
+   "holdings/002.json",
+   "holdings/003.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 3987,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)",
+  "pageCount": 4,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json"
+  ]
  },
+ "totalNetAssets": 42690000,
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +102,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/IHY",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +117,9 @@
   "grossValue": 0.4
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$21.33",
+  "value": 21.33,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

@@ -1,0 +1,38 @@
+{
+ "ticker": "VBNB",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 2,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Bnb",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "3,496",
+   "Asset Category": "",
+   "Market Value": "$2,550,030.83",
+   "Notional Value": "",
+   "Weight": "100.02%"
+  },
+  {
+   "Name": "Other Cash And Liabilities",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "",
+   "Market Value": "$-455.66",
+   "Notional Value": "",
+   "Weight": "-0.02%"
+  }
+ ]
+}

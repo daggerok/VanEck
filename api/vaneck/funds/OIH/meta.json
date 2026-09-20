@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$1,992.00 M",
-  "value": 1992000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$2.07B",
+  "value": 2072200311.75,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1992000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 2072200311.75,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Dec 20 2011",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$398.71",
+ "closePriceValue": 398.71,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "0.25%",
+  "value": 0.25
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": 0.25,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -38,14 +38,16 @@
   "rows": []
  },
  "returns": {
-  "derivedFrom": "not yet refreshed from vaneck.com",
+  "derivedFrom": "official VanEck fund-page YTD return",
   "monthEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Sep 18 2026",
+   "ytd": 40.07,
+   "ytdText": "40.07%"
   },
   "quarterEnd": {}
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 40.07,
   "tr1y": null,
   "tr3y": null,
   "tr5y": null,
@@ -58,31 +60,38 @@
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "not yet refreshed from vaneck.com"
+  "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
  "providerCategory": "Natural Resources",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
   "totalRows": 27,
-  "pageSize": 25,
+  "pageSize": 250,
   "asOfDate": "Sep 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
-  "pageCount": 2,
+  "pageCount": 1,
   "pages": [
-   "holdings/001.json",
-   "holdings/002.json"
+   "holdings/001.json"
   ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 4057,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
  },
+ "totalNetAssets": 2069999999.9999998,
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -93,7 +102,7 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/OIH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
-  "historySource": "—"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -107,9 +116,9 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$398.71",
+  "value": 398.71,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

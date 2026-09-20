@@ -5,32 +5,32 @@
  "fundPage": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/",
  "dataFile": "./funds/SMH/meta.json",
  "cusip": null,
- "isin": null,
+ "isin": "US92189F6768",
  "ter": "0.35%",
  "terValue": 0.35,
  "nav": {
-  "display": "$572.84",
-  "value": 572.84,
+  "display": "—",
+  "value": null,
   "asOfDate": "Sep 18 2026"
  },
- "navValue": 572.84,
+ "navValue": null,
  "aum": {
   "display": "$74.06B",
-  "value": 74060000000,
+  "value": 74063990266.24,
   "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 74060000000,
+ "aumValue": 74063990266.24,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$573.00",
+ "closePriceValue": 573,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "0.16%",
+  "value": 0.16
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": 0.16,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -69,21 +69,27 @@
  "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
   "totalRows": 28,
-  "pageSize": 25,
+  "pageSize": 250,
   "asOfDate": "Sep 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/holdings/)",
-  "pageCount": 2,
+  "pageCount": 1,
   "pages": [
-   "holdings/001.json",
-   "holdings/002.json"
+   "holdings/001.json"
   ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 4057,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
  },
  "totalNetAssets": 74060000000,
  "categoryPath": "Equity > Equity Thematic",
@@ -96,7 +102,7 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/holdings/)",
-  "historySource": "—"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -110,8 +116,8 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
+  "display": "$573.00",
+  "value": 573,
   "asOfDate": "Sep 18 2026"
  },
  "yields": {

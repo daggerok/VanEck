@@ -5,32 +5,32 @@
  "fundPage": "https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/",
  "dataFile": "./funds/VBNB/meta.json",
  "cusip": null,
- "isin": null,
+ "isin": "US92189M1018",
  "ter": "0.39%",
  "terValue": 0.39,
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$2.00 M",
-  "value": 2000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$2.68M",
+  "value": 2679364.67,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 2000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 2679364.67,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 07 2026",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$29.74",
+ "closePriceValue": 29.74,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "-0.03%",
+  "value": -0.03
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": -0.03,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -64,21 +64,28 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.39%",
  "terGrossValue": 0.39,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 2,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 135,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
  },
+ "totalNetAssets": 2680000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +95,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VBNB",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +110,9 @@
   "grossValue": 0.39
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$29.74",
+  "value": 29.74,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

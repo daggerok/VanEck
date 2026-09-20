@@ -1,0 +1,348 @@
+{
+ "ticker": "EINC",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 33,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Williams Cos Inc/The",
+   "Ticker": "WMB",
+   "Identifier": "BBG000BWVCP8",
+   "Shares Held": "94,299",
+   "Asset Category": "Stock",
+   "Market Value": "$6,771,611.19",
+   "Notional Value": "",
+   "Weight": "8.00%"
+  },
+  {
+   "Name": "Enbridge Inc",
+   "Ticker": "ENB",
+   "Identifier": "BBG000K5M1S8",
+   "Shares Held": "120,731",
+   "Asset Category": "Stock",
+   "Market Value": "$5,885,636.25",
+   "Notional Value": "",
+   "Weight": "6.95%"
+  },
+  {
+   "Name": "Cheniere Energy Inc",
+   "Ticker": "LNG",
+   "Identifier": "BBG000C3HSR0",
+   "Shares Held": "21,135",
+   "Asset Category": "Stock",
+   "Market Value": "$5,703,279.75",
+   "Notional Value": "",
+   "Weight": "6.74%"
+  },
+  {
+   "Name": "Kinder Morgan Inc",
+   "Ticker": "KMI",
+   "Identifier": "BBG0019JZ882",
+   "Shares Held": "173,883",
+   "Asset Category": "Stock",
+   "Market Value": "$5,444,276.73",
+   "Notional Value": "",
+   "Weight": "6.43%"
+  },
+  {
+   "Name": "Tc Energy Corp",
+   "Ticker": "TRP",
+   "Identifier": "BBG000BVN235",
+   "Shares Held": "86,687",
+   "Asset Category": "Stock",
+   "Market Value": "$5,344,253.55",
+   "Notional Value": "",
+   "Weight": "6.31%"
+  },
+  {
+   "Name": "Oneok Inc",
+   "Ticker": "OKE",
+   "Identifier": "BBG024TZWVN1",
+   "Shares Held": "51,724",
+   "Asset Category": "Stock",
+   "Market Value": "$4,821,711.28",
+   "Notional Value": "",
+   "Weight": "5.70%"
+  },
+  {
+   "Name": "Targa Resources Corp",
+   "Ticker": "TRGP",
+   "Identifier": "BBG0015XMW40",
+   "Shares Held": "15,627",
+   "Asset Category": "Stock",
+   "Market Value": "$4,454,788.89",
+   "Notional Value": "",
+   "Weight": "5.26%"
+  },
+  {
+   "Name": "Energy Transfer Lp",
+   "Ticker": "ET",
+   "Identifier": "BBG000BM2FL9",
+   "Shares Held": "201,308",
+   "Asset Category": "Stock",
+   "Market Value": "$4,237,533.40",
+   "Notional Value": "",
+   "Weight": "5.01%"
+  },
+  {
+   "Name": "Mplx Lp",
+   "Ticker": "MPLX",
+   "Identifier": "BBG0035TJGV4",
+   "Shares Held": "67,971",
+   "Asset Category": "Stock",
+   "Market Value": "$3,984,460.02",
+   "Notional Value": "",
+   "Weight": "4.71%"
+  },
+  {
+   "Name": "Enterprise Products Partners Lp",
+   "Ticker": "EPD",
+   "Identifier": "BBG000BR3012",
+   "Shares Held": "101,213",
+   "Asset Category": "Stock",
+   "Market Value": "$3,891,639.85",
+   "Notional Value": "",
+   "Weight": "4.60%"
+  },
+  {
+   "Name": "Pembina Pipeline Corp",
+   "Ticker": "PBA",
+   "Identifier": "BBG001732GF9",
+   "Shares Held": "78,479",
+   "Asset Category": "Stock",
+   "Market Value": "$3,738,739.56",
+   "Notional Value": "",
+   "Weight": "4.42%"
+  },
+  {
+   "Name": "Altagas Ltd",
+   "Ticker": "ALA CN",
+   "Identifier": "BBG000D5BDF6",
+   "Shares Held": "95,269",
+   "Asset Category": "Stock",
+   "Market Value": "$3,632,603.09",
+   "Notional Value": "",
+   "Weight": "4.29%"
+  },
+  {
+   "Name": "Dt Midstream Inc",
+   "Ticker": "DTM",
+   "Identifier": "BBG0112Z58J3",
+   "Shares Held": "27,223",
+   "Asset Category": "Stock",
+   "Market Value": "$3,427,375.70",
+   "Notional Value": "",
+   "Weight": "4.05%"
+  },
+  {
+   "Name": "Keyera Corp",
+   "Ticker": "KEY CN",
+   "Identifier": "BBG000BMT0R7",
+   "Shares Held": "88,560",
+   "Asset Category": "Stock",
+   "Market Value": "$3,404,644.22",
+   "Notional Value": "",
+   "Weight": "4.02%"
+  },
+  {
+   "Name": "Plains All American Pipeline Lp",
+   "Ticker": "PAA",
+   "Identifier": "BBG000BP63C5",
+   "Shares Held": "104,497",
+   "Asset Category": "Stock",
+   "Market Value": "$2,655,268.77",
+   "Notional Value": "",
+   "Weight": "3.14%"
+  },
+  {
+   "Name": "Western Midstream Partners Lp",
+   "Ticker": "WES",
+   "Identifier": "BBG003M3V230",
+   "Shares Held": "48,949",
+   "Asset Category": "Stock",
+   "Market Value": "$2,308,434.84",
+   "Notional Value": "",
+   "Weight": "2.73%"
+  },
+  {
+   "Name": "South Bow Corp",
+   "Ticker": "SOBO",
+   "Identifier": "BBG01Q55J4Z7",
+   "Shares Held": "63,208",
+   "Asset Category": "Stock",
+   "Market Value": "$2,260,950.16",
+   "Notional Value": "",
+   "Weight": "2.67%"
+  },
+  {
+   "Name": "Antero Midstream Corp",
+   "Ticker": "AM",
+   "Identifier": "BBG00GBNZ4M0",
+   "Shares Held": "94,243",
+   "Asset Category": "Stock",
+   "Market Value": "$2,002,663.75",
+   "Notional Value": "",
+   "Weight": "2.37%"
+  },
+  {
+   "Name": "Sunoco Lp",
+   "Ticker": "SUN",
+   "Identifier": "BBG00358K8S0",
+   "Shares Held": "19,914",
+   "Asset Category": "Stock",
+   "Market Value": "$1,569,422.34",
+   "Notional Value": "",
+   "Weight": "1.85%"
+  },
+  {
+   "Name": "Plains Gp Holdings Lp",
+   "Ticker": "PAGP",
+   "Identifier": "BBG000TBYFR3",
+   "Shares Held": "49,202",
+   "Asset Category": "Stock",
+   "Market Value": "$1,364,125.45",
+   "Notional Value": "",
+   "Weight": "1.61%"
+  },
+  {
+   "Name": "Kodiak Gas Services Inc",
+   "Ticker": "KGS",
+   "Identifier": "BBG01G4G6XV0",
+   "Shares Held": "22,929",
+   "Asset Category": "Stock",
+   "Market Value": "$1,336,302.12",
+   "Notional Value": "",
+   "Weight": "1.58%"
+  },
+  {
+   "Name": "Archrock Inc",
+   "Ticker": "AROC",
+   "Identifier": "BBG000RWH1V4",
+   "Shares Held": "42,361",
+   "Asset Category": "Stock",
+   "Market Value": "$1,322,510.42",
+   "Notional Value": "",
+   "Weight": "1.56%"
+  },
+  {
+   "Name": "Gibson Energy Inc",
+   "Ticker": "GEI CN",
+   "Identifier": "BBG001NQ7774",
+   "Shares Held": "52,263",
+   "Asset Category": "Stock",
+   "Market Value": "$1,193,280.59",
+   "Notional Value": "",
+   "Weight": "1.41%"
+  },
+  {
+   "Name": "Kinetik Holdings Inc",
+   "Ticker": "KNTK",
+   "Identifier": "BBG00GCLZ7B8",
+   "Shares Held": "14,338",
+   "Asset Category": "Stock",
+   "Market Value": "$769,663.84",
+   "Notional Value": "",
+   "Weight": "0.91%"
+  },
+  {
+   "Name": "Venture Global Inc",
+   "Ticker": "VG",
+   "Identifier": "BBG01RGY23K6",
+   "Shares Held": "50,236",
+   "Asset Category": "Stock",
+   "Market Value": "$724,403.12",
+   "Notional Value": "",
+   "Weight": "0.86%"
+  },
+  {
+   "Name": "Cheniere Energy Partners Lp",
+   "Ticker": "CQP",
+   "Identifier": "BBG000QMH637",
+   "Shares Held": "10,242",
+   "Asset Category": "Stock",
+   "Market Value": "$683,653.50",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Hess Midstream Lp",
+   "Ticker": "HESM",
+   "Identifier": "BBG00R02H8D5",
+   "Shares Held": "16,973",
+   "Asset Category": "Stock",
+   "Market Value": "$680,447.57",
+   "Notional Value": "",
+   "Weight": "0.80%"
+  },
+  {
+   "Name": "Ngl Energy Partners Lp",
+   "Ticker": "NGL",
+   "Identifier": "BBG001J1BNY4",
+   "Shares Held": "19,806",
+   "Asset Category": "Stock",
+   "Market Value": "$327,393.18",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Rockpoint Gas Storage Inc",
+   "Ticker": "RGSI CN",
+   "Identifier": "BBG01XFNZRQ3",
+   "Shares Held": "19,192",
+   "Asset Category": "Stock",
+   "Market Value": "$323,090.71",
+   "Notional Value": "",
+   "Weight": "0.38%"
+  },
+  {
+   "Name": "Genesis Energy Lp",
+   "Ticker": "GEL",
+   "Identifier": "BBG000BM3HK5",
+   "Shares Held": "14,894",
+   "Asset Category": "Stock",
+   "Market Value": "$226,090.92",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-CAD CASH-",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-.02",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "-2,642,421",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-2,642,421.20",
+   "Notional Value": "",
+   "Weight": "-3.12%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$2,811,100.67",
+   "Notional Value": "",
+   "Weight": "3.32%"
+  }
+ ]
+}

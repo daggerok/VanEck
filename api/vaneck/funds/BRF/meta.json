@@ -11,26 +11,26 @@
  "nav": {
   "display": "—",
   "value": null,
-  "asOfDate": "Jun 30 2026"
+  "asOfDate": "Sep 18 2026"
  },
  "navValue": null,
  "aum": {
-  "display": "$22.00 M",
-  "value": 22000000,
-  "asOfDate": "Jun 30 2026",
+  "display": "$22.01M",
+  "value": 22011078.57,
+  "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 22000000,
- "asOfDate": "Jun 30 2026",
- "inceptionDate": "—",
+ "aumValue": 22011078.57,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "May 12 2009",
  "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "closePrice": "$16.20",
+ "closePriceValue": 16.2,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "-0.10%",
+  "value": -0.1
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": -0.1,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -38,14 +38,16 @@
   "rows": []
  },
  "returns": {
-  "derivedFrom": "not yet refreshed from vaneck.com",
+  "derivedFrom": "official VanEck fund-page YTD return",
   "monthEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Sep 18 2026",
+   "ytd": 0.98,
+   "ytdText": "0.98%"
   },
   "quarterEnd": {}
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 0.98,
   "tr1y": null,
   "tr3y": null,
   "tr5y": null,
@@ -58,27 +60,38 @@
   "dividendYieldText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "not yet refreshed from vaneck.com"
+  "returnsBasis": "official VanEck fund-page YTD return"
  },
  "distributionFrequency": "Unknown",
  "providerCategory": "Country/Regional",
  "terGross": "1.17%",
  "terGrossValue": 1.17,
- "netAssetsAsOf": "Jun 30 2026",
+ "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "totalRows": 95,
+  "pageSize": 250,
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
  },
  "history": {
-  "pages": [],
-  "pageSize": 25,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "totalRows": 4716,
+  "pageSize": 1000,
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)",
+  "pageCount": 5,
+  "pages": [
+   "history/001.json",
+   "history/002.json",
+   "history/003.json",
+   "history/004.json",
+   "history/005.json"
+  ]
  },
+ "totalNetAssets": 22010000,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -88,8 +101,8 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/BRF",
-  "holdingsSource": "—",
-  "historySource": "—"
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)"
  },
  "identifiers": {
   "cusip": null,
@@ -103,9 +116,9 @@
   "grossValue": 1.17
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
-  "asOfDate": "Jun 30 2026"
+  "display": "$16.20",
+  "value": 16.2,
+  "asOfDate": "Sep 18 2026"
  },
  "yields": {
   "dividendYield": null,

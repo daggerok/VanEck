@@ -1,0 +1,38 @@
+{
+ "ticker": "ETHV",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 2,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Ether",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "46,757",
+   "Asset Category": "",
+   "Market Value": "$114,529,985.23",
+   "Notional Value": "",
+   "Weight": "100.01%"
+  },
+  {
+   "Name": "Other Cash And Liabilities",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "",
+   "Market Value": "$-11,818.67",
+   "Notional Value": "",
+   "Weight": "-0.01%"
+  }
+ ]
+}

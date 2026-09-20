@@ -1,0 +1,728 @@
+{
+ "ticker": "DURA",
+ "page": 1,
+ "pageSize": 250,
+ "totalRows": 71,
+ "headers": [
+  "Name",
+  "Ticker",
+  "Identifier",
+  "Shares Held",
+  "Asset Category",
+  "Market Value",
+  "Notional Value",
+  "Weight"
+ ],
+ "rows": [
+  {
+   "Name": "Merck & Co Inc",
+   "Ticker": "MRK",
+   "Identifier": "BBG000BPD168",
+   "Shares Held": "18,054",
+   "Asset Category": "Stock",
+   "Market Value": "$2,656,646.10",
+   "Notional Value": "",
+   "Weight": "5.91%"
+  },
+  {
+   "Name": "Chevron Corp",
+   "Ticker": "CVX",
+   "Identifier": "BBG000K4ND22",
+   "Shares Held": "11,322",
+   "Asset Category": "Stock",
+   "Market Value": "$2,395,395.54",
+   "Notional Value": "",
+   "Weight": "5.33%"
+  },
+  {
+   "Name": "Exxon Mobil Corp",
+   "Ticker": "XOM",
+   "Identifier": "BBG000GZQ728",
+   "Shares Held": "14,436",
+   "Asset Category": "Stock",
+   "Market Value": "$2,356,965.72",
+   "Notional Value": "",
+   "Weight": "5.24%"
+  },
+  {
+   "Name": "Coca-Cola Co/The",
+   "Ticker": "KO",
+   "Identifier": "BBG000BMX289",
+   "Shares Held": "26,610",
+   "Asset Category": "Stock",
+   "Market Value": "$2,343,276.60",
+   "Notional Value": "",
+   "Weight": "5.21%"
+  },
+  {
+   "Name": "Philip Morris International Inc",
+   "Ticker": "PM",
+   "Identifier": "BBG000J2XL74",
+   "Shares Held": "12,228",
+   "Asset Category": "Stock",
+   "Market Value": "$2,329,189.44",
+   "Notional Value": "",
+   "Weight": "5.18%"
+  },
+  {
+   "Name": "Bank Of America Corp",
+   "Ticker": "BAC",
+   "Identifier": "BBG000BCTLF6",
+   "Shares Held": "38,648",
+   "Asset Category": "Stock",
+   "Market Value": "$2,248,540.64",
+   "Notional Value": "",
+   "Weight": "5.00%"
+  },
+  {
+   "Name": "Verizon Communications Inc",
+   "Ticker": "VZ",
+   "Identifier": "BBG000HS77T5",
+   "Shares Held": "42,358",
+   "Asset Category": "Stock",
+   "Market Value": "$2,047,162.14",
+   "Notional Value": "",
+   "Weight": "4.55%"
+  },
+  {
+   "Name": "Altria Group Inc",
+   "Ticker": "MO",
+   "Identifier": "BBG000BP6LJ8",
+   "Shares Held": "27,073",
+   "Asset Category": "Stock",
+   "Market Value": "$1,886,988.10",
+   "Notional Value": "",
+   "Weight": "4.20%"
+  },
+  {
+   "Name": "At&T Inc",
+   "Ticker": "T",
+   "Identifier": "BBG000BSJK37",
+   "Shares Held": "73,306",
+   "Asset Category": "Stock",
+   "Market Value": "$1,861,239.34",
+   "Notional Value": "",
+   "Weight": "4.14%"
+  },
+  {
+   "Name": "Texas Instruments Inc",
+   "Ticker": "TXN",
+   "Identifier": "BBG000BVV7G1",
+   "Shares Held": "6,685",
+   "Asset Category": "Stock",
+   "Market Value": "$1,725,665.90",
+   "Notional Value": "",
+   "Weight": "3.84%"
+  },
+  {
+   "Name": "Pepsico Inc",
+   "Ticker": "PEP",
+   "Identifier": "BBG000DH7JK6",
+   "Shares Held": "12,375",
+   "Asset Category": "Stock",
+   "Market Value": "$1,654,042.50",
+   "Notional Value": "",
+   "Weight": "3.68%"
+  },
+  {
+   "Name": "Amgen Inc",
+   "Ticker": "AMGN",
+   "Identifier": "BBG000BBS2Y0",
+   "Shares Held": "3,577",
+   "Asset Category": "Stock",
+   "Market Value": "$1,358,473.06",
+   "Notional Value": "",
+   "Weight": "3.02%"
+  },
+  {
+   "Name": "Qualcomm Inc",
+   "Ticker": "QCOM",
+   "Identifier": "BBG000CGC1X8",
+   "Shares Held": "7,067",
+   "Asset Category": "Stock",
+   "Market Value": "$1,333,613.57",
+   "Notional Value": "",
+   "Weight": "2.97%"
+  },
+  {
+   "Name": "Conocophillips",
+   "Ticker": "COP",
+   "Identifier": "BBG000BQQH30",
+   "Shares Held": "8,878",
+   "Asset Category": "Stock",
+   "Market Value": "$1,182,460.82",
+   "Notional Value": "",
+   "Weight": "2.63%"
+  },
+  {
+   "Name": "Gilead Sciences Inc",
+   "Ticker": "GILD",
+   "Identifier": "BBG000CKGBP2",
+   "Shares Held": "6,947",
+   "Asset Category": "Stock",
+   "Market Value": "$1,048,232.83",
+   "Notional Value": "",
+   "Weight": "2.33%"
+  },
+  {
+   "Name": "Mcdonald's Corp",
+   "Ticker": "MCD",
+   "Identifier": "BBG000BNSZP1",
+   "Shares Held": "3,997",
+   "Asset Category": "Stock",
+   "Market Value": "$993,174.56",
+   "Notional Value": "",
+   "Weight": "2.21%"
+  },
+  {
+   "Name": "Abbott Laboratories",
+   "Ticker": "ABT",
+   "Identifier": "BBG000B9ZXB4",
+   "Shares Held": "9,620",
+   "Asset Category": "Stock",
+   "Market Value": "$983,452.60",
+   "Notional Value": "",
+   "Weight": "2.19%"
+  },
+  {
+   "Name": "Medtronic Plc",
+   "Ticker": "MDT",
+   "Identifier": "BBG000BNWG87",
+   "Shares Held": "10,318",
+   "Asset Category": "Stock",
+   "Market Value": "$957,200.86",
+   "Notional Value": "",
+   "Weight": "2.13%"
+  },
+  {
+   "Name": "Union Pacific Corp",
+   "Ticker": "UNP",
+   "Identifier": "BBG000BW3299",
+   "Shares Held": "3,328",
+   "Asset Category": "Stock",
+   "Market Value": "$940,093.44",
+   "Notional Value": "",
+   "Weight": "2.09%"
+  },
+  {
+   "Name": "Blackrock Inc",
+   "Ticker": "BLK",
+   "Identifier": "BBG01PSW2WN4",
+   "Shares Held": "784",
+   "Asset Category": "Stock",
+   "Market Value": "$826,304.64",
+   "Notional Value": "",
+   "Weight": "1.84%"
+  },
+  {
+   "Name": "Duke Energy Corp",
+   "Ticker": "DUK",
+   "Identifier": "BBG000BHGDH5",
+   "Shares Held": "6,533",
+   "Asset Category": "Stock",
+   "Market Value": "$774,421.82",
+   "Notional Value": "",
+   "Weight": "1.72%"
+  },
+  {
+   "Name": "Starbucks Corp",
+   "Ticker": "SBUX",
+   "Identifier": "BBG000CTQBF3",
+   "Shares Held": "7,274",
+   "Asset Category": "Stock",
+   "Market Value": "$703,177.58",
+   "Notional Value": "",
+   "Weight": "1.56%"
+  },
+  {
+   "Name": "Mondelez International Inc",
+   "Ticker": "MDLZ",
+   "Identifier": "BBG000D4LWF6",
+   "Shares Held": "11,222",
+   "Asset Category": "Stock",
+   "Market Value": "$696,212.88",
+   "Notional Value": "",
+   "Weight": "1.55%"
+  },
+  {
+   "Name": "Eog Resources Inc",
+   "Ticker": "EOG",
+   "Identifier": "BBG000BZ9223",
+   "Shares Held": "4,290",
+   "Asset Category": "Stock",
+   "Market Value": "$624,066.30",
+   "Notional Value": "",
+   "Weight": "1.39%"
+  },
+  {
+   "Name": "Lowe's Cos Inc",
+   "Ticker": "LOW",
+   "Identifier": "BBG000BNDN65",
+   "Shares Held": "2,759",
+   "Asset Category": "Stock",
+   "Market Value": "$535,770.21",
+   "Notional Value": "",
+   "Weight": "1.19%"
+  },
+  {
+   "Name": "Air Products And Chemicals Inc",
+   "Ticker": "APD",
+   "Identifier": "BBG000BC4JJ4",
+   "Shares Held": "1,506",
+   "Asset Category": "Stock",
+   "Market Value": "$430,896.72",
+   "Notional Value": "",
+   "Weight": "0.96%"
+  },
+  {
+   "Name": "Colgate-Palmolive Co",
+   "Ticker": "CL",
+   "Identifier": "BBG000BFQYY3",
+   "Shares Held": "4,709",
+   "Asset Category": "Stock",
+   "Market Value": "$413,120.57",
+   "Notional Value": "",
+   "Weight": "0.92%"
+  },
+  {
+   "Name": "General Dynamics Corp",
+   "Ticker": "GD",
+   "Identifier": "BBG000BK67C7",
+   "Shares Held": "1,046",
+   "Asset Category": "Stock",
+   "Market Value": "$372,323.70",
+   "Notional Value": "",
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Becton Dickinson & Co",
+   "Ticker": "BDX",
+   "Identifier": "BBG000BCZYD3",
+   "Shares Held": "1,879",
+   "Asset Category": "Stock",
+   "Market Value": "$340,813.02",
+   "Notional Value": "",
+   "Weight": "0.76%"
+  },
+  {
+   "Name": "Norfolk Southern Corp",
+   "Ticker": "NSC",
+   "Identifier": "BBG000BQ5DS5",
+   "Shares Held": "1,049",
+   "Asset Category": "Stock",
+   "Market Value": "$334,599.53",
+   "Notional Value": "",
+   "Weight": "0.74%"
+  },
+  {
+   "Name": "Honeywell International Inc",
+   "Ticker": "HON",
+   "Identifier": "BBG000H556T9",
+   "Shares Held": "1,609",
+   "Asset Category": "Stock",
+   "Market Value": "$332,242.41",
+   "Notional Value": "",
+   "Weight": "0.74%"
+  },
+  {
+   "Name": "T Rowe Price Group Inc",
+   "Ticker": "TROW",
+   "Identifier": "BBG000BVMPN3",
+   "Shares Held": "3,158",
+   "Asset Category": "Stock",
+   "Market Value": "$324,768.72",
+   "Notional Value": "",
+   "Weight": "0.72%"
+  },
+  {
+   "Name": "Consolidated Edison Inc",
+   "Ticker": "ED",
+   "Identifier": "BBG000BHLYS1",
+   "Shares Held": "2,878",
+   "Asset Category": "Stock",
+   "Market Value": "$308,176.24",
+   "Notional Value": "",
+   "Weight": "0.69%"
+  },
+  {
+   "Name": "Nxp Semiconductors Nv",
+   "Ticker": "NXPI",
+   "Identifier": "BBG000BND699",
+   "Shares Held": "1,241",
+   "Asset Category": "Stock",
+   "Market Value": "$282,885.95",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "Microchip Technology Inc",
+   "Ticker": "MCHP",
+   "Identifier": "BBG000BHCP19",
+   "Shares Held": "3,935",
+   "Asset Category": "Stock",
+   "Market Value": "$278,676.70",
+   "Notional Value": "",
+   "Weight": "0.62%"
+  },
+  {
+   "Name": "Wec Energy Group Inc",
+   "Ticker": "WEC",
+   "Identifier": "BBG000BWP7D9",
+   "Shares Held": "2,561",
+   "Asset Category": "Stock",
+   "Market Value": "$268,213.53",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "M&T Bank Corp",
+   "Ticker": "MTB",
+   "Identifier": "BBG000D9KWL9",
+   "Shares Held": "1,091",
+   "Asset Category": "Stock",
+   "Market Value": "$246,958.76",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "Sysco Corp",
+   "Ticker": "SYY",
+   "Identifier": "BBG000BTVJ25",
+   "Shares Held": "3,118",
+   "Asset Category": "Stock",
+   "Market Value": "$246,664.98",
+   "Notional Value": "",
+   "Weight": "0.55%"
+  },
+  {
+   "Name": "American International Group Inc",
+   "Ticker": "AIG",
+   "Identifier": "BBG000BBDZG3",
+   "Shares Held": "3,142",
+   "Asset Category": "Stock",
+   "Market Value": "$237,786.56",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Firstenergy Corp",
+   "Ticker": "FE",
+   "Identifier": "BBG000BB6M98",
+   "Shares Held": "4,678",
+   "Asset Category": "Stock",
+   "Market Value": "$213,924.94",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Dte Energy Co",
+   "Ticker": "DTE",
+   "Identifier": "BBG000BB29X4",
+   "Shares Held": "1,594",
+   "Asset Category": "Stock",
+   "Market Value": "$207,921.36",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Diamondback Energy Inc",
+   "Ticker": "FANG",
+   "Identifier": "BBG002PHSYX9",
+   "Shares Held": "1,048",
+   "Asset Category": "Stock",
+   "Market Value": "$206,393.12",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Ameren Corp",
+   "Ticker": "AEE",
+   "Identifier": "BBG000B9X8C0",
+   "Shares Held": "1,789",
+   "Asset Category": "Stock",
+   "Market Value": "$185,877.10",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Skyworks Solutions Inc",
+   "Ticker": "SWKS",
+   "Identifier": "BBG000KLB4Q1",
+   "Shares Held": "1,974",
+   "Asset Category": "Stock",
+   "Market Value": "$180,265.68",
+   "Notional Value": "",
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "Yum! Brands Inc",
+   "Ticker": "YUM",
+   "Identifier": "BBG000BH3GZ2",
+   "Shares Held": "1,314",
+   "Asset Category": "Stock",
+   "Market Value": "$178,375.50",
+   "Notional Value": "",
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "Ppl Corp",
+   "Ticker": "PPL",
+   "Identifier": "BBG000BRJL00",
+   "Shares Held": "5,214",
+   "Asset Category": "Stock",
+   "Market Value": "$175,190.40",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Garmin Ltd",
+   "Ticker": "GRMN",
+   "Identifier": "BBG000C4LN67",
+   "Shares Held": "597",
+   "Asset Category": "Stock",
+   "Market Value": "$164,383.95",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Ppg Industries Inc",
+   "Ticker": "PPG",
+   "Identifier": "BBG000BRJ809",
+   "Shares Held": "1,528",
+   "Asset Category": "Stock",
+   "Market Value": "$161,127.60",
+   "Notional Value": "",
+   "Weight": "0.36%"
+  },
+  {
+   "Name": "Hershey Co/The",
+   "Ticker": "HSY",
+   "Identifier": "BBG000BLHRS2",
+   "Shares Held": "957",
+   "Asset Category": "Stock",
+   "Market Value": "$161,091.81",
+   "Notional Value": "",
+   "Weight": "0.36%"
+  },
+  {
+   "Name": "L3harris Technologies Inc",
+   "Ticker": "LHX",
+   "Identifier": "BBG000BLGFJ9",
+   "Shares Held": "628",
+   "Asset Category": "Stock",
+   "Market Value": "$157,288.88",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Evergy Inc",
+   "Ticker": "EVRG",
+   "Identifier": "BBG00H433CR2",
+   "Shares Held": "1,932",
+   "Asset Category": "Stock",
+   "Market Value": "$156,182.88",
+   "Notional Value": "",
+   "Weight": "0.35%"
+  },
+  {
+   "Name": "Dupont De Nemours Inc",
+   "Ticker": "DD",
+   "Identifier": "BBG00BN961G4",
+   "Shares Held": "1,143",
+   "Asset Category": "Stock",
+   "Market Value": "$146,829.78",
+   "Notional Value": "",
+   "Weight": "0.33%"
+  },
+  {
+   "Name": "Atmos Energy Corp",
+   "Ticker": "ATO",
+   "Identifier": "BBG000BRNGM2",
+   "Shares Held": "866",
+   "Asset Category": "Stock",
+   "Market Value": "$140,317.98",
+   "Notional Value": "",
+   "Weight": "0.31%"
+  },
+  {
+   "Name": "Centerpoint Energy Inc",
+   "Ticker": "CNP",
+   "Identifier": "BBG000FDBX90",
+   "Shares Held": "3,469",
+   "Asset Category": "Stock",
+   "Market Value": "$133,764.64",
+   "Notional Value": "",
+   "Weight": "0.30%"
+  },
+  {
+   "Name": "Alliant Energy Corp",
+   "Ticker": "LNT",
+   "Identifier": "BBG000DW4Q75",
+   "Shares Held": "1,906",
+   "Asset Category": "Stock",
+   "Market Value": "$127,015.84",
+   "Notional Value": "",
+   "Weight": "0.28%"
+  },
+  {
+   "Name": "Franklin Resources Inc",
+   "Ticker": "BEN",
+   "Identifier": "BBG000BD0TF8",
+   "Shares Held": "3,715",
+   "Asset Category": "Stock",
+   "Market Value": "$122,855.05",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Tyson Foods Inc",
+   "Ticker": "TSN",
+   "Identifier": "BBG000DKCC19",
+   "Shares Held": "2,326",
+   "Asset Category": "Stock",
+   "Market Value": "$121,556.76",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Snap-On Inc",
+   "Ticker": "SNA",
+   "Identifier": "BBG000BT7JW9",
+   "Shares Held": "324",
+   "Asset Category": "Stock",
+   "Market Value": "$120,404.88",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Devon Energy Corp",
+   "Ticker": "DVN",
+   "Identifier": "BBG000BBVJZ8",
+   "Shares Held": "2,463",
+   "Asset Category": "Stock",
+   "Market Value": "$119,997.36",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Royalty Pharma Plc",
+   "Ticker": "RPRX",
+   "Identifier": "BBG00V1L5YZ5",
+   "Shares Held": "1,781",
+   "Asset Category": "Stock",
+   "Market Value": "$104,954.33",
+   "Notional Value": "",
+   "Weight": "0.23%"
+  },
+  {
+   "Name": "Cf Industries Holdings Inc",
+   "Ticker": "CF",
+   "Identifier": "BBG000BWJFZ4",
+   "Shares Held": "732",
+   "Asset Category": "Stock",
+   "Market Value": "$97,956.24",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Invesco Ltd",
+   "Ticker": "IVZ",
+   "Identifier": "BBG000BY2Y78",
+   "Shares Held": "3,117",
+   "Asset Category": "Stock",
+   "Market Value": "$94,195.74",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Mccormick & Co Inc/Md",
+   "Ticker": "MKC",
+   "Identifier": "BBG000G6Y5W4",
+   "Shares Held": "1,864",
+   "Asset Category": "Stock",
+   "Market Value": "$92,640.80",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Hasbro Inc",
+   "Ticker": "HAS",
+   "Identifier": "BBG000BKVJK4",
+   "Shares Held": "997",
+   "Asset Category": "Stock",
+   "Market Value": "$88,493.72",
+   "Notional Value": "",
+   "Weight": "0.20%"
+  },
+  {
+   "Name": "Cullen/Frost Bankers Inc",
+   "Ticker": "CFR",
+   "Identifier": "BBG000C2PL98",
+   "Shares Held": "464",
+   "Asset Category": "Stock",
+   "Market Value": "$74,072.96",
+   "Notional Value": "",
+   "Weight": "0.16%"
+  },
+  {
+   "Name": "Portland General Electric Co",
+   "Ticker": "POR",
+   "Identifier": "BBG000BCRMW7",
+   "Shares Held": "1,112",
+   "Asset Category": "Stock",
+   "Market Value": "$53,442.72",
+   "Notional Value": "",
+   "Weight": "0.12%"
+  },
+  {
+   "Name": "New Jersey Resources Corp",
+   "Ticker": "NJR",
+   "Identifier": "BBG000BPZVW9",
+   "Shares Held": "854",
+   "Asset Category": "Stock",
+   "Market Value": "$45,663.38",
+   "Notional Value": "",
+   "Weight": "0.10%"
+  },
+  {
+   "Name": "Gentex Corp",
+   "Ticker": "GNTX",
+   "Identifier": "BBG000BKJ092",
+   "Shares Held": "1,205",
+   "Asset Category": "Stock",
+   "Market Value": "$27,064.30",
+   "Notional Value": "",
+   "Weight": "0.06%"
+  },
+  {
+   "Name": "Marketaxess Holdings Inc",
+   "Ticker": "MKTX",
+   "Identifier": "BBG000BJBZ23",
+   "Shares Held": "159",
+   "Asset Category": "Stock",
+   "Market Value": "$25,967.88",
+   "Notional Value": "",
+   "Weight": "0.06%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "95,559",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$95,559.19",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Other/Cash",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "",
+   "Asset Category": "Cash",
+   "Market Value": "$100,786.65",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  }
+ ]
+}
