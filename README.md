@@ -1,6 +1,6 @@
 # VanEck
 
-VanEck ETF holdings to Watchlist. A single-file client-side tool reading the generated `./api/vaneck` static feed (VanEck ETF catalog, per-fund product pages, daily holdings and NAV history downloads, Yahoo Finance for distributions, SEC EDGAR N-PORT-P as fallback) into a searchable ETF/asset-class catalog with per-fund tabs, watchlist aggregation, ticker copy and CSV/TXT export — the same look, feel, columns and business logic as the sibling applications.
+VanEck ETF holdings to Watchlist. A single-file client-side tool reading the generated `./api/vaneck` static feed (VanEck ETF catalog, per-fund product pages, daily holdings and NAV history downloads, VanEck's own performance and distribution history, SEC EDGAR N-PORT-P and Yahoo Finance as fallbacks) into a searchable ETF/asset-class catalog with per-fund tabs, watchlist aggregation, ticker copy and CSV/TXT export — the same look, feel, columns and business logic as the sibling applications.
 
 ## Using Bun
 
@@ -34,7 +34,8 @@ The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/updat
 | Holdings (daily) | `…/investments/<slug>/downloads/holdings/` | A real `.xlsx` (OOXML) workbook, not HTML — see below |
 | NAV / premium-discount history | `…/investments/<slug>/downloads/fundhistoprices/` | Also `.xlsx`; descending, inception → present |
 | Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=1`) |
-| Distribution history | Yahoo Finance chart feed | vaneck.com publishes **no** per-fund distributions download |
+| Performance (TR/CAGR/SI Ann.) | VanEck's Average Annual Total Returns block (JSON) | See *Performance and distributions* below |
+| Distribution history | VanEck's own Distribution History block (JSON) | Yahoo Finance chart feed is the fallback for the handful of fund pages without this block |
 
 vaneck.com sits behind a WAF that answers with a `redirectVE=generic` cookie-and-redirect dance and throttles with `403`; `fetchWithRetry`/`fetchVanEckWithManualRedirect` in `scripts/update-data.ts` handle both with a small cookie jar and bounded backoff.
 
@@ -105,7 +106,7 @@ Verification before every publish: `bun install --frozen-lockfile`, `bun test`, 
 
 | Бренд | Фонды | Где брать данные |
 | --- | --- | --- |
-| **VanEck** (88) | GDX, SMH, MOAT, ESPO, BJK, OIH, REMX | [vaneck.com ETF finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) — [daggerok/VanEck](https://github.com/daggerok/VanEck) |
+| **VanEck** (88) | GDX, SMH, MOAT, ESPO, ANGL, OIH, REMX | [vaneck.com ETF finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) — [daggerok/VanEck](https://github.com/daggerok/VanEck) |
 | **JPMorgan** (78) | JEPI, JEPQ, JPST, BBJP, JIRE, JGLO | [am.jpmorgan.com ETF explorer](https://am.jpmorgan.com/us/en/asset-management/adv/products/fund-explorer/etf) — [daggerok/JPMorgan](https://github.com/daggerok/JPMorgan) |
 | **Schwab** (30+) | SCHB, SCHX, SCHG, SCHV, SCHD, SCHM | [schwabassetmanagement.com](https://www.schwabassetmanagement.com/products) — [daggerok/Schwab](https://github.com/daggerok/Schwab) |
 | **Invesco** (245) | QQQM, RSP, SPLV, SPHD, SPMO, QQQ | [invesco.com ETFs](https://www.invesco.com/us/en/financial-products/etfs.html) — [daggerok/Invesco](https://github.com/daggerok/Invesco) |
