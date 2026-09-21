@@ -121,6 +121,7 @@ Verification before every publish: `bun install --frozen-lockfile`, `bun test`, 
 | **Vanguard** (80+) | VTI, VOO, BND, VUG, VTV, VXUS | [investor.vanguard.com](https://investor.vanguard.com/etf/list) — [daggerok/Vanguard](https://github.com/daggerok/Vanguard) |
 | **SPDR** (179) | SPY, SPYM, SPYG, XLK, XLF, XLV | [ssga.com fund finder](https://www.ssga.com/us/en/intermediary/etfs/fund-finder) — [daggerok/SPDR](https://github.com/daggerok/SPDR) |
 | **WisdomTree** (90+) | DGRW, USFR, WCLD, DGRW, EFS | [wisdomtree.com](https://www.wisdomtree.com/investments) — [daggerok/WisdomTree](https://github.com/daggerok/WisdomTree) |
+| **Goldman Sachs** (48) | GSLC, GBIL, AAAU, GPIX, GPIQ, GSST | [am.gs.com fund finder](https://am.gs.com/en-us/individual/funds?locale=en-us&audience=individual&sf=funds&filters=funds%7CETF&limit=100) — [daggerok/Goldman-Sachs](https://github.com/daggerok/Goldman-Sachs) |
 
 ## Sibling applications
 
@@ -136,6 +137,7 @@ Verification before every publish: `bun install --frozen-lockfile`, `bun test`, 
 | VanEck ETF Holdings to Watchlist | vaneck.com ETF finder + product pages | [daggerok/VanEck](https://github.com/daggerok/VanEck) · [published app](https://daggerok.github.io/VanEck/) |
 | Schwab ETF Holdings to Watchlist | schwabassetmanagement.com product pages + CSV exports | [daggerok/Schwab](https://github.com/daggerok/Schwab) · [published app](https://daggerok.github.io/Schwab/) |
 | Vanguard ETF Holdings to Watchlist | Vanguard product pages + SEC EDGAR N-PORT-P | [daggerok/Vanguard](https://github.com/daggerok/Vanguard) · [published app](https://daggerok.github.io/Vanguard/) |
+| Goldman Sachs ETF Holdings to Watchlist | am.gs.com fund finder + detail pages + SEC EDGAR N-PORT-P | [daggerok/Goldman-Sachs](https://github.com/daggerok/Goldman-Sachs) · [published app](https://daggerok.github.io/Goldman-Sachs/) |
 
 ## License
 
