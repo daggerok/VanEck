@@ -7,7 +7,7 @@ are written against.
 
 ## Column set and order
 
-Exactly **25 columns**, in this order. The order is fixed; a column may be
+Exactly **27 columns**, in this order. The order is fixed; a column may be
 empty but never removed.
 
 | # | Column | Sort key | Source | Notes |
@@ -20,23 +20,25 @@ empty but never removed.
 | 6 | `NAV` | `navValue` | fund page header | `—` until a networked run |
 | 7 | `Net Assets` | `aumValue` | fund page header, else ETF Guide | ETF Guide figures are as of 6/30/2026 |
 | 8 | `Expense` | `terValue` | fund page / ETF Guide | Net where VanEck prints Gross and Net separately |
-| 9 | `Dividend Yield` | `dividendYield` | indicated, from VanEck's own Distribution History (Yahoo Finance fallback) | labelled *indicated* where present; `—` only if never distributed |
-| 10 | `SEC Yield` | `secYield` | fund page header, where server-rendered | `—` for funds that don't publish it |
-| 11 | `Frequency` | `dividendFrequency` | derived, see below | coded for sorting |
-| 12 | `YTD Return` | `ytd` | fund page header | published for every fund whose page is fetched |
-| 13 | `TR 1Y` | `yr1` | VanEck's Average Annual Total Returns block (NAV) | see *Performance* below |
-| 14 | `TR 3Y` | `tr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
-| 15 | `TR 5Y` | `tr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
-| 16 | `TR 10Y` | `tr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
-| 17 | `CAGR 3Y` | `cagr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
-| 18 | `CAGR 5Y` | `cagr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
-| 19 | `CAGR 10Y` | `cagr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
-| 20 | `SI Ann.` | `si` | VanEck's Average Annual Total Returns block (NAV) | since-inception annualized |
-| 21 | `Return As Of` | `returnAsOf` | fund page | as-of date for the figures above |
-| 22 | `Inception` | `inceptionDate` | fund page header | |
-| 23 | `Holdings` | `holdings` | generated feed | row count |
-| 24 | `History` | `history` | generated feed | row count |
-| 25 | `As Of` | `asOfDate` | feed | NAV / AUM as-of date |
+| 9 | `Dividend Yield` | `dividendYield` | official Investment Finder Distribution Yield, else indicated (recent distributions only) | `—` where VanEck prints no yield and no recent distribution can be annualised |
+| 10 | `Dist Yield` | `distributionYield` | official Investment Finder Distribution Yield (trailing 12-month distributions / NAV) | `—` where VanEck prints no value |
+| 11 | `12M Yield` | `yield12M` | official Investment Finder 12-month yield | `—` where VanEck prints no value; an impossible finder value (e.g. EMBX's `-777.30%`) is stored as `null`, never copied |
+| 12 | `SEC Yield` | `secYield` | official Investment Finder value first, else the fund page header, where server-rendered | `—` for funds that don't publish it |
+| 13 | `Frequency` | `dividendFrequency` | official Investment Finder declared schedule, else derived (see below) | coded for sorting |
+| 14 | `YTD Return` | `ytd` | fund page header | published for every fund whose page is fetched |
+| 15 | `TR 1Y` | `yr1` | VanEck's Average Annual Total Returns block (NAV) | see *Performance* below |
+| 16 | `TR 3Y` | `tr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
+| 17 | `TR 5Y` | `tr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
+| 18 | `TR 10Y` | `tr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
+| 19 | `CAGR 3Y` | `cagr3y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 3 years |
+| 20 | `CAGR 5Y` | `cagr5y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 5 years |
+| 21 | `CAGR 10Y` | `cagr10y` | VanEck's Average Annual Total Returns block (NAV) | `—` for a fund younger than 10 years |
+| 22 | `SI Ann.` | `si` | VanEck's Average Annual Total Returns block (NAV) | since-inception annualized |
+| 23 | `Return As Of` | `returnAsOf` | fund page | as-of date for the figures above |
+| 24 | `Inception` | `inceptionDate` | fund page header | |
+| 25 | `Holdings` | `holdings` | generated feed | row count |
+| 26 | `History` | `history` | generated feed | row count |
+| 27 | `As Of` | `asOfDate` | feed | NAV / AUM as-of date |
 
 ## Performance
 
