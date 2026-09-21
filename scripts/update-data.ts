@@ -1925,14 +1925,18 @@ export async function updateFund(
     metrics.cagr3y = performance.cagr3y;
     metrics.cagr5y = performance.cagr5y;
     metrics.cagr10y = performance.cagr10y;
-    metrics.siAnn = performance.siAnn;
+    // A fund too young for the Average Annual Total Returns block to report
+    // an SI figure (it comes back JSON null) can still have one from the
+    // fund page's own "Performance since inception" header stat, applied
+    // earlier in applyFundPageSnapshot() — never clobber that with a null.
+    metrics.siAnn = performance.siAnn ?? metrics.siAnn ?? null;
     metrics.returnsBasis = 'official VanEck Average Annual Total Returns (NAV)';
     const returnsMonthEnd = (entry.returns as Record<string, unknown>).monthEnd as Record<string, unknown>;
     returnsMonthEnd.yr1 = performance.tr1y;
     returnsMonthEnd.yr3 = performance.cagr3y;
     returnsMonthEnd.yr5 = performance.cagr5y;
     returnsMonthEnd.yr10 = performance.cagr10y;
-    returnsMonthEnd.sinceInception = performance.siAnn;
+    returnsMonthEnd.sinceInception = metrics.siAnn;
     // The fund-page YTD as-of (daily) wins over the block's month-end as-of:
     // only fill a blank (seed '—') stamp, never clobber a real one.
     if (returnsMonthEnd.asOfDate === '—' && performance.asOfDate) returnsMonthEnd.asOfDate = performance.asOfDate;
