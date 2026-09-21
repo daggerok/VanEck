@@ -23,7 +23,7 @@
  "aumValue": 15126080.85,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 22 2025",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$17.30",
  "closePriceValue": 17.3,
  "premiumDiscount": {
@@ -49,7 +49,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -30.79,
@@ -61,7 +61,12 @@
    "sinceInception": -39.13
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": -45.17
   }
  },
  "metrics": {
@@ -76,13 +81,13 @@
   "siAnn": -39.13,
   "dividendYield": 0.98,
   "dividendYieldText": "0.98%",
-  "secYield": 3.96,
-  "secYieldText": "3.96%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.98,
   "distributionYieldText": "0.98%",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": 3.96,
+  "secYieldText": "3.96%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "Other",
  "providerCategory": "Equity Thematic",
@@ -121,7 +126,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VAVX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -130,6 +135,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.20%",
@@ -157,13 +170,5 @@
   "secYieldText": "3.96%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

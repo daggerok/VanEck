@@ -23,7 +23,7 @@
  "aumValue": 315433302.17,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Feb 22 2008",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$17.07",
  "closePriceValue": 17.07,
  "premiumDiscount": {
@@ -1154,7 +1154,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 0.27,
@@ -1166,7 +1166,12 @@
    "sinceInception": 1.99
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 3.29,
+   "yr3": 3.33,
+   "yr5": 1.25,
+   "yr10": 1.49,
+   "sinceInception": 2.02
   }
  },
  "metrics": {
@@ -1181,13 +1186,13 @@
   "siAnn": 1.99,
   "dividendYield": 2.91,
   "dividendYieldText": "2.91%",
-  "secYield": 3.04,
-  "secYieldText": "3.04%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.91,
   "distributionYieldText": "2.91%",
   "yield12M": 2.75,
-  "yield12MText": "2.75%"
+  "yield12MText": "2.75%",
+  "secYield": 3.04,
+  "secYieldText": "3.04%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1223,6 +1228,8 @@
  "totalNetAssets": 315430000,
  "secYield": "3.04%",
  "secYieldValue": 3.04,
+ "indexTicker": "MBNS",
+ "indexName": "ICE Short AMT-Free Broad National Municipal Index",
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -1234,15 +1241,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/short-muni-etf-smb/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/short-muni-etf-smb/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MBNS",
+  "indexName": "ICE Short AMT-Free Broad National Municipal Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/short-muni-etf-smb-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.07%",
@@ -1268,15 +1283,7 @@
   "distributionRate": null,
   "secYield": 3.04,
   "secYieldText": "3.04%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/short-muni-etf-smb-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

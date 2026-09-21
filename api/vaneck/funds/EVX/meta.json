@@ -23,7 +23,7 @@
  "aumValue": 96797184.08,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Oct 10 2006",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$39.48",
  "closePriceValue": 39.48,
  "premiumDiscount": {
@@ -144,7 +144,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 3.25,
@@ -156,7 +156,12 @@
    "sinceInception": 9.37
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 8,
+   "yr3": 9.06,
+   "yr5": 8.35,
+   "yr10": 12.31,
+   "sinceInception": 9.55
   }
  },
  "metrics": {
@@ -171,13 +176,13 @@
   "siAnn": 9.37,
   "dividendYield": 0.18,
   "dividendYieldText": "0.18%",
-  "secYield": 0.56,
-  "secYieldText": "0.56%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.18,
   "distributionYieldText": "0.18%",
   "yield12M": 0.18,
-  "yield12MText": "0.18%"
+  "yield12MText": "0.18%",
+  "secYield": 0.56,
+  "secYieldText": "0.56%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -212,6 +217,8 @@
   ]
  },
  "totalNetAssets": 96800000,
+ "indexTicker": "MVEVX",
+ "indexName": "Global Environmental Services Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -223,15 +230,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/EVX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVEVX",
+  "indexName": "Global Environmental Services Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.55%",
@@ -259,13 +274,5 @@
   "secYieldText": "0.56%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/EVX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

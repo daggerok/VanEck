@@ -23,7 +23,7 @@
  "aumValue": 272494531.61,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 27 2024",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$57.05",
  "closePriceValue": 57.05,
  "premiumDiscount": {
@@ -54,7 +54,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 50.1,
@@ -66,7 +66,12 @@
    "sinceInception": 48.12
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 103.96,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 65.57
   }
  },
  "metrics": {
@@ -81,13 +86,13 @@
   "siAnn": 48.12,
   "dividendYield": 0.02,
   "dividendYieldText": "0.02%",
-  "secYield": -0.03,
-  "secYieldText": "-0.03%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.02,
   "distributionYieldText": "0.02%",
   "yield12M": 0.04,
-  "yield12MText": "0.04%"
+  "yield12MText": "0.04%",
+  "secYield": -0.03,
+  "secYieldText": "-0.03%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -126,7 +131,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMHX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/fabless-semiconductor-etf-smhx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/fabless-semiconductor-etf-smhx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -135,6 +140,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/fabless-semiconductor-etf-smhx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.35%",
@@ -162,13 +175,5 @@
   "secYieldText": "-0.03%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/fabless-semiconductor-etf-smhx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMHX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

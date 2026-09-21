@@ -23,7 +23,7 @@
  "aumValue": 4653328.7,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 01 2020",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$20.66",
  "closePriceValue": 20.66,
  "premiumDiscount": {
@@ -389,7 +389,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -1.2,
@@ -401,7 +401,12 @@
    "sinceInception": 0.98
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 3.89,
+   "yr3": 6.06,
+   "yr5": 0.96,
+   "yr10": null,
+   "sinceInception": 1.2
   }
  },
  "metrics": {
@@ -416,13 +421,13 @@
   "siAnn": 0.98,
   "dividendYield": 5.24,
   "dividendYieldText": "5.24%",
-  "secYield": 5.55,
-  "secYieldText": "5.55%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 5.24,
   "distributionYieldText": "5.24%",
   "yield12M": 4.87,
-  "yield12MText": "4.87%"
+  "yield12MText": "4.87%",
+  "secYield": 5.55,
+  "secYieldText": "5.55%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Corporate Bond",
@@ -464,7 +469,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MBBB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -473,6 +478,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.25%",
@@ -498,15 +511,7 @@
   "distributionRate": null,
   "secYield": 5.55,
   "secYieldText": "5.55%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MBBB/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

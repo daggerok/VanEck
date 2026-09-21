@@ -23,7 +23,7 @@
  "aumValue": 1973276260.99,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Oct 27 2010",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$69.06",
  "closePriceValue": 69.06,
  "premiumDiscount": {
@@ -114,7 +114,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -6.81,
@@ -126,7 +126,12 @@
    "sinceInception": -4.13
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 121.53,
+   "yr3": 3.51,
+   "yr5": 2.95,
+   "yr10": 9.24,
+   "sinceInception": -3.37
   }
  },
  "metrics": {
@@ -141,13 +146,13 @@
   "siAnn": -4.13,
   "dividendYield": 1.89,
   "dividendYieldText": "1.89%",
-  "secYield": 0.51,
-  "secYieldText": "0.51%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 1.89,
   "distributionYieldText": "1.89%",
   "yield12M": 1.92,
-  "yield12MText": "1.92%"
+  "yield12MText": "1.92%",
+  "secYield": 0.51,
+  "secYieldText": "0.51%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -179,6 +184,8 @@
   ]
  },
  "totalNetAssets": 1970000000,
+ "indexTicker": "MVREMXTR",
+ "indexName": "Strategic Metals Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -190,15 +197,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/REMX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVREMXTR",
+  "indexName": "Strategic Metals Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.53%",
@@ -226,13 +241,5 @@
   "secYieldText": "0.51%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/rare-earth-strategic-metals-etf-remx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/REMX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

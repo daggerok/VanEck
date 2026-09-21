@@ -23,7 +23,7 @@
  "aumValue": 334568979.2,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 29 2008",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$76.03",
  "closePriceValue": 76.03,
  "premiumDiscount": {
@@ -134,7 +134,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 26.6,
@@ -146,7 +146,12 @@
    "sinceInception": 6.01
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 35.32,
+   "yr3": 15.61,
+   "yr5": 11.22,
+   "yr10": 11.19,
+   "sinceInception": 5.42
   }
  },
  "metrics": {
@@ -161,13 +166,13 @@
   "siAnn": 6.01,
   "dividendYield": 1.79,
   "dividendYieldText": "1.79%",
-  "secYield": 1.64,
-  "secYieldText": "1.64%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 1.79,
   "distributionYieldText": "1.79%",
   "yield12M": 3.07,
-  "yield12MText": "3.07%"
+  "yield12MText": "3.07%",
+  "secYield": 1.64,
+  "secYieldText": "1.64%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -199,6 +204,8 @@
   ]
  },
  "totalNetAssets": 334570000,
+ "indexTicker": "MVGNRTR",
+ "indexName": "Global Natural Resources Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -210,15 +217,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/HAP",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/natural-resources-etf-hap/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/natural-resources-etf-hap/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVGNRTR",
+  "indexName": "Global Natural Resources Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/natural-resources-etf-hap-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.41%",
@@ -246,13 +261,5 @@
   "secYieldText": "1.64%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/natural-resources-etf-hap-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HAP/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

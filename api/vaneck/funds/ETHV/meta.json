@@ -23,7 +23,7 @@
  "aumValue": 124939097.91,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jun 25 2024",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$38.61",
  "closePriceValue": 38.61,
  "premiumDiscount": {
@@ -43,7 +43,7 @@
   "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -11.39,
@@ -55,7 +55,12 @@
    "sinceInception": -13.11
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -37.2,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": -30.7
   }
  },
  "metrics": {
@@ -70,13 +75,13 @@
   "siAnn": -13.11,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "00 - Unknown",
  "providerCategory": "Equity Thematic",
@@ -115,7 +120,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/ETHV",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -124,6 +129,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/ethereum-etf-ethv-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.20%",
@@ -151,13 +164,5 @@
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/ethereum-etf-ethv-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ETHV/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

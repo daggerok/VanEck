@@ -23,7 +23,7 @@
  "aumValue": 2377428181.33,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jul 16 2012",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$17.71",
  "closePriceValue": 17.71,
  "premiumDiscount": {
@@ -889,7 +889,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 4.4,
@@ -901,7 +901,12 @@
    "sinceInception": 5.37
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 11.14,
+   "yr3": 7.73,
+   "yr5": 3.2,
+   "yr10": 4.72,
+   "sinceInception": 5.32
   }
  },
  "metrics": {
@@ -916,13 +921,13 @@
   "siAnn": 5.37,
   "dividendYield": 4.16,
   "dividendYieldText": "4.16%",
-  "secYield": 6.37,
-  "secYieldText": "6.37%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 4.16,
   "distributionYieldText": "4.16%",
   "yield12M": 6.26,
-  "yield12MText": "6.26%"
+  "yield12MText": "6.26%",
+  "secYield": 6.37,
+  "secYieldText": "6.37%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Equity Income",
@@ -955,6 +960,8 @@
  "totalNetAssets": 2380000000,
  "secYield": "6.37%",
  "secYieldValue": 6.37,
+ "indexTicker": "PFAN4PM",
+ "indexName": "ICE Exchange-Listed Fixed & Adjustable Rate Non-Financial Preferred Securities Index",
  "categoryPath": "Income > Equity Income",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -966,15 +973,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/PFXF",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "PFAN4PM",
+  "indexName": "ICE Exchange-Listed Fixed & Adjustable Rate Non-Financial Preferred Securities Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.40%",
@@ -1000,15 +1015,7 @@
   "distributionRate": null,
   "secYield": 6.37,
   "secYieldText": "6.37%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/PFXF/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

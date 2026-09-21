@@ -23,7 +23,7 @@
  "aumValue": 587754.26,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Apr 01 2026",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$29.36",
  "closePriceValue": 29.36,
  "premiumDiscount": {
@@ -49,17 +49,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": 15.82,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 15.82
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": 7.85
   }
  },
  "metrics": {
@@ -74,13 +79,13 @@
   "siAnn": 15.82,
   "dividendYield": 1.15,
   "dividendYieldText": "1.15%",
-  "secYield": 1.47,
-  "secYieldText": "1.47%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 1.15,
   "distributionYieldText": "1.15%",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": 1.47,
+  "secYieldText": "1.47%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "TruSectors",
@@ -119,7 +124,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/TRUH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -128,6 +133,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.10%",
@@ -155,13 +168,5 @@
   "secYieldText": "1.47%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUH/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

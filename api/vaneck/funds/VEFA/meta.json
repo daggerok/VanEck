@@ -23,7 +23,7 @@
  "aumValue": 4088460.62,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Apr 01 2026",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$82.23",
  "closePriceValue": 82.23,
  "premiumDiscount": {
@@ -49,17 +49,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": 16.27,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 16.27
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": 10.48
   }
  },
  "metrics": {
@@ -74,13 +79,13 @@
   "siAnn": 16.27,
   "dividendYield": 0.76,
   "dividendYieldText": "0.76%",
-  "secYield": 1.81,
-  "secYieldText": "1.81%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.76,
   "distributionYieldText": "0.76%",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": 1.81,
+  "secYieldText": "1.81%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "06 - Semi-annually",
  "providerCategory": "Country/Regional",
@@ -108,6 +113,8 @@
   ]
  },
  "totalNetAssets": 4090000,
+ "indexTicker": "NU763972",
+ "indexName": "MSCI EAFE Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -119,15 +126,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VEFA",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "NU763972",
+  "indexName": "MSCI EAFE Analyst Sentiment Select Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.30%",
@@ -155,13 +170,5 @@
   "secYieldText": "1.81%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

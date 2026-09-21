@@ -23,7 +23,7 @@
  "aumValue": 36932459.34,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jan 15 2009",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$11.31",
  "closePriceValue": 11.31,
  "premiumDiscount": {
@@ -129,7 +129,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -31.89,
@@ -141,7 +141,12 @@
    "sinceInception": 3.98
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -30.93,
+   "yr3": -15.82,
+   "yr5": -8.96,
+   "yr10": -5.49,
+   "sinceInception": 3.04
   }
  },
  "metrics": {
@@ -156,13 +161,13 @@
   "siAnn": 3.98,
   "dividendYield": 3.03,
   "dividendYieldText": "3.03%",
-  "secYield": 3.41,
-  "secYieldText": "3.41%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.03,
   "distributionYieldText": "3.03%",
   "yield12M": 1.47,
-  "yield12MText": "1.47%"
+  "yield12MText": "1.47%",
+  "secYield": 3.41,
+  "secYieldText": "3.41%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -194,6 +199,8 @@
   ]
  },
  "totalNetAssets": 36930000,
+ "indexTicker": "MVIDXTR",
+ "indexName": "Indonesia Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -205,15 +212,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/IDX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVIDXTR",
+  "indexName": "Indonesia Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.57%",
@@ -241,13 +256,5 @@
   "secYieldText": "3.41%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/IDX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

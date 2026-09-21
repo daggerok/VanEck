@@ -23,7 +23,7 @@
  "aumValue": 204428580.07,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jul 12 2011",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$20.17",
  "closePriceValue": 20.17,
  "premiumDiscount": {
@@ -949,7 +949,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -3.92,
@@ -961,7 +961,12 @@
    "sinceInception": 4.03
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 12.66,
+   "yr3": 7.36,
+   "yr5": -1.05,
+   "yr10": 1.93,
+   "sinceInception": 4.26
   }
  },
  "metrics": {
@@ -976,13 +981,13 @@
   "siAnn": 4.03,
   "dividendYield": 6.32,
   "dividendYieldText": "6.32%",
-  "secYield": 6.34,
-  "secYieldText": "6.34%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 6.32,
   "distributionYieldText": "6.32%",
   "yield12M": 5.55,
-  "yield12MText": "5.55%"
+  "yield12MText": "5.55%",
+  "secYield": 6.34,
+  "secYieldText": "6.34%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1015,6 +1020,8 @@
  "totalNetAssets": 204430000,
  "secYield": "6.34%",
  "secYieldValue": 6.34,
+ "indexTicker": "CEFMXTR",
+ "indexName": "S-Network Municipal Bond Closed-End Fund Index",
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -1026,15 +1033,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/XMPT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "CEFMXTR",
+  "indexName": "S-Network Municipal Bond Closed-End Fund Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "3.40%",
@@ -1060,15 +1075,7 @@
   "distributionRate": null,
   "secYield": 6.34,
   "secYieldText": "6.34%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

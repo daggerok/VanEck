@@ -23,7 +23,7 @@
  "aumValue": 18772341.26,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jan 22 2008",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$37.47",
  "closePriceValue": 37.47,
  "premiumDiscount": {
@@ -134,7 +134,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -7.89,
@@ -146,7 +146,12 @@
    "sinceInception": 2.38
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -10.65,
+   "yr3": -3.83,
+   "yr5": -5.27,
+   "yr10": 3.78,
+   "sinceInception": 2.01
   }
  },
  "metrics": {
@@ -161,13 +166,13 @@
   "siAnn": 2.38,
   "dividendYield": 3.63,
   "dividendYieldText": "3.63%",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.63,
   "distributionYieldText": "3.63%",
   "yield12M": 2.72,
-  "yield12MText": "2.72%"
+  "yield12MText": "2.72%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -201,6 +206,8 @@
   ]
  },
  "totalNetAssets": 18770000,
+ "indexTicker": "MVGENZTR",
+ "indexName": "Digital Native Economy Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -212,15 +219,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GENZ",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVGENZTR",
+  "indexName": "Digital Native Economy Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.51%",
@@ -248,13 +263,5 @@
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GENZ/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

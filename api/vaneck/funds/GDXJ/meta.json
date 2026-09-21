@@ -23,7 +23,7 @@
  "aumValue": 9175865562.83,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Nov 10 2009",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$124.44",
  "closePriceValue": 124.44,
  "premiumDiscount": {
@@ -119,7 +119,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 8.79,
@@ -131,7 +131,12 @@
    "sinceInception": 3.63
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 48.65,
+   "yr3": 42.93,
+   "yr5": 17.89,
+   "yr10": 10.39,
+   "sinceInception": 2.03
   }
  },
  "metrics": {
@@ -146,13 +151,13 @@
   "siAnn": 3.63,
   "dividendYield": 2.13,
   "dividendYieldText": "2.13%",
-  "secYield": 0.26,
-  "secYieldText": "0.26%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.13,
   "distributionYieldText": "2.13%",
   "yield12M": 3.12,
-  "yield12MText": "3.12%"
+  "yield12MText": "3.12%",
+  "secYield": 0.26,
+  "secYieldText": "0.26%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -184,6 +189,8 @@
   ]
  },
  "totalNetAssets": 9180000000,
+ "indexTicker": "MVGDXJTR",
+ "indexName": "Global Junior Gold Miners Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -195,15 +202,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GDXJ",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVGDXJTR",
+  "indexName": "Global Junior Gold Miners Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.52%",
@@ -231,13 +246,5 @@
   "secYieldText": "0.26%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GDXJ/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

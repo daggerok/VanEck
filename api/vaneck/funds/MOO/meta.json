@@ -23,7 +23,7 @@
  "aumValue": 1245348897.1,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 31 2007",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$84.64",
  "closePriceValue": 84.64,
  "premiumDiscount": {
@@ -144,7 +144,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 16.49,
@@ -156,7 +156,12 @@
    "sinceInception": 5.77
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 10.57,
+   "yr3": 1.95,
+   "yr5": -0.38,
+   "yr10": 7.24,
+   "sinceInception": 5.38
   }
  },
  "metrics": {
@@ -171,13 +176,13 @@
   "siAnn": 5.77,
   "dividendYield": 2.12,
   "dividendYieldText": "2.12%",
-  "secYield": 1.44,
-  "secYieldText": "1.44%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.12,
   "distributionYieldText": "2.12%",
   "yield12M": 2.82,
-  "yield12MText": "2.82%"
+  "yield12MText": "2.82%",
+  "secYield": 1.44,
+  "secYieldText": "1.44%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -210,6 +215,8 @@
   ]
  },
  "totalNetAssets": 1250000000,
+ "indexTicker": "MVMOOTR",
+ "indexName": "Global Agribusiness Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -221,15 +228,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MOO",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/agribusiness-etf-moo/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/agribusiness-etf-moo/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVMOOTR",
+  "indexName": "Global Agribusiness Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/agribusiness-etf-moo-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.56%",
@@ -257,13 +272,5 @@
   "secYieldText": "1.44%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/agribusiness-etf-moo-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MOO/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

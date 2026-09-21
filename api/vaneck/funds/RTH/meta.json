@@ -23,7 +23,7 @@
  "aumValue": 248723342.6,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 20 2011",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$253.41",
  "closePriceValue": 253.41,
  "premiumDiscount": {
@@ -119,7 +119,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 1.6,
@@ -131,7 +131,12 @@
    "sinceInception": 15.44
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 8.17,
+   "yr3": 14.61,
+   "yr5": 8.83,
+   "yr10": 13.9,
+   "sinceInception": 15.44
   }
  },
  "metrics": {
@@ -146,13 +151,13 @@
   "siAnn": 15.44,
   "dividendYield": 0.96,
   "dividendYieldText": "0.96%",
-  "secYield": 0.75,
-  "secYieldText": "0.75%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.96,
   "distributionYieldText": "0.96%",
   "yield12M": 0.96,
-  "yield12MText": "0.96%"
+  "yield12MText": "0.96%",
+  "secYield": 0.75,
+  "secYieldText": "0.75%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -184,6 +189,8 @@
   ]
  },
  "totalNetAssets": 248720000,
+ "indexTicker": "MVRTHTR",
+ "indexName": "US Listed Retail 25 Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -195,15 +202,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/RTH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/retail-etf-rth/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/retail-etf-rth/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVRTHTR",
+  "indexName": "US Listed Retail 25 Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/retail-etf-rth-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.35%",
@@ -231,13 +246,5 @@
   "secYieldText": "0.75%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/retail-etf-rth-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/RTH/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

@@ -23,7 +23,7 @@
  "aumValue": 42693672.27,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Apr 02 2012",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$21.33",
  "closePriceValue": 21.33,
  "premiumDiscount": {
@@ -904,7 +904,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 1,
@@ -916,7 +916,12 @@
    "sinceInception": 4.28
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 4.71,
+   "yr3": 8.69,
+   "yr5": 1.9,
+   "yr10": 4.1,
+   "sinceInception": 4.26
   }
  },
  "metrics": {
@@ -931,13 +936,13 @@
   "siAnn": 4.28,
   "dividendYield": 5.57,
   "dividendYieldText": "5.57%",
-  "secYield": 5.99,
-  "secYieldText": "5.99%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 5.57,
   "distributionYieldText": "5.57%",
   "yield12M": 5.7,
-  "yield12MText": "5.70%"
+  "yield12MText": "5.70%",
+  "secYield": 5.99,
+  "secYieldText": "5.99%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -972,6 +977,8 @@
  "totalNetAssets": 42690000,
  "secYield": "5.99%",
  "secYieldValue": 5.99,
+ "indexTicker": "HXUS",
+ "indexName": "ICE BofA Global ex-US Issuers High Yield Constrained Index",
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -983,15 +990,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/IHY",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "HXUS",
+  "indexName": "ICE BofA Global ex-US Issuers High Yield Constrained Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.40%",
@@ -1017,15 +1032,7 @@
   "distributionRate": null,
   "secYield": 5.99,
   "secYieldText": "5.99%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

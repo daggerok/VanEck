@@ -23,7 +23,7 @@
  "aumValue": 597315893.63,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 18 2015",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$65.39",
  "closePriceValue": 65.39,
  "premiumDiscount": {
@@ -99,7 +99,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 74.28,
@@ -111,7 +111,12 @@
    "sinceInception": 13.65
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 44.24,
+   "yr3": 19.55,
+   "yr5": 13.1,
+   "yr10": 12.64,
+   "sinceInception": 11
   }
  },
  "metrics": {
@@ -126,13 +131,13 @@
   "siAnn": 13.65,
   "dividendYield": 1.16,
   "dividendYieldText": "1.16%",
-  "secYield": 1.18,
-  "secYieldText": "1.18%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 1.16,
   "distributionYieldText": "1.16%",
   "yield12M": 3.58,
-  "yield12MText": "3.58%"
+  "yield12MText": "3.58%",
+  "secYield": 1.18,
+  "secYieldText": "1.18%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -163,6 +168,8 @@
   ]
  },
  "totalNetAssets": 597320000,
+ "indexTicker": "MVCRAKTR",
+ "indexName": "Global Oil Refiners Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -174,15 +181,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CRAK",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVCRAKTR",
+  "indexName": "Global Oil Refiners Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.61%",
@@ -210,13 +225,5 @@
   "secYieldText": "1.18%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CRAK/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

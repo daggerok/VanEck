@@ -23,7 +23,7 @@
  "aumValue": 72971054.27,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 24 2026",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$30.67",
  "closePriceValue": 30.67,
  "premiumDiscount": {
@@ -43,17 +43,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": 0.92,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 0.92
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": null
   }
  },
  "metrics": {
@@ -68,13 +73,13 @@
   "siAnn": 0.92,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "U.S. Equity",
@@ -113,7 +118,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/JULV",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -122,6 +127,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.50%",
@@ -149,13 +162,5 @@
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/JULV/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

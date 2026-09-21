@@ -23,7 +23,7 @@
  "aumValue": 2679364.67,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "May 07 2026",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$29.74",
  "closePriceValue": 29.74,
  "premiumDiscount": {
@@ -43,19 +43,24 @@
   "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row + Investment Finder month-end YTD (NAV)",
   "monthEnd": {
    "asOfDate": "Aug 31 2026",
+   "sinceInception": 7.59,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 7.59,
    "ytd": 7.59,
    "ytdText": "7.59%"
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": -15.1
   }
  },
  "metrics": {
@@ -70,13 +75,13 @@
   "siAnn": 7.59,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": -0.37,
-  "secYieldText": "-0.37%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": -0.37,
+  "secYieldText": "-0.37%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row + Investment Finder month-end YTD (NAV)"
  },
  "distributionFrequency": "00 - Unknown",
  "providerCategory": "Equity Thematic",
@@ -115,7 +120,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VBNB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -124,6 +129,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/bnb-etf-vbnb-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.39%",
@@ -151,13 +164,5 @@
   "secYieldText": "-0.37%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/bnb-etf-vbnb-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VBNB/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

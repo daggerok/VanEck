@@ -23,7 +23,7 @@
  "aumValue": 520303750.29,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "May 08 2012",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$19.78",
  "closePriceValue": 19.78,
  "premiumDiscount": {
@@ -899,7 +899,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 4.05,
@@ -911,7 +911,12 @@
    "sinceInception": 4.71
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 8.8,
+   "yr3": 10.44,
+   "yr5": 3.06,
+   "yr10": 4.51,
+   "sinceInception": 4.71
   }
  },
  "metrics": {
@@ -926,13 +931,13 @@
   "siAnn": 4.71,
   "dividendYield": 7.03,
   "dividendYieldText": "7.03%",
-  "secYield": 7.12,
-  "secYieldText": "7.12%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 7.03,
   "distributionYieldText": "7.03%",
   "yield12M": 6.91,
-  "yield12MText": "6.91%"
+  "yield12MText": "6.91%",
+  "secYield": 7.12,
+  "secYieldText": "7.12%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -967,6 +972,8 @@
  "totalNetAssets": 520299999.99999994,
  "secYield": "7.12%",
  "secYieldValue": 7.12,
+ "indexTicker": "EMLH",
+ "indexName": "ICE BofA Diversified High Yield US Emerging Markets Corporate Plus Index",
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -978,15 +985,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/HYEM",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "EMLH",
+  "indexName": "ICE BofA Diversified High Yield US Emerging Markets Corporate Plus Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.40%",
@@ -1012,15 +1027,7 @@
   "distributionRate": null,
   "secYield": 7.12,
   "secYieldText": "7.12%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

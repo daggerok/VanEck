@@ -23,7 +23,7 @@
  "aumValue": 103116297.64,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jul 10 2008",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$28.98",
  "closePriceValue": 28.98,
  "premiumDiscount": {
@@ -129,7 +129,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 9.46,
@@ -141,7 +141,12 @@
    "sinceInception": 0.71
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 31.45,
+   "yr3": 21.97,
+   "yr5": 6.01,
+   "yr10": 5.34,
+   "sinceInception": 0.03
   }
  },
  "metrics": {
@@ -156,13 +161,13 @@
   "siAnn": 0.71,
   "dividendYield": 0.95,
   "dividendYieldText": "0.95%",
-  "secYield": 1.68,
-  "secYieldText": "1.68%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.95,
   "distributionYieldText": "0.95%",
   "yield12M": 1.27,
-  "yield12MText": "1.27%"
+  "yield12MText": "1.27%",
+  "secYield": 1.68,
+  "secYieldText": "1.68%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -194,6 +199,8 @@
   ]
  },
  "totalNetAssets": 103120000,
+ "indexTicker": "MVAFKTR",
+ "indexName": "GDP Africa Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -205,15 +212,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/AFK",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVAFKTR",
+  "indexName": "GDP Africa Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.76%",
@@ -241,13 +256,5 @@
   "secYieldText": "1.68%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/africa-index-etf-afk-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/AFK/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

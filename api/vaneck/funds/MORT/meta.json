@@ -23,7 +23,7 @@
  "aumValue": 334582202.34,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 16 2011",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$9.03",
  "closePriceValue": 9.03,
  "premiumDiscount": {
@@ -354,7 +354,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -7.23,
@@ -366,7 +366,12 @@
    "sinceInception": 4.21
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 11.22,
+   "yr3": 7.34,
+   "yr5": -1.32,
+   "yr10": 2.67,
+   "sinceInception": 4.37
   }
  },
  "metrics": {
@@ -381,13 +386,13 @@
   "siAnn": 4.21,
   "dividendYield": 18.84,
   "dividendYieldText": "18.84%",
-  "secYield": 14.6,
-  "secYieldText": "14.60%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 18.84,
   "distributionYieldText": "18.84%",
   "yield12M": 12.69,
-  "yield12MText": "12.69%"
+  "yield12MText": "12.69%",
+  "secYield": 14.6,
+  "secYieldText": "14.60%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -421,6 +426,8 @@
  "totalNetAssets": 334580000,
  "secYield": "14.60%",
  "secYieldValue": 14.6,
+ "indexTicker": "MVMORTTG",
+ "indexName": "US Mortgage REITs Index",
  "categoryPath": "Income > Equity Income",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -432,15 +439,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MORT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVMORTTG",
+  "indexName": "US Mortgage REITs Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.43%",
@@ -466,15 +481,7 @@
   "distributionRate": null,
   "secYield": 14.6,
   "secYieldText": "14.60%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

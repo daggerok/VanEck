@@ -23,7 +23,7 @@
  "aumValue": 27312660,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Oct 04 2017",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$60.71",
  "closePriceValue": 60.71,
  "premiumDiscount": {
@@ -89,7 +89,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 12.1,
@@ -101,7 +101,12 @@
    "sinceInception": 11.72
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 21.62,
+   "yr3": 16.45,
+   "yr5": 9.4,
+   "yr10": null,
+   "sinceInception": 11.64
   }
  },
  "metrics": {
@@ -116,13 +121,13 @@
   "siAnn": 11.72,
   "dividendYield": 0.81,
   "dividendYieldText": "0.81%",
-  "secYield": 0.5,
-  "secYieldText": "0.50%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.81,
   "distributionYieldText": "0.81%",
   "yield12M": 1.04,
-  "yield12MText": "1.04%"
+  "yield12MText": "1.04%",
+  "secYield": 0.5,
+  "secYieldText": "0.50%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "U.S. Equity",
@@ -152,6 +157,8 @@
   ]
  },
  "totalNetAssets": 27310000,
+ "indexTicker": "NDRCMGLF",
+ "indexName": "Flat Index",
  "categoryPath": "Equity > U.S. Equity",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -163,15 +170,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/LFEQ",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/long-flat-trend-etf-lfeq/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/long-flat-trend-etf-lfeq/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "NDRCMGLF",
+  "indexName": "Flat Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/long-flat-trend-etf-lfeq-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.58%",
@@ -199,13 +214,5 @@
   "secYieldText": "0.50%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/long-flat-trend-etf-lfeq-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/LFEQ/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

@@ -23,7 +23,7 @@
  "aumValue": 91183080.33,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 24 2010",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$44.60",
  "closePriceValue": 44.6,
  "premiumDiscount": {
@@ -114,7 +114,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -2.68,
@@ -126,7 +126,12 @@
    "sinceInception": -2.25
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -3.16,
+   "yr3": 10.37,
+   "yr5": 5.01,
+   "yr10": 1.92,
+   "sinceInception": -2.27
   }
  },
  "metrics": {
@@ -141,13 +146,13 @@
   "siAnn": -2.25,
   "dividendYield": 0.86,
   "dividendYieldText": "0.86%",
-  "secYield": 0.18,
-  "secYieldText": "0.18%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.86,
   "distributionYieldText": "0.86%",
   "yield12M": 0.81,
-  "yield12MText": "0.81%"
+  "yield12MText": "0.81%",
+  "secYield": 0.18,
+  "secYieldText": "0.18%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -179,6 +184,8 @@
   ]
  },
  "totalNetAssets": 91180000,
+ "indexTicker": "MGINGRNR",
+ "indexName": "MarketGrader India All-Cap Growth Leaders Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -190,15 +197,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GLIN",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MGINGRNR",
+  "indexName": "MarketGrader India All-Cap Growth Leaders Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.72%",
@@ -226,13 +241,5 @@
   "secYieldText": "0.18%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GLIN/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

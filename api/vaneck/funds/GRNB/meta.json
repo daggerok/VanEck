@@ -23,7 +23,7 @@
  "aumValue": 187930714.54,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Mar 03 2017",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$23.55",
  "closePriceValue": 23.55,
  "premiumDiscount": {
@@ -614,7 +614,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -0.42,
@@ -626,7 +626,12 @@
    "sinceInception": 2.21
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 3.87,
+   "yr3": 5.22,
+   "yr5": 0.79,
+   "yr10": null,
+   "sinceInception": 2.29
   }
  },
  "metrics": {
@@ -641,13 +646,13 @@
   "siAnn": 2.21,
   "dividendYield": 4.63,
   "dividendYieldText": "4.63%",
-  "secYield": 5.2,
-  "secYieldText": "5.20%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 4.63,
   "distributionYieldText": "4.63%",
   "yield12M": 4.3,
-  "yield12MText": "4.30%"
+  "yield12MText": "4.30%",
+  "secYield": 5.2,
+  "secYieldText": "5.20%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -680,6 +685,8 @@
  "totalNetAssets": 187930000,
  "secYield": "5.20%",
  "secYieldValue": 5.2,
+ "indexTicker": "SPGRUSST",
+ "indexName": "S&P Green Bond U.S. Dollar Select Index",
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -691,15 +698,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GRNB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/green-bond-etf-grnb/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/green-bond-etf-grnb/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "SPGRUSST",
+  "indexName": "S&P Green Bond U.S. Dollar Select Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/green-bond-etf-grnb-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.20%",
@@ -725,15 +740,7 @@
   "distributionRate": null,
   "secYield": 5.2,
   "secYieldText": "5.20%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/green-bond-etf-grnb-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GRNB/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

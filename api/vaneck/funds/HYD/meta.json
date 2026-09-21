@@ -23,7 +23,7 @@
  "aumValue": 4030180334.36,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Feb 04 2009",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$48.98",
  "closePriceValue": 48.98,
  "premiumDiscount": {
@@ -1099,7 +1099,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -0.25,
@@ -1111,7 +1111,12 @@
    "sinceInception": 4.78
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 7.46,
+   "yr3": 4.42,
+   "yr5": -0.12,
+   "yr10": 1.87,
+   "sinceInception": 4.93
   }
  },
  "metrics": {
@@ -1126,13 +1131,13 @@
   "siAnn": 4.78,
   "dividendYield": 4.52,
   "dividendYieldText": "4.52%",
-  "secYield": 4.69,
-  "secYieldText": "4.69%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 4.52,
   "distributionYieldText": "4.52%",
   "yield12M": 4.3,
-  "yield12MText": "4.30%"
+  "yield12MText": "4.30%",
+  "secYield": 4.69,
+  "secYieldText": "4.69%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1174,6 +1179,8 @@
  "totalNetAssets": 4030000000.0000005,
  "secYield": "4.69%",
  "secYieldValue": 4.69,
+ "indexTicker": "MHYX",
+ "indexName": "ICE Broad High Yield Crossover Municipal Index",
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -1185,15 +1192,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/HYD",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MHYX",
+  "indexName": "ICE Broad High Yield Crossover Municipal Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.32%",
@@ -1219,15 +1234,7 @@
   "distributionRate": null,
   "secYield": 4.69,
   "secYieldText": "4.69%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HYD/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

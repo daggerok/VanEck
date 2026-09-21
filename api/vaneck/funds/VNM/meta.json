@@ -23,7 +23,7 @@
  "aumValue": 513538143.65,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 11 2009",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$17.63",
  "closePriceValue": 17.63,
  "premiumDiscount": {
@@ -144,7 +144,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -5.66,
@@ -156,7 +156,12 @@
    "sinceInception": -0.36
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 34.56,
+   "yr3": 13.76,
+   "yr5": -0.78,
+   "yr10": 3.65,
+   "sinceInception": -0.19
   }
  },
  "metrics": {
@@ -171,13 +176,13 @@
   "siAnn": -0.36,
   "dividendYield": 0.21,
   "dividendYieldText": "0.21%",
-  "secYield": 1.29,
-  "secYieldText": "1.29%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.21,
   "distributionYieldText": "0.21%",
   "yield12M": 0.2,
-  "yield12MText": "0.20%"
+  "yield12MText": "0.20%",
+  "secYield": 1.29,
+  "secYieldText": "1.29%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -209,6 +214,8 @@
   ]
  },
  "totalNetAssets": 513539999.99999994,
+ "indexTicker": "MVVNMLTR",
+ "indexName": "Vietnam Local Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -220,15 +227,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VNM",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVVNMLTR",
+  "indexName": "Vietnam Local Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/vietnam-etf-vnm-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.66%",
@@ -256,13 +271,5 @@
   "secYieldText": "1.29%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/vietnam-etf-vnm-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

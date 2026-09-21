@@ -23,7 +23,7 @@
  "aumValue": 69227954.66,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jun 01 2026",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$48.12",
  "closePriceValue": 48.12,
  "premiumDiscount": {
@@ -43,17 +43,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": -7.1,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": -7.1
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": 1.73
   }
  },
  "metrics": {
@@ -68,13 +73,13 @@
   "siAnn": -7.1,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": 0.13,
-  "secYieldText": "0.13%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": 0.13,
+  "secYieldText": "0.13%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -102,6 +107,8 @@
   ]
  },
  "totalNetAssets": 69230000,
+ "indexTicker": "MVRACKTR",
+ "indexName": "Data Center Supply Chain Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -113,15 +120,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/RACK",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVRACKTR",
+  "indexName": "Data Center Supply Chain Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.50%",
@@ -149,13 +164,5 @@
   "secYieldText": "0.13%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/RACK/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

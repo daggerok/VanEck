@@ -23,7 +23,7 @@
  "aumValue": 85012765.5,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Mar 12 2012",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$118.98",
  "closePriceValue": 118.98,
  "premiumDiscount": {
@@ -334,7 +334,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 27.25,
@@ -346,7 +346,12 @@
    "sinceInception": 1.21
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 25.4,
+   "yr3": 27.87,
+   "yr5": 21.09,
+   "yr10": 11.7,
+   "sinceInception": 0.91
   }
  },
  "metrics": {
@@ -361,13 +366,13 @@
   "siAnn": 1.21,
   "dividendYield": 6.76,
   "dividendYieldText": "6.76%",
-  "secYield": 3.49,
-  "secYieldText": "3.49%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 6.76,
   "distributionYieldText": "6.76%",
   "yield12M": 5.78,
-  "yield12MText": "5.78%"
+  "yield12MText": "5.78%",
+  "secYield": 3.49,
+  "secYieldText": "3.49%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -401,6 +406,8 @@
  "totalNetAssets": 85010000,
  "secYield": "3.49%",
  "secYieldValue": 3.49,
+ "indexTicker": "MVEINCTG",
+ "indexName": "North America Energy Infrastructure Index",
  "categoryPath": "Income > Equity Income",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -412,15 +419,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/EINC",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/energy-income-etf-einc/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/energy-income-etf-einc/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVEINCTG",
+  "indexName": "North America Energy Infrastructure Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.46%",
@@ -446,15 +461,7 @@
   "distributionRate": null,
   "secYield": 3.49,
   "secYieldText": "3.49%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/energy-income-etf-einc-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/EINC/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

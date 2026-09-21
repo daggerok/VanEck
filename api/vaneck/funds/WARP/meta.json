@@ -23,7 +23,7 @@
  "aumValue": 43138751.72,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "May 06 2026",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$20.35",
  "closePriceValue": 20.35,
  "premiumDiscount": {
@@ -43,17 +43,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": -23.93,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": -23.93
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": -2.33
   }
  },
  "metrics": {
@@ -68,13 +73,13 @@
   "siAnn": -23.93,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": -0.06,
-  "secYieldText": "-0.06%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": -0.06,
+  "secYieldText": "-0.06%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -102,6 +107,8 @@
   ]
  },
  "totalNetAssets": 43140000,
+ "indexTicker": "MVWARPTR",
+ "indexName": "Space Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -113,15 +120,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/WARP",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/space-etf-warp/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/space-etf-warp/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVWARPTR",
+  "indexName": "Space Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/space-etf-warp-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.50%",
@@ -149,13 +164,5 @@
   "secYieldText": "-0.06%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/space-etf-warp-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/WARP/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

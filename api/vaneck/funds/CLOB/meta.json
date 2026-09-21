@@ -23,7 +23,7 @@
  "aumValue": 186309783.66,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Sep 24 2024",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$50.34",
  "closePriceValue": 50.34,
  "premiumDiscount": {
@@ -159,7 +159,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 3.35,
@@ -171,7 +171,12 @@
    "sinceInception": 6.72
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 5.73,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 6.82
   }
  },
  "metrics": {
@@ -186,13 +191,13 @@
   "siAnn": 6.72,
   "dividendYield": 5.94,
   "dividendYieldText": "5.94%",
-  "secYield": 5.72,
-  "secYieldText": "5.72%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 5.94,
   "distributionYieldText": "5.94%",
   "yield12M": 6.25,
-  "yield12MText": "6.25%"
+  "yield12MText": "6.25%",
+  "secYield": 5.72,
+  "secYieldText": "5.72%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Floating Rate",
@@ -233,7 +238,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CLOB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -242,6 +247,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.45%",
@@ -267,15 +280,7 @@
   "distributionRate": null,
   "secYield": 5.72,
   "secYieldText": "5.72%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

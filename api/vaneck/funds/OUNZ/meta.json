@@ -23,7 +23,7 @@
  "aumValue": 2825206287.69,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "May 16 2014",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$42.02",
  "closePriceValue": 42.02,
  "premiumDiscount": {
@@ -43,7 +43,7 @@
   "source": "Yahoo Finance chart feed (fallback: VanEck distributions unavailable)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 1.3,
@@ -55,7 +55,12 @@
    "sinceInception": 10.18
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 21.08,
+   "yr3": 27.74,
+   "yr5": 17.6,
+   "yr10": 11.41,
+   "sinceInception": 9.4
   }
  },
  "metrics": {
@@ -70,13 +75,13 @@
   "siAnn": 10.18,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "00 - Unknown",
  "providerCategory": "Commodity",
@@ -116,7 +121,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/OUNZ",
   "holdingsSource": "—",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -125,6 +130,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.25%",
@@ -152,13 +165,5 @@
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/OUNZ/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

@@ -23,7 +23,7 @@
  "aumValue": 3170027102.93,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Apr 10 2012",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$28.49",
  "closePriceValue": 28.49,
  "premiumDiscount": {
@@ -904,7 +904,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 1.31,
@@ -916,7 +916,12 @@
    "sinceInception": 6.84
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 6.6,
+   "yr3": 8.38,
+   "yr5": 3.21,
+   "yr10": 6.17,
+   "sinceInception": 6.9
   }
  },
  "metrics": {
@@ -931,13 +936,13 @@
   "siAnn": 6.84,
   "dividendYield": 6.7,
   "dividendYieldText": "6.70%",
-  "secYield": 6.73,
-  "secYieldText": "6.73%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 6.7,
   "distributionYieldText": "6.70%",
   "yield12M": 6.43,
-  "yield12MText": "6.43%"
+  "yield12MText": "6.43%",
+  "secYield": 6.73,
+  "secYieldText": "6.73%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Corporate Bond",
@@ -970,6 +975,8 @@
  "totalNetAssets": 3170000000,
  "secYield": "6.73%",
  "secYieldValue": 6.73,
+ "indexTicker": "H0CF",
+ "indexName": "Constrained Index",
  "categoryPath": "Income > Corporate Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -981,15 +988,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/ANGL",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "H0CF",
+  "indexName": "Constrained Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.25%",
@@ -1015,15 +1030,7 @@
   "distributionRate": null,
   "secYield": 6.73,
   "secYieldText": "6.73%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ANGL/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

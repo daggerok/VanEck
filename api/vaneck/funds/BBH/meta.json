@@ -23,7 +23,7 @@
  "aumValue": 493352414.75,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 20 2011",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$234.14",
  "closePriceValue": 234.14,
  "premiumDiscount": {
@@ -109,7 +109,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 23.79,
@@ -121,7 +121,12 @@
    "sinceInception": 14.2
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 33.2,
+   "yr3": 9.81,
+   "yr5": 0.62,
+   "yr10": 7.57,
+   "sinceInception": 13.2
   }
  },
  "metrics": {
@@ -136,13 +141,13 @@
   "siAnn": 14.2,
   "dividendYield": 0.41,
   "dividendYieldText": "0.41%",
-  "secYield": 0.34,
-  "secYieldText": "0.34%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.41,
   "distributionYieldText": "0.41%",
   "yield12M": 0.7,
-  "yield12MText": "0.70%"
+  "yield12MText": "0.70%",
+  "secYield": 0.34,
+  "secYieldText": "0.34%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -174,6 +179,8 @@
   ]
  },
  "totalNetAssets": 493350000,
+ "indexTicker": "MVBBHTR",
+ "indexName": "US Listed Biotech 25 Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -185,15 +192,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/BBH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/biotech-etf-bbh/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/biotech-etf-bbh/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVBBHTR",
+  "indexName": "US Listed Biotech 25 Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/biotech-etf-bbh-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.35%",
@@ -221,13 +236,5 @@
   "secYieldText": "0.34%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/biotech-etf-bbh-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/BBH/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

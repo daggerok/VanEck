@@ -23,7 +23,7 @@
  "aumValue": 3741929200.8,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Aug 13 2007",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$107.69",
  "closePriceValue": 107.69,
  "premiumDiscount": {
@@ -134,7 +134,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -12.37,
@@ -146,7 +146,12 @@
    "sinceInception": 3.25
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 7.37,
+   "yr3": 28.09,
+   "yr5": 19.99,
+   "yr10": 11.8,
+   "sinceInception": 3.16
   }
  },
  "metrics": {
@@ -161,13 +166,13 @@
   "siAnn": 3.25,
   "dividendYield": 2.92,
   "dividendYieldText": "2.92%",
-  "secYield": 0.5,
-  "secYieldText": "0.50%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.92,
   "distributionYieldText": "2.92%",
   "yield12M": 2.09,
-  "yield12MText": "2.09%"
+  "yield12MText": "2.09%",
+  "secYield": 0.5,
+  "secYieldText": "0.50%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -200,6 +205,8 @@
   ]
  },
  "totalNetAssets": 3740000000,
+ "indexTicker": "MVNLRTR",
+ "indexName": "Global Uranium & Nuclear Energy Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -211,15 +218,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/NLR",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVNLRTR",
+  "indexName": "Global Uranium & Nuclear Energy Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.52%",
@@ -247,13 +262,5 @@
   "secYieldText": "0.50%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/NLR/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

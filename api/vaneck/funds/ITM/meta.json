@@ -23,7 +23,7 @@
  "aumValue": 2043067611.37,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 04 2007",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$44.81",
  "closePriceValue": 44.81,
  "premiumDiscount": {
@@ -1164,7 +1164,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -2.75,
@@ -1176,7 +1176,12 @@
    "sinceInception": 3.19
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 6.29,
+   "yr3": 3.52,
+   "yr5": 0.5,
+   "yr10": 1.8,
+   "sinceInception": 3.33
   }
  },
  "metrics": {
@@ -1191,13 +1196,13 @@
   "siAnn": 3.19,
   "dividendYield": 3.2,
   "dividendYieldText": "3.20%",
-  "secYield": 3.73,
-  "secYieldText": "3.73%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.2,
   "distributionYieldText": "3.20%",
   "yield12M": 2.92,
-  "yield12MText": "2.92%"
+  "yield12MText": "2.92%",
+  "secYield": 3.73,
+  "secYieldText": "3.73%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1237,6 +1242,8 @@
  "totalNetAssets": 2040000000,
  "secYield": "3.73%",
  "secYieldValue": 3.73,
+ "indexTicker": "MBNI",
+ "indexName": "ICE Intermediate AMT-Free Broad National Municipal Index",
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -1248,15 +1255,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/ITM",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/intermediate-muni-etf-itm/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/intermediate-muni-etf-itm/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MBNI",
+  "indexName": "ICE Intermediate AMT-Free Broad National Municipal Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/intermediate-muni-etf-itm-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.18%",
@@ -1282,15 +1297,7 @@
   "distributionRate": null,
   "secYield": 3.73,
   "secYieldText": "3.73%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/intermediate-muni-etf-itm-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/ITM/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

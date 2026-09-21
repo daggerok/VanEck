@@ -23,7 +23,7 @@
  "aumValue": 70018645.3,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jul 13 2015",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$34.98",
  "closePriceValue": 34.98,
  "premiumDiscount": {
@@ -99,7 +99,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -4.13,
@@ -111,7 +111,12 @@
    "sinceInception": 5.15
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -0.52,
+   "yr3": 5.25,
+   "yr5": 2.27,
+   "yr10": 6.06,
+   "sinceInception": 4.25
   }
  },
  "metrics": {
@@ -126,13 +131,13 @@
   "siAnn": 5.15,
   "dividendYield": 3.38,
   "dividendYieldText": "3.38%",
-  "secYield": 2.07,
-  "secYieldText": "2.07%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.38,
   "distributionYieldText": "3.38%",
   "yield12M": 3.01,
-  "yield12MText": "3.01%"
+  "yield12MText": "3.01%",
+  "secYield": 2.07,
+  "secYieldText": "2.07%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Moat Investing",
@@ -174,7 +179,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MOTI",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -183,6 +188,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.58%",
@@ -210,13 +223,5 @@
   "secYieldText": "2.07%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MOTI/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

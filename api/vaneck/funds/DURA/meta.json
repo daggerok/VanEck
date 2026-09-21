@@ -23,7 +23,7 @@
  "aumValue": 44742247.62,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Oct 30 2018",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$38.87",
  "closePriceValue": 38.87,
  "premiumDiscount": {
@@ -199,7 +199,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 16.89,
@@ -211,7 +211,12 @@
    "sinceInception": 9.45
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 18.05,
+   "yr3": 9.07,
+   "yr5": 7.3,
+   "yr10": null,
+   "sinceInception": 8.63
   }
  },
  "metrics": {
@@ -226,13 +231,13 @@
   "siAnn": 9.45,
   "dividendYield": 2.77,
   "dividendYieldText": "2.77%",
-  "secYield": 2.7,
-  "secYieldText": "2.70%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.77,
   "distributionYieldText": "2.77%",
   "yield12M": 3.99,
-  "yield12MText": "3.99%"
+  "yield12MText": "3.99%",
+  "secYield": 2.7,
+  "secYieldText": "2.70%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -275,7 +280,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DURA",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -284,6 +289,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.30%",
@@ -309,15 +322,7 @@
   "distributionRate": null,
   "secYield": 2.7,
   "secYieldText": "2.70%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

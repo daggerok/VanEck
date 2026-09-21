@@ -16,21 +16,21 @@
  "navValue": 24.62,
  "aum": {
   "display": "$3.69M",
-  "value": 3690000,
+  "value": 3692874.28,
   "asOfDate": "Sep 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3690000,
+ "aumValue": 3692874.28,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Sep 09 2026",
- "exchange": "—",
- "closePrice": "—",
- "closePriceValue": null,
+ "exchange": "NASDAQ",
+ "closePrice": "$24.67",
+ "closePriceValue": 24.67,
  "premiumDiscount": {
-  "display": "—",
-  "value": null
+  "display": "0.05%",
+  "value": 0.05
  },
- "premiumDiscountValue": null,
+ "premiumDiscountValue": 0.05,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -40,16 +40,25 @@
    "Dividend"
   ],
   "rows": [],
-  "source": "—"
+  "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck fund-page performance since inception",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
-   "sinceInception": -1.48
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": null,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": null
   }
  },
  "metrics": {
@@ -61,7 +70,7 @@
   "cagr3y": null,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": -1.48,
+  "siAnn": null,
   "dividendYield": null,
   "dividendYieldText": "—",
   "distributionYield": null,
@@ -70,7 +79,7 @@
   "yield12MText": "—",
   "secYield": null,
   "secYieldText": "—",
-  "returnsBasis": "official VanEck fund-page performance since inception"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "06 - Semi-annually",
  "providerCategory": "Country/Regional",
@@ -78,20 +87,28 @@
  "terGrossValue": 0.3,
  "netAssetsAsOf": "Sep 18 2026",
  "holdings": {
-  "pages": [],
+  "totalRows": 104,
   "pageSize": 250,
-  "totalRows": 0,
-  "asOfDate": "—",
-  "source": "—"
+  "asOfDate": "Sep 17 2026",
+  "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
+  "pageCount": 1,
+  "pages": [
+   "holdings/001.json"
+  ]
  },
  "history": {
-  "pages": [],
+  "totalRows": 10,
   "pageSize": 1000,
-  "totalRows": 0,
-  "asOf": "—",
-  "source": "—"
+  "asOfDate": "Sep 18 2026",
+  "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
+  "pageCount": 1,
+  "pages": [
+   "history/001.json"
+  ]
  },
  "totalNetAssets": 3690000,
+ "indexTicker": "NU763973",
+ "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -101,9 +118,9 @@
   "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VEEM",
-  "holdingsSource": "—",
-  "historySource": "—",
-  "exchangeSource": "—",
+  "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -128,8 +145,8 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "—",
-  "value": null,
+  "display": "$24.67",
+  "value": 24.67,
   "asOfDate": "Sep 18 2026"
  },
  "yields": {

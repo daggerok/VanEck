@@ -23,7 +23,7 @@
  "aumValue": 11914329.98,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Feb 15 2022",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$36.44",
  "closePriceValue": 36.44,
  "premiumDiscount": {
@@ -59,7 +59,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": -10.5,
@@ -71,7 +71,12 @@
    "sinceInception": 1.61
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": -18.41,
+   "yr3": 5.06,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 0.12
   }
  },
  "metrics": {
@@ -86,13 +91,13 @@
   "siAnn": 1.61,
   "dividendYield": 2.12,
   "dividendYieldText": "2.12%",
-  "secYield": -0.27,
-  "secYieldText": "-0.27%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.12,
   "distributionYieldText": "2.12%",
   "yield12M": 1.62,
-  "yield12MText": "1.62%"
+  "yield12MText": "1.62%",
+  "secYield": -0.27,
+  "secYieldText": "-0.27%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -121,6 +126,8 @@
   ]
  },
  "totalNetAssets": 11910000,
+ "indexTicker": "MVDINDTR",
+ "indexName": "Digital India Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -132,15 +139,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DGIN",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-india-etf-dgin/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-india-etf-dgin/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVDINDTR",
+  "indexName": "Digital India Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/digital-india-etf-dgin-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.70%",
@@ -168,13 +183,5 @@
   "secYieldText": "-0.27%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/digital-india-etf-dgin-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DGIN/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

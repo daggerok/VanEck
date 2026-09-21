@@ -23,7 +23,7 @@
  "aumValue": 6520515.68,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Sep 19 2023",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$38.34",
  "closePriceValue": 38.34,
  "premiumDiscount": {
@@ -99,7 +99,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 7.54,
@@ -111,7 +111,12 @@
    "sinceInception": 9.92
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 9.98,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": 11.25
   }
  },
  "metrics": {
@@ -126,13 +131,13 @@
   "siAnn": 9.92,
   "dividendYield": 3.8,
   "dividendYieldText": "3.80%",
-  "secYield": 4.16,
-  "secYieldText": "4.16%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.8,
   "distributionYieldText": "3.80%",
   "yield12M": 4.78,
-  "yield12MText": "4.78%"
+  "yield12MText": "4.78%",
+  "secYield": 4.16,
+  "secYieldText": "4.16%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -174,7 +179,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DESK",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -183,6 +188,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.51%",
@@ -208,15 +221,7 @@
   "distributionRate": null,
   "secYield": 4.16,
   "secYieldText": "4.16%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/office-and-commercial-reit-desk-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DESK/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

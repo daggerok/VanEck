@@ -23,7 +23,7 @@
  "aumValue": 462067353.03,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jan 13 2014",
- "exchange": "—",
+ "exchange": "Cboe BZX",
  "closePrice": "$22.30",
  "closePriceValue": 22.3,
  "premiumDiscount": {
@@ -799,7 +799,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 0.15,
@@ -811,7 +811,12 @@
    "sinceInception": 2.29
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 4.83,
+   "yr3": 4.13,
+   "yr5": 0.95,
+   "yr10": 2.01,
+   "sinceInception": 2.35
   }
  },
  "metrics": {
@@ -826,13 +831,13 @@
   "siAnn": 2.29,
   "dividendYield": 3.67,
   "dividendYieldText": "3.67%",
-  "secYield": 3.96,
-  "secYieldText": "3.96%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 3.67,
   "distributionYieldText": "3.67%",
   "yield12M": 3.57,
-  "yield12MText": "3.57%"
+  "yield12MText": "3.57%",
+  "secYield": 3.96,
+  "secYieldText": "3.96%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -867,6 +872,8 @@
  "totalNetAssets": 462070000,
  "secYield": "3.96%",
  "secYieldValue": 3.96,
+ "indexTicker": "MIHX",
+ "indexName": "ICE 1-12 Year Broad High Yield Crossover Municipal Index",
  "categoryPath": "Income > Municipal Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -878,15 +885,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SHYD",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/short-high-yield-muni-etf-shyd/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/short-high-yield-muni-etf-shyd/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MIHX",
+  "indexName": "ICE 1-12 Year Broad High Yield Crossover Municipal Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/short-high-yield-muni-etf-shyd-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.32%",
@@ -912,15 +927,7 @@
   "distributionRate": null,
   "secYield": 3.96,
   "secYieldText": "3.96%",
-  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
+  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/short-high-yield-muni-etf-shyd-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SHYD/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

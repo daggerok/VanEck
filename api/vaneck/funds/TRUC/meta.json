@@ -23,7 +23,7 @@
  "aumValue": 66035955.88,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Feb 18 2026",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$25.48",
  "closePriceValue": 25.48,
  "premiumDiscount": {
@@ -49,17 +49,22 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
+   "sinceInception": 0.71,
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null
+  },
+  "quarterEnd": {
+   "asOfDate": "Jun 30 2026",
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 0.71
-  },
-  "quarterEnd": {
-   "asOfDate": "—"
+   "sinceInception": -1.08
   }
  },
  "metrics": {
@@ -74,13 +79,13 @@
   "siAnn": 0.71,
   "dividendYield": 0.9,
   "dividendYieldText": "0.90%",
-  "secYield": 0.86,
-  "secYieldText": "0.86%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.9,
   "distributionYieldText": "0.90%",
   "yield12M": null,
-  "yield12MText": "—"
+  "yield12MText": "—",
+  "secYield": 0.86,
+  "secYieldText": "0.86%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "TruSectors",
@@ -119,7 +124,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/TRUC",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -128,6 +133,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": null,
   "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.14%",
@@ -155,13 +168,5 @@
   "secYieldText": "0.86%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/TRUC/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

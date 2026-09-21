@@ -23,7 +23,7 @@
  "aumValue": 28418567995.87,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "May 16 2006",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$95.48",
  "closePriceValue": 95.48,
  "premiumDiscount": {
@@ -139,7 +139,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 11.22,
@@ -151,7 +151,12 @@
    "sinceInception": 5.41
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 45.77,
+   "yr3": 37.44,
+   "yr5": 18.9,
+   "yr10": 11.57,
+   "sinceInception": 4.06
   }
  },
  "metrics": {
@@ -166,13 +171,13 @@
   "siAnn": 5.41,
   "dividendYield": 0.66,
   "dividendYieldText": "0.66%",
-  "secYield": 0.41,
-  "secYieldText": "0.41%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.66,
   "distributionYieldText": "0.66%",
   "yield12M": 0.97,
-  "yield12MText": "0.97%"
+  "yield12MText": "0.97%",
+  "secYield": 0.41,
+  "secYieldText": "0.41%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
@@ -207,6 +212,8 @@
   ]
  },
  "totalNetAssets": 28420000000,
+ "indexTicker": "MVGDXTR",
+ "indexName": "MarketVector Global Gold Miners Index",
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -218,7 +225,7 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/GDX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
@@ -227,6 +234,14 @@
   "figi": "published per holding, not per fund",
   "indexTicker": "MVGDXTR",
   "indexName": "MarketVector Global Gold Miners Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.51%",
@@ -254,13 +269,5 @@
   "secYieldText": "0.41%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

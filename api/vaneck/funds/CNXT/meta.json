@@ -23,7 +23,7 @@
  "aumValue": 104791655.17,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Jul 23 2014",
- "exchange": "—",
+ "exchange": "NYSE Arca",
  "closePrice": "$48.71",
  "closePriceValue": 48.71,
  "premiumDiscount": {
@@ -69,7 +69,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 10.6,
@@ -81,7 +81,12 @@
    "sinceInception": 6.77
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 116.91,
+   "yr3": 30.32,
+   "yr5": 4.74,
+   "yr10": 7.37,
+   "sinceInception": 8.99
   }
  },
  "metrics": {
@@ -96,13 +101,13 @@
   "siAnn": 6.77,
   "dividendYield": 0.16,
   "dividendYieldText": "0.16%",
-  "secYield": -0.04,
-  "secYieldText": "-0.04%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.16,
   "distributionYieldText": "0.16%",
   "yield12M": 0.21,
-  "yield12MText": "0.21%"
+  "yield12MText": "0.21%",
+  "secYield": -0.04,
+  "secYieldText": "-0.04%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -133,6 +138,8 @@
   ]
  },
  "totalNetAssets": 104790000,
+ "indexTicker": "SZ988107",
+ "indexName": "ChiNext Index",
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -144,15 +151,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CNXT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Nasdaq Trader symbol directory",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "SZ988107",
+  "indexName": "ChiNext Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.65%",
@@ -180,13 +195,5 @@
   "secYieldText": "-0.04%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

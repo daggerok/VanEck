@@ -23,7 +23,7 @@
  "aumValue": 74063990266.24,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 20 2011",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$573.00",
  "closePriceValue": 573,
  "premiumDiscount": {
@@ -114,7 +114,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 59.07,
@@ -126,7 +126,12 @@
    "sinceInception": 29.3
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 136.07,
+   "yr3": 63.45,
+   "yr5": 38.86,
+   "yr10": 38.12,
+   "sinceInception": 31.17
   }
  },
  "metrics": {
@@ -141,13 +146,13 @@
   "siAnn": 29.3,
   "dividendYield": 0.19,
   "dividendYieldText": "0.19%",
-  "secYield": 0.17,
-  "secYieldText": "0.17%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 0.19,
   "distributionYieldText": "0.19%",
   "yield12M": 0.55,
-  "yield12MText": "0.55%"
+  "yield12MText": "0.55%",
+  "secYield": 0.17,
+  "secYieldText": "0.17%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
@@ -179,6 +184,8 @@
   ]
  },
  "totalNetAssets": 74060000000,
+ "indexTicker": "MVSMHTR",
+ "indexName": "US Listed Semiconductor 25 Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -190,15 +197,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVSMHTR",
+  "indexName": "US Listed Semiconductor 25 Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.35%",
@@ -226,13 +241,5 @@
   "secYieldText": "0.17%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/semiconductor-etf-smh-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMH/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }

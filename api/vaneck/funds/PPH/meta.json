@@ -23,7 +23,7 @@
  "aumValue": 1032835861.97,
  "asOfDate": "Sep 18 2026",
  "inceptionDate": "Dec 20 2011",
- "exchange": "—",
+ "exchange": "NASDAQ",
  "closePrice": "$111.17",
  "closePriceValue": 111.17,
  "premiumDiscount": {
@@ -319,7 +319,7 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 18 2026",
    "ytd": 9.33,
@@ -331,7 +331,12 @@
    "sinceInception": 10.31
   },
   "quarterEnd": {
-   "asOfDate": "—"
+   "asOfDate": "Jun 30 2026",
+   "yr1": 27.15,
+   "yr3": 13.83,
+   "yr5": 10.55,
+   "yr10": 8.46,
+   "sinceInception": 10.15
   }
  },
  "metrics": {
@@ -346,13 +351,13 @@
   "siAnn": 10.31,
   "dividendYield": 2.25,
   "dividendYieldText": "2.25%",
-  "secYield": 1.87,
-  "secYieldText": "1.87%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
   "distributionYield": 2.25,
   "distributionYieldText": "2.25%",
   "yield12M": 2.65,
-  "yield12MText": "2.65%"
+  "yield12MText": "2.65%",
+  "secYield": 1.87,
+  "secYieldText": "1.87%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Thematic",
@@ -384,6 +389,8 @@
   ]
  },
  "totalNetAssets": 1030000000,
+ "indexTicker": "MVPPHTR",
+ "indexName": "US Listed Pharmaceutical 25 Index",
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -395,15 +402,23 @@
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/PPH",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/holdings/)",
   "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/fundhistoprices/)",
-  "exchangeSource": "—",
+  "exchangeSource": "Yahoo Finance chart meta.exchangeName",
   "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
   "figi": "published per holding, not per fund",
-  "indexTicker": null,
-  "indexName": null
+  "indexTicker": "MVPPHTR",
+  "indexName": "US Listed Pharmaceutical 25 Index"
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
   "display": "0.36%",
@@ -431,13 +446,5 @@
   "secYieldText": "1.87%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z",
- "documents": {
-  "factSheet": "https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph-fact-sheet.pdf",
-  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=summary",
-  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=prospectus",
-  "sai": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=sai",
-  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=annual",
-  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/PPH/index.php?ctype=semi-annual"
- }
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
 }
