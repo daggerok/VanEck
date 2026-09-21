@@ -150,7 +150,9 @@
    "yr10": 2.91,
    "sinceInception": 1.44
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 0.98,
@@ -164,9 +166,13 @@
   "siAnn": 1.44,
   "dividendYield": 5.45,
   "dividendYieldText": "5.45%",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "secYield": 5.23,
+  "secYieldText": "5.23%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 5.45,
+  "distributionYieldText": "5.45%",
+  "yield12M": 5.51,
+  "yield12MText": "5.51%"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -208,12 +214,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/BRF",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.60%",
@@ -229,11 +239,25 @@
  "yields": {
   "dividendYield": 5.45,
   "dividendYieldText": "5.45%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 5.45,
+  "indicatedYieldText": "5.45%",
+  "distributionYield": 5.45,
+  "distributionYieldText": "5.45%",
+  "yield12M": 5.51,
+  "yield12MText": "5.51%",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": 5.23,
+  "secYieldText": "5.23%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BRF/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/BRF/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/BRF/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/BRF/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/BRF/index.php?ctype=semi-annual"
+ }
 }

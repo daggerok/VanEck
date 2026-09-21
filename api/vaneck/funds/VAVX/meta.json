@@ -32,7 +32,7 @@
  },
  "premiumDiscountValue": 0.01,
  "distributions": {
-  "frequency": "Unknown",
+  "frequency": "Other",
   "paymentsPerYear": null,
   "headers": [
    "Ex-Date",
@@ -60,7 +60,9 @@
    "yr10": null,
    "sinceInception": -39.13
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": -30.79,
@@ -72,13 +74,17 @@
   "cagr5y": null,
   "cagr10y": null,
   "siAnn": -39.13,
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "dividendYield": 0.98,
+  "dividendYieldText": "0.98%",
+  "secYield": 3.96,
+  "secYieldText": "3.96%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 0.98,
+  "distributionYieldText": "0.98%",
+  "yield12M": null,
+  "yield12MText": "—"
  },
- "distributionFrequency": "00 - Unknown",
+ "distributionFrequency": "Other",
  "providerCategory": "Equity Thematic",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
@@ -114,12 +120,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VAVX",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.20%",
@@ -133,13 +143,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 0.98,
+  "dividendYieldText": "0.98%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": null,
+  "indicatedYieldText": "—",
+  "distributionYield": 0.98,
+  "distributionYieldText": "0.98%",
+  "yield12M": null,
+  "yield12MText": "—",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": 3.96,
+  "secYieldText": "3.96%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/avalanche-etf-vavx-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VAVX/index.php?ctype=semi-annual"
+ }
 }

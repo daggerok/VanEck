@@ -969,19 +969,23 @@
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
-  "derivedFrom": "official VanEck Average Annual Total Returns (NAV)",
+  "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
   "monthEnd": {
-   "asOfDate": "—",
+   "asOfDate": "Aug 31 2026",
    "yr1": 7.59,
    "yr3": 7.02,
    "yr5": 1.97,
    "yr10": 1.95,
-   "sinceInception": 1.28
+   "sinceInception": 1.28,
+   "ytd": 2.83,
+   "ytdText": "2.83%"
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 2.83,
   "tr1y": 7.59,
   "tr3y": 22.58,
   "tr5y": 10.24,
@@ -994,7 +998,11 @@
   "dividendYieldText": "6.21%",
   "secYield": 6.33,
   "secYieldText": "6.33%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
+  "distributionYield": 6.21,
+  "distributionYieldText": "6.21%",
+  "yield12M": 6.27,
+  "yield12MText": "6.27%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -1040,12 +1048,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/EMLC",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.30%",
@@ -1061,11 +1073,25 @@
  "yields": {
   "dividendYield": 6.21,
   "dividendYieldText": "6.21%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 6.21,
+  "indicatedYieldText": "6.21%",
+  "distributionYield": 6.21,
+  "distributionYieldText": "6.21%",
+  "yield12M": 6.27,
+  "yield12MText": "6.27%",
   "distributionRate": null,
   "secYield": 6.33,
   "secYieldText": "6.33%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EMLC/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/EMLC/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/EMLC/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/EMLC/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/EMLC/index.php?ctype=semi-annual"
+ }
 }

@@ -155,7 +155,9 @@
    "yr10": 2.98,
    "sinceInception": -0.36
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": -5.66,
@@ -169,9 +171,13 @@
   "siAnn": -0.36,
   "dividendYield": 0.21,
   "dividendYieldText": "0.21%",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "secYield": 1.29,
+  "secYieldText": "1.29%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 0.21,
+  "distributionYieldText": "0.21%",
+  "yield12M": 0.2,
+  "yield12MText": "0.20%"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
@@ -213,12 +219,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VNM",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.66%",
@@ -234,11 +244,25 @@
  "yields": {
   "dividendYield": 0.21,
   "dividendYieldText": "0.21%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 0.21,
+  "indicatedYieldText": "0.21%",
+  "distributionYield": 0.21,
+  "distributionYieldText": "0.21%",
+  "yield12M": 0.2,
+  "yield12MText": "0.20%",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": 1.29,
+  "secYieldText": "1.29%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/vietnam-etf-vnm-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VNM/index.php?ctype=semi-annual"
+ }
 }

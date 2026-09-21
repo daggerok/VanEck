@@ -365,7 +365,9 @@
    "yr10": 2.02,
    "sinceInception": 4.21
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": -7.23,
@@ -381,7 +383,11 @@
   "dividendYieldText": "18.84%",
   "secYield": 14.6,
   "secYieldText": "14.60%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 18.84,
+  "distributionYieldText": "18.84%",
+  "yield12M": 12.69,
+  "yield12MText": "12.69%"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -425,12 +431,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MORT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.43%",
@@ -446,11 +456,25 @@
  "yields": {
   "dividendYield": 18.84,
   "dividendYieldText": "18.84%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 18.84,
+  "indicatedYieldText": "18.84%",
+  "distributionYield": 18.84,
+  "distributionYieldText": "18.84%",
+  "yield12M": 12.69,
+  "yield12MText": "12.69%",
   "distributionRate": null,
   "secYield": 14.6,
   "secYieldText": "14.60%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MORT/index.php?ctype=semi-annual"
+ }
 }

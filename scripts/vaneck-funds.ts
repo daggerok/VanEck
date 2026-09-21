@@ -158,6 +158,14 @@ const SEED_ROWS: SeedTuple[] = [
   ['ISRA', 'Israel ETF', 'Country/Regional', 0.64, 0.59, 153],
   ['VEFA', 'MSCI EAFE Analyst Sentiment ETF', 'Country/Regional', 0.3, 0.3, 4],
   ['VNM', 'Vietnam ETF', 'Country/Regional', 0.66, 0.66, 565],
+  // Not in the 06/30/2026 ETF Guide (in liquidation since 2022, kept in the
+  // Investment Finder): seed TER/AUM are null here; the live fund page
+  // (NAV $0.34/$0.39, net assets $32.88M/$348.59K as of 09/18/2026) and the
+  // finder-verified table overwrite them on every run.
+  ['RSX', 'Russia ETF', 'Country/Regional', 1.33, 0.83, null],
+  ['RSXJ', 'Russia Small-Cap ETF', 'Country/Regional', 9.5, 0.84, null],
+  // Launched 09/09/2026, after the guide's as-of date; same live-source rule.
+  ['VEEM', 'MSCI EM Analyst Sentiment ETF', 'Country/Regional', 0.3, 0.3, null],
 
   // --- Income / Corporate Bond --------------------------------------------
   ['ANGL', 'Fallen Angel High Yield Bond ETF', 'Corporate Bond', 0.25, 0.25, 3118],

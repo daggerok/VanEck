@@ -910,7 +910,9 @@
    "yr10": 4.21,
    "sinceInception": 4.71
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 4.05,
@@ -926,7 +928,11 @@
   "dividendYieldText": "7.03%",
   "secYield": 7.12,
   "secYieldText": "7.12%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 7.03,
+  "distributionYieldText": "7.03%",
+  "yield12M": 6.91,
+  "yield12MText": "6.91%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -971,12 +977,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/HYEM",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.40%",
@@ -992,11 +1002,25 @@
  "yields": {
   "dividendYield": 7.03,
   "dividendYieldText": "7.03%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 7.03,
+  "indicatedYieldText": "7.03%",
+  "distributionYield": 7.03,
+  "distributionYieldText": "7.03%",
+  "yield12M": 6.91,
+  "yield12MText": "6.91%",
   "distributionRate": null,
   "secYield": 7.12,
   "secYieldText": "7.12%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/emerging-markets-high-yield-bond-etf-hyem-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/HYEM/index.php?ctype=semi-annual"
+ }
 }

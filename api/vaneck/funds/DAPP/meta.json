@@ -32,8 +32,8 @@
  },
  "premiumDiscountValue": 0.03,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
   "headers": [
    "Ex-Date",
    "Payable Date",
@@ -65,7 +65,9 @@
    "yr10": null,
    "sinceInception": -8.33
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 26.42,
@@ -79,11 +81,15 @@
   "siAnn": -8.33,
   "dividendYield": null,
   "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "secYield": -0.41,
+  "secYieldText": "-0.41%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": null,
+  "distributionYieldText": "—",
+  "yield12M": null,
+  "yield12MText": "—"
  },
- "distributionFrequency": "00 - Unknown",
+ "distributionFrequency": "12 - Annually",
  "providerCategory": "Equity Thematic",
  "terGross": "0.52%",
  "terGrossValue": 0.52,
@@ -120,12 +126,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DAPP",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-transformation-etf-dapp/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-transformation-etf-dapp/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-transformation-etf-dapp/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.52%",
@@ -141,11 +151,25 @@
  "yields": {
   "dividendYield": null,
   "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "no current yield: VanEck prints `--` and no recent distribution can be annualised",
+  "indicatedYield": null,
+  "indicatedYieldText": "—",
+  "distributionYield": null,
+  "distributionYieldText": "—",
+  "yield12M": null,
+  "yield12MText": "—",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": -0.41,
+  "secYieldText": "-0.41%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/digital-transformation-etf-dapp-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DAPP/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DAPP/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/DAPP/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DAPP/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DAPP/index.php?ctype=semi-annual"
+ }
 }

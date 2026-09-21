@@ -32,8 +32,8 @@
  },
  "premiumDiscountValue": -0.03,
  "distributions": {
-  "frequency": "Irregular",
-  "paymentsPerYear": null,
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
   "headers": [
    "Ex-Date",
    "Payable Date",
@@ -80,7 +80,9 @@
    "yr10": 4.94,
    "sinceInception": 6.77
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 10.6,
@@ -92,13 +94,17 @@
   "cagr5y": 1.37,
   "cagr10y": 4.94,
   "siAnn": 6.77,
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "dividendYield": 0.16,
+  "dividendYieldText": "0.16%",
+  "secYield": -0.04,
+  "secYieldText": "-0.04%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 0.16,
+  "distributionYieldText": "0.16%",
+  "yield12M": 0.21,
+  "yield12MText": "0.21%"
  },
- "distributionFrequency": "99 - Irregular",
+ "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
  "terGross": "1.00%",
  "terGrossValue": 1,
@@ -137,12 +143,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CNXT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.65%",
@@ -156,13 +166,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 0.16,
+  "dividendYieldText": "0.16%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 0.16,
+  "indicatedYieldText": "0.16%",
+  "distributionYield": 0.16,
+  "distributionYieldText": "0.16%",
+  "yield12M": 0.21,
+  "yield12MText": "0.21%",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": -0.04,
+  "secYieldText": "-0.04%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CNXT/index.php?ctype=semi-annual"
+ }
 }

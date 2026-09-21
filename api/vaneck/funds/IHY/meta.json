@@ -915,7 +915,9 @@
    "yr10": 3.81,
    "sinceInception": 4.28
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 1,
@@ -927,11 +929,15 @@
   "cagr5y": 2.11,
   "cagr10y": 3.81,
   "siAnn": 4.28,
-  "dividendYield": 5.56,
-  "dividendYieldText": "5.56%",
+  "dividendYield": 5.57,
+  "dividendYieldText": "5.57%",
   "secYield": 5.99,
   "secYieldText": "5.99%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 5.57,
+  "distributionYieldText": "5.57%",
+  "yield12M": 5.7,
+  "yield12MText": "5.70%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "International Bond",
@@ -976,12 +982,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/IHY",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.40%",
@@ -995,13 +1005,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": 5.56,
-  "dividendYieldText": "5.56%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 5.57,
+  "dividendYieldText": "5.57%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 5.56,
+  "indicatedYieldText": "5.56%",
+  "distributionYield": 5.57,
+  "distributionYieldText": "5.57%",
+  "yield12M": 5.7,
+  "yield12MText": "5.70%",
   "distributionRate": null,
   "secYield": 5.99,
   "secYieldText": "5.99%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/IHY/index.php?ctype=semi-annual"
+ }
 }

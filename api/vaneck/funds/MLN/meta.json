@@ -1175,7 +1175,9 @@
    "yr10": 1.12,
    "sinceInception": 2.8
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": -1.98,
@@ -1187,11 +1189,15 @@
   "cagr5y": -1.41,
   "cagr10y": 1.12,
   "siAnn": 2.8,
-  "dividendYield": 4.11,
-  "dividendYieldText": "4.11%",
+  "dividendYield": 4.1,
+  "dividendYieldText": "4.10%",
   "secYield": 4.54,
   "secYieldText": "4.54%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 4.1,
+  "distributionYieldText": "4.10%",
+  "yield12M": 3.77,
+  "yield12MText": "3.77%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1238,12 +1244,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MLN",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/long-muni-etf-mln/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/long-muni-etf-mln/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/long-muni-etf-mln/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.24%",
@@ -1257,13 +1267,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": 4.11,
-  "dividendYieldText": "4.11%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 4.1,
+  "dividendYieldText": "4.10%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 4.11,
+  "indicatedYieldText": "4.11%",
+  "distributionYield": 4.1,
+  "distributionYieldText": "4.10%",
+  "yield12M": 3.77,
+  "yield12MText": "3.77%",
   "distributionRate": null,
   "secYield": 4.54,
   "secYieldText": "4.54%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/long-muni-etf-mln-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MLN/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MLN/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MLN/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MLN/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MLN/index.php?ctype=semi-annual"
+ }
 }

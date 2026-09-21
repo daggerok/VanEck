@@ -1,0 +1,157 @@
+{
+ "ticker": "RSXJ",
+ "name": "VanEck Russia Small-Cap ETF",
+ "category": "Equity",
+ "fundPage": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/",
+ "dataFile": "./funds/RSXJ/meta.json",
+ "cusip": null,
+ "isin": null,
+ "ter": "0.84%",
+ "terValue": 0.84,
+ "nav": {
+  "display": "$0.39",
+  "value": 0.39,
+  "asOfDate": "Sep 18 2026"
+ },
+ "navValue": 0.39,
+ "aum": {
+  "display": "$348590.00",
+  "value": 348590,
+  "asOfDate": "Sep 18 2026",
+  "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
+ },
+ "aumValue": 348590,
+ "asOfDate": "Sep 18 2026",
+ "inceptionDate": "Apr 13 2011",
+ "exchange": "—",
+ "closePrice": "—",
+ "closePriceValue": null,
+ "premiumDiscount": {
+  "display": "—",
+  "value": null
+ },
+ "premiumDiscountValue": null,
+ "distributions": {
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
+  "headers": [
+   "Ex-Date",
+   "Payable Date",
+   "Dividend"
+  ],
+  "rows": [],
+  "source": "—"
+ },
+ "returns": {
+  "derivedFrom": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
+  "monthEnd": {
+   "asOfDate": "Sep 18 2026",
+   "ytd": 2.41,
+   "ytdText": "2.41%",
+   "yr1": 213.06,
+   "yr3": 181.4,
+   "yr5": -22.25,
+   "yr10": -7.78,
+   "sinceInception": -10.15
+  },
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
+ },
+ "metrics": {
+  "ytd": 2.41,
+  "tr1y": 213.06,
+  "tr3y": null,
+  "tr5y": null,
+  "tr10y": null,
+  "cagr3y": 181.4,
+  "cagr5y": -22.25,
+  "cagr10y": -7.78,
+  "siAnn": -10.15,
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "distributionYield": null,
+  "distributionYieldText": "—",
+  "yield12M": 213.11,
+  "yield12MText": "213.11%",
+  "secYield": null,
+  "secYieldText": "—",
+  "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published"
+ },
+ "distributionFrequency": "12 - Annually",
+ "providerCategory": "Country/Regional",
+ "terGross": "9.50%",
+ "terGrossValue": 9.5,
+ "netAssetsAsOf": "Sep 18 2026",
+ "holdings": {
+  "pages": [],
+  "pageSize": 250,
+  "totalRows": 0,
+  "asOfDate": "—",
+  "source": "—"
+ },
+ "history": {
+  "pages": [],
+  "pageSize": 1000,
+  "totalRows": 0,
+  "asOf": "—",
+  "source": "—"
+ },
+ "totalNetAssets": 348590,
+ "categoryPath": "Equity > Country/Regional",
+ "source": {
+  "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
+  "fundPage": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/",
+  "holdingsDownload": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/downloads/holdings/",
+  "navDownload": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/downloads/fundhistoprices/",
+  "catalog": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf",
+  "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
+  "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/RSXJ",
+  "holdingsSource": "—",
+  "historySource": "—",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
+ },
+ "identifiers": {
+  "cusip": null,
+  "isin": null,
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
+ },
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RSXJ/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/RSXJ/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/RSXJ/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/RSXJ/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/RSXJ/index.php?ctype=semi-annual"
+ },
+ "expenseRatio": {
+  "display": "0.84%",
+  "value": 0.84,
+  "gross": "9.50%",
+  "grossValue": 9.5
+ },
+ "marketPrice": {
+  "display": "—",
+  "value": null,
+  "asOfDate": "Sep 18 2026"
+ },
+ "yields": {
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "no current yield: VanEck prints `--` and no recent distribution can be annualised",
+  "indicatedYield": null,
+  "indicatedYieldText": "—",
+  "distributionYield": null,
+  "distributionYieldText": "—",
+  "yield12M": 213.11,
+  "yield12MText": "213.11%",
+  "distributionRate": null,
+  "secYield": null,
+  "secYieldText": "—",
+  "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
+ },
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+}

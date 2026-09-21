@@ -10,12 +10,18 @@
  *   (a) official VanEck ETF Guide PDF ................ catalog universe
  *   (b) official per-fund page ...................... NAV, YTD, net assets,
  *                                                     expense ratio, inception
+ *   (b2) verified Investment Finder table ........... declared frequency,
+ *        (scripts/vaneck-finder.ts)                   SEC/distribution/12M
+ *                                                     yields, YTD + tenor
+ *                                                     fallbacks (tabs are
+ *                                                     client-rendered)
  *   (c) official daily holdings download ............ full holdings (FIGI ids)
  *   (d) official NAV & premium/discount history ..... daily history
  *   (e) SEC EDGAR Form N-PORT-P (CIK 0001137360) .... holdings fallback
  *   (f) Yahoo Finance chart API ..................... distributions, and any
  *                                                     return the fund page omits
- *   (g) browser N-PORT dropzone ..................... user-supplied override
+ *   (g) Nasdaq Trader symbol directory .............. listing exchange
+ *   (h) browser N-PORT dropzone ..................... user-supplied override
  *
  * A run with no reachable network (or `OFFLINE_SEED=1`) replays the checked-in
  * snapshot in `scripts/vaneck-verified.ts` instead of failing, so the feed can
@@ -40,6 +46,13 @@ import {
   HISTORY_SNAPSHOTS,
   SNAPSHOT_READ_AT,
 } from './vaneck-verified';
+import {
+  FINDER_MONTH_END_AS_OF,
+  FINDER_PRICES_AS_OF,
+  FINDER_READ_AT,
+  finderForTicker,
+  normalizeFinderFrequency,
+} from './vaneck-finder';
 
 const REPO_ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const API_ROOT = path.join(REPO_ROOT, 'api', 'vaneck');
@@ -69,6 +82,57 @@ export function vaneckHoldingsUrl(fundPage: string): string {
 
 export function vaneckHistoryUrl(fundPage: string): string {
   return `${stripTrailingSlash(fundPage)}/downloads/fundhistoprices/`;
+}
+
+/**
+ * Pre-redesign holdings path, still live for the suspended Russia funds
+ * (RSX/RSXJ): `/us/en/etf/equity/<t>/holdings/download/xlsx/`. Tried only
+ * when the canonical `/downloads/holdings/` fetch fails.
+ */
+export function vaneckLegacyHoldingsUrl(ticker: string): string {
+  return `${VANECK_SITE}/us/en/etf/equity/${ticker.toLowerCase()}/holdings/download/xlsx/`;
+}
+
+/** Deterministic fact-sheet PDF URL: `/us/en/investments/<slug>-fact-sheet.pdf`. Null when no verified slug exists — never invent a URL for an unknown ticker. */
+export function vaneckFactSheetUrl(ticker: string): string | null {
+  if (!slugForTicker(ticker)) return null;
+  return `${stripTrailingSlash(vaneckFundPageUrl(ticker))}-fact-sheet.pdf`;
+}
+
+export const VANECK_ONLINE_PROSPECTUS_BASE = 'https://vaneck.onlineprospectus.net/vaneck';
+
+/**
+ * onlineprospectus.net viewer URL for one regulatory document kind:
+ * `summary | prospectus | sai | annual | semi-annual`.
+ */
+export function vaneckProspectusUrl(ticker: string, kind: string): string {
+  return `${VANECK_ONLINE_PROSPECTUS_BASE}/${ticker.toUpperCase()}/index.php?ctype=${kind}`;
+}
+
+export type VanEckFundDocuments = {
+  factSheet: string | null;
+  summaryProspectus: string;
+  statutoryProspectus: string;
+  sai: string;
+  annualReport: string;
+  semiAnnualReport: string;
+};
+
+/**
+ * Deterministic document links for one fund. VanEck's URL schemes are stable
+ * across the whole lineup (verified for GDX plus the ?tab=lit finder tab),
+ * so these are built, not fetched.
+ */
+export function vaneckFundDocuments(ticker: string): VanEckFundDocuments {
+  const t = ticker.toUpperCase();
+  return {
+    factSheet: vaneckFactSheetUrl(t),
+    summaryProspectus: vaneckProspectusUrl(t, 'summary'),
+    statutoryProspectus: vaneckProspectusUrl(t, 'prospectus'),
+    sai: vaneckProspectusUrl(t, 'sai'),
+    annualReport: vaneckProspectusUrl(t, 'annual'),
+    semiAnnualReport: vaneckProspectusUrl(t, 'semi-annual'),
+  };
 }
 
 export function vaneckEdgarFilingsUrl(cik: string = VANECK_ETF_TRUST_CIK): string {
@@ -589,12 +653,109 @@ export function parseYahooDividends(json: unknown): YahooDistribution[] {
     });
 }
 
-async function fetchYahooDistributions(ticker: string, config: UpdaterConfig): Promise<YahooDistribution[] | null> {
+async function fetchYahooChartJson(ticker: string, config: UpdaterConfig): Promise<Record<string, unknown> | null> {
   try {
-    const json = JSON.parse(await fetchText(yahooChartUrl(ticker), yahooHeaders(), config, `${ticker} Yahoo distributions`));
-    return parseYahooDividends(json);
+    return JSON.parse(await fetchText(yahooChartUrl(ticker), yahooHeaders(), config, `${ticker} Yahoo chart`));
   } catch (error) {
-    console.warn(`  ! ${ticker}: Yahoo distributions unavailable (${errorMessage(error)})`);
+    console.warn(`  ! ${ticker}: Yahoo chart unavailable (${errorMessage(error)})`);
+    return null;
+  }
+}
+
+/** Listing-exchange code from a Yahoo Finance chart response (`meta.exchangeName`). */
+export function parseYahooExchangeName(json: unknown): string | null {
+  const meta = (json as { chart?: { result?: Array<{ meta?: { exchangeName?: unknown } }> } })?.chart?.result?.[0]?.meta;
+  const raw = typeof meta?.exchangeName === 'string' ? meta.exchangeName.trim() : '';
+  return raw || null;
+}
+
+/**
+ * Normalises Yahoo's `meta.exchangeName` vocabulary onto display names.
+ * Unknown codes pass through untouched so a new Yahoo value stays visible
+ * instead of collapsing to an em dash.
+ */
+export function normalizeYahooExchangeName(raw: unknown): string | null {
+  const code = String(raw ?? '').trim();
+  if (!code) return null;
+  const map: Record<string, string> = {
+    NYSEArca: 'NYSE Arca',
+    PCX: 'NYSE Arca',
+    NYQ: 'NYSE',
+    ASE: 'NYSE American',
+    NMS: 'NASDAQ',
+    NCM: 'NASDAQ',
+    NGM: 'NASDAQ',
+    BTS: 'Cboe BZX',
+    BZX: 'Cboe BZX',
+    BAT: 'Cboe BZX',
+  };
+  return map[code] ?? code;
+}
+
+/** Nasdaq Trader symbol-directory files: listing exchange for every US symbol. */
+export const NASDAQ_LISTED_URL = 'https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt';
+export const NASDAQ_OTHER_LISTED_URL = 'https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt';
+
+/**
+ * Parses one Nasdaq Trader symbol-directory file
+ * (`ACT Symbol|Security Name|Exchange|…`, last line is a file trailer) into
+ * a ticker -> listing-exchange display name map.
+ */
+export function parseNasdaqSymdir(text: string): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const line of String(text ?? '').split(/\r?\n/)) {
+    if (!line.includes('|')) continue;
+    const cells = line.split('|');
+    const symbol = (cells[0] ?? '').trim();
+    const exchange = (cells[2] ?? '').trim();
+    if (!symbol || !exchange || /^(ACT Symbol|File Creation Time)/i.test(symbol)) continue;
+    const display = nasdaqExchangeDisplayName(exchange);
+    if (display) map.set(symbol.toUpperCase(), display);
+  }
+  return map;
+}
+
+/** Maps Nasdaq symdir `Exchange` codes onto display names. */
+export function nasdaqExchangeDisplayName(code: string): string | null {
+  const map: Record<string, string> = {
+    Q: 'NASDAQ',
+    N: 'NYSE',
+    A: 'NYSE American',
+    P: 'NYSE Arca',
+    Z: 'Cboe BZX',
+    B: 'Nasdaq BX',
+    X: 'Nasdaq PSX',
+    C: 'NYSE National',
+    H: 'MIAX',
+    Y: 'Cboe BYX',
+    J: 'Cboe EDGA',
+    K: 'Cboe EDGX',
+    M: 'NYSE Chicago',
+    W: 'Cboe C2',
+    U: 'MEMX',
+    L: 'LTSE',
+    V: 'IEX',
+    I: 'ISE',
+  };
+  return map[String(code ?? '').trim().toUpperCase()] ?? null;
+}
+
+let nasdaqExchangeCache: Map<string, string> | null = null;
+
+/** Fetches both symdir files once per run; null when unreachable. */
+async function fetchNasdaqExchanges(config: UpdaterConfig): Promise<Map<string, string> | null> {
+  if (nasdaqExchangeCache) return nasdaqExchangeCache;
+  try {
+    const [listed, otherListed] = await Promise.all([
+      fetchText(NASDAQ_LISTED_URL, { 'User-Agent': config.secUa, Accept: 'text/plain' }, config, 'Nasdaq nasdaqlisted.txt'),
+      fetchText(NASDAQ_OTHER_LISTED_URL, { 'User-Agent': config.secUa, Accept: 'text/plain' }, config, 'Nasdaq otherlisted.txt'),
+    ]);
+    nasdaqExchangeCache = new Map([...parseNasdaqSymdir(otherListed), ...parseNasdaqSymdir(listed)]);
+    // The Nasdaq-listed file wins on collision: a symbol's primary listing is
+    // authoritative over the consolidated tape's duplicate row.
+    return nasdaqExchangeCache;
+  } catch (error) {
+    console.warn(`  ! Nasdaq symbol directory unavailable (${errorMessage(error)}); exchange falls back to Yahoo`);
     return null;
   }
 }
@@ -624,6 +785,19 @@ function vanEckBlockContentUrl(blockName: string, blockId: string, pageId: strin
   return `${VANECK_BLOCK_CONTENT_URL}/${blockName}/GetContent/?${params.toString()}`;
 }
 
+export type ParsedPerformanceQuarter = {
+  asOfDate: string | null;
+  ytd: number | null;
+  tr1y: number | null;
+  tr3y: number | null;
+  tr5y: number | null;
+  tr10y: number | null;
+  cagr3y: number | null;
+  cagr5y: number | null;
+  cagr10y: number | null;
+  siAnn: number | null;
+};
+
 export type ParsedPerformance = {
   asOfDate: string | null;
   tr1y: number | null;
@@ -634,6 +808,8 @@ export type ParsedPerformance = {
   cagr5y: number | null;
   cagr10y: number | null;
   siAnn: number | null;
+  /** Quarter-end NAV row when the block publishes one, else null. */
+  quarterEnd: ParsedPerformanceQuarter | null;
 };
 
 /** `null`/`undefined`/`''` stay `null` — VanEck marks a too-young tenor with JSON `null`, and `Number(null)` is 0, not null. */
@@ -649,15 +825,19 @@ function numberOrNullStrict(value: unknown): number | null {
  * is the one this feed's TR-N/CAGR-N/SI Ann. columns use, matching NAV as
  * the basis for every other return figure in the feed (YTD, premium/discount).
  */
-export function parseVanEckPerformance(json: unknown): ParsedPerformance | null {
-  const data = (json as { data?: Record<string, unknown> })?.data;
-  const rows = data?.MonthEndPerformances as Array<Record<string, unknown>> | undefined;
+function navPerformanceRow(rows: unknown): Record<string, unknown> | null {
   if (!Array.isArray(rows)) return null;
-  const navRow = rows.find((row) => row.Type === 'NAV');
-  if (!navRow) return null;
-  const asOfDate = typeof data?.MonthEndAsOfDate === 'string' ? formatVanEckDate(data.MonthEndAsOfDate) : null;
+  const navRow = (rows as Array<Record<string, unknown>>).find((row) => row.Type === 'NAV');
+  return navRow ?? null;
+}
+
+function performanceAsOfDate(data: Record<string, unknown> | undefined, key: string): string | null {
+  const raw = data?.[key];
+  return typeof raw === 'string' ? formatVanEckDate(raw) : null;
+}
+
+function tenorsFromNavRow(navRow: Record<string, unknown>): Omit<ParsedPerformanceQuarter, 'asOfDate' | 'ytd'> {
   return {
-    asOfDate,
     tr1y: numberOrNullStrict(navRow.OneYear),
     tr3y: numberOrNullStrict(navRow.CumulativeThreeYear),
     tr5y: numberOrNullStrict(navRow.CumulativeFiveYear),
@@ -666,6 +846,26 @@ export function parseVanEckPerformance(json: unknown): ParsedPerformance | null 
     cagr5y: numberOrNullStrict(navRow.FiveYear),
     cagr10y: numberOrNullStrict(navRow.TenYear),
     siAnn: numberOrNullStrict(navRow.Life),
+  };
+}
+
+export function parseVanEckPerformance(json: unknown): ParsedPerformance | null {
+  const data = (json as { data?: Record<string, unknown> })?.data;
+  const navRow = navPerformanceRow(data?.MonthEndPerformances);
+  if (!navRow) return null;
+  const quarterNavRow = navPerformanceRow(
+    (data?.QuarterEndPerformances ?? data?.QuarterlyPerformances) as unknown,
+  );
+  return {
+    asOfDate: performanceAsOfDate(data, 'MonthEndAsOfDate'),
+    ...tenorsFromNavRow(navRow),
+    quarterEnd: quarterNavRow
+      ? {
+          asOfDate: performanceAsOfDate(data, 'QuarterEndAsOfDate'),
+          ytd: numberOrNullStrict(quarterNavRow.Ytd ?? quarterNavRow.YTD),
+          ...tenorsFromNavRow(quarterNavRow),
+        }
+      : null,
   };
 }
 
@@ -1030,6 +1230,9 @@ export type ParsedFundPage = {
   navAsOf: string | null;
   ytdReturn: number | null;
   ytdAsOf: string | null;
+  /** "Performance since inception" stat shown instead of YTD for days-old funds. */
+  siReturn: number | null;
+  siAsOf: string | null;
   totalNetAssets: number | null;
   totalNetAssetsAsOf: string | null;
   grossExpenseRatio: number | null;
@@ -1040,6 +1243,9 @@ export type ParsedFundPage = {
   exchange: string | null;
   cusip: string | null;
   isin: string | null;
+  /** Benchmark index named by the page Overview copy, e.g. GDX -> MVGDXTR. */
+  indexTicker: string | null;
+  indexName: string | null;
   sharesOutstanding: number | null;
   pageId: string | null;
   performanceBlockId: string | null;
@@ -1097,6 +1303,7 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
   };
   const navBlob = near(/\bNAV\b/);
   const ytdBlob = near(/YTD RETURNS/i);
+  const siBlob = near(/PERFORMANCE SINCE INCEPTION/i);
   const aumBlob = near(/Total Net Assets/i);
   const grossBlob = near(/Gross Expense Ratio/i);
   const netBlob = near(/Net Expense Ratio/i);
@@ -1114,6 +1321,10 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
   const isinMatch = /(US[0-9A-Z]{10})/i.exec(cleanText(isinBlob).slice(0, 40));
   const sharesMatch = /([\d,]+)/.exec(cleanText(sharesBlob).slice(0, 50));
   const exchangeMatch = /(NYSE Arca|NYSE American|NASDAQ|Cboe BZX|BATS|Arca)/i.exec(cleanText(exchangeBlob).slice(0, 60));
+  // Overview copy names the benchmark index ("…before fees and expenses. The
+  // <Name> Index (<TICKER>)…"); the fact sheet does too. The parenthesised
+  // all-caps token right after the word "Index" is the index ticker.
+  const indexMatch = /([A-Z][A-Za-z0-9 .&'-]{3,80}?)\s+Index\s+\(([A-Z0-9]{3,12})\)/.exec(plain);
   // The Average Annual Total Returns table and the Distribution History table
   // are both loaded client-side, but from a plain, unauthenticated JSON
   // endpoint (`/Main/<BlockName>/GetContent/?blockid=…&pageid=…&ticker=…`) —
@@ -1130,6 +1341,8 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
     navAsOf: asOf(navBlob),
     ytdReturn: percent(ytdBlob),
     ytdAsOf: asOf(ytdBlob),
+    siReturn: percent(siBlob),
+    siAsOf: asOf(siBlob),
     totalNetAssets: compactMoney(aumBlob),
     totalNetAssetsAsOf: asOf(aumBlob),
     grossExpenseRatio: percent(grossBlob),
@@ -1140,6 +1353,8 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
     exchange: exchangeMatch ? cleanText(exchangeMatch[1]) : null,
     cusip: cusipMatch ? cusipMatch[1].toUpperCase() : null,
     isin: isinMatch ? isinMatch[1].toUpperCase() : null,
+    indexTicker: indexMatch ? indexMatch[2].toUpperCase() : null,
+    indexName: indexMatch ? `${cleanText(indexMatch[1])} Index` : null,
     sharesOutstanding: sharesMatch ? Number(sharesMatch[1].replace(/,/g, '')) : null,
     pageId: pageIdMatch ? pageIdMatch[1] : null,
     performanceBlockId: performanceBlockMatch ? performanceBlockMatch[1] : null,
@@ -1230,7 +1445,28 @@ export function frequencyCode(label: unknown): string {
 
 export function paymentsPerYear(frequency: string): number | null {
   const map: Record<string, number> = { Monthly: 12, Quarterly: 4, Semiannually: 2, Annually: 1 };
-  return map[frequency] ?? null;
+  const key = String(frequency ?? '').replace(/[-\s]+/g, '').toLowerCase();
+  const byKey: Record<string, number> = { monthly: 12, quarterly: 4, semiannually: 2, semiannual: 2, annually: 1, annual: 1 };
+  return map[frequency] ?? byKey[key] ?? null;
+}
+
+/**
+ * Guards the indicated yield: annualising a stale distribution invents a
+ * yield the fund no longer pays (BUZZ's latest payout is Dec 2024, yet the
+ * finder prints `--`). The indicated yield is only computed when the latest
+ * ex-date is within `maxAgeDays` of the NAV as-of date; otherwise the fund
+ * genuinely yields nothing reportable and the value stays null.
+ */
+export function indicatedYieldAllowed(
+  latestExDate: string | null,
+  asOfDate: string | null,
+  maxAgeDays = 400,
+): boolean {
+  if (!latestExDate || !asOfDate) return false;
+  const ex = Date.parse(`${toIsoDate(latestExDate)} UTC`);
+  const asOf = Date.parse(`${toIsoDate(asOfDate)} UTC`);
+  if (!Number.isFinite(ex) || !Number.isFinite(asOf)) return false;
+  return asOf - ex <= maxAgeDays * 86400000;
 }
 
 // ---------------------------------------------------------------------------
@@ -1314,6 +1550,10 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
       siAnn: null,
       dividendYield: null,
       dividendYieldText: '—',
+      distributionYield: null,
+      distributionYieldText: '—',
+      yield12M: null,
+      yield12MText: '—',
       secYield: null,
       secYieldText: '—',
       returnsBasis: 'not yet refreshed from vaneck.com',
@@ -1379,6 +1619,24 @@ export function applyFundPageSnapshot(entry: CatalogEntry, snapshot: Record<stri
       ytd: s.ytdReturn,
       returnsBasis: 'official VanEck fund-page YTD return',
     };
+  }
+  // Days-old funds (VEEM) publish "Performance since inception" instead of a
+  // YTD stat. It maps onto siAnn only — never mislabelled as YTD.
+  if ((s.ytdReturn === null || s.ytdReturn === undefined) && s.siReturn !== null && s.siReturn !== undefined) {
+    merged.metrics = {
+      ...((merged.metrics as Record<string, unknown>) ?? {}),
+      siAnn: s.siReturn,
+      returnsBasis: 'official VanEck fund-page performance since inception',
+    };
+    const prevReturns = (merged.returns as unknown as Record<string, Record<string, unknown>>) ?? {};
+    merged.returns = {
+      monthEnd: { ...(prevReturns.monthEnd ?? { asOfDate: '—' }), sinceInception: s.siReturn },
+      quarterEnd: { ...(prevReturns.quarterEnd ?? { asOfDate: '—' }) },
+    } as unknown as CatalogEntry['returns'];
+  }
+  if (s.indexTicker) {
+    (merged as Record<string, unknown>).indexTicker = s.indexTicker;
+    (merged as Record<string, unknown>).indexName = s.indexName ?? null;
   }
   return merged;
 }
@@ -1598,7 +1856,15 @@ export async function updateFund(
     try {
       holdings = parseVanEckHoldingsXlsx(await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`));
     } catch (error) {
-      console.warn(`  ! ${ticker}: holdings unavailable (${errorMessage(error)})`);
+      // The suspended Russia funds never moved to `/downloads/holdings/`;
+      // retry once against the legacy pre-redesign path before giving up.
+      try {
+        const legacyUrl = vaneckLegacyHoldingsUrl(ticker);
+        holdings = parseVanEckHoldingsXlsx(await fetchBytes(legacyUrl, browserHeaders(), config, `${ticker} holdings (legacy)`));
+        source.holdingsDownload = legacyUrl;
+      } catch (legacyError) {
+        console.warn(`  ! ${ticker}: holdings unavailable (${errorMessage(error)}; legacy: ${errorMessage(legacyError)})`);
+      }
     }
   }
   if (!holdings) holdings = snapshotHoldingsFor(ticker);
@@ -1649,6 +1915,7 @@ export async function updateFund(
   if (!config.skipVanEck && !config.offlineSeed && pageSnapshot?.pageId && pageSnapshot?.performanceBlockId) {
     performance = await fetchVanEckPerformance(ticker, pageSnapshot.pageId, pageSnapshot.performanceBlockId, config);
   }
+  const finder = finderForTicker(ticker);
   const metrics = entry.metrics as Record<string, unknown>;
   if (performance) {
     metrics.tr1y = performance.tr1y;
@@ -1666,7 +1933,69 @@ export async function updateFund(
     returnsMonthEnd.yr5 = performance.cagr5y;
     returnsMonthEnd.yr10 = performance.cagr10y;
     returnsMonthEnd.sinceInception = performance.siAnn;
+    // The fund-page YTD as-of (daily) wins over the block's month-end as-of:
+    // only fill a blank (seed '—') stamp, never clobber a real one.
+    if (returnsMonthEnd.asOfDate === '—' && performance.asOfDate) returnsMonthEnd.asOfDate = performance.asOfDate;
+    if (performance.quarterEnd) {
+      const q = performance.quarterEnd;
+      const quarterEnd = (entry.returns as Record<string, unknown>).quarterEnd as Record<string, unknown>;
+      quarterEnd.asOfDate = q.asOfDate ?? '—';
+      if (q.ytd !== null && q.ytd !== undefined) {
+        quarterEnd.ytd = q.ytd;
+        quarterEnd.ytdText = `${q.ytd.toFixed(2)}%`;
+      }
+      quarterEnd.yr1 = q.tr1y;
+      quarterEnd.yr3 = q.cagr3y;
+      quarterEnd.yr5 = q.cagr5y;
+      quarterEnd.yr10 = q.cagr10y;
+      quarterEnd.sinceInception = q.siAnn;
+      metrics.returnsBasis += ' + quarter-end NAV row';
+    }
   }
+  // Russia funds in liquidation: the performance block is gone with the old
+  // page, so the finder-verified annualised tenors are the source of record.
+  // Cumulative tenors stay null — VanEck never published them.
+  if ((ticker === 'RSX' || ticker === 'RSXJ') && (metrics.tr1y === null || metrics.tr1y === undefined) && finder?.monthEndTenors) {
+    const t = finder.monthEndTenors;
+    metrics.tr1y = t.y1;
+    metrics.tr3y = null;
+    metrics.tr5y = null;
+    metrics.tr10y = null;
+    metrics.cagr3y = t.y3;
+    metrics.cagr5y = t.y5;
+    metrics.cagr10y = t.y10;
+    metrics.siAnn = t.life;
+    metrics.returnsBasis =
+      `official VanEck Investment Finder month-end returns (NAV, as of ${formatVanEckDate(FINDER_MONTH_END_AS_OF)}); fund in liquidation — cumulative tenors not published`;
+    const monthEnd = (entry.returns as Record<string, unknown>).monthEnd as Record<string, unknown>;
+    monthEnd.yr1 = t.y1;
+    monthEnd.yr3 = t.y3;
+    monthEnd.yr5 = t.y5;
+    monthEnd.yr10 = t.y10;
+    monthEnd.sinceInception = t.life;
+    if (monthEnd.asOfDate === '—') monthEnd.asOfDate = formatVanEckDate(FINDER_MONTH_END_AS_OF);
+  }
+  // The fund-page header shows a 30-Day SEC Yield instead of a YTD return for
+  // bond funds whose price feed lags (CBON, EMLC, VBNB): backfill YTD from the
+  // finder-verified month-end table rather than leaving a hole.
+  if ((metrics.ytd === null || metrics.ytd === undefined) && finder?.monthEndYtd !== null && finder?.monthEndYtd !== undefined) {
+    metrics.ytd = finder.monthEndYtd;
+    const monthEnd = (entry.returns as Record<string, unknown>).monthEnd as Record<string, unknown>;
+    monthEnd.ytd = finder.monthEndYtd;
+    monthEnd.ytdText = `${finder.monthEndYtd.toFixed(2)}%`;
+    if (monthEnd.asOfDate === '—') monthEnd.asOfDate = formatVanEckDate(FINDER_MONTH_END_AS_OF);
+    metrics.returnsBasis = `${metrics.returnsBasis || 'official VanEck Average Annual Total Returns (NAV)'} + Investment Finder month-end YTD (NAV)`;
+  }
+  // 30-Day SEC Yield: the server-rendered fund-page stat wins when present;
+  // otherwise the finder-verified value (bond-fund headers often carry it,
+  // equity pages never do).
+  const pageSecYield = metrics.secYield;
+  if ((pageSecYield === null || pageSecYield === undefined) && finder?.secYield !== null && finder?.secYield !== undefined) {
+    metrics.secYield = finder.secYield;
+    metrics.secYieldText = `${finder.secYield.toFixed(2)}%`;
+  }
+  const secYieldFromFinder =
+    (pageSecYield === null || pageSecYield === undefined) && metrics.secYield !== null && metrics.secYield !== undefined;
 
   // --- distributions ---------------------------------------------------------
   // VanEck's own Distribution History block (see fetchVanEckDistributions) is
@@ -1678,16 +2007,53 @@ export async function updateFund(
   }
   const exDates = vanEckDistributions?.map((d) => d.exDate) ?? null;
   const latestNative = vanEckDistributions && vanEckDistributions.length ? vanEckDistributions[0] : null;
-  const yahooFallback =
-    !vanEckDistributions && !config.skipYahoo && !config.offlineSeed ? await fetchYahooDistributions(ticker, config) : null;
+  // One Yahoo chart fetch serves both the distributions fallback and the
+  // exchange-name fallback below.
+  const yahooChartJson = !config.skipYahoo && !config.offlineSeed ? await fetchYahooChartJson(ticker, config) : null;
+  const yahooFallback = !vanEckDistributions && yahooChartJson ? parseYahooDividends(yahooChartJson) : null;
   const latestYahoo = yahooFallback && yahooFallback.length ? yahooFallback[0] : null;
+  // Declared cadence first: the fund's own distribution schedule beats any
+  // inference from payout gaps (inference only where the finder prints `--`).
+  const finderFrequency = finder ? normalizeFinderFrequency(finder.frequency) : 'Unknown';
   const frequencySource = exDates ?? (yahooFallback ? yahooFallback.map((d) => d.date) : null);
-  const frequencyLabel = frequencySource && frequencySource.length ? inferDistributionFrequency(frequencySource) : 'Unknown';
+  const frequencyLabel =
+    finderFrequency !== 'Unknown'
+      ? finderFrequency
+      : frequencySource && frequencySource.length
+        ? inferDistributionFrequency(frequencySource)
+        : 'Unknown';
   const payments = paymentsPerYear(frequencyLabel);
   const latestExDate = latestNative?.exDate ?? latestYahoo?.date ?? null;
   const latestAmount = latestNative?.dividend ?? latestYahoo?.amount ?? null;
   const navForYield = entry.navValue ?? entry.closePriceValue;
-  const dividendYield = latestAmount !== null ? indicatedDividendYield(latestAmount, payments, navForYield) : null;
+  // Official finder Distribution Yield first; the indicated yield only where
+  // the finder prints `--` AND the latest payout is fresh enough to annualise.
+  const officialDistributionYield = finder?.distributionYield ?? null;
+  const indicatedAllowed = indicatedYieldAllowed(latestExDate, entry.asOfDate as string | null);
+  const indicatedYield = latestAmount !== null && indicatedAllowed ? indicatedDividendYield(latestAmount, payments, navForYield) : null;
+  const dividendYield = officialDistributionYield ?? indicatedYield;
+  metrics.distributionYield = officialDistributionYield;
+  metrics.distributionYieldText = formatPercentText(officialDistributionYield);
+  metrics.yield12M = finder?.yield12M ?? null;
+  metrics.yield12MText = formatPercentText(finder?.yield12M ?? null);
+
+  // --- exchange --------------------------------------------------------------
+  // Ladder: fund page (rarely present) -> Nasdaq symdir -> Yahoo chart meta.
+  let exchangeSource = '—';
+  if (entry.exchange === '—' || !entry.exchange) {
+    const nasdaq = !config.offlineSeed ? await fetchNasdaqExchanges(config) : null;
+    const symdirExchange = nasdaq?.get(ticker.toUpperCase()) ?? null;
+    const yahooExchange = yahooChartJson ? normalizeYahooExchangeName(parseYahooExchangeName(yahooChartJson)) : null;
+    if (symdirExchange) {
+      entry.exchange = symdirExchange;
+      exchangeSource = 'Nasdaq Trader symbol directory';
+    } else if (yahooExchange) {
+      entry.exchange = yahooExchange;
+      exchangeSource = 'Yahoo Finance chart meta.exchangeName';
+    }
+  } else {
+    exchangeSource = 'official VanEck fund page';
+  }
   entry.distributionFrequency = frequencyCode(frequencyLabel);
   entry.distributions = {
     frequency: frequencyLabel,
@@ -1712,8 +2078,21 @@ export async function updateFund(
   const meta = {
     ...entry,
     categoryPath: `${entry.category} > ${seed.category}`,
-    source: { ...source, holdingsSource: holdingsManifest?.source ?? '—', historySource: historyManifest?.source ?? '—' },
-    identifiers: { cusip: null, isin: null, figi: 'published per holding, not per fund' },
+    source: {
+      ...source,
+      holdingsSource: holdingsManifest?.source ?? '—',
+      historySource: historyManifest?.source ?? '—',
+      exchangeSource,
+      finderVerifiedAt: FINDER_READ_AT,
+    },
+    identifiers: {
+      cusip: entry.cusip ?? null,
+      isin: entry.isin ?? null,
+      figi: 'published per holding, not per fund',
+      indexTicker: (entry as Record<string, unknown>).indexTicker ?? null,
+      indexName: (entry as Record<string, unknown>).indexName ?? null,
+    },
+    documents: vaneckFundDocuments(ticker),
     expenseRatio: { display: entry.ter, value: entry.terValue, gross: entry.terGross, grossValue: entry.terGrossValue },
     nav: { display: entry.nav, value: entry.navValue, asOfDate: entry.asOfDate },
     marketPrice: { display: entry.closePrice, value: entry.closePriceValue, asOfDate: entry.asOfDate },
@@ -1722,16 +2101,33 @@ export async function updateFund(
     yields: {
       dividendYield: metrics.dividendYield,
       dividendYieldText: metrics.dividendYieldText,
-      dividendYieldKind: `indicated (latest distribution x payments per year / NAV), from ${distributionsSource}`,
+      dividendYieldKind:
+        officialDistributionYield !== null && officialDistributionYield !== undefined
+          ? `official VanEck Investment Finder Distribution Yield (as of ${formatVanEckDate(FINDER_PRICES_AS_OF)})`
+          : indicatedYield !== null
+            ? `indicated (latest distribution x payments per year / NAV), from ${distributionsSource}`
+            : 'no current yield: VanEck prints `--` and no recent distribution can be annualised',
+      indicatedYield,
+      indicatedYieldText: formatPercentText(indicatedYield),
+      distributionYield: metrics.distributionYield,
+      distributionYieldText: metrics.distributionYieldText,
+      yield12M: metrics.yield12M,
+      yield12MText: metrics.yield12MText,
       distributionRate: null,
       secYield: metrics.secYield,
       secYieldText: metrics.secYieldText,
       secYieldKind:
-        metrics.secYield === null
-          ? 'not published on the official VanEck fund page for this fund'
-          : 'official VanEck fund page, server-rendered for this fund',
+        metrics.secYield === null || metrics.secYield === undefined
+          ? 'not published by VanEck for this fund (finder prints `--`)'
+          : secYieldFromFinder
+            ? `official VanEck Investment Finder 30-Day SEC Yield (as of ${formatVanEckDate(FINDER_PRICES_AS_OF)})`
+            : 'official VanEck fund page, server-rendered for this fund',
     },
-    returns: { derivedFrom: metrics.returnsBasis, monthEnd: (entry.returns as Record<string, unknown>).monthEnd, quarterEnd: {} },
+    returns: {
+      derivedFrom: metrics.returnsBasis,
+      monthEnd: (entry.returns as Record<string, unknown>).monthEnd,
+      quarterEnd: (entry.returns as Record<string, unknown>).quarterEnd,
+    },
     distributions: { frequency: frequencyLabel, paymentsPerYear: payments, headers: distributionsHeaders, rows: distributionsRows, source: distributionsSource },
     holdings: holdingsManifest ?? { pages: [], pageSize: config.holdingsPageSize, totalRows: 0, asOfDate: '—', source: '—' },
     history: historyManifest ?? { pages: [], pageSize: config.historyPageSize, totalRows: 0, asOf: '—', source: '—' },
@@ -1824,7 +2220,10 @@ export async function main(env: Record<string, string | undefined> = process.env
       holdings: `${VANECK_SITE}/us/en/investments/<slug>/downloads/holdings/`,
       history: `${VANECK_SITE}/us/en/investments/<slug>/downloads/fundhistoprices/`,
       nportRegistrant: `SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK ${VANECK_ETF_TRUST_CIK}`,
-      distributions: 'Yahoo Finance public chart API',
+      distributions: 'VanEck Distribution History block, Yahoo Finance public chart API as fallback',
+      finderTabs:
+        `Investment Finder Prices & Yields (${FINDER_PRICES_AS_OF}) and month-end Performance (${FINDER_MONTH_END_AS_OF}) tabs, verified ${FINDER_READ_AT} (see scripts/vaneck-finder.ts)`,
+      exchange: 'Nasdaq Trader symbol directory, Yahoo Finance chart meta as fallback',
     },
     counts,
     funds,

@@ -28,30 +28,42 @@ import {
   formatVanEckDate,
   frequencyCode,
   indicatedDividendYield,
+  indicatedYieldAllowed,
   inferDistributionFrequency,
+  nasdaqExchangeDisplayName,
   normalizeNumberText,
+  normalizeYahooExchangeName,
   numberOrNull,
   parseAumRange,
   parseHtmlTables,
+  parseNasdaqSymdir,
   parseRange,
   parseVanEckFundPage,
   parseVanEckHistory,
   parseVanEckHistoryXlsx,
   parseVanEckHoldings,
   parseVanEckHoldingsXlsx,
+  parseVanEckPerformance,
   parseXlsxSheet,
+  parseYahooExchangeName,
   loadSharedStrings,
   paymentsPerYear,
   premiumDiscount,
   sanitizeTicker,
   toIsoDate,
   vaneckEdgarFilingsUrl,
+  vaneckFactSheetUrl,
+  vaneckFundDocuments,
   vaneckFundPageUrl,
   vaneckHistoryUrl,
   vaneckHoldingsUrl,
+  vaneckLegacyHoldingsUrl,
+  vaneckProspectusUrl,
   yahooChartProvenanceUrl,
   yahooChartUrl,
 } from "./update-data";
+import { VANECK_FINDER, finderForTicker, normalizeFinderFrequency } from "./vaneck-finder";
+import { VAN_ECK_SEED } from "./vaneck-funds";
 
 const REPO_ROOT = path.join(import.meta.dir, "..");
 const API_ROOT = path.join(REPO_ROOT, "api", "vaneck");
@@ -722,8 +734,8 @@ describe("generated feed", () => {
   const index = feedJson("index.json");
 
   test("every fund carries a stable ticker, name and category", () => {
-    expect(index.funds.length).toBe(88);
-    expect(index.counts.funds).toBe(88);
+    expect(index.funds.length).toBe(91);
+    expect(index.counts.funds).toBe(91);
     for (const fund of index.funds) {
       expect(typeof fund.ticker).toBe("string");
       expect(fund.ticker.length).toBeGreaterThan(0);
@@ -737,15 +749,15 @@ describe("generated feed", () => {
     // block (see parseVanEckPerformance) and are legitimately present for
     // most funds; a too-young fund gets a real `null` from VanEck itself
     // for a tenor it hasn't existed long enough to report (never invented
-    // as 0 or guessed). dividendYield is derived from VanEck's own
-    // Distribution History (or Yahoo as a fallback), so it too is a real
-    // number wherever a distribution has ever been paid, and null
-    // otherwise. Every one of these must be a finite number or exactly
-    // null — never NaN, a string, or undefined.
+    // as 0 or guessed). dividendYield is the official Investment Finder
+    // Distribution Yield first, falling back to the indicated yield only
+    // where the finder prints `--` and a recent distribution exists; it is
+    // null (never stale) otherwise. Every one of these must be a finite
+    // number or exactly null — never NaN, a string, or undefined.
     const numericOrNull = [
       "tr1y", "tr3y", "tr5y", "tr10y",
       "cagr3y", "cagr5y", "cagr10y",
-      "siAnn", "dividendYield", "secYield",
+      "siAnn", "dividendYield", "distributionYield", "yield12M", "secYield",
     ] as const;
     let ytdCount = 0;
     let tr1yCount = 0;
@@ -821,17 +833,19 @@ describe("generated feed", () => {
 
   test("a fund with no holdings download still gets a valid, explanatory empty state", () => {
     // OUNZ is a physically-backed gold trust: it publishes no holdings
-    // workbook at all, the same as GLD/SLV on daggerok/SPDR. Every other
-    // fund in the 88-fund seed has a real holdings download.
+    // workbook at all, the same as GLD/SLV on daggerok/SPDR. RSX/RSXJ are
+    // suspended in liquidation (their downloads are gone with the old page)
+    // and VEEM launched days ago with no download yet. Every other fund in
+    // the 91-fund seed has a real holdings download.
     const catalogOnly = index.funds.filter((f: any) => !Number(f.holdings));
-    expect(catalogOnly.map((f: any) => f.ticker)).toEqual(["OUNZ"]);
+    expect(catalogOnly.map((f: any) => f.ticker).sort()).toEqual(["OUNZ", "RSX", "RSXJ", "VEEM"]);
     for (const fund of catalogOnly) {
       const meta = feedJson(`funds/${fund.ticker}/meta.json`);
       expect(meta.holdings.totalRows).toBe(0);
       expect(meta.holdings.pages).toEqual([]);
-      // A fund can still publish NAV history with no holdings download.
-      expect(meta.history.totalRows).toBeGreaterThan(0);
     }
+    // A fund can still publish NAV history with no holdings download.
+    expect(feedJson("funds/OUNZ/meta.json").history.totalRows).toBeGreaterThan(0);
   });
 
   test("history pages are consistent with their manifest", () => {
@@ -845,5 +859,284 @@ describe("generated feed", () => {
     // GDX has traded since 2006; a full live pull carries thousands of daily
     // rows, not the old bounded snapshot's 33.
     expect(total).toBeGreaterThan(1000);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 14. Investment Finder verified table (scripts/vaneck-finder.ts)
+// ---------------------------------------------------------------------------
+
+describe("Investment Finder verified table", () => {
+  test("covers every seed fund exactly once", () => {
+    expect(VAN_ECK_SEED.length).toBe(91);
+    expect(Object.keys(VANECK_FINDER).length).toBe(91);
+    for (const seed of VAN_ECK_SEED) {
+      expect(finderForTicker(seed.ticker)).toBeDefined();
+      expect(finderForTicker(seed.ticker.toLowerCase())?.frequency).toBe(
+        finderForTicker(seed.ticker)?.frequency,
+      );
+    }
+    expect(finderForTicker("ZZZZ")).toBeUndefined();
+  });
+
+  test("records yields and frequencies verbatim, with -- as null", () => {
+    expect(finderForTicker("GDX")).toMatchObject({ frequency: "Annual", secYield: 0.41, distributionYield: 0.66, yield12M: 0.97 });
+    // negative SEC yields are published (expenses exceed income), not errors
+    expect(finderForTicker("BUZZ")?.secYield).toBe(-0.46);
+    expect(finderForTicker("BUZZ")?.distributionYield).toBeNull();
+    // funds that make no distributions print `--` for the frequency
+    expect(finderForTicker("ETHV")?.frequency).toBe("--");
+    expect(finderForTicker("VAVX")?.frequency).toBe("Other");
+    expect(finderForTicker("VEFA")?.frequency).toBe("Semi-Annual");
+  });
+
+  test("drops the impossible EMBX 12-month cell instead of transcribing it", () => {
+    // vaneck.com prints `-777.30%` for EMBX 12M — a yield can never be
+    // negative, so the table stores null (see scripts/vaneck-finder.ts).
+    expect(finderForTicker("EMBX")?.yield12M).toBeNull();
+    expect(finderForTicker("EMBX")?.distributionYield).toBe(6.24);
+  });
+
+  test("month-end YTD fallbacks exist only where the page header lacks a YTD", () => {
+    expect(finderForTicker("CBON")?.monthEndYtd).toBe(5.43);
+    expect(finderForTicker("EMLC")?.monthEndYtd).toBe(2.83);
+    expect(finderForTicker("VBNB")?.monthEndYtd).toBe(7.59);
+    expect(finderForTicker("GDX")?.monthEndYtd).toBeUndefined();
+  });
+
+  test("Russia tenors are flagged as liquidation stubs", () => {
+    for (const ticker of ["RSX", "RSXJ"]) {
+      const row = finderForTicker(ticker);
+      expect(row?.liquidationStub).toBe(true);
+      expect(row?.monthEndTenors).toBeDefined();
+    }
+    expect(finderForTicker("RSX")?.monthEndTenors?.y1).toBe(3.04);
+    expect(finderForTicker("RSXJ")?.monthEndTenors?.y1).toBe(213.06);
+    expect(finderForTicker("VEEM")?.monthEndTenors).toBeUndefined();
+  });
+
+  test("normalizeFinderFrequency maps the finder vocabulary onto feed labels", () => {
+    expect(normalizeFinderFrequency("Annual")).toBe("Annually");
+    expect(normalizeFinderFrequency("Monthly")).toBe("Monthly");
+    expect(normalizeFinderFrequency("Quarterly")).toBe("Quarterly");
+    expect(normalizeFinderFrequency("Semi-Annual")).toBe("Semiannually");
+    expect(normalizeFinderFrequency("Other")).toBe("Other");
+    expect(normalizeFinderFrequency("--")).toBe("Unknown");
+    expect(normalizeFinderFrequency("")).toBe("Unknown");
+    expect(normalizeFinderFrequency(null)).toBe("Unknown");
+  });
+
+  test("paymentsPerYear accepts the finder labels too", () => {
+    expect(paymentsPerYear("Annual")).toBe(1);
+    expect(paymentsPerYear("Semi-Annual")).toBe(2);
+    expect(paymentsPerYear("Other")).toBeNull();
+    expect(paymentsPerYear("--")).toBeNull();
+  });
+
+  test("indicatedYieldAllowed blocks stale distributions, never the wall clock", () => {
+    // DAPP last paid Dec 2024; annualising it in Sep 2026 would invent a
+    // 2.78% yield VanEck itself refuses to print.
+    expect(indicatedYieldAllowed("Dec 23 2024", "Sep 18 2026")).toBe(false);
+    expect(indicatedYieldAllowed("Dec 22 2025", "Sep 18 2026")).toBe(true);
+    expect(indicatedYieldAllowed("Jul 01 2026", "Sep 18 2026")).toBe(true);
+    expect(indicatedYieldAllowed(null, "Sep 18 2026")).toBe(false);
+    expect(indicatedYieldAllowed("Jul 01 2026", null)).toBe(false);
+    expect(indicatedYieldAllowed("—", "Sep 18 2026")).toBe(false);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 15. Listing-exchange resolution
+// ---------------------------------------------------------------------------
+
+describe("exchange resolution", () => {
+  test("Nasdaq symdir codes map onto display names", () => {
+    expect(nasdaqExchangeDisplayName("P")).toBe("NYSE Arca");
+    expect(nasdaqExchangeDisplayName("N")).toBe("NYSE");
+    expect(nasdaqExchangeDisplayName("A")).toBe("NYSE American");
+    expect(nasdaqExchangeDisplayName("Q")).toBe("NASDAQ");
+    expect(nasdaqExchangeDisplayName("Z")).toBe("Cboe BZX");
+    expect(nasdaqExchangeDisplayName("?")).toBeNull();
+  });
+
+  test("parseNasdaqSymdir reads the pipe-delimited directory, skipping header and trailer", () => {
+    const text = [
+      "ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol",
+      "GDX|VanEck Gold Miners ETF|P|GDX|Y|100|N|GDX",
+      "HODL|VanEck Bitcoin ETF|Z|HODL|Y|100|N|HODL",
+      "File Creation Time: 09182026 20:00|",
+    ].join("\r\n");
+    const map = parseNasdaqSymdir(text);
+    expect(map.get("GDX")).toBe("NYSE Arca");
+    expect(map.get("HODL")).toBe("Cboe BZX");
+    expect(map.has("ACT Symbol")).toBe(false);
+    expect(map.size).toBe(2);
+  });
+
+  test("Yahoo exchange names normalise onto the same display names", () => {
+    expect(normalizeYahooExchangeName("NYSEArca")).toBe("NYSE Arca");
+    expect(normalizeYahooExchangeName("BTS")).toBe("Cboe BZX");
+    expect(normalizeYahooExchangeName("NMS")).toBe("NASDAQ");
+    expect(normalizeYahooExchangeName("NYQ")).toBe("NYSE");
+    // unknown codes pass through instead of collapsing to an em dash
+    expect(normalizeYahooExchangeName("NSD")).toBe("NSD");
+    expect(normalizeYahooExchangeName("")).toBeNull();
+    expect(normalizeYahooExchangeName(null)).toBeNull();
+  });
+
+  test("parseYahooExchangeName reads meta.exchangeName", () => {
+    expect(parseYahooExchangeName({ chart: { result: [{ meta: { exchangeName: "NYSEArca" } }] } })).toBe("NYSEArca");
+    expect(parseYahooExchangeName({ chart: { result: [{}] } })).toBeNull();
+    expect(parseYahooExchangeName({})).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 16. Fund documents and legacy holdings URLs
+// ---------------------------------------------------------------------------
+
+describe("fund documents", () => {
+  test("fact sheets and prospectus links follow the verified layouts", () => {
+    expect(vaneckFactSheetUrl("GDX")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx-fact-sheet.pdf");
+    expect(vaneckFactSheetUrl("ZZZZ")).toBeNull();
+    expect(vaneckProspectusUrl("GDX", "summary")).toBe("https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=summary");
+    const docs = vaneckFundDocuments("AFK");
+    expect(docs.factSheet).toContain("africa-index-etf-afk-fact-sheet.pdf");
+    expect(docs.statutoryProspectus).toContain("/AFK/index.php?ctype=prospectus");
+    expect(docs.sai).toContain("/AFK/index.php?ctype=sai");
+    expect(docs.annualReport).toContain("/AFK/index.php?ctype=annual");
+    expect(docs.semiAnnualReport).toContain("/AFK/index.php?ctype=semi-annual");
+  });
+
+  test("the legacy holdings URL matches the Russia funds' own Resources panels", () => {
+    expect(vaneckLegacyHoldingsUrl("RSX")).toBe("https://www.vaneck.com/us/en/etf/equity/rsx/holdings/download/xlsx/");
+    expect(vaneckLegacyHoldingsUrl("rsxj")).toBe("https://www.vaneck.com/us/en/etf/equity/rsxj/holdings/download/xlsx/");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 17. Fund-page SI stat and benchmark index
+// ---------------------------------------------------------------------------
+
+describe("parseVanEckFundPage (since-inception stat and index)", () => {
+  test("a days-old fund's Performance since inception is parsed, never relabelled as YTD", () => {
+    const html = `
+      <h1>VEEM VanEck MSCI EM Analyst Sentiment ETF</h1>
+      <div>NAV</div><div>$24.62</div><div>as of September 18, 2026</div>
+      <div>Performance since inception</div><div>-1.48%</div><div>as of September 18, 2026</div>
+      <div>Total Net Assets</div><div>$3.69M</div><div>as of September 18, 2026</div>
+      <div>Total Expense Ratio</div><div>0.30%</div>
+      <div>Inception Date</div><div>09/09/2026</div>
+      <p>VanEck MSCI EM Analyst Sentiment ETF (VEEM) seeks to track the price and yield performance of the MSCI Emerging Markets Analyst Sentiment Select Index (NU763973).</p>`;
+    const parsed = parseVanEckFundPage(html, "https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/");
+    expect(parsed.nav).toBe(24.62);
+    expect(parsed.ytdReturn).toBeNull();
+    expect(parsed.siReturn).toBe(-1.48);
+    expect(parsed.siAsOf).toBe("Sep 18 2026");
+    expect(parsed.totalExpenseRatio).toBe(0.3);
+    expect(parsed.indexTicker).toBe("NU763973");
+    expect(parsed.indexName).toBe("MSCI Emerging Markets Analyst Sentiment Select Index");
+  });
+
+  test("a page without the SI stat or index copy yields nulls", () => {
+    const parsed = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
+    expect(parsed.siReturn).toBeNull();
+    expect(parsed.siAsOf).toBeNull();
+    expect(parsed.indexTicker).toBeNull();
+    expect(parsed.indexName).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 18. Performance block quarter-end leg
+// ---------------------------------------------------------------------------
+
+describe("parseVanEckPerformance (quarter-end leg)", () => {
+  const monthRow = {
+    Type: "NAV", OneYear: 57.82, CumulativeThreeYear: 251.33, CumulativeFiveYear: 224.1,
+    CumulativeTenYear: 326.5, ThreeYear: 51.58, FiveYear: 26.48, TenYear: 15.59, Life: 5.41,
+  };
+
+  test("reads the quarter-end NAV row when the block publishes one", () => {
+    const json = {
+      data: {
+        MonthEndPerformances: [monthRow],
+        MonthEndAsOfDate: "08/31/2026",
+        QuarterEndPerformances: [
+          { Type: "NAV", OneYear: 45.77, CumulativeThreeYear: 159.2, CumulativeFiveYear: 137.5, CumulativeTenYear: 197.8, ThreeYear: 37.44, FiveYear: 18.9, TenYear: 11.57, Life: 4.06 },
+          { Type: "Market Price", OneYear: 45.93, Life: 4.06 },
+        ],
+        QuarterEndAsOfDate: "06/30/2026",
+      },
+    };
+    const parsed = parseVanEckPerformance(json);
+    expect(parsed?.tr1y).toBe(57.82);
+    expect(parsed?.asOfDate).toBe("Aug 31 2026");
+    expect(parsed?.quarterEnd?.asOfDate).toBe("Jun 30 2026");
+    expect(parsed?.quarterEnd?.tr1y).toBe(45.77);
+    expect(parsed?.quarterEnd?.cagr3y).toBe(37.44);
+    expect(parsed?.quarterEnd?.siAnn).toBe(4.06);
+  });
+
+  test("degrades to a null quarter-end when the block only has month-end", () => {
+    const parsed = parseVanEckPerformance({ data: { MonthEndPerformances: [monthRow], MonthEndAsOfDate: "08/31/2026" } });
+    expect(parsed?.tr1y).toBe(57.82);
+    expect(parsed?.quarterEnd).toBeNull();
+  });
+
+  test("a block with no NAV row is not a performance reading", () => {
+    expect(parseVanEckPerformance({ data: { MonthEndPerformances: [{ Type: "Market Price", OneYear: 1 }] } })).toBeNull();
+    expect(parseVanEckPerformance({})).toBeNull();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// 19. Published finder-backed yields and documents
+// ---------------------------------------------------------------------------
+
+describe("published finder-backed yields", () => {
+  const index = feedJson("index.json");
+
+  test("every fund carries the finder yield pair and its provenance", () => {
+    for (const fund of index.funds) {
+      const meta = feedJson(`funds/${fund.ticker}/meta.json`);
+      expect("distributionYield" in meta.yields).toBe(true);
+      expect("yield12M" in meta.yields).toBe(true);
+      expect(typeof meta.yields.dividendYieldKind).toBe("string");
+      expect(typeof meta.yields.secYieldKind).toBe("string");
+      // the catalog pair mirrors the official Distribution Yield
+      expect(fund.metrics.distributionYield).toBe(meta.yields.distributionYield);
+      expect(fund.metrics.dividendYield).toBe(meta.yields.dividendYield);
+    }
+  });
+
+  test("spot-checks match the verified finder table", () => {
+    const byTicker = Object.fromEntries(index.funds.map((f: any) => [f.ticker, f]));
+    expect(byTicker["GDX"].metrics.secYield).toBe(0.41);
+    expect(byTicker["GDX"].metrics.dividendYield).toBe(0.66);
+    expect(byTicker["BUZZ"].metrics.secYield).toBe(-0.46);
+    expect(byTicker["BUZZ"].metrics.dividendYield).toBeNull();
+    expect(byTicker["CNXT"].distributions.frequency).toBe("Annually");
+    expect(byTicker["CBON"].metrics.ytd).toBe(5.43);
+    expect(byTicker["EMLC"].metrics.ytd).toBe(2.83);
+    expect(byTicker["VBNB"].metrics.ytd).toBe(7.59);
+    expect(byTicker["EMBX"].metrics.yield12M).toBeNull();
+  });
+
+  test("every fund links its deterministic documents", () => {
+    for (const fund of index.funds) {
+      const meta = feedJson(`funds/${fund.ticker}/meta.json`);
+      expect(meta.documents.factSheet).toContain("-fact-sheet.pdf");
+      expect(meta.documents.summaryProspectus).toContain(`/vaneck/${fund.ticker}/index.php?ctype=summary`);
+    }
+  });
+
+  test("the Russia funds carry their liquidation stub tenors, VEEM its SI figure", () => {
+    const byTicker = Object.fromEntries(index.funds.map((f: any) => [f.ticker, f]));
+    expect(byTicker["RSX"].metrics.tr1y).toBe(3.04);
+    expect(byTicker["RSX"].metrics.tr3y).toBeNull();
+    expect(byTicker["RSXJ"].metrics.tr1y).toBe(213.06);
+    expect(byTicker["VEEM"].metrics.siAnn).toBe(-1.48);
+    expect(byTicker["VEEM"].metrics.ytd).toBeNull();
   });
 });

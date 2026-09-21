@@ -975,7 +975,9 @@
    "yr10": 3.49,
    "sinceInception": 2.58
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 3.26,
@@ -991,7 +993,11 @@
   "dividendYieldText": "4.26%",
   "secYield": 4.21,
   "secYieldText": "4.21%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 4.26,
+  "distributionYieldText": "4.26%",
+  "yield12M": 4.6,
+  "yield12MText": "4.60%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Floating Rate",
@@ -1036,12 +1042,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/FLTR",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/ig-floating-rate-etf-fltr/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ig-floating-rate-etf-fltr/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ig-floating-rate-etf-fltr/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.14%",
@@ -1057,11 +1067,25 @@
  "yields": {
   "dividendYield": 4.26,
   "dividendYieldText": "4.26%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 4.26,
+  "indicatedYieldText": "4.26%",
+  "distributionYield": 4.26,
+  "distributionYieldText": "4.26%",
+  "yield12M": 4.6,
+  "yield12MText": "4.60%",
   "distributionRate": null,
   "secYield": 4.21,
   "secYieldText": "4.21%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/ig-floating-rate-etf-fltr-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/FLTR/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/FLTR/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/FLTR/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/FLTR/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/FLTR/index.php?ctype=semi-annual"
+ }
 }
