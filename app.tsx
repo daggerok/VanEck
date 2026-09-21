@@ -53,6 +53,10 @@ type IndexFund = {
     siAnn?: number | null;
     dividendYield?: number | null;
     dividendYieldText?: string | null;
+    distributionYield?: number | null;
+    distributionYieldText?: string | null;
+    yield12M?: number | null;
+    yield12MText?: string | null;
     secYield?: number | null;
     secYieldText?: string | null;
   };
@@ -89,6 +93,8 @@ type FundRow = TableRow & {
   cagr5y?: number | null;
   cagr10y?: number | null;
   dividendYield?: number | null;
+  distributionYield?: number | null;
+  yield12M?: number | null;
   dividendFrequency: string;
   secYield?: number | null;
   returnAsOf: string;
@@ -153,8 +159,10 @@ const COLUMN_TOOLTIPS: Record<string, string> = {
   ETFs: 'Selected ETFs holding this security.',
   Type: 'Category — the asset-class part of the vaneck.com grouping (see the Category column). Same source as the category tabs.',
   Expense: 'Expense Ratio — Total annual fund operating expenses as a % of assets, Net figure where VanEck publishes Gross and Net separately.',
-  'Dividend Yield': 'Dividend Yield — indicated yield: latest distribution per share x payments per year / NAV, derived from VanEck\'s own official Distribution History (Yahoo Finance is used only as a fallback). "—" when the fund has never made a distribution.',
-  'SEC Yield': 'SEC Yield (30-Day) — Published where VanEck server-renders "30-Day SEC Yield" in the fund page header (mainly income/fixed-income funds); "—" where it is not published for this fund.',
+  'Dividend Yield': 'Dividend Yield — the official VanEck Investment Finder Distribution Yield where published, else the indicated yield (latest distribution per share x payments per year / NAV, only when the latest payout is recent). "—" where VanEck prints no yield and no recent distribution can be annualised.',
+  'Dist Yield': 'Distribution Yield — trailing 12-month distributions / NAV, as published by the official VanEck Investment Finder (Prices & Yields tab). "—" where VanEck prints no value.',
+  '12M Yield': '12 Month Yield — distributions paid over the last 12 months / NAV, as published by the official VanEck Investment Finder. "—" where VanEck prints no value.',
+  'SEC Yield': 'SEC Yield (30-Day) — the official VanEck Investment Finder value first, else the server-rendered fund page header stat (mainly income/fixed-income funds); "—" where VanEck publishes none for this fund.',
   'YTD Return': 'YTD Return — the year-to-date return published in the VanEck fund page header, as of the date shown in the Return As Of column.',
   'TR 1Y': 'TR 1Y (1-Year Total Return) — from VanEck\'s official Average Annual Total Returns table (NAV basis).',
   'TR 3Y': 'TR 3Y (3-Year Total Return) — cumulative return over 3 years, from VanEck\'s official Average Annual Total Returns table (NAV basis). "—" for a fund younger than 3 years.',
@@ -177,7 +185,7 @@ const COLUMN_TOOLTIPS: Record<string, string> = {
   Holdings: 'Rows in the fund\'s latest daily holdings file.',
   History: 'Rows in the fund\'s NAV history file.',
   'As Of': 'As-of date of the NAV / Total Net Assets figures.',
-  Frequency: 'Distribution frequency — coded for sorting from fund.distributions.frequency (derived in scripts/update-data.ts by inferDistributionFrequency from VanEck\'s own Distribution History, or Yahoo Finance as a fallback). Codes: 00 — / None / Unknown, 01 Monthly, 04 Quarterly, 06 Semi-annually, 12 Annually, 99 Irregular. The Overview tab shows the raw label.',
+  Frequency: 'Distribution frequency — the fund\'s declared distribution schedule from the official VanEck Investment Finder (inferred from payout gaps only where the finder prints `--`). Codes: 00 — / None / Unknown / Other (irregular schedule), 01 Monthly, 04 Quarterly, 06 Semi-annually, 12 Annually, 99 Irregular. The Overview tab shows the raw label.',
   'Ex-Date': 'Ex-dividend date of the latest distribution, from VanEck\'s own Distribution History. "—" if the fund has never made a distribution.',
   Dividend: 'Latest dividend per share, from VanEck\'s own Distribution History. "—" if the fund has never made a distribution.',
   Coupon: 'Bond annual coupon rate (%), from the fixed-income holdings sheet.',
@@ -449,8 +457,10 @@ function normalizeFundRow(fund: IndexFund): FundRow {
     cagr5y: metrics.cagr5y ?? monthEnd.yr5 ?? null,
     cagr10y: metrics.cagr10y ?? monthEnd.yr10 ?? null,
     dividendYield: metrics.dividendYield ?? null,
+    distributionYield: metrics.distributionYield ?? null,
+    yield12M: metrics.yield12M ?? null,
     dividendFrequency: formatDividendFrequency(fund.distributions && fund.distributions.frequency ? fund.distributions.frequency : '—'),
-    secYield: metrics.secYield ?? null, // official VanEck product pages publish it for many funds.
+    secYield: metrics.secYield ?? null, // official VanEck finder table first, fund page header second.
     returnAsOf: monthEnd.asOfDate ?? null,
     searchIndex: '',
   };
@@ -1086,6 +1096,8 @@ function renderFundsTable(): void {
       ${sortHeader('Net Assets', 'aumValue', true)}
       ${sortHeader('Expense', 'terValue', true)}
       ${sortHeader('Dividend Yield', 'dividendYield', true)}
+      ${sortHeader('Dist Yield', 'distributionYield', true)}
+      ${sortHeader('12M Yield', 'yield12M', true)}
       ${sortHeader('SEC Yield', 'secYield', true)}
       ${sortHeader('Frequency', 'dividendFrequency')}
       ${sortHeader('YTD Return', 'ytd', true)}
@@ -1128,6 +1140,8 @@ function renderFundsTable(): void {
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatMoney(fund.aumValue)}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${escapeHtml(fund.ter || '—')}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.dividendYield)}</td>
+          <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.distributionYield)}</td>
+          <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.yield12M)}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.secYield)}</td>
           <td class="py-2.5 px-4 text-slate-700 dark:text-slate-300">${escapeHtml(fund.dividendFrequency || '—')}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.ytd)}</td>
@@ -1496,6 +1510,15 @@ function renderOverviewTable(fund: FundRow): void {
     { section: 'Fund', metric: 'CUSIP', value: meta && meta.identifiers ? meta.identifiers.cusip : null },
     { section: 'Fund', metric: 'ISIN', value: meta && meta.identifiers ? meta.identifiers.isin : null },
     { section: 'Fund', metric: 'Benchmark Index', value: meta && meta.identifiers ? meta.identifiers.indexTicker : null },
+    { section: 'Fund', metric: 'Benchmark Index Name', value: meta && meta.identifiers ? meta.identifiers.indexName : null },
+    { section: 'Fund', metric: 'Exchange Source', value: meta && meta.source ? meta.source.exchangeSource : null },
+    { section: 'Fund', metric: 'Finder Verified', value: meta && meta.source ? meta.source.finderVerifiedAt : null },
+    { section: 'Documents', metric: 'Fact Sheet', value: meta && meta.documents ? meta.documents.factSheet : null },
+    { section: 'Documents', metric: 'Summary Prospectus', value: meta && meta.documents ? meta.documents.summaryProspectus : null },
+    { section: 'Documents', metric: 'Statutory Prospectus', value: meta && meta.documents ? meta.documents.statutoryProspectus : null },
+    { section: 'Documents', metric: 'SAI', value: meta && meta.documents ? meta.documents.sai : null },
+    { section: 'Documents', metric: 'Annual Report', value: meta && meta.documents ? meta.documents.annualReport : null },
+    { section: 'Documents', metric: 'Semi-Annual Report', value: meta && meta.documents ? meta.documents.semiAnnualReport : null },
     { section: 'Fund', metric: 'Holdings Source', value: meta && meta.source ? meta.source.holdingsSource : null },
     { section: 'Fund', metric: 'History Source', value: meta && meta.source ? meta.source.historySource : null },
     { section: 'Fund', metric: 'Provider', value: meta && meta.source ? meta.source.provider : null },
@@ -1523,7 +1546,10 @@ function renderOverviewTable(fund: FundRow): void {
     { section: 'Distributions', metric: 'Frequency', value: fund.distributions ? fund.distributions.frequency : null },
     { section: 'Distributions', metric: 'Ex-Date', value: fund.distributions ? fund.distributions.exDate : null },
     { section: 'Distributions', metric: 'Latest Dividend', value: fund.distributions ? fund.distributions.dividend : null },
-    { section: 'Distributions', metric: 'Dividend Yield (indicated)', value: fund.dividendYield === null || fund.dividendYield === undefined ? null : `${fund.dividendYield.toFixed(2)}% (latest distribution x frequency / NAV)` },
+    { section: 'Distributions', metric: 'Dividend Yield', value: meta && meta.yields && meta.yields.dividendYieldText ? meta.yields.dividendYieldText : (fund.dividendYield === null || fund.dividendYield === undefined ? null : `${fund.dividendYield.toFixed(2)}%`) },
+    { section: 'Distributions', metric: 'Distribution Yield (official)', value: meta && meta.yields ? meta.yields.distributionYieldText : null },
+    { section: 'Distributions', metric: '12-Month Yield', value: meta && meta.yields ? meta.yields.yield12MText : null },
+    { section: 'Distributions', metric: 'Indicated Yield', value: meta && meta.yields ? meta.yields.indicatedYieldText : null },
     { section: 'Distributions', metric: 'SEC Yield (30-day)', value: meta && meta.yields ? (meta.yields.secYieldText || '—') : (fund.secYield === null || fund.secYield === undefined ? 'not published on the official VanEck product page for this fund' : `${fund.secYield.toFixed(2)}%`) },
     { section: 'Distributions', metric: 'Dividend Yield Basis', value: meta && meta.yields ? meta.yields.dividendYieldKind : null },
     { section: 'Distributions', metric: 'SEC Yield Basis', value: meta && meta.yields ? meta.yields.secYieldKind : null },

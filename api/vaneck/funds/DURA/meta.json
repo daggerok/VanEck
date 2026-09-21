@@ -210,7 +210,9 @@
    "yr10": null,
    "sinceInception": 9.45
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 16.89,
@@ -226,7 +228,11 @@
   "dividendYieldText": "2.77%",
   "secYield": 2.7,
   "secYieldText": "2.70%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 2.77,
+  "distributionYieldText": "2.77%",
+  "yield12M": 3.99,
+  "yield12MText": "3.99%"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Income",
@@ -268,12 +274,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/DURA",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.30%",
@@ -289,11 +299,25 @@
  "yields": {
   "dividendYield": 2.77,
   "dividendYieldText": "2.77%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 2.77,
+  "indicatedYieldText": "2.77%",
+  "distributionYield": 2.77,
+  "distributionYieldText": "2.77%",
+  "yield12M": 3.99,
+  "yield12MText": "3.99%",
   "distributionRate": null,
   "secYield": 2.7,
   "secYieldText": "2.70%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/durable-high-dividend-etf-dura-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/DURA/index.php?ctype=semi-annual"
+ }
 }

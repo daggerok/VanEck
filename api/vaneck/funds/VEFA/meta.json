@@ -32,8 +32,8 @@
  },
  "premiumDiscountValue": 0.46,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
+  "frequency": "Semiannually",
+  "paymentsPerYear": 2,
   "headers": [
    "Ex-Date",
    "Payable Date",
@@ -58,7 +58,9 @@
    "yr10": null,
    "sinceInception": 16.27
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": null,
@@ -70,13 +72,17 @@
   "cagr5y": null,
   "cagr10y": null,
   "siAnn": 16.27,
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "dividendYield": 0.76,
+  "dividendYieldText": "0.76%",
+  "secYield": 1.81,
+  "secYieldText": "1.81%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 0.76,
+  "distributionYieldText": "0.76%",
+  "yield12M": null,
+  "yield12MText": "—"
  },
- "distributionFrequency": "00 - Unknown",
+ "distributionFrequency": "06 - Semi-annually",
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
@@ -112,12 +118,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/VEFA",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.30%",
@@ -131,13 +141,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 0.76,
+  "dividendYieldText": "0.76%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 1.53,
+  "indicatedYieldText": "1.53%",
+  "distributionYield": 0.76,
+  "distributionYieldText": "0.76%",
+  "yield12M": null,
+  "yield12MText": "—",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": 1.81,
+  "secYieldText": "1.81%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/VEFA/index.php?ctype=semi-annual"
+ }
 }

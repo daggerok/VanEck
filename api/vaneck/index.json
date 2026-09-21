@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T05:31:33Z",
+ "generatedAt": "2026-09-21T00:11:49Z",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
   "market": "us",
@@ -10,10 +10,12 @@
   "holdings": "https://www.vaneck.com/us/en/investments/<slug>/downloads/holdings/",
   "history": "https://www.vaneck.com/us/en/investments/<slug>/downloads/fundhistoprices/",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
-  "distributions": "Yahoo Finance public chart API"
+  "distributions": "VanEck Distribution History block, Yahoo Finance public chart API as fallback",
+  "finderTabs": "Investment Finder Prices & Yields (09/18/2026) and month-end Performance (08/31/2026) tabs, verified 2026-09-20T00:00:00.000Z (see scripts/vaneck-finder.ts)",
+  "exchange": "Nasdaq Trader symbol directory, Yahoo Finance chart meta as fallback"
  },
  "counts": {
-  "funds": 88,
+  "funds": 91,
   "holdings": 12174,
   "history": 234093
  },
@@ -71,9 +73,13 @@
     "siAnn": 0.71,
     "dividendYield": 0.95,
     "dividendYieldText": "0.95%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.68,
+    "secYieldText": "1.68%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.95,
+    "distributionYieldText": "0.95%",
+    "yield12M": 1.27,
+    "yield12MText": "1.27%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -139,7 +145,11 @@
     "dividendYieldText": "6.70%",
     "secYield": 6.73,
     "secYieldText": "6.73%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 6.7,
+    "distributionYieldText": "6.70%",
+    "yield12M": 6.43,
+    "yield12MText": "6.43%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Corporate Bond",
@@ -205,9 +215,13 @@
     "siAnn": 14.2,
     "dividendYield": 0.41,
     "dividendYieldText": "0.41%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.34,
+    "secYieldText": "0.34%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.41,
+    "distributionYieldText": "0.41%",
+    "yield12M": 0.7,
+    "yield12MText": "0.70%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -273,7 +287,11 @@
     "dividendYieldText": "7.31%",
     "secYield": 9.2,
     "secYieldText": "9.20%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 7.31,
+    "distributionYieldText": "7.31%",
+    "yield12M": 10.05,
+    "yield12MText": "10.05%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Floating Rate",
@@ -339,9 +357,13 @@
     "siAnn": 1.44,
     "dividendYield": 5.45,
     "dividendYieldText": "5.45%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 5.23,
+    "secYieldText": "5.23%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.45,
+    "distributionYieldText": "5.45%",
+    "yield12M": 5.51,
+    "yield12MText": "5.51%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -403,11 +425,15 @@
     "cagr5y": 7.03,
     "cagr10y": null,
     "siAnn": 7.41,
-    "dividendYield": 0.33,
-    "dividendYieldText": "0.33%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": -0.46,
+    "secYieldText": "-0.46%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "U.S. Equity",
@@ -446,19 +472,21 @@
    },
    "returns": {
     "monthEnd": {
-     "asOfDate": "—",
+     "asOfDate": "Aug 31 2026",
      "yr1": 8.04,
      "yr3": 5.23,
      "yr5": 1.99,
      "yr10": 2.92,
-     "sinceInception": 2.46
+     "sinceInception": 2.46,
+     "ytd": 5.43,
+     "ytdText": "5.43%"
     },
     "quarterEnd": {
      "asOfDate": "—"
     }
    },
    "metrics": {
-    "ytd": null,
+    "ytd": 5.43,
     "tr1y": 8.04,
     "tr3y": 16.51,
     "tr5y": 10.35,
@@ -471,7 +499,11 @@
     "dividendYieldText": "1.33%",
     "secYield": 1.04,
     "secYieldText": "1.04%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
+    "distributionYield": 1.33,
+    "distributionYieldText": "1.33%",
+    "yield12M": 1.62,
+    "yield12MText": "1.62%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -539,7 +571,11 @@
     "dividendYieldText": "5.94%",
     "secYield": 5.72,
     "secYieldText": "5.72%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.94,
+    "distributionYieldText": "5.94%",
+    "yield12M": 6.25,
+    "yield12MText": "6.25%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Floating Rate",
@@ -607,7 +643,11 @@
     "dividendYieldText": "5.10%",
     "secYield": 4.98,
     "secYieldText": "4.98%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.1,
+    "distributionYieldText": "5.10%",
+    "yield12M": 5.29,
+    "yield12MText": "5.29%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Floating Rate",
@@ -671,11 +711,15 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 13.11,
-    "dividendYield": 6.86,
-    "dividendYieldText": "6.86%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 7.49,
+    "dividendYieldText": "7.49%",
+    "secYield": 2.59,
+    "secYieldText": "2.59%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 7.49,
+    "distributionYieldText": "7.49%",
+    "yield12M": 12.32,
+    "yield12MText": "12.32%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Commodity",
@@ -708,7 +752,7 @@
    "premiumDiscount": "-0.03%",
    "premiumDiscountValue": -0.03,
    "distributions": {
-    "frequency": "Irregular",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.0788"
    },
@@ -737,13 +781,17 @@
     "cagr5y": 1.37,
     "cagr10y": 4.94,
     "siAnn": 6.77,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.16,
+    "dividendYieldText": "0.16%",
+    "secYield": -0.04,
+    "secYieldText": "-0.04%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.16,
+    "distributionYieldText": "0.16%",
+    "yield12M": 0.21,
+    "yield12MText": "0.21%"
    },
-   "distributionFrequency": "99 - Irregular",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
    "terGross": "1.00%",
    "terGrossValue": 1,
@@ -805,9 +853,13 @@
     "siAnn": 13.65,
     "dividendYield": 1.16,
     "dividendYieldText": "1.16%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.18,
+    "secYieldText": "1.18%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.16,
+    "distributionYieldText": "1.16%",
+    "yield12M": 3.58,
+    "yield12MText": "3.58%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -840,7 +892,7 @@
    "premiumDiscount": "0.03%",
    "premiumDiscountValue": 0.03,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "Dec 23 2024",
     "dividend": "$0.5808"
    },
@@ -871,11 +923,15 @@
     "siAnn": -8.33,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": -0.41,
+    "secYieldText": "-0.41%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.52%",
    "terGrossValue": 0.52,
@@ -939,7 +995,11 @@
     "dividendYieldText": "3.80%",
     "secYield": 4.16,
     "secYieldText": "4.16%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.8,
+    "distributionYieldText": "3.80%",
+    "yield12M": 4.78,
+    "yield12MText": "4.78%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Equity Income",
@@ -974,7 +1034,7 @@
    "premiumDiscount": "-0.22%",
    "premiumDiscountValue": -0.22,
    "distributions": {
-    "frequency": "Irregular",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.1333"
    },
@@ -1003,13 +1063,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 1.61,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 2.12,
+    "dividendYieldText": "2.12%",
+    "secYield": -0.27,
+    "secYieldText": "-0.27%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.12,
+    "distributionYieldText": "2.12%",
+    "yield12M": 1.62,
+    "yield12MText": "1.62%"
    },
-   "distributionFrequency": "99 - Irregular",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
    "terGross": "0.70%",
    "terGrossValue": 0.7,
@@ -1073,7 +1137,11 @@
     "dividendYieldText": "2.77%",
     "secYield": 2.7,
     "secYieldText": "2.70%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.77,
+    "distributionYieldText": "2.77%",
+    "yield12M": 3.99,
+    "yield12MText": "3.99%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Equity Income",
@@ -1141,7 +1209,11 @@
     "dividendYieldText": "6.76%",
     "secYield": 3.49,
     "secYieldText": "3.49%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 6.76,
+    "distributionYieldText": "6.76%",
+    "yield12M": 5.78,
+    "yield12MText": "5.78%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Equity Income",
@@ -1209,7 +1281,11 @@
     "dividendYieldText": "6.24%",
     "secYield": 5.98,
     "secYieldText": "5.98%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 6.24,
+    "distributionYieldText": "6.24%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -1275,9 +1351,13 @@
     "siAnn": 7.65,
     "dividendYield": 1.62,
     "dividendYieldText": "1.62%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.66,
+    "secYieldText": "0.66%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.62,
+    "distributionYieldText": "1.62%",
+    "yield12M": 2.67,
+    "yield12MText": "2.67%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -1316,19 +1396,21 @@
    },
    "returns": {
     "monthEnd": {
-     "asOfDate": "—",
+     "asOfDate": "Aug 31 2026",
      "yr1": 7.59,
      "yr3": 7.02,
      "yr5": 1.97,
      "yr10": 1.95,
-     "sinceInception": 1.28
+     "sinceInception": 1.28,
+     "ytd": 2.83,
+     "ytdText": "2.83%"
     },
     "quarterEnd": {
      "asOfDate": "—"
     }
    },
    "metrics": {
-    "ytd": null,
+    "ytd": 2.83,
     "tr1y": 7.59,
     "tr3y": 22.58,
     "tr5y": 10.24,
@@ -1341,7 +1423,11 @@
     "dividendYieldText": "6.21%",
     "secYield": 6.33,
     "secYieldText": "6.33%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
+    "distributionYield": 6.21,
+    "distributionYieldText": "6.21%",
+    "yield12M": 6.27,
+    "yield12MText": "6.27%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -1407,9 +1493,13 @@
     "siAnn": 16.81,
     "dividendYield": 1.33,
     "dividendYieldText": "1.33%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.88,
+    "secYieldText": "0.88%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.33,
+    "distributionYieldText": "1.33%",
+    "yield12M": 0.98,
+    "yield12MText": "0.98%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -1475,7 +1565,11 @@
     "dividendYieldText": "—",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
    "distributionFrequency": "00 - Unknown",
    "providerCategory": "Equity Thematic",
@@ -1539,9 +1633,13 @@
     "siAnn": 9.37,
     "dividendYield": 0.18,
     "dividendYieldText": "0.18%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.56,
+    "secYieldText": "0.56%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.18,
+    "distributionYieldText": "0.18%",
+    "yield12M": 0.18,
+    "yield12MText": "0.18%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -1607,7 +1705,11 @@
     "dividendYieldText": "4.26%",
     "secYield": 4.21,
     "secYieldText": "4.21%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.26,
+    "distributionYieldText": "4.26%",
+    "yield12M": 4.6,
+    "yield12MText": "4.60%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Floating Rate",
@@ -1673,9 +1775,13 @@
     "siAnn": 5.41,
     "dividendYield": 0.66,
     "dividendYieldText": "0.66%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.41,
+    "secYieldText": "0.41%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.66,
+    "distributionYieldText": "0.66%",
+    "yield12M": 0.97,
+    "yield12MText": "0.97%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -1739,9 +1845,13 @@
     "siAnn": 3.63,
     "dividendYield": 2.13,
     "dividendYieldText": "2.13%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.26,
+    "secYieldText": "0.26%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.13,
+    "distributionYieldText": "2.13%",
+    "yield12M": 3.12,
+    "yield12MText": "3.12%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -1807,7 +1917,11 @@
     "dividendYieldText": "3.63%",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.63,
+    "distributionYieldText": "3.63%",
+    "yield12M": 2.72,
+    "yield12MText": "2.72%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -1871,9 +1985,13 @@
     "siAnn": -2.25,
     "dividendYield": 0.86,
     "dividendYieldText": "0.86%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.18,
+    "secYieldText": "0.18%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.86,
+    "distributionYieldText": "0.86%",
+    "yield12M": 0.81,
+    "yield12MText": "0.81%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -1906,7 +2024,7 @@
    "premiumDiscount": "0.05%",
    "premiumDiscountValue": 0.05,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.2247"
    },
@@ -1935,13 +2053,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 1.2,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 1,
+    "dividendYieldText": "1.00%",
+    "secYield": 2.58,
+    "secYieldText": "2.58%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1,
+    "distributionYieldText": "1.00%",
+    "yield12M": 0.61,
+    "yield12MText": "0.61%"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.40%",
    "terGrossValue": 0.4,
@@ -2005,7 +2127,11 @@
     "dividendYieldText": "4.63%",
     "secYield": 5.2,
     "secYieldText": "5.20%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.63,
+    "distributionYieldText": "4.63%",
+    "yield12M": 4.3,
+    "yield12MText": "4.30%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -2071,9 +2197,13 @@
     "siAnn": 6.01,
     "dividendYield": 1.79,
     "dividendYieldText": "1.79%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.64,
+    "secYieldText": "1.64%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.79,
+    "distributionYieldText": "1.79%",
+    "yield12M": 3.07,
+    "yield12MText": "3.07%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -2139,7 +2269,11 @@
     "dividendYieldText": "—",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
    "distributionFrequency": "00 - Unknown",
    "providerCategory": "Equity Thematic",
@@ -2205,7 +2339,11 @@
     "dividendYieldText": "4.52%",
     "secYield": 4.69,
     "secYieldText": "4.69%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.52,
+    "distributionYieldText": "4.52%",
+    "yield12M": 4.3,
+    "yield12MText": "4.30%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",
@@ -2273,7 +2411,11 @@
     "dividendYieldText": "7.03%",
     "secYield": 7.12,
     "secYieldText": "7.12%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 7.03,
+    "distributionYieldText": "7.03%",
+    "yield12M": 6.91,
+    "yield12MText": "6.91%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -2339,9 +2481,13 @@
     "siAnn": 22.7,
     "dividendYield": 0.32,
     "dividendYieldText": "0.32%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.63,
+    "secYieldText": "0.63%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.32,
+    "distributionYieldText": "0.32%",
+    "yield12M": 0.48,
+    "yield12MText": "0.48%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -2405,9 +2551,13 @@
     "siAnn": 3.98,
     "dividendYield": 3.03,
     "dividendYieldText": "3.03%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 3.41,
+    "secYieldText": "3.41%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.03,
+    "distributionYieldText": "3.03%",
+    "yield12M": 1.47,
+    "yield12MText": "1.47%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -2469,11 +2619,15 @@
     "cagr5y": 2.11,
     "cagr10y": 3.81,
     "siAnn": 4.28,
-    "dividendYield": 5.56,
-    "dividendYieldText": "5.56%",
+    "dividendYield": 5.57,
+    "dividendYieldText": "5.57%",
     "secYield": 5.99,
     "secYieldText": "5.99%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.57,
+    "distributionYieldText": "5.57%",
+    "yield12M": 5.7,
+    "yield12MText": "5.70%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "International Bond",
@@ -2508,7 +2662,7 @@
    "premiumDiscount": "-0.09%",
    "premiumDiscountValue": -0.09,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "—",
     "dividend": "—"
    },
@@ -2537,11 +2691,15 @@
     "siAnn": 1.99,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": -0.18,
+    "secYieldText": "-0.18%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
    "terGross": "0.75%",
    "terGrossValue": 0.75,
@@ -2603,9 +2761,13 @@
     "siAnn": 9.11,
     "dividendYield": 1.29,
     "dividendYieldText": "1.29%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.07,
+    "secYieldText": "1.07%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.29,
+    "distributionYieldText": "1.29%",
+    "yield12M": 1.89,
+    "yield12MText": "1.89%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -2671,7 +2833,11 @@
     "dividendYieldText": "3.20%",
     "secYield": 3.73,
     "secYieldText": "3.73%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.2,
+    "distributionYieldText": "3.20%",
+    "yield12M": 2.92,
+    "yield12MText": "2.92%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",
@@ -2706,7 +2872,7 @@
    "premiumDiscount": "-0.12%",
    "premiumDiscountValue": -0.12,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "—",
     "dividend": "—"
    },
@@ -2737,9 +2903,13 @@
     "dividendYieldText": "—",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "U.S. Equity",
    "terGross": "0.50%",
    "terGrossValue": 0.5,
@@ -2801,9 +2971,13 @@
     "siAnn": 11.72,
     "dividendYield": 0.81,
     "dividendYieldText": "0.81%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.5,
+    "secYieldText": "0.50%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.81,
+    "distributionYieldText": "0.81%",
+    "yield12M": 1.04,
+    "yield12MText": "1.04%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "U.S. Equity",
@@ -2869,7 +3043,11 @@
     "dividendYieldText": "5.24%",
     "secYield": 5.55,
     "secYieldText": "5.55%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.24,
+    "distributionYieldText": "5.24%",
+    "yield12M": 4.87,
+    "yield12MText": "4.87%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Corporate Bond",
@@ -2937,7 +3115,11 @@
     "dividendYieldText": "4.71%",
     "secYield": 5.4,
     "secYieldText": "5.40%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.71,
+    "distributionYieldText": "4.71%",
+    "yield12M": 4.47,
+    "yield12MText": "4.47%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Corporate Bond",
@@ -3001,11 +3183,15 @@
     "cagr5y": -1.41,
     "cagr10y": 1.12,
     "siAnn": 2.8,
-    "dividendYield": 4.11,
-    "dividendYieldText": "4.11%",
+    "dividendYield": 4.1,
+    "dividendYieldText": "4.10%",
     "secYield": 4.54,
     "secYieldText": "4.54%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.1,
+    "distributionYieldText": "4.10%",
+    "yield12M": 3.77,
+    "yield12MText": "3.77%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",
@@ -3071,9 +3257,13 @@
     "siAnn": 14.24,
     "dividendYield": 1.31,
     "dividendYieldText": "1.31%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1,
+    "secYieldText": "1.00%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.31,
+    "distributionYieldText": "1.31%",
+    "yield12M": 1.46,
+    "yield12MText": "1.46%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Moat Investing",
@@ -3137,9 +3327,13 @@
     "siAnn": 5.77,
     "dividendYield": 2.12,
     "dividendYieldText": "2.12%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.44,
+    "secYieldText": "1.44%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.12,
+    "distributionYieldText": "2.12%",
+    "yield12M": 2.82,
+    "yield12MText": "2.82%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -3205,7 +3399,11 @@
     "dividendYieldText": "18.84%",
     "secYield": 14.6,
     "secYieldText": "14.60%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 18.84,
+    "distributionYieldText": "18.84%",
+    "yield12M": 12.69,
+    "yield12MText": "12.69%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Equity Income",
@@ -3269,11 +3467,15 @@
     "cagr5y": 6.87,
     "cagr10y": null,
     "siAnn": 11.52,
-    "dividendYield": 2.4,
-    "dividendYieldText": "2.40%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 17.62,
+    "dividendYieldText": "17.62%",
+    "secYield": 1.41,
+    "secYieldText": "1.41%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 17.62,
+    "distributionYieldText": "17.62%",
+    "yield12M": 15.21,
+    "yield12MText": "15.21%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Moat Investing",
@@ -3337,9 +3539,13 @@
     "siAnn": 5.15,
     "dividendYield": 3.38,
     "dividendYieldText": "3.38%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.07,
+    "secYieldText": "2.07%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.38,
+    "distributionYieldText": "3.38%",
+    "yield12M": 3.01,
+    "yield12MText": "3.01%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Moat Investing",
@@ -3372,7 +3578,7 @@
    "premiumDiscount": "-0.02%",
    "premiumDiscountValue": -0.02,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.6333"
    },
@@ -3401,13 +3607,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 12.91,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 1.71,
+    "dividendYieldText": "1.71%",
+    "secYield": 1.88,
+    "secYieldText": "1.88%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.71,
+    "distributionYieldText": "1.71%",
+    "yield12M": 1.87,
+    "yield12MText": "1.87%"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Moat Investing",
    "terGross": "2.09%",
    "terGrossValue": 2.09,
@@ -3469,9 +3679,13 @@
     "siAnn": 3.25,
     "dividendYield": 2.92,
     "dividendYieldText": "2.92%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.5,
+    "secYieldText": "0.50%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.92,
+    "distributionYieldText": "2.92%",
+    "yield12M": 2.09,
+    "yield12MText": "2.09%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -3504,7 +3718,7 @@
    "premiumDiscount": "0.00%",
    "premiumDiscountValue": 0,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.2935"
    },
@@ -3533,13 +3747,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 33.57,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.92,
+    "dividendYieldText": "0.92%",
+    "secYield": -0.44,
+    "secYieldText": "-0.44%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.92,
+    "distributionYieldText": "0.92%",
+    "yield12M": 1.16,
+    "yield12MText": "1.16%"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.69%",
    "terGrossValue": 0.69,
@@ -3601,9 +3819,13 @@
     "siAnn": -2.29,
     "dividendYield": 1.22,
     "dividendYieldText": "1.22%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.22,
+    "secYieldText": "1.22%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.22,
+    "distributionYieldText": "1.22%",
+    "yield12M": 2.66,
+    "yield12MText": "2.66%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -3669,7 +3891,11 @@
     "dividendYieldText": "—",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
    "distributionFrequency": "00 - Unknown",
    "providerCategory": "Commodity",
@@ -3735,7 +3961,11 @@
     "dividendYieldText": "4.16%",
     "secYield": 6.37,
     "secYieldText": "6.37%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 4.16,
+    "distributionYieldText": "4.16%",
+    "yield12M": 6.26,
+    "yield12MText": "6.26%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Equity Income",
@@ -3801,9 +4031,13 @@
     "siAnn": 18.66,
     "dividendYield": 5.63,
     "dividendYieldText": "5.63%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.03,
+    "secYieldText": "2.03%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 5.63,
+    "distributionYieldText": "5.63%",
+    "yield12M": 13.63,
+    "yield12MText": "13.63%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Commodity",
@@ -3867,9 +4101,13 @@
     "siAnn": 10.31,
     "dividendYield": 2.25,
     "dividendYieldText": "2.25%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.87,
+    "secYieldText": "1.87%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.25,
+    "distributionYieldText": "2.25%",
+    "yield12M": 2.65,
+    "yield12MText": "2.65%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "Equity Thematic",
@@ -3933,9 +4171,13 @@
     "siAnn": 9.47,
     "dividendYield": 1.98,
     "dividendYieldText": "1.98%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.98,
+    "secYieldText": "1.98%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.98,
+    "distributionYieldText": "1.98%",
+    "yield12M": 2.87,
+    "yield12MText": "2.87%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -3968,7 +4210,7 @@
    "premiumDiscount": "0.05%",
    "premiumDiscountValue": 0.05,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "—",
     "dividend": "—"
    },
@@ -3997,11 +4239,15 @@
     "siAnn": -7.1,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.13,
+    "secYieldText": "0.13%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.50%",
    "terGrossValue": 0.5,
@@ -4063,9 +4309,13 @@
     "siAnn": -4.13,
     "dividendYield": 1.89,
     "dividendYieldText": "1.89%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.51,
+    "secYieldText": "0.51%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.89,
+    "distributionYieldText": "1.89%",
+    "yield12M": 1.92,
+    "yield12MText": "1.92%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -4075,6 +4325,146 @@
    "holdings": 38,
    "history": 4347,
    "totalNetAssets": 1970000000
+  },
+  {
+   "ticker": "RSX",
+   "name": "VanEck Russia ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/russia-etf-rsx/",
+   "dataFile": "./funds/RSX/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.83%",
+   "terValue": 0.83,
+   "nav": "$0.34",
+   "navValue": 0.34,
+   "aum": "$32.88M",
+   "aumValue": 32880000,
+   "asOfDate": "Sep 18 2026",
+   "inceptionDate": "Apr 24 2007",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "Annually",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "Sep 18 2026",
+     "ytd": 2.21,
+     "ytdText": "2.21%",
+     "yr1": 3.04,
+     "yr3": 119.73,
+     "yr5": -21.91,
+     "yr10": -5.47,
+     "sinceInception": -5.73
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": 2.21,
+    "tr1y": 3.04,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": 119.73,
+    "cagr5y": -21.91,
+    "cagr10y": -5.47,
+    "siAnn": -5.73,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": 3.53,
+    "yield12MText": "3.53%",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published"
+   },
+   "distributionFrequency": "12 - Annually",
+   "providerCategory": "Country/Regional",
+   "terGross": "1.33%",
+   "terGrossValue": 1.33,
+   "netAssetsAsOf": "Sep 18 2026",
+   "holdings": 0,
+   "history": 0,
+   "totalNetAssets": 32880000
+  },
+  {
+   "ticker": "RSXJ",
+   "name": "VanEck Russia Small-Cap ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/",
+   "dataFile": "./funds/RSXJ/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.84%",
+   "terValue": 0.84,
+   "nav": "$0.39",
+   "navValue": 0.39,
+   "aum": "$348590.00",
+   "aumValue": 348590,
+   "asOfDate": "Sep 18 2026",
+   "inceptionDate": "Apr 13 2011",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "Annually",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "Sep 18 2026",
+     "ytd": 2.41,
+     "ytdText": "2.41%",
+     "yr1": 213.06,
+     "yr3": 181.4,
+     "yr5": -22.25,
+     "yr10": -7.78,
+     "sinceInception": -10.15
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": 2.41,
+    "tr1y": 213.06,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": 181.4,
+    "cagr5y": -22.25,
+    "cagr10y": -7.78,
+    "siAnn": -10.15,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": 213.11,
+    "yield12MText": "213.11%",
+    "secYield": null,
+    "secYieldText": "—",
+    "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published"
+   },
+   "distributionFrequency": "12 - Annually",
+   "providerCategory": "Country/Regional",
+   "terGross": "9.50%",
+   "terGrossValue": 9.5,
+   "netAssetsAsOf": "Sep 18 2026",
+   "holdings": 0,
+   "history": 0,
+   "totalNetAssets": 348590
   },
   {
    "ticker": "RTH",
@@ -4129,9 +4519,13 @@
     "siAnn": 15.44,
     "dividendYield": 0.96,
     "dividendYieldText": "0.96%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.75,
+    "secYieldText": "0.75%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.96,
+    "distributionYieldText": "0.96%",
+    "yield12M": 0.96,
+    "yield12MText": "0.96%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -4197,7 +4591,11 @@
     "dividendYieldText": "3.67%",
     "secYield": 3.96,
     "secYieldText": "3.96%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 3.67,
+    "distributionYieldText": "3.67%",
+    "yield12M": 3.57,
+    "yield12MText": "3.57%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",
@@ -4263,9 +4661,13 @@
     "siAnn": 8.11,
     "dividendYield": 1.24,
     "dividendYieldText": "1.24%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.54,
+    "secYieldText": "2.54%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.24,
+    "distributionYieldText": "1.24%",
+    "yield12M": 2.25,
+    "yield12MText": "2.25%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -4331,7 +4733,11 @@
     "dividendYieldText": "2.91%",
     "secYield": 3.04,
     "secYieldText": "3.04%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 2.91,
+    "distributionYieldText": "2.91%",
+    "yield12M": 2.75,
+    "yield12MText": "2.75%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",
@@ -4397,9 +4803,13 @@
     "siAnn": 29.3,
     "dividendYield": 0.19,
     "dividendYieldText": "0.19%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.17,
+    "secYieldText": "0.17%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.19,
+    "distributionYieldText": "0.19%",
+    "yield12M": 0.55,
+    "yield12MText": "0.55%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
@@ -4432,7 +4842,7 @@
    "premiumDiscount": "0.34%",
    "premiumDiscountValue": 0.34,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "—",
     "dividend": "—"
    },
@@ -4461,11 +4871,15 @@
     "siAnn": -19.26,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": -0.42,
+    "secYieldText": "-0.42%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.65%",
    "terGrossValue": 0.65,
@@ -4496,7 +4910,7 @@
    "premiumDiscount": "-0.02%",
    "premiumDiscountValue": -0.02,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "Dec 22 2025",
     "dividend": "$0.0090"
    },
@@ -4525,13 +4939,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 48.12,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.02,
+    "dividendYieldText": "0.02%",
+    "secYield": -0.03,
+    "secYieldText": "-0.03%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.02,
+    "distributionYieldText": "0.02%",
+    "yield12M": 0.04,
+    "yield12MText": "0.04%"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.35%",
    "terGrossValue": 0.35,
@@ -4593,9 +5011,13 @@
     "siAnn": 1.81,
     "dividendYield": 1.49,
     "dividendYieldText": "1.49%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.59,
+    "secYieldText": "0.59%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.49,
+    "distributionYieldText": "1.49%",
+    "yield12M": 1.7,
+    "yield12MText": "1.70%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Natural Resources",
@@ -4659,9 +5081,13 @@
     "siAnn": 13.03,
     "dividendYield": 1.29,
     "dividendYieldText": "1.29%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.12,
+    "secYieldText": "1.12%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.29,
+    "distributionYieldText": "1.29%",
+    "yield12M": 1.42,
+    "yield12MText": "1.42%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Moat Investing",
@@ -4694,7 +5120,7 @@
    "premiumDiscount": "-0.02%",
    "premiumDiscountValue": -0.02,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "Jul 01 2026",
     "dividend": "$0.0574"
    },
@@ -4721,13 +5147,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 0.71,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.9,
+    "dividendYieldText": "0.90%",
+    "secYield": 0.86,
+    "secYieldText": "0.86%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.9,
+    "distributionYieldText": "0.90%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.14%",
    "terGrossValue": 0.14,
@@ -4789,9 +5219,13 @@
     "siAnn": 5.82,
     "dividendYield": 0.58,
     "dividendYieldText": "0.58%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.51,
+    "secYieldText": "0.51%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.58,
+    "distributionYieldText": "0.58%",
+    "yield12M": 0.48,
+    "yield12MText": "0.48%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
@@ -4824,7 +5258,7 @@
    "premiumDiscount": "-0.01%",
    "premiumDiscountValue": -0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "Jul 01 2026",
     "dividend": "$0.1060"
    },
@@ -4851,13 +5285,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 17.11,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 1.46,
+    "dividendYieldText": "1.46%",
+    "secYield": 1.35,
+    "secYieldText": "1.35%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.46,
+    "distributionYieldText": "1.46%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.10%",
    "terGrossValue": 0.1,
@@ -4888,7 +5326,7 @@
    "premiumDiscount": "-0.03%",
    "premiumDiscountValue": -0.03,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "Jul 01 2026",
     "dividend": "$0.0847"
    },
@@ -4915,13 +5353,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 15.82,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 1.15,
+    "dividendYieldText": "1.15%",
+    "secYield": 1.47,
+    "secYieldText": "1.47%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 1.15,
+    "distributionYieldText": "1.15%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.10%",
    "terGrossValue": 0.1,
@@ -4952,7 +5394,7 @@
    "premiumDiscount": "-0.01%",
    "premiumDiscountValue": -0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -4981,11 +5423,15 @@
     "siAnn": 0.75,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.05,
+    "secYieldText": "1.05%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.10%",
    "terGrossValue": 0.1,
@@ -5016,7 +5462,7 @@
    "premiumDiscount": "0.00%",
    "premiumDiscountValue": 0,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5045,11 +5491,15 @@
     "siAnn": 2.86,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.51,
+    "secYieldText": "1.51%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.15%",
    "terGrossValue": 0.15,
@@ -5080,7 +5530,7 @@
    "premiumDiscount": "-0.04%",
    "premiumDiscountValue": -0.04,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5109,11 +5559,15 @@
     "siAnn": 16.88,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.49,
+    "secYieldText": "2.49%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.16%",
    "terGrossValue": 0.16,
@@ -5144,7 +5598,7 @@
    "premiumDiscount": "-0.01%",
    "premiumDiscountValue": -0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5173,11 +5627,15 @@
     "siAnn": 3.28,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.34,
+    "secYieldText": "2.34%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.14%",
    "terGrossValue": 0.14,
@@ -5208,7 +5666,7 @@
    "premiumDiscount": "-0.01%",
    "premiumDiscountValue": -0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5237,11 +5695,15 @@
     "siAnn": -1.5,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 3.18,
+    "secYieldText": "3.18%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.17%",
    "terGrossValue": 0.17,
@@ -5303,9 +5765,13 @@
     "siAnn": 32.04,
     "dividendYield": 0.41,
     "dividendYieldText": "0.41%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 0.33,
+    "secYieldText": "0.33%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.41,
+    "distributionYieldText": "0.41%",
+    "yield12M": 0.45,
+    "yield12MText": "0.45%"
    },
    "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
@@ -5338,7 +5804,7 @@
    "premiumDiscount": "-0.01%",
    "premiumDiscountValue": -0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Quarterly",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5367,11 +5833,15 @@
     "siAnn": -7.63,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 2.9,
+    "secYieldText": "2.90%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "04 - Quarterly",
    "providerCategory": "TruSectors",
    "terGross": "0.10%",
    "terGrossValue": 0.1,
@@ -5402,7 +5872,7 @@
    "premiumDiscount": "0.01%",
    "premiumDiscountValue": 0.01,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Other",
     "exDate": "Jul 07 2026",
     "dividend": "$0.1700"
    },
@@ -5431,13 +5901,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": -39.13,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.98,
+    "dividendYieldText": "0.98%",
+    "secYield": 3.96,
+    "secYieldText": "3.96%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.98,
+    "distributionYieldText": "0.98%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "Other",
    "providerCategory": "Equity Thematic",
    "terGross": "0.20%",
    "terGrossValue": 0.2,
@@ -5474,12 +5948,78 @@
    },
    "returns": {
     "monthEnd": {
-     "asOfDate": "—",
+     "asOfDate": "Aug 31 2026",
      "yr1": null,
      "yr3": null,
      "yr5": null,
      "yr10": null,
-     "sinceInception": 7.59
+     "sinceInception": 7.59,
+     "ytd": 7.59,
+     "ytdText": "7.59%"
+    },
+    "quarterEnd": {
+     "asOfDate": "—"
+    }
+   },
+   "metrics": {
+    "ytd": 7.59,
+    "tr1y": null,
+    "tr3y": null,
+    "tr5y": null,
+    "tr10y": null,
+    "cagr3y": null,
+    "cagr5y": null,
+    "cagr10y": null,
+    "siAnn": 7.59,
+    "dividendYield": null,
+    "dividendYieldText": "—",
+    "secYield": -0.37,
+    "secYieldText": "-0.37%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + Investment Finder month-end YTD (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
+   },
+   "distributionFrequency": "00 - Unknown",
+   "providerCategory": "Equity Thematic",
+   "terGross": "0.39%",
+   "terGrossValue": 0.39,
+   "netAssetsAsOf": "Sep 18 2026",
+   "holdings": 2,
+   "history": 135,
+   "totalNetAssets": 2680000
+  },
+  {
+   "ticker": "VEEM",
+   "name": "VanEck MSCI EM Analyst Sentiment ETF",
+   "category": "Equity",
+   "fundPage": "https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/",
+   "dataFile": "./funds/VEEM/meta.json",
+   "cusip": null,
+   "isin": null,
+   "ter": "0.30%",
+   "terValue": 0.3,
+   "nav": "$24.62",
+   "navValue": 24.62,
+   "aum": "$3.69M",
+   "aumValue": 3690000,
+   "asOfDate": "Sep 18 2026",
+   "inceptionDate": "Sep 09 2026",
+   "exchange": "—",
+   "closePrice": "—",
+   "closePriceValue": null,
+   "premiumDiscount": "—",
+   "premiumDiscountValue": null,
+   "distributions": {
+    "frequency": "Semiannually",
+    "exDate": "—",
+    "dividend": "—"
+   },
+   "returns": {
+    "monthEnd": {
+     "asOfDate": "—",
+     "sinceInception": -1.48
     },
     "quarterEnd": {
      "asOfDate": "—"
@@ -5494,21 +6034,25 @@
     "cagr3y": null,
     "cagr5y": null,
     "cagr10y": null,
-    "siAnn": 7.59,
+    "siAnn": -1.48,
     "dividendYield": null,
     "dividendYieldText": "—",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—",
     "secYield": null,
     "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck fund-page performance since inception"
    },
-   "distributionFrequency": "00 - Unknown",
-   "providerCategory": "Equity Thematic",
-   "terGross": "0.39%",
-   "terGrossValue": 0.39,
+   "distributionFrequency": "06 - Semi-annually",
+   "providerCategory": "Country/Regional",
+   "terGross": "0.30%",
+   "terGrossValue": 0.3,
    "netAssetsAsOf": "Sep 18 2026",
-   "holdings": 2,
-   "history": 135,
-   "totalNetAssets": 2680000
+   "holdings": 0,
+   "history": 0,
+   "totalNetAssets": 3690000
   },
   {
    "ticker": "VEFA",
@@ -5532,7 +6076,7 @@
    "premiumDiscount": "0.46%",
    "premiumDiscountValue": 0.46,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Semiannually",
     "exDate": "Jul 01 2026",
     "dividend": "$0.6235"
    },
@@ -5559,13 +6103,17 @@
     "cagr5y": null,
     "cagr10y": null,
     "siAnn": 16.27,
-    "dividendYield": null,
-    "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "dividendYield": 0.76,
+    "dividendYieldText": "0.76%",
+    "secYield": 1.81,
+    "secYieldText": "1.81%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.76,
+    "distributionYieldText": "0.76%",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "06 - Semi-annually",
    "providerCategory": "Country/Regional",
    "terGross": "0.30%",
    "terGrossValue": 0.3,
@@ -5627,9 +6175,13 @@
     "siAnn": -0.36,
     "dividendYield": 0.21,
     "dividendYieldText": "0.21%",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 1.29,
+    "secYieldText": "1.29%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 0.21,
+    "distributionYieldText": "0.21%",
+    "yield12M": 0.2,
+    "yield12MText": "0.20%"
    },
    "distributionFrequency": "12 - Annually",
    "providerCategory": "Country/Regional",
@@ -5662,7 +6214,7 @@
    "premiumDiscount": "0.11%",
    "premiumDiscountValue": 0.11,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Other",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5693,11 +6245,15 @@
     "siAnn": -44.11,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": 3.59,
+    "secYieldText": "3.59%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "Other",
    "providerCategory": "Equity Thematic",
    "terGross": "0.30%",
    "terGrossValue": 0.3,
@@ -5728,7 +6284,7 @@
    "premiumDiscount": "0.00%",
    "premiumDiscountValue": 0,
    "distributions": {
-    "frequency": "Unknown",
+    "frequency": "Annually",
     "exDate": "—",
     "dividend": "—"
    },
@@ -5757,11 +6313,15 @@
     "siAnn": -23.93,
     "dividendYield": null,
     "dividendYieldText": "—",
-    "secYield": null,
-    "secYieldText": "—",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "secYield": -0.06,
+    "secYieldText": "-0.06%",
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": null,
+    "distributionYieldText": "—",
+    "yield12M": null,
+    "yield12MText": "—"
    },
-   "distributionFrequency": "00 - Unknown",
+   "distributionFrequency": "12 - Annually",
    "providerCategory": "Equity Thematic",
    "terGross": "0.50%",
    "terGrossValue": 0.5,
@@ -5825,7 +6385,11 @@
     "dividendYieldText": "6.32%",
     "secYield": 6.34,
     "secYieldText": "6.34%",
-    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+    "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+    "distributionYield": 6.32,
+    "distributionYieldText": "6.32%",
+    "yield12M": 5.55,
+    "yield12MText": "5.55%"
    },
    "distributionFrequency": "01 - Monthly",
    "providerCategory": "Municipal Bond",

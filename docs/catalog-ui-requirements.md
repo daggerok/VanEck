@@ -95,7 +95,7 @@ text cannot bleed through: `#ffffff` / `#f8fafc` in light mode, `#172033` base,
 ### Why Ticker is 6rem, not 5rem
 
 The inherited template pins `Ticker` at `5rem`. This feed keeps **6rem**:
-**65 of the 88** tickers are 4 characters long (`ANGL`, `CLOB`, `JULV`, `VAVX`,
+**67 of the 91** tickers are 4 characters long (`ANGL`, `CLOB`, `JULV`, `VAVX`,
 `VBNB`, …), and 4 × 8.4px = 33.6px plus `px-4` padding (32px) is already 65.6px
 before the header's sort arrow (≈16.8px) is added. At `5rem` (80px) the header
 would clip.

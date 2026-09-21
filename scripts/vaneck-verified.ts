@@ -40,6 +40,15 @@ export type FundPageSnapshot = {
   netExpenseRatio: number | null;
   totalExpenseRatio: number | null;
   inceptionDate: string | null;
+  /**
+   * Days-old funds (VEEM, launched 09/09/2026) show a "Performance since
+   * inception" stat instead of a YTD figure. Never mislabelled as YTD.
+   */
+  siReturn?: number | null;
+  siAsOf?: string | null;
+  /** Benchmark index from the page Overview copy, e.g. GDX -> MVGDXTR. */
+  indexTicker?: string | null;
+  indexName?: string | null;
 };
 
 export const FUND_PAGE_SNAPSHOTS: Record<string, FundPageSnapshot> = {
@@ -57,6 +66,8 @@ export const FUND_PAGE_SNAPSHOTS: Record<string, FundPageSnapshot> = {
     netExpenseRatio: 0.51,
     totalExpenseRatio: null,
     inceptionDate: '05/16/2006',
+    indexTicker: 'MVGDXTR',
+    indexName: 'MarketVector Global Gold Miners Index',
   },
   SMH: {
     fundPage: 'https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/',
@@ -72,6 +83,28 @@ export const FUND_PAGE_SNAPSHOTS: Record<string, FundPageSnapshot> = {
     netExpenseRatio: null,
     totalExpenseRatio: 0.35,
     inceptionDate: '12/20/2011',
+  },
+  // Launched 09/09/2026: no YTD stat exists, only "Performance since
+  // inception" (-1.48% as of 09/18/2026). The updater maps siReturn onto
+  // metrics.siAnn and leaves every tenor null.
+  VEEM: {
+    fundPage: 'https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/',
+    fundName: 'VanEck MSCI EM Analyst Sentiment ETF',
+    breadcrumb: 'Equity ETFs',
+    nav: 24.62,
+    navAsOf: '09/18/2026',
+    ytdReturn: null,
+    ytdAsOf: null,
+    siReturn: -1.48,
+    siAsOf: '09/18/2026',
+    totalNetAssets: 3690000,
+    totalNetAssetsAsOf: '09/18/2026',
+    grossExpenseRatio: null,
+    netExpenseRatio: null,
+    totalExpenseRatio: 0.3,
+    inceptionDate: '09/09/2026',
+    indexTicker: 'NU763973',
+    indexName: 'MSCI Emerging Markets Analyst Sentiment Select Index',
   },
 };
 

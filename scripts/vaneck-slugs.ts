@@ -85,6 +85,9 @@ export const VANECK_SLUGS: Record<string, string> = {
   ISRA: 'israel-etf-isra',
   VEFA: 'msci-eafe-analyst-sentiment-etf-vefa',
   VNM: 'vietnam-etf-vnm',
+  RSX: 'russia-etf-rsx',
+  RSXJ: 'russia-small-cap-etf-rsxj',
+  VEEM: 'msci-em-analyst-sentiment-etf-veem',
 
   // Corporate Bond (3)
   ANGL: 'angel-high-yield-bond-etf-angl',

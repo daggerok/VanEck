@@ -29,10 +29,13 @@ The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/updat
 
 | Block | Source | Notes |
 | --- | --- | --- |
-| Fund universe, name, ticker, gross/net expense ratio, AUM, category | [`vaneck-etfs-fees.pdf`](https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf) ("VanEck ETF Guide") | 88 ETFs |
+| Fund universe, name, ticker, gross/net expense ratio, AUM, category | [`vaneck-etfs-fees.pdf`](https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf) ("VanEck ETF Guide") | 91 ETFs: the guide's 88 plus RSX/RSXJ (kept in the finder while in liquidation) and VEEM (launched 09/09/2026, after the guide's as-of date) |
 | NAV, YTD, Total Net Assets, Expense Ratio, Inception Date, 30-Day SEC Yield*, Exchange*, CUSIP*, ISIN*, fund name, breadcrumb | `https://www.vaneck.com/us/en/investments/<slug>/` | Canonical slugs come from `scripts/vaneck-slugs.ts`, harvested from the [Investment Finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/etfs/?InvType=etf&tab=ov); `etf-<ticker>` is a greedy 302 for unknown tickers, so the slug table is authoritative. `*` only where VanEck server-renders the field. |
 | Holdings (daily) | `…/investments/<slug>/downloads/holdings/` | A real `.xlsx` (OOXML) workbook, not HTML — see below |
 | NAV / premium-discount history | `…/investments/<slug>/downloads/fundhistoprices/` | Also `.xlsx`; descending, inception → present |
+| Declared distribution frequency, 30-Day SEC / Distribution / 12M yields, YTD + tenor fallbacks | Verified Investment Finder transcription in `scripts/vaneck-finder.ts` (tabs are client-rendered, read 2026-09-20) | Official VanEck figures; the updater prefers them over anything inferred |
+| Listing exchange | Nasdaq Trader symbol directory, Yahoo Finance chart `meta.exchangeName` as fallback | Neither is in the VanEck page payload, so both resolve at refresh time |
+| Fund documents (fact sheet, prospectuses, SAI, reports) | Deterministic VanEck URL schemes (`vaneckFundDocuments()`) | Verified against the finder `?tab=lit` Resources panels |
 | Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=1`) |
 | Performance (TR/CAGR/SI Ann.) | VanEck's Average Annual Total Returns block (JSON) | See *Performance and distributions* below |
 | Distribution history | VanEck's own Distribution History block (JSON) | Yahoo Finance chart feed is the fallback for the handful of fund pages without this block |
@@ -59,15 +62,17 @@ GET /Main/PerformanceHistoryBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<T
 GET /Main/NavDistributionsBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<TICKER>&…
 ```
 
-`parseVanEckFundPage()` reads each block's `blockid`/`pageid` straight off the page's own `<ve-performancehistoryblock>` / `<ve-navdistributionsblock>` tags (they differ per fund and are never guessed), then `fetchVanEckPerformance()` / `fetchVanEckDistributions()` call the endpoint directly. `PerformanceHistoryBlock` returns both a NAV-basis and a Market-Price-basis row; this feed uses the NAV row, matching every other return figure. A too-young fund's longer tenors come back JSON `null` from VanEck itself (verified against ETHV, a 2024-inception fund) — never invented as 0 or backfilled.
+`parseVanEckFundPage()` reads each block's `blockid`/`pageid` straight off the page's own `<ve-performancehistoryblock>` / `<ve-navdistributionsblock>` tags (they differ per fund and are never guessed), then `fetchVanEckPerformance()` / `fetchVanEckDistributions()` call the endpoint directly. `PerformanceHistoryBlock` returns both a NAV-basis and a Market-Price-basis row; this feed uses the NAV row, matching every other return figure. Where the block publishes a quarter-end row it is kept as `returns.quarterEnd`. A too-young fund's longer tenors come back JSON `null` from VanEck itself (verified against ETHV, a 2024-inception fund) — never invented as 0 or backfilled.
 
 ### Known value limitations
 
 | Metric | Status | Reason |
 | --- | --- | --- |
 | **TR 1Y / 3Y / 5Y / 10Y, CAGR 3Y / 5Y / 10Y, SI Ann.** | published from VanEck's own Average Annual Total Returns block; `—` only for a tenor the fund hasn't existed long enough to report | See *Performance and distributions* above |
-| **SEC Yield (30-day)** | published only where VanEck server-renders it in the fund header (a subset of income funds) | Otherwise `null` → `—` |
-| **Dividend Yield** | indicated yield (latest distribution x payments per year / NAV); `—` only if the fund has never distributed | Derived from VanEck's own Distribution History, Yahoo Finance as a fallback |
+| **SEC Yield (30-day)** | official Investment Finder value first, else the server-rendered fund header stat | `—` only where VanEck publishes none (8 funds: non-distributing, pre-income or liquidating) |
+| **Dividend Yield** | official Investment Finder Distribution Yield where published, else the indicated yield — and only when the latest payout is recent (≤400 days) | Stale payouts (e.g. BUZZ Dec-2024) no longer annualise into a phantom yield; `—` where neither source yields a figure |
+| **Distribution Yield / 12M Yield** | official Investment Finder figures, published verbatim | The finder's impossible EMBX 12M cell (`-777.30%`, a VanEck site bug) is stored as `null`, never copied |
+| **RSX / RSXJ tenors** | annualised 1/3/5/10Y + SI from the Investment Finder month-end table, flagged as liquidation figures | Cumulative tenors were never published and stay `null`; both funds suspended since 2022 |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
 ### Update controls
@@ -106,7 +111,7 @@ Verification before every publish: `bun install --frozen-lockfile`, `bun test`, 
 
 | Бренд | Фонды | Где брать данные |
 | --- | --- | --- |
-| **VanEck** (88) | GDX, SMH, MOAT, ESPO, ANGL, OIH, REMX | [vaneck.com ETF finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) — [daggerok/VanEck](https://github.com/daggerok/VanEck) |
+| **VanEck** (91) | GDX, SMH, MOAT, ESPO, ANGL, OIH, REMX | [vaneck.com ETF finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) — [daggerok/VanEck](https://github.com/daggerok/VanEck) |
 | **JPMorgan** (78) | JEPI, JEPQ, JPST, BBJP, JIRE, JGLO | [am.jpmorgan.com ETF explorer](https://am.jpmorgan.com/us/en/asset-management/adv/products/fund-explorer/etf) — [daggerok/JPMorgan](https://github.com/daggerok/JPMorgan) |
 | **Schwab** (30+) | SCHB, SCHX, SCHG, SCHV, SCHD, SCHM | [schwabassetmanagement.com](https://www.schwabassetmanagement.com/products) — [daggerok/Schwab](https://github.com/daggerok/Schwab) |
 | **Invesco** (245) | QQQM, RSP, SPLV, SPHD, SPMO, QQQ | [invesco.com ETFs](https://www.invesco.com/us/en/financial-products/etfs.html) — [daggerok/Invesco](https://github.com/daggerok/Invesco) |

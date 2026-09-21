@@ -32,8 +32,8 @@
  },
  "premiumDiscountValue": -0.02,
  "distributions": {
-  "frequency": "Unknown",
-  "paymentsPerYear": null,
+  "frequency": "Annually",
+  "paymentsPerYear": 1,
   "headers": [
    "Ex-Date",
    "Payable Date",
@@ -65,7 +65,9 @@
    "yr10": null,
    "sinceInception": 12.91
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 2.51,
@@ -77,13 +79,17 @@
   "cagr5y": null,
   "cagr10y": null,
   "siAnn": 12.91,
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "secYield": null,
-  "secYieldText": "—",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "dividendYield": 1.71,
+  "dividendYieldText": "1.71%",
+  "secYield": 1.88,
+  "secYieldText": "1.88%",
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 1.71,
+  "distributionYieldText": "1.71%",
+  "yield12M": 1.87,
+  "yield12MText": "1.87%"
  },
- "distributionFrequency": "00 - Unknown",
+ "distributionFrequency": "12 - Annually",
  "providerCategory": "Moat Investing",
  "terGross": "2.09%",
  "terGrossValue": 2.09,
@@ -119,12 +125,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/MVAL",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-wide-moat-value-etf-mval/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-wide-moat-value-etf-mval/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-wide-moat-value-etf-mval/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.50%",
@@ -138,13 +148,27 @@
   "asOfDate": "Sep 18 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYield": 1.71,
+  "dividendYieldText": "1.71%",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 1.71,
+  "indicatedYieldText": "1.71%",
+  "distributionYield": 1.71,
+  "distributionYieldText": "1.71%",
+  "yield12M": 1.87,
+  "yield12MText": "1.87%",
   "distributionRate": null,
-  "secYield": null,
-  "secYieldText": "—",
-  "secYieldKind": "not published on the official VanEck fund page for this fund"
+  "secYield": 1.88,
+  "secYieldText": "1.88%",
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/morningstar-wide-moat-value-etf-mval-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MVAL/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/MVAL/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/MVAL/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/MVAL/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/MVAL/index.php?ctype=semi-annual"
+ }
 }

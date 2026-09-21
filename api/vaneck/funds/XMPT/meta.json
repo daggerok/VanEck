@@ -960,7 +960,9 @@
    "yr10": 1.69,
    "sinceInception": 4.03
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": -3.92,
@@ -976,7 +978,11 @@
   "dividendYieldText": "6.32%",
   "secYield": 6.34,
   "secYieldText": "6.34%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 6.32,
+  "distributionYieldText": "6.32%",
+  "yield12M": 5.55,
+  "yield12MText": "5.55%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1019,12 +1025,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/XMPT",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "3.40%",
@@ -1040,11 +1050,25 @@
  "yields": {
   "dividendYield": 6.32,
   "dividendYieldText": "6.32%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 6.32,
+  "indicatedYieldText": "6.32%",
+  "distributionYield": 6.32,
+  "distributionYieldText": "6.32%",
+  "yield12M": 5.55,
+  "yield12MText": "5.55%",
   "distributionRate": null,
   "secYield": 6.34,
   "secYieldText": "6.34%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/XMPT/index.php?ctype=semi-annual"
+ }
 }

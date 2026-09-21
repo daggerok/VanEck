@@ -1165,7 +1165,9 @@
    "yr10": 1.47,
    "sinceInception": 1.99
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 0.27,
@@ -1181,7 +1183,11 @@
   "dividendYieldText": "2.91%",
   "secYield": 3.04,
   "secYieldText": "3.04%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 2.91,
+  "distributionYieldText": "2.91%",
+  "yield12M": 2.75,
+  "yield12MText": "2.75%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Municipal Bond",
@@ -1227,12 +1233,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/SMB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/short-muni-etf-smb/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/short-muni-etf-smb/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/short-muni-etf-smb/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.07%",
@@ -1248,11 +1258,25 @@
  "yields": {
   "dividendYield": 2.91,
   "dividendYieldText": "2.91%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 2.91,
+  "indicatedYieldText": "2.91%",
+  "distributionYield": 2.91,
+  "distributionYieldText": "2.91%",
+  "yield12M": 2.75,
+  "yield12MText": "2.75%",
   "distributionRate": null,
   "secYield": 3.04,
   "secYieldText": "3.04%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/short-muni-etf-smb-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/SMB/index.php?ctype=semi-annual"
+ }
 }

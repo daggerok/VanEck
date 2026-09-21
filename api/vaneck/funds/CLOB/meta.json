@@ -170,7 +170,9 @@
    "yr10": null,
    "sinceInception": 6.72
   },
-  "quarterEnd": {}
+  "quarterEnd": {
+   "asOfDate": "—"
+  }
  },
  "metrics": {
   "ytd": 3.35,
@@ -186,7 +188,11 @@
   "dividendYieldText": "5.94%",
   "secYield": 5.72,
   "secYieldText": "5.72%",
-  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)"
+  "returnsBasis": "official VanEck Average Annual Total Returns (NAV)",
+  "distributionYield": 5.94,
+  "distributionYieldText": "5.94%",
+  "yield12M": 6.25,
+  "yield12MText": "6.25%"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Floating Rate",
@@ -226,12 +232,16 @@
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "yahooChart": "https://query1.finance.yahoo.com/v8/finance/chart/CLOB",
   "holdingsSource": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/holdings/)",
-  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/)"
+  "historySource": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob/downloads/fundhistoprices/)",
+  "exchangeSource": "—",
+  "finderVerifiedAt": "2026-09-20T00:00:00.000Z"
  },
  "identifiers": {
   "cusip": null,
   "isin": null,
-  "figi": "published per holding, not per fund"
+  "figi": "published per holding, not per fund",
+  "indexTicker": null,
+  "indexName": null
  },
  "expenseRatio": {
   "display": "0.45%",
@@ -247,11 +257,25 @@
  "yields": {
   "dividendYield": 5.94,
   "dividendYieldText": "5.94%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
+  "indicatedYield": 5.94,
+  "indicatedYieldText": "5.94%",
+  "distributionYield": 5.94,
+  "distributionYieldText": "5.94%",
+  "yield12M": 6.25,
+  "yield12MText": "6.25%",
   "distributionRate": null,
   "secYield": 5.72,
   "secYieldText": "5.72%",
-  "secYieldKind": "official VanEck fund page, server-rendered for this fund"
+  "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
  },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ "snapshotReadAt": "2026-09-19T00:00:00.000Z",
+ "documents": {
+  "factSheet": "https://www.vaneck.com/us/en/investments/aa-bb-clo-etf-clob-fact-sheet.pdf",
+  "summaryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=summary",
+  "statutoryProspectus": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=prospectus",
+  "sai": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=sai",
+  "annualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=annual",
+  "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOB/index.php?ctype=semi-annual"
+ }
 }
