@@ -53,10 +53,6 @@ type IndexFund = {
     siAnn?: number | null;
     dividendYield?: number | null;
     dividendYieldText?: string | null;
-    distributionYield?: number | null;
-    distributionYieldText?: string | null;
-    yield12M?: number | null;
-    yield12MText?: string | null;
     secYield?: number | null;
     secYieldText?: string | null;
   };
@@ -93,8 +89,6 @@ type FundRow = TableRow & {
   cagr5y?: number | null;
   cagr10y?: number | null;
   dividendYield?: number | null;
-  distributionYield?: number | null;
-  yield12M?: number | null;
   dividendFrequency: string;
   secYield?: number | null;
   returnAsOf: string;
@@ -160,8 +154,6 @@ const COLUMN_TOOLTIPS: Record<string, string> = {
   Type: 'Category — the asset-class part of the vaneck.com grouping (see the Category column). Same source as the category tabs.',
   Expense: 'Expense Ratio — Total annual fund operating expenses as a % of assets, Net figure where VanEck publishes Gross and Net separately.',
   'Dividend Yield': 'Dividend Yield — the official VanEck Investment Finder Distribution Yield where published, else the indicated yield (latest distribution per share x payments per year / NAV, only when the latest payout is recent). "—" where VanEck prints no yield and no recent distribution can be annualised.',
-  'Dist Yield': 'Distribution Yield — trailing 12-month distributions / NAV, as published by the official VanEck Investment Finder (Prices & Yields tab). "—" where VanEck prints no value.',
-  '12M Yield': '12 Month Yield — distributions paid over the last 12 months / NAV, as published by the official VanEck Investment Finder. "—" where VanEck prints no value.',
   'SEC Yield': 'SEC Yield (30-Day) — the official VanEck Investment Finder value first, else the server-rendered fund page header stat (mainly income/fixed-income funds); "—" where VanEck publishes none for this fund.',
   'YTD Return': 'YTD Return — the year-to-date return published in the VanEck fund page header, as of the date shown in the Return As Of column.',
   'TR 1Y': 'TR 1Y (1-Year Total Return) — from VanEck\'s official Average Annual Total Returns table (NAV basis).',
@@ -457,8 +449,6 @@ function normalizeFundRow(fund: IndexFund): FundRow {
     cagr5y: metrics.cagr5y ?? monthEnd.yr5 ?? null,
     cagr10y: metrics.cagr10y ?? monthEnd.yr10 ?? null,
     dividendYield: metrics.dividendYield ?? null,
-    distributionYield: metrics.distributionYield ?? null,
-    yield12M: metrics.yield12M ?? null,
     dividendFrequency: formatDividendFrequency(fund.distributions && fund.distributions.frequency ? fund.distributions.frequency : '—'),
     secYield: metrics.secYield ?? null, // official VanEck finder table first, fund page header second.
     returnAsOf: monthEnd.asOfDate ?? null,
@@ -1096,8 +1086,6 @@ function renderFundsTable(): void {
       ${sortHeader('Net Assets', 'aumValue', true)}
       ${sortHeader('Expense', 'terValue', true)}
       ${sortHeader('Dividend Yield', 'dividendYield', true)}
-      ${sortHeader('Dist Yield', 'distributionYield', true)}
-      ${sortHeader('12M Yield', 'yield12M', true)}
       ${sortHeader('SEC Yield', 'secYield', true)}
       ${sortHeader('Frequency', 'dividendFrequency')}
       ${sortHeader('YTD Return', 'ytd', true)}
@@ -1140,8 +1128,6 @@ function renderFundsTable(): void {
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatMoney(fund.aumValue)}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${escapeHtml(fund.ter || '—')}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.dividendYield)}</td>
-          <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.distributionYield)}</td>
-          <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.yield12M)}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.secYield)}</td>
           <td class="py-2.5 px-4 text-slate-700 dark:text-slate-300">${escapeHtml(fund.dividendFrequency || '—')}</td>
           <td class="py-2.5 px-4 text-right font-mono text-slate-700 dark:text-slate-300">${formatPercent(fund.ytd)}</td>
