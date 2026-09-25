@@ -1,4 +1,5 @@
 #!/usr/bin/env bun
+import { hasOutputFilters, printConfig, printFilter, createReporter } from './update-output.ts';
 /// <reference types="bun" />
 /**
  * @file VanEck static feed updater.
@@ -2156,11 +2157,13 @@ export async function main(env: Record<string, string | undefined> = process.env
     return;
   }
   const config = readConfig(env);
+  printConfig('VanEck', config);
   const stats: RunStats = { updated: 0, unchanged: 0, skipped: 0, failed: 0 };
   const cursor = config.maxFetches > 0 ? await readCursor() : null;
   const candidates = selectCandidates(VAN_ECK_SEED, config, cursor);
 
-  console.log(`VanEck ETF feed: ${VAN_ECK_SEED.length} funds in the seed, ${candidates.length} selected.`);
+  printFilter(candidates.length, VAN_ECK_SEED.length, hasOutputFilters(config));
+  const output = createReporter(API_ROOT, candidates.length);
   if (cursor) console.log(`Resuming after cursor ${cursor}.`);
 
   const byTicker = new Map<string, CatalogEntry>();
@@ -2171,14 +2174,15 @@ export async function main(env: Record<string, string | undefined> = process.env
     for (;;) {
       const seed = queue.shift();
       if (!seed) return;
+      const before = await output.before(seed.ticker);
       try {
         const entry = await updateFund(seed, config, stats);
         byTicker.set(seed.ticker, entry);
         processed += 1;
-        console.log(`  [${String(processed).padStart(2)}/${total}] ${seed.ticker.padEnd(5)} holdings=${entry.holdings ?? 0} history=${entry.history ?? 0}`);
+        await output.result(seed.ticker, before);
       } catch (error) {
         processed += 1;
-        console.warn(`  [${String(processed).padStart(2)}/${total}] ${seed.ticker.padEnd(5)} ! ${errorMessage(error)}`);
+        await output.result(seed.ticker, before, 'failed', errorMessage(error));
         stats.failed += 1;
       }
     }
