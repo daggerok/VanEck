@@ -9,23 +9,23 @@
  "ter": "0.56%",
  "terValue": 0.56,
  "nav": {
-  "display": "$84.72",
-  "value": 84.72,
-  "asOfDate": "Sep 18 2026"
+  "display": "$83.42",
+  "value": 83.42,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 84.72,
+ "navValue": 83.42,
  "aum": {
-  "display": "$1.25B",
-  "value": 1245348897.1,
-  "asOfDate": "Sep 18 2026",
+  "display": "$1.20B",
+  "value": 1197071483.4,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1245348897.1,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 1197071483.4,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Aug 31 2007",
  "exchange": "NYSE Arca",
- "closePrice": "$84.64",
- "closePriceValue": 84.64,
+ "closePrice": "$83.34",
+ "closePriceValue": 83.34,
  "premiumDiscount": {
   "display": "-0.08%",
   "value": -0.08
@@ -146,9 +146,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 16.49,
-   "ytdText": "16.49%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 14.7,
+   "ytdText": "14.70%",
    "yr1": 17.62,
    "yr3": 3.83,
    "yr5": 0.82,
@@ -165,7 +165,7 @@
   }
  },
  "metrics": {
-  "ytd": 16.49,
+  "ytd": 14.7,
   "tr1y": 17.62,
   "tr3y": 11.94,
   "tr5y": 4.19,
@@ -188,11 +188,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.56%",
  "terGrossValue": 0.56,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 56,
+  "totalRows": 55,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/agribusiness-etf-moo/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -200,9 +200,9 @@
   ]
  },
  "history": {
-  "totalRows": 5142,
+  "totalRows": 5148,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/agribusiness-etf-moo/downloads/fundhistoprices/)",
   "pageCount": 6,
   "pages": [
@@ -214,7 +214,7 @@
    "history/006.json"
   ]
  },
- "totalNetAssets": 1250000000,
+ "totalNetAssets": 1200000000,
  "indexTicker": "MVMOOTR",
  "indexName": "Global Agribusiness Index",
  "categoryPath": "Equity > Natural Resources",
@@ -253,16 +253,16 @@
   "grossValue": 0.56
  },
  "marketPrice": {
-  "display": "$84.64",
-  "value": 84.64,
-  "asOfDate": "Sep 18 2026"
+  "display": "$83.34",
+  "value": 83.34,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 2.12,
   "dividendYieldText": "2.12%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.12,
-  "indicatedYieldText": "2.12%",
+  "indicatedYield": 2.15,
+  "indicatedYieldText": "2.15%",
   "distributionYield": 2.12,
   "distributionYieldText": "2.12%",
   "yield12M": 2.82,

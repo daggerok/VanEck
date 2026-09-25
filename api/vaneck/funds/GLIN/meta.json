@@ -9,28 +9,28 @@
  "ter": "0.72%",
  "terValue": 0.72,
  "nav": {
-  "display": "$45.03",
-  "value": 45.03,
-  "asOfDate": "Sep 18 2026"
+  "display": "$43.92",
+  "value": 43.92,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 45.03,
+ "navValue": 43.92,
  "aum": {
-  "display": "$91.18M",
-  "value": 91183080.33,
-  "asOfDate": "Sep 18 2026",
+  "display": "$88.94M",
+  "value": 88939492.87,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 91183080.33,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 88939492.87,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Aug 24 2010",
  "exchange": "NYSE Arca",
- "closePrice": "$44.60",
- "closePriceValue": 44.6,
+ "closePrice": "$43.82",
+ "closePriceValue": 43.82,
  "premiumDiscount": {
-  "display": "-0.43%",
-  "value": -0.43
+  "display": "-0.10%",
+  "value": -0.1
  },
- "premiumDiscountValue": -0.43,
+ "premiumDiscountValue": -0.1,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,9 +116,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": -2.68,
-   "ytdText": "-2.68%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": -5.08,
+   "ytdText": "-5.08%",
    "yr1": 5.98,
    "yr3": 9.09,
    "yr5": 3.08,
@@ -135,7 +135,7 @@
   }
  },
  "metrics": {
-  "ytd": -2.68,
+  "ytd": -5.08,
   "tr1y": 5.98,
   "tr3y": 29.83,
   "tr5y": 16.36,
@@ -158,11 +158,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.80%",
  "terGrossValue": 0.8,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 140,
+  "totalRows": 84,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -170,9 +170,9 @@
   ]
  },
  "history": {
-  "totalRows": 4392,
+  "totalRows": 4398,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -183,7 +183,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 91180000,
+ "totalNetAssets": 88940000,
  "indexTicker": "MGINGRNR",
  "indexName": "MarketGrader India All-Cap Growth Leaders Index",
  "categoryPath": "Equity > Country/Regional",
@@ -222,16 +222,16 @@
   "grossValue": 0.8
  },
  "marketPrice": {
-  "display": "$44.60",
-  "value": 44.6,
-  "asOfDate": "Sep 18 2026"
+  "display": "$43.82",
+  "value": 43.82,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 0.86,
   "dividendYieldText": "0.86%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.86,
-  "indicatedYieldText": "0.86%",
+  "indicatedYield": 0.88,
+  "indicatedYieldText": "0.88%",
   "distributionYield": 0.86,
   "distributionYieldText": "0.86%",
   "yield12M": 0.81,

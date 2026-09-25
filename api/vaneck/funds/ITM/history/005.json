@@ -2,7 +2,7 @@
  "ticker": "ITM",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5077,
+ "totalRows": 5083,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,60 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 21 2012",
+   "NAV": "45.2705",
+   "Close": "45.38",
+   "Volume": "70,031",
+   "Premium/Discount": "0.11",
+   "Total Net Assets": "432,333,439.14",
+   "Index Level": "110.44"
+  },
+  {
+   "Date": "Mar 20 2012",
+   "NAV": "45.2376",
+   "Close": "45.30",
+   "Volume": "119,332",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "432,019,185.31",
+   "Index Level": "110.38"
+  },
+  {
+   "Date": "Mar 19 2012",
+   "NAV": "45.3562",
+   "Close": "45.42",
+   "Volume": "92,153",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "433,151,809.73",
+   "Index Level": "110.66"
+  },
+  {
+   "Date": "Mar 16 2012",
+   "NAV": "45.3994",
+   "Close": "45.32",
+   "Volume": "82,643",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "433,563,826.57",
+   "Index Level": "110.76"
+  },
+  {
+   "Date": "Mar 15 2012",
+   "NAV": "45.5534",
+   "Close": "45.32",
+   "Volume": "55,564",
+   "Premium/Discount": "-0.23",
+   "Total Net Assets": "435,035,316.60",
+   "Index Level": "111.10"
+  },
+  {
+   "Date": "Mar 14 2012",
+   "NAV": "45.6390",
+   "Close": "45.48",
+   "Volume": "155,276",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "435,852,921.32",
+   "Index Level": "111.30"
+  },
   {
    "Date": "Mar 13 2012",
    "NAV": "45.9527",
@@ -8958,60 +9012,6 @@
    "Premium/Discount": "0.13",
    "Total Net Assets": "10,259,690.72",
    "Index Level": "84.58"
-  },
-  {
-   "Date": "Apr 03 2008",
-   "NAV": "40.8447",
-   "Close": "41.03",
-   "Volume": "3,250",
-   "Premium/Discount": "0.19",
-   "Total Net Assets": "10,211,162.72",
-   "Index Level": "84.17"
-  },
-  {
-   "Date": "Apr 02 2008",
-   "NAV": "40.7552",
-   "Close": "41.07",
-   "Volume": "9,000",
-   "Premium/Discount": "0.32",
-   "Total Net Assets": "10,188,798.53",
-   "Index Level": "84.00"
-  },
-  {
-   "Date": "Apr 01 2008",
-   "NAV": "40.7792",
-   "Close": "41.26",
-   "Volume": "10,250",
-   "Premium/Discount": "0.49",
-   "Total Net Assets": "10,194,797.63",
-   "Index Level": "84.05"
-  },
-  {
-   "Date": "Mar 31 2008",
-   "NAV": "41.0621",
-   "Close": "41.35",
-   "Volume": "5,000",
-   "Premium/Discount": "0.29",
-   "Total Net Assets": "10,265,527.57",
-   "Index Level": "84.30"
-  },
-  {
-   "Date": "Mar 28 2008",
-   "NAV": "41.0074",
-   "Close": "41.21",
-   "Volume": "3,500",
-   "Premium/Discount": "0.20",
-   "Total Net Assets": "10,251,853.24",
-   "Index Level": "84.18"
-  },
-  {
-   "Date": "Mar 27 2008",
-   "NAV": "40.9583",
-   "Close": "41.19",
-   "Volume": "5,500",
-   "Premium/Discount": "0.23",
-   "Total Net Assets": "10,239,567.88",
-   "Index Level": "84.07"
   }
  ]
 }

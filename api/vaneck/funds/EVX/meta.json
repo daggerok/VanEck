@@ -9,23 +9,23 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$39.43",
-  "value": 39.43,
-  "asOfDate": "Sep 18 2026"
+  "display": "$39.04",
+  "value": 39.04,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 39.43,
+ "navValue": 39.04,
  "aum": {
-  "display": "$96.80M",
-  "value": 96797184.08,
-  "asOfDate": "Sep 18 2026",
+  "display": "$95.83M",
+  "value": 95831524.63,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 96797184.08,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 95831524.63,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Oct 10 2006",
  "exchange": "NYSE Arca",
- "closePrice": "$39.48",
- "closePriceValue": 39.48,
+ "closePrice": "$39.08",
+ "closePriceValue": 39.08,
  "premiumDiscount": {
   "display": "0.05%",
   "value": 0.05
@@ -146,9 +146,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 3.25,
-   "ytdText": "3.25%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 2.22,
+   "ytdText": "2.22%",
    "yr1": 1.92,
    "yr3": 9.95,
    "yr5": 6.98,
@@ -165,7 +165,7 @@
   }
  },
  "metrics": {
-  "ytd": 3.25,
+  "ytd": 2.22,
   "tr1y": 1.92,
   "tr3y": 32.91,
   "tr5y": 40.09,
@@ -188,11 +188,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.62%",
  "terGrossValue": 0.62,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 30,
+  "totalRows": 29,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -200,9 +200,9 @@
   ]
  },
  "history": {
-  "totalRows": 7284,
+  "totalRows": 7290,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/)",
   "pageCount": 8,
   "pages": [
@@ -216,7 +216,7 @@
    "history/008.json"
   ]
  },
- "totalNetAssets": 96800000,
+ "totalNetAssets": 95830000,
  "indexTicker": "MVEVX",
  "indexName": "Global Environmental Services Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -255,9 +255,9 @@
   "grossValue": 0.62
  },
  "marketPrice": {
-  "display": "$39.48",
-  "value": 39.48,
-  "asOfDate": "Sep 18 2026"
+  "display": "$39.08",
+  "value": 39.08,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 0.18,

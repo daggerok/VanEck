@@ -2,7 +2,7 @@
  "ticker": "XMPT",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3853,
+ "totalRows": 3857,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 23 2018",
+   "NAV": "23.6864",
+   "Close": "23.67",
+   "Volume": "4,653",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "112,510,449.10",
+   "Index Level": "2,166.10"
+  },
+  {
+   "Date": "Nov 21 2018",
+   "NAV": "23.6812",
+   "Close": "23.71",
+   "Volume": "53,041",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "112,485,700.80",
+   "Index Level": "2,165.57"
+  },
+  {
+   "Date": "Nov 20 2018",
+   "NAV": "23.7737",
+   "Close": "23.71",
+   "Volume": "20,176",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "112,924,850.10",
+   "Index Level": "2,174.02"
+  },
+  {
+   "Date": "Nov 19 2018",
+   "NAV": "23.8829",
+   "Close": "23.88",
+   "Volume": "25,015",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "113,443,803.20",
+   "Index Level": "2,184.00"
+  },
   {
    "Date": "Nov 16 2018",
    "NAV": "23.9420",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.09",
    "Total Net Assets": "35,178,513.55",
    "Index Level": "1,935.07"
-  },
-  {
-   "Date": "Dec 04 2014",
-   "NAV": "26.1568",
-   "Close": "26.17",
-   "Volume": "3,915",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "35,311,676.10",
-   "Index Level": "1,942.36"
-  },
-  {
-   "Date": "Dec 03 2014",
-   "NAV": "26.0897",
-   "Close": "26.19",
-   "Volume": "7,951",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "35,221,155.36",
-   "Index Level": "1,937.37"
-  },
-  {
-   "Date": "Dec 02 2014",
-   "NAV": "25.9359",
-   "Close": "25.96",
-   "Volume": "4,825",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "35,013,442.73",
-   "Index Level": "1,925.95"
-  },
-  {
-   "Date": "Dec 01 2014",
-   "NAV": "25.7925",
-   "Close": "25.92",
-   "Volume": "88,498",
-   "Premium/Discount": "0.13",
-   "Total Net Assets": "37,399,133.15",
-   "Index Level": "1,915.30"
   }
  ]
 }

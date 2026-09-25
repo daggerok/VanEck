@@ -9,28 +9,28 @@
  "ter": "0.52%",
  "terValue": 0.52,
  "nav": {
-  "display": "$108.33",
-  "value": 108.33,
-  "asOfDate": "Sep 18 2026"
+  "display": "$106.45",
+  "value": 106.45,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 108.33,
+ "navValue": 106.45,
  "aum": {
-  "display": "$3.74B",
-  "value": 3741929200.8,
-  "asOfDate": "Sep 18 2026",
+  "display": "$3.68B",
+  "value": 3676922249.82,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3741929200.8,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 3676922249.82,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Aug 13 2007",
  "exchange": "NYSE Arca",
- "closePrice": "$107.69",
- "closePriceValue": 107.69,
+ "closePrice": "$106.22",
+ "closePriceValue": 106.22,
  "premiumDiscount": {
-  "display": "-0.64%",
-  "value": -0.64
+  "display": "-0.23%",
+  "value": -0.23
  },
- "premiumDiscountValue": -0.64,
+ "premiumDiscountValue": -0.23,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -136,9 +136,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": -12.37,
-   "ytdText": "-12.37%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": -13.9,
+   "ytdText": "-13.90%",
    "yr1": 2.34,
    "yr3": 25.92,
    "yr5": 19.89,
@@ -155,7 +155,7 @@
   }
  },
  "metrics": {
-  "ytd": -12.37,
+  "ytd": -13.9,
   "tr1y": 2.34,
   "tr3y": 99.67,
   "tr5y": 147.65,
@@ -178,11 +178,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.52%",
  "terGrossValue": 0.52,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 29,
+  "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -190,9 +190,9 @@
   ]
  },
  "history": {
-  "totalRows": 5156,
+  "totalRows": 5162,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/uranium-nuclear-energy-etf-nlr/downloads/fundhistoprices/)",
   "pageCount": 6,
   "pages": [
@@ -204,7 +204,7 @@
    "history/006.json"
   ]
  },
- "totalNetAssets": 3740000000,
+ "totalNetAssets": 3680000000,
  "indexTicker": "MVNLRTR",
  "indexName": "Global Uranium & Nuclear Energy Index",
  "categoryPath": "Equity > Natural Resources",
@@ -243,16 +243,16 @@
   "grossValue": 0.52
  },
  "marketPrice": {
-  "display": "$107.69",
-  "value": 107.69,
-  "asOfDate": "Sep 18 2026"
+  "display": "$106.22",
+  "value": 106.22,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 2.92,
   "dividendYieldText": "2.92%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.92,
-  "indicatedYieldText": "2.92%",
+  "indicatedYield": 2.97,
+  "indicatedYieldText": "2.97%",
   "distributionYield": 2.92,
   "distributionYieldText": "2.92%",
   "yield12M": 2.09,

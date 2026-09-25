@@ -9,28 +9,28 @@
  "ter": "0.35%",
  "terValue": 0.35,
  "nav": {
-  "display": "$253.40",
-  "value": 253.4,
-  "asOfDate": "Sep 18 2026"
+  "display": "$252.59",
+  "value": 252.59,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 253.4,
+ "navValue": 252.59,
  "aum": {
-  "display": "$248.72M",
-  "value": 248723342.6,
-  "asOfDate": "Sep 18 2026",
+  "display": "$237.82M",
+  "value": 237818851.94,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 248723342.6,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 237818851.94,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NASDAQ",
- "closePrice": "$253.41",
- "closePriceValue": 253.41,
+ "closePrice": "$252.62",
+ "closePriceValue": 252.62,
  "premiumDiscount": {
-  "display": "0.01%",
-  "value": 0.01
+  "display": "0.04%",
+  "value": 0.04
  },
- "premiumDiscountValue": 0.01,
+ "premiumDiscountValue": 0.04,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -121,9 +121,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 1.6,
-   "ytdText": "1.60%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 1.27,
+   "ytdText": "1.27%",
    "yr1": 6.48,
    "yr3": 15.12,
    "yr5": 8.63,
@@ -140,7 +140,7 @@
   }
  },
  "metrics": {
-  "ytd": 1.6,
+  "ytd": 1.27,
   "tr1y": 6.48,
   "tr3y": 52.58,
   "tr5y": 51.27,
@@ -163,11 +163,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/retail-etf-rth/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -175,9 +175,9 @@
   ]
  },
  "history": {
-  "totalRows": 4057,
+  "totalRows": 4063,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/retail-etf-rth/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -188,7 +188,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 248720000,
+ "totalNetAssets": 237820000,
  "indexTicker": "MVRTHTR",
  "indexName": "US Listed Retail 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -227,9 +227,9 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "$253.41",
-  "value": 253.41,
-  "asOfDate": "Sep 18 2026"
+  "display": "$252.62",
+  "value": 252.62,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 0.96,

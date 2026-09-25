@@ -2,7 +2,7 @@
  "ticker": "EMBX",
  "page": 1,
  "pageSize": 250,
- "totalRows": 127,
+ "totalRows": 130,
  "headers": [
   "Name",
   "Maturity",
@@ -23,8 +23,8 @@
    "Coupon": "9.762",
    "Asset Category": "Bond",
    "Par Value": "62,207,000",
-   "Market Value": "$11,541,804.31",
-   "Weight": "4.21%",
+   "Market Value": "$11,601,205.46",
+   "Weight": "4.25%",
    "Country": "Brazil",
    "Currency": "BRL"
   },
@@ -35,8 +35,8 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "2,349,900,000",
-   "Market Value": "$7,836,228.74",
-   "Weight": "2.86%",
+   "Market Value": "$7,712,122.53",
+   "Weight": "2.82%",
    "Country": "Hungary",
    "Currency": "HUF"
   },
@@ -47,8 +47,8 @@
    "Coupon": "5.300",
    "Asset Category": "Bond",
    "Par Value": "6,885,000,000",
-   "Market Value": "$7,183,738.19",
-   "Weight": "2.62%",
+   "Market Value": "$7,173,869.06",
+   "Weight": "2.63%",
    "Country": "Chile",
    "Currency": "CLP"
   },
@@ -59,8 +59,8 @@
    "Coupon": "7.600",
    "Asset Category": "Bond",
    "Par Value": "21,582,000",
-   "Market Value": "$6,812,646.81",
-   "Weight": "2.49%",
+   "Market Value": "$6,760,276.71",
+   "Weight": "2.47%",
    "Country": "Peru",
    "Currency": "PEN"
   },
@@ -71,8 +71,8 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "129,150,000",
-   "Market Value": "$6,501,835.71",
-   "Weight": "2.37%",
+   "Market Value": "$6,438,131.90",
+   "Weight": "2.36%",
    "Country": "Czech Republic",
    "Currency": "CZK"
   },
@@ -83,8 +83,8 @@
    "Coupon": "7.750",
    "Asset Category": "Bond",
    "Par Value": "124,820,000",
-   "Market Value": "$6,129,016.91",
-   "Weight": "2.24%",
+   "Market Value": "$6,155,430.55",
+   "Weight": "2.25%",
    "Country": "Mexico",
    "Currency": "MXN"
   },
@@ -95,8 +95,8 @@
    "Coupon": "12.500",
    "Asset Category": "Bond",
    "Par Value": "17,957,000,000",
-   "Market Value": "$6,036,231.77",
-   "Weight": "2.20%",
+   "Market Value": "$5,866,934.62",
+   "Weight": "2.15%",
    "Country": "Colombia",
    "Currency": "COP"
   },
@@ -107,10 +107,22 @@
    "Coupon": "10.000",
    "Asset Category": "Bond",
    "Par Value": "31,024,000",
-   "Market Value": "$5,414,477.19",
-   "Weight": "1.98%",
+   "Market Value": "$5,451,163.47",
+   "Weight": "2.00%",
    "Country": "Brazil",
    "Currency": "BRL"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "May 15 2032",
+   "Identifier": "BBG0243G2Z00",
+   "Coupon": "7.250",
+   "Asset Category": "Bond",
+   "Par Value": "92,884,000,000",
+   "Market Value": "$5,432,333.11",
+   "Weight": "1.99%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Romanian Government International Bond",
@@ -119,8 +131,8 @@
    "Coupon": "6.625",
    "Asset Category": "Bond",
    "Par Value": "5,136,000",
-   "Market Value": "$5,220,982.03",
-   "Weight": "1.91%",
+   "Market Value": "$5,158,124.44",
+   "Weight": "1.89%",
    "Country": "Romania",
    "Currency": "USD"
   },
@@ -131,8 +143,8 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "18,609,000",
-   "Market Value": "$5,214,561.38",
-   "Weight": "1.90%",
+   "Market Value": "$5,121,278.16",
+   "Weight": "1.87%",
    "Country": "Poland",
    "Currency": "PLN"
   },
@@ -143,8 +155,8 @@
    "Coupon": "1.750",
    "Asset Category": "Bond",
    "Par Value": "22,922,000",
-   "Market Value": "$4,965,020.92",
-   "Weight": "1.81%",
+   "Market Value": "$4,875,769.10",
+   "Weight": "1.78%",
    "Country": "Poland",
    "Currency": "PLN"
   },
@@ -155,21 +167,9 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "4,851,000",
-   "Market Value": "$4,811,020.62",
-   "Weight": "1.76%",
-   "Country": "India",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Bolivian Government International Bond",
-   "Maturity": "Mar 20 2028",
-   "Identifier": "BBG00G6RWJG4",
-   "Coupon": "4.500",
-   "Asset Category": "Bond",
-   "Par Value": "4,838,242",
-   "Market Value": "$4,768,692.12",
+   "Market Value": "$4,766,102.79",
    "Weight": "1.74%",
-   "Country": "Bolivia",
+   "Country": "India",
    "Currency": "USD"
   },
   {
@@ -179,10 +179,22 @@
    "Coupon": "3.336",
    "Asset Category": "Bond",
    "Par Value": "19,263,000",
-   "Market Value": "$4,693,952.57",
-   "Weight": "1.71%",
+   "Market Value": "$4,731,812.17",
+   "Weight": "1.73%",
    "Country": "Malaysia",
    "Currency": "MYR"
+  },
+  {
+   "Name": "Bolivian Government International Bond",
+   "Maturity": "Mar 20 2028",
+   "Identifier": "BBG00G6RWJG4",
+   "Coupon": "4.500",
+   "Asset Category": "Bond",
+   "Par Value": "4,838,242",
+   "Market Value": "$4,681,700.60",
+   "Weight": "1.71%",
+   "Country": "Bolivia",
+   "Currency": "USD"
   },
   {
    "Name": "China Government Bond",
@@ -191,8 +203,8 @@
    "Coupon": "1.870",
    "Asset Category": "Bond",
    "Par Value": "27,000,000",
-   "Market Value": "$4,089,072.87",
-   "Weight": "1.49%",
+   "Market Value": "$4,089,545.64",
+   "Weight": "1.50%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -203,7 +215,7 @@
    "Coupon": "3.950",
    "Asset Category": "Bond",
    "Par Value": "20,000,000",
-   "Market Value": "$3,827,340.63",
+   "Market Value": "$3,835,772.09",
    "Weight": "1.40%",
    "Country": "China",
    "Currency": "CNY"
@@ -215,7 +227,7 @@
    "Coupon": "3.875",
    "Asset Category": "Bond",
    "Par Value": "3,466,000",
-   "Market Value": "$3,424,568.72",
+   "Market Value": "$3,419,615.58",
    "Weight": "1.25%",
    "Country": "India",
    "Currency": "USD"
@@ -227,8 +239,8 @@
    "Coupon": "9.375",
    "Asset Category": "Bond",
    "Par Value": "2,808,000",
-   "Market Value": "$3,026,481.84",
-   "Weight": "1.10%",
+   "Market Value": "$3,026,635.21",
+   "Weight": "1.11%",
    "Country": "Angola",
    "Currency": "USD"
   },
@@ -239,33 +251,9 @@
    "Coupon": "7.100",
    "Asset Category": "Bond",
    "Par Value": "2,779,000",
-   "Market Value": "$2,961,686.24",
+   "Market Value": "$2,940,305.75",
    "Weight": "1.08%",
    "Country": "South Africa",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Egypt Government International Bond",
-   "Maturity": "Feb 04 2033",
-   "Identifier": "BBG01S16ZCN2",
-   "Coupon": "9.450",
-   "Asset Category": "Bond",
-   "Par Value": "2,602,000",
-   "Market Value": "$2,855,286.70",
-   "Weight": "1.04%",
-   "Country": "Egypt",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Oman Government International Bond",
-   "Maturity": "Oct 28 2032",
-   "Identifier": "BBG00XYDRN74",
-   "Coupon": "7.375",
-   "Asset Category": "Bond",
-   "Par Value": "2,533,000",
-   "Market Value": "$2,845,558.26",
-   "Weight": "1.04%",
-   "Country": "Oman",
    "Currency": "USD"
   },
   {
@@ -275,9 +263,33 @@
    "Coupon": "6.800",
    "Asset Category": "Bond",
    "Par Value": "2,926,000",
-   "Market Value": "$2,841,226.38",
+   "Market Value": "$2,844,921.66",
    "Weight": "1.04%",
    "Country": "Turkey",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Oman Government International Bond",
+   "Maturity": "Oct 28 2032",
+   "Identifier": "BBG00XYDRN74",
+   "Coupon": "7.375",
+   "Asset Category": "Bond",
+   "Par Value": "2,533,000",
+   "Market Value": "$2,835,106.00",
+   "Weight": "1.04%",
+   "Country": "Oman",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Egypt Government International Bond",
+   "Maturity": "Feb 04 2033",
+   "Identifier": "BBG01S16ZCN2",
+   "Coupon": "9.450",
+   "Asset Category": "Bond",
+   "Par Value": "2,602,000",
+   "Market Value": "$2,828,112.04",
+   "Weight": "1.04%",
+   "Country": "Egypt",
    "Currency": "USD"
   },
   {
@@ -287,10 +299,34 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "2,575,000,000",
-   "Market Value": "$2,779,318.98",
-   "Weight": "1.01%",
+   "Market Value": "$2,774,745.05",
+   "Weight": "1.02%",
    "Country": "Chile",
    "Currency": "CLP"
+  },
+  {
+   "Name": "United States Treasury Bill",
+   "Maturity": "Oct 20 2026",
+   "Identifier": "BBG022ZR1Z60",
+   "Coupon": "",
+   "Asset Category": "Bond",
+   "Par Value": "2,749,000",
+   "Market Value": "$2,741,430.71",
+   "Weight": "1.00%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Malaysia Government Bond",
+   "Maturity": "Apr 15 2033",
+   "Identifier": "BBG004F585G6",
+   "Coupon": "3.844",
+   "Asset Category": "Bond",
+   "Par Value": "11,008,000",
+   "Market Value": "$2,740,554.26",
+   "Weight": "1.00%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
   },
   {
    "Name": "Siam Commercial Bank Pcl/Cayman Islands",
@@ -299,46 +335,10 @@
    "Coupon": "4.400",
    "Asset Category": "Bond",
    "Par Value": "2,755,000",
-   "Market Value": "$2,720,981.62",
+   "Market Value": "$2,711,512.17",
    "Weight": "0.99%",
    "Country": "Thailand",
    "Currency": "USD"
-  },
-  {
-   "Name": "Republic Of South Africa Government Bon",
-   "Maturity": "Jan 31 2040",
-   "Identifier": "BBG0086HBT93",
-   "Coupon": "9.000",
-   "Asset Category": "Bond",
-   "Par Value": "44,142,000",
-   "Market Value": "$2,710,808.66",
-   "Weight": "0.99%",
-   "Country": "South Africa",
-   "Currency": "ZAR"
-  },
-  {
-   "Name": "Colombian Tes",
-   "Maturity": "Aug 22 2029",
-   "Identifier": "BBG01TD35K22",
-   "Coupon": "11.000",
-   "Asset Category": "Bond",
-   "Par Value": "8,729,000,000",
-   "Market Value": "$2,690,610.55",
-   "Weight": "0.98%",
-   "Country": "Colombia",
-   "Currency": "COP"
-  },
-  {
-   "Name": "Romania Government Bond",
-   "Maturity": "Feb 25 2032",
-   "Identifier": "BBG015XQF9Z9",
-   "Coupon": "6.700",
-   "Asset Category": "Bond",
-   "Par Value": "11,940,000",
-   "Market Value": "$2,680,194.51",
-   "Weight": "0.98%",
-   "Country": "Romania",
-   "Currency": "RON"
   },
   {
    "Name": "Singapore Government Bond",
@@ -347,7 +347,7 @@
    "Coupon": "2.875",
    "Asset Category": "Bond",
    "Par Value": "3,291,000",
-   "Market Value": "$2,665,043.49",
+   "Market Value": "$2,661,344.51",
    "Weight": "0.97%",
    "Country": "Singapore",
    "Currency": "SGD"
@@ -359,22 +359,22 @@
    "Coupon": "3.000",
    "Asset Category": "Bond",
    "Par Value": "2,622,000",
-   "Market Value": "$2,632,886.43",
-   "Weight": "0.96%",
+   "Market Value": "$2,640,561.30",
+   "Weight": "0.97%",
    "Country": "Congo",
    "Currency": "USD"
   },
   {
-   "Name": "Republic Of Poland Government Bond",
-   "Maturity": "Oct 25 2034",
-   "Identifier": "BBG01MBNVK35",
-   "Coupon": "5.000",
+   "Name": "Romania Government Bond",
+   "Maturity": "Feb 25 2032",
+   "Identifier": "BBG015XQF9Z9",
+   "Coupon": "6.700",
    "Asset Category": "Bond",
-   "Par Value": "9,915,000",
-   "Market Value": "$2,573,932.46",
-   "Weight": "0.94%",
-   "Country": "Poland",
-   "Currency": "PLN"
+   "Par Value": "11,940,000",
+   "Market Value": "$2,632,516.93",
+   "Weight": "0.96%",
+   "Country": "Romania",
+   "Currency": "RON"
   },
   {
    "Name": "Korea Treasury Bond",
@@ -383,10 +383,46 @@
    "Coupon": "3.375",
    "Asset Category": "Bond",
    "Par Value": "3,681,680,000",
-   "Market Value": "$2,568,002.79",
-   "Weight": "0.94%",
+   "Market Value": "$2,625,047.70",
+   "Weight": "0.96%",
    "Country": "South Korea",
    "Currency": "KRW"
+  },
+  {
+   "Name": "Colombian Tes",
+   "Maturity": "Aug 22 2029",
+   "Identifier": "BBG01TD35K22",
+   "Coupon": "11.000",
+   "Asset Category": "Bond",
+   "Par Value": "8,729,000,000",
+   "Market Value": "$2,604,088.93",
+   "Weight": "0.95%",
+   "Country": "Colombia",
+   "Currency": "COP"
+  },
+  {
+   "Name": "Malaysia Government Bond",
+   "Maturity": "Apr 18 2039",
+   "Identifier": "BBG01MDKQFL6",
+   "Coupon": "4.054",
+   "Asset Category": "Bond",
+   "Par Value": "10,320,000",
+   "Market Value": "$2,573,468.73",
+   "Weight": "0.94%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
+  },
+  {
+   "Name": "Republic Of Poland Government Bond",
+   "Maturity": "Oct 25 2034",
+   "Identifier": "BBG01MBNVK35",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "9,915,000",
+   "Market Value": "$2,524,430.32",
+   "Weight": "0.92%",
+   "Country": "Poland",
+   "Currency": "PLN"
   },
   {
    "Name": "Glp Pte Ltd",
@@ -395,7 +431,7 @@
    "Coupon": "9.750",
    "Asset Category": "Bond",
    "Par Value": "2,648,000",
-   "Market Value": "$2,457,909.03",
+   "Market Value": "$2,462,575.46",
    "Weight": "0.90%",
    "Country": "Singapore",
    "Currency": "USD"
@@ -407,22 +443,10 @@
    "Coupon": "5.350",
    "Asset Category": "Bond",
    "Par Value": "9,305,000",
-   "Market Value": "$2,389,160.49",
+   "Market Value": "$2,369,683.99",
    "Weight": "0.87%",
    "Country": "Peru",
    "Currency": "PEN"
-  },
-  {
-   "Name": "Alpek Sab De Cv",
-   "Maturity": "Feb 25 2031",
-   "Identifier": "BBG00ZCMCTP6",
-   "Coupon": "3.250",
-   "Asset Category": "Bond",
-   "Par Value": "2,669,000",
-   "Market Value": "$2,365,931.73",
-   "Weight": "0.86%",
-   "Country": "Mexico",
-   "Currency": "USD"
   },
   {
    "Name": "Zambia Government International Bond",
@@ -431,9 +455,21 @@
    "Coupon": "5.750",
    "Asset Category": "Bond",
    "Par Value": "2,371,657",
-   "Market Value": "$2,358,950.54",
+   "Market Value": "$2,354,903.48",
    "Weight": "0.86%",
    "Country": "Zambia",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Alpek Sab De Cv",
+   "Maturity": "Feb 25 2031",
+   "Identifier": "BBG00ZCMCTP6",
+   "Coupon": "3.250",
+   "Asset Category": "Bond",
+   "Par Value": "2,669,000",
+   "Market Value": "$2,343,514.77",
+   "Weight": "0.86%",
+   "Country": "Mexico",
    "Currency": "USD"
   },
   {
@@ -443,7 +479,7 @@
    "Coupon": "4.375",
    "Asset Category": "Bond",
    "Par Value": "2,473,446",
-   "Market Value": "$2,338,387.67",
+   "Market Value": "$2,321,924.85",
    "Weight": "0.85%",
    "Country": "Panama",
    "Currency": "USD"
@@ -455,8 +491,8 @@
    "Coupon": "4.850",
    "Asset Category": "Bond",
    "Par Value": "2,457,000",
-   "Market Value": "$2,318,027.64",
-   "Weight": "0.85%",
+   "Market Value": "$2,302,558.27",
+   "Weight": "0.84%",
    "Country": "Indonesia",
    "Currency": "USD"
   },
@@ -467,7 +503,7 @@
    "Coupon": "9.375",
    "Asset Category": "Bond",
    "Par Value": "2,270,000",
-   "Market Value": "$2,224,929.72",
+   "Market Value": "$2,222,940.63",
    "Weight": "0.81%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -479,7 +515,7 @@
    "Coupon": "8.750",
    "Asset Category": "Bond",
    "Par Value": "2,097,000",
-   "Market Value": "$2,222,433.90",
+   "Market Value": "$2,219,196.13",
    "Weight": "0.81%",
    "Country": "Dem.Rep. Congo",
    "Currency": "USD"
@@ -491,8 +527,8 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "2,078,625",
-   "Market Value": "$2,149,595.75",
-   "Weight": "0.78%",
+   "Market Value": "$2,147,896.51",
+   "Weight": "0.79%",
    "Country": "Indonesia",
    "Currency": "USD"
   },
@@ -503,7 +539,7 @@
    "Coupon": "8.625",
    "Asset Category": "Bond",
    "Par Value": "2,256,000",
-   "Market Value": "$2,126,474.95",
+   "Market Value": "$2,128,394.98",
    "Weight": "0.78%",
    "Country": "China",
    "Currency": "USD"
@@ -515,8 +551,8 @@
    "Coupon": "9.500",
    "Asset Category": "Bond",
    "Par Value": "2,100,000",
-   "Market Value": "$2,112,665.96",
-   "Weight": "0.77%",
+   "Market Value": "$2,117,583.64",
+   "Weight": "0.78%",
    "Country": "Congo",
    "Currency": "USD"
   },
@@ -527,7 +563,7 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "2,150,000",
-   "Market Value": "$2,091,097.38",
+   "Market Value": "$2,086,398.74",
    "Weight": "0.76%",
    "Country": "South Africa",
    "Currency": "USD"
@@ -539,21 +575,9 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "2,146,000",
-   "Market Value": "$2,062,707.96",
-   "Weight": "0.75%",
+   "Market Value": "$2,068,797.00",
+   "Weight": "0.76%",
    "Country": "Indonesia",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Costa Rica Government International Bon",
-   "Maturity": "Feb 19 2031",
-   "Identifier": "BBG00QTYVWB9",
-   "Coupon": "6.125",
-   "Asset Category": "Bond",
-   "Par Value": "1,961,000",
-   "Market Value": "$2,005,130.65",
-   "Weight": "0.73%",
-   "Country": "Costa Rica",
    "Currency": "USD"
   },
   {
@@ -563,22 +587,22 @@
    "Coupon": "3.766",
    "Asset Category": "Bond",
    "Par Value": "8,607,000",
-   "Market Value": "$1,990,678.86",
-   "Weight": "0.73%",
+   "Market Value": "$2,051,011.72",
+   "Weight": "0.75%",
    "Country": "Malaysia",
    "Currency": "MYR"
   },
   {
-   "Name": "Uruguay Government International Bond",
-   "Maturity": "Oct 29 2035",
-   "Identifier": "BBG01Y38YSF8",
-   "Coupon": "8.000",
+   "Name": "Costa Rica Government International Bon",
+   "Maturity": "Feb 19 2031",
+   "Identifier": "BBG00QTYVWB9",
+   "Coupon": "6.125",
    "Asset Category": "Bond",
-   "Par Value": "76,294,000",
-   "Market Value": "$1,979,529.23",
-   "Weight": "0.72%",
-   "Country": "Uruguay",
-   "Currency": "UYU"
+   "Par Value": "1,961,000",
+   "Market Value": "$2,002,426.11",
+   "Weight": "0.73%",
+   "Country": "Costa Rica",
+   "Currency": "USD"
   },
   {
    "Name": "Philippine Government International Bon",
@@ -587,22 +611,22 @@
    "Coupon": "6.250",
    "Asset Category": "Bond",
    "Par Value": "129,874,000",
-   "Market Value": "$1,968,387.01",
-   "Weight": "0.72%",
+   "Market Value": "$1,991,625.05",
+   "Weight": "0.73%",
    "Country": "Philippines",
    "Currency": "PHP"
   },
   {
-   "Name": "Mexican Bonos",
-   "Maturity": "Nov 07 2047",
-   "Identifier": "BBG00G530SR1",
+   "Name": "Uruguay Government International Bond",
+   "Maturity": "Oct 29 2035",
+   "Identifier": "BBG01Y38YSF8",
    "Coupon": "8.000",
    "Asset Category": "Bond",
-   "Par Value": "39,777,000",
-   "Market Value": "$1,958,171.00",
-   "Weight": "0.71%",
-   "Country": "Mexico",
-   "Currency": "MXN"
+   "Par Value": "76,294,000",
+   "Market Value": "$1,988,041.53",
+   "Weight": "0.73%",
+   "Country": "Uruguay",
+   "Currency": "UYU"
   },
   {
    "Name": "Malaysia Government Bond",
@@ -611,8 +635,8 @@
    "Coupon": "2.632",
    "Asset Category": "Bond",
    "Par Value": "8,303,000",
-   "Market Value": "$1,946,530.10",
-   "Weight": "0.71%",
+   "Market Value": "$1,969,176.26",
+   "Weight": "0.72%",
    "Country": "Malaysia",
    "Currency": "MYR"
   },
@@ -623,8 +647,8 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "1,900,000",
-   "Market Value": "$1,838,044.15",
-   "Weight": "0.67%",
+   "Market Value": "$1,859,305.15",
+   "Weight": "0.68%",
    "Country": "Bolivia",
    "Currency": "USD"
   },
@@ -635,7 +659,7 @@
    "Coupon": "3.950",
    "Asset Category": "Bond",
    "Par Value": "2,105,000",
-   "Market Value": "$1,799,341.81",
+   "Market Value": "$1,805,329.54",
    "Weight": "0.66%",
    "Country": "China",
    "Currency": "USD"
@@ -647,7 +671,7 @@
    "Coupon": "2.050",
    "Asset Category": "Bond",
    "Par Value": "57,126,000",
-   "Market Value": "$1,747,920.16",
+   "Market Value": "$1,755,013.58",
    "Weight": "0.64%",
    "Country": "Thailand",
    "Currency": "THB"
@@ -659,21 +683,9 @@
    "Coupon": "5.950",
    "Asset Category": "Bond",
    "Par Value": "1,705,000",
-   "Market Value": "$1,719,655.04",
+   "Market Value": "$1,718,660.37",
    "Weight": "0.63%",
    "Country": "Morocco",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Csn Resources Sa",
-   "Maturity": "Jun 10 2031",
-   "Identifier": "BBG011991JX8",
-   "Coupon": "4.625",
-   "Asset Category": "Bond",
-   "Par Value": "2,515,000",
-   "Market Value": "$1,683,665.75",
-   "Weight": "0.61%",
-   "Country": "Brazil",
    "Currency": "USD"
   },
   {
@@ -683,9 +695,21 @@
    "Coupon": "9.500",
    "Asset Category": "Bond",
    "Par Value": "1,660,000",
-   "Market Value": "$1,655,255.31",
-   "Weight": "0.60%",
+   "Market Value": "$1,657,984.08",
+   "Weight": "0.61%",
    "Country": "Congo",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Csn Resources Sa",
+   "Maturity": "Jun 10 2031",
+   "Identifier": "BBG011991JX8",
+   "Coupon": "4.625",
+   "Asset Category": "Bond",
+   "Par Value": "2,515,000",
+   "Market Value": "$1,647,676.04",
+   "Weight": "0.60%",
+   "Country": "Brazil",
    "Currency": "USD"
   },
   {
@@ -695,7 +719,7 @@
    "Coupon": "7.375",
    "Asset Category": "Bond",
    "Par Value": "1,501,000",
-   "Market Value": "$1,569,873.47",
+   "Market Value": "$1,568,709.53",
    "Weight": "0.57%",
    "Country": "Nigeria",
    "Currency": "USD"
@@ -707,10 +731,22 @@
    "Coupon": "9.250",
    "Asset Category": "Bond",
    "Par Value": "1,408,000",
-   "Market Value": "$1,555,552.15",
+   "Market Value": "$1,554,934.97",
    "Weight": "0.57%",
    "Country": "El Salvador",
    "Currency": "USD"
+  },
+  {
+   "Name": "Korea Treasury Bond",
+   "Maturity": "Sep 10 2030",
+   "Identifier": "BBG01WBWTFM6",
+   "Coupon": "2.500",
+   "Asset Category": "Bond",
+   "Par Value": "2,200,000,000",
+   "Market Value": "$1,525,586.72",
+   "Weight": "0.56%",
+   "Country": "South Korea",
+   "Currency": "KRW"
   },
   {
    "Name": "Nigeria Government International Bond",
@@ -719,7 +755,7 @@
    "Coupon": "8.250",
    "Asset Category": "Bond",
    "Par Value": "1,464,000",
-   "Market Value": "$1,521,430.82",
+   "Market Value": "$1,518,861.54",
    "Weight": "0.56%",
    "Country": "Nigeria",
    "Currency": "USD"
@@ -731,22 +767,10 @@
    "Coupon": "11.250",
    "Asset Category": "Bond",
    "Par Value": "1,319,000",
-   "Market Value": "$1,496,652.81",
+   "Market Value": "$1,502,885.09",
    "Weight": "0.55%",
    "Country": "Laos",
    "Currency": "USD"
-  },
-  {
-   "Name": "Korea Treasury Bond",
-   "Maturity": "Sep 10 2030",
-   "Identifier": "BBG01WBWTFM6",
-   "Coupon": "2.500",
-   "Asset Category": "Bond",
-   "Par Value": "2,200,000,000",
-   "Market Value": "$1,492,522.90",
-   "Weight": "0.54%",
-   "Country": "South Korea",
-   "Currency": "KRW"
   },
   {
    "Name": "Pakistan Government International Bond",
@@ -755,8 +779,8 @@
    "Coupon": "6.975",
    "Asset Category": "Bond",
    "Par Value": "1,467,000",
-   "Market Value": "$1,490,117.12",
-   "Weight": "0.54%",
+   "Market Value": "$1,495,246.10",
+   "Weight": "0.55%",
    "Country": "Pakistan",
    "Currency": "USD"
   },
@@ -767,7 +791,7 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "1,528,000",
-   "Market Value": "$1,474,453.81",
+   "Market Value": "$1,471,383.21",
    "Weight": "0.54%",
    "Country": "Serbia",
    "Currency": "USD"
@@ -779,7 +803,7 @@
    "Coupon": "4.100",
    "Asset Category": "Bond",
    "Par Value": "7,500,000",
-   "Market Value": "$1,455,123.78",
+   "Market Value": "$1,459,478.47",
    "Weight": "0.53%",
    "Country": "China",
    "Currency": "CNY"
@@ -791,8 +815,8 @@
    "Coupon": "3.828",
    "Asset Category": "Bond",
    "Par Value": "5,866,000",
-   "Market Value": "$1,422,399.80",
-   "Weight": "0.52%",
+   "Market Value": "$1,442,279.60",
+   "Weight": "0.53%",
    "Country": "Malaysia",
    "Currency": "MYR"
   },
@@ -803,7 +827,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "1,569,043",
-   "Market Value": "$1,395,338.97",
+   "Market Value": "$1,392,016.85",
    "Weight": "0.51%",
    "Country": "Ghana",
    "Currency": "USD"
@@ -815,7 +839,7 @@
    "Coupon": "9.750",
    "Asset Category": "Bond",
    "Par Value": "1,299,000",
-   "Market Value": "$1,386,942.96",
+   "Market Value": "$1,387,386.12",
    "Weight": "0.51%",
    "Country": "Luxembourg",
    "Currency": "USD"
@@ -827,7 +851,7 @@
    "Coupon": "3.700",
    "Asset Category": "Bond",
    "Par Value": "1,543,000",
-   "Market Value": "$1,364,760.36",
+   "Market Value": "$1,361,561.20",
    "Weight": "0.50%",
    "Country": "Guatemala",
    "Currency": "USD"
@@ -839,7 +863,7 @@
    "Coupon": "3.398",
    "Asset Category": "Bond",
    "Par Value": "1,480,000",
-   "Market Value": "$1,345,530.64",
+   "Market Value": "$1,343,195.64",
    "Weight": "0.49%",
    "Country": "Indonesia",
    "Currency": "USD"
@@ -851,33 +875,9 @@
    "Coupon": "8.750",
    "Asset Category": "Bond",
    "Par Value": "1,333,000",
-   "Market Value": "$1,313,791.84",
+   "Market Value": "$1,315,735.80",
    "Weight": "0.48%",
    "Country": "Guyana",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Ecuador Government International Bond",
-   "Maturity": "Jan 29 2039",
-   "Identifier": "BBG01ZVQNBV5",
-   "Coupon": "9.250",
-   "Asset Category": "Bond",
-   "Par Value": "1,285,000",
-   "Market Value": "$1,279,393.82",
-   "Weight": "0.47%",
-   "Country": "Ecuador",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Ecuador Government International Bond",
-   "Maturity": "Jul 31 2035",
-   "Identifier": "BBG00X034RZ8",
-   "Coupon": "0.500",
-   "Asset Category": "Bond",
-   "Par Value": "1,428,000",
-   "Market Value": "$1,279,333.30",
-   "Weight": "0.47%",
-   "Country": "Ecuador",
    "Currency": "USD"
   },
   {
@@ -887,9 +887,33 @@
    "Coupon": "9.500",
    "Asset Category": "Bond",
    "Par Value": "1,499,000",
-   "Market Value": "$1,275,586.54",
+   "Market Value": "$1,285,454.96",
    "Weight": "0.47%",
    "Country": "United Kingdom",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Ecuador Government International Bond",
+   "Maturity": "Jul 31 2035",
+   "Identifier": "BBG00X034RZ8",
+   "Coupon": "0.500",
+   "Asset Category": "Bond",
+   "Par Value": "1,428,000",
+   "Market Value": "$1,280,975.50",
+   "Weight": "0.47%",
+   "Country": "Ecuador",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Ecuador Government International Bond",
+   "Maturity": "Jan 29 2039",
+   "Identifier": "BBG01ZVQNBV5",
+   "Coupon": "9.250",
+   "Asset Category": "Bond",
+   "Par Value": "1,285,000",
+   "Market Value": "$1,273,395.03",
+   "Weight": "0.47%",
+   "Country": "Ecuador",
    "Currency": "USD"
   },
   {
@@ -899,10 +923,22 @@
    "Coupon": "8.631",
    "Asset Category": "Bond",
    "Par Value": "1,170,000",
-   "Market Value": "$1,273,908.37",
+   "Market Value": "$1,271,107.15",
    "Weight": "0.47%",
    "Country": "Nigeria",
    "Currency": "USD"
+  },
+  {
+   "Name": "Korea Treasury Bond",
+   "Maturity": "Mar 10 2030",
+   "Identifier": "BBG01RYVP087",
+   "Coupon": "2.625",
+   "Asset Category": "Bond",
+   "Par Value": "1,731,900,000",
+   "Market Value": "$1,214,585.02",
+   "Weight": "0.44%",
+   "Country": "South Korea",
+   "Currency": "KRW"
   },
   {
    "Name": "Guatemala Government Bond",
@@ -911,7 +947,7 @@
    "Coupon": "6.250",
    "Asset Category": "Bond",
    "Par Value": "1,185,000",
-   "Market Value": "$1,195,917.15",
+   "Market Value": "$1,201,062.02",
    "Weight": "0.44%",
    "Country": "Guatemala",
    "Currency": "USD"
@@ -923,22 +959,10 @@
    "Coupon": "4.412",
    "Asset Category": "Bond",
    "Par Value": "1,204,000",
-   "Market Value": "$1,192,949.88",
+   "Market Value": "$1,192,129.11",
    "Weight": "0.44%",
    "Country": "Kazakhstan",
    "Currency": "USD"
-  },
-  {
-   "Name": "Korea Treasury Bond",
-   "Maturity": "Mar 10 2030",
-   "Identifier": "BBG01RYVP087",
-   "Coupon": "2.625",
-   "Asset Category": "Bond",
-   "Par Value": "1,731,900,000",
-   "Market Value": "$1,190,495.63",
-   "Weight": "0.43%",
-   "Country": "South Korea",
-   "Currency": "KRW"
   },
   {
    "Name": "Ecuador Government International Bond",
@@ -947,7 +971,7 @@
    "Coupon": "9.250",
    "Asset Category": "Bond",
    "Par Value": "1,150,000",
-   "Market Value": "$1,144,982.80",
+   "Market Value": "$1,139,614.23",
    "Weight": "0.42%",
    "Country": "Ecuador",
    "Currency": "USD"
@@ -959,8 +983,8 @@
    "Coupon": "5.625",
    "Asset Category": "Bond",
    "Par Value": "1,476,000",
-   "Market Value": "$1,106,435.43",
-   "Weight": "0.40%",
+   "Market Value": "$1,118,520.18",
+   "Weight": "0.41%",
    "Country": "Peru",
    "Currency": "USD"
   },
@@ -971,7 +995,7 @@
    "Coupon": "7.875",
    "Asset Category": "Bond",
    "Par Value": "946,000",
-   "Market Value": "$1,104,792.02",
+   "Market Value": "$1,103,838.92",
    "Weight": "0.40%",
    "Country": "Jamaica",
    "Currency": "USD"
@@ -983,7 +1007,7 @@
    "Coupon": "8.250",
    "Asset Category": "Bond",
    "Par Value": "1,013,000",
-   "Market Value": "$1,070,039.20",
+   "Market Value": "$1,070,162.67",
    "Weight": "0.39%",
    "Country": "Angola",
    "Currency": "USD"
@@ -995,7 +1019,7 @@
    "Coupon": "4.875",
    "Asset Category": "Bond",
    "Par Value": "1,052,000",
-   "Market Value": "$1,044,840.14",
+   "Market Value": "$1,048,640.06",
    "Weight": "0.38%",
    "Country": "Indonesia",
    "Currency": "USD"
@@ -1007,7 +1031,7 @@
    "Coupon": "8.100",
    "Asset Category": "Bond",
    "Par Value": "1,028,000",
-   "Market Value": "$1,036,367.92",
+   "Market Value": "$1,035,350.20",
    "Weight": "0.38%",
    "Country": "Argentina",
    "Currency": "USD"
@@ -1019,7 +1043,7 @@
    "Coupon": "8.960",
    "Asset Category": "Bond",
    "Par Value": "933,000",
-   "Market Value": "$989,893.29",
+   "Market Value": "$990,830.89",
    "Weight": "0.36%",
    "Country": "Singapore",
    "Currency": "USD"
@@ -1031,7 +1055,7 @@
    "Coupon": "8.875",
    "Asset Category": "Bond",
    "Par Value": "962,000",
-   "Market Value": "$961,000.34",
+   "Market Value": "$961,130.27",
    "Weight": "0.35%",
    "Country": "Cameroon",
    "Currency": "USD"
@@ -1043,7 +1067,7 @@
    "Coupon": "6.600",
    "Asset Category": "Bond",
    "Par Value": "929,000",
-   "Market Value": "$953,432.70",
+   "Market Value": "$948,880.60",
    "Weight": "0.35%",
    "Country": "Dominican Republic",
    "Currency": "USD"
@@ -1055,7 +1079,7 @@
    "Coupon": "8.625",
    "Asset Category": "Bond",
    "Par Value": "880,000",
-   "Market Value": "$922,785.60",
+   "Market Value": "$920,287.72",
    "Weight": "0.34%",
    "Country": "Bermuda",
    "Currency": "USD"
@@ -1067,7 +1091,7 @@
    "Coupon": "5.875",
    "Asset Category": "Bond",
    "Par Value": "928,000",
-   "Market Value": "$907,593.66",
+   "Market Value": "$901,820.73",
    "Weight": "0.33%",
    "Country": "Dominican Republic",
    "Currency": "USD"
@@ -1079,21 +1103,9 @@
    "Coupon": "11.250",
    "Asset Category": "Bond",
    "Par Value": "790,000",
-   "Market Value": "$896,403.13",
+   "Market Value": "$900,135.88",
    "Weight": "0.33%",
    "Country": "Laos",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Trinidad & Tobago Government Internatio",
-   "Maturity": "Jan 14 2031",
-   "Identifier": "BBG01J97CMF4",
-   "Coupon": "5.950",
-   "Asset Category": "Bond",
-   "Par Value": "887,000",
-   "Market Value": "$888,333.21",
-   "Weight": "0.32%",
-   "Country": "Trinidad And Tobago",
    "Currency": "USD"
   },
   {
@@ -1103,10 +1115,22 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "1,097,000",
-   "Market Value": "$881,671.97",
+   "Market Value": "$886,700.44",
    "Weight": "0.32%",
    "Country": "Singapore",
    "Currency": "SGD"
+  },
+  {
+   "Name": "Trinidad & Tobago Government Internatio",
+   "Maturity": "Jan 14 2031",
+   "Identifier": "BBG01J97CMF4",
+   "Coupon": "5.950",
+   "Asset Category": "Bond",
+   "Par Value": "887,000",
+   "Market Value": "$885,593.84",
+   "Weight": "0.32%",
+   "Country": "Trinidad And Tobago",
+   "Currency": "USD"
   },
   {
    "Name": "Republic Of South Africa Government Int",
@@ -1115,7 +1139,7 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "822,000",
-   "Market Value": "$798,423.48",
+   "Market Value": "$798,640.56",
    "Weight": "0.29%",
    "Country": "South Africa",
    "Currency": "USD"
@@ -1127,21 +1151,21 @@
    "Coupon": "11.000",
    "Asset Category": "Bond",
    "Par Value": "947,000",
-   "Market Value": "$784,878.86",
-   "Weight": "0.29%",
+   "Market Value": "$765,307.52",
+   "Weight": "0.28%",
    "Country": "Cayman Islands",
    "Currency": "USD"
   },
   {
-   "Name": "Other",
-   "Maturity": "",
-   "Identifier": "",
-   "Coupon": "",
-   "Asset Category": "other",
+   "Name": "Ypf Sa",
+   "Maturity": "Jun 27 2029",
+   "Identifier": "BBG00PK8BTN3",
+   "Coupon": "8.500",
+   "Asset Category": "Bond",
    "Par Value": "695,000",
-   "Market Value": "$731,022.98",
+   "Market Value": "$729,595.56",
    "Weight": "0.27%",
-   "Country": "",
+   "Country": "Argentina",
    "Currency": "USD"
   },
   {
@@ -1151,7 +1175,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "754,000",
-   "Market Value": "$700,796.76",
+   "Market Value": "$699,704.96",
    "Weight": "0.26%",
    "Country": "Ghana",
    "Currency": "USD"
@@ -1163,8 +1187,8 @@
    "Coupon": "7.800",
    "Asset Category": "Bond",
    "Par Value": "665,000",
-   "Market Value": "$700,233.92",
-   "Weight": "0.26%",
+   "Market Value": "$695,279.67",
+   "Weight": "0.25%",
    "Country": "Argentina",
    "Currency": "USD"
   },
@@ -1175,7 +1199,7 @@
    "Coupon": "3.900",
    "Asset Category": "Bond",
    "Par Value": "721,000",
-   "Market Value": "$665,830.70",
+   "Market Value": "$664,753.26",
    "Weight": "0.24%",
    "Country": "Uzbekistan",
    "Currency": "USD"
@@ -1187,7 +1211,7 @@
    "Coupon": "9.500",
    "Asset Category": "Bond",
    "Par Value": "611,000",
-   "Market Value": "$655,577.61",
+   "Market Value": "$651,083.80",
    "Weight": "0.24%",
    "Country": "Dem.Rep. Congo",
    "Currency": "USD"
@@ -1199,7 +1223,7 @@
    "Coupon": "8.625",
    "Asset Category": "Bond",
    "Par Value": "527,000",
-   "Market Value": "$607,838.29",
+   "Market Value": "$607,267.81",
    "Weight": "0.22%",
    "Country": "Honduras",
    "Currency": "USD"
@@ -1211,9 +1235,21 @@
    "Coupon": "7.700",
    "Asset Category": "Bond",
    "Par Value": "582,000",
-   "Market Value": "$589,006.64",
+   "Market Value": "$589,055.13",
    "Weight": "0.22%",
    "Country": "Brazil",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Dominican Republic International Bond",
+   "Maturity": "Mar 28 2039",
+   "Identifier": "BBG025CJY922",
+   "Coupon": "",
+   "Asset Category": "Bond",
+   "Par Value": "515,000",
+   "Market Value": "$512,425.00",
+   "Weight": "0.19%",
+   "Country": "Dominican Republic",
    "Currency": "USD"
   },
   {
@@ -1223,7 +1259,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "571,200",
-   "Market Value": "$489,090.00",
+   "Market Value": "$490,232.40",
    "Weight": "0.18%",
    "Country": "Ecuador",
    "Currency": "USD"
@@ -1235,7 +1271,7 @@
    "Coupon": "3.375",
    "Asset Category": "Bond",
    "Par Value": "576,000",
-   "Market Value": "$481,232.25",
+   "Market Value": "$481,745.49",
    "Weight": "0.18%",
    "Country": "Singapore",
    "Currency": "SGD"
@@ -1247,8 +1283,8 @@
    "Coupon": "1.340",
    "Asset Category": "Bond",
    "Par Value": "16,176,000",
-   "Market Value": "$477,200.38",
-   "Weight": "0.17%",
+   "Market Value": "$480,114.29",
+   "Weight": "0.18%",
    "Country": "Thailand",
    "Currency": "THB"
   },
@@ -1259,7 +1295,7 @@
    "Coupon": "7.750",
    "Asset Category": "Bond",
    "Par Value": "449,000",
-   "Market Value": "$464,166.22",
+   "Market Value": "$461,939.93",
    "Weight": "0.17%",
    "Country": "Argentina",
    "Currency": "USD"
@@ -1271,7 +1307,7 @@
    "Coupon": "7.750",
    "Asset Category": "Bond",
    "Par Value": "372,000",
-   "Market Value": "$362,867.17",
+   "Market Value": "$362,999.80",
    "Weight": "0.13%",
    "Country": "Philippines",
    "Currency": "USD"
@@ -1283,7 +1319,7 @@
    "Coupon": "2.250",
    "Asset Category": "Bond",
    "Par Value": "144,000,000",
-   "Market Value": "$362,355.52",
+   "Market Value": "$354,766.15",
    "Weight": "0.13%",
    "Country": "Hungary",
    "Currency": "HUF"
@@ -1295,7 +1331,7 @@
    "Coupon": "10.250",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$345,700.00",
+   "Market Value": "$346,546.44",
    "Weight": "0.13%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1307,7 +1343,7 @@
    "Coupon": "6.400",
    "Asset Category": "Bond",
    "Par Value": "314,000",
-   "Market Value": "$310,828.25",
+   "Market Value": "$307,552.18",
    "Weight": "0.11%",
    "Country": "Honduras",
    "Currency": "USD"
@@ -1319,7 +1355,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "285,000,000",
-   "Market Value": "$303,985.12",
+   "Market Value": "$303,549.15",
    "Weight": "0.11%",
    "Country": "Chile",
    "Currency": "CLP"
@@ -1331,7 +1367,7 @@
    "Coupon": "6.600",
    "Asset Category": "Bond",
    "Par Value": "284,000",
-   "Market Value": "$297,808.08",
+   "Market Value": "$296,737.40",
    "Weight": "0.11%",
    "Country": "Guatemala",
    "Currency": "USD"
@@ -1343,7 +1379,7 @@
    "Coupon": "5.875",
    "Asset Category": "Bond",
    "Par Value": "298,000",
-   "Market Value": "$291,447.10",
+   "Market Value": "$289,593.30",
    "Weight": "0.11%",
    "Country": "Dominican Republic",
    "Currency": "USD"
@@ -1355,7 +1391,7 @@
    "Coupon": "2.800",
    "Asset Category": "Bond",
    "Par Value": "8,613,000",
-   "Market Value": "$271,394.96",
+   "Market Value": "$274,412.07",
    "Weight": "0.10%",
    "Country": "Thailand",
    "Currency": "THB"
@@ -1367,7 +1403,7 @@
    "Coupon": "3.750",
    "Asset Category": "Bond",
    "Par Value": "247,000",
-   "Market Value": "$243,165.58",
+   "Market Value": "$243,022.38",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "USD"
@@ -1379,7 +1415,7 @@
    "Coupon": "6.150",
    "Asset Category": "Bond",
    "Par Value": "249,000",
-   "Market Value": "$242,120.53",
+   "Market Value": "$238,194.26",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "USD"
@@ -1391,7 +1427,7 @@
    "Coupon": "8.250",
    "Asset Category": "Bond",
    "Par Value": "225,000",
-   "Market Value": "$237,669.13",
+   "Market Value": "$237,696.55",
    "Weight": "0.09%",
    "Country": "Angola",
    "Currency": "USD"
@@ -1403,7 +1439,7 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "104,000",
-   "Market Value": "$108,478.67",
+   "Market Value": "$108,368.84",
    "Weight": "0.04%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1415,7 +1451,7 @@
    "Coupon": "6.625",
    "Asset Category": "Bond",
    "Par Value": "103,000",
-   "Market Value": "$106,277.40",
+   "Market Value": "$106,288.13",
    "Weight": "0.04%",
    "Country": "Bahamas",
    "Currency": "USD"
@@ -1427,7 +1463,7 @@
    "Coupon": "8.625",
    "Asset Category": "Bond",
    "Par Value": "76,000",
-   "Market Value": "$79,695.12",
+   "Market Value": "$79,479.39",
    "Weight": "0.03%",
    "Country": "Bermuda",
    "Currency": "USD"
@@ -1439,7 +1475,7 @@
    "Coupon": "7.950",
    "Asset Category": "Bond",
    "Par Value": "74,000",
-   "Market Value": "$76,047.63",
+   "Market Value": "$75,963.39",
    "Weight": "0.03%",
    "Country": "Singapore",
    "Currency": "USD"
@@ -1451,7 +1487,7 @@
    "Coupon": "0.250",
    "Asset Category": "Bond",
    "Par Value": "927,000",
-   "Market Value": "$45,783.49",
+   "Market Value": "$46,401.51",
    "Weight": "0.02%",
    "Country": "El Salvador",
    "Currency": "USD"
@@ -1463,7 +1499,7 @@
    "Coupon": "7.960",
    "Asset Category": "Bond",
    "Par Value": "39,000",
-   "Market Value": "$40,769.62",
+   "Market Value": "$40,842.01",
    "Weight": "0.01%",
    "Country": "Benin",
    "Currency": "USD"
@@ -1474,9 +1510,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "33,429,153",
-   "Market Value": "$33,429,153.19",
-   "Weight": "12.20%",
+   "Par Value": "17,445,824",
+   "Market Value": "$17,445,824.19",
+   "Weight": "6.39%",
    "Country": "United States",
    "Currency": "USD"
   },
@@ -1486,11 +1522,11 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "100,051,779",
-   "Market Value": "$72,414.71",
-   "Weight": "0.03%",
-   "Country": "South Korea",
-   "Currency": "KRW"
+   "Par Value": "843,228",
+   "Market Value": "$25,356.44",
+   "Weight": "0.01%",
+   "Country": "Thailand",
+   "Currency": "THB"
   },
   {
    "Name": "",
@@ -1499,7 +1535,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "236",
-   "Market Value": "$271.41",
+   "Market Value": "$269.42",
    "Weight": "0.00%",
    "Country": "Europe",
    "Currency": "EUR"
@@ -1523,7 +1559,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "79,369",
-   "Market Value": "$25.18",
+   "Market Value": "$24.34",
    "Weight": "0.00%",
    "Country": "Colombia",
    "Currency": "COP"
@@ -1535,8 +1571,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-2,870,301.43",
-   "Weight": "-1.05%",
+   "Market Value": "$3,874,241.76",
+   "Weight": "1.42%",
    "Country": "",
    "Currency": "USD"
   }

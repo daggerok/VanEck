@@ -9,28 +9,28 @@
  "ter": "0.50%",
  "terValue": 0.5,
  "nav": {
-  "display": "$48.07",
-  "value": 48.07,
-  "asOfDate": "Sep 18 2026"
+  "display": "$49.15",
+  "value": 49.15,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 48.07,
+ "navValue": 49.15,
  "aum": {
-  "display": "$69.23M",
-  "value": 69227954.66,
-  "asOfDate": "Sep 18 2026",
+  "display": "$67.83M",
+  "value": 67833261.63,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 69227954.66,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 67833261.63,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 01 2026",
  "exchange": "Cboe BZX",
- "closePrice": "$48.12",
- "closePriceValue": 48.12,
+ "closePrice": "$49.15",
+ "closePriceValue": 49.15,
  "premiumDiscount": {
-  "display": "0.05%",
-  "value": 0.05
+  "display": "0.00%",
+  "value": 0
  },
- "premiumDiscountValue": 0.05,
+ "premiumDiscountValue": 0,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -85,11 +85,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.50%",
  "terGrossValue": 0.5,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 52,
+  "totalRows": 53,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -97,16 +97,16 @@
   ]
  },
  "history": {
-  "totalRows": 110,
+  "totalRows": 116,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 69230000,
+ "totalNetAssets": 67830000,
  "indexTicker": "MVRACKTR",
  "indexName": "Data Center Supply Chain Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -145,9 +145,9 @@
   "grossValue": 0.5
  },
  "marketPrice": {
-  "display": "$48.12",
-  "value": 48.12,
-  "asOfDate": "Sep 18 2026"
+  "display": "$49.15",
+  "value": 49.15,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": null,

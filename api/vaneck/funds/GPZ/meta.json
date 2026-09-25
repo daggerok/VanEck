@@ -9,28 +9,28 @@
  "ter": "0.40%",
  "terValue": 0.4,
  "nav": {
-  "display": "$22.40",
-  "value": 22.4,
-  "asOfDate": "Sep 18 2026"
+  "display": "$21.62",
+  "value": 21.62,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 22.4,
+ "navValue": 21.62,
  "aum": {
-  "display": "$229.03M",
-  "value": 229033816.39,
-  "asOfDate": "Sep 18 2026",
+  "display": "$221.07M",
+  "value": 221070128.21,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 229033816.39,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 221070128.21,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 04 2025",
  "exchange": "NYSE Arca",
- "closePrice": "$22.45",
- "closePriceValue": 22.45,
+ "closePrice": "$21.69",
+ "closePriceValue": 21.69,
  "premiumDiscount": {
-  "display": "0.05%",
-  "value": 0.05
+  "display": "0.07%",
+  "value": 0.07
  },
- "premiumDiscountValue": 0.05,
+ "premiumDiscountValue": 0.07,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -51,9 +51,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": -17.38,
-   "ytdText": "-17.38%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": -20.25,
+   "ytdText": "-20.25%",
    "yr1": -10.41,
    "yr3": null,
    "yr5": null,
@@ -70,7 +70,7 @@
   }
  },
  "metrics": {
-  "ytd": -17.38,
+  "ytd": -20.25,
   "tr1y": -10.41,
   "tr3y": null,
   "tr5y": null,
@@ -93,11 +93,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.40%",
  "terGrossValue": 0.4,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 25,
+  "totalRows": 24,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/alternative-asset-manager-etf-gpz/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -105,16 +105,16 @@
   ]
  },
  "history": {
-  "totalRows": 472,
+  "totalRows": 478,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/alternative-asset-manager-etf-gpz/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 229030000,
+ "totalNetAssets": 221070000,
  "indexTicker": "MVAALTTR",
  "indexName": "MarketVector Alternative Asset Managers Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -153,16 +153,16 @@
   "grossValue": 0.4
  },
  "marketPrice": {
-  "display": "$22.45",
-  "value": 22.45,
-  "asOfDate": "Sep 18 2026"
+  "display": "$21.69",
+  "value": 21.69,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 1,
   "dividendYieldText": "1.00%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1,
-  "indicatedYieldText": "1.00%",
+  "indicatedYield": 1.04,
+  "indicatedYieldText": "1.04%",
   "distributionYield": 1,
   "distributionYieldText": "1.00%",
   "yield12M": 0.61,

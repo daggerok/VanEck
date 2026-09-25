@@ -9,28 +9,28 @@
  "ter": "0.52%",
  "terValue": 0.52,
  "nav": {
-  "display": "$39.05",
-  "value": 39.05,
-  "asOfDate": "Sep 18 2026"
+  "display": "$39.10",
+  "value": 39.1,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 39.05,
+ "navValue": 39.1,
  "aum": {
-  "display": "$17.57M",
-  "value": 17574681.16,
-  "asOfDate": "Sep 18 2026",
+  "display": "$17.60M",
+  "value": 17596720.63,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 17574681.16,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 17596720.63,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Oct 30 2018",
  "exchange": "Cboe BZX",
- "closePrice": "$39.02",
- "closePriceValue": 39.02,
+ "closePrice": "$39.08",
+ "closePriceValue": 39.08,
  "premiumDiscount": {
-  "display": "-0.04%",
-  "value": -0.04
+  "display": "-0.03%",
+  "value": -0.03
  },
- "premiumDiscountValue": -0.04,
+ "premiumDiscountValue": -0.03,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -86,9 +86,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 1.12,
-   "ytdText": "1.12%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 1.25,
+   "ytdText": "1.25%",
    "yr1": 8.53,
    "yr3": 14.74,
    "yr5": 6.87,
@@ -105,7 +105,7 @@
   }
  },
  "metrics": {
-  "ytd": 1.12,
+  "ytd": 1.25,
   "tr1y": 8.53,
   "tr3y": 51.05,
   "tr5y": 39.39,
@@ -128,11 +128,11 @@
  "providerCategory": "Moat Investing",
  "terGross": "1.14%",
  "terGrossValue": 1.14,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 80,
+  "totalRows": 82,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-global-wide-moat-etf-motg/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -140,9 +140,9 @@
   ]
  },
  "history": {
-  "totalRows": 2331,
+  "totalRows": 2337,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-global-wide-moat-etf-motg/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -151,7 +151,7 @@
    "history/003.json"
   ]
  },
- "totalNetAssets": 17570000,
+ "totalNetAssets": 17600000,
  "categoryPath": "Equity > Moat Investing",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -188,9 +188,9 @@
   "grossValue": 1.14
  },
  "marketPrice": {
-  "display": "$39.02",
-  "value": 39.02,
-  "asOfDate": "Sep 18 2026"
+  "display": "$39.08",
+  "value": 39.08,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 17.62,

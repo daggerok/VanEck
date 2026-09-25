@@ -9,28 +9,28 @@
  "ter": "0.57%",
  "terValue": 0.57,
  "nav": {
-  "display": "$11.36",
-  "value": 11.36,
-  "asOfDate": "Sep 18 2026"
+  "display": "$11.02",
+  "value": 11.02,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 11.36,
+ "navValue": 11.02,
  "aum": {
-  "display": "$36.93M",
-  "value": 36932459.34,
-  "asOfDate": "Sep 18 2026",
+  "display": "$35.80M",
+  "value": 35804253.05,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 36932459.34,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 35804253.05,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jan 15 2009",
  "exchange": "NYSE Arca",
- "closePrice": "$11.31",
- "closePriceValue": 11.31,
+ "closePrice": "$10.98",
+ "closePriceValue": 10.98,
  "premiumDiscount": {
-  "display": "-0.05%",
-  "value": -0.05
+  "display": "-0.04%",
+  "value": -0.04
  },
- "premiumDiscountValue": -0.05,
+ "premiumDiscountValue": -0.04,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -131,9 +131,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": -31.89,
-   "ytdText": "-31.89%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": -33.97,
+   "ytdText": "-33.97%",
    "yr1": -25.33,
    "yr3": -11.2,
    "yr5": -6.58,
@@ -150,7 +150,7 @@
   }
  },
  "metrics": {
-  "ytd": -31.89,
+  "ytd": -33.97,
   "tr1y": -25.33,
   "tr3y": -29.97,
   "tr5y": -28.85,
@@ -173,11 +173,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.86%",
  "terGrossValue": 0.86,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 72,
+  "totalRows": 68,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -185,9 +185,9 @@
   ]
  },
  "history": {
-  "totalRows": 4796,
+  "totalRows": 4802,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/indonesia-index-etf-idx/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -198,7 +198,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 36930000,
+ "totalNetAssets": 35800000,
  "indexTicker": "MVIDXTR",
  "indexName": "Indonesia Index",
  "categoryPath": "Equity > Country/Regional",
@@ -237,16 +237,16 @@
   "grossValue": 0.86
  },
  "marketPrice": {
-  "display": "$11.31",
-  "value": 11.31,
-  "asOfDate": "Sep 18 2026"
+  "display": "$10.98",
+  "value": 10.98,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 3.03,
   "dividendYieldText": "3.03%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 3.03,
-  "indicatedYieldText": "3.03%",
+  "indicatedYield": 3.12,
+  "indicatedYieldText": "3.12%",
   "distributionYield": 3.03,
   "distributionYieldText": "3.03%",
   "yield12M": 1.47,

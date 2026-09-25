@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$24.62",
-  "value": 24.62,
-  "asOfDate": "Sep 18 2026"
+  "display": "$24.71",
+  "value": 24.71,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 24.62,
+ "navValue": 24.71,
  "aum": {
-  "display": "$3.69M",
-  "value": 3692874.28,
-  "asOfDate": "Sep 18 2026",
+  "display": "$3.71M",
+  "value": 3706877.57,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3692874.28,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 3706877.57,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Sep 09 2026",
  "exchange": "NASDAQ",
- "closePrice": "$24.67",
- "closePriceValue": 24.67,
+ "closePrice": "$24.79",
+ "closePriceValue": 24.79,
  "premiumDiscount": {
-  "display": "0.05%",
-  "value": 0.05
+  "display": "0.08%",
+  "value": 0.08
  },
- "premiumDiscountValue": 0.05,
+ "premiumDiscountValue": 0.08,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -46,7 +46,7 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Aug 31 2026",
-   "sinceInception": -1.48,
+   "sinceInception": -1.1,
    "yr1": null,
    "yr3": null,
    "yr5": null,
@@ -70,7 +70,7 @@
   "cagr3y": null,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": -1.48,
+  "siAnn": -1.1,
   "dividendYield": null,
   "dividendYieldText": "—",
   "distributionYield": null,
@@ -85,11 +85,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 104,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -97,16 +97,16 @@
   ]
  },
  "history": {
-  "totalRows": 10,
+  "totalRows": 16,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 3690000,
+ "totalNetAssets": 3710000,
  "indexTicker": "NU763973",
  "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -145,9 +145,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$24.67",
-  "value": 24.67,
-  "asOfDate": "Sep 18 2026"
+  "display": "$24.79",
+  "value": 24.79,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": null,

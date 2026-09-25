@@ -2,7 +2,7 @@
  "ticker": "GLIN",
  "page": 1,
  "pageSize": 250,
- "totalRows": 140,
+ "totalRows": 84,
  "headers": [
   "Name",
   "Ticker",
@@ -15,1174 +15,804 @@
  ],
  "rows": [
   {
-   "Name": "Bse Ltd",
-   "Ticker": "BSE IN",
-   "Identifier": "BBG000GKW537",
-   "Shares Held": "144,528",
+   "Name": "Hdfc Bank Ltd",
+   "Ticker": "HDB",
+   "Identifier": "BBG000NWKS18",
+   "Shares Held": "207,705",
    "Asset Category": "Stock",
-   "Market Value": "$4,917,530.27",
+   "Market Value": "$4,733,596.95",
    "Notional Value": "",
-   "Weight": "5.43%"
-  },
-  {
-   "Name": "Hindustan Aeronautics Ltd",
-   "Ticker": "HNAL IN",
-   "Identifier": "BBG000FT6SB9",
-   "Shares Held": "89,728",
-   "Asset Category": "Stock",
-   "Market Value": "$4,480,020.53",
-   "Notional Value": "",
-   "Weight": "4.95%"
-  },
-  {
-   "Name": "Eicher Motors Ltd",
-   "Ticker": "EIM IN",
-   "Identifier": "BBG000CQTR98",
-   "Shares Held": "54,862",
-   "Asset Category": "Stock",
-   "Market Value": "$4,288,202.86",
-   "Notional Value": "",
-   "Weight": "4.74%"
+   "Weight": "5.22%"
   },
   {
    "Name": "Bharti Airtel Ltd",
    "Ticker": "BHARTI IN",
    "Identifier": "BBG000DX1FT6",
-   "Shares Held": "223,428",
+   "Shares Held": "240,235",
    "Asset Category": "Stock",
-   "Market Value": "$4,280,077.34",
+   "Market Value": "$4,582,971.65",
    "Notional Value": "",
-   "Weight": "4.73%"
+   "Weight": "5.06%"
   },
   {
    "Name": "State Bank Of India",
    "Ticker": "SBIN IN",
    "Identifier": "BBG000GQ5749",
-   "Shares Held": "371,730",
+   "Shares Held": "439,478",
    "Asset Category": "Stock",
-   "Market Value": "$3,835,461.69",
+   "Market Value": "$4,543,832.97",
    "Notional Value": "",
-   "Weight": "4.24%"
+   "Weight": "5.01%"
   },
   {
-   "Name": "Bharat Electronics Ltd",
-   "Ticker": "BHE IN",
-   "Identifier": "BBG000CP4T57",
-   "Shares Held": "892,275",
+   "Name": "Infosys Ltd",
+   "Ticker": "INFY",
+   "Identifier": "BBG000BSGQL7",
+   "Shares Held": "419,515",
    "Asset Category": "Stock",
-   "Market Value": "$3,684,717.33",
+   "Market Value": "$4,509,786.25",
    "Notional Value": "",
-   "Weight": "4.07%"
-  },
-  {
-   "Name": "Trent Ltd",
-   "Ticker": "TRENT IN",
-   "Identifier": "BBG000CVJLS0",
-   "Shares Held": "121,424",
-   "Asset Category": "Stock",
-   "Market Value": "$3,533,402.32",
-   "Notional Value": "",
-   "Weight": "3.90%"
-  },
-  {
-   "Name": "Multi Commodity Exchange Of India Ltd",
-   "Ticker": "MCX IN",
-   "Identifier": "BBG000Q47HF1",
-   "Shares Held": "101,681",
-   "Asset Category": "Stock",
-   "Market Value": "$3,465,554.15",
-   "Notional Value": "",
-   "Weight": "3.83%"
-  },
-  {
-   "Name": "Hero Motocorp Ltd",
-   "Ticker": "HMCL IN",
-   "Identifier": "BBG000CSDVY4",
-   "Shares Held": "61,371",
-   "Asset Category": "Stock",
-   "Market Value": "$3,410,713.07",
-   "Notional Value": "",
-   "Weight": "3.77%"
-  },
-  {
-   "Name": "Polycab India Ltd",
-   "Ticker": "POLYCAB IN",
-   "Identifier": "BBG000P80977",
-   "Shares Held": "37,649",
-   "Asset Category": "Stock",
-   "Market Value": "$3,222,877.31",
-   "Notional Value": "",
-   "Weight": "3.56%"
-  },
-  {
-   "Name": "Ge Vernova T&D India Ltd",
-   "Ticker": "GVTD IN",
-   "Identifier": "BBG000F0CHY4",
-   "Shares Held": "58,519",
-   "Asset Category": "Stock",
-   "Market Value": "$2,645,274.40",
-   "Notional Value": "",
-   "Weight": "2.92%"
-  },
-  {
-   "Name": "Lupin Ltd",
-   "Ticker": "LPC IN",
-   "Identifier": "BBG000CVRLC8",
-   "Shares Held": "115,769",
-   "Asset Category": "Stock",
-   "Market Value": "$2,533,553.40",
-   "Notional Value": "",
-   "Weight": "2.80%"
-  },
-  {
-   "Name": "Suzlon Energy Ltd",
-   "Ticker": "SUEL IN",
-   "Identifier": "BBG000BWZ9X2",
-   "Shares Held": "5,451,969",
-   "Asset Category": "Stock",
-   "Market Value": "$2,419,766.97",
-   "Notional Value": "",
-   "Weight": "2.67%"
-  },
-  {
-   "Name": "Bank Of Baroda",
-   "Ticker": "BOB IN",
-   "Identifier": "BBG000BR4JZ3",
-   "Shares Held": "963,262",
-   "Asset Category": "Stock",
-   "Market Value": "$2,335,271.39",
-   "Notional Value": "",
-   "Weight": "2.58%"
-  },
-  {
-   "Name": "Idbi Bank Ltd",
-   "Ticker": "IDBI IN",
-   "Identifier": "BBG000FK7TZ9",
-   "Shares Held": "2,686,857",
-   "Asset Category": "Stock",
-   "Market Value": "$2,296,605.36",
-   "Notional Value": "",
-   "Weight": "2.54%"
-  },
-  {
-   "Name": "Canara Bank",
-   "Ticker": "CBK IN",
-   "Identifier": "BBG000BMBB10",
-   "Shares Held": "1,685,828",
-   "Asset Category": "Stock",
-   "Market Value": "$2,180,518.12",
-   "Notional Value": "",
-   "Weight": "2.41%"
-  },
-  {
-   "Name": "Hdfc Asset Management Co Ltd",
-   "Ticker": "HDFCAMC IN",
-   "Identifier": "BBG000D8NK07",
-   "Shares Held": "86,283",
-   "Asset Category": "Stock",
-   "Market Value": "$2,149,690.02",
-   "Notional Value": "",
-   "Weight": "2.38%"
-  },
-  {
-   "Name": "Union Bank Of India",
-   "Ticker": "UNBK IN",
-   "Identifier": "BBG000BR5TW3",
-   "Shares Held": "990,474",
-   "Asset Category": "Stock",
-   "Market Value": "$1,841,652.17",
-   "Notional Value": "",
-   "Weight": "2.04%"
-  },
-  {
-   "Name": "Muthoot Finance Ltd",
-   "Ticker": "MUTH IN",
-   "Identifier": "BBG00146SHF5",
-   "Shares Held": "54,708",
-   "Asset Category": "Stock",
-   "Market Value": "$1,581,653.42",
-   "Notional Value": "",
-   "Weight": "1.75%"
-  },
-  {
-   "Name": "Indian Bank",
-   "Ticker": "INBK IN",
-   "Identifier": "BBG000DYKHP3",
-   "Shares Held": "178,848",
-   "Asset Category": "Stock",
-   "Market Value": "$1,568,957.10",
-   "Notional Value": "",
-   "Weight": "1.73%"
-  },
-  {
-   "Name": "National Aluminium Co Ltd",
-   "Ticker": "NACL IN",
-   "Identifier": "BBG000KCDZ26",
-   "Shares Held": "398,558",
-   "Asset Category": "Stock",
-   "Market Value": "$1,481,259.29",
-   "Notional Value": "",
-   "Weight": "1.64%"
-  },
-  {
-   "Name": "Welspun Corp Ltd",
-   "Ticker": "WLCO IN",
-   "Identifier": "BBG000BLG6Y2",
-   "Shares Held": "56,603",
-   "Asset Category": "Stock",
-   "Market Value": "$1,452,787.31",
-   "Notional Value": "",
-   "Weight": "1.61%"
-  },
-  {
-   "Name": "Nmdc Ltd",
-   "Ticker": "NMDC IN",
-   "Identifier": "BBG000D5SCL3",
-   "Shares Held": "1,700,139",
-   "Asset Category": "Stock",
-   "Market Value": "$1,433,692.44",
-   "Notional Value": "",
-   "Weight": "1.58%"
-  },
-  {
-   "Name": "Zydus Lifesciences Ltd",
-   "Ticker": "ZYDUSLIF IN",
-   "Identifier": "BBG000CM2C44",
-   "Shares Held": "118,742",
-   "Asset Category": "Stock",
-   "Market Value": "$1,406,065.74",
-   "Notional Value": "",
-   "Weight": "1.55%"
-  },
-  {
-   "Name": "Waaree Energies Ltd",
-   "Ticker": "WAAREEEN IN",
-   "Identifier": "BBG003QVC501",
-   "Shares Held": "41,879",
-   "Asset Category": "Stock",
-   "Market Value": "$1,080,929.92",
-   "Notional Value": "",
-   "Weight": "1.19%"
-  },
-  {
-   "Name": "Nippon Life India Asset Management Ltd",
-   "Ticker": "NAM IN",
-   "Identifier": "BBG000HN55L0",
-   "Shares Held": "87,386",
-   "Asset Category": "Stock",
-   "Market Value": "$1,020,340.11",
-   "Notional Value": "",
-   "Weight": "1.13%"
-  },
-  {
-   "Name": "Sai Life Sciences Ltd",
-   "Ticker": "SAILIFE IN",
-   "Identifier": "BBG000TW03Z2",
-   "Shares Held": "59,839",
-   "Asset Category": "Stock",
-   "Market Value": "$965,312.66",
-   "Notional Value": "",
-   "Weight": "1.07%"
-  },
-  {
-   "Name": "Bank Of India",
-   "Ticker": "BOI IN",
-   "Identifier": "BBG000BVN921",
-   "Shares Held": "646,591",
-   "Asset Category": "Stock",
-   "Market Value": "$932,570.52",
-   "Notional Value": "",
-   "Weight": "1.03%"
-  },
-  {
-   "Name": "Td Power Systems Ltd",
-   "Ticker": "TDPS IN",
-   "Identifier": "BBG001CS9208",
-   "Shares Held": "118,762",
-   "Asset Category": "Stock",
-   "Market Value": "$894,869.23",
-   "Notional Value": "",
-   "Weight": "0.99%"
-  },
-  {
-   "Name": "Bank Of Maharashtra",
-   "Ticker": "BOMH IN",
-   "Identifier": "BBG000DTSRT0",
-   "Shares Held": "1,027,909",
-   "Asset Category": "Stock",
-   "Market Value": "$866,957.47",
-   "Notional Value": "",
-   "Weight": "0.96%"
-  },
-  {
-   "Name": "Hindustan Copper Ltd",
-   "Ticker": "HCP IN",
-   "Identifier": "BBG000DFQMD0",
-   "Shares Held": "166,097",
-   "Asset Category": "Stock",
-   "Market Value": "$843,195.09",
-   "Notional Value": "",
-   "Weight": "0.93%"
-  },
-  {
-   "Name": "Acutaas Chemicals Ltd",
-   "Ticker": "ACUTAAS IN",
-   "Identifier": "BBG006K7LT92",
-   "Shares Held": "24,306",
-   "Asset Category": "Stock",
-   "Market Value": "$841,111.56",
-   "Notional Value": "",
-   "Weight": "0.93%"
-  },
-  {
-   "Name": "Lloyds Metals & Energy Ltd",
-   "Ticker": "LLOYDSME IN",
-   "Identifier": "BBG000CVQ295",
-   "Shares Held": "41,499",
-   "Asset Category": "Stock",
-   "Market Value": "$779,264.57",
-   "Notional Value": "",
-   "Weight": "0.86%"
-  },
-  {
-   "Name": "Syrma Sgs Technology Ltd",
-   "Ticker": "SYRMA IN",
-   "Identifier": "BBG001BMXKM1",
-   "Shares Held": "37,626",
-   "Asset Category": "Stock",
-   "Market Value": "$635,772.54",
-   "Notional Value": "",
-   "Weight": "0.70%"
-  },
-  {
-   "Name": "Inventurus Knowledge Solutions Ltd",
-   "Ticker": "IKS IN",
-   "Identifier": "BBG002Z8QDR3",
-   "Shares Held": "34,963",
-   "Asset Category": "Stock",
-   "Market Value": "$631,018.98",
-   "Notional Value": "",
-   "Weight": "0.70%"
-  },
-  {
-   "Name": "Premier Energies Ltd",
-   "Ticker": "PREMIERE IN",
-   "Identifier": "BBG002YYBDN7",
-   "Shares Held": "56,617",
-   "Asset Category": "Stock",
-   "Market Value": "$519,909.96",
-   "Notional Value": "",
-   "Weight": "0.57%"
-  },
-  {
-   "Name": "Data Patterns India Ltd",
-   "Ticker": "DATAPATT IN",
-   "Identifier": "BBG0149BYWZ0",
-   "Shares Held": "11,079",
-   "Asset Category": "Stock",
-   "Market Value": "$510,034.35",
-   "Notional Value": "",
-   "Weight": "0.56%"
-  },
-  {
-   "Name": "Cupid Ltd",
-   "Ticker": "CUPD IN",
-   "Identifier": "BBG000BY2KD1",
-   "Shares Held": "172,497",
-   "Asset Category": "Stock",
-   "Market Value": "$502,624.91",
-   "Notional Value": "",
-   "Weight": "0.56%"
-  },
-  {
-   "Name": "Netweb Technologies India Ltd",
-   "Ticker": "NETWEB IN",
-   "Identifier": "BBG00Q4053Q7",
-   "Shares Held": "10,110",
-   "Asset Category": "Stock",
-   "Market Value": "$483,649.23",
-   "Notional Value": "",
-   "Weight": "0.53%"
-  },
-  {
-   "Name": "Force Motors Ltd",
-   "Ticker": "FML IN",
-   "Identifier": "BBG000CNXR54",
-   "Shares Held": "2,457",
-   "Asset Category": "Stock",
-   "Market Value": "$452,477.81",
-   "Notional Value": "",
-   "Weight": "0.50%"
-  },
-  {
-   "Name": "Kfin Technologies Ltd",
-   "Ticker": "KFINTECH IN",
-   "Identifier": "BBG00V4SZS69",
-   "Shares Held": "45,436",
-   "Asset Category": "Stock",
-   "Market Value": "$425,147.16",
-   "Notional Value": "",
-   "Weight": "0.47%"
-  },
-  {
-   "Name": "Hbl Power Systems Ltd",
-   "Ticker": "HBLENGIN IN",
-   "Identifier": "BBG000CZ3004",
-   "Shares Held": "53,129",
-   "Asset Category": "Stock",
-   "Market Value": "$419,579.16",
-   "Notional Value": "",
-   "Weight": "0.46%"
-  },
-  {
-   "Name": "Engineers India Ltd",
-   "Ticker": "ENGR IN",
-   "Identifier": "BBG000BVY1D4",
-   "Shares Held": "140,764",
-   "Asset Category": "Stock",
-   "Market Value": "$387,307.96",
-   "Notional Value": "",
-   "Weight": "0.43%"
-  },
-  {
-   "Name": "Ajanta Pharma Ltd",
-   "Ticker": "AJP IN",
-   "Identifier": "BBG000CQGB79",
-   "Shares Held": "10,280",
-   "Asset Category": "Stock",
-   "Market Value": "$375,401.11",
-   "Notional Value": "",
-   "Weight": "0.41%"
-  },
-  {
-   "Name": "Aditya Birla Sun Life Asset Management",
-   "Ticker": "ABSLAMC IN",
-   "Identifier": "BBG012PPGP35",
-   "Shares Held": "31,591",
-   "Asset Category": "Stock",
-   "Market Value": "$359,150.99",
-   "Notional Value": "",
-   "Weight": "0.40%"
-  },
-  {
-   "Name": "Shaily Engineering Plastics Ltd",
-   "Ticker": "SHEP IN",
-   "Identifier": "BBG000D2MF39",
-   "Shares Held": "10,677",
-   "Asset Category": "Stock",
-   "Market Value": "$346,245.97",
-   "Notional Value": "",
-   "Weight": "0.38%"
-  },
-  {
-   "Name": "Sagility Ltd",
-   "Ticker": "SAGILITY IN",
-   "Identifier": "BBG017CSZ385",
-   "Shares Held": "735,327",
-   "Asset Category": "Stock",
-   "Market Value": "$342,181.46",
-   "Notional Value": "",
-   "Weight": "0.38%"
-  },
-  {
-   "Name": "Garden Reach Shipbuilders & Engineers L",
-   "Ticker": "GRSE IN",
-   "Identifier": "BBG001WSYRF7",
-   "Shares Held": "13,338",
-   "Asset Category": "Stock",
-   "Market Value": "$324,934.88",
-   "Notional Value": "",
-   "Weight": "0.36%"
-  },
-  {
-   "Name": "Eclerx Services Ltd",
-   "Ticker": "ECLX IN",
-   "Identifier": "BBG000GWYK27",
-   "Shares Held": "16,127",
-   "Asset Category": "Stock",
-   "Market Value": "$323,733.81",
-   "Notional Value": "",
-   "Weight": "0.36%"
-  },
-  {
-   "Name": "Sky Gold And Diamonds Ltd",
-   "Ticker": "SKYGOLD IN",
-   "Identifier": "BBG00KHS6C20",
-   "Shares Held": "36,759",
-   "Asset Category": "Stock",
-   "Market Value": "$304,279.31",
-   "Notional Value": "",
-   "Weight": "0.34%"
-  },
-  {
-   "Name": "Voltamp Transformers Ltd",
-   "Ticker": "VAMP IN",
-   "Identifier": "BBG000P62BQ3",
-   "Shares Held": "2,614",
-   "Asset Category": "Stock",
-   "Market Value": "$292,850.62",
-   "Notional Value": "",
-   "Weight": "0.32%"
-  },
-  {
-   "Name": "Sjs Enterprises Ltd",
-   "Ticker": "SJS IN",
-   "Identifier": "BBG002WN2RK5",
-   "Shares Held": "11,896",
-   "Asset Category": "Stock",
-   "Market Value": "$281,263.01",
-   "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Natco Pharma Ltd",
-   "Ticker": "NTCPH IN",
-   "Identifier": "BBG000F4LS63",
-   "Shares Held": "32,923",
-   "Asset Category": "Stock",
-   "Market Value": "$281,005.77",
-   "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Spr Auto Technologies Ltd",
-   "Ticker": "SHRIPIST IN",
-   "Identifier": "BBG001C7T5Q7",
-   "Shares Held": "6,096",
-   "Asset Category": "Stock",
-   "Market Value": "$278,809.80",
-   "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Chambal Fertilizers And Chemicals Ltd",
-   "Ticker": "CHMB IN",
-   "Identifier": "BBG000CPW095",
-   "Shares Held": "64,199",
-   "Asset Category": "Stock",
-   "Market Value": "$277,152.77",
-   "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Jammu & Kashmir Bank Ltd/The",
-   "Ticker": "JKBK IN",
-   "Identifier": "BBG000BNWRK9",
-   "Shares Held": "170,288",
-   "Asset Category": "Stock",
-   "Market Value": "$261,768.58",
-   "Notional Value": "",
-   "Weight": "0.29%"
-  },
-  {
-   "Name": "Pricol Ltd",
-   "Ticker": "PRICOL IN",
-   "Identifier": "BBG00FGS38P9",
-   "Shares Held": "31,475",
-   "Asset Category": "Stock",
-   "Market Value": "$247,075.10",
-   "Notional Value": "",
-   "Weight": "0.27%"
-  },
-  {
-   "Name": "Authum Investment & Infrastucture Ltd",
-   "Ticker": "AIIL IN",
-   "Identifier": "BBG009CKXXT2",
-   "Shares Held": "43,239",
-   "Asset Category": "Stock",
-   "Market Value": "$237,900.18",
-   "Notional Value": "",
-   "Weight": "0.26%"
-  },
-  {
-   "Name": "Yatharth Hospital & Trauma Care Service",
-   "Ticker": "YATHARTH IN",
-   "Identifier": "BBG00FZBY5R5",
-   "Shares Held": "19,993",
-   "Asset Category": "Stock",
-   "Market Value": "$223,829.70",
-   "Notional Value": "",
-   "Weight": "0.25%"
-  },
-  {
-   "Name": "Indiamart Intermesh Ltd",
-   "Ticker": "INMART IN",
-   "Identifier": "BBG005J78V87",
-   "Shares Held": "11,897",
-   "Asset Category": "Stock",
-   "Market Value": "$206,342.03",
-   "Notional Value": "",
-   "Weight": "0.23%"
-  },
-  {
-   "Name": "Bajaj Consumer Care Ltd",
-   "Ticker": "BAJAJCON IN",
-   "Identifier": "BBG000QF3J02",
-   "Shares Held": "35,398",
-   "Asset Category": "Stock",
-   "Market Value": "$185,581.28",
-   "Notional Value": "",
-   "Weight": "0.21%"
-  },
-  {
-   "Name": "International Gemmological Institute In",
-   "Ticker": "IGIL IN",
-   "Identifier": "BBG01GS2HK69",
-   "Shares Held": "48,213",
-   "Asset Category": "Stock",
-   "Market Value": "$158,371.83",
-   "Notional Value": "",
-   "Weight": "0.18%"
-  },
-  {
-   "Name": "V2 Retail Ltd",
-   "Ticker": "VREL IN",
-   "Identifier": "",
-   "Shares Held": "70,585",
-   "Asset Category": "Stock",
-   "Market Value": "$155,024.50",
-   "Notional Value": "",
-   "Weight": "0.17%"
-  },
-  {
-   "Name": "Tips Industries Ltd",
-   "Ticker": "TIPSMUSI IN",
-   "Identifier": "BBG000BGSPR6",
-   "Shares Held": "22,192",
-   "Asset Category": "Stock",
-   "Market Value": "$152,228.45",
-   "Notional Value": "",
-   "Weight": "0.17%"
-  },
-  {
-   "Name": "Transformers & Rectifiers India Ltd",
-   "Ticker": "TARIL IN",
-   "Identifier": "BBG000QXSN70",
-   "Shares Held": "51,902",
-   "Asset Category": "Stock",
-   "Market Value": "$149,184.54",
-   "Notional Value": "",
-   "Weight": "0.16%"
-  },
-  {
-   "Name": "Quality Power Electrical Equipments Ltd",
-   "Ticker": "QPOWER IN",
-   "Identifier": "BBG00KHS3KM3",
-   "Shares Held": "9,242",
-   "Asset Category": "Stock",
-   "Market Value": "$144,004.25",
-   "Notional Value": "",
-   "Weight": "0.16%"
-  },
-  {
-   "Name": "Senores Pharmaceuticals Ltd",
-   "Ticker": "SENORES IN",
-   "Identifier": "BBG014HGR523",
-   "Shares Held": "9,732",
-   "Asset Category": "Stock",
-   "Market Value": "$142,485.38",
-   "Notional Value": "",
-   "Weight": "0.16%"
-  },
-  {
-   "Name": "Shakti Pumps India Ltd",
-   "Ticker": "SKPI IN",
-   "Identifier": "BBG000BY28Z4",
-   "Shares Held": "27,624",
-   "Asset Category": "Stock",
-   "Market Value": "$133,607.05",
-   "Notional Value": "",
-   "Weight": "0.15%"
-  },
-  {
-   "Name": "Bls International Services Ltd",
-   "Ticker": "BLSIN IN",
-   "Identifier": "BBG00CGKTTY9",
-   "Shares Held": "54,183",
-   "Asset Category": "Stock",
-   "Market Value": "$128,855.32",
-   "Notional Value": "",
-   "Weight": "0.14%"
-  },
-  {
-   "Name": "Banco Products India Ltd",
-   "Ticker": "BNCO IN",
-   "Identifier": "BBG000BHRZ20",
-   "Shares Held": "19,128",
-   "Asset Category": "Stock",
-   "Market Value": "$118,379.12",
-   "Notional Value": "",
-   "Weight": "0.13%"
-  },
-  {
-   "Name": "Krn Heat Exchanger And Refrigeration Lt",
-   "Ticker": "KRN IN",
-   "Identifier": "BBG01PSQ3R93",
-   "Shares Held": "8,009",
-   "Asset Category": "Stock",
-   "Market Value": "$116,558.86",
-   "Notional Value": "",
-   "Weight": "0.13%"
-  },
-  {
-   "Name": "Balu Forge Industries Ltd",
-   "Ticker": "BALUFORG IN",
-   "Identifier": "BBG000FLM6M4",
-   "Shares Held": "21,357",
-   "Asset Category": "Stock",
-   "Market Value": "$111,781.94",
-   "Notional Value": "",
-   "Weight": "0.12%"
-  },
-  {
-   "Name": "Knowledge Marine & Engineering Works Lt",
-   "Ticker": "KMEW IN",
-   "Identifier": "BBG00ZQT3MM4",
-   "Shares Held": "3,754",
-   "Asset Category": "Stock",
-   "Market Value": "$110,821.89",
-   "Notional Value": "",
-   "Weight": "0.12%"
-  },
-  {
-   "Name": "Pondy Oxides & Chemicals Ltd",
-   "Ticker": "POCL IN",
-   "Identifier": "BBG000BYYXW7",
-   "Shares Held": "20,318",
-   "Asset Category": "Stock",
-   "Market Value": "$99,719.47",
-   "Notional Value": "",
-   "Weight": "0.11%"
-  },
-  {
-   "Name": "Websol Energy System Ltd",
-   "Ticker": "WESL IN",
-   "Identifier": "BBG000DS5C10",
-   "Shares Held": "110,306",
-   "Asset Category": "Stock",
-   "Market Value": "$82,586.65",
-   "Notional Value": "",
-   "Weight": "0.09%"
-  },
-  {
-   "Name": "Sharda Cropchem Ltd",
-   "Ticker": "SHCR IN",
-   "Identifier": "BBG006SZ83G6",
-   "Shares Held": "10,273",
-   "Asset Category": "Stock",
-   "Market Value": "$79,526.09",
-   "Notional Value": "",
-   "Weight": "0.09%"
-  },
-  {
-   "Name": "Piccadily Agro Industries Ltd",
-   "Ticker": "PCAI IN",
-   "Identifier": "BBG000F8GQW5",
-   "Shares Held": "11,997",
-   "Asset Category": "Stock",
-   "Market Value": "$75,067.70",
-   "Notional Value": "",
-   "Weight": "0.08%"
-  },
-  {
-   "Name": "Transrail Lighting Ltd",
-   "Ticker": "TRANSRAI IN",
-   "Identifier": "BBG006GTB299",
-   "Shares Held": "15,397",
-   "Asset Category": "Stock",
-   "Market Value": "$65,930.72",
-   "Notional Value": "",
-   "Weight": "0.07%"
-  },
-  {
-   "Name": "Interarch Building Products Ltd",
-   "Ticker": "INTERARC IN",
-   "Identifier": "BBG001BMYKD0",
-   "Shares Held": "3,327",
-   "Asset Category": "Stock",
-   "Market Value": "$58,826.11",
-   "Notional Value": "",
-   "Weight": "0.07%"
-  },
-  {
-   "Name": "Zaggle Prepaid Ocean Services Ltd",
-   "Ticker": "ZAGGLE IN",
-   "Identifier": "BBG017XH2907",
-   "Shares Held": "28,343",
-   "Asset Category": "Stock",
-   "Market Value": "$53,677.88",
-   "Notional Value": "",
-   "Weight": "0.06%"
+   "Weight": "4.98%"
   },
   {
    "Name": "Axis Bank Ltd",
    "Ticker": "AXSB IN",
    "Identifier": "BBG000BD5ZZ7",
-   "Shares Held": "3,422",
+   "Shares Held": "342,731",
    "Asset Category": "Stock",
-   "Market Value": "$44,270.54",
+   "Market Value": "$4,432,964.97",
    "Notional Value": "",
-   "Weight": "0.05%"
+   "Weight": "4.89%"
+  },
+  {
+   "Name": "Icici Bank Ltd",
+   "Ticker": "IBN",
+   "Identifier": "",
+   "Shares Held": "158,117",
+   "Asset Category": "Stock",
+   "Market Value": "$4,413,045.47",
+   "Notional Value": "",
+   "Weight": "4.87%"
   },
   {
    "Name": "Mahindra & Mahindra Ltd",
    "Ticker": "MM IN",
    "Identifier": "",
-   "Shares Held": "1,068",
+   "Shares Held": "107,014",
    "Asset Category": "Stock",
-   "Market Value": "$34,295.52",
+   "Market Value": "$3,374,716.67",
    "Notional Value": "",
-   "Weight": "0.04%"
+   "Weight": "3.72%"
   },
   {
    "Name": "Kotak Mahindra Bank Ltd",
    "Ticker": "KMB IN",
    "Identifier": "BBG000CVD592",
-   "Shares Held": "7,675",
+   "Shares Held": "768,723",
    "Asset Category": "Stock",
-   "Market Value": "$33,352.05",
+   "Market Value": "$3,303,545.65",
    "Notional Value": "",
-   "Weight": "0.04%"
+   "Weight": "3.65%"
   },
   {
    "Name": "Bajaj Finance Ltd",
    "Ticker": "BAF IN",
    "Identifier": "BBG000DBLZQ1",
-   "Shares Held": "2,970",
+   "Shares Held": "297,442",
    "Asset Category": "Stock",
-   "Market Value": "$31,457.56",
+   "Market Value": "$3,224,727.41",
    "Notional Value": "",
-   "Weight": "0.03%"
-  },
-  {
-   "Name": "Tata Consultancy Services Ltd",
-   "Ticker": "TCS IN",
-   "Identifier": "BBG000Q0WCK6",
-   "Shares Held": "1,156",
-   "Asset Category": "Stock",
-   "Market Value": "$26,414.00",
-   "Notional Value": "",
-   "Weight": "0.03%"
+   "Weight": "3.56%"
   },
   {
    "Name": "Itc Ltd",
    "Ticker": "ITC IN",
    "Identifier": "BBG000BMYVC9",
-   "Shares Held": "9,086",
+   "Shares Held": "910,029",
    "Asset Category": "Stock",
-   "Market Value": "$25,226.06",
+   "Market Value": "$2,561,382.21",
    "Notional Value": "",
-   "Weight": "0.03%"
+   "Weight": "2.83%"
   },
   {
-   "Name": "Sun Pharmaceutical Industries Ltd",
-   "Ticker": "SUNP IN",
-   "Identifier": "BBG000BV5G16",
-   "Shares Held": "1,059",
+   "Name": "Tata Consultancy Services Ltd",
+   "Ticker": "TCS IN",
+   "Identifier": "BBG000Q0WCK6",
+   "Shares Held": "115,781",
    "Asset Category": "Stock",
-   "Market Value": "$20,619.84",
+   "Market Value": "$2,514,878.36",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "2.78%"
   },
   {
    "Name": "Titan Co Ltd",
    "Ticker": "TTAN IN",
    "Identifier": "BBG000D17Q16",
-   "Shares Held": "407",
+   "Shares Held": "40,759",
    "Asset Category": "Stock",
-   "Market Value": "$20,552.14",
+   "Market Value": "$2,070,360.29",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "2.28%"
+  },
+  {
+   "Name": "Sun Pharmaceutical Industries Ltd",
+   "Ticker": "SUNP IN",
+   "Identifier": "BBG000BV5G16",
+   "Shares Held": "106,056",
+   "Asset Category": "Stock",
+   "Market Value": "$2,061,509.77",
+   "Notional Value": "",
+   "Weight": "2.27%"
   },
   {
    "Name": "Hindustan Unilever Ltd",
    "Ticker": "HUVR IN",
    "Identifier": "BBG000CSMG04",
-   "Shares Held": "965",
+   "Shares Held": "96,689",
    "Asset Category": "Stock",
-   "Market Value": "$19,544.96",
+   "Market Value": "$1,964,759.71",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "2.17%"
+  },
+  {
+   "Name": "Wipro Ltd",
+   "Ticker": "WIT",
+   "Identifier": "BBG000BDFT17",
+   "Shares Held": "1,147,815",
+   "Asset Category": "Stock",
+   "Market Value": "$1,939,807.35",
+   "Notional Value": "",
+   "Weight": "2.14%"
   },
   {
    "Name": "Hindalco Industries Ltd",
    "Ticker": "HNDL IN",
    "Identifier": "BBG000CSJQQ8",
-   "Shares Held": "1,593",
+   "Shares Held": "159,539",
    "Asset Category": "Stock",
-   "Market Value": "$16,325.25",
+   "Market Value": "$1,666,445.54",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "1.84%"
+  },
+  {
+   "Name": "Bharat Electronics Ltd",
+   "Ticker": "BHE IN",
+   "Identifier": "BBG000CP4T57",
+   "Shares Held": "389,830",
+   "Asset Category": "Stock",
+   "Market Value": "$1,606,786.35",
+   "Notional Value": "",
+   "Weight": "1.77%"
   },
   {
    "Name": "Bajaj Auto Ltd",
    "Ticker": "BJAUT IN",
    "Identifier": "BBG000CKDY02",
-   "Shares Held": "131",
+   "Shares Held": "13,093",
    "Asset Category": "Stock",
-   "Market Value": "$15,717.32",
+   "Market Value": "$1,553,520.44",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "1.71%"
   },
   {
    "Name": "Hcl Technologies Ltd",
    "Ticker": "HCLT IN",
    "Identifier": "BBG000C68V87",
-   "Shares Held": "1,121",
+   "Shares Held": "112,285",
    "Asset Category": "Stock",
-   "Market Value": "$14,724.74",
+   "Market Value": "$1,464,420.90",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "1.62%"
   },
   {
    "Name": "Ultratech Cement Ltd",
    "Ticker": "UTCEM IN",
    "Identifier": "BBG000PZ2JC7",
-   "Shares Held": "125",
+   "Shares Held": "12,549",
    "Asset Category": "Stock",
-   "Market Value": "$14,041.30",
+   "Market Value": "$1,456,012.95",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "1.61%"
   },
   {
    "Name": "Adani Ports & Special Economic Zone Ltd",
    "Ticker": "ADSEZ IN",
    "Identifier": "",
-   "Shares Held": "758",
+   "Shares Held": "75,874",
    "Asset Category": "Stock",
-   "Market Value": "$13,748.65",
+   "Market Value": "$1,425,828.04",
    "Notional Value": "",
-   "Weight": "0.02%"
+   "Weight": "1.57%"
   },
   {
-   "Name": "Bajaj Finserv Ltd",
-   "Ticker": "BJFIN IN",
-   "Identifier": "BBG000CKDVH0",
-   "Shares Held": "680",
+   "Name": "Bse Ltd",
+   "Ticker": "BSE IN",
+   "Identifier": "BBG000GKW537",
+   "Shares Held": "41,394",
    "Asset Category": "Stock",
-   "Market Value": "$13,188.82",
+   "Market Value": "$1,405,016.71",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.55%"
   },
   {
    "Name": "Divi's Laboratories Ltd",
    "Ticker": "DIVI IN",
    "Identifier": "BBG000DJVX88",
-   "Shares Held": "133",
+   "Shares Held": "13,312",
    "Asset Category": "Stock",
-   "Market Value": "$12,930.78",
+   "Market Value": "$1,335,130.36",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.47%"
   },
   {
-   "Name": "Tech Mahindra Ltd",
-   "Ticker": "TECHM IN",
-   "Identifier": "BBG000CXKNH2",
-   "Shares Held": "716",
+   "Name": "Bajaj Finserv Ltd",
+   "Ticker": "BJFIN IN",
+   "Identifier": "BBG000CKDVH0",
+   "Shares Held": "68,146",
    "Asset Category": "Stock",
-   "Market Value": "$11,665.47",
+   "Market Value": "$1,309,274.08",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.44%"
   },
   {
    "Name": "Vedanta Ltd",
    "Ticker": "VEDL IN",
    "Identifier": "BBG000CZG8N8",
-   "Shares Held": "4,226",
+   "Shares Held": "423,287",
    "Asset Category": "Stock",
-   "Market Value": "$11,365.43",
+   "Market Value": "$1,193,211.32",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.32%"
+  },
+  {
+   "Name": "Tech Mahindra Ltd",
+   "Ticker": "TECHM IN",
+   "Identifier": "BBG000CXKNH2",
+   "Shares Held": "71,732",
+   "Asset Category": "Stock",
+   "Market Value": "$1,160,392.97",
+   "Notional Value": "",
+   "Weight": "1.28%"
+  },
+  {
+   "Name": "Eicher Motors Ltd",
+   "Ticker": "EIM IN",
+   "Identifier": "BBG000CQTR98",
+   "Shares Held": "14,912",
+   "Asset Category": "Stock",
+   "Market Value": "$1,159,017.45",
+   "Notional Value": "",
+   "Weight": "1.28%"
   },
   {
    "Name": "Tvs Motor Co Ltd",
    "Ticker": "TVSL IN",
    "Identifier": "",
-   "Shares Held": "257",
+   "Shares Held": "25,719",
    "Asset Category": "Stock",
-   "Market Value": "$10,999.76",
+   "Market Value": "$1,105,843.27",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.22%"
   },
   {
    "Name": "Tata Motors Ltd /New",
    "Ticker": "TMCV IN",
    "Identifier": "BBG01P31KP81",
-   "Shares Held": "2,300",
+   "Shares Held": "230,409",
    "Asset Category": "Stock",
-   "Market Value": "$10,473.98",
+   "Market Value": "$1,076,586.57",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.19%"
   },
   {
    "Name": "Coal India Ltd",
    "Ticker": "COAL IN",
    "Identifier": "BBG000C45298",
-   "Shares Held": "2,348",
+   "Shares Held": "235,195",
    "Asset Category": "Stock",
-   "Market Value": "$10,237.17",
+   "Market Value": "$1,040,714.80",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.15%"
   },
   {
    "Name": "Oil & Natural Gas Corp Ltd",
    "Ticker": "ONGC IN",
    "Identifier": "BBG000BF0B62",
-   "Shares Held": "4,115",
+   "Shares Held": "412,172",
    "Asset Category": "Stock",
-   "Market Value": "$9,979.80",
+   "Market Value": "$1,019,353.81",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "1.12%"
+  },
+  {
+   "Name": "Hindustan Aeronautics Ltd",
+   "Ticker": "HNAL IN",
+   "Identifier": "BBG000FT6SB9",
+   "Shares Held": "19,565",
+   "Asset Category": "Stock",
+   "Market Value": "$985,556.43",
+   "Notional Value": "",
+   "Weight": "1.09%"
   },
   {
    "Name": "Cholamandalam Investment And Finance Co",
    "Ticker": "CIFC IN",
    "Identifier": "BBG000CQ07P5",
-   "Shares Held": "486",
+   "Shares Held": "48,677",
    "Asset Category": "Stock",
-   "Market Value": "$8,949.18",
+   "Market Value": "$897,465.12",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.99%"
   },
   {
    "Name": "Jio Financial Services Ltd",
    "Ticker": "JIOFIN IN",
    "Identifier": "BBG002WN2L82",
-   "Shares Held": "3,688",
+   "Shares Held": "369,368",
    "Asset Category": "Stock",
-   "Market Value": "$8,825.06",
+   "Market Value": "$891,712.10",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.98%"
   },
   {
    "Name": "Max Healthcare Institute Ltd",
    "Ticker": "MAXHEALT IN",
    "Identifier": "BBG000DQX7B3",
-   "Shares Held": "761",
+   "Shares Held": "76,188",
    "Asset Category": "Stock",
-   "Market Value": "$8,231.56",
+   "Market Value": "$841,146.43",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.93%"
+  },
+  {
+   "Name": "Multi Commodity Exchange Of India Ltd",
+   "Ticker": "MCX IN",
+   "Identifier": "BBG000Q47HF1",
+   "Shares Held": "23,809",
+   "Asset Category": "Stock",
+   "Market Value": "$834,766.19",
+   "Notional Value": "",
+   "Weight": "0.92%"
   },
   {
    "Name": "Samvardhana Motherson International Ltd",
    "Ticker": "MOTHERSO IN",
    "Identifier": "BBG000CWNKS5",
-   "Shares Held": "4,845",
+   "Shares Held": "485,252",
    "Asset Category": "Stock",
-   "Market Value": "$8,186.29",
+   "Market Value": "$829,103.73",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.91%"
   },
   {
    "Name": "Pb Fintech Ltd",
    "Ticker": "POLICYBZ IN",
    "Identifier": "BBG004DZ49P8",
-   "Shares Held": "408",
+   "Shares Held": "40,859",
    "Asset Category": "Stock",
-   "Market Value": "$7,514.57",
+   "Market Value": "$802,107.66",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.89%"
   },
   {
-   "Name": "Bharat Heavy Electricals Ltd",
-   "Ticker": "BHEL IN",
-   "Identifier": "",
-   "Shares Held": "1,617",
+   "Name": "Polycab India Ltd",
+   "Ticker": "POLYCAB IN",
+   "Identifier": "BBG000P80977",
+   "Shares Held": "8,376",
    "Asset Category": "Stock",
-   "Market Value": "$7,241.03",
+   "Market Value": "$734,152.19",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.81%"
   },
   {
    "Name": "Ashok Leyland Ltd",
    "Ticker": "AL IN",
    "Identifier": "",
-   "Shares Held": "4,263",
+   "Shares Held": "426,952",
    "Asset Category": "Stock",
-   "Market Value": "$7,058.40",
+   "Market Value": "$722,855.68",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.80%"
+  },
+  {
+   "Name": "Bharat Heavy Electricals Ltd",
+   "Ticker": "BHEL IN",
+   "Identifier": "",
+   "Shares Held": "161,961",
+   "Asset Category": "Stock",
+   "Market Value": "$712,792.51",
+   "Notional Value": "",
+   "Weight": "0.79%"
   },
   {
    "Name": "Coforge Ltd",
    "Ticker": "COFORGE IN",
    "Identifier": "BBG000Q36Y03",
-   "Shares Held": "374",
+   "Shares Held": "37,443",
    "Asset Category": "Stock",
-   "Market Value": "$6,999.36",
+   "Market Value": "$692,992.75",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.76%"
   },
   {
    "Name": "Persistent Systems Ltd",
    "Ticker": "PSYS IN",
    "Identifier": "BBG000TL5HN3",
-   "Shares Held": "118",
+   "Shares Held": "11,781",
    "Asset Category": "Stock",
-   "Market Value": "$6,742.63",
+   "Market Value": "$640,690.51",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.71%"
   },
   {
-   "Name": "Dixon Technologies India Ltd",
-   "Ticker": "DIXON IN",
-   "Identifier": "BBG000BKD1Y8",
-   "Shares Held": "43",
+   "Name": "Trent Ltd",
+   "Ticker": "TRENT IN",
+   "Identifier": "BBG000CVJLS0",
+   "Shares Held": "21,246",
    "Asset Category": "Stock",
-   "Market Value": "$5,964.64",
+   "Market Value": "$613,136.80",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.68%"
   },
   {
    "Name": "Life Insurance Corp Of India",
    "Ticker": "LICI IN",
    "Identifier": "BBG000C49F22",
-   "Shares Held": "1,389",
+   "Shares Held": "139,105",
    "Asset Category": "Stock",
-   "Market Value": "$5,797.29",
+   "Market Value": "$589,943.77",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.65%"
+  },
+  {
+   "Name": "Hdfc Asset Management Co Ltd",
+   "Ticker": "HDFCAMC IN",
+   "Identifier": "BBG000D8NK07",
+   "Shares Held": "23,137",
+   "Asset Category": "Stock",
+   "Market Value": "$588,877.95",
+   "Notional Value": "",
+   "Weight": "0.65%"
+  },
+  {
+   "Name": "Dixon Technologies India Ltd",
+   "Ticker": "DIXON IN",
+   "Identifier": "BBG000BKD1Y8",
+   "Shares Held": "4,275",
+   "Asset Category": "Stock",
+   "Market Value": "$586,299.15",
+   "Notional Value": "",
+   "Weight": "0.65%"
   },
   {
    "Name": "Au Small Finance Bank Ltd",
    "Ticker": "AUBANK IN",
    "Identifier": "BBG000R1SK84",
-   "Shares Held": "527",
+   "Shares Held": "52,778",
    "Asset Category": "Stock",
-   "Market Value": "$5,714.01",
+   "Market Value": "$578,658.05",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.64%"
+  },
+  {
+   "Name": "Suzlon Energy Ltd",
+   "Ticker": "SUEL IN",
+   "Identifier": "BBG000BWZ9X2",
+   "Shares Held": "1,289,259",
+   "Asset Category": "Stock",
+   "Market Value": "$568,117.85",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "Ge Vernova T&D India Ltd",
+   "Ticker": "GVTD IN",
+   "Identifier": "BBG000F0CHY4",
+   "Shares Held": "12,215",
+   "Asset Category": "Stock",
+   "Market Value": "$561,052.08",
+   "Notional Value": "",
+   "Weight": "0.62%"
   },
   {
    "Name": "Lenskart Solutions Ltd",
    "Ticker": "LENSKART IN",
    "Identifier": "BBG0027FK5W5",
-   "Shares Held": "784",
+   "Shares Held": "78,494",
    "Asset Category": "Stock",
-   "Market Value": "$5,561.56",
+   "Market Value": "$560,993.36",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.62%"
   },
   {
    "Name": "Hitachi Energy India Ltd",
    "Ticker": "POWERIND IN",
    "Identifier": "BBG00NJ6XXB4",
-   "Shares Held": "15",
+   "Shares Held": "1,461",
    "Asset Category": "Stock",
-   "Market Value": "$4,879.82",
+   "Market Value": "$473,364.02",
    "Notional Value": "",
-   "Weight": "0.01%"
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Canara Bank",
+   "Ticker": "CBK IN",
+   "Identifier": "BBG000BMBB10",
+   "Shares Held": "353,102",
+   "Asset Category": "Stock",
+   "Market Value": "$462,353.58",
+   "Notional Value": "",
+   "Weight": "0.51%"
   },
   {
    "Name": "Lodha Developers Ltd",
    "Ticker": "LODHA IN",
    "Identifier": "BBG000V15XP7",
-   "Shares Held": "309",
+   "Shares Held": "30,980",
    "Asset Category": "Stock",
-   "Market Value": "$3,556.96",
+   "Market Value": "$374,556.85",
    "Notional Value": "",
-   "Weight": "0.00%"
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Muthoot Finance Ltd",
+   "Ticker": "MUTH IN",
+   "Identifier": "BBG00146SHF5",
+   "Shares Held": "11,941",
+   "Asset Category": "Stock",
+   "Market Value": "$354,038.44",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "360 One Wam Ltd",
+   "Ticker": "360ONE IN",
+   "Identifier": "BBG002Y1YW70",
+   "Shares Held": "29,820",
+   "Asset Category": "Stock",
+   "Market Value": "$344,056.96",
+   "Notional Value": "",
+   "Weight": "0.38%"
+  },
+  {
+   "Name": "Billionbrains Garage Ventures Ltd",
+   "Ticker": "GROWW IN",
+   "Identifier": "BBG00R94ZKH1",
+   "Shares Held": "168,902",
+   "Asset Category": "Stock",
+   "Market Value": "$330,873.00",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Oracle Financial Services Software Ltd",
+   "Ticker": "OFSS IN",
+   "Identifier": "BBG000F47KN7",
+   "Shares Held": "2,706",
+   "Asset Category": "Stock",
+   "Market Value": "$305,298.81",
+   "Notional Value": "",
+   "Weight": "0.34%"
+  },
+  {
+   "Name": "Kalyan Jewellers India Ltd",
+   "Ticker": "KALYANKJ IN",
+   "Identifier": "BBG005MWD4N5",
+   "Shares Held": "41,725",
+   "Asset Category": "Stock",
+   "Market Value": "$253,611.43",
+   "Notional Value": "",
+   "Weight": "0.28%"
+  },
+  {
+   "Name": "Hfcl Ltd",
+   "Ticker": "HMFC IN",
+   "Identifier": "BBG000CSHFS2",
+   "Shares Held": "110,201",
+   "Asset Category": "Stock",
+   "Market Value": "$248,487.96",
+   "Notional Value": "",
+   "Weight": "0.27%"
+  },
+  {
+   "Name": "Icici Prudential Asset Management Co Lt",
+   "Ticker": "ICICIAMC IN",
+   "Identifier": "BBG000HN50X8",
+   "Shares Held": "6,146",
+   "Asset Category": "Stock",
+   "Market Value": "$203,178.02",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Aegis Logistics Ltd",
+   "Ticker": "AEGISLOG IN",
+   "Identifier": "BBG000CMWW56",
+   "Shares Held": "13,743",
+   "Asset Category": "Stock",
+   "Market Value": "$201,032.15",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Td Power Systems Ltd",
+   "Ticker": "TDPS IN",
+   "Identifier": "BBG001CS9208",
+   "Shares Held": "24,754",
+   "Asset Category": "Stock",
+   "Market Value": "$196,859.39",
+   "Notional Value": "",
+   "Weight": "0.22%"
+  },
+  {
+   "Name": "Hindustan Copper Ltd",
+   "Ticker": "HCP IN",
+   "Identifier": "BBG000DFQMD0",
+   "Shares Held": "34,934",
+   "Asset Category": "Stock",
+   "Market Value": "$185,881.63",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Mtar Technologies Ltd",
+   "Ticker": "MTARTECH IN",
+   "Identifier": "BBG001BMZRY1",
+   "Shares Held": "2,117",
+   "Asset Category": "Stock",
+   "Market Value": "$159,996.07",
+   "Notional Value": "",
+   "Weight": "0.18%"
+  },
+  {
+   "Name": "Himadri Speciality Chemical Ltd",
+   "Ticker": "HSCH IN",
+   "Identifier": "BBG000CSHHJ8",
+   "Shares Held": "20,715",
+   "Asset Category": "Stock",
+   "Market Value": "$143,899.28",
+   "Notional Value": "",
+   "Weight": "0.16%"
+  },
+  {
+   "Name": "Cupid Ltd",
+   "Ticker": "CUPD IN",
+   "Identifier": "BBG000BY2KD1",
+   "Shares Held": "47,395",
+   "Asset Category": "Stock",
+   "Market Value": "$135,023.93",
+   "Notional Value": "",
+   "Weight": "0.15%"
+  },
+  {
+   "Name": "Kaynes Technology India Ltd",
+   "Ticker": "KAYNES IN",
+   "Identifier": "BBG001C7SX87",
+   "Shares Held": "3,326",
+   "Asset Category": "Stock",
+   "Market Value": "$119,428.14",
+   "Notional Value": "",
+   "Weight": "0.13%"
+  },
+  {
+   "Name": "Data Patterns India Ltd",
+   "Ticker": "DATAPATT IN",
+   "Identifier": "BBG0149BYWZ0",
+   "Shares Held": "2,443",
+   "Asset Category": "Stock",
+   "Market Value": "$112,340.94",
+   "Notional Value": "",
+   "Weight": "0.12%"
+  },
+  {
+   "Name": "Netweb Technologies India Ltd",
+   "Ticker": "NETWEB IN",
+   "Identifier": "BBG00Q4053Q7",
+   "Shares Held": "2,182",
+   "Asset Category": "Stock",
+   "Market Value": "$107,180.18",
+   "Notional Value": "",
+   "Weight": "0.12%"
+  },
+  {
+   "Name": "Shadowfax Technologies Ltd",
+   "Ticker": "SHADOWF IN",
+   "Identifier": "BBG009SZVSH8",
+   "Shares Held": "34,659",
+   "Asset Category": "Stock",
+   "Market Value": "$103,080.19",
+   "Notional Value": "",
+   "Weight": "0.11%"
+  },
+  {
+   "Name": "Tenneco Clean Air India Ltd",
+   "Ticker": "TENNIND IN",
+   "Identifier": "BBG01YBKPPH6",
+   "Shares Held": "17,679",
+   "Asset Category": "Stock",
+   "Market Value": "$95,185.35",
+   "Notional Value": "",
+   "Weight": "0.11%"
+  },
+  {
+   "Name": "Rubicon Research Ltd",
+   "Ticker": "RUBICON IN",
+   "Identifier": "BBG00F2X6VH8",
+   "Shares Held": "5,424",
+   "Asset Category": "Stock",
+   "Market Value": "$94,608.95",
+   "Notional Value": "",
+   "Weight": "0.10%"
+  },
+  {
+   "Name": "Apollo Micro Systems Ltd",
+   "Ticker": "APOLLO IN",
+   "Identifier": "BBG00JPBZRX2",
+   "Shares Held": "18,551",
+   "Asset Category": "Stock",
+   "Market Value": "$77,860.22",
+   "Notional Value": "",
+   "Weight": "0.09%"
+  },
+  {
+   "Name": "Spr Auto Technologies Ltd",
+   "Ticker": "SHRIPIST IN",
+   "Identifier": "BBG001C7T5Q7",
+   "Shares Held": "1,659",
+   "Asset Category": "Stock",
+   "Market Value": "$77,602.13",
+   "Notional Value": "",
+   "Weight": "0.09%"
+  },
+  {
+   "Name": "E2e Networks Ltd",
+   "Ticker": "E2E IN",
+   "Identifier": "BBG001NM9GR9",
+   "Shares Held": "8,407",
+   "Asset Category": "Stock",
+   "Market Value": "$55,556.42",
+   "Notional Value": "",
+   "Weight": "0.06%"
+  },
+  {
+   "Name": "Paras Defence & Space Technologies Ltd",
+   "Ticker": "PARAS IN",
+   "Identifier": "BBG00LBY2HX0",
+   "Shares Held": "3,652",
+   "Asset Category": "Stock",
+   "Market Value": "$52,444.75",
+   "Notional Value": "",
+   "Weight": "0.06%"
+  },
+  {
+   "Name": "Bluestone Jewellery And Lifestyle Ltd",
+   "Ticker": "BLUESTON IN",
+   "Identifier": "BBG002G0Q749",
+   "Shares Held": "5,303",
+   "Asset Category": "Stock",
+   "Market Value": "$47,244.77",
+   "Notional Value": "",
+   "Weight": "0.05%"
+  },
+  {
+   "Name": "Genus Power Infrastructures Ltd",
+   "Ticker": "GPIN IN",
+   "Identifier": "BBG000F8MXB6",
+   "Shares Held": "13,490",
+   "Asset Category": "Stock",
+   "Market Value": "$43,202.93",
+   "Notional Value": "",
+   "Weight": "0.05%"
+  },
+  {
+   "Name": "Krishana Phoschem Ltd",
+   "Ticker": "KRISHANA IN",
+   "Identifier": "BBG00FZBPT57",
+   "Shares Held": "5,906",
+   "Asset Category": "Stock",
+   "Market Value": "$11,552.04",
+   "Notional Value": "",
+   "Weight": "0.01%"
   },
   {
    "Name": "Genus Prime Infra Ltd",
@@ -1190,197 +820,7 @@
    "Identifier": "BBG000BPWN05",
    "Shares Held": "7,612",
    "Asset Category": "Stock",
-   "Market Value": "$3,499.83",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Billionbrains Garage Ventures Ltd",
-   "Ticker": "GROWW IN",
-   "Identifier": "BBG00R94ZKH1",
-   "Shares Held": "1,686",
-   "Asset Category": "Stock",
-   "Market Value": "$3,299.96",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "360 One Wam Ltd",
-   "Ticker": "360ONE IN",
-   "Identifier": "BBG002Y1YW70",
-   "Shares Held": "298",
-   "Asset Category": "Stock",
-   "Market Value": "$3,295.88",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Oracle Financial Services Software Ltd",
-   "Ticker": "OFSS IN",
-   "Identifier": "BBG000F47KN7",
-   "Shares Held": "27",
-   "Asset Category": "Stock",
-   "Market Value": "$3,274.50",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Kalyan Jewellers India Ltd",
-   "Ticker": "KALYANKJ IN",
-   "Identifier": "BBG005MWD4N5",
-   "Shares Held": "417",
-   "Asset Category": "Stock",
-   "Market Value": "$2,529.82",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Hfcl Ltd",
-   "Ticker": "HMFC IN",
-   "Identifier": "BBG000CSHFS2",
-   "Shares Held": "1,100",
-   "Asset Category": "Stock",
-   "Market Value": "$2,407.66",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Icici Prudential Asset Management Co Lt",
-   "Ticker": "ICICIAMC IN",
-   "Identifier": "BBG000HN50X8",
-   "Shares Held": "61",
-   "Asset Category": "Stock",
-   "Market Value": "$1,972.76",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Aegis Logistics Ltd",
-   "Ticker": "AEGISLOG IN",
-   "Identifier": "BBG000CMWW56",
-   "Shares Held": "137",
-   "Asset Category": "Stock",
-   "Market Value": "$1,934.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Mtar Technologies Ltd",
-   "Ticker": "MTARTECH IN",
-   "Identifier": "BBG001BMZRY1",
-   "Shares Held": "21",
-   "Asset Category": "Stock",
-   "Market Value": "$1,543.30",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Himadri Speciality Chemical Ltd",
-   "Ticker": "HSCH IN",
-   "Identifier": "BBG000CSHHJ8",
-   "Shares Held": "207",
-   "Asset Category": "Stock",
-   "Market Value": "$1,411.08",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Kaynes Technology India Ltd",
-   "Ticker": "KAYNES IN",
-   "Identifier": "BBG001C7SX87",
-   "Shares Held": "33",
-   "Asset Category": "Stock",
-   "Market Value": "$1,211.85",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Rubicon Research Ltd",
-   "Ticker": "RUBICON IN",
-   "Identifier": "BBG00F2X6VH8",
-   "Shares Held": "54",
-   "Asset Category": "Stock",
-   "Market Value": "$1,001.75",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Tenneco Clean Air India Ltd",
-   "Ticker": "TENNIND IN",
-   "Identifier": "BBG01YBKPPH6",
-   "Shares Held": "177",
-   "Asset Category": "Stock",
-   "Market Value": "$950.05",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Shadowfax Technologies Ltd",
-   "Ticker": "SHADOWF IN",
-   "Identifier": "BBG009SZVSH8",
-   "Shares Held": "346",
-   "Asset Category": "Stock",
-   "Market Value": "$908.74",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Apollo Micro Systems Ltd",
-   "Ticker": "APOLLO IN",
-   "Identifier": "BBG00JPBZRX2",
-   "Shares Held": "185",
-   "Asset Category": "Stock",
-   "Market Value": "$730.95",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "E2e Networks Ltd",
-   "Ticker": "E2E IN",
-   "Identifier": "BBG001NM9GR9",
-   "Shares Held": "84",
-   "Asset Category": "Stock",
-   "Market Value": "$530.44",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Paras Defence & Space Technologies Ltd",
-   "Ticker": "PARAS IN",
-   "Identifier": "BBG00LBY2HX0",
-   "Shares Held": "36",
-   "Asset Category": "Stock",
-   "Market Value": "$514.42",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Bluestone Jewellery And Lifestyle Ltd",
-   "Ticker": "BLUESTON IN",
-   "Identifier": "BBG002G0Q749",
-   "Shares Held": "53",
-   "Asset Category": "Stock",
-   "Market Value": "$459.53",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Genus Power Infrastructures Ltd",
-   "Ticker": "GPIN IN",
-   "Identifier": "BBG000F8MXB6",
-   "Shares Held": "135",
-   "Asset Category": "Stock",
-   "Market Value": "$426.20",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Krishana Phoschem Ltd",
-   "Ticker": "KRISHANA IN",
-   "Identifier": "BBG00FZBPT57",
-   "Shares Held": "59",
-   "Asset Category": "Stock",
-   "Market Value": "$112.08",
+   "Market Value": "$2,857.22",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -1388,21 +828,21 @@
    "Name": "",
    "Ticker": "-INR CASH-",
    "Identifier": "",
-   "Shares Held": "62,824,369",
+   "Shares Held": "91,217,448",
    "Asset Category": "Cash Bal",
-   "Market Value": "$654,846.85",
+   "Market Value": "$952,675.08",
    "Notional Value": "",
-   "Weight": "0.72%"
+   "Weight": "1.05%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "276,117",
+   "Shares Held": "33,466",
    "Asset Category": "Cash Bal",
-   "Market Value": "$276,117.40",
+   "Market Value": "$33,465.58",
    "Notional Value": "",
-   "Weight": "0.31%"
+   "Weight": "0.04%"
   },
   {
    "Name": "Other/Cash",
@@ -1410,9 +850,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$2,081,737.45",
+   "Market Value": "$-1,174,940.60",
    "Notional Value": "",
-   "Weight": "2.30%"
+   "Weight": "-1.30%"
   }
  ]
 }
