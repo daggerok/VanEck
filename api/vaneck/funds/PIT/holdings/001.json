@@ -2,7 +2,7 @@
  "ticker": "PIT",
  "page": 1,
  "pageSize": 250,
- "totalRows": 36,
+ "totalRows": 35,
  "headers": [
   "Name",
   "Ticker",
@@ -20,9 +20,9 @@
    "Identifier": "BBG02444V9G5",
    "Shares Held": "161,545,000",
    "Asset Category": "Bond",
-   "Market Value": "$160,117,174.82",
+   "Market Value": "$160,212,203.67",
    "Notional Value": "",
-   "Weight": "35.44%"
+   "Weight": "35.73%"
   },
   {
    "Name": "United States Treasury Bill",
@@ -30,9 +30,9 @@
    "Identifier": "BBG021Y5W787",
    "Shares Held": "135,913,000",
    "Asset Category": "Bond",
-   "Market Value": "$135,216,218.90",
+   "Market Value": "$135,296,835.69",
    "Notional Value": "",
-   "Weight": "29.93%"
+   "Weight": "30.18%"
   },
   {
    "Name": "United States Treasury Bill",
@@ -40,9 +40,9 @@
    "Identifier": "BBG021BCBPC5",
    "Shares Held": "123,503,000",
    "Asset Category": "Bond",
-   "Market Value": "$123,243,128.69",
+   "Market Value": "$123,321,210.99",
    "Notional Value": "",
-   "Weight": "27.28%"
+   "Weight": "27.51%"
   },
   {
    "Name": "Gold 100 Oz Futr Dec26",
@@ -51,7 +51,7 @@
    "Shares Held": "126",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "55436220.00",
+   "Notional Value": "54411840.00",
    "Weight": "0.00%"
   },
   {
@@ -61,7 +61,7 @@
    "Shares Held": "396",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "39572280.00",
+   "Notional Value": "38855520.00",
    "Weight": "0.00%"
   },
   {
@@ -71,7 +71,7 @@
    "Shares Held": "201",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "33474037.50",
+   "Notional Value": "33936337.50",
    "Weight": "0.00%"
   },
   {
@@ -81,17 +81,7 @@
    "Shares Held": "326",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "31696980.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Ny Harb Ulsd Fut Nov26",
-   "Ticker": "HOX6",
-   "Identifier": "BBG01BPYL829",
-   "Shares Held": "126",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "25872588.00",
+   "Notional Value": "30044160.00",
    "Weight": "0.00%"
   },
   {
@@ -101,7 +91,7 @@
    "Shares Held": "188",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "25650945.60",
+   "Notional Value": "26375798.40",
    "Weight": "0.00%"
   },
   {
@@ -111,7 +101,17 @@
    "Shares Held": "197",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "24817035.60",
+   "Notional Value": "25443377.40",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Ny Harb Ulsd Fut Nov26",
+   "Ticker": "HOX6",
+   "Identifier": "BBG01BPYL829",
+   "Shares Held": "126",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "24521011.20",
    "Weight": "0.00%"
   },
   {
@@ -121,7 +121,7 @@
    "Shares Held": "126",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "24481850.40",
+   "Notional Value": "23904493.20",
    "Weight": "0.00%"
   },
   {
@@ -131,7 +131,7 @@
    "Shares Held": "128",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "23114649.60",
+   "Notional Value": "23136691.20",
    "Weight": "0.00%"
   },
   {
@@ -141,7 +141,7 @@
    "Shares Held": "63",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "20819925.00",
+   "Notional Value": "20463660.00",
    "Weight": "0.00%"
   },
   {
@@ -151,7 +151,7 @@
    "Shares Held": "195",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "18129150.00",
+   "Notional Value": "18043350.00",
    "Weight": "0.00%"
   },
   {
@@ -161,27 +161,17 @@
    "Shares Held": "187",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "15491360.50",
+   "Notional Value": "15226521.75",
    "Weight": "0.00%"
   },
   {
-   "Name": "Low Su Gasoil G Oct26",
-   "Ticker": "QSV6",
-   "Identifier": "BBG00QK4F7D5",
-   "Shares Held": "96",
+   "Name": "Low Su Gasoil G Nov26",
+   "Ticker": "QSX6",
+   "Identifier": "BBG00QTZK0D6",
+   "Shares Held": "104",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "14311200.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Wti Crude Future Jan27",
-   "Ticker": "CLF7",
-   "Identifier": "BBG00JVDD4R3",
-   "Shares Held": "158",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "14035140.00",
+   "Notional Value": "14739400.00",
    "Weight": "0.00%"
   },
   {
@@ -191,7 +181,17 @@
    "Shares Held": "86",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "13701950.00",
+   "Notional Value": "14168500.00",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Wti Crude Future Jan27",
+   "Ticker": "CLF7",
+   "Identifier": "BBG00JVDD4R3",
+   "Shares Held": "158",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "13760220.00",
    "Weight": "0.00%"
   },
   {
@@ -201,7 +201,7 @@
    "Shares Held": "131",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "12969360.25",
+   "Notional Value": "12988388.00",
    "Weight": "0.00%"
   },
   {
@@ -211,7 +211,7 @@
    "Shares Held": "124",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "10726000.00",
+   "Notional Value": "11028560.00",
    "Weight": "0.00%"
   },
   {
@@ -221,7 +221,7 @@
    "Shares Held": "89",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "9228187.50",
+   "Notional Value": "9208162.50",
    "Weight": "0.00%"
   },
   {
@@ -231,7 +231,7 @@
    "Shares Held": "106",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "6994675.00",
+   "Notional Value": "6985400.00",
    "Weight": "0.00%"
   },
   {
@@ -241,7 +241,7 @@
    "Shares Held": "235",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "6542400.00",
+   "Notional Value": "6611020.00",
    "Weight": "0.00%"
   },
   {
@@ -251,7 +251,7 @@
    "Shares Held": "41",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "5486825.00",
+   "Notional Value": "5510400.00",
    "Weight": "0.00%"
   },
   {
@@ -261,7 +261,7 @@
    "Shares Held": "106",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "4397940.00",
+   "Notional Value": "4312716.00",
    "Weight": "0.00%"
   },
   {
@@ -271,7 +271,7 @@
    "Shares Held": "117",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "3555630.00",
+   "Notional Value": "3689010.00",
    "Weight": "0.00%"
   },
   {
@@ -281,7 +281,7 @@
    "Shares Held": "96",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "2546400.00",
+   "Notional Value": "2539200.00",
    "Weight": "0.00%"
   },
   {
@@ -291,7 +291,7 @@
    "Shares Held": "21",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1907640.00",
+   "Notional Value": "1856610.00",
    "Weight": "0.00%"
   },
   {
@@ -301,7 +301,7 @@
    "Shares Held": "22",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1269840.00",
+   "Notional Value": "1216160.00",
    "Weight": "0.00%"
   },
   {
@@ -311,7 +311,7 @@
    "Shares Held": "3",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1088786.25",
+   "Notional Value": "1103625.00",
    "Weight": "0.00%"
   },
   {
@@ -321,17 +321,7 @@
    "Shares Held": "2",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "530263.30",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Low Su Gasoil G Nov26",
-   "Ticker": "QSX6",
-   "Identifier": "BBG00QTZK0D6",
-   "Shares Held": "3",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "425700.00",
+   "Notional Value": "537563.90",
    "Weight": "0.00%"
   },
   {
@@ -341,18 +331,18 @@
    "Shares Held": "14",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "294000.00",
+   "Notional Value": "314265.00",
    "Weight": "0.00%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "10,467,461",
+   "Shares Held": "12,773,928",
    "Asset Category": "Cash Bal",
-   "Market Value": "$10,467,461.18",
+   "Market Value": "$12,773,928.42",
    "Notional Value": "",
-   "Weight": "2.32%"
+   "Weight": "2.85%"
   },
   {
    "Name": "",
@@ -360,7 +350,7 @@
    "Identifier": "",
    "Shares Held": "-77",
    "Asset Category": "Cash Bal",
-   "Market Value": "$-102.33",
+   "Market Value": "$-101.66",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -370,9 +360,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$22,774,820.74",
+   "Market Value": "$16,737,942.89",
    "Notional Value": "",
-   "Weight": "5.04%"
+   "Weight": "3.73%"
   }
  ]
 }

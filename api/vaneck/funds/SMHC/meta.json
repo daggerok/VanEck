@@ -9,28 +9,28 @@
  "ter": "0.65%",
  "terValue": 0.65,
  "nav": {
-  "display": "$47.77",
-  "value": 47.77,
-  "asOfDate": "Sep 18 2026"
+  "display": "$47.01",
+  "value": 47.01,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 47.77,
+ "navValue": 47.01,
  "aum": {
-  "display": "$21.50M",
-  "value": 21498302.51,
-  "asOfDate": "Sep 18 2026",
+  "display": "$18.80M",
+  "value": 18802890.17,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 21498302.51,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 18802890.17,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 23 2026",
  "exchange": "NASDAQ",
- "closePrice": "$48.11",
- "closePriceValue": 48.11,
+ "closePrice": "$46.96",
+ "closePriceValue": 46.96,
  "premiumDiscount": {
-  "display": "0.34%",
-  "value": 0.34
+  "display": "-0.04%",
+  "value": -0.04
  },
- "premiumDiscountValue": 0.34,
+ "premiumDiscountValue": -0.04,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -85,11 +85,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.65%",
  "terGrossValue": 0.65,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 33,
+  "totalRows": 29,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/china-semiconductor-etf-smhc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -97,16 +97,16 @@
   ]
  },
  "history": {
-  "totalRows": 88,
+  "totalRows": 94,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/china-semiconductor-etf-smhc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 21500000,
+ "totalNetAssets": 18800000,
  "indexTicker": "MVSMHCTR",
  "indexName": "China Semiconductor 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -145,9 +145,9 @@
   "grossValue": 0.65
  },
  "marketPrice": {
-  "display": "$48.11",
-  "value": 48.11,
-  "asOfDate": "Sep 18 2026"
+  "display": "$46.96",
+  "value": 46.96,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": null,

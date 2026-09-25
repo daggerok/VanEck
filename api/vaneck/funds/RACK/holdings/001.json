@@ -2,7 +2,7 @@
  "ticker": "RACK",
  "page": 1,
  "pageSize": 250,
- "totalRows": 52,
+ "totalRows": 53,
  "headers": [
   "Name",
   "Ticker",
@@ -15,372 +15,442 @@
  ],
  "rows": [
   {
+   "Name": "Eaton Corp Plc",
+   "Ticker": "ETN",
+   "Identifier": "BBG000BJ3PD2",
+   "Shares Held": "7,396",
+   "Asset Category": "Stock",
+   "Market Value": "$3,245,068.96",
+   "Notional Value": "",
+   "Weight": "4.76%"
+  },
+  {
    "Name": "Micron Technology Inc",
    "Ticker": "MU",
    "Identifier": "BBG000C5Z1S3",
-   "Shares Held": "3,454",
+   "Shares Held": "2,988",
    "Asset Category": "Stock",
-   "Market Value": "$3,376,285.00",
+   "Market Value": "$3,202,777.44",
    "Notional Value": "",
-   "Weight": "4.93%"
-  },
-  {
-   "Name": "Nvidia Corp",
-   "Ticker": "NVDA",
-   "Identifier": "BBG000BBJQV0",
-   "Shares Held": "15,348",
-   "Asset Category": "Stock",
-   "Market Value": "$3,366,430.32",
-   "Notional Value": "",
-   "Weight": "4.92%"
-  },
-  {
-   "Name": "Constellation Energy Corp",
-   "Ticker": "CEG",
-   "Identifier": "BBG014KFRNP7",
-   "Shares Held": "12,730",
-   "Asset Category": "Stock",
-   "Market Value": "$3,345,444.00",
-   "Notional Value": "",
-   "Weight": "4.89%"
+   "Weight": "4.70%"
   },
   {
    "Name": "Amphenol Corp",
    "Ticker": "APH",
    "Identifier": "BBG000B9YJ35",
-   "Shares Held": "41,300",
+   "Shares Held": "37,759",
    "Asset Category": "Stock",
-   "Market Value": "$3,236,681.00",
+   "Market Value": "$3,103,412.21",
    "Notional Value": "",
-   "Weight": "4.73%"
+   "Weight": "4.55%"
   },
   {
-   "Name": "Eaton Corp Plc",
-   "Ticker": "ETN",
-   "Identifier": "BBG000BJ3PD2",
-   "Shares Held": "7,424",
+   "Name": "Nvidia Corp",
+   "Ticker": "NVDA",
+   "Identifier": "BBG000BBJQV0",
+   "Shares Held": "13,731",
    "Asset Category": "Stock",
-   "Market Value": "$3,039,831.04",
+   "Market Value": "$3,096,477.81",
    "Notional Value": "",
-   "Weight": "4.44%"
-  },
-  {
-   "Name": "Cameco Corp",
-   "Ticker": "CCJ",
-   "Identifier": "BBG000DSZTN6",
-   "Shares Held": "32,395",
-   "Asset Category": "Stock",
-   "Market Value": "$3,006,256.00",
-   "Notional Value": "",
-   "Weight": "4.39%"
+   "Weight": "4.54%"
   },
   {
    "Name": "Broadcom Inc",
    "Ticker": "AVGO",
    "Identifier": "BBG00KHY5S69",
-   "Shares Held": "8,277",
+   "Shares Held": "8,325",
    "Asset Category": "Stock",
-   "Market Value": "$2,874,602.10",
+   "Market Value": "$2,955,291.75",
    "Notional Value": "",
-   "Weight": "4.20%"
+   "Weight": "4.33%"
+  },
+  {
+   "Name": "Sk Hynix Inc",
+   "Ticker": "SKHYV",
+   "Identifier": "BBG0238L5JS9",
+   "Shares Held": "15,462",
+   "Asset Category": "Stock",
+   "Market Value": "$2,926,647.36",
+   "Notional Value": "",
+   "Weight": "4.29%"
+  },
+  {
+   "Name": "Cameco Corp",
+   "Ticker": "CCJ",
+   "Identifier": "BBG000DSZTN6",
+   "Shares Held": "30,588",
+   "Asset Category": "Stock",
+   "Market Value": "$2,777,390.40",
+   "Notional Value": "",
+   "Weight": "4.07%"
+  },
+  {
+   "Name": "Constellation Energy Corp",
+   "Ticker": "CEG",
+   "Identifier": "BBG014KFRNP7",
+   "Shares Held": "10,451",
+   "Asset Category": "Stock",
+   "Market Value": "$2,757,809.88",
+   "Notional Value": "",
+   "Weight": "4.04%"
   },
   {
    "Name": "Public Service Enterprise Group Inc",
    "Ticker": "PEG",
    "Identifier": "BBG000BQZMH4",
-   "Shares Held": "37,213",
+   "Shares Held": "37,452",
    "Asset Category": "Stock",
-   "Market Value": "$2,641,378.74",
+   "Market Value": "$2,520,894.12",
    "Notional Value": "",
-   "Weight": "3.86%"
-  },
-  {
-   "Name": "Arista Networks Inc",
-   "Ticker": "ANET",
-   "Identifier": "BBG000N2HDY5",
-   "Shares Held": "12,742",
-   "Asset Category": "Stock",
-   "Market Value": "$2,542,411.26",
-   "Notional Value": "",
-   "Weight": "3.71%"
-  },
-  {
-   "Name": "Sandisk Corp/De",
-   "Ticker": "SNDK",
-   "Identifier": "BBG01R388JG1",
-   "Shares Held": "1,510",
-   "Asset Category": "Stock",
-   "Market Value": "$2,437,728.90",
-   "Notional Value": "",
-   "Weight": "3.56%"
-  },
-  {
-   "Name": "Dell Technologies Inc",
-   "Ticker": "DELL",
-   "Identifier": "BBG00DW3SZS1",
-   "Shares Held": "3,960",
-   "Asset Category": "Stock",
-   "Market Value": "$2,330,064.00",
-   "Notional Value": "",
-   "Weight": "3.40%"
-  },
-  {
-   "Name": "Oracle Corp",
-   "Ticker": "ORCL",
-   "Identifier": "BBG000BQLTW7",
-   "Shares Held": "15,311",
-   "Asset Category": "Stock",
-   "Market Value": "$2,305,683.49",
-   "Notional Value": "",
-   "Weight": "3.37%"
+   "Weight": "3.70%"
   },
   {
    "Name": "Advanced Micro Devices Inc",
    "Ticker": "AMD",
    "Identifier": "BBG000BBQCY0",
-   "Shares Held": "3,880",
+   "Shares Held": "3,544",
    "Asset Category": "Stock",
-   "Market Value": "$2,114,949.20",
+   "Market Value": "$2,178,177.84",
    "Notional Value": "",
-   "Weight": "3.09%"
-  },
-  {
-   "Name": "Seagate Technology Holdings Plc",
-   "Ticker": "STX",
-   "Identifier": "BBG0113JGQF0",
-   "Shares Held": "2,382",
-   "Asset Category": "Stock",
-   "Market Value": "$1,913,055.66",
-   "Notional Value": "",
-   "Weight": "2.79%"
-  },
-  {
-   "Name": "Vertiv Holdings Co",
-   "Ticker": "VRT",
-   "Identifier": "BBG00L2B8KW8",
-   "Shares Held": "7,276",
-   "Asset Category": "Stock",
-   "Market Value": "$1,757,081.24",
-   "Notional Value": "",
-   "Weight": "2.57%"
+   "Weight": "3.19%"
   },
   {
    "Name": "Quanta Services Inc",
    "Ticker": "PWR",
    "Identifier": "BBG000BBL8V7",
-   "Shares Held": "2,739",
+   "Shares Held": "3,203",
    "Asset Category": "Stock",
-   "Market Value": "$1,688,703.06",
+   "Market Value": "$2,033,584.70",
    "Notional Value": "",
-   "Weight": "2.47%"
+   "Weight": "2.98%"
   },
   {
-   "Name": "Emerson Electric Co",
-   "Ticker": "EMR",
-   "Identifier": "BBG000BHX7N2",
-   "Shares Held": "10,793",
+   "Name": "Oracle Corp",
+   "Ticker": "ORCL",
+   "Identifier": "BBG000BQLTW7",
+   "Shares Held": "13,643",
    "Asset Category": "Stock",
-   "Market Value": "$1,590,888.20",
+   "Market Value": "$1,972,232.08",
    "Notional Value": "",
-   "Weight": "2.32%"
+   "Weight": "2.89%"
   },
   {
-   "Name": "Western Digital Corp",
-   "Ticker": "WDC",
-   "Identifier": "BBG000BWNFZ9",
-   "Shares Held": "3,607",
+   "Name": "Sandisk Corp/De",
+   "Ticker": "SNDK",
+   "Identifier": "BBG01R388JG1",
+   "Shares Held": "1,035",
    "Asset Category": "Stock",
-   "Market Value": "$1,528,899.09",
+   "Market Value": "$1,880,149.95",
    "Notional Value": "",
-   "Weight": "2.23%"
+   "Weight": "2.76%"
+  },
+  {
+   "Name": "Vertiv Holdings Co",
+   "Ticker": "VRT",
+   "Identifier": "BBG00L2B8KW8",
+   "Shares Held": "7,217",
+   "Asset Category": "Stock",
+   "Market Value": "$1,795,445.26",
+   "Notional Value": "",
+   "Weight": "2.63%"
+  },
+  {
+   "Name": "Arista Networks Inc",
+   "Ticker": "ANET",
+   "Identifier": "BBG000N2HDY5",
+   "Shares Held": "8,594",
+   "Asset Category": "Stock",
+   "Market Value": "$1,748,621.18",
+   "Notional Value": "",
+   "Weight": "2.56%"
+  },
+  {
+   "Name": "Seagate Technology Holdings Plc",
+   "Ticker": "STX",
+   "Identifier": "BBG0113JGQF0",
+   "Shares Held": "1,732",
+   "Asset Category": "Stock",
+   "Market Value": "$1,598,843.84",
+   "Notional Value": "",
+   "Weight": "2.34%"
   },
   {
    "Name": "Johnson Controls International Plc",
    "Ticker": "JCI",
    "Identifier": "BBG000BVWLJ6",
-   "Shares Held": "10,070",
+   "Shares Held": "10,105",
    "Asset Category": "Stock",
-   "Market Value": "$1,420,474.20",
+   "Market Value": "$1,474,319.50",
    "Notional Value": "",
-   "Weight": "2.08%"
+   "Weight": "2.16%"
   },
   {
-   "Name": "Cummins Inc",
-   "Ticker": "CMI",
-   "Identifier": "BBG000BGPTV6",
-   "Shares Held": "2,602",
+   "Name": "Bloom Energy Corp",
+   "Ticker": "BE",
+   "Identifier": "BBG000N7KBZ3",
+   "Shares Held": "5,192",
    "Asset Category": "Stock",
-   "Market Value": "$1,363,135.76",
+   "Market Value": "$1,428,786.48",
    "Notional Value": "",
-   "Weight": "1.99%"
+   "Weight": "2.10%"
   },
   {
    "Name": "Bwx Technologies Inc",
    "Ticker": "BWXT",
    "Identifier": "BBG000D86F25",
-   "Shares Held": "9,059",
+   "Shares Held": "9,949",
    "Asset Category": "Stock",
-   "Market Value": "$1,325,784.65",
+   "Market Value": "$1,410,867.69",
+   "Notional Value": "",
+   "Weight": "2.07%"
+  },
+  {
+   "Name": "Dell Technologies Inc",
+   "Ticker": "DELL",
+   "Identifier": "BBG00DW3SZS1",
+   "Shares Held": "2,558",
+   "Asset Category": "Stock",
+   "Market Value": "$1,406,465.14",
+   "Notional Value": "",
+   "Weight": "2.06%"
+  },
+  {
+   "Name": "Cummins Inc",
+   "Ticker": "CMI",
+   "Identifier": "BBG000BGPTV6",
+   "Shares Held": "2,525",
+   "Asset Category": "Stock",
+   "Market Value": "$1,324,741.25",
    "Notional Value": "",
    "Weight": "1.94%"
   },
   {
-   "Name": "Equinix Inc",
-   "Ticker": "EQIX",
-   "Identifier": "BBG000MBDGM6",
-   "Shares Held": "1,151",
+   "Name": "Western Digital Corp",
+   "Ticker": "WDC",
+   "Identifier": "BBG000BWNFZ9",
+   "Shares Held": "2,715",
    "Asset Category": "Stock",
-   "Market Value": "$1,180,856.94",
+   "Market Value": "$1,286,068.35",
    "Notional Value": "",
-   "Weight": "1.73%"
-  },
-  {
-   "Name": "Hewlett Packard Enterprise Co",
-   "Ticker": "HPE",
-   "Identifier": "BBG0078W3NQ3",
-   "Shares Held": "18,490",
-   "Asset Category": "Stock",
-   "Market Value": "$1,128,629.60",
-   "Notional Value": "",
-   "Weight": "1.65%"
-  },
-  {
-   "Name": "Ametek Inc",
-   "Ticker": "AME",
-   "Identifier": "BBG000B9XG87",
-   "Shares Held": "4,453",
-   "Asset Category": "Stock",
-   "Market Value": "$1,043,426.96",
-   "Notional Value": "",
-   "Weight": "1.52%"
+   "Weight": "1.89%"
   },
   {
    "Name": "Nexgen Energy Ltd",
    "Ticker": "NXE",
    "Identifier": "BBG004WG63P0",
-   "Shares Held": "109,853",
+   "Shares Held": "111,422",
    "Asset Category": "Stock",
-   "Market Value": "$1,038,110.85",
+   "Market Value": "$1,072,993.86",
    "Notional Value": "",
-   "Weight": "1.52%"
+   "Weight": "1.57%"
   },
   {
-   "Name": "Yandex Nv",
-   "Ticker": "NBIS",
-   "Identifier": "BBG001NVJ6W4",
-   "Shares Held": "4,171",
+   "Name": "Ametek Inc",
+   "Ticker": "AME",
+   "Identifier": "BBG000B9XG87",
+   "Shares Held": "4,332",
    "Asset Category": "Stock",
-   "Market Value": "$909,236.29",
+   "Market Value": "$1,067,621.40",
    "Notional Value": "",
-   "Weight": "1.33%"
-  },
-  {
-   "Name": "Uranium Energy Corp",
-   "Ticker": "UEC",
-   "Identifier": "BBG000LCK3Q2",
-   "Shares Held": "84,159",
-   "Asset Category": "Stock",
-   "Market Value": "$851,689.08",
-   "Notional Value": "",
-   "Weight": "1.24%"
-  },
-  {
-   "Name": "Lumentum Holdings Inc",
-   "Ticker": "LITE",
-   "Identifier": "",
-   "Shares Held": "944",
-   "Asset Category": "Stock",
-   "Market Value": "$843,567.84",
-   "Notional Value": "",
-   "Weight": "1.23%"
-  },
-  {
-   "Name": "Everpure Inc",
-   "Ticker": "P",
-   "Identifier": "BBG00212PVZ5",
-   "Shares Held": "8,072",
-   "Asset Category": "Stock",
-   "Market Value": "$839,407.28",
-   "Notional Value": "",
-   "Weight": "1.23%"
+   "Weight": "1.57%"
   },
   {
    "Name": "Oklo Inc",
    "Ticker": "OKLO",
    "Identifier": "BBG0112CBLW3",
-   "Shares Held": "21,081",
+   "Shares Held": "26,033",
    "Asset Category": "Stock",
-   "Market Value": "$835,861.65",
+   "Market Value": "$1,010,601.06",
    "Notional Value": "",
-   "Weight": "1.22%"
+   "Weight": "1.48%"
   },
   {
-   "Name": "Qualcomm Inc",
-   "Ticker": "QCOM",
-   "Identifier": "BBG000CGC1X8",
-   "Shares Held": "4,252",
+   "Name": "Equinix Inc",
+   "Ticker": "EQIX",
+   "Identifier": "BBG000MBDGM6",
+   "Shares Held": "907",
    "Asset Category": "Stock",
-   "Market Value": "$802,394.92",
+   "Market Value": "$941,157.62",
    "Notional Value": "",
-   "Weight": "1.17%"
+   "Weight": "1.38%"
   },
   {
    "Name": "Marvell Technology Inc",
    "Ticker": "MRVL",
    "Identifier": "BBG00ZXBJ153",
-   "Shares Held": "3,245",
+   "Shares Held": "3,431",
    "Asset Category": "Stock",
-   "Market Value": "$781,266.20",
+   "Market Value": "$895,147.90",
    "Notional Value": "",
-   "Weight": "1.14%"
+   "Weight": "1.31%"
   },
   {
-   "Name": "Digital Realty Trust Inc",
-   "Ticker": "DLR",
-   "Identifier": "BBG000Q5ZRM7",
-   "Shares Held": "4,174",
+   "Name": "Lumentum Holdings Inc",
+   "Ticker": "LITE",
+   "Identifier": "",
+   "Shares Held": "951",
    "Asset Category": "Stock",
-   "Market Value": "$769,101.24",
+   "Market Value": "$891,087.00",
    "Notional Value": "",
-   "Weight": "1.12%"
+   "Weight": "1.31%"
+  },
+  {
+   "Name": "Qualcomm Inc",
+   "Ticker": "QCOM",
+   "Identifier": "BBG000CGC1X8",
+   "Shares Held": "4,400",
+   "Asset Category": "Stock",
+   "Market Value": "$867,856.00",
+   "Notional Value": "",
+   "Weight": "1.27%"
+  },
+  {
+   "Name": "Hewlett Packard Enterprise Co",
+   "Ticker": "HPE",
+   "Identifier": "BBG0078W3NQ3",
+   "Shares Held": "13,807",
+   "Asset Category": "Stock",
+   "Market Value": "$860,590.31",
+   "Notional Value": "",
+   "Weight": "1.26%"
+  },
+  {
+   "Name": "Uranium Energy Corp",
+   "Ticker": "UEC",
+   "Identifier": "BBG000LCK3Q2",
+   "Shares Held": "80,636",
+   "Asset Category": "Stock",
+   "Market Value": "$802,328.20",
+   "Notional Value": "",
+   "Weight": "1.18%"
+  },
+  {
+   "Name": "Yandex Nv",
+   "Ticker": "NBIS",
+   "Identifier": "BBG001NVJ6W4",
+   "Shares Held": "3,534",
+   "Asset Category": "Stock",
+   "Market Value": "$800,839.74",
+   "Notional Value": "",
+   "Weight": "1.17%"
   },
   {
    "Name": "Celestica Inc",
    "Ticker": "CLS",
    "Identifier": "",
-   "Shares Held": "2,295",
+   "Shares Held": "2,109",
    "Asset Category": "Stock",
-   "Market Value": "$757,212.30",
+   "Market Value": "$763,120.56",
    "Notional Value": "",
-   "Weight": "1.11%"
+   "Weight": "1.12%"
   },
   {
-   "Name": "Super Micro Computer Inc",
-   "Ticker": "SMCI",
-   "Identifier": "BBG000MYZDJ3",
-   "Shares Held": "17,705",
+   "Name": "Arm Holdings Plc",
+   "Ticker": "ARM",
+   "Identifier": "BBG01J1GXZF0",
+   "Shares Held": "2,220",
    "Asset Category": "Stock",
-   "Market Value": "$714,396.75",
+   "Market Value": "$738,283.20",
    "Notional Value": "",
-   "Weight": "1.04%"
+   "Weight": "1.08%"
   },
   {
-   "Name": "Nutanix Inc",
-   "Ticker": "NTNX",
-   "Identifier": "BBG001NDW1Z7",
-   "Shares Held": "9,429",
+   "Name": "Astera Labs Inc",
+   "Ticker": "ALAB",
+   "Identifier": "BBG00TDKHW99",
+   "Shares Held": "1,933",
    "Asset Category": "Stock",
-   "Market Value": "$659,747.13",
+   "Market Value": "$696,769.18",
    "Notional Value": "",
-   "Weight": "0.96%"
+   "Weight": "1.02%"
+  },
+  {
+   "Name": "Cadence Design Systems Inc",
+   "Ticker": "CDNS",
+   "Identifier": "BBG000C13CD9",
+   "Shares Held": "2,225",
+   "Asset Category": "Stock",
+   "Market Value": "$687,725.25",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "Digital Realty Trust Inc",
+   "Ticker": "DLR",
+   "Identifier": "BBG000Q5ZRM7",
+   "Shares Held": "3,722",
+   "Asset Category": "Stock",
+   "Market Value": "$675,356.90",
+   "Notional Value": "",
+   "Weight": "0.99%"
+  },
+  {
+   "Name": "Everpure Inc",
+   "Ticker": "P",
+   "Identifier": "BBG00212PVZ5",
+   "Shares Held": "6,065",
+   "Asset Category": "Stock",
+   "Market Value": "$665,027.25",
+   "Notional Value": "",
+   "Weight": "0.98%"
+  },
+  {
+   "Name": "Monolithic Power Systems Inc",
+   "Ticker": "MPWR",
+   "Identifier": "BBG000C30L48",
+   "Shares Held": "489",
+   "Asset Category": "Stock",
+   "Market Value": "$662,824.83",
+   "Notional Value": "",
+   "Weight": "0.97%"
+  },
+  {
+   "Name": "Synopsys Inc",
+   "Ticker": "SNPS",
+   "Identifier": "BBG000BSFRF3",
+   "Shares Held": "1,602",
+   "Asset Category": "Stock",
+   "Market Value": "$661,722.12",
+   "Notional Value": "",
+   "Weight": "0.97%"
+  },
+  {
+   "Name": "Credo Technology Group Holding Ltd",
+   "Ticker": "CRDO",
+   "Identifier": "BBG00T68J2G0",
+   "Shares Held": "3,336",
+   "Asset Category": "Stock",
+   "Market Value": "$646,750.32",
+   "Notional Value": "",
+   "Weight": "0.95%"
   },
   {
    "Name": "Iron Mountain Inc",
    "Ticker": "IRM",
    "Identifier": "BBG000KCZPC3",
-   "Shares Held": "5,251",
+   "Shares Held": "5,231",
    "Asset Category": "Stock",
-   "Market Value": "$598,614.00",
+   "Market Value": "$602,035.79",
+   "Notional Value": "",
+   "Weight": "0.88%"
+  },
+  {
+   "Name": "Ionq Inc",
+   "Ticker": "IONQ",
+   "Identifier": "BBG00XZP0LB4",
+   "Shares Held": "14,022",
+   "Asset Category": "Stock",
+   "Market Value": "$596,495.88",
+   "Notional Value": "",
+   "Weight": "0.87%"
+  },
+  {
+   "Name": "Super Micro Computer Inc",
+   "Ticker": "SMCI",
+   "Identifier": "BBG000MYZDJ3",
+   "Shares Held": "14,266",
+   "Asset Category": "Stock",
+   "Market Value": "$591,183.04",
    "Notional Value": "",
    "Weight": "0.87%"
   },
@@ -388,141 +458,81 @@
    "Name": "Coreweave Inc",
    "Ticker": "CRWV",
    "Identifier": "BBG011ZTRJ21",
-   "Shares Held": "7,286",
+   "Shares Held": "6,587",
    "Asset Category": "Stock",
-   "Market Value": "$582,005.68",
+   "Market Value": "$572,410.30",
    "Notional Value": "",
-   "Weight": "0.85%"
+   "Weight": "0.84%"
   },
   {
-   "Name": "Synopsys Inc",
-   "Ticker": "SNPS",
-   "Identifier": "BBG000BSFRF3",
-   "Shares Held": "1,430",
+   "Name": "Nutanix Inc",
+   "Ticker": "NTNX",
+   "Identifier": "BBG001NDW1Z7",
+   "Shares Held": "7,686",
    "Asset Category": "Stock",
-   "Market Value": "$545,073.10",
+   "Market Value": "$535,560.48",
    "Notional Value": "",
-   "Weight": "0.80%"
-  },
-  {
-   "Name": "Astera Labs Inc",
-   "Ticker": "ALAB",
-   "Identifier": "BBG00TDKHW99",
-   "Shares Held": "1,726",
-   "Asset Category": "Stock",
-   "Market Value": "$506,684.56",
-   "Notional Value": "",
-   "Weight": "0.74%"
-  },
-  {
-   "Name": "Arm Holdings Plc",
-   "Ticker": "ARM",
-   "Identifier": "BBG01J1GXZF0",
-   "Shares Held": "1,878",
-   "Asset Category": "Stock",
-   "Market Value": "$497,482.20",
-   "Notional Value": "",
-   "Weight": "0.73%"
-  },
-  {
-   "Name": "Monolithic Power Systems Inc",
-   "Ticker": "MPWR",
-   "Identifier": "BBG000C30L48",
-   "Shares Held": "425",
-   "Asset Category": "Stock",
-   "Market Value": "$497,071.50",
-   "Notional Value": "",
-   "Weight": "0.73%"
-  },
-  {
-   "Name": "Cadence Design Systems Inc",
-   "Ticker": "CDNS",
-   "Identifier": "BBG000C13CD9",
-   "Shares Held": "1,739",
-   "Asset Category": "Stock",
-   "Market Value": "$488,241.64",
-   "Notional Value": "",
-   "Weight": "0.71%"
+   "Weight": "0.79%"
   },
   {
    "Name": "Nvent Electric Plc",
    "Ticker": "NVT",
    "Identifier": "BBG00GNT7999",
-   "Shares Held": "3,097",
+   "Shares Held": "3,114",
    "Asset Category": "Stock",
-   "Market Value": "$468,669.01",
+   "Market Value": "$507,114.90",
    "Notional Value": "",
-   "Weight": "0.68%"
+   "Weight": "0.74%"
   },
   {
    "Name": "Hubbell Inc",
    "Ticker": "HUBB",
    "Identifier": "BBG000BLK267",
-   "Shares Held": "1,002",
+   "Shares Held": "1,008",
    "Asset Category": "Stock",
-   "Market Value": "$444,116.46",
+   "Market Value": "$467,409.60",
    "Notional Value": "",
-   "Weight": "0.65%"
-  },
-  {
-   "Name": "Ionq Inc",
-   "Ticker": "IONQ",
-   "Identifier": "BBG00XZP0LB4",
-   "Shares Held": "9,439",
-   "Asset Category": "Stock",
-   "Market Value": "$380,769.26",
-   "Notional Value": "",
-   "Weight": "0.56%"
-  },
-  {
-   "Name": "Rambus Inc",
-   "Ticker": "RMBS",
-   "Identifier": "BBG000BR32C6",
-   "Shares Held": "3,751",
-   "Asset Category": "Stock",
-   "Market Value": "$322,098.37",
-   "Notional Value": "",
-   "Weight": "0.47%"
+   "Weight": "0.69%"
   },
   {
    "Name": "Mastec Inc",
    "Ticker": "MTZ",
    "Identifier": "BBG000DYXD23",
-   "Shares Held": "1,217",
+   "Shares Held": "1,264",
    "Asset Category": "Stock",
-   "Market Value": "$252,831.75",
+   "Market Value": "$274,945.28",
    "Notional Value": "",
-   "Weight": "0.37%"
+   "Weight": "0.40%"
   },
   {
    "Name": "Generac Holdings Inc",
    "Ticker": "GNRC",
    "Identifier": "BBG000PQ4W72",
-   "Shares Held": "1,157",
+   "Shares Held": "1,216",
    "Asset Category": "Stock",
-   "Market Value": "$239,765.11",
+   "Market Value": "$242,494.72",
    "Notional Value": "",
-   "Weight": "0.35%"
+   "Weight": "0.36%"
   },
   {
    "Name": "Talen Energy Corp",
    "Ticker": "TLN",
    "Identifier": "BBG01GWQVVD3",
-   "Shares Held": "727",
+   "Shares Held": "765",
    "Asset Category": "Stock",
-   "Market Value": "$213,236.37",
+   "Market Value": "$229,760.10",
    "Notional Value": "",
-   "Weight": "0.31%"
+   "Weight": "0.34%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "22,665",
+   "Shares Held": "9,208",
    "Asset Category": "Cash Bal",
-   "Market Value": "$22,665.15",
+   "Market Value": "$9,208.08",
    "Notional Value": "",
-   "Weight": "0.03%"
+   "Weight": "0.01%"
   },
   {
    "Name": "Other/Cash",
@@ -530,9 +540,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$29,712.70",
+   "Market Value": "$34,455.34",
    "Notional Value": "",
-   "Weight": "0.04%"
+   "Weight": "0.05%"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.36%",
  "terValue": 0.36,
  "nav": {
-  "display": "$52.90",
-  "value": 52.9,
-  "asOfDate": "Sep 18 2026"
+  "display": "$52.95",
+  "value": 52.95,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 52.9,
+ "navValue": 52.95,
  "aum": {
-  "display": "$1.65B",
-  "value": 1650602987.74,
-  "asOfDate": "Sep 18 2026",
+  "display": "$1.64B",
+  "value": 1636079618.92,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1650602987.74,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 1636079618.92,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 21 2022",
  "exchange": "NYSE Arca",
- "closePrice": "$52.94",
- "closePriceValue": 52.94,
+ "closePrice": "$52.93",
+ "closePriceValue": 52.93,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -296,9 +296,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 3.62,
-   "ytdText": "3.62%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 3.7,
+   "ytdText": "3.70%",
    "yr1": 5.25,
    "yr3": 6.71,
    "yr5": null,
@@ -315,7 +315,7 @@
   }
  },
  "metrics": {
-  "ytd": 3.62,
+  "ytd": 3.7,
   "tr1y": 5.25,
   "tr3y": 21.52,
   "tr5y": null,
@@ -330,19 +330,19 @@
   "distributionYieldText": "5.10%",
   "yield12M": 5.29,
   "yield12MText": "5.29%",
-  "secYield": 4.98,
-  "secYieldText": "4.98%",
+  "secYield": 4.95,
+  "secYieldText": "4.95%",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row"
  },
  "distributionFrequency": "01 - Monthly",
  "providerCategory": "Floating Rate",
  "terGross": "0.36%",
  "terGrossValue": 0.36,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 176,
+  "totalRows": 178,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -350,9 +350,9 @@
   ]
  },
  "history": {
-  "totalRows": 1416,
+  "totalRows": 1422,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -360,9 +360,9 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 1650000000,
- "secYield": "4.98%",
- "secYieldValue": 4.98,
+ "totalNetAssets": 1640000000,
+ "secYield": "4.95%",
+ "secYieldValue": 4.95,
  "categoryPath": "Income > Floating Rate",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -399,23 +399,23 @@
   "grossValue": 0.36
  },
  "marketPrice": {
-  "display": "$52.94",
-  "value": 52.94,
-  "asOfDate": "Sep 18 2026"
+  "display": "$52.93",
+  "value": 52.93,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 5.1,
   "dividendYieldText": "5.10%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 5.1,
-  "indicatedYieldText": "5.10%",
+  "indicatedYield": 5.09,
+  "indicatedYieldText": "5.09%",
   "distributionYield": 5.1,
   "distributionYieldText": "5.10%",
   "yield12M": 5.29,
   "yield12MText": "5.29%",
   "distributionRate": null,
-  "secYield": 4.98,
-  "secYieldText": "4.98%",
+  "secYield": 4.95,
+  "secYieldText": "4.95%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  },
  "snapshotReadAt": "2026-09-19T00:00:00.000Z"

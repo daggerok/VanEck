@@ -9,28 +9,28 @@
  "ter": "0.59%",
  "terValue": 0.59,
  "nav": {
-  "display": "$67.29",
-  "value": 67.29,
-  "asOfDate": "Sep 18 2026"
+  "display": "$67.23",
+  "value": 67.23,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 67.29,
+ "navValue": 67.23,
  "aum": {
-  "display": "$159.82M",
-  "value": 159819811.07,
-  "asOfDate": "Sep 18 2026",
+  "display": "$159.68M",
+  "value": 159682652.68,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 159819811.07,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 159682652.68,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 25 2013",
  "exchange": "NYSE Arca",
- "closePrice": "$67.66",
- "closePriceValue": 67.66,
+ "closePrice": "$67.47",
+ "closePriceValue": 67.47,
  "premiumDiscount": {
-  "display": "0.37%",
-  "value": 0.37
+  "display": "0.24%",
+  "value": 0.24
  },
- "premiumDiscountValue": 0.37,
+ "premiumDiscountValue": 0.24,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -111,9 +111,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 14.75,
-   "ytdText": "14.75%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 14.65,
+   "ytdText": "14.65%",
    "yr1": 30.75,
    "yr3": 26.82,
    "yr5": 8.42,
@@ -130,7 +130,7 @@
   }
  },
  "metrics": {
-  "ytd": 14.75,
+  "ytd": 14.65,
   "tr1y": 30.75,
   "tr3y": 103.98,
   "tr5y": 49.84,
@@ -153,11 +153,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.64%",
  "terGrossValue": 0.64,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 83,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/israel-etf-isra/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -165,9 +165,9 @@
   ]
  },
  "history": {
-  "totalRows": 3679,
+  "totalRows": 3685,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/israel-etf-isra/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -177,7 +177,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 159820000,
+ "totalNetAssets": 159680000,
  "indexTicker": "BLSNTR",
  "indexName": "Israel Global Index",
  "categoryPath": "Equity > Country/Regional",
@@ -216,9 +216,9 @@
   "grossValue": 0.64
  },
  "marketPrice": {
-  "display": "$67.66",
-  "value": 67.66,
-  "asOfDate": "Sep 18 2026"
+  "display": "$67.47",
+  "value": 67.47,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 1.29,

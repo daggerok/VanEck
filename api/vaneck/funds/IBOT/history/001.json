@@ -2,7 +2,7 @@
  "ticker": "IBOT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1217,
+ "totalRows": 1223,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,60 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 24 2026",
+   "NAV": "63.8634",
+   "Close": "63.99",
+   "Volume": "15,623",
+   "Premium/Discount": "0.13",
+   "Total Net Assets": "100,584,896.47",
+   "Index Level": "1,030.27"
+  },
+  {
+   "Date": "Sep 23 2026",
+   "NAV": "64.2214",
+   "Close": "64.23",
+   "Volume": "20,143",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "101,148,655.77",
+   "Index Level": "1,033.71"
+  },
+  {
+   "Date": "Sep 22 2026",
+   "NAV": "64.8247",
+   "Close": "64.85",
+   "Volume": "12,330",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "102,098,911.97",
+   "Index Level": "1,038.55"
+  },
+  {
+   "Date": "Sep 21 2026",
+   "NAV": "63.9767",
+   "Close": "64.07",
+   "Volume": "8,588",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "100,763,341.36",
+   "Index Level": "1,027.35"
+  },
+  {
+   "Date": "Sep 20 2026",
+   "NAV": "62.7640",
+   "Close": "62.92",
+   "Volume": "",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "98,853,276.48",
+   "Index Level": "1,014.35"
+  },
+  {
+   "Date": "Sep 19 2026",
+   "NAV": "62.7640",
+   "Close": "62.92",
+   "Volume": "",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "98,853,276.48",
+   "Index Level": "1,014.35"
+  },
   {
    "Date": "Sep 18 2026",
    "NAV": "62.7640",
@@ -8958,60 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "3,964,965.66",
    "Index Level": "616.26"
-  },
-  {
-   "Date": "Dec 29 2023",
-   "NAV": "39.6497",
-   "Close": "39.72",
-   "Volume": "1,403",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "3,964,965.66",
-   "Index Level": "616.26"
-  },
-  {
-   "Date": "Dec 28 2023",
-   "NAV": "39.8224",
-   "Close": "39.83",
-   "Volume": "1,319",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "3,982,239.06",
-   "Index Level": "618.90"
-  },
-  {
-   "Date": "Dec 27 2023",
-   "NAV": "39.7843",
-   "Close": "39.85",
-   "Volume": "2,732",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "2,983,821.33",
-   "Index Level": "618.43"
-  },
-  {
-   "Date": "Dec 26 2023",
-   "NAV": "39.6371",
-   "Close": "39.78",
-   "Volume": "1,773",
-   "Premium/Discount": "0.14",
-   "Total Net Assets": "2,972,780.90",
-   "Index Level": "614.62"
-  },
-  {
-   "Date": "Dec 25 2023",
-   "NAV": "39.3098",
-   "Close": "39.46",
-   "Volume": "462",
-   "Premium/Discount": "0.15",
-   "Total Net Assets": "2,948,235.89",
-   "Index Level": "610.37"
-  },
-  {
-   "Date": "Dec 24 2023",
-   "NAV": "39.3098",
-   "Close": "39.46",
-   "Volume": "",
-   "Premium/Discount": "0.15",
-   "Total Net Assets": "2,948,235.89",
-   "Index Level": "610.14"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$83.67",
-  "value": 83.67,
-  "asOfDate": "Sep 18 2026"
+  "display": "$83.24",
+  "value": 83.24,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 83.67,
+ "navValue": 83.24,
  "aum": {
-  "display": "$451.82M",
-  "value": 451818717.81,
-  "asOfDate": "Sep 18 2026",
+  "display": "$449.48M",
+  "value": 449478709.15,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 451818717.81,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 449478709.15,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Dec 20 2022",
  "exchange": "Cboe BZX",
- "closePrice": "$83.48",
- "closePriceValue": 83.48,
+ "closePrice": "$83.39",
+ "closePriceValue": 83.39,
  "premiumDiscount": {
-  "display": "-0.19%",
-  "value": -0.19
+  "display": "0.15%",
+  "value": 0.15
  },
- "premiumDiscountValue": -0.19,
+ "premiumDiscountValue": 0.15,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -61,9 +61,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 58.33,
-   "ytdText": "58.33%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 57.51,
+   "ytdText": "57.51%",
    "yr1": 61.25,
    "yr3": 21.77,
    "yr5": null,
@@ -80,7 +80,7 @@
   }
  },
  "metrics": {
-  "ytd": 58.33,
+  "ytd": 57.51,
   "tr1y": 61.25,
   "tr3y": 80.57,
   "tr5y": null,
@@ -103,11 +103,11 @@
  "providerCategory": "Commodity",
  "terGross": "0.55%",
  "terGrossValue": 0.55,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 36,
+  "totalRows": 35,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/commodity-strategy-etf-pit/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -115,9 +115,9 @@
   ]
  },
  "history": {
-  "totalRows": 1289,
+  "totalRows": 1295,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/commodity-strategy-etf-pit/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -125,7 +125,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 451820000,
+ "totalNetAssets": 449480000,
  "categoryPath": "Real Assets | Commodities > Commodity",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -162,16 +162,16 @@
   "grossValue": 0.55
  },
  "marketPrice": {
-  "display": "$83.48",
-  "value": 83.48,
-  "asOfDate": "Sep 18 2026"
+  "display": "$83.39",
+  "value": 83.39,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 5.63,
   "dividendYieldText": "5.63%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 5.63,
-  "indicatedYieldText": "5.63%",
+  "indicatedYield": 5.66,
+  "indicatedYieldText": "5.66%",
   "distributionYield": 5.63,
   "distributionYieldText": "5.63%",
   "yield12M": 13.63,

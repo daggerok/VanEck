@@ -9,23 +9,23 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$32.57",
-  "value": 32.57,
-  "asOfDate": "Sep 18 2026"
+  "display": "$33.25",
+  "value": 33.25,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 32.57,
+ "navValue": 33.25,
  "aum": {
-  "display": "$231.88M",
-  "value": 231877889.11,
-  "asOfDate": "Sep 18 2026",
+  "display": "$245.05M",
+  "value": 245053043.52,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 231877889.11,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 245053043.52,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Aug 20 2025",
  "exchange": "NASDAQ",
- "closePrice": "$32.57",
- "closePriceValue": 32.57,
+ "closePrice": "$33.27",
+ "closePriceValue": 33.27,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -66,9 +66,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 23.41,
-   "ytdText": "23.41%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 25.99,
+   "ytdText": "25.99%",
    "yr1": 31.93,
    "yr3": null,
    "yr5": null,
@@ -85,7 +85,7 @@
   }
  },
  "metrics": {
-  "ytd": 23.41,
+  "ytd": 25.99,
   "tr1y": 31.93,
   "tr3y": null,
   "tr5y": null,
@@ -108,11 +108,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 77,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/technology-trusector-etf-trut/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -120,16 +120,16 @@
   ]
  },
  "history": {
-  "totalRows": 395,
+  "totalRows": 401,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/technology-trusector-etf-trut/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 231880000,
+ "totalNetAssets": 245050000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -166,16 +166,16 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$32.57",
-  "value": 32.57,
-  "asOfDate": "Sep 18 2026"
+  "display": "$33.27",
+  "value": 33.27,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 0.41,
   "dividendYieldText": "0.41%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.41,
-  "indicatedYieldText": "0.41%",
+  "indicatedYield": 0.4,
+  "indicatedYieldText": "0.40%",
   "distributionYield": 0.41,
   "distributionYieldText": "0.41%",
   "yield12M": 0.45,

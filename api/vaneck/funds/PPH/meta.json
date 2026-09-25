@@ -9,28 +9,28 @@
  "ter": "0.36%",
  "terValue": 0.36,
  "nav": {
-  "display": "$111.20",
-  "value": 111.2,
-  "asOfDate": "Sep 18 2026"
+  "display": "$111.04",
+  "value": 111.04,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 111.2,
+ "navValue": 111.04,
  "aum": {
-  "display": "$1.03B",
-  "value": 1032835861.97,
-  "asOfDate": "Sep 18 2026",
+  "display": "$1.02B",
+  "value": 1020267056.09,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1032835861.97,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 1020267056.09,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NASDAQ",
- "closePrice": "$111.17",
- "closePriceValue": 111.17,
+ "closePrice": "$111.11",
+ "closePriceValue": 111.11,
  "premiumDiscount": {
-  "display": "-0.03%",
-  "value": -0.03
+  "display": "0.07%",
+  "value": 0.07
  },
- "premiumDiscountValue": -0.03,
+ "premiumDiscountValue": 0.07,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -321,9 +321,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 9.33,
-   "ytdText": "9.33%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 9.18,
+   "ytdText": "9.18%",
    "yr1": 29.87,
    "yr3": 13.65,
    "yr5": 10.41,
@@ -340,7 +340,7 @@
   }
  },
  "metrics": {
-  "ytd": 9.33,
+  "ytd": 9.18,
   "tr1y": 29.87,
   "tr3y": 46.79,
   "tr5y": 64.08,
@@ -363,11 +363,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.36%",
  "terGrossValue": 0.36,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -375,9 +375,9 @@
   ]
  },
  "history": {
-  "totalRows": 4057,
+  "totalRows": 4063,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -388,7 +388,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 1030000000,
+ "totalNetAssets": 1020000000,
  "indexTicker": "MVPPHTR",
  "indexName": "US Listed Pharmaceutical 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -427,9 +427,9 @@
   "grossValue": 0.36
  },
  "marketPrice": {
-  "display": "$111.17",
-  "value": 111.17,
-  "asOfDate": "Sep 18 2026"
+  "display": "$111.11",
+  "value": 111.11,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 2.25,

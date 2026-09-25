@@ -9,28 +9,28 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$41.15",
-  "value": 41.15,
-  "asOfDate": "Sep 18 2026"
+  "display": "$40.58",
+  "value": 40.58,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 41.15,
+ "navValue": 40.58,
  "aum": {
-  "display": "$1.38B",
-  "value": 1377493357.98,
-  "asOfDate": "Sep 18 2026",
+  "display": "$1.36B",
+  "value": 1358271296.71,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1377493357.98,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 1358271296.71,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Apr 09 2018",
  "exchange": "NYSE Arca",
- "closePrice": "$41.21",
- "closePriceValue": 41.21,
+ "closePrice": "$40.71",
+ "closePriceValue": 40.71,
  "premiumDiscount": {
-  "display": "0.06%",
-  "value": 0.06
+  "display": "0.13%",
+  "value": 0.13
  },
- "premiumDiscountValue": 0.06,
+ "premiumDiscountValue": 0.13,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -86,9 +86,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 18 2026",
-   "ytd": 17.96,
-   "ytdText": "17.96%",
+   "asOfDate": "Sep 24 2026",
+   "ytd": 16.31,
+   "ytdText": "16.31%",
    "yr1": 28.55,
    "yr3": 19.71,
    "yr5": 13.86,
@@ -105,7 +105,7 @@
   }
  },
  "metrics": {
-  "ytd": 17.96,
+  "ytd": 16.31,
   "tr1y": 28.55,
   "tr3y": 71.56,
   "tr5y": 91.33,
@@ -128,11 +128,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.71%",
  "terGrossValue": 0.71,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
   "totalRows": 120,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/real-assets-etf-raax/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -140,9 +140,9 @@
   ]
  },
  "history": {
-  "totalRows": 2474,
+  "totalRows": 2480,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/real-assets-etf-raax/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -151,7 +151,7 @@
    "history/003.json"
   ]
  },
- "totalNetAssets": 1380000000,
+ "totalNetAssets": 1360000000,
  "categoryPath": "Equity > Natural Resources",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -188,16 +188,16 @@
   "grossValue": 0.71
  },
  "marketPrice": {
-  "display": "$41.21",
-  "value": 41.21,
-  "asOfDate": "Sep 18 2026"
+  "display": "$40.71",
+  "value": 40.71,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": 1.98,
   "dividendYieldText": "1.98%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.98,
-  "indicatedYieldText": "1.98%",
+  "indicatedYield": 2.01,
+  "indicatedYieldText": "2.01%",
   "distributionYield": 1.98,
   "distributionYieldText": "1.98%",
   "yield12M": 2.87,

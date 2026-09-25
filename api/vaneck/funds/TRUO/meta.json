@@ -9,28 +9,28 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$25.03",
-  "value": 25.03,
-  "asOfDate": "Sep 18 2026"
+  "display": "$24.95",
+  "value": 24.95,
+  "asOfDate": "Sep 24 2026"
  },
- "navValue": 25.03,
+ "navValue": 24.95,
  "aum": {
-  "display": "$500506.74",
-  "value": 500506.74,
-  "asOfDate": "Sep 18 2026",
+  "display": "$499094.76",
+  "value": 499094.76,
+  "asOfDate": "Sep 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 500506.74,
- "asOfDate": "Sep 18 2026",
+ "aumValue": 499094.76,
+ "asOfDate": "Sep 24 2026",
  "inceptionDate": "Jun 02 2026",
  "exchange": "NASDAQ",
- "closePrice": "$25.02",
- "closePriceValue": 25.02,
+ "closePrice": "$24.98",
+ "closePriceValue": 24.98,
  "premiumDiscount": {
-  "display": "-0.01%",
-  "value": -0.01
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": -0.01,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -85,11 +85,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Sep 18 2026",
+ "netAssetsAsOf": "Sep 24 2026",
  "holdings": {
-  "totalRows": 37,
+  "totalRows": 36,
   "pageSize": 250,
-  "asOfDate": "Sep 17 2026",
+  "asOfDate": "Sep 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/consumer-staples-trusector-etf-truo/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -97,16 +97,16 @@
   ]
  },
  "history": {
-  "totalRows": 109,
+  "totalRows": 115,
   "pageSize": 1000,
-  "asOfDate": "Sep 18 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/consumer-staples-trusector-etf-truo/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 500.51,
+ "totalNetAssets": 499.09,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -143,9 +143,9 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$25.02",
-  "value": 25.02,
-  "asOfDate": "Sep 18 2026"
+  "display": "$24.98",
+  "value": 24.98,
+  "asOfDate": "Sep 24 2026"
  },
  "yields": {
   "dividendYield": null,
