@@ -2,7 +2,7 @@
  "ticker": "MOO",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5148,
+ "totalRows": 5149,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "76.3215",
+   "Close": "76.18",
+   "Volume": "",
+   "Premium/Discount": "-0.14",
+   "Total Net Assets": "912,041,869.36",
+   "Index Level": "3,993.11"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "76.3215",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.18",
    "Total Net Assets": "590,481,183.14",
    "Index Level": "2,867.93"
-  },
-  {
-   "Date": "Mar 05 2020",
-   "NAV": "60.5420",
-   "Close": "60.36",
-   "Volume": "14,396",
-   "Premium/Discount": "-0.18",
-   "Total Net Assets": "602,392,515.45",
-   "Index Level": "2,935.49"
   }
  ]
 }

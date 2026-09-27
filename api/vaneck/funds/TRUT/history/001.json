@@ -2,7 +2,7 @@
  "ticker": "TRUT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 401,
+ "totalRows": 402,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "33.5806",
+   "Close": "33.60",
+   "Volume": "111,421",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "249,839,608.96",
+   "Index Level": "7,158.74"
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "33.2501",

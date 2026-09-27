@@ -2,7 +2,7 @@
  "ticker": "SMB",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 5029,
+ "totalRows": 5030,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Sep 25 2026",
+   "NAV": "16.8829",
+   "Close": "16.92",
+   "Volume": "280,984",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "316,554,485.16",
+   "Index Level": "n.a."
+  },
+  {
    "Date": "Sep 24 2026",
    "NAV": "16.9218",
    "Close": "16.94",
    "Volume": "127,588",
    "Premium/Discount": "0.02",
    "Total Net Assets": "317,284,168.78",
-   "Index Level": "n.a."
+   "Index Level": "129.61"
   },
   {
    "Date": "Sep 23 2026",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.04",
    "Total Net Assets": "262,108,925.90",
    "Index Level": "122.58"
-  },
-  {
-   "Date": "Dec 30 2023",
-   "NAV": "17.1313",
-   "Close": "17.09",
-   "Volume": "",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "262,108,925.90",
-   "Index Level": "122.56"
   }
  ]
 }

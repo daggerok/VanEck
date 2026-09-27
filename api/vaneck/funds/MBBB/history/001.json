@@ -2,7 +2,7 @@
  "ticker": "MBBB",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1812,
+ "totalRows": 1813,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "20.4527",
+   "Close": "20.43",
+   "Volume": "101",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "4,601,847.19",
+   "Index Level": "328.71"
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "20.4462",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "8,567,148.69",
    "Index Level": "299.91"
-  },
-  {
-   "Date": "Dec 30 2023",
-   "NAV": "21.4179",
-   "Close": "21.44",
-   "Volume": "",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "8,567,148.69",
-   "Index Level": "299.88"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "BRF",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4722,
+ "totalRows": 4723,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 15 2016",
+   "NAV": "11.3210",
+   "Close": "11.31",
+   "Volume": "100,329",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "71,888,344.93",
+   "Index Level": "1,035.97"
+  },
   {
    "Date": "Mar 14 2016",
    "NAV": "11.9938",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.15",
    "Total Net Assets": "718,512,153.96",
    "Index Level": "3,485.57"
-  },
-  {
-   "Date": "Mar 22 2012",
-   "NAV": "43.9538",
-   "Close": "43.69",
-   "Volume": "147,552",
-   "Premium/Discount": "-0.26",
-   "Total Net Assets": "718,645,429.04",
-   "Index Level": "3,462.02"
   }
  ]
 }

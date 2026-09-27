@@ -2,7 +2,7 @@
  "ticker": "RSX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 5239,
+ "totalRows": 5240,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 05 2020",
+   "NAV": "21.4090",
+   "Close": "21.00",
+   "Volume": "13,002,233",
+   "Premium/Discount": "-0.41",
+   "Total Net Assets": "967,685,025.97",
+   "Index Level": "741.19"
+  },
   {
    "Date": "Mar 04 2020",
    "NAV": "22.1134",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.37",
    "Total Net Assets": "1,912,425,738.97",
    "Index Level": "451.09"
-  },
-  {
-   "Date": "Mar 15 2016",
-   "NAV": "15.6780",
-   "Close": "15.60",
-   "Volume": "13,655,973",
-   "Premium/Discount": "-0.08",
-   "Total Net Assets": "1,891,551,974.34",
-   "Index Level": "445.87"
   }
  ]
 }

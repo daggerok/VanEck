@@ -2,7 +2,7 @@
  "ticker": "EMLC",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4421,
+ "totalRows": 4422,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "25.5589",
+   "Close": "25.35",
+   "Volume": "",
+   "Premium/Discount": "-0.21",
+   "Total Net Assets": "3,077,873,558.04",
+   "Index Level": "137.18"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "25.5589",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "4,190,456,049.94",
    "Index Level": "142.23"
-  },
-  {
-   "Date": "Mar 05 2020",
-   "NAV": "32.7983",
-   "Close": "32.70",
-   "Volume": "1,558,625",
-   "Premium/Discount": "-0.10",
-   "Total Net Assets": "4,208,761,470.93",
-   "Index Level": "143.04"
   }
  ]
 }

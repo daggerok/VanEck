@@ -2,7 +2,7 @@
  "ticker": "MVAL",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 913,
+ "totalRows": 914,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Sep 25 2026",
+   "NAV": "37.1299",
+   "Close": "37.12",
+   "Volume": "22",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "1,856,494.38",
+   "Index Level": "n.a."
+  },
+  {
    "Date": "Sep 24 2026",
    "NAV": "36.9302",
    "Close": "36.91",
    "Volume": "1,550",
    "Premium/Discount": "-0.02",
    "Total Net Assets": "1,846,509.65",
-   "Index Level": "n.a."
+   "Index Level": "8,890.00"
   },
   {
    "Date": "Sep 23 2026",

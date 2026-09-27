@@ -2,7 +2,7 @@
  "ticker": "BBH",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4063,
+ "totalRows": 4064,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "245.0732",
+   "Close": "245.36",
+   "Volume": "15,279",
+   "Premium/Discount": "0.29",
+   "Total Net Assets": "489,289,418.28",
+   "Index Level": "6,135.72"
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "243.6876",
@@ -8997,15 +9006,6 @@
   },
   {
    "Date": "Dec 31 2023",
-   "NAV": "165.3955",
-   "Close": "165.31",
-   "Volume": "",
-   "Premium/Discount": "-0.09",
-   "Total Net Assets": "479,068,685.59",
-   "Index Level": "4,078.90"
-  },
-  {
-   "Date": "Dec 30 2023",
    "NAV": "165.3955",
    "Close": "165.31",
    "Volume": "",

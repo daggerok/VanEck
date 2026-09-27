@@ -2,7 +2,7 @@
  "ticker": "JULV",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 32,
+ "totalRows": 33,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "30.9356",
+   "Close": "30.84",
+   "Volume": "16,405",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "74,554,753.78",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "30.8659",

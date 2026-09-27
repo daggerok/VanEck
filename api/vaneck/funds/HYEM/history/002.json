@@ -2,7 +2,7 @@
  "ticker": "HYEM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3968,
+ "totalRows": 3969,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "18.4812",
+   "Close": "18.51",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "360,383,836.40",
+   "Index Level": "285.32"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "18.4812",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "383,719,403.43",
    "Index Level": "289.60"
-  },
-  {
-   "Date": "Mar 05 2020",
-   "NAV": "23.5539",
-   "Close": "23.49",
-   "Volume": "120,275",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "386,284,196.59",
-   "Index Level": "291.67"
   }
  ]
 }

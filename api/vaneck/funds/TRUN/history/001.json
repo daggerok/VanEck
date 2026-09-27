@@ -2,7 +2,7 @@
  "ticker": "TRUN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 80,
+ "totalRows": 81,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "29.3899",
+   "Close": "29.37",
+   "Volume": "35",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "293,899.01",
+   "Index Level": "2,878.72"
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "29.6470",

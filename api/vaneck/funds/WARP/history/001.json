@@ -2,7 +2,7 @@
  "ticker": "WARP",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 142,
+ "totalRows": 143,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 25 2026",
+   "NAV": "20.9411",
+   "Close": "20.96",
+   "Volume": "40,454",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "44,395,221.71",
+   "Index Level": "1,842.55"
+  },
   {
    "Date": "Sep 24 2026",
    "NAV": "20.8205",
