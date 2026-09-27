@@ -2,7 +2,7 @@
  "ticker": "RTH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4063,
+ "totalRows": 4064,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 15 2016",
+   "NAV": "75.9494",
+   "Close": "75.94",
+   "Volume": "78,112",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "153,534,045.01",
+   "Index Level": "3,222.21"
+  },
   {
    "Date": "Mar 14 2016",
    "NAV": "76.2193",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "69,707,236.99",
    "Index Level": "1,685.42"
-  },
-  {
-   "Date": "Mar 22 2012",
-   "NAV": "41.5716",
-   "Close": "41.61",
-   "Volume": "59,507",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "69,488,184.05",
-   "Index Level": "1,680.10"
   }
  ]
 }

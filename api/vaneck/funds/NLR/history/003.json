@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 5162,
+ "totalRows": 5163,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 05 2020",
+   "NAV": "49.0394",
+   "Close": "48.83",
+   "Volume": "4,602",
+   "Premium/Discount": "-0.21",
+   "Total Net Assets": "20,431,396.86",
+   "Index Level": "1,228.19"
+  },
   {
    "Date": "Mar 04 2020",
    "NAV": "49.6592",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.08",
    "Total Net Assets": "38,987,290.69",
    "Index Level": "1,045.59"
-  },
-  {
-   "Date": "Mar 15 2016",
-   "NAV": "47.4661",
-   "Close": "47.15",
-   "Volume": "34",
-   "Premium/Discount": "-0.31",
-   "Total Net Assets": "38,762,307.36",
-   "Index Level": "1,040.82"
   }
  ]
 }

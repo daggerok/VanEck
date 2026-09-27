@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 1,
  "pageSize": 250,
- "totalRows": 27,
+ "totalRows": 28,
  "headers": [
   "Name",
   "Ticker",
@@ -15,24 +15,24 @@
  ],
  "rows": [
   {
-   "Name": "Cameco Corp",
-   "Ticker": "CCJ",
-   "Identifier": "BBG000DSZTN6",
-   "Shares Held": "3,360,721",
-   "Asset Category": "Stock",
-   "Market Value": "$305,153,466.80",
-   "Notional Value": "",
-   "Weight": "8.13%"
-  },
-  {
    "Name": "Constellation Energy Corp",
    "Ticker": "CEG",
    "Identifier": "BBG014KFRNP7",
    "Shares Held": "1,148,160",
    "Asset Category": "Stock",
-   "Market Value": "$302,976,460.80",
+   "Market Value": "$300,381,619.20",
    "Notional Value": "",
-   "Weight": "8.07%"
+   "Weight": "8.17%"
+  },
+  {
+   "Name": "Cameco Corp",
+   "Ticker": "CCJ",
+   "Identifier": "BBG000DSZTN6",
+   "Shares Held": "3,360,721",
+   "Asset Category": "Stock",
+   "Market Value": "$296,146,734.52",
+   "Notional Value": "",
+   "Weight": "8.05%"
   },
   {
    "Name": "Public Service Enterprise Group Inc",
@@ -40,9 +40,9 @@
    "Identifier": "BBG000BQZMH4",
    "Shares Held": "4,067,063",
    "Asset Category": "Stock",
-   "Market Value": "$273,754,010.53",
+   "Market Value": "$270,703,713.28",
    "Notional Value": "",
-   "Weight": "7.29%"
+   "Weight": "7.36%"
   },
   {
    "Name": "Fortum Oyj",
@@ -50,9 +50,9 @@
    "Identifier": "BBG000CKYDQ7",
    "Shares Held": "9,515,225",
    "Asset Category": "Stock",
-   "Market Value": "$259,062,756.64",
+   "Market Value": "$256,155,504.68",
    "Notional Value": "",
-   "Weight": "6.90%"
+   "Weight": "6.97%"
   },
   {
    "Name": "Bwx Technologies Inc",
@@ -60,9 +60,9 @@
    "Identifier": "BBG000D86F25",
    "Shares Held": "1,615,005",
    "Asset Category": "Stock",
-   "Market Value": "$229,023,859.05",
+   "Market Value": "$223,968,893.40",
    "Notional Value": "",
-   "Weight": "6.10%"
+   "Weight": "6.09%"
   },
   {
    "Name": "Nexgen Energy Ltd",
@@ -70,9 +70,9 @@
    "Identifier": "BBG004WG63P0",
    "Shares Held": "21,804,218",
    "Asset Category": "Stock",
-   "Market Value": "$209,974,619.34",
+   "Market Value": "$202,125,100.86",
    "Notional Value": "",
-   "Weight": "5.59%"
+   "Weight": "5.50%"
   },
   {
    "Name": "Oklo Inc",
@@ -80,19 +80,9 @@
    "Identifier": "BBG0112CBLW3",
    "Shares Held": "4,954,340",
    "Asset Category": "Stock",
-   "Market Value": "$192,327,478.80",
+   "Market Value": "$189,701,678.60",
    "Notional Value": "",
-   "Weight": "5.12%"
-  },
-  {
-   "Name": "X-Energy Inc",
-   "Ticker": "XE",
-   "Identifier": "BBG005DX1RC7",
-   "Shares Held": "10,997,429",
-   "Asset Category": "Stock",
-   "Market Value": "$180,137,887.02",
-   "Notional Value": "",
-   "Weight": "4.80%"
+   "Weight": "5.16%"
   },
   {
    "Name": "Cgn Power Co Ltd",
@@ -100,9 +90,9 @@
    "Identifier": "BBG00732Y4J0",
    "Shares Held": "479,378,000",
    "Asset Category": "Stock",
-   "Market Value": "$179,493,135.77",
+   "Market Value": "$181,205,159.06",
    "Notional Value": "",
-   "Weight": "4.78%"
+   "Weight": "4.93%"
   },
   {
    "Name": "Nac Kazatomprom Jsc",
@@ -110,9 +100,19 @@
    "Identifier": "BBG00MJM7K82",
    "Shares Held": "2,568,547",
    "Asset Category": "Stock",
-   "Market Value": "$175,978,547.25",
+   "Market Value": "$175,633,884.20",
    "Notional Value": "",
-   "Weight": "4.69%"
+   "Weight": "4.78%"
+  },
+  {
+   "Name": "X-Energy Inc",
+   "Ticker": "XE",
+   "Identifier": "BBG005DX1RC7",
+   "Shares Held": "10,997,429",
+   "Asset Category": "Stock",
+   "Market Value": "$172,879,583.88",
+   "Notional Value": "",
+   "Weight": "4.70%"
   },
   {
    "Name": "Uranium Energy Corp",
@@ -120,19 +120,9 @@
    "Identifier": "BBG000LCK3Q2",
    "Shares Held": "16,363,416",
    "Asset Category": "Stock",
-   "Market Value": "$162,815,989.20",
+   "Market Value": "$154,961,549.52",
    "Notional Value": "",
-   "Weight": "4.34%"
-  },
-  {
-   "Name": "Denison Mines Corp",
-   "Ticker": "DNN",
-   "Identifier": "BBG000CX6DQ0",
-   "Shares Held": "56,553,682",
-   "Asset Category": "Stock",
-   "Market Value": "$159,481,383.24",
-   "Notional Value": "",
-   "Weight": "4.25%"
+   "Weight": "4.21%"
   },
   {
    "Name": "Paladin Energy Ltd",
@@ -140,9 +130,19 @@
    "Identifier": "BBG000BC8GS6",
    "Shares Held": "22,380,286",
    "Asset Category": "Stock",
-   "Market Value": "$155,439,467.50",
+   "Market Value": "$154,758,039.39",
    "Notional Value": "",
-   "Weight": "4.14%"
+   "Weight": "4.21%"
+  },
+  {
+   "Name": "Denison Mines Corp",
+   "Ticker": "DNN",
+   "Identifier": "BBG000CX6DQ0",
+   "Shares Held": "56,553,682",
+   "Asset Category": "Stock",
+   "Market Value": "$148,736,183.66",
+   "Notional Value": "",
+   "Weight": "4.05%"
   },
   {
    "Name": "Nuscale Power Corp",
@@ -150,9 +150,9 @@
    "Identifier": "BBG00YG48NM6",
    "Shares Held": "17,559,263",
    "Asset Category": "Stock",
-   "Market Value": "$152,414,402.84",
+   "Market Value": "$148,726,957.61",
    "Notional Value": "",
-   "Weight": "4.06%"
+   "Weight": "4.04%"
   },
   {
    "Name": "Energy Fuels Inc/Canada",
@@ -160,9 +160,9 @@
    "Identifier": "BBG000BXTPV3",
    "Shares Held": "13,045,748",
    "Asset Category": "Stock",
-   "Market Value": "$151,330,676.80",
+   "Market Value": "$147,677,867.36",
    "Notional Value": "",
-   "Weight": "4.03%"
+   "Weight": "4.02%"
   },
   {
    "Name": "Centrus Energy Corp",
@@ -170,19 +170,9 @@
    "Identifier": "BBG000BQ2JM1",
    "Shares Held": "976,277",
    "Asset Category": "Stock",
-   "Market Value": "$147,720,472.87",
+   "Market Value": "$143,825,127.64",
    "Notional Value": "",
-   "Weight": "3.93%"
-  },
-  {
-   "Name": "Yellow Cake Plc",
-   "Ticker": "YCA LN",
-   "Identifier": "BBG00L33SXM6",
-   "Shares Held": "15,110,294",
-   "Asset Category": "Stock",
-   "Market Value": "$112,418,567.09",
-   "Notional Value": "",
-   "Weight": "2.99%"
+   "Weight": "3.91%"
   },
   {
    "Name": "Kepco Engineering & Construction Co Inc",
@@ -190,9 +180,19 @@
    "Identifier": "BBG000PDFR52",
    "Shares Held": "1,164,001",
    "Asset Category": "Stock",
-   "Market Value": "$110,945,634.34",
+   "Market Value": "$109,446,764.57",
    "Notional Value": "",
-   "Weight": "2.96%"
+   "Weight": "2.98%"
+  },
+  {
+   "Name": "Yellow Cake Plc",
+   "Ticker": "YCA LN",
+   "Identifier": "BBG00L33SXM6",
+   "Shares Held": "15,110,294",
+   "Asset Category": "Stock",
+   "Market Value": "$109,291,868.23",
+   "Notional Value": "",
+   "Weight": "2.97%"
   },
   {
    "Name": "Cgn Mining Co Ltd",
@@ -200,9 +200,9 @@
    "Identifier": "BBG000M34183",
    "Shares Held": "225,545,000",
    "Asset Category": "Stock",
-   "Market Value": "$63,305,976.81",
+   "Market Value": "$62,400,912.75",
    "Notional Value": "",
-   "Weight": "1.69%"
+   "Weight": "1.70%"
   },
   {
    "Name": "Nano Nuclear Energy Inc",
@@ -210,9 +210,9 @@
    "Identifier": "BBG01F7QNWC1",
    "Shares Held": "3,061,118",
    "Asset Category": "Stock",
-   "Market Value": "$52,069,617.18",
+   "Market Value": "$52,100,228.36",
    "Notional Value": "",
-   "Weight": "1.39%"
+   "Weight": "1.42%"
   },
   {
    "Name": "Silex Systems Ltd",
@@ -220,9 +220,9 @@
    "Identifier": "BBG000C21HG5",
    "Shares Held": "15,891,841",
    "Asset Category": "Stock",
-   "Market Value": "$48,733,859.92",
+   "Market Value": "$49,506,514.21",
    "Notional Value": "",
-   "Weight": "1.30%"
+   "Weight": "1.35%"
   },
   {
    "Name": "Deep Yellow Ltd",
@@ -230,7 +230,7 @@
    "Identifier": "BBG000BRP027",
    "Shares Held": "47,169,139",
    "Asset Category": "Stock",
-   "Market Value": "$43,469,983.23",
+   "Market Value": "$42,736,051.96",
    "Notional Value": "",
    "Weight": "1.16%"
   },
@@ -240,9 +240,9 @@
    "Identifier": "BBG00GD6RCC7",
    "Shares Held": "3,210,420",
    "Asset Category": "Stock",
-   "Market Value": "$31,462,116.00",
+   "Market Value": "$30,306,364.80",
    "Notional Value": "",
-   "Weight": "0.84%"
+   "Weight": "0.82%"
   },
   {
    "Name": "Boss Energy Ltd",
@@ -250,9 +250,9 @@
    "Identifier": "BBG000RFMW29",
    "Shares Held": "24,640,136",
    "Asset Category": "Stock",
-   "Market Value": "$28,220,571.87",
+   "Market Value": "$27,869,415.85",
    "Notional Value": "",
-   "Weight": "0.75%"
+   "Weight": "0.76%"
   },
   {
    "Name": "Ur-Energy Inc",
@@ -260,9 +260,19 @@
    "Identifier": "BBG000M5BMH4",
    "Shares Held": "21,722,374",
    "Asset Category": "Stock",
-   "Market Value": "$25,197,953.84",
+   "Market Value": "$24,546,282.62",
    "Notional Value": "",
    "Weight": "0.67%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "-492",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-491.85",
+   "Notional Value": "",
+   "Weight": "0.00%"
   },
   {
    "Name": "",
@@ -270,7 +280,7 @@
    "Identifier": "",
    "Shares Held": "75",
    "Asset Category": "Cash Bal",
-   "Market Value": "$85.64",
+   "Market Value": "$85.43",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -280,7 +290,7 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$1,168,502.38",
+   "Market Value": "$1,130,590.98",
    "Notional Value": "",
    "Weight": "0.03%"
   }

@@ -9,28 +9,28 @@
  "ter": "0.35%",
  "terValue": 0.35,
  "nav": {
-  "display": "$394.24",
-  "value": 394.24,
-  "asOfDate": "Sep 24 2026"
+  "display": "$393.50",
+  "value": 393.5,
+  "asOfDate": "Sep 25 2026"
  },
- "navValue": 394.24,
+ "navValue": 393.5,
  "aum": {
-  "display": "$1.95B",
-  "value": 1951689789.34,
-  "asOfDate": "Sep 24 2026",
+  "display": "$1.93B",
+  "value": 1928373745.9,
+  "asOfDate": "Sep 25 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1951689789.34,
- "asOfDate": "Sep 24 2026",
+ "aumValue": 1928373745.9,
+ "asOfDate": "Sep 25 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NYSE Arca",
- "closePrice": "$394.20",
- "closePriceValue": 394.2,
+ "closePrice": "$393.68",
+ "closePriceValue": 393.68,
  "premiumDiscount": {
-  "display": "-0.04%",
-  "value": -0.04
+  "display": "0.18%",
+  "value": 0.18
  },
- "premiumDiscountValue": -0.04,
+ "premiumDiscountValue": 0.18,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,9 +116,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 24 2026",
-   "ytd": 38.59,
-   "ytdText": "38.59%",
+   "asOfDate": "Sep 25 2026",
+   "ytd": 38.33,
+   "ytdText": "38.33%",
    "yr1": 69.9,
    "yr3": 9.84,
    "yr5": 19.89,
@@ -135,7 +135,7 @@
   }
  },
  "metrics": {
-  "ytd": 38.59,
+  "ytd": 38.33,
   "tr1y": 69.9,
   "tr3y": 32.54,
   "tr5y": 147.7,
@@ -158,11 +158,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
- "netAssetsAsOf": "Sep 24 2026",
+ "netAssetsAsOf": "Sep 25 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Sep 23 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -170,9 +170,9 @@
   ]
  },
  "history": {
-  "totalRows": 4063,
+  "totalRows": 4064,
   "pageSize": 1000,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Sep 25 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -183,7 +183,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 1950000000,
+ "totalNetAssets": 1930000000,
  "indexTicker": "MVOIHTR",
  "indexName": "US Listed Oil Services 25 Index",
  "categoryPath": "Equity > Natural Resources",
@@ -222,9 +222,9 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "$394.20",
-  "value": 394.2,
-  "asOfDate": "Sep 24 2026"
+  "display": "$393.68",
+  "value": 393.68,
+  "asOfDate": "Sep 25 2026"
  },
  "yields": {
   "dividendYield": 1.22,

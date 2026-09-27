@@ -2,7 +2,7 @@
  "ticker": "BBH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4063,
+ "totalRows": 4064,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 15 2016",
+   "NAV": "99.9078",
+   "Close": "99.82",
+   "Volume": "77,430",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "509,180,210.38",
+   "Index Level": "2,360.72"
+  },
   {
    "Date": "Mar 14 2016",
    "NAV": "102.7153",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.03",
    "Total Net Assets": "101,107,656.80",
    "Index Level": "1,005.65"
-  },
-  {
-   "Date": "Mar 22 2012",
-   "NAV": "42.8650",
-   "Close": "42.85",
-   "Volume": "22,625",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "100,582,916.27",
-   "Index Level": "1,000.42"
   }
  ]
 }

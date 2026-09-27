@@ -2,7 +2,7 @@
  "ticker": "OIH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4063,
+ "totalRows": 4064,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "309.6069",
+   "Close": "309.52",
+   "Volume": "",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "2,213,857,447.31",
+   "Index Level": "944.17"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "309.6069",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.52",
    "Total Net Assets": "431,200,043.20",
    "Index Level": "429.73"
-  },
-  {
-   "Date": "Mar 05 2020",
-   "NAV": "165.6754",
-   "Close": "165.20",
-   "Volume": "679,000",
-   "Premium/Discount": "-0.48",
-   "Total Net Assets": "489,246,355.67",
-   "Index Level": "483.05"
   }
  ]
 }

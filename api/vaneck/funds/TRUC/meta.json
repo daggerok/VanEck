@@ -9,28 +9,28 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$26.27",
-  "value": 26.27,
-  "asOfDate": "Sep 24 2026"
+  "display": "$26.06",
+  "value": 26.06,
+  "asOfDate": "Sep 25 2026"
  },
- "navValue": 26.27,
+ "navValue": 26.06,
  "aum": {
-  "display": "$68.56M",
-  "value": 68563547.39,
-  "asOfDate": "Sep 24 2026",
+  "display": "$68.01M",
+  "value": 68010438.31,
+  "asOfDate": "Sep 25 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 68563547.39,
- "asOfDate": "Sep 24 2026",
+ "aumValue": 68010438.31,
+ "asOfDate": "Sep 25 2026",
  "inceptionDate": "Feb 18 2026",
  "exchange": "NASDAQ",
- "closePrice": "$26.30",
- "closePriceValue": 26.3,
+ "closePrice": "$26.07",
+ "closePriceValue": 26.07,
  "premiumDiscount": {
-  "display": "0.03%",
-  "value": 0.03
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": 0.03,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -91,11 +91,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Sep 24 2026",
+ "netAssetsAsOf": "Sep 25 2026",
  "holdings": {
   "totalRows": 8,
   "pageSize": 250,
-  "asOfDate": "Sep 23 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -103,16 +103,16 @@
   ]
  },
  "history": {
-  "totalRows": 219,
+  "totalRows": 220,
   "pageSize": 1000,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Sep 25 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 68560000,
+ "totalNetAssets": 68010000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -149,16 +149,16 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$26.30",
-  "value": 26.3,
-  "asOfDate": "Sep 24 2026"
+  "display": "$26.07",
+  "value": 26.07,
+  "asOfDate": "Sep 25 2026"
  },
  "yields": {
   "dividendYield": 0.9,
   "dividendYieldText": "0.90%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.87,
-  "indicatedYieldText": "0.87%",
+  "indicatedYield": 0.88,
+  "indicatedYieldText": "0.88%",
   "distributionYield": 0.9,
   "distributionYieldText": "0.90%",
   "yield12M": null,

@@ -2,7 +2,7 @@
  "ticker": "HYD",
  "page": 9,
  "pageSize": 250,
- "totalRows": 2033,
+ "totalRows": 2024,
  "headers": [
   "Name",
   "Maturity",
@@ -17,121 +17,13 @@
  ],
  "rows": [
   {
-   "Name": "New Jersey Economic Development Authori",
-   "Maturity": "Apr 01 2031",
-   "Identifier": "BBG00138VCG8",
-   "Coupon": "5.750",
-   "Asset Category": "Bond",
-   "Par Value": "55,000",
-   "Market Value": "$55,468.25",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "City Of St Louis Park Mn",
-   "Maturity": "Jul 01 2053",
-   "Identifier": "BBG00MXMSB83",
-   "Coupon": "6.000",
-   "Asset Category": "Bond",
-   "Par Value": "1,927,397",
-   "Market Value": "$48,184.94",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Chicago Board Of Education",
-   "Maturity": "Dec 01 2030",
-   "Identifier": "BBG0011WH8L6",
-   "Coupon": "",
-   "Asset Category": "Bond",
-   "Par Value": "55,000",
-   "Market Value": "$45,010.49",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "New Hope Cultural Education Facilities",
-   "Maturity": "Aug 15 2027",
-   "Identifier": "BBG00JX783Y4",
-   "Coupon": "5.250",
-   "Asset Category": "Bond",
-   "Par Value": "75,000",
-   "Market Value": "$34,312.50",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Illinois Finance Authority",
-   "Maturity": "Nov 15 2039",
-   "Identifier": "BBG0010RJDG1",
-   "Coupon": "5.375",
-   "Asset Category": "Bond",
-   "Par Value": "35,000",
-   "Market Value": "$34,169.78",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "City Of Williston Nd",
-   "Maturity": "Sep 01 2038",
-   "Identifier": "BBG005DLBTV7",
-   "Coupon": "7.750",
-   "Asset Category": "Bond",
-   "Par Value": "846,473",
-   "Market Value": "$32,250.63",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Michigan Tobacco Settlement Finance Aut",
-   "Maturity": "Jun 01 2052",
-   "Identifier": "BBG0010WQ374",
-   "Coupon": "",
-   "Asset Category": "Bond",
-   "Par Value": "260,000",
-   "Market Value": "$31,176.57",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Colorado Health Facilities Authority",
-   "Maturity": "Jul 01 2057",
-   "Identifier": "BBG019M4RMG1",
-   "Coupon": "2.000",
-   "Asset Category": "Bond",
-   "Par Value": "536,161",
-   "Market Value": "$26,808.05",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Atoka Industrial Development Authority",
-   "Maturity": "Aug 01 2039",
-   "Identifier": "BBG00Q21FY24",
-   "Coupon": "8.000",
-   "Asset Category": "Bond",
-   "Par Value": "1,000,000",
-   "Market Value": "$25,000.00",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
    "Name": "Puerto Rico Sales Tax Financing Corp Sa",
    "Maturity": "Aug 01 2047",
    "Identifier": "BBG00NBR8D73",
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "77,374",
-   "Market Value": "$24,196.10",
+   "Market Value": "$24,061.08",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -143,7 +35,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "20,000",
-   "Market Value": "$20,025.52",
+   "Market Value": "$19,907.56",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -167,7 +59,7 @@
    "Coupon": "4.300",
    "Asset Category": "Bond",
    "Par Value": "15,000",
-   "Market Value": "$15,308.97",
+   "Market Value": "$15,310.93",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -179,19 +71,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "15,000",
-   "Market Value": "$14,559.64",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "California Pollution Control Financing",
-   "Maturity": "Jul 01 2027",
-   "Identifier": "BBG00GM463S8",
-   "Coupon": "7.000",
-   "Asset Category": "Bond",
-   "Par Value": "1,000,000",
-   "Market Value": "$11,250.00",
+   "Market Value": "$14,529.56",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -209,13 +89,25 @@
    "Currency": "USD"
   },
   {
+   "Name": "California Pollution Control Financing",
+   "Maturity": "Jul 01 2027",
+   "Identifier": "BBG00GM463S8",
+   "Coupon": "7.000",
+   "Asset Category": "Bond",
+   "Par Value": "1,000,000",
+   "Market Value": "$11,250.00",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
    "Name": "State Of Illinois",
    "Maturity": "Nov 01 2028",
    "Identifier": "BBG00QQ8C5Y4",
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,233.77",
+   "Market Value": "$5,226.66",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -227,7 +119,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,088.36",
+   "Market Value": "$5,087.38",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -239,7 +131,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,788.28",
+   "Market Value": "$4,758.15",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -251,7 +143,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,339.36",
+   "Market Value": "$4,329.40",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -263,7 +155,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,676.86",
+   "Market Value": "$3,650.06",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -275,7 +167,7 @@
    "Coupon": "3.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,672.58",
+   "Market Value": "$3,641.43",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -287,7 +179,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,480.05",
+   "Market Value": "$3,456.15",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -299,7 +191,7 @@
    "Coupon": "3.250",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,447.44",
+   "Market Value": "$3,422.03",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -311,7 +203,7 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "3,000",
-   "Market Value": "$3,017.10",
+   "Market Value": "$3,017.26",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -323,7 +215,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$396.16",
+   "Market Value": "$393.01",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -394,9 +286,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "60,670,658",
-   "Market Value": "$60,670,657.78",
-   "Weight": "1.53%",
+   "Par Value": "80,745,606",
+   "Market Value": "$80,745,606.20",
+   "Weight": "2.06%",
    "Country": "",
    "Currency": "USD"
   },
@@ -407,7 +299,7 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-9,832,023.78",
+   "Market Value": "$-9,719,341.78",
    "Weight": "-0.25%",
    "Country": "",
    "Currency": "USD"

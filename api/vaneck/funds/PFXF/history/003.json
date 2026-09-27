@@ -2,7 +2,7 @@
  "ticker": "PFXF",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3921,
+ "totalRows": 3922,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 05 2020",
+   "NAV": "19.8037",
+   "Close": "19.88",
+   "Volume": "188,854",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "786,205,598.62",
+   "Index Level": "80.87"
+  },
   {
    "Date": "Mar 04 2020",
    "NAV": "20.0393",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.04",
    "Total Net Assets": "267,811,257.20",
    "Index Level": "64.41"
-  },
-  {
-   "Date": "Mar 15 2016",
-   "NAV": "19.6927",
-   "Close": "19.74",
-   "Volume": "90,022",
-   "Premium/Discount": "0.05",
-   "Total Net Assets": "264,867,348.59",
-   "Index Level": "63.95"
   }
  ]
 }

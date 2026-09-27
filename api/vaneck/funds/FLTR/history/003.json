@@ -2,7 +2,7 @@
  "ticker": "FLTR",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4230,
+ "totalRows": 4231,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 05 2020",
+   "NAV": "25.2384",
+   "Close": "25.27",
+   "Volume": "99,219",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "521,173,366.90",
+   "Index Level": "1,204.63"
+  },
   {
    "Date": "Mar 04 2020",
    "NAV": "25.2490",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "78,909,450.06",
    "Index Level": "1,064.46"
-  },
-  {
-   "Date": "Mar 15 2016",
-   "NAV": "24.6550",
-   "Close": "24.54",
-   "Volume": "5,966",
-   "Premium/Discount": "-0.12",
-   "Total Net Assets": "78,896,040.49",
-   "Index Level": "1,064.19"
   }
  ]
 }

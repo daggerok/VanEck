@@ -2,7 +2,7 @@
  "ticker": "ESPO",
  "page": 1,
  "pageSize": 250,
- "totalRows": 29,
+ "totalRows": 30,
  "headers": [
   "Name",
   "Ticker",
@@ -15,24 +15,24 @@
  ],
  "rows": [
   {
-   "Name": "Nintendo Co Ltd",
-   "Ticker": "7974 JP",
-   "Identifier": "BBG000BLCPP4",
-   "Shares Held": "369,300",
-   "Asset Category": "Stock",
-   "Market Value": "$19,392,587.35",
-   "Notional Value": "",
-   "Weight": "7.59%"
-  },
-  {
    "Name": "Tencent Holdings Ltd",
    "Ticker": "700 HK",
    "Identifier": "BBG000BJ35N5",
    "Shares Held": "344,700",
    "Asset Category": "Stock",
-   "Market Value": "$19,273,643.68",
+   "Market Value": "$19,166,912.76",
    "Notional Value": "",
-   "Weight": "7.55%"
+   "Weight": "7.56%"
+  },
+  {
+   "Name": "Nintendo Co Ltd",
+   "Ticker": "7974 JP",
+   "Identifier": "BBG000BLCPP4",
+   "Shares Held": "369,300",
+   "Asset Category": "Stock",
+   "Market Value": "$19,033,473.14",
+   "Notional Value": "",
+   "Weight": "7.51%"
   },
   {
    "Name": "Netease Inc",
@@ -40,9 +40,9 @@
    "Identifier": "BBG000BX72V8",
    "Shares Held": "152,872",
    "Asset Category": "Stock",
-   "Market Value": "$17,889,081.44",
+   "Market Value": "$17,971,632.32",
    "Notional Value": "",
-   "Weight": "7.00%"
+   "Weight": "7.09%"
   },
   {
    "Name": "Roblox Corp",
@@ -50,9 +50,9 @@
    "Identifier": "BBG001R1GCT0",
    "Shares Held": "341,063",
    "Asset Category": "Stock",
-   "Market Value": "$16,708,676.37",
+   "Market Value": "$16,654,106.29",
    "Notional Value": "",
-   "Weight": "6.54%"
+   "Weight": "6.57%"
   },
   {
    "Name": "Take-Two Interactive Software Inc",
@@ -60,9 +60,9 @@
    "Identifier": "BBG000BS1YV5",
    "Shares Held": "77,908",
    "Asset Category": "Stock",
-   "Market Value": "$16,073,978.56",
+   "Market Value": "$15,813,765.84",
    "Notional Value": "",
-   "Weight": "6.29%"
+   "Weight": "6.24%"
   },
   {
    "Name": "Gamestop Corp",
@@ -70,9 +70,9 @@
    "Identifier": "BBG000BB5BF6",
    "Shares Held": "572,554",
    "Asset Category": "Stock",
-   "Market Value": "$13,855,806.80",
+   "Market Value": "$14,325,301.08",
    "Notional Value": "",
-   "Weight": "5.42%"
+   "Weight": "5.65%"
   },
   {
    "Name": "Aristocrat Leisure Ltd",
@@ -80,39 +80,9 @@
    "Identifier": "BBG000G2SMB6",
    "Shares Held": "302,314",
    "Asset Category": "Stock",
-   "Market Value": "$12,748,343.10",
+   "Market Value": "$12,701,853.90",
    "Notional Value": "",
-   "Weight": "4.99%"
-  },
-  {
-   "Name": "Bandai Namco Holdings Inc",
-   "Ticker": "7832 JP",
-   "Identifier": "BBG000BKJ7P9",
-   "Shares Held": "339,500",
-   "Asset Category": "Stock",
-   "Market Value": "$12,085,694.80",
-   "Notional Value": "",
-   "Weight": "4.73%"
-  },
-  {
-   "Name": "Unity Software Inc",
-   "Ticker": "U",
-   "Identifier": "BBG0056JW5G6",
-   "Shares Held": "267,703",
-   "Asset Category": "Stock",
-   "Market Value": "$11,805,702.30",
-   "Notional Value": "",
-   "Weight": "4.62%"
-  },
-  {
-   "Name": "Cd Projekt Red Sa",
-   "Ticker": "CDR PW",
-   "Identifier": "BBG000D03WZ2",
-   "Shares Held": "181,548",
-   "Asset Category": "Stock",
-   "Market Value": "$11,783,380.75",
-   "Notional Value": "",
-   "Weight": "4.61%"
+   "Weight": "5.01%"
   },
   {
    "Name": "International Games System Co Ltd",
@@ -120,19 +90,29 @@
    "Identifier": "BBG000KX6VV5",
    "Shares Held": "507,000",
    "Asset Category": "Stock",
-   "Market Value": "$11,620,948.18",
+   "Market Value": "$12,129,498.06",
    "Notional Value": "",
-   "Weight": "4.55%"
+   "Weight": "4.78%"
   },
   {
-   "Name": "Capcom Co Ltd",
-   "Ticker": "9697 JP",
-   "Identifier": "BBG000BJ8Q27",
-   "Shares Held": "407,400",
+   "Name": "Bandai Namco Holdings Inc",
+   "Ticker": "7832 JP",
+   "Identifier": "BBG000BKJ7P9",
+   "Shares Held": "339,500",
    "Asset Category": "Stock",
-   "Market Value": "$11,422,006.84",
+   "Market Value": "$11,800,234.54",
    "Notional Value": "",
-   "Weight": "4.47%"
+   "Weight": "4.65%"
+  },
+  {
+   "Name": "Cd Projekt Red Sa",
+   "Ticker": "CDR PW",
+   "Identifier": "BBG000D03WZ2",
+   "Shares Held": "181,548",
+   "Asset Category": "Stock",
+   "Market Value": "$11,625,170.56",
+   "Notional Value": "",
+   "Weight": "4.58%"
   },
   {
    "Name": "Konami Holdings Corp",
@@ -140,9 +120,29 @@
    "Identifier": "BBG000BNHYW8",
    "Shares Held": "84,300",
    "Asset Category": "Stock",
-   "Market Value": "$11,254,263.01",
+   "Market Value": "$11,377,899.35",
    "Notional Value": "",
-   "Weight": "4.41%"
+   "Weight": "4.49%"
+  },
+  {
+   "Name": "Capcom Co Ltd",
+   "Ticker": "9697 JP",
+   "Identifier": "BBG000BJ8Q27",
+   "Shares Held": "407,400",
+   "Asset Category": "Stock",
+   "Market Value": "$11,291,796.84",
+   "Notional Value": "",
+   "Weight": "4.45%"
+  },
+  {
+   "Name": "Unity Software Inc",
+   "Ticker": "U",
+   "Identifier": "BBG0056JW5G6",
+   "Shares Held": "267,703",
+   "Asset Category": "Stock",
+   "Market Value": "$11,088,258.26",
+   "Notional Value": "",
+   "Weight": "4.37%"
   },
   {
    "Name": "Nexon Co Ltd",
@@ -150,9 +150,9 @@
    "Identifier": "BBG001CDRZ53",
    "Shares Held": "532,900",
    "Asset Category": "Stock",
-   "Market Value": "$10,844,725.01",
+   "Market Value": "$10,577,089.64",
    "Notional Value": "",
-   "Weight": "4.25%"
+   "Weight": "4.17%"
   },
   {
    "Name": "Krafton Inc",
@@ -160,9 +160,9 @@
    "Identifier": "BBG00FWX8WX3",
    "Shares Held": "72,816",
    "Asset Category": "Stock",
-   "Market Value": "$10,573,668.78",
+   "Market Value": "$10,464,356.47",
    "Notional Value": "",
-   "Weight": "4.14%"
+   "Weight": "4.13%"
   },
   {
    "Name": "Micro-Star International Co Ltd",
@@ -170,9 +170,9 @@
    "Identifier": "BBG000CCF9Y6",
    "Shares Held": "2,092,000",
    "Asset Category": "Stock",
-   "Market Value": "$9,902,275.87",
+   "Market Value": "$9,933,558.50",
    "Notional Value": "",
-   "Weight": "3.88%"
+   "Weight": "3.92%"
   },
   {
    "Name": "Kingsoft Corp Ltd",
@@ -180,9 +180,9 @@
    "Identifier": "BBG000TF4XZ9",
    "Shares Held": "2,119,800",
    "Asset Category": "Stock",
-   "Market Value": "$6,693,408.09",
+   "Market Value": "$6,682,134.50",
    "Notional Value": "",
-   "Weight": "2.62%"
+   "Weight": "2.64%"
   },
   {
    "Name": "Square Enix Holdings Co Ltd",
@@ -190,9 +190,9 @@
    "Identifier": "BBG000BJXQM7",
    "Shares Held": "334,700",
    "Asset Category": "Stock",
-   "Market Value": "$6,333,734.48",
+   "Market Value": "$6,243,239.77",
    "Notional Value": "",
-   "Weight": "2.48%"
+   "Weight": "2.46%"
   },
   {
    "Name": "China Ruyi Holdings Ltd",
@@ -200,9 +200,9 @@
    "Identifier": "BBG000BD5WH4",
    "Shares Held": "25,816,000",
    "Asset Category": "Stock",
-   "Market Value": "$5,221,043.93",
+   "Market Value": "$5,014,668.51",
    "Notional Value": "",
-   "Weight": "2.04%"
+   "Weight": "1.98%"
   },
   {
    "Name": "Ncsoft Corp",
@@ -210,7 +210,7 @@
    "Identifier": "BBG000BZZ983",
    "Shares Held": "26,362",
    "Asset Category": "Stock",
-   "Market Value": "$4,095,893.81",
+   "Market Value": "$4,049,468.58",
    "Notional Value": "",
    "Weight": "1.60%"
   },
@@ -220,9 +220,9 @@
    "Identifier": "BBG00QTN1L48",
    "Shares Held": "784,800",
    "Asset Category": "Stock",
-   "Market Value": "$3,964,267.25",
+   "Market Value": "$3,967,025.38",
    "Notional Value": "",
-   "Weight": "1.55%"
+   "Weight": "1.56%"
   },
   {
    "Name": "Koei Tecmo Holdings Co Ltd",
@@ -230,9 +230,9 @@
    "Identifier": "BBG000BXRCM4",
    "Shares Held": "315,600",
    "Asset Category": "Stock",
-   "Market Value": "$3,394,537.27",
+   "Market Value": "$3,355,053.01",
    "Notional Value": "",
-   "Weight": "1.33%"
+   "Weight": "1.32%"
   },
   {
    "Name": "Embracer Group Ab",
@@ -240,9 +240,9 @@
    "Identifier": "BBG00F7Z9CB3",
    "Shares Held": "387,896",
    "Asset Category": "Stock",
-   "Market Value": "$3,384,544.23",
+   "Market Value": "$3,287,724.16",
    "Notional Value": "",
-   "Weight": "1.33%"
+   "Weight": "1.30%"
   },
   {
    "Name": "Modern Times Group Mtg Ab",
@@ -250,9 +250,9 @@
    "Identifier": "BBG000BW1RR6",
    "Shares Held": "233,885",
    "Asset Category": "Stock",
-   "Market Value": "$3,094,910.01",
+   "Market Value": "$3,010,590.65",
    "Notional Value": "",
-   "Weight": "1.21%"
+   "Weight": "1.19%"
   },
   {
    "Name": "Vivendi Se",
@@ -260,9 +260,29 @@
    "Identifier": "BBG000BC0R46",
    "Shares Held": "1,788,804",
    "Asset Category": "Stock",
-   "Market Value": "$3,003,540.68",
+   "Market Value": "$2,987,158.91",
    "Notional Value": "",
    "Weight": "1.18%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "4,559,034",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$4,559,033.87",
+   "Notional Value": "",
+   "Weight": "1.80%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-JPY CASH-",
+   "Identifier": "",
+   "Shares Held": "10,427,400",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$65,622.40",
+   "Notional Value": "",
+   "Weight": "0.03%"
   },
   {
    "Name": "",
@@ -280,19 +300,9 @@
    "Identifier": "",
    "Shares Held": "60",
    "Asset Category": "Cash Bal",
-   "Market Value": "$68.80",
+   "Market Value": "$68.63",
    "Notional Value": "",
    "Weight": "0.00%"
-  },
-  {
-   "Name": "",
-   "Ticker": "-USD CASH-",
-   "Identifier": "",
-   "Shares Held": "-593,249",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$-593,248.97",
-   "Notional Value": "",
-   "Weight": "-0.23%"
   },
   {
    "Name": "Other/Cash",
@@ -300,9 +310,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-398,932.88",
+   "Market Value": "$-5,619,782.38",
    "Notional Value": "",
-   "Weight": "-0.16%"
+   "Weight": "-2.22%"
   }
  ]
 }

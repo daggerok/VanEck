@@ -2,7 +2,7 @@
  "ticker": "ITM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5083,
+ "totalRows": 5084,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "46.9184",
+   "Close": "47.03",
+   "Volume": "",
+   "Premium/Discount": "0.11",
+   "Total Net Assets": "2,031,514,237.42",
+   "Index Level": "159.96"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "46.9184",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.11",
    "Total Net Assets": "1,798,864,345.45",
    "Index Level": "160.90"
-  },
-  {
-   "Date": "Mar 05 2020",
-   "NAV": "51.8101",
-   "Close": "51.80",
-   "Volume": "156,347",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "1,792,571,905.91",
-   "Index Level": "160.09"
   }
  ]
 }

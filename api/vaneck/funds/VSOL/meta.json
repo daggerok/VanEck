@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$15.80",
-  "value": 15.8,
-  "asOfDate": "Sep 24 2026"
+  "display": "$16.40",
+  "value": 16.4,
+  "asOfDate": "Sep 25 2026"
  },
- "navValue": 15.8,
+ "navValue": 16.4,
  "aum": {
-  "display": "$28.83M",
-  "value": 28829744.84,
-  "asOfDate": "Sep 24 2026",
+  "display": "$29.93M",
+  "value": 29929582.92,
+  "asOfDate": "Sep 25 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 28829744.84,
- "asOfDate": "Sep 24 2026",
+ "aumValue": 29929582.92,
+ "asOfDate": "Sep 25 2026",
  "inceptionDate": "Oct 30 2025",
  "exchange": "NASDAQ",
- "closePrice": "$15.76",
- "closePriceValue": 15.76,
+ "closePrice": "$16.40",
+ "closePriceValue": 16.4,
  "premiumDiscount": {
-  "display": "-0.04%",
-  "value": -0.04
+  "display": "0.00%",
+  "value": 0
  },
- "premiumDiscountValue": -0.04,
+ "premiumDiscountValue": 0,
  "distributions": {
   "frequency": "Other",
   "paymentsPerYear": null,
@@ -45,9 +45,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 24 2026",
-   "ytd": -2.02,
-   "ytdText": "-2.02%",
+   "asOfDate": "Sep 25 2026",
+   "ytd": 1.71,
+   "ytdText": "1.71%",
    "yr1": -44.11,
    "yr3": null,
    "yr5": null,
@@ -64,7 +64,7 @@
   }
  },
  "metrics": {
-  "ytd": -2.02,
+  "ytd": 1.71,
   "tr1y": -44.11,
   "tr3y": null,
   "tr5y": null,
@@ -87,11 +87,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Sep 24 2026",
+ "netAssetsAsOf": "Sep 25 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
-  "asOfDate": "Sep 23 2026",
+  "asOfDate": "Sep 24 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/solana-etf-vsol/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -99,16 +99,16 @@
   ]
  },
  "history": {
-  "totalRows": 330,
+  "totalRows": 331,
   "pageSize": 1000,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Sep 25 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/solana-etf-vsol/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 28830000,
+ "totalNetAssets": 29930000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -145,9 +145,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$15.76",
-  "value": 15.76,
-  "asOfDate": "Sep 24 2026"
+  "display": "$16.40",
+  "value": 16.4,
+  "asOfDate": "Sep 25 2026"
  },
  "yields": {
   "dividendYield": null,

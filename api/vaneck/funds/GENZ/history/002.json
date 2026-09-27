@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 6821,
+ "totalRows": 6822,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 30 2023",
+   "NAV": "42.4923",
+   "Close": "42.30",
+   "Volume": "",
+   "Premium/Discount": "-0.19",
+   "Total Net Assets": "47,803,826.39",
+   "Index Level": "1,220.10"
+  },
   {
    "Date": "Dec 29 2023",
    "NAV": "42.4923",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.49",
    "Total Net Assets": "159,930,917.81",
    "Index Level": "1,493.22"
-  },
-  {
-   "Date": "Apr 04 2021",
-   "NAV": "54.1353",
-   "Close": "54.32",
-   "Volume": "",
-   "Premium/Discount": "0.18",
-   "Total Net Assets": "158,345,812.89",
-   "Index Level": "1,484.30"
   }
  ]
 }
