@@ -1571,7 +1571,7 @@ const FREQUENCY_TO_CODE: Record<string, string> = {
 /** The coded, sortable Frequency label. Mirrors the client-side formatter. */
 export function frequencyCode(label: unknown): string {
   const text = cleanText(label).toLowerCase().replace(/[-\s]+/g, '');
-  if (!text) return '00 - —';
+  if (!text) return '00 - None';
   return FREQUENCY_TO_CODE[text] ?? cleanText(label);
 }
 
