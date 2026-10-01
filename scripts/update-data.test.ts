@@ -828,7 +828,7 @@ describe("generated feed", () => {
     expect(first.Ticker).toBe("NEM");
     expect(first.Name).toBe("Newmont Corp");
     expect(first.Identifier).toBe("BBG000BPWXK1");
-    expect(first.Weight).toBe("10.89%");
+    expect(first.Weight).toMatch(/^\d+(\.\d+)?%$/); // live holdings weight moves daily; only the shape is pinned
   });
 
   test("a fund with no holdings download still gets a valid, explanatory empty state", () => {
