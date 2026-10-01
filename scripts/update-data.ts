@@ -1,15 +1,4 @@
 #!/usr/bin/env bun
-// Checked-in JSON is the runtime default; any nonblank environment value wins.
-import { readFileSync as readUpdaterConfig } from 'node:fs';
-try {
-  const updaterDefaults = JSON.parse(readUpdaterConfig(new URL('./update-data.config.json', import.meta.url), 'utf8')) as Record<string, unknown>;
-  for (const [key, value] of Object.entries(updaterDefaults)) {
-    const current = process.env[key];
-    if ((current === undefined || current.trim() === '') && value !== null && value !== undefined) process.env[key] = String(value);
-  }
-} catch (error) {
-  if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
-}
 /// <reference types="bun" />
 import { readFile as outputReadFile, readdir as outputReadDir } from 'node:fs/promises';
 import { createHash as outputCreateHash } from 'node:crypto';
@@ -472,6 +461,7 @@ export function parseRange(raw: string, label: string): Range | undefined {
   if (!text.includes(':')) {
     throw new Error(`${label}: "${text}" must use the "min:max" range syntax (a colon is required)`);
   }
+  if (text.split(':').length > 2) throw new Error(`${label}: "${text}" must contain exactly one colon`);
   const [rawMin, rawMax] = text.split(':', 2);
   const parseBound = (bound: string): number | undefined => {
     const cleaned = bound.trim().replace(/%$/, '').replace(/[$,]/g, '');
@@ -508,6 +498,7 @@ export function parseAumRange(raw: string): (Range & { source?: string }) | unde
   if (!text.includes(':')) {
     throw new Error(`AUM: "${text}" must use the "min:max" range syntax (a colon is required)`);
   }
+  if (text.split(':').length > 2) throw new Error(`AUM: "${text}" must contain exactly one colon`);
   const [rawMin, rawMax] = text.split(':', 2);
   const min = parseAumBound(rawMin);
   const max = parseAumBound(rawMax);
@@ -556,18 +547,80 @@ export function readConfig(env: Record<string, string | undefined> = process.env
   };
 }
 
+// File defaults and explicit overrides share one allowlisted resolver for the
+// CLI and the workflow, so GitHub Actions never interpolates user input into
+// bash. Precedence: config file < advanced JSON < nonblank inputs < environment.
+export const CONTROL_NAMES = [
+  'MAX_FETCHES', 'REQUEST_SLEEP', 'CONCURRENCY', 'AUM', 'TER', 'DIVIDEND_YIELD', 'SEC_YIELD', 'TICKERS',
+  'CATEGORY', 'HOLDINGS_PAGE_SIZE', 'HISTORY_PAGE_SIZE', 'HISTORY_RANGE', 'MAX_RETRIES', 'SEC_UA',
+  'STORE_RAW_DOWNLOADS', 'SKIP_YAHOO', 'SKIP_VANECK', 'EDGAR_FALLBACK', 'OFFLINE_SEED', 'VERBOSE',
+  ...['PERFORMANCE', 'TOTAL_RETURN'].flatMap((prefix) => ['YTD', '1Y', '3Y', '5Y', '10Y'].map((period) => `${prefix}_${period}`)),
+] as const;
+export type ControlName = (typeof CONTROL_NAMES)[number];
+export const CONFIG_FILE_URL = new URL('./update-data.config.json', import.meta.url);
+const CONTROL_ENV_ALIASES: Record<string, string[]> = { HISTORY_PAGE_SIZE: ['HISTORICAL_PAGE_SIZE'] };
+
+export function resolveControls(
+  file: unknown = {},
+  advanced: unknown = {},
+  inputs: unknown = {},
+  env: Record<string, string | undefined> = {},
+): Record<string, string> {
+  const result: Record<string, string> = {};
+  const known = new Set<string>(CONTROL_NAMES);
+  const apply = (value: unknown, skipEmpty = false): void => {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('Configuration must be a JSON object');
+    for (const [key, raw] of Object.entries(value)) {
+      if (!known.has(key)) throw new Error(`Unknown updater control: ${key}`);
+      if (skipEmpty && (raw === '' || raw === undefined || raw === null)) continue;
+      if (!['string', 'number', 'boolean'].includes(typeof raw)) throw new Error(`${key}: expected string, number or boolean`);
+      const text = String(raw);
+      if (/[\r\n\0]/.test(text)) throw new Error(`${key}: multiline/control characters are not allowed`);
+      result[key] = text;
+    }
+  };
+  apply(file);
+  apply(advanced);
+  apply(inputs, true);
+  for (const key of CONTROL_NAMES) {
+    const value = env[key] ?? CONTROL_ENV_ALIASES[key]?.map((alias) => env[alias]).find((v) => v !== undefined);
+    if (value !== undefined) apply({ [key]: value });
+  }
+  for (const key of ['MAX_FETCHES', 'CONCURRENCY', 'HOLDINGS_PAGE_SIZE', 'HISTORY_PAGE_SIZE', 'MAX_RETRIES']) {
+    const v = result[key];
+    if (v === undefined || v === '') continue;
+    const min = ['MAX_FETCHES', 'MAX_RETRIES'].includes(key) ? 0 : 1;
+    if (!/^\d+$/.test(v) || !Number.isSafeInteger(Number(v)) || Number(v) < min) throw new Error(`${key}: expected integer >= ${min}`);
+  }
+  if (result.REQUEST_SLEEP && (!Number.isFinite(Number(result.REQUEST_SLEEP)) || Number(result.REQUEST_SLEEP) < 0)) throw new Error('REQUEST_SLEEP: expected nonnegative seconds');
+  for (const key of ['STORE_RAW_DOWNLOADS', 'SKIP_YAHOO', 'SKIP_VANECK', 'EDGAR_FALLBACK', 'OFFLINE_SEED', 'VERBOSE']) {
+    if (result[key] && !/^(0|1|true|false|yes|no|y|n|on|off)$/i.test(result[key])) throw new Error(`${key}: expected boolean`);
+  }
+  readConfig(result); // validate every min:max filter before any request or write
+  return result;
+}
+
+export async function runtimeControls(env: Record<string, string | undefined> = process.env): Promise<Record<string, string>> {
+  let file: unknown = {};
+  try { file = JSON.parse(await readFile(CONFIG_FILE_URL, 'utf8')); }
+  catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; }
+  return resolveControls(file, {}, {}, env);
+}
+
 const USAGE = `
 VanEck ETF static feed updater (zero dependencies, run with Bun).
 
   bun ./scripts/update-data.ts [-h|--help]
 
-Environment variables (all optional):
+Defaults live in scripts/update-data.config.json. Precedence: config file <
+advanced JSON (workflow) < nonblank workflow inputs < environment variables.
+Every variable below is optional.
 
   MAX_FETCHES          0     Funds to process. 0 = full pass. A positive value
                              resumes after the committed cursor in
                              api/vaneck/update-state.json.
-  REQUEST_SLEEP        1.5   Minimum seconds between request starts.
-  CONCURRENCY          3     Parallel fund workers (starts stay globally paced).
+  REQUEST_SLEEP        2     Minimum seconds between request starts.
+  CONCURRENCY          2     Parallel fund workers (starts stay globally paced).
   MAX_RETRIES          3     Retries for network errors and 408/425/429/5xx.
   TICKERS              ""    Space/comma separated tickers. ANDed with the other
                              filters, never overriding them.
@@ -582,18 +635,20 @@ Environment variables (all optional):
   PERFORMANCE_YTD|1Y|3Y|5Y|10Y   "min:max" official fund-page return percent.
   TOTAL_RETURN_YTD|1Y|3Y|5Y|10Y  "min:max" derived total return percent.
   HOLDINGS_PAGE_SIZE   250   Rows per holdings page file.
-  HISTORY_PAGE_SIZE    1000  Rows per history page file (alias
+  HISTORY_PAGE_SIZE    1000  Rows per history page file (env alias
                              HISTORICAL_PAGE_SIZE).
   HISTORY_RANGE        max   "max" or an ISO date; the oldest history row kept.
   CATEGORY             ""    Keep only this provider asset-class heading.
-  STORE_RAW_DOWNLOADS  0     1|true|yes|y|on writes api/vaneck/raw/**.
-  SEC_UA               (set) Declared User-Agent for SEC EDGAR requests.
-  EDGAR_FALLBACK       0     Use Form N-PORT-P when a fund has no holdings file.
-  SKIP_YAHOO           0     Skip Yahoo Finance (distributions, derived returns).
-  SKIP_VANECK          0     Skip vaneck.com entirely (keeps committed data).
-  OFFLINE_SEED         0     Replay scripts/vaneck-verified.ts instead of
+  STORE_RAW_DOWNLOADS  false 1|true|yes|y|on writes api/vaneck/raw/**.
+  SEC_UA               ""    Declared User-Agent for SEC EDGAR requests (blank
+                             uses a built-in non-personal descriptor).
+  EDGAR_FALLBACK       true  Use Form N-PORT-P when a fund has no holdings file.
+  SKIP_YAHOO           false Skip Yahoo Finance (distributions, derived returns).
+  SKIP_VANECK          false Skip vaneck.com entirely (keeps committed data).
+  OFFLINE_SEED         false Replay scripts/vaneck-verified.ts instead of
                              fetching. Used to regenerate the feed with no
                              network egress.
+  VERBOSE              false Print per-fund retry and fallback notices.
 
 Range syntax is strict "min:max" with exactly one colon; "" and ":" mean no
 restriction; a configured min must not exceed max.
@@ -2293,12 +2348,15 @@ export async function updateFund(
   return entry;
 }
 
-export async function main(env: Record<string, string | undefined> = process.env): Promise<void> {
-  if (env.ARGS?.includes('--help') || env.ARGS?.includes('-h') || process.argv.slice(2).some((a) => a === '-h' || a === '--help')) {
+export async function main(argv: string[] = process.argv.slice(2), env: Record<string, string | undefined> = process.env): Promise<void> {
+  if (argv.some((arg) => arg === '--help' || arg === '-h')) {
     console.log(USAGE);
     return;
   }
-  const config = readConfig(env);
+  if (argv.length) throw new Error(`unsupported argument(s): ${argv.join(' ')}. Use --help for usage.`);
+  const controls = await runtimeControls(env);
+  if (controls.VERBOSE !== undefined && env === process.env) process.env.VERBOSE = controls.VERBOSE;
+  const config = readConfig(controls);
   outputPrintConfig('VanEck', config);
   const stats: RunStats = { updated: 0, unchanged: 0, skipped: 0, failed: 0 };
   const cursor = config.maxFetches > 0 ? await readCursor() : null;
