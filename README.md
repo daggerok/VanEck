@@ -17,13 +17,13 @@ The published application is available at <https://daggerok.github.io/VanEck/>. 
 Run the updater with Bun:
 
 ```bash
-bun test scripts/update-data.test.ts
-./scripts/update-data.ts
+bun scripts/update-data.ts
+bun scripts/update-data.ts --help
 ```
 
-Run `./scripts/update-data.ts -h` (or `--help`) to print every configuration variable with its default and usage examples.
+`--help` prints every control with its default and usage examples. Defaults live in `scripts/update-data.config.json`; the CLI and the workflow resolve them through the same `resolveControls()` function in `scripts/update-data.ts`, so both accept exactly the same keys and values. Precedence: file defaults < `advanced` JSON < nonblank workflow inputs < protected Actions variable/env (an environment variable always wins when running locally). A blank workflow input inherits the file value, and `advanced` can set a key to an empty string on purpose. Unknown keys, non-scalar values and values containing line breaks are rejected before any request or write.
 
-The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/update-data.yml`, `workflow_dispatch` only) exposes the same settings as manual inputs and commits `api/vaneck/**` and nothing else — a data run never rewrites app code or CI config. All supplied filters use **AND** logic.
+The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/update-data.yml`) runs every Sunday at 00:00 UTC and on manual dispatch. It exposes the common controls as individual inputs, the rest through the `advanced` JSON input, and commits `api/vaneck/**` and nothing else - a data run never rewrites app code or CI config. The `SEC_UA` repository Actions variable, when set, wins over every other layer. All supplied filters use **AND** logic.
 
 ### Data sources
 
@@ -36,7 +36,7 @@ The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/updat
 | Declared distribution frequency, 30-Day SEC / Distribution / 12M yields, YTD + tenor fallbacks | Verified Investment Finder transcription in `scripts/vaneck-finder.ts` (tabs are client-rendered, read 2026-09-20) | Official VanEck figures; the updater prefers them over anything inferred |
 | Listing exchange | Nasdaq Trader symbol directory, Yahoo Finance chart `meta.exchangeName` as fallback | Neither is in the VanEck page payload, so both resolve at refresh time |
 | Fund documents (fact sheet, prospectuses, SAI, reports) | Deterministic VanEck URL schemes (`vaneckFundDocuments()`) | Verified against the finder `?tab=lit` Resources panels |
-| Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=1`) |
+| Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=true`) |
 | Performance (TR/CAGR/SI Ann.) | VanEck's Average Annual Total Returns block (JSON) | See *Performance and distributions* below |
 | Distribution history | VanEck's own Distribution History block (JSON) | Yahoo Finance chart feed is the fallback for the handful of fund pages without this block |
 
@@ -64,7 +64,9 @@ GET /Main/NavDistributionsBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<TIC
 
 `parseVanEckFundPage()` reads each block's `blockid`/`pageid` straight off the page's own `<ve-performancehistoryblock>` / `<ve-navdistributionsblock>` tags (they differ per fund and are never guessed), then `fetchVanEckPerformance()` / `fetchVanEckDistributions()` call the endpoint directly. `PerformanceHistoryBlock` returns both a NAV-basis and a Market-Price-basis row; this feed uses the NAV row, matching every other return figure. Where the block publishes a quarter-end row it is kept as `returns.quarterEnd`. A too-young fund's longer tenors come back JSON `null` from VanEck itself (verified against ETHV, a 2024-inception fund) — never invented as 0 or backfilled.
 
-### Known value limitations
+### Metrics and caveats
+
+NAV, Total Net Assets, returns, SEC yield and distributions are VanEck's own published figures. Yahoo Finance is only a fallback source: its market-price based history and distribution figures are estimates, not official NAV data, and are used only where VanEck publishes nothing. Every block carries its own as-of date and source in the generated feed. A missing value is stored as `null` and shown as `—`, never as `0`. `OUNZ` has no holdings download by design.
 
 | Metric | Status | Reason |
 | --- | --- | --- |
@@ -77,85 +79,120 @@ GET /Main/NavDistributionsBlock/GetContent/?blockid=<id>&pageid=<id>&ticker=<TIC
 
 ### Update controls
 
-| Environment variable | Default | Meaning |
+Every key of `scripts/update-data.config.json`; all values are strings. Keys marked with * are also individual workflow inputs (lowercase name), all others go through `advanced`.
+
+| Control | Default | Meaning |
 | --- | --: | --- |
-| `MAX_FETCHES` | `0` | Funds to process; `0` = full pass. A positive value resumes after the cursor in `api/vaneck/update-state.json`. |
-| `TICKERS` | `""` | Space/comma separated ticker allowlist; ANDed with the other filters, never overriding them. |
-| `CATEGORY` | `""` | Substring match on the vaneck.com asset class. |
-| `AUM` / `TER` / `DIVIDEND_YIELD` / `SEC_YIELD` | `""` | `min:max` ranges; `AUM` also accepts `nano`/`micro`/`small`/`mid`/`large`. |
-| `CONCURRENCY` / `REQUEST_SLEEP` | `3` / `1.5` | Politeness. vaneck.com throttles with `403`, retried with backoff. |
-| `HOLDINGS_PAGE_SIZE` / `HISTORY_PAGE_SIZE` | `250` / `1000` | Rows per generated JSON page. |
-| `MAX_RETRIES` | `3` | Retries after the initial request for network errors and HTTP 408/425/429/5xx. |
-| `EDGAR_FALLBACK` | off | Use N-PORT-P when a holdings download is unavailable. |
-| `SKIP_YAHOO` / `SKIP_VANECK` | off | Skip the Yahoo Finance or vaneck.com fetch stages. |
-| `STORE_RAW_DOWNLOADS` | off | Keep one raw sample under `api/vaneck/raw`. |
-| `OFFLINE_SEED` | off | Replay `scripts/vaneck-verified.ts` instead of fetching, for a network-free run. |
+| `MAX_FETCHES`* | `0` | Funds to process; `0` = full pass. A positive value resumes after the cursor in `api/vaneck/update-state.json` |
+| `REQUEST_SLEEP`* | `2` | Seconds between outgoing request starts |
+| `CONCURRENCY`* | `2` | Parallel fund workers; vaneck.com throttles with `403`, retried with backoff |
+| `AUM`* | `:` | `min:max` AUM range; bounds accept K/M/B/T suffixes, or a preset: `nano`, `micro`, `small`, `mid`, `large` |
+| `TER`*, `DIVIDEND_YIELD`*, `SEC_YIELD`* | `:` | `min:max` percent ranges; the colon is required and `:` means no restriction |
+| `TICKERS`* | `""` | Space or comma separated ticker allowlist; ANDed with the other filters, never overriding them |
+| `CATEGORY`* | `""` | Substring match on the vaneck.com asset class |
+| `HOLDINGS_PAGE_SIZE`*, `HISTORY_PAGE_SIZE`* | `250`, `1000` | Rows per generated JSON page (env alias `HISTORICAL_PAGE_SIZE`) |
+| `HISTORY_RANGE`* | `max` | `max` or a date; the oldest history row kept |
+| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors and HTTP 408/425/429/403/5xx |
+| `SEC_UA`* | `""` | User-Agent contact declared to SEC EDGAR; blank uses a built-in non-personal descriptor |
+| `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
+| `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
+| `EDGAR_FALLBACK`* | `true` | Use N-PORT-P when a holdings download is unavailable |
+| `OFFLINE_SEED` | `false` | Replay `scripts/vaneck-verified.ts` instead of fetching, for a network-free run |
+| `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
+| `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on VanEck's official fund-page return percent per tenor |
+| `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the derived total return percent per tenor |
 
 `TICKERS` combines with the AUM/TER/yield filters using AND logic; it does not override them. Funds not selected for a successful update keep their prior published metadata and data files, so a bounded or partly failed run can never empty the site.
 
 ### Examples
 
 ```bash
-MAX_FETCHES=10 ./scripts/update-data.ts
-TICKERS="GDX SMH MOAT" ./scripts/update-data.ts
-AUM="1B:" TER=":0.5" ./scripts/update-data.ts
+MAX_FETCHES=10 bun scripts/update-data.ts
+TICKERS="GDX SMH MOAT" bun scripts/update-data.ts
+AUM="1B:" TER=":0.5" bun scripts/update-data.ts
+OFFLINE_SEED=true bun scripts/update-data.ts
 ```
 
-## TypeScript
+Workflow `advanced` input example: `{"PERFORMANCE_1Y": "10:", "OFFLINE_SEED": false}`
+
+## TypeScript and verification
 
 The browser app is intentionally build-free: `index.html` carries the markup, styles and bootstrap, and `app.tsx` is TypeScript compiled in the browser with Babel standalone — no build step, no bundler, no `tsconfig.json` needed. Bun runs TypeScript out of the box.
 
-Verification before every publish: `bun install --frozen-lockfile`, `bun test`, and `git diff --check`.
+Verification before every publish:
+
+```bash
+bun install --frozen-lockfile
+bun test
+bun build --target=bun scripts/update-data.ts --outfile=/dev/null
+git diff --check
+```
+
+`bun test` also covers the config resolver, the README controls table, `--help` and the workflow file (`scripts/config-docs.test.ts`).
 
 ## Brands table
 
 | Brand | Where to get the data |
 | --- | --- |
+| **AAM** | [aamlive.com](https://www.aamlive.com/ETF) \| [AAM](https://daggerok.github.io/AAM/) |
 | **abrdn (Aberdeen)** | [aberdeeninvestments.com](https://www.aberdeeninvestments.com/en-us/investor/funds/etfs) \| [aberdeen](https://daggerok.github.io/aberdeen/) |
 | **Amplify** | [amplifyetfs.com](https://amplifyetfs.com/) \| [Amplify](https://daggerok.github.io/Amplify/) |
+| **ARK Invest** | [ark-funds.com](https://www.ark-funds.com/our-etfs/) \| [ARK](https://daggerok.github.io/ARK/) |
 | **Capital Group** | [capitalgroup.com](https://www.capitalgroup.com/advisor/investments/exchange-traded-funds.html) \| [Capital-Group](https://daggerok.github.io/Capital-Group/) |
 | **Fidelity** | [fidelity.com](https://www.fidelity.com/etfs) \| [Fidelity](https://daggerok.github.io/Fidelity/) |
 | **First Trust** | [ftportfolios.com](https://www.ftportfolios.com/Retail/etf/etflist.aspx) \| [First-Trust](https://daggerok.github.io/First-Trust/) |
 | **Franklin Templeton** | [franklintempleton.com](https://www.franklintempleton.com/investments/options/exchange-traded-funds) \| [Franklin](https://daggerok.github.io/Franklin/) |
-| **Global X** | [globalxetfs.com/explore](https://www.globalxetfs.com/explore) \| [Global X](https://daggerok.github.io/Global-X/) |
+| **Global X** | [globalxetfs.com/explore](https://www.globalxetfs.com/explore) \| [Global-X](https://daggerok.github.io/Global-X/) |
 | **Goldman Sachs** | [am.gs.com](https://am.gs.com/en-us/individual/funds?locale=en-us&audience=individual&sf=funds&filters=funds%7CETF&limit=100) \| [Goldman-Sachs](https://daggerok.github.io/Goldman-Sachs/) |
 | **Invesco** | [invesco.com](https://www.invesco.com/us/en/financial-products/etfs.html) \| [Invesco](https://daggerok.github.io/Invesco/) |
 | **iShares** | [ishares.com](https://www.ishares.com/) \| [iShares](https://daggerok.github.io/iShares/) |
 | **JPMorgan** | [am.jpmorgan.com](https://am.jpmorgan.com/us/en/asset-management/adv/products/fund-explorer/etf) \| [JPMorgan](https://daggerok.github.io/JPMorgan/) |
 | **NEOS** | [neosfunds.com](https://neosfunds.com/#explore-etfs) \| [Neos](https://daggerok.github.io/Neos/) |
 | **Northern Trust** | [etfs.ntam.northerntrust.com](https://etfs.ntam.northerntrust.com/us/en/individual/funds) \| [Northern-Trust](https://daggerok.github.io/Northern-Trust/) |
+| **Pacer ETFs** | [paceretfs.com](https://www.paceretfs.com/products/) \| [Pacer](https://daggerok.github.io/Pacer/) (deployment pending) |
 | **ProShares** | [proshares.com](https://www.proshares.com/our-etfs/find-proshares-etfs) \| [ProShares](https://daggerok.github.io/ProShares/) |
 | **Schwab** | [schwabassetmanagement.com](https://www.schwabassetmanagement.com/products) \| [Schwab](https://daggerok.github.io/Schwab/) |
 | **SPDR** | [ssga.com](https://www.ssga.com/us/en/intermediary/etfs/fund-finder) \| [SPDR](https://daggerok.github.io/SPDR/) |
+| **Sprott ETFs** | [sprottetfs.com](https://sprottetfs.com/) \| [Sprott](https://daggerok.github.io/Sprott/) (deployment pending) |
+| **Tema ETFs** | [temaetfs.com](https://temaetfs.com/funds) \| [Tema](https://daggerok.github.io/Tema/) |
+| **Themes ETFs** | [themesetfs.com/etfs](https://themesetfs.com/etfs) \| [Themes](https://daggerok.github.io/Themes/) |
 | **VanEck** | [vaneck.com](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) \| [VanEck](https://daggerok.github.io/VanEck/) |
 | **Vanguard** | [investor.vanguard.com](https://investor.vanguard.com/etf/list) \| [Vanguard](https://daggerok.github.io/Vanguard/) |
 | **VictoryShares** | [vcm.com VictoryShares ETFs](https://www.vcm.com/products/victoryshares-etfs/victoryshares-etfs-list) \| [VictoryShares](https://daggerok.github.io/VictoryShares/) |
 | **WisdomTree** | [wisdomtree.com](https://www.wisdomtree.com/investments) \| [WisdomTree](https://daggerok.github.io/WisdomTree/) |
+| **Xtrackers** | [etf.dws.com](https://etf.dws.com/en-us/etf-products/) \| [Xtrackers](https://daggerok.github.io/Xtrackers/) |
 
 ## Sibling applications
 
 | Application | Data provider | Repository |
 | --- | --- | --- |
+| AAM | Official AAM catalog/detail HTML + full holdings XLS + SEC N-PORT holdings fallback + Yahoo market history/dividends | [AAM](https://github.com/daggerok/AAM) |
 | abrdn (Aberdeen) | Official Aberdeen gateway + SEC N-PORT holdings fallback + Yahoo history/dividends | [aberdeen](https://github.com/daggerok/aberdeen) |
 | Amplify | Amplify ETFs (Firestore data feed) | [Amplify](https://github.com/daggerok/Amplify) |
+| ARK Invest | ark-funds.com fund pages + overview/NAV-history/performance JSON + official daily holdings CSV + SEC EDGAR N-PORT-P holdings fallback + Yahoo Finance distributions/history fallback | [ARK](https://github.com/daggerok/ARK) |
 | Capital Group | Official Capital Group fund data + SEC N-PORT holdings fallback + Yahoo history fallback | [Capital-Group](https://github.com/daggerok/Capital-Group) |
 | Fidelity | SEC EDGAR N-PORT-P + Yahoo Finance | [Fidelity](https://github.com/daggerok/Fidelity) |
 | First Trust | ftportfolios.com official ETF list + fund summary, holdings, distribution and price-history export pages + SEC EDGAR N-PORT-P holdings fallback + Yahoo Finance history fallback | [First-Trust](https://github.com/daggerok/First-Trust) |
 | Franklin Templeton | franklintempleton.com ETF listings + product pages + SEC EDGAR N-PORT-P | [Franklin](https://github.com/daggerok/Franklin) |
-| Global X | globalxetfs.com Next.js catalog and fund pages + dated full-holdings CSV | [Global X](https://github.com/daggerok/Global-X) |
+| Global X | globalxetfs.com Next.js catalog and fund pages + dated full-holdings CSV | [Global-X](https://github.com/daggerok/Global-X) |
 | Goldman Sachs | am.gs.com fund finder + detail pages + SEC EDGAR N-PORT-P | [Goldman-Sachs](https://github.com/daggerok/Goldman-Sachs) |
 | Invesco | invesco.com CSV downloads + Yahoo Finance | [Invesco](https://github.com/daggerok/Invesco) |
 | iShares | iShares (BlackRock) product workbooks | [iShares](https://github.com/daggerok/iShares) |
 | JPMorgan | am.jpmorgan.com fund explorer + product-data JSON | [JPMorgan](https://github.com/daggerok/JPMorgan) |
 | NEOS | neosfunds.com lineup table + official fund pages + daily holdings CSV | [Neos](https://github.com/daggerok/Neos) |
 | Northern Trust | etfs.ntam.northerntrust.com funds list + per-fund CSV/JSON downloads | [Northern-Trust](https://github.com/daggerok/Northern-Trust) |
+| Pacer ETFs | paceretfs.com product catalog and fund pages (Cloudflare WAF; r.jina.ai proxy fallback) + SEC EDGAR N-PORT-P (Pacer Funds Trust) + Yahoo Finance history/dividends | [Pacer](https://github.com/daggerok/Pacer) |
 | ProShares | proshares.com ETF finder + fund pages + official data host | [ProShares](https://github.com/daggerok/ProShares) |
 | Schwab | schwabassetmanagement.com product pages + CSV exports | [Schwab](https://github.com/daggerok/Schwab) |
 | SPDR | SSGA / State Street public feeds | [SPDR](https://github.com/daggerok/SPDR) |
+| Sprott ETFs | sprottetfs.com fund pages + SEC EDGAR N-PORT-P (Sprott Funds Trust) + Yahoo Finance history/dividends | [Sprott](https://github.com/daggerok/Sprott) |
+| Tema ETFs | Tema official fund pages + dated daily holdings CSV; SEC EDGAR N-PORT-P holdings fallback only + Yahoo Finance price/history/dividend fallback | [Tema](https://github.com/daggerok/Tema) |
+| Themes ETFs | themesetfs.com catalog + daily holdings CSV + Yahoo Finance history/dividends + SEC N-PORT-P holdings fallback | [Themes](https://github.com/daggerok/Themes) |
 | VanEck | vaneck.com ETF finder + product pages | [VanEck](https://github.com/daggerok/VanEck) |
 | Vanguard | Vanguard product pages + SEC EDGAR N-PORT-P | [Vanguard](https://github.com/daggerok/Vanguard) |
 | VictoryShares | VCM VictoryShares catalog and product JSON + SEC EDGAR N-PORT-P holdings fallback + Yahoo Finance adjusted-market-price history | [VictoryShares](https://github.com/daggerok/VictoryShares) |
 | WisdomTree | WisdomTree product table + SEC EDGAR N-PORT-P + Yahoo Finance | [WisdomTree](https://github.com/daggerok/WisdomTree) |
+| Xtrackers | Official DWS catalog/US sitemap + PDP/XLSX + SEC N-PORT-P holdings fallback + Yahoo Finance daily prices/history/dividends | [Xtrackers](https://github.com/daggerok/Xtrackers) |
 
 ## License
 
