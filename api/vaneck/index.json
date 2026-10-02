@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-27T03:28:43Z",
+ "generatedAt": "2026-10-02T03:20:34Z",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
   "market": "us",
@@ -11,13 +11,13 @@
   "history": "https://www.vaneck.com/us/en/investments/<slug>/downloads/fundhistoprices/",
   "nportRegistrant": "SEC EDGAR Form N-PORT-P, VanEck ETF Trust CIK 0001137360",
   "distributions": "VanEck Distribution History block, Yahoo Finance public chart API as fallback",
-  "finderTabs": "Investment Finder Prices & Yields (09/18/2026) and month-end Performance (08/31/2026) tabs, verified 2026-09-20T00:00:00.000Z (see scripts/vaneck-finder.ts)",
+  "finderTabs": "Investment Finder Prices & Yields (09/18/2026) and month-end Performance (08/31/2026) tabs, verified 2026-09-20T00:00:00.000Z (see VANECK_FINDER in scripts/update-data.ts)",
   "exchange": "Nasdaq Trader symbol directory, Yahoo Finance chart meta as fallback"
  },
  "counts": {
   "funds": 91,
   "holdings": 12277,
-  "history": 244202
+  "history": 244207
  },
  "funds": [
   {
@@ -1884,17 +1884,17 @@
    "isin": null,
    "ter": "0.51%",
    "terValue": 0.51,
-   "nav": "$92.84",
-   "navValue": 92.84,
-   "aum": "$27.78B",
-   "aumValue": 27782122905.22,
-   "asOfDate": "Sep 25 2026",
+   "nav": "$87.78",
+   "navValue": 87.78,
+   "aum": "$26.25B",
+   "aumValue": 26254738246.43,
+   "asOfDate": "Sep 30 2026",
    "inceptionDate": "May 16 2006",
    "exchange": "NYSE Arca",
-   "closePrice": "$92.87",
-   "closePriceValue": 92.87,
-   "premiumDiscount": "0.03%",
-   "premiumDiscountValue": 0.03,
+   "closePrice": "$87.80",
+   "closePriceValue": 87.8,
+   "premiumDiscount": "0.02%",
+   "premiumDiscountValue": 0.02,
    "distributions": {
     "frequency": "Annually",
     "exDate": "Dec 22 2025",
@@ -1902,9 +1902,9 @@
    },
    "returns": {
     "monthEnd": {
-     "asOfDate": "Sep 25 2026",
-     "ytd": 7.93,
-     "ytdText": "7.93%",
+     "asOfDate": "Sep 30 2026",
+     "ytd": 2.05,
+     "ytdText": "2.05%",
      "yr1": 57.82,
      "yr3": 51.58,
      "yr5": 26.48,
@@ -1921,7 +1921,7 @@
     }
    },
    "metrics": {
-    "ytd": 7.93,
+    "ytd": 2.05,
     "tr1y": 57.82,
     "tr3y": 248.26,
     "tr5y": 223.65,
@@ -1944,10 +1944,10 @@
    "providerCategory": "Natural Resources",
    "terGross": "0.51%",
    "terGrossValue": 0.51,
-   "netAssetsAsOf": "Sep 25 2026",
+   "netAssetsAsOf": "Sep 30 2026",
    "holdings": 66,
-   "history": 7438,
-   "totalNetAssets": 27780000000,
+   "history": 7443,
+   "totalNetAssets": 26250000000,
    "indexTicker": "MVGDXTR",
    "indexName": "MarketVector Global Gold Miners Index"
   },

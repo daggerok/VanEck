@@ -9,28 +9,28 @@
  "ter": "0.51%",
  "terValue": 0.51,
  "nav": {
-  "display": "$92.84",
-  "value": 92.84,
-  "asOfDate": "Sep 25 2026"
+  "display": "$87.78",
+  "value": 87.78,
+  "asOfDate": "Sep 30 2026"
  },
- "navValue": 92.84,
+ "navValue": 87.78,
  "aum": {
-  "display": "$27.78B",
-  "value": 27782122905.22,
-  "asOfDate": "Sep 25 2026",
+  "display": "$26.25B",
+  "value": 26254738246.43,
+  "asOfDate": "Sep 30 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 27782122905.22,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 26254738246.43,
+ "asOfDate": "Sep 30 2026",
  "inceptionDate": "May 16 2006",
  "exchange": "NYSE Arca",
- "closePrice": "$92.87",
- "closePriceValue": 92.87,
+ "closePrice": "$87.80",
+ "closePriceValue": 87.8,
  "premiumDiscount": {
-  "display": "0.03%",
-  "value": 0.03
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": 0.03,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -141,9 +141,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 25 2026",
-   "ytd": 7.93,
-   "ytdText": "7.93%",
+   "asOfDate": "Sep 30 2026",
+   "ytd": 2.05,
+   "ytdText": "2.05%",
    "yr1": 57.82,
    "yr3": 51.58,
    "yr5": 26.48,
@@ -160,7 +160,7 @@
   }
  },
  "metrics": {
-  "ytd": 7.93,
+  "ytd": 2.05,
   "tr1y": 57.82,
   "tr3y": 248.26,
   "tr5y": 223.65,
@@ -183,11 +183,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.51%",
  "terGrossValue": 0.51,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Sep 30 2026",
  "holdings": {
   "totalRows": 66,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Sep 30 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -195,9 +195,9 @@
   ]
  },
  "history": {
-  "totalRows": 7438,
+  "totalRows": 7443,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Sep 30 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)",
   "pageCount": 8,
   "pages": [
@@ -211,7 +211,7 @@
    "history/008.json"
   ]
  },
- "totalNetAssets": 27780000000,
+ "totalNetAssets": 26250000000,
  "indexTicker": "MVGDXTR",
  "indexName": "MarketVector Global Gold Miners Index",
  "categoryPath": "Equity > Natural Resources",
@@ -250,16 +250,16 @@
   "grossValue": 0.51
  },
  "marketPrice": {
-  "display": "$92.87",
-  "value": 92.87,
-  "asOfDate": "Sep 25 2026"
+  "display": "$87.80",
+  "value": 87.8,
+  "asOfDate": "Sep 30 2026"
  },
  "yields": {
   "dividendYield": 0.66,
   "dividendYieldText": "0.66%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.68,
-  "indicatedYieldText": "0.68%",
+  "indicatedYield": 0.72,
+  "indicatedYieldText": "0.72%",
   "distributionYield": 0.66,
   "distributionYieldText": "0.66%",
   "yield12M": 0.97,
