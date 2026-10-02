@@ -2408,6 +2408,7 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
       secYield: null,
       secYieldText: '—',
       returnsBasis: 'not yet refreshed from vaneck.com',
+      performanceAsOf: null,
     },
     distributionFrequency: 'Unknown',
     providerCategory: seed.category,
@@ -2417,6 +2418,25 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
     holdings: 0,
     history: 0,
   };
+}
+
+/**
+ * STANDARD.md 9a: `metrics.returnsBasis` (non-empty label) and
+ * `metrics.performanceAsOf` (ISO date of the returns, or null) always sit at
+ * the end of `metrics`. The date is the as-of stamp of the returns block
+ * (`returns.monthEnd.asOfDate`: the fund-page YTD stamp, else the performance
+ * table month-end, else the finder month-end) - never the NAV date field.
+ */
+export function withReturnsMeta(entry: CatalogEntry): CatalogEntry {
+  const { returnsBasis, performanceAsOf: _previous, ...rest } = (entry.metrics as Record<string, unknown>) ?? {};
+  const stamp = (entry.returns as { monthEnd?: { asOfDate?: unknown } } | undefined)?.monthEnd?.asOfDate;
+  const iso = typeof stamp === 'string' && stamp !== '—' && Number.isFinite(Date.parse(`${stamp} UTC`))
+    ? new Date(`${stamp} UTC`).toISOString().slice(0, 10)
+    : null;
+  const basis = typeof returnsBasis === 'string' && returnsBasis.trim() && returnsBasis.trim() !== '-' && returnsBasis.trim() !== '—'
+    ? returnsBasis
+    : 'not yet refreshed from vaneck.com';
+  return { ...entry, metrics: { ...rest, returnsBasis: basis, performanceAsOf: iso } };
 }
 
 /** Merges a verified fund-page snapshot onto a catalog entry. */
@@ -2927,6 +2947,8 @@ export async function updateFund(
       ? yahooFallback.map((d) => ({ 'Ex-Date': d.date, 'Payable Date': '—', Dividend: `$${d.amount.toFixed(4)}` }))
       : [];
 
+  entry = withReturnsMeta(entry);
+
   // --- meta.json -----------------------------------------------------------
   const meta = {
     ...entry,
@@ -3063,7 +3085,7 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   }
   for (const [ticker, entry] of byTicker) previous[ticker] = entry;
 
-  const funds = Object.values(previous).sort((a, b) => String(a.ticker).localeCompare(String(b.ticker)));
+  const funds = Object.values(previous).map(withReturnsMeta).sort((a, b) => String(a.ticker).localeCompare(String(b.ticker)));
   const counts = {
     funds: funds.length,
     holdings: funds.reduce((sum, fund) => sum + Number(fund.holdings || 0), 0),

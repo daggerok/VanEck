@@ -63,6 +63,8 @@ import {
   CONTROL_NAMES,
   VANECK_FINDER,
   VAN_ECK_SEED,
+  seedCatalogEntry,
+  withReturnsMeta,
   SEC_UA_DEFAULT,
   finderForTicker,
   historyWindowStartEpoch,
@@ -913,6 +915,39 @@ describe("parseVanEckFundPage (since-inception stat and index)", () => {
     expect(parsed.siAsOf).toBeNull();
     expect(parsed.indexTicker).toBeNull();
     expect(parsed.indexName).toBeNull();
+  });
+});
+
+describe("metrics returnsBasis and performanceAsOf (STANDARD.md 9a)", () => {
+  const lastKeys = (entry: Record<string, unknown>) => Object.keys(entry.metrics as object).slice(-2);
+
+  test("every seed entry carries both fields at the end of metrics", () => {
+    const entry = seedCatalogEntry(VAN_ECK_SEED[0]);
+    expect(lastKeys(entry)).toEqual(["returnsBasis", "performanceAsOf"]);
+    const metrics = entry.metrics as Record<string, unknown>;
+    expect(String(metrics.returnsBasis).length).toBeGreaterThan(1);
+    expect(metrics.performanceAsOf).toBeNull();
+  });
+
+  test("performanceAsOf is the ISO returns stamp, not the NAV date", () => {
+    const entry = {
+      asOfDate: "Sep 25 2026",
+      returns: { monthEnd: { asOfDate: "Aug 31 2026" }, quarterEnd: { asOfDate: "Jun 30 2026" } },
+      metrics: { performanceAsOf: "stale", ytd: 1, returnsBasis: "official VanEck Average Annual Total Returns (NAV)" },
+    };
+    const out = withReturnsMeta(entry).metrics as Record<string, unknown>;
+    expect(out.performanceAsOf).toBe("2026-08-31");
+    expect(out.returnsBasis).toBe("official VanEck Average Annual Total Returns (NAV)");
+    expect(Object.keys(out)).toEqual(["ytd", "returnsBasis", "performanceAsOf"]);
+  });
+
+  test("unknown stamp stays null and a blank basis is replaced by an honest label", () => {
+    const out = withReturnsMeta({
+      returns: { monthEnd: { asOfDate: "\u2014" } },
+      metrics: { returnsBasis: "-" },
+    }).metrics as Record<string, unknown>;
+    expect(out.performanceAsOf).toBeNull();
+    expect(out.returnsBasis).toBe("not yet refreshed from vaneck.com");
   });
 });
 
