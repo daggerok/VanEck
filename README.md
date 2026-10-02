@@ -75,6 +75,8 @@ NAV, Total Net Assets, returns, SEC yield and distributions are VanEck's own pub
 | **Dividend Yield** | official Investment Finder Distribution Yield where published, else the indicated yield — and only when the latest payout is recent (≤400 days) | Stale payouts (e.g. BUZZ Dec-2024) no longer annualise into a phantom yield; `—` where neither source yields a figure |
 | **Distribution Yield / 12M Yield** | official Investment Finder figures, published verbatim | The finder's impossible EMBX 12M cell (`-777.30%`, a VanEck site bug) is stored as `null`, never copied |
 | **RSX / RSXJ tenors** | annualised 1/3/5/10Y + SI from the Investment Finder month-end table, flagged as liquidation figures | Cumulative tenors were never published and stay `null`; both funds suspended since 2022 |
+| **`returnsBasis`** | mandatory non-empty label at the end of every `metrics` object: official VanEck NAV total returns (performance block, fund-page YTD, finder month-end), with the extra legs named | Never empty or `-`; Yahoo is not used for returns in this feed |
+| **`performanceAsOf`** | ISO `YYYY-MM-DD`, right after `returnsBasis`: the as-of stamp of the returns block (`returns.monthEnd.asOfDate`: fund-page YTD stamp, else the performance table month-end, else the finder month-end) | Not the NAV date; `null` only when VanEck gives no stamp |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
 ### Update controls
