@@ -30,10 +30,10 @@ The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/updat
 | Block | Source | Notes |
 | --- | --- | --- |
 | Fund universe, name, ticker, gross/net expense ratio, AUM, category | [`vaneck-etfs-fees.pdf`](https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf) ("VanEck ETF Guide") | 91 ETFs: the guide's 88 plus RSX/RSXJ (kept in the finder while in liquidation) and VEEM (launched 09/09/2026, after the guide's as-of date) |
-| NAV, YTD, Total Net Assets, Expense Ratio, Inception Date, 30-Day SEC Yield*, Exchange*, CUSIP*, ISIN*, fund name, breadcrumb | `https://www.vaneck.com/us/en/investments/<slug>/` | Canonical slugs come from `scripts/vaneck-slugs.ts`, harvested from the [Investment Finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/etfs/?InvType=etf&tab=ov); `etf-<ticker>` is a greedy 302 for unknown tickers, so the slug table is authoritative. `*` only where VanEck server-renders the field. |
+| NAV, YTD, Total Net Assets, Expense Ratio, Inception Date, 30-Day SEC Yield*, Exchange*, CUSIP*, ISIN*, fund name, breadcrumb | `https://www.vaneck.com/us/en/investments/<slug>/` | Canonical slugs come from the `VANECK_SLUGS` table in `scripts/update-data.ts`, harvested from the [Investment Finder](https://www.vaneck.com/us/en/etf-mutual-fund-finder/etfs/?InvType=etf&tab=ov); `etf-<ticker>` is a greedy 302 for unknown tickers, so the slug table is authoritative. `*` only where VanEck server-renders the field. |
 | Holdings (daily) | `…/investments/<slug>/downloads/holdings/` | A real `.xlsx` (OOXML) workbook, not HTML — see below |
 | NAV / premium-discount history | `…/investments/<slug>/downloads/fundhistoprices/` | Also `.xlsx`; descending, inception → present |
-| Declared distribution frequency, 30-Day SEC / Distribution / 12M yields, YTD + tenor fallbacks | Verified Investment Finder transcription in `scripts/vaneck-finder.ts` (tabs are client-rendered, read 2026-09-20) | Official VanEck figures; the updater prefers them over anything inferred |
+| Declared distribution frequency, 30-Day SEC / Distribution / 12M yields, YTD + tenor fallbacks | Verified Investment Finder transcription (`VANECK_FINDER` in `scripts/update-data.ts`) (tabs are client-rendered, read 2026-09-20) | Official VanEck figures; the updater prefers them over anything inferred |
 | Listing exchange | Nasdaq Trader symbol directory, Yahoo Finance chart `meta.exchangeName` as fallback | Neither is in the VanEck page payload, so both resolve at refresh time |
 | Fund documents (fact sheet, prospectuses, SAI, reports) | Deterministic VanEck URL schemes (`vaneckFundDocuments()`) | Verified against the finder `?tab=lit` Resources panels |
 | Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=true`) |
@@ -91,13 +91,13 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `TICKERS`* | `""` | Space or comma separated ticker allowlist; ANDed with the other filters, never overriding them |
 | `CATEGORY`* | `""` | Substring match on the vaneck.com asset class |
 | `HOLDINGS_PAGE_SIZE`*, `HISTORY_PAGE_SIZE`* | `250`, `1000` | Rows per generated JSON page (env alias `HISTORICAL_PAGE_SIZE`) |
-| `HISTORY_RANGE`* | `max` | `max` or a date; the oldest history row kept |
-| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors and HTTP 408/425/429/403/5xx |
-| `SEC_UA`* | `""` | User-Agent contact declared to SEC EDGAR; blank uses a built-in non-personal descriptor |
+| `HISTORY_RANGE`* | `max` | Yahoo request window and published history rows: `max` or `Ny` (for example `5y`) |
+| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors and HTTP 408/425/429/403/5xx; integer >= 1 |
+| `SEC_UA`* | `daggerok ETF feed daggerok@gmail.com` | User-Agent declared to SEC EDGAR; the repository Actions variable `SEC_UA` overrides it |
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
 | `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
 | `EDGAR_FALLBACK`* | `true` | Use N-PORT-P when a holdings download is unavailable |
-| `OFFLINE_SEED` | `false` | Replay `scripts/vaneck-verified.ts` instead of fetching, for a network-free run |
+| `OFFLINE_SEED` | `false` | Replay `data/vaneck-verified.ts` instead of fetching, for a network-free run |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
 | `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on VanEck's official fund-page return percent per tenor |
 | `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the derived total return percent per tenor |
@@ -128,7 +128,7 @@ bun build --target=bun scripts/update-data.ts --outfile=/dev/null
 git diff --check
 ```
 
-`bun test` also covers the config resolver, the README controls table, `--help` and the workflow file (`scripts/config-docs.test.ts`).
+`bun test` also covers the config resolver, the README controls table, `--help` and the workflow file.
 
 ## Brands table
 
@@ -153,7 +153,7 @@ git diff --check
 | **ProShares** | [proshares.com](https://www.proshares.com/our-etfs/find-proshares-etfs) \| [ProShares](https://daggerok.github.io/ProShares/) |
 | **Schwab** | [schwabassetmanagement.com](https://www.schwabassetmanagement.com/products) \| [Schwab](https://daggerok.github.io/Schwab/) |
 | **SPDR** | [ssga.com](https://www.ssga.com/us/en/intermediary/etfs/fund-finder) \| [SPDR](https://daggerok.github.io/SPDR/) |
-| **Sprott ETFs** | [sprottetfs.com](https://sprottetfs.com/) \| [Sprott](https://daggerok.github.io/Sprott/) (deployment pending) |
+| **Sprott ETFs** | [sprottetfs.com](https://sprottetfs.com/) \| [Sprott](https://daggerok.github.io/Sprott/) |
 | **Tema ETFs** | [temaetfs.com](https://temaetfs.com/funds) \| [Tema](https://daggerok.github.io/Tema/) |
 | **Themes ETFs** | [themesetfs.com/etfs](https://themesetfs.com/etfs) \| [Themes](https://daggerok.github.io/Themes/) |
 | **VanEck** | [vaneck.com](https://www.vaneck.com/us/en/etf-mutual-fund-finder/) \| [VanEck](https://daggerok.github.io/VanEck/) |
