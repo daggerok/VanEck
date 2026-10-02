@@ -4,12 +4,14 @@
  * inline samples trimmed from the markup VanEck serves), the shared control
  * resolver, and the config / --help / README / workflow parity checks.
  */
-import { describe, expect, test } from "bun:test";
+import { afterEach, describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
 import {
   HOLDINGS_HEADERS,
+  installSystemCa,
+  isCertError,
   VANECK_ETF_TRUST_CIK,
   VANECK_FINDER_URL,
   annualizedFromCumulative,
@@ -1128,7 +1130,7 @@ describe("resolveControls", () => {
   test("invalid values, unknown keys, non-scalars and newlines are rejected", () => {
     const bad = [
       { UNKNOWN: 1 }, { SEC_UA: "x\nEVIL=yes" }, { CONCURRENCY: 0 }, { MAX_RETRIES: 0 }, { MAX_RETRIES: -1 },
-      { MAX_FETCHES: 1.5 }, { REQUEST_SLEEP: "-1" }, { VERBOSE: "maybe" }, { AUM: "1:2:3" }, { TER: "0.5" },
+      { MAX_FETCHES: 1.5 }, { REQUEST_SLEEP: "-1" }, { VERBOSE: "maybe" }, { USE_SYSTEM_CA: "maybe" }, { AUM: "1:2:3" }, { TER: "0.5" },
       { HISTORY_RANGE: "forever" }, { HISTORY_RANGE: "0y" }, { PERFORMANCE_1Y: "5:1" }, { TICKERS: ["GDX"] },
       { TICKERS: { a: 1 } }, null, [],
     ];
@@ -1233,5 +1235,54 @@ describe("config, --help, README and workflow parity", () => {
     expect(yml).toContain("timeout-minutes: 30");
     expect(yml).toContain("persist-credentials: false");
     expect(yml).not.toContain("bunx tsc");
+  });
+});
+
+describe("system CA", () => {
+  const realFetch = globalThis.fetch;
+  afterEach(() => { globalThis.fetch = realFetch; });
+  const reexecSpy = () => { const calls = { n: 0 }; const fn = (() => { calls.n += 1; return undefined as never; }) as () => never; return { calls, fn }; };
+
+  test("USE_SYSTEM_CA accepts auto/true/false case-insensitively, rejects others, defaults to auto", () => {
+    expect(configFile().USE_SYSTEM_CA).toBe("auto");
+    expect(resolveControls(configFile()).USE_SYSTEM_CA).toBe("auto");
+    for (const v of ["auto", "TRUE", "False"]) expect(resolveControls({}, {}, {}, { USE_SYSTEM_CA: v }).USE_SYSTEM_CA).toBe(v.toLowerCase());
+    expect(() => resolveControls({ USE_SYSTEM_CA: "maybe" })).toThrow();
+  });
+
+  test("isCertError matches codes, messages and causes only", () => {
+    expect(isCertError({ code: "UNABLE_TO_GET_ISSUER_CERT_LOCALLY" })).toBe(true);
+    expect(isCertError(new Error("unable to get local issuer certificate"))).toBe(true);
+    expect(isCertError(Object.assign(new Error("fetch failed"), { cause: new Error("unable to get local issuer certificate") }))).toBe(true);
+    expect(isCertError({ code: "ECONNRESET" })).toBe(false);
+    expect(isCertError(new Error("HTTP 403"))).toBe(false);
+  });
+
+  test("installSystemCa: false and active leave fetch alone, true restarts now", () => {
+    const a = reexecSpy();
+    installSystemCa("false", a.fn, false);
+    expect(globalThis.fetch).toBe(realFetch);
+    installSystemCa("auto", a.fn, true);
+    expect(globalThis.fetch).toBe(realFetch);
+    expect(a.calls.n).toBe(0);
+    installSystemCa("true", a.fn, false);
+    expect(a.calls.n).toBe(1);
+  });
+
+  test("installSystemCa auto: cert error restarts once, other errors rethrown, success passes through", async () => {
+    const a = reexecSpy();
+    const ok = new Response("ok");
+    globalThis.fetch = (async () => ok) as unknown as typeof fetch;
+    installSystemCa("auto", a.fn, false);
+    expect(globalThis.fetch).not.toBe(realFetch);
+    expect(await fetch("https://x.test")).toBe(ok);
+    globalThis.fetch = (async () => { throw new Error("self-signed certificate in certificate chain"); }) as unknown as typeof fetch;
+    installSystemCa("auto", a.fn, false);
+    await fetch("https://x.test");
+    expect(a.calls.n).toBe(1);
+    globalThis.fetch = (async () => { throw Object.assign(new Error("reset"), { code: "ECONNRESET" }); }) as unknown as typeof fetch;
+    installSystemCa("auto", a.fn, false);
+    await expect(fetch("https://x.test")).rejects.toThrow("reset");
+    expect(a.calls.n).toBe(1);
   });
 });

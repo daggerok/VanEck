@@ -99,6 +99,7 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `EDGAR_FALLBACK`* | `true` | Use N-PORT-P when a holdings download is unavailable |
 | `OFFLINE_SEED` | `false` | Replay `data/vaneck-verified.ts` instead of fetching, for a network-free run |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
+| `USE_SYSTEM_CA` | `auto` | TLS trust store: `auto` restarts the updater once with Bun's `--use-system-ca` when a request fails with an untrusted-certificate error; `true` always uses the system CA store; `false` never restarts. Not an individual workflow input: use `advanced`, the config file or the CLI environment. |
 | `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on VanEck's official fund-page return percent per tenor |
 | `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the derived total return percent per tenor |
 
