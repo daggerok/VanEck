@@ -73,6 +73,15 @@ import {
   parseMaxRetries,
   readConfig,
   resolveControls,
+  fetchWithRetry,
+  paceRequests,
+  resetPacingLanes,
+  setNetworkTimings,
+  assertKnownTickers,
+  filterScope,
+  fundPassesDataFilters,
+  selectCandidates,
+  saneYield,
 } from "./update-data";
 
 const REPO_ROOT = path.join(import.meta.dir, "..");
@@ -938,7 +947,7 @@ describe("metrics returnsBasis and performanceAsOf (STANDARD.md 9a)", () => {
     const out = withReturnsMeta(entry).metrics as Record<string, unknown>;
     expect(out.performanceAsOf).toBe("2026-08-31");
     expect(out.returnsBasis).toBe("official VanEck Average Annual Total Returns (NAV)");
-    expect(Object.keys(out)).toEqual(["ytd", "returnsBasis", "performanceAsOf"]);
+    expect(Object.keys(out)).toEqual(["ytd", "ytdAsOf", "returnsBasis", "performanceAsOf"]);
   });
 
   test("unknown stamp stays null and a blank basis is replaced by an honest label", () => {
@@ -1319,5 +1328,140 @@ describe("system CA", () => {
     installSystemCa("auto", a.fn, false);
     await expect(fetch("https://x.test")).rejects.toThrow("reset");
     expect(a.calls.n).toBe(1);
+  });
+});
+
+
+describe("network timeout and pacing lanes", () => {
+  const realFetch = globalThis.fetch;
+  afterEach(() => { globalThis.fetch = realFetch; setNetworkTimings(45_000, 15_000); });
+  const cfg = () => readConfig({ ...resolveControls(configFile()), REQUEST_SLEEP: "0", MAX_RETRIES: "2" });
+
+  test("a stalled request is aborted by the timeout and retried per MAX_RETRIES", async () => {
+    setNetworkTimings(30, 1);
+    let calls = 0;
+    globalThis.fetch = ((_url: string, init?: RequestInit) => {
+      calls += 1;
+      if (calls < 3) {
+        return new Promise((_resolve, reject) => {
+          init?.signal?.addEventListener("abort", () => reject(init.signal!.reason));
+        });
+      }
+      return Promise.resolve(new Response("ok"));
+    }) as unknown as typeof fetch;
+    const res = await fetchWithRetry("https://example.test/a", {}, cfg(), "stall");
+    expect(await res.text()).toBe("ok");
+    expect(calls).toBe(3);
+  });
+
+  test("concurrent callers reserve distinct lane slots before awaiting", async () => {
+    resetPacingLanes(4);
+    const config = { ...cfg(), requestSleep: 0.05 };
+    const started: number[] = [];
+    const t0 = Date.now();
+    await Promise.all(Array.from({ length: 8 }, () => paceRequests(config).then(() => started.push(Date.now() - t0))));
+    // 4 lanes x 2 slots: the first four start together, the next four wait one full gap
+    started.sort((a, b) => a - b);
+    expect(started[3]).toBeLessThan(40);
+    expect(started[4]).toBeGreaterThanOrEqual(45);
+    expect(started[7]).toBeLessThan(140);
+  });
+
+  test("a single lane spaces requests by REQUEST_SLEEP", async () => {
+    resetPacingLanes(1);
+    const config = { ...cfg(), requestSleep: 0.04 };
+    const t0 = Date.now();
+    await Promise.all([paceRequests(config), paceRequests(config), paceRequests(config)]);
+    expect(Date.now() - t0).toBeGreaterThanOrEqual(75);
+  });
+});
+
+
+describe("strict controls and data-dependent filters", () => {
+  const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
+  const metrics = { ytd: 5, tr1y: 12, tr3y: 40, tr5y: null, cagr3y: 11, cagr5y: null, dividendYield: 2.5, secYield: null };
+
+  test("AUM bounds must be numbers with an optional K/M/B/T suffix", () => {
+    expect(() => parseAumRange("10X:")).toThrow(/not a number/);
+    expect(() => parseAumRange("abc:")).toThrow();
+    expect(() => parseAumRange("1..5B:")).toThrow();
+    expect(parseAumRange("1.5B:")).toEqual({ min: 1.5e9, max: undefined });
+    expect(parseAumRange("$500M:2B")).toEqual({ min: 5e8, max: 2e9 });
+  });
+
+  test("unknown TICKERS are an error", () => {
+    expect(() => assertKnownTickers(["GDX", "NOPE"], VAN_ECK_SEED)).toThrow(/NOPE/);
+    expect(() => assertKnownTickers(["GDX"], VAN_ECK_SEED)).not.toThrow();
+  });
+
+  test("yield and return filters apply to the computed metrics", () => {
+    expect(fundPassesDataFilters(metrics, cfg())).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "3:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "2:3" }))).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "10:" }))).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "20:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_3Y: ":10" }))).toBe(false); // annualized 11
+    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_3Y: ":50" }))).toBe(true); // cumulative 40
+  });
+
+  test("a bounded range excludes funds without a value (null, never 0)", () => {
+    expect(fundPassesDataFilters(metrics, cfg({ SEC_YIELD: "0:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_5Y: ":100" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_5Y: "-100:" }))).toBe(false);
+  });
+
+  test("the cursor is scoped to the filter set and wraps after the last fund", () => {
+    expect(filterScope(cfg())).not.toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    expect(filterScope(cfg({ TICKERS: "SMH GDX" }))).toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    const all = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), null).map((f) => f.ticker);
+    const next = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), all[2]).map((f) => f.ticker);
+    expect(next[0]).not.toBe(all[0]);
+    const sorted = VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b));
+    const wrapped = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), sorted[sorted.length - 1]).map((f) => f.ticker);
+    expect(wrapped).toEqual(all);
+  });
+});
+
+
+describe("returns dating and yield sanity", () => {
+  const entryWith = (monthEnd: Record<string, unknown>, ytd: number | null) => ({
+    ...seedCatalogEntry(VAN_ECK_SEED[0]),
+    returns: { monthEnd, quarterEnd: { asOfDate: "—" } },
+    metrics: { ...(seedCatalogEntry(VAN_ECK_SEED[0]).metrics as object), ytd, tr1y: 3, returnsBasis: "official" },
+  });
+
+  test("performanceAsOf is the tenor date, not the daily YTD stamp", () => {
+    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 2.3)).metrics as Record<string, unknown>;
+    expect(m.performanceAsOf).toBe("2026-08-31");
+    expect(m.ytdAsOf).toBe("2026-09-25");
+  });
+
+  test("without a tenor date the fund-page stamp is the fallback and ytdAsOf is null for a null YTD", () => {
+    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026" }, null)).metrics as Record<string, unknown>;
+    expect(m.performanceAsOf).toBe("2026-09-25");
+    expect(m.ytdAsOf).toBeNull();
+  });
+
+  test("every row of the metrics contract keeps the same key set", () => {
+    const keys = (e: ReturnType<typeof entryWith>) => Object.keys(withReturnsMeta(e).metrics as object).sort().join();
+    expect(keys(entryWith({ asOfDate: "—" }, null))).toBe(keys(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 1)));
+  });
+
+  test("a liquidation payout is not published as a yield", () => {
+    expect(indicatedDividendYield(0.8208, 4, 0.39)).toBeGreaterThan(100);
+    expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
+    expect(saneYield(3.5)).toBe(3.5);
+    expect(saneYield(0)).toBe(0);
+    expect(saneYield(null)).toBeNull();
+    expect(saneYield(Number.NaN)).toBeNull();
+  });
+});
+
+describe("readConfig defaults match the config file", () => {
+  test("an empty EDGAR_FALLBACK keeps the default true and empty numeric controls keep the file defaults", () => {
+    const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
+    expect(c.edgarFallback).toBe(true);
+    expect(c.concurrency).toBe(Number(configFile().CONCURRENCY));
+    expect(c.requestSleep).toBe(Number(configFile().REQUEST_SLEEP));
   });
 });

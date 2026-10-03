@@ -72,11 +72,12 @@ NAV, Total Net Assets, returns, SEC yield and distributions are VanEck's own pub
 | --- | --- | --- |
 | **TR 1Y / 3Y / 5Y / 10Y, CAGR 3Y / 5Y / 10Y, SI Ann.** | published from VanEck's own Average Annual Total Returns block; `—` only for a tenor the fund hasn't existed long enough to report | See *Performance and distributions* above |
 | **SEC Yield (30-day)** | official Investment Finder value first, else the server-rendered fund header stat | `—` only where VanEck publishes none (8 funds: non-distributing, pre-income or liquidating) |
-| **Dividend Yield** | official Investment Finder Distribution Yield where published, else the indicated yield — and only when the latest payout is recent (≤400 days) | Stale payouts (e.g. BUZZ Dec-2024) no longer annualise into a phantom yield; `—` where neither source yields a figure |
-| **Distribution Yield / 12M Yield** | official Investment Finder figures, published verbatim | The finder's impossible EMBX 12M cell (`-777.30%`, a VanEck site bug) is stored as `null`, never copied |
+| **Dividend Yield** | official Investment Finder Distribution Yield where published, else the indicated yield — and only when the latest payout is recent (≤400 days) | Stale payouts (e.g. BUZZ Dec-2024) no longer annualise into a phantom yield; `—` where neither source yields a figure; a value above 100% is a liquidation payout, not a yield, and is stored as `null` (RSXJ 210%) |
+| **Distribution Yield / 12M Yield** | official Investment Finder figures, published verbatim, except values above 100% (RSXJ 213%), which are stored as `null` | The finder's impossible EMBX 12M cell (`-777.30%`, a VanEck site bug) is stored as `null`, never copied |
 | **RSX / RSXJ tenors** | annualised 1/3/5/10Y + SI from the Investment Finder month-end table, flagged as liquidation figures | Cumulative tenors were never published and stay `null`; both funds suspended since 2022 |
 | **`returnsBasis`** | mandatory non-empty label at the end of every `metrics` object: official VanEck NAV total returns (performance block, fund-page YTD, finder month-end), with the extra legs named | Never empty or `-`; Yahoo is not used for returns in this feed |
-| **`performanceAsOf`** | ISO `YYYY-MM-DD`, right after `returnsBasis`: the as-of stamp of the returns block (`returns.monthEnd.asOfDate`: fund-page YTD stamp, else the performance table month-end, else the finder month-end) | Not the NAV date; `null` only when VanEck gives no stamp |
+| **`performanceAsOf`** | ISO `YYYY-MM-DD`, right after `returnsBasis`: the date the tenor figures (1Y/3Y/5Y/10Y/SI) are as of: the performance block's own month-end date, the finder month-end date for RSX / RSXJ, else the fund-page stamp (`returns.monthEnd.tenorsAsOf`, falling back to `asOfDate`) | Not the NAV date and not the daily YTD stamp; `null` only when VanEck gives no stamp |
+| **`ytdAsOf`** | ISO date of the daily fund-page YTD figure, just before `returnsBasis`; `null` when YTD is `null` | YTD is dated separately because it moves daily while the tenors are month-end |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
 ### Update controls
@@ -94,7 +95,7 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `CATEGORY`* | `""` | Substring match on the vaneck.com asset class |
 | `HOLDINGS_PAGE_SIZE`*, `HISTORY_PAGE_SIZE`* | `250`, `1000` | Rows per generated JSON page (env alias `HISTORICAL_PAGE_SIZE`) |
 | `HISTORY_RANGE`* | `max` | Yahoo request window and published history rows: `max` or `Ny` (for example `5y`) |
-| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors and HTTP 408/425/429/403/5xx; integer >= 1 |
+| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors, 45 s request timeouts (headers and body) and HTTP 408/425/429/403/5xx; integer >= 1 |
 | `SEC_UA`* | `daggerok ETF feed daggerok@gmail.com` | User-Agent declared to SEC EDGAR; the repository Actions variable `SEC_UA` overrides it |
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
 | `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
@@ -102,10 +103,14 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `OFFLINE_SEED` | `false` | Replay `data/vaneck-verified.ts` instead of fetching, for a network-free run |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
 | `USE_SYSTEM_CA` | `auto` | TLS trust store: `auto` restarts the updater once with Bun's `--use-system-ca` when a request fails with an untrusted-certificate error; `true` always uses the system CA store; `false` never restarts. Not an individual workflow input: use `advanced`, the config file or the CLI environment. |
-| `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on VanEck's official fund-page return percent per tenor |
-| `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the derived total return percent per tenor |
+| `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the published return percent: YTD and 1Y as published, 3Y/5Y/10Y annualized |
+| `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the cumulative total return percent per tenor |
 
-`TICKERS` combines with the AUM/TER/yield filters using AND logic; it does not override them. Funds not selected for a successful update keep their prior published metadata and data files, so a bounded or partly failed run can never empty the site.
+`TICKERS` combines with the AUM/TER/yield filters using AND logic; it does not override them. An unknown ticker, a malformed AUM bound or a bad range is an error, never a silent fallback.
+
+AUM, TER, `CATEGORY` and `TICKERS` select funds before any request. The yield (`DIVIDEND_YIELD`, `SEC_YIELD`) and return (`PERFORMANCE_*`, `TOTAL_RETURN_*`) filters are evaluated on each fund's freshly computed metrics before anything is written: a bounded range excludes funds whose value is `null`, and an excluded fund keeps its previous published files untouched. Funds not selected, excluded or failed keep their prior published metadata and data files, so a bounded or partly failed run can never empty the site.
+
+A fund is updated as a unit: pages are written first, then `meta.json`, then stale pages are removed, and the index row follows at the end of the run. If a required source (fund page, holdings or NAV history other than an HTTP 404, or the performance block) fails for a fund, that fund keeps its previous complete state instead of mixing fresh and stale columns. Every request has a 45 s timeout (headers and body) and a run stops taking new funds after 25 minutes, still writing the index. `MAX_FETCHES` resumes only inside the same filter set (the cursor stores the filter scope) and wraps around after the last fund; a `TICKERS` or filtered run never deletes the cursor. A fund row without `funds/<T>/meta.json` has `dataFile: null`. The index `generatedAt` only moves when the feed content changed, so a rerun with unchanged upstream data writes nothing.
 
 ### Examples
 
