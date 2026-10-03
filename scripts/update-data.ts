@@ -1053,6 +1053,7 @@ export function historyWindowStartEpoch(historyRange: string, nowEpochSeconds: n
 }
 
 function parseNonNegativeFloat(raw: string, fallback: number): number {
+  if (String(raw ?? '').trim() === '') return fallback; // Number('') is 0: an empty control must not silently disable pacing
   const value = Number(String(raw).trim());
   return Number.isFinite(value) && value >= 0 ? value : fallback;
 }
@@ -1127,8 +1128,8 @@ function parseRanges(env: Record<string, string | undefined>, prefix: 'PERFORMAN
 
 export function readConfig(env: Record<string, string | undefined> = process.env): UpdaterConfig {
   return {
-    concurrency: parsePositiveInt(envValue(env, 'CONCURRENCY'), 3),
-    requestSleep: parseNonNegativeFloat(envValue(env, 'REQUEST_SLEEP'), 1.5),
+    concurrency: parsePositiveInt(envValue(env, 'CONCURRENCY'), 2),
+    requestSleep: parseNonNegativeFloat(envValue(env, 'REQUEST_SLEEP'), 2),
     maxFetches: parseNonNegativeInt(envValue(env, 'MAX_FETCHES'), 0),
     holdingsPageSize: parsePositiveInt(envValue(env, 'HOLDINGS_PAGE_SIZE'), 250),
     historyPageSize: parsePositiveInt(envValue(env, 'HISTORY_PAGE_SIZE', ['HISTORICAL_PAGE_SIZE']), 1000),
@@ -1143,7 +1144,7 @@ export function readConfig(env: Record<string, string | undefined> = process.env
     secUa: envValue(env, 'SEC_UA') || SEC_UA_DEFAULT,
     skipYahoo: parseBoolean(envValue(env, 'SKIP_YAHOO')),
     skipVanEck: parseBoolean(envValue(env, 'SKIP_VANECK')),
-    edgarFallback: parseBoolean(envValue(env, 'EDGAR_FALLBACK')),
+    edgarFallback: parseBoolean(envValue(env, 'EDGAR_FALLBACK'), true),
     offlineSeed: parseBoolean(envValue(env, 'OFFLINE_SEED')),
     aumRange: parseAumRange(envValue(env, 'AUM')),
     terRange: parseRange(envValue(env, 'TER'), 'TER'),

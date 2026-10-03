@@ -1456,3 +1456,12 @@ describe("returns dating and yield sanity", () => {
     expect(saneYield(Number.NaN)).toBeNull();
   });
 });
+
+describe("readConfig defaults match the config file", () => {
+  test("an empty EDGAR_FALLBACK keeps the default true and empty numeric controls keep the file defaults", () => {
+    const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
+    expect(c.edgarFallback).toBe(true);
+    expect(c.concurrency).toBe(Number(configFile().CONCURRENCY));
+    expect(c.requestSleep).toBe(Number(configFile().REQUEST_SLEEP));
+  });
+});
