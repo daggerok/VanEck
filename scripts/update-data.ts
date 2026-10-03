@@ -2295,6 +2295,16 @@ export function inferDistributionFrequency(exDates: string[]): string {
   return 'Irregular';
 }
 
+/**
+ * A yield above this is a liquidation or return-of-capital payout, not a yield
+ * (RSXJ: a $0.82 final distribution over a $0.39 NAV annualised to 210%), so it is
+ * published as null rather than as a number a screener would sort on.
+ */
+export const MAX_SANE_YIELD_PERCENT = 100;
+export function saneYield(value: number | null): number | null {
+  return value !== null && Number.isFinite(value) && value >= 0 && value <= MAX_SANE_YIELD_PERCENT ? value : null;
+}
+
 /** Indicated yield = latest distribution x payments per year / NAV. */
 export function indicatedDividendYield(
   latestDividend: number | null,
@@ -2470,15 +2480,19 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
  * table month-end, else the finder month-end) - never the NAV date field.
  */
 export function withReturnsMeta(entry: CatalogEntry): CatalogEntry {
-  const { returnsBasis, performanceAsOf: _previous, ...rest } = (entry.metrics as Record<string, unknown>) ?? {};
-  const stamp = (entry.returns as { monthEnd?: { asOfDate?: unknown } } | undefined)?.monthEnd?.asOfDate;
-  const iso = typeof stamp === 'string' && stamp !== '—' && Number.isFinite(Date.parse(`${stamp} UTC`))
-    ? new Date(`${stamp} UTC`).toISOString().slice(0, 10)
-    : null;
+  const { returnsBasis, performanceAsOf: _previous, ytdAsOf: _previousYtd, ...rest } = (entry.metrics as Record<string, unknown>) ?? {};
+  const monthEnd = (entry.returns as { monthEnd?: { asOfDate?: unknown; tenorsAsOf?: unknown } } | undefined)?.monthEnd;
+  const toIso = (stamp: unknown): string | null =>
+    typeof stamp === 'string' && stamp !== '—' && Number.isFinite(Date.parse(`${stamp} UTC`))
+      ? new Date(`${stamp} UTC`).toISOString().slice(0, 10)
+      : null;
+  // The date the tenor figures (1Y/3Y/5Y/10Y/since inception) are as of; the fund-page stamp (daily YTD) only when no tenor date is known.
+  const iso = toIso(monthEnd?.tenorsAsOf) ?? toIso(monthEnd?.asOfDate);
+  const ytdIso = (rest as Record<string, unknown>).ytd === null || (rest as Record<string, unknown>).ytd === undefined ? null : toIso(monthEnd?.asOfDate);
   const basis = typeof returnsBasis === 'string' && returnsBasis.trim() && returnsBasis.trim() !== '-' && returnsBasis.trim() !== '—'
     ? returnsBasis
     : 'not yet refreshed from vaneck.com';
-  return { ...entry, metrics: { ...rest, returnsBasis: basis, performanceAsOf: iso } };
+  return { ...entry, metrics: { ...rest, ytdAsOf: ytdIso, returnsBasis: basis, performanceAsOf: iso } };
 }
 
 /** Merges a verified fund-page snapshot onto a catalog entry. */
@@ -2935,6 +2949,8 @@ export async function updateFund(
     // The fund-page YTD as-of (daily) wins over the block's month-end as-of:
     // only fill a blank (seed '—') stamp, never clobber a real one.
     if (returnsMonthEnd.asOfDate === '—' && performance.asOfDate) returnsMonthEnd.asOfDate = performance.asOfDate;
+    // The tenor figures are as of the performance block's own date, not the fund page's daily YTD stamp.
+    if (performance.asOfDate) returnsMonthEnd.tenorsAsOf = performance.asOfDate;
     if (performance.quarterEnd) {
       const q = performance.quarterEnd;
       const quarterEnd = (entry.returns as Record<string, unknown>).quarterEnd as Record<string, unknown>;
@@ -2972,6 +2988,7 @@ export async function updateFund(
     monthEnd.yr5 = t.y5;
     monthEnd.yr10 = t.y10;
     monthEnd.sinceInception = t.life;
+    monthEnd.tenorsAsOf = formatVanEckDate(FINDER_MONTH_END_AS_OF);
     if (monthEnd.asOfDate === '—') monthEnd.asOfDate = formatVanEckDate(FINDER_MONTH_END_AS_OF);
   }
   // The fund-page header shows a 30-Day SEC Yield instead of a YTD return for
@@ -3029,12 +3046,12 @@ export async function updateFund(
   // the finder prints `--` AND the latest payout is fresh enough to annualise.
   const officialDistributionYield = finder?.distributionYield ?? null;
   const indicatedAllowed = indicatedYieldAllowed(latestExDate, entry.asOfDate as string | null);
-  const indicatedYield = latestAmount !== null && indicatedAllowed ? indicatedDividendYield(latestAmount, payments, navForYield) : null;
-  const dividendYield = officialDistributionYield ?? indicatedYield;
-  metrics.distributionYield = officialDistributionYield;
-  metrics.distributionYieldText = formatPercentText(officialDistributionYield);
-  metrics.yield12M = finder?.yield12M ?? null;
-  metrics.yield12MText = formatPercentText(finder?.yield12M ?? null);
+  const indicatedYield = saneYield(latestAmount !== null && indicatedAllowed ? indicatedDividendYield(latestAmount, payments, navForYield) : null);
+  const dividendYield = saneYield(officialDistributionYield ?? indicatedYield);
+  metrics.distributionYield = saneYield(officialDistributionYield);
+  metrics.distributionYieldText = formatPercentText(saneYield(officialDistributionYield));
+  metrics.yield12M = saneYield(finder?.yield12M ?? null);
+  metrics.yield12MText = formatPercentText(saneYield(finder?.yield12M ?? null));
 
   // --- exchange --------------------------------------------------------------
   // Ladder: fund page (rarely present) -> Nasdaq symdir -> Yahoo chart meta.

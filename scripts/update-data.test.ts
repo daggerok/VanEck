@@ -81,6 +81,7 @@ import {
   filterScope,
   fundPassesDataFilters,
   selectCandidates,
+  saneYield,
 } from "./update-data";
 
 const REPO_ROOT = path.join(import.meta.dir, "..");
@@ -946,7 +947,7 @@ describe("metrics returnsBasis and performanceAsOf (STANDARD.md 9a)", () => {
     const out = withReturnsMeta(entry).metrics as Record<string, unknown>;
     expect(out.performanceAsOf).toBe("2026-08-31");
     expect(out.returnsBasis).toBe("official VanEck Average Annual Total Returns (NAV)");
-    expect(Object.keys(out)).toEqual(["ytd", "returnsBasis", "performanceAsOf"]);
+    expect(Object.keys(out)).toEqual(["ytd", "ytdAsOf", "returnsBasis", "performanceAsOf"]);
   });
 
   test("unknown stamp stays null and a blank basis is replaced by an honest label", () => {
@@ -1418,5 +1419,40 @@ describe("strict controls and data-dependent filters", () => {
     const sorted = VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b));
     const wrapped = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), sorted[sorted.length - 1]).map((f) => f.ticker);
     expect(wrapped).toEqual(all);
+  });
+});
+
+
+describe("returns dating and yield sanity", () => {
+  const entryWith = (monthEnd: Record<string, unknown>, ytd: number | null) => ({
+    ...seedCatalogEntry(VAN_ECK_SEED[0]),
+    returns: { monthEnd, quarterEnd: { asOfDate: "—" } },
+    metrics: { ...(seedCatalogEntry(VAN_ECK_SEED[0]).metrics as object), ytd, tr1y: 3, returnsBasis: "official" },
+  });
+
+  test("performanceAsOf is the tenor date, not the daily YTD stamp", () => {
+    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 2.3)).metrics as Record<string, unknown>;
+    expect(m.performanceAsOf).toBe("2026-08-31");
+    expect(m.ytdAsOf).toBe("2026-09-25");
+  });
+
+  test("without a tenor date the fund-page stamp is the fallback and ytdAsOf is null for a null YTD", () => {
+    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026" }, null)).metrics as Record<string, unknown>;
+    expect(m.performanceAsOf).toBe("2026-09-25");
+    expect(m.ytdAsOf).toBeNull();
+  });
+
+  test("every row of the metrics contract keeps the same key set", () => {
+    const keys = (e: ReturnType<typeof entryWith>) => Object.keys(withReturnsMeta(e).metrics as object).sort().join();
+    expect(keys(entryWith({ asOfDate: "—" }, null))).toBe(keys(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 1)));
+  });
+
+  test("a liquidation payout is not published as a yield", () => {
+    expect(indicatedDividendYield(0.8208, 4, 0.39)).toBeGreaterThan(100);
+    expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
+    expect(saneYield(3.5)).toBe(3.5);
+    expect(saneYield(0)).toBe(0);
+    expect(saneYield(null)).toBeNull();
+    expect(saneYield(Number.NaN)).toBeNull();
   });
 });
