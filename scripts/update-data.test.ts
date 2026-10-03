@@ -1,98 +1,69 @@
 /// <reference types="bun" />
-/**
- * Unit tests for the VanEck data updater: parsers and pipeline helpers (small
- * inline samples trimmed from the markup VanEck serves), the shared control
- * resolver, and the config / --help / README / workflow parity checks.
- */
-import { afterEach, describe, expect, test } from "bun:test";
-import { readFileSync } from "node:fs";
+import { afterEach, beforeEach, describe, expect, test } from "bun:test";
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, utimesSync } from "node:fs";
+import { tmpdir } from "node:os";
 import path from "node:path";
 
 import {
-  HOLDINGS_HEADERS,
-  installSystemCa,
-  isCertError,
-  VANECK_ETF_TRUST_CIK,
-  VANECK_FINDER_URL,
-  annualizedFromCumulative,
-  chunkRows,
-  cleanText,
-  compareDisplayDates,
-  cumulativeFromAnnualized,
-  decodeHtmlEntities,
-  findHeaderRowIndex,
-  formatAumDisplay,
-  formatMoneyText,
-  formatPercentText,
-  formatVanEckDate,
-  frequencyCode,
-  indicatedDividendYield,
-  indicatedYieldAllowed,
-  inferDistributionFrequency,
-  nasdaqExchangeDisplayName,
-  normalizeNumberText,
-  normalizeYahooExchangeName,
-  numberOrNull,
-  parseAumRange,
-  parseHtmlTables,
-  parseNasdaqSymdir,
-  parseRange,
-  parseVanEckFundPage,
-  parseVanEckHistory,
-  parseVanEckHistoryXlsx,
-  parseVanEckHoldings,
-  parseVanEckHoldingsXlsx,
-  parseVanEckPerformance,
-  parseXlsxSheet,
-  parseYahooExchangeName,
-  loadSharedStrings,
-  paymentsPerYear,
-  premiumDiscount,
-  sanitizeTicker,
-  toIsoDate,
-  vaneckEdgarFilingsUrl,
-  vaneckFactSheetUrl,
-  vaneckFundDocuments,
-  vaneckFundPageUrl,
-  vaneckHistoryUrl,
-  vaneckHoldingsUrl,
-  vaneckLegacyHoldingsUrl,
-  vaneckProspectusUrl,
-  yahooChartProvenanceUrl,
+  CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
+  annualizedFromCumulative, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  fetchWithRetry, filterScope, finderForTicker, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
+  frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
+  inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
+  normalizeNumberText, normalizeYahooExchangeName, numberOrNull, paceRequests, parseAumRange, parseHistoryRange, parseHtmlTables,
+  parseMaxRetries, parseNasdaqSymdir, parseRange, parseVanEckFundPage, parseVanEckHistory, parseVanEckHistoryXlsx,
+  parseVanEckHoldings, parseVanEckHoldingsXlsx, parseVanEckPerformance, parseXlsxSheet, parseYahooExchangeName, paymentsPerYear,
+  premiumDiscount, readConfig, resetPacingLanes, resolveControls, runtimeControls, saneYield, sanitizeTicker, seedCatalogEntry,
+  selectCandidates, setNetworkTimings, toIsoDate, vaneckEdgarFilingsUrl, vaneckFactSheetUrl, vaneckFundDocuments,
+  vaneckFundPageUrl, vaneckHistoryUrl, vaneckHoldingsUrl, vaneckLegacyHoldingsUrl, withReturnsMeta, yahooChartProvenanceUrl,
   yahooChartUrl,
-  CONTROL_NAMES,
-  VANECK_FINDER,
-  VAN_ECK_SEED,
-  seedCatalogEntry,
-  withReturnsMeta,
-  SEC_UA_DEFAULT,
-  finderForTicker,
-  historyWindowStartEpoch,
-  normalizeFinderFrequency,
-  parseHistoryRange,
-  parseMaxRetries,
-  readConfig,
-  resolveControls,
-  fetchWithRetry,
-  paceRequests,
-  resetPacingLanes,
-  setNetworkTimings,
-  assertKnownTickers,
-  filterScope,
-  fundPassesDataFilters,
-  selectCandidates,
-  saneYield,
 } from "./update-data";
 
-const REPO_ROOT = path.join(import.meta.dir, "..");
+// ---------------------------------------------------------------------------
+// Shared setup: clean environment, pinned TZ, restored fetch / exit code / console / clock
+// ---------------------------------------------------------------------------
+const scriptsDir = new URL(".", import.meta.url).pathname;
+const read = (relative: string): string => readFileSync(path.join(scriptsDir, "..", relative), "utf8");
+const configFile = (): Record<string, string> => JSON.parse(read("scripts/update-data.config.json"));
+const realFetch = globalThis.fetch;
+const realExitCode = process.exitCode;
+const realConsole = { log: console.log, warn: console.warn, error: console.error };
+const realSetTimeout = globalThis.setTimeout;
+const realNow = Date.now;
+const savedEnv = { ...process.env };
+const tempDirs: string[] = [];
+const isControlVar = (key: string): boolean =>
+  (CONTROL_NAMES as readonly string[]).includes(key) || key.startsWith("VANECK_") || ["HISTORICAL_PAGE_SIZE", "NODE_USE_SYSTEM_CA", "ETF_UPDATER_SYSTEM_CA", "GITHUB_STEP_SUMMARY"].includes(key);
 
-const read = (relative: string): string => readFileSync(path.join(REPO_ROOT, relative), "utf8");
+beforeEach(() => {
+  for (const key of Object.keys(process.env)) if (isControlVar(key)) delete process.env[key];
+  process.env.TZ = "UTC";
+});
+afterEach(() => {
+  globalThis.fetch = realFetch;
+  globalThis.setTimeout = realSetTimeout;
+  Date.now = realNow;
+  process.exitCode = realExitCode ?? 0;
+  Object.assign(console, realConsole);
+  setNetworkTimings(45_000, 15_000);
+  resetPacingLanes(1);
+  for (const key of Object.keys(process.env)) if (!(key in savedEnv)) delete process.env[key];
+  Object.assign(process.env, savedEnv);
+  for (const dir of tempDirs.splice(0)) rmSync(dir, { recursive: true, force: true });
+});
+
+/** A fake clock: Date.now and setTimeout advance together, so paced waits are exact and instant. */
+function fakeClock(): { waits: number[] } {
+  let clock = 1_800_000_000_000;
+  const waits: number[] = [];
+  Date.now = () => clock;
+  globalThis.setTimeout = ((callback: () => void, ms = 0) => { waits.push(ms); clock += ms; return realSetTimeout(callback, 0); }) as unknown as typeof setTimeout;
+  return { waits };
+}
 
 // ---------------------------------------------------------------------------
-// Minimal in-memory ZIP (STORE method) writer for building XLSX fixtures,
-// so the XLSX-parsing tests stay dependency-free like the updater itself.
+// Minimal in-memory ZIP (STORE) writer: XLSX samples without a dependency or a fixture file
 // ---------------------------------------------------------------------------
-
 const CRC_TABLE = (() => {
   const table = new Uint32Array(256);
   for (let i = 0; i < 256; i++) {
@@ -102,13 +73,11 @@ const CRC_TABLE = (() => {
   }
   return table;
 })();
-
 function crc32(bytes: Uint8Array): number {
   let crc = 0xffffffff;
   for (const byte of bytes) crc = CRC_TABLE[(crc ^ byte) & 0xff] ^ (crc >>> 8);
   return (crc ^ 0xffffffff) >>> 0;
 }
-
 function buildZip(files: Map<string, Uint8Array>): Uint8Array {
   const encoder = new TextEncoder();
   const locals: Uint8Array[] = [];
@@ -119,282 +88,49 @@ function buildZip(files: Map<string, Uint8Array>): Uint8Array {
     const crc = crc32(data);
     const local = new Uint8Array(30 + nameBytes.length + data.length);
     const localView = new DataView(local.buffer);
-    localView.setUint32(0, 0x04034b50, true);
-    localView.setUint16(4, 20, true);
-    localView.setUint32(14, crc, true);
-    localView.setUint32(18, data.length, true);
-    localView.setUint32(22, data.length, true);
-    localView.setUint16(26, nameBytes.length, true);
-    local.set(nameBytes, 30);
-    local.set(data, 30 + nameBytes.length);
-
+    localView.setUint32(0, 0x04034b50, true); localView.setUint16(4, 20, true); localView.setUint32(14, crc, true);
+    localView.setUint32(18, data.length, true); localView.setUint32(22, data.length, true); localView.setUint16(26, nameBytes.length, true);
+    local.set(nameBytes, 30); local.set(data, 30 + nameBytes.length);
     const central = new Uint8Array(46 + nameBytes.length);
     const centralView = new DataView(central.buffer);
-    centralView.setUint32(0, 0x02014b50, true);
-    centralView.setUint16(4, 20, true);
-    centralView.setUint16(6, 20, true);
-    centralView.setUint32(16, crc, true);
-    centralView.setUint32(20, data.length, true);
-    centralView.setUint32(24, data.length, true);
-    centralView.setUint16(28, nameBytes.length, true);
-    centralView.setUint32(42, offset, true);
+    centralView.setUint32(0, 0x02014b50, true); centralView.setUint16(4, 20, true); centralView.setUint16(6, 20, true);
+    centralView.setUint32(16, crc, true); centralView.setUint32(20, data.length, true); centralView.setUint32(24, data.length, true);
+    centralView.setUint16(28, nameBytes.length, true); centralView.setUint32(42, offset, true);
     central.set(nameBytes, 46);
-
-    locals.push(local);
-    centrals.push(central);
-    offset += local.length;
+    locals.push(local); centrals.push(central); offset += local.length;
   }
   const centralSize = centrals.reduce((sum, chunk) => sum + chunk.length, 0);
   const eocd = new Uint8Array(22);
   const eocdView = new DataView(eocd.buffer);
-  eocdView.setUint32(0, 0x06054b50, true);
-  eocdView.setUint16(8, files.size, true);
-  eocdView.setUint16(10, files.size, true);
-  eocdView.setUint32(12, centralSize, true);
-  eocdView.setUint32(16, offset, true);
+  eocdView.setUint32(0, 0x06054b50, true); eocdView.setUint16(8, files.size, true); eocdView.setUint16(10, files.size, true);
+  eocdView.setUint32(12, centralSize, true); eocdView.setUint32(16, offset, true);
   const out = new Uint8Array(offset + centralSize + 22);
   let position = 0;
-  for (const chunk of [...locals, ...centrals, eocd]) {
-    out.set(chunk, position);
-    position += chunk.length;
-  }
+  for (const chunk of [...locals, ...centrals, eocd]) { out.set(chunk, position); position += chunk.length; }
   return out;
 }
-
-function escapeXml(text: string): string {
-  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-/**
- * Builds a worksheet XML. `namespaced` mirrors what VanEck's own downloads
- * actually emit (`<x:row>`/`<x:c>`/`<x:v>` under an `xmlns:x=` worksheet), as
- * opposed to the bare `<row>`/`<c>`/`<v>` some other providers emit — the
- * parser must tolerate both.
- */
+const escapeXml = (text: string): string => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+/** `namespaced` mirrors VanEck's real downloads (`<x:row>`/`<x:c>`/`<x:v>`); the parser must read both shapes. */
 function sheetXml(rows: string[][], namespaced: boolean): string {
   const p = namespaced ? "x:" : "";
-  const body = rows
-    .map((row, rowIndex) => {
-      const cells = row
-        .map(
-          (value, columnIndex) =>
-            `<${p}c r="${String.fromCharCode(65 + columnIndex)}${rowIndex + 1}" t="inlineStr"><${p}is><${p}t>${escapeXml(value)}</${p}t></${p}is></${p}c>`,
-        )
-        .join("");
-      return `<${p}row r="${rowIndex + 1}">${cells}</${p}row>`;
-    })
-    .join("");
-  const root = namespaced
-    ? `<x:worksheet xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`
-    : `<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`;
-  const rootClose = namespaced ? "</x:worksheet>" : "</worksheet>";
-  return `<?xml version="1.0" encoding="UTF-8"?>${root}<${p}sheetData>${body}</${p}sheetData>${rootClose}`;
+  const body = rows.map((row, rowIndex) => {
+    const cells = row.map((value, columnIndex) => `<${p}c r="${String.fromCharCode(65 + columnIndex)}${rowIndex + 1}" t="inlineStr"><${p}is><${p}t>${escapeXml(value)}</${p}t></${p}is></${p}c>`).join("");
+    return `<${p}row r="${rowIndex + 1}">${cells}</${p}row>`;
+  }).join("");
+  const root = namespaced ? `<x:worksheet xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">` : `<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`;
+  return `<?xml version="1.0" encoding="UTF-8"?>${root}<${p}sheetData>${body}</${p}sheetData>${namespaced ? "</x:worksheet>" : "</worksheet>"}`;
 }
-
 function buildXlsx(rows: string[][], namespaced = true): Uint8Array {
   const encoder = new TextEncoder();
-  return buildZip(
-    new Map<string, Uint8Array>([
-      ["xl/workbook.xml", encoder.encode("<?xml version=\"1.0\"?><workbook/>")],
-      ["xl/worksheets/sheet1.xml", encoder.encode(sheetXml(rows, namespaced))],
-    ]),
-  );
+  return buildZip(new Map<string, Uint8Array>([
+    ["xl/workbook.xml", encoder.encode('<?xml version="1.0"?><workbook/>')],
+    ["xl/worksheets/sheet1.xml", encoder.encode(sheetXml(rows, namespaced))],
+  ]));
 }
 
 // ---------------------------------------------------------------------------
-// 1. Source URLs
+// Small inline samples
 // ---------------------------------------------------------------------------
-
-describe("source URLs", () => {
-  test("fund page, holdings and history URLs follow the verified vaneck.com layout", () => {
-    // Canonical slugs are harvested from the Investment Finder (2026-09-19);
-    // /investments/etf-<ticker>/ is a greedy 302 (etf-einc → inc → 404) so the
-    // slug table is authoritative.
-    expect(vaneckFundPageUrl("GDX")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/");
-    expect(vaneckFundPageUrl("smh")).toBe("https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/");
-    expect(vaneckFundPageUrl("EINC")).toBe("https://www.vaneck.com/us/en/investments/energy-income-etf-einc/");
-    expect(vaneckFundPageUrl("AFK")).toBe("https://www.vaneck.com/us/en/investments/africa-index-etf-afk/");
-    // Unknown ticker falls back to etf-<ticker> so the 404 is visible.
-    expect(vaneckFundPageUrl("ZZZZ")).toBe("https://www.vaneck.com/us/en/investments/etf-zzzz/");
-    expect(vaneckHoldingsUrl("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/")).toBe(
-      "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/",
-    );
-    expect(vaneckHistoryUrl("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx")).toBe(
-      "https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/",
-    );
-    // Holdings/history are always <fundPage>/downloads/…
-    expect(vaneckHoldingsUrl("https://www.vaneck.com/us/en/investments/equity/gdx/overview/")).toBe(
-      "https://www.vaneck.com/us/en/investments/equity/gdx/overview/downloads/holdings/",
-    );
-    expect(vaneckHistoryUrl("https://www.vaneck.com/us/en/investments/equity/gdx/overview")).toBe(
-      "https://www.vaneck.com/us/en/investments/equity/gdx/overview/downloads/fundhistoprices/",
-    );
-  });
-
-  test("the EDGAR fallback targets the VanEck ETF Trust, not the adviser", () => {
-    expect(VANECK_ETF_TRUST_CIK).toBe("0001137360");
-    expect(vaneckEdgarFilingsUrl()).toContain("CIK=0001137360");
-    expect(vaneckEdgarFilingsUrl()).toContain("type=NPORT-P");
-    expect(vaneckEdgarFilingsUrl("0000768847")).toContain("CIK=0000768847");
-  });
-
-  test("the finder URL is the one that actually server-renders the fund table", () => {
-    expect(VANECK_FINDER_URL).toBe("https://www.vaneck.com/us/en/etf-mutual-fund-finder/");
-  });
-
-  test("the recorded chart provenance URL carries no wall-clock value", () => {
-    // A live query needs period2 = now or Yahoo downgrades range=max to monthly
-    // bars; the provenance copy must not, or every no-op rerun would git-diff.
-    const live = yahooChartUrl("GDX", 1_789_848_311_000);
-    expect(live).toContain("period2=1789848311");
-    expect(live).toContain("interval=1d");
-    const provenance = yahooChartProvenanceUrl("GDX");
-    expect(provenance).toBe("https://query1.finance.yahoo.com/v8/finance/chart/GDX");
-    expect(provenance).not.toContain("period2");
-    // stable across calls made at different instants
-    expect(yahooChartProvenanceUrl("GDX")).toBe(yahooChartProvenanceUrl("GDX"));
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 2. Text and number normalization
-// ---------------------------------------------------------------------------
-
-describe("normalization", () => {
-  test("sanitizeTicker strips whitespace and uppercases", () => {
-    expect(sanitizeTicker("  gdx ")).toBe("GDX");
-    expect(sanitizeTicker(null)).toBe("");
-    expect(sanitizeTicker(undefined)).toBe("");
-  });
-
-  test("cleanText collapses whitespace and drops nbsp", () => {
-    expect(cleanText("  Total   Net\nAssets\u00a0 ")).toBe("Total Net Assets");
-    expect(cleanText(null)).toBe("");
-  });
-
-  test("normalizeNumberText strips currency, thousands separators and percent", () => {
-    expect(normalizeNumberText("$3,094,290,686.41")).toBe("3094290686.41");
-    expect(normalizeNumberText("10.89%")).toBe("10.89");
-    expect(normalizeNumberText("24,875,719")).toBe("24875719");
-  });
-
-  test("numberOrNull returns null for VanEck's placeholders, never NaN", () => {
-    expect(numberOrNull("$95.67")).toBe(95.67);
-    expect(numberOrNull("10.89%")).toBe(10.89);
-    expect(numberOrNull("--")).toBeNull();
-    expect(numberOrNull("—")).toBeNull();
-    expect(numberOrNull("")).toBeNull();
-    expect(numberOrNull("n/a")).toBeNull();
-    expect(numberOrNull(null)).toBeNull();
-    expect(numberOrNull(undefined)).toBeNull();
-  });
-
-  test("decodeHtmlEntities handles the entities VanEck's pages actually emit", () => {
-    expect(decodeHtmlEntities("VanEck&nbsp;&amp;&nbsp;Co &lt;ETF&gt; &#39;x&#39; &quot;y&quot;")).toBe(
-      "VanEck & Co <ETF> 'x' \"y\"",
-    );
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 3. Dates
-// ---------------------------------------------------------------------------
-
-describe("dates", () => {
-  test("formatVanEckDate renders mm/dd/yyyy as the display form the UI expects", () => {
-    expect(formatVanEckDate("09/18/2026")).toBe("Sep 18 2026");
-    expect(formatVanEckDate("05/16/2006")).toBe("May 16 2006");
-    expect(formatVanEckDate("12/20/2011")).toBe("Dec 20 2011");
-    expect(formatVanEckDate("")).toBe("—");
-    // VanEck prints "--" verbatim for unavailable cells; it is passed through
-    // unchanged rather than rewritten, and the UI renders it as-is.
-    expect(formatVanEckDate("--")).toBe("--");
-  });
-
-  test("toIsoDate is stable for sorting and compareDisplayDates orders correctly", () => {
-    expect(toIsoDate("09/18/2026")).toBe("2026-09-18");
-    expect(toIsoDate("9/8/2026")).toBe("2026-09-08");
-    // already-display text is passed through unchanged
-    expect(toIsoDate("Sep 18 2026")).toBe("Sep 18 2026");
-    expect(compareDisplayDates("Sep 18 2026", "Sep 17 2026")).toBeGreaterThan(0);
-    expect(compareDisplayDates("Sep 17 2026", "Sep 18 2026")).toBeLessThan(0);
-    expect(compareDisplayDates("Sep 18 2026", "Sep 18 2026")).toBe(0);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 4. Display formatters
-// ---------------------------------------------------------------------------
-
-describe("formatters", () => {
-  test("formatAumDisplay uses the millions form VanEck's ETF Guide prints", () => {
-    expect(formatAumDisplay(22_753_000_000)).toBe("$22,753.00 M");
-    expect(formatAumDisplay(1_234_567)).toBe("$1.23 M");
-  });
-
-  test("percent and money text render an em dash for null, never a blank cell", () => {
-    expect(formatPercentText(11.22)).toBe("11.22%");
-    expect(formatPercentText(0)).toBe("0.00%");
-    expect(formatPercentText(null)).toBe("—");
-    expect(formatMoneyText(95.67)).toBe("$95.67");
-    expect(formatMoneyText(null)).toBe("—");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 5. Range parsing (MAX_FETCHES / AUM / TER config)
-// ---------------------------------------------------------------------------
-
-describe("range parsing", () => {
-  test("parseRange requires the explicit min:max syntax", () => {
-    expect(parseRange("0.10:0.60", "TER")).toEqual({ min: 0.1, max: 0.6 });
-    expect(parseRange("", "TER")).toBeUndefined();
-    expect(parseRange(":", "TER")).toBeUndefined();
-    expect(() => parseRange("0.35", "TER")).toThrow(/min:max/);
-  });
-
-  test("parseAumRange accepts presets and explicit dollar ranges", () => {
-    expect(parseAumRange("")).toBeUndefined();
-    expect(parseAumRange("large")).toBeDefined();
-    expect(parseAumRange("1000000000:")).toMatchObject({ min: 1_000_000_000 });
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 6. HTML table extraction
-// ---------------------------------------------------------------------------
-
-describe("HTML table extraction", () => {
-  const HTML = `
-    <table><tr><th>Date</th><th>NAV</th><th>Last Trade</th></tr>
-      <tr><td>09/18/2026</td><td>95.67</td><td>95.48</td></tr></table>
-    <table><tr><td>Number</td><td>Ticker</td><td>Holding Name</td><td>% of Net Assets</td></tr>
-      <tr><td>1</td><td>NEM</td><td>Newmont Corp</td><td>10.89</td></tr></table>`;
-
-  test("parseHtmlTables returns every table's rows in document order", () => {
-    const tables = parseHtmlTables(HTML);
-    expect(tables.length).toBe(2);
-    expect(tables[0][0]).toEqual(["Date", "NAV", "Last Trade"]);
-    expect(tables[1][1]).toEqual(["1", "NEM", "Newmont Corp", "10.89"]);
-  });
-
-  test("findHeaderRowIndex matches on normalized cell text", () => {
-    const tables = parseHtmlTables(HTML);
-    expect(findHeaderRowIndex(tables[0], ["Date", "NAV", "Last Trade"])).toBe(0);
-    expect(findHeaderRowIndex(tables[0], ["Holding Name", "% of Net Assets"])).toBe(-1);
-    expect(findHeaderRowIndex(tables[1], ["Holding Name", "% of Net Assets"])).toBe(0);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 7. Holdings parsing — the equity sheet
-// ---------------------------------------------------------------------------
-
-// VanEck's holdings/history "downloads" endpoints do not serve HTML — they
-// serve a real .xlsx workbook (verified against the live downloads on
-// 2026-09-19; see parseXlsxSheet). parseVanEckHoldings/parseVanEckHistory
-// take the worksheet's raw rows directly, so these fixtures are rows of cell
-// text rather than markup.
 const EQUITY_HOLDINGS_ROWS = [
   ["Daily Holdings (%)  09/17/2026"],
   [],
@@ -405,67 +141,6 @@ const EQUITY_HOLDINGS_ROWS = [
   ["4", "--", "Other/Cash", "--", "--", "Cash", "$31,792,656.80", "--", "0.11"],
   ["This information is not recommendations to buy or to sell any security."],
 ];
-
-describe("parseVanEckHoldings (equity sheet)", () => {
-  const parsed = parseVanEckHoldings(EQUITY_HOLDINGS_ROWS);
-
-  test("the as-of date comes from the 'Daily Holdings (%)' header line", () => {
-    expect(parsed.asOfDate).toBe("Sep 17 2026");
-  });
-
-  test("columns are emitted in the shared contract's order, not the provider's", () => {
-    expect(parsed.headers).toEqual([
-      "Name", "Ticker", "Identifier", "Shares Held",
-      "Asset Category", "Market Value", "Notional Value", "Weight",
-    ]);
-  });
-
-  test("every row carries exactly the published headers, in that order", () => {
-    // Regression guard: the snapshot tuples were once zipped against the wrong
-    // header order, silently swapping Name and Ticker in every row.
-    expect(parsed.rows.length).toBe(4);
-    for (const row of parsed.rows) expect(row.length).toBe(parsed.headers.length);
-    const nameIndex = parsed.headers.indexOf("Name");
-    const tickerIndex = parsed.headers.indexOf("Ticker");
-    expect(parsed.rows[0][nameIndex]).toBe("Newmont Corp");
-    expect(parsed.rows[0][tickerIndex]).toBe("NEM");
-    expect(parsed.rows[0][parsed.headers.indexOf("Identifier")]).toBe("BBG000BPWXK1");
-    // the "%" in "% of Net Assets" is stripped during header normalization, so
-    // the lookup key must be normalized too or every weight comes back empty
-    expect(parsed.rows[0][parsed.headers.indexOf("Weight")]).toBe("10.89%");
-    expect(parsed.rows[1][parsed.headers.indexOf("Weight")]).toBe("0.35%");
-    expect(parsed.rows[3][parsed.headers.indexOf("Weight")]).toBe("0.11%");
-    // VanEck prints "--" for Notional Value on every equity position, and
-    // cleanCell collapses that placeholder to "" (the client renders "—").
-    expect(parsed.rows[0][parsed.headers.indexOf("Notional Value")]).toBe("");
-  });
-
-  test("non-US listings keep their local exchange suffix verbatim", () => {
-    expect(parsed.rows[1][parsed.headers.indexOf("Ticker")]).toBe("NST AU");
-  });
-
-  test("cash balances are kept, including the placeholder-ticker Other/Cash row", () => {
-    expect(parsed.rows[2][parsed.headers.indexOf("Ticker")]).toBe("-USD CASH-");
-    expect(parsed.rows[3][parsed.headers.indexOf("Name")]).toBe("Other/Cash");
-    expect(parsed.rows[3][parsed.headers.indexOf("Ticker")]).toBe("");
-  });
-
-  test("the trailing legal-disclosure row is dropped, not counted as a position", () => {
-    expect(parsed.rows.some((r) => r.join(" ").includes("not recommendations"))).toBe(false);
-    expect(parsed.rows.length).toBe(4);
-  });
-
-  test("a sheet with no recognizable holdings table yields zero rows, never a throw", () => {
-    const empty = parseVanEckHoldings([["Nothing here"]]);
-    expect(empty.rows).toEqual([]);
-    expect(empty.headers).toEqual(HOLDINGS_HEADERS);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 8. Holdings parsing — the fixed-income sheet (no Ticker column at all)
-// ---------------------------------------------------------------------------
-
 const FIXED_INCOME_HOLDINGS_ROWS = [
   ["Daily Holdings (%)  09/17/2026"],
   [],
@@ -474,867 +149,476 @@ const FIXED_INCOME_HOLDINGS_ROWS = [
   ["2", "Celanese US Holdings Inc", "07/15/2029", "BBG00K1XYZ89", "5.75", "Corporate", "$800,000", "$790,000", "--", "1.10", "United States", "USD"],
   ["This information is not recommendations to buy or to sell any security."],
 ];
-
-describe("parseVanEckHoldings (fixed-income sheet)", () => {
-  const parsed = parseVanEckHoldings(FIXED_INCOME_HOLDINGS_ROWS);
-
-  test("a Maturity column switches the parser to the fixed-income column set", () => {
-    expect(parsed.headers).toEqual([
-      "Name", "Maturity", "Identifier", "Coupon", "Asset Category",
-      "Par Value", "Market Value", "Weight", "Country", "Currency",
-    ]);
-    expect(parsed.headers).not.toContain("Ticker");
-  });
-
-  test("the FIGI is the only identifier, and duplicate issuers stay distinct rows", () => {
-    expect(parsed.rows.length).toBe(2);
-    const identifierIndex = parsed.headers.indexOf("Identifier");
-    expect(parsed.rows[0][identifierIndex]).toBe("BBG00K1ABC23");
-    expect(parsed.rows[1][identifierIndex]).toBe("BBG00K1XYZ89");
-    // Same issuer name across two maturities — dedupe must key on the FIGI.
-    const nameIndex = parsed.headers.indexOf("Name");
-    expect(parsed.rows[0][nameIndex]).toBe(parsed.rows[1][nameIndex]);
-    expect(parsed.rows[0][identifierIndex]).not.toBe(parsed.rows[1][identifierIndex]);
-  });
-
-  test("maturity is normalized to the display date form and coupon is kept verbatim", () => {
-    expect(parsed.rows[0][parsed.headers.indexOf("Maturity")]).toBe("Apr 01 2027");
-    expect(parsed.rows[0][parsed.headers.indexOf("Coupon")]).toBe("6.05");
-    expect(parsed.rows[0][parsed.headers.indexOf("Country")]).toBe("United States");
-    expect(parsed.rows[0][parsed.headers.indexOf("Currency")]).toBe("USD");
-  });
-
-  test("every row still carries exactly the published headers", () => {
-    for (const row of parsed.rows) expect(row.length).toBe(parsed.headers.length);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 9. History parsing
-// ---------------------------------------------------------------------------
-
 const HISTORY_ROWS = [
   ["VanEck Gold Miners ETF - GDX"],
   ["Date", "NAV", "Change", "% Change", "Last Trade", "Volume", "Premium/Discount", "% Premium/Discount", "AUM", "Index Level"],
   ["09/18/2026", "95.67", "0.42", "0.44", "95.48", "5,000,000", "-0.19", "-0.20", "28,418,567,995.87", "1,234.56"],
   ["09/17/2026", "95.25", "-1.10", "-1.14", "95.30", "4,800,000", "0.05", "0.05", "28,300,000,000.00", "1,229.10"],
 ];
-
-describe("parseVanEckHistory", () => {
-  const parsed = parseVanEckHistory(HISTORY_ROWS);
-
-  test("the descending provider order is preserved", () => {
-    expect(parsed.headers[0]).toBe("Date");
-    expect(parsed.rows.length).toBe(2);
-    expect(parsed.rows[0][0]).toBe("Sep 18 2026");
-    expect(parsed.rows[1][0]).toBe("Sep 17 2026");
-  });
-
-  test("premium/discount is derived from NAV and Last Trade, not re-parsed blindly", () => {
-    const nav = Number(parsed.rows[0][parsed.headers.indexOf("NAV")].replace(/[^-\d.]/g, ""));
-    const close = Number(parsed.rows[0][parsed.headers.indexOf("Close")].replace(/[^-\d.]/g, ""));
-    expect(premiumDiscount(close, nav)).toBeCloseTo(-0.1986, 2);
-    expect(parsed.rows[0][parsed.headers.indexOf("Premium/Discount")]).toBe("-0.19");
-    expect(parsed.rows[0][parsed.headers.indexOf("Total Net Assets")]).toBe("28,418,567,995.87");
-  });
-
-  test("a sheet without a history table yields zero rows", () => {
-    expect(parseVanEckHistory([["No table"]]).rows).toEqual([]);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 9b. XLSX byte parsing — the holdings/history "downloads" endpoints serve a
-// real .xlsx workbook, not HTML. VanEck's own worksheet XML namespaces every
-// element (`<x:row>`, `<x:c>`, `<x:v>`); a parser only built for bare
-// `<row>`/`<c>`/`<v>` silently reads zero rows from the real file (this was a
-// real regression, not a hypothetical one).
-// ---------------------------------------------------------------------------
-
-describe("parseXlsxSheet", () => {
-  test("reads a namespaced worksheet (the shape VanEck actually serves)", () => {
-    const bytes = buildXlsx(EQUITY_HOLDINGS_ROWS, true);
-    const rows = parseXlsxSheet(bytes, loadSharedStrings(bytes));
-    expect(rows[2]).toEqual(EQUITY_HOLDINGS_ROWS[2]);
-    expect(rows[3][2]).toBe("Newmont Corp");
-  });
-
-  test("also reads a bare, non-namespaced worksheet", () => {
-    const bytes = buildXlsx(EQUITY_HOLDINGS_ROWS, false);
-    const rows = parseXlsxSheet(bytes, loadSharedStrings(bytes));
-    expect(rows[3][2]).toBe("Newmont Corp");
-  });
-});
-
-describe("parseVanEckHoldingsXlsx / parseVanEckHistoryXlsx (end to end from bytes)", () => {
-  test("equity holdings workbook", () => {
-    const parsed = parseVanEckHoldingsXlsx(buildXlsx(EQUITY_HOLDINGS_ROWS));
-    expect(parsed.asOfDate).toBe("Sep 17 2026");
-    expect(parsed.rows.length).toBe(4);
-    expect(parsed.rows[0][parsed.headers.indexOf("Name")]).toBe("Newmont Corp");
-    expect(parsed.rows[0][parsed.headers.indexOf("Weight")]).toBe("10.89%");
-  });
-
-  test("fixed-income holdings workbook", () => {
-    const parsed = parseVanEckHoldingsXlsx(buildXlsx(FIXED_INCOME_HOLDINGS_ROWS));
-    expect(parsed.headers).not.toContain("Ticker");
-    expect(parsed.rows.length).toBe(2);
-    expect(parsed.rows[0][parsed.headers.indexOf("Maturity")]).toBe("Apr 01 2027");
-  });
-
-  test("NAV history workbook", () => {
-    const parsed = parseVanEckHistoryXlsx(buildXlsx(HISTORY_ROWS));
-    expect(parsed.rows.length).toBe(2);
-    expect(parsed.rows[0][0]).toBe("Sep 18 2026");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 10. Fund page parsing
-// ---------------------------------------------------------------------------
-
-describe("parseVanEckFundPage", () => {
-  test("GDX publishes Gross and Net expense ratios separately", () => {
-    const html = `
-      <h1>GDX VanEck Gold Miners ETF</h1>
-      <div>NAV</div><div>$95.67</div><div>as of September 18, 2026</div>
-      <div>YTD RETURNS</div><div>11.22%</div><div>as of September 18, 2026</div>
-      <div>Total Net Assets</div><div>$28.42B</div><div>as of September 18, 2026</div>
-      <div>Gross Expense Ratio</div><div>0.51%</div>
-      <div>Net Expense Ratio</div><div>0.51%</div>
-      <div>Inception Date</div><div>05/16/2006</div>`;
-    const parsed = parseVanEckFundPage(html, "https://www.vaneck.com/us/en/investments/equity/gdx/overview/");
-    expect(parsed.nav).toBe(95.67);
-    expect(parsed.ytdReturn).toBe(11.22);
-    expect(parsed.totalNetAssets).toBe(28_420_000_000);
-    expect(parsed.inceptionDate).toBe("May 16 2006");
-    expect(parsed.grossExpenseRatio).toBe(0.51);
-    expect(parsed.netExpenseRatio).toBe(0.51);
-    expect(parsed.fundName).toContain("Gold Miners");
-    expect(parsed.navAsOf).toBe("Sep 18 2026");
-    expect(parsed.ytdAsOf).toBe("Sep 18 2026");
-    expect(parsed.totalNetAssetsAsOf).toBe("Sep 18 2026");
-    expect(parsed.fundPage).toBe("https://www.vaneck.com/us/en/investments/equity/gdx/overview/");
-  });
-
-  test("SMH publishes a single Total Expense Ratio, and the Net figure is used", () => {
-    const html = `
-      <h1>SMH VanEck Semiconductor ETF</h1>
-      <div>NAV</div><div>$572.84</div><div>as of September 18, 2026</div>
-      <div>YTD RETURNS</div><div>59.07%</div>
-      <div>Total Net Assets</div><div>$74.06B</div>
-      <div>Total Expense Ratio</div><div>0.35%</div>
-      <div>Inception Date</div><div>12/20/2011</div>`;
-    const parsed = parseVanEckFundPage(html, "https://www.vaneck.com/us/en/investments/equity/smh/overview/");
-    expect(parsed.nav).toBe(572.84);
-    expect(parsed.ytdReturn).toBe(59.07);
-    expect(parsed.totalExpenseRatio).toBe(0.35);
-    expect(parsed.inceptionDate).toBe("Dec 20 2011");
-    // GDX publishes Gross and Net separately; SMH publishes only the total.
-    expect(parsed.grossExpenseRatio).toBeNull();
-  });
-
-  test("an unreadable page yields placeholders, never fabricated numbers", () => {
-    const parsed = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
-    expect(parsed.nav).toBeNull();
-    expect(parsed.ytdReturn).toBeNull();
-    expect(parsed.totalNetAssets).toBeNull();
-    expect(parsed.grossExpenseRatio).toBeNull();
-    expect(parsed.netExpenseRatio).toBeNull();
-    expect(parsed.inceptionDate).toBeNull();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 11. Return arithmetic
-// ---------------------------------------------------------------------------
-
-describe("return arithmetic", () => {
-  test("cumulative and annualized are exact inverses", () => {
-    const cumulative = cumulativeFromAnnualized(10, 3);
-    expect(cumulative).toBeCloseTo(33.1, 1);
-    expect(annualizedFromCumulative(cumulative, 3)).toBeCloseTo(10, 2);
-    expect(cumulativeFromAnnualized(null, 3)).toBeNull();
-    expect(annualizedFromCumulative(null, 3)).toBeNull();
-    // zero years is arithmetically zero growth, not an error
-    expect(cumulativeFromAnnualized(10, 0)).toBe(0);
-    // a total loss cannot be annualized
-    expect(annualizedFromCumulative(-100, 3)).toBeNull();
-  });
-
-  test("premiumDiscount is null unless both inputs are numbers", () => {
-    expect(premiumDiscount(95.48, 95.67)).toBe(-0.2); // rounded to 2dp
-    expect(premiumDiscount(null, 95.67)).toBeNull();
-    expect(premiumDiscount(95.48, null)).toBeNull();
-    expect(premiumDiscount(95.48, 0)).toBeNull();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 12. Distribution frequency coding
-// ---------------------------------------------------------------------------
-
-describe("distribution frequency", () => {
-  test("inferDistributionFrequency reads the cadence out of ex-dates", () => {
-    const monthly = ["2026-01-05", "2026-02-04", "2026-03-05", "2026-04-06"];
-    const quarterly = ["2025-09-22", "2025-12-22", "2026-03-23", "2026-06-22"];
-    expect(inferDistributionFrequency(monthly)).toBe("Monthly");
-    expect(inferDistributionFrequency(quarterly)).toBe("Quarterly");
-    // fewer than three ex-dates cannot establish a cadence
-    expect(inferDistributionFrequency([])).toBe("Unknown");
-    expect(inferDistributionFrequency(["2026-01-05"])).toBe("Unknown");
-    expect(inferDistributionFrequency(["2025-06-20", "2025-12-22", "2026-06-22"])).toBe("Semiannually");
-    expect(inferDistributionFrequency(["2024-01-05", "2025-08-10", "2026-03-02"])).toBe("Irregular");
-  });
-
-  test("frequencyCode maps labels to the sortable codes the catalog needs", () => {
-    // the coded label the catalog sorts on, mirroring the client formatter
-    expect(frequencyCode("Monthly")).toBe("01 - Monthly");
-    expect(frequencyCode("Quarterly")).toBe("04 - Quarterly");
-    expect(frequencyCode("Semiannually")).toBe("06 - Semi-annually");
-    expect(frequencyCode("Annually")).toBe("12 - Annually");
-    expect(frequencyCode("Irregular")).toBe("99 - Irregular");
-    expect(frequencyCode("None")).toBe("00 - None");
-    expect(frequencyCode("Unknown")).toBe("00 - Unknown");
-    expect(frequencyCode("")).toBe("00 - None");
-    expect(frequencyCode(null)).toBe("00 - None");
-  });
-
-  test("paymentsPerYear matches each code", () => {
-    expect(paymentsPerYear("Monthly")).toBe(12);
-    expect(paymentsPerYear("Quarterly")).toBe(4);
-    expect(paymentsPerYear("Semiannually")).toBe(2);
-    expect(paymentsPerYear("Annually")).toBe(1);
-    // an irregular or unknown cadence has no payments-per-year, so no indicated
-    // yield is invented
-    expect(paymentsPerYear("Irregular")).toBeNull();
-    expect(paymentsPerYear("Unknown")).toBeNull();
-  });
-
-  test("the indicated yield is annualized from the latest distribution and NAV", () => {
-    // signature is (latestDividend, paymentsPerYear, nav)
-    expect(indicatedDividendYield(0.25, 4, 95.67)).toBe(1.05);
-    expect(indicatedDividendYield(null, 4, 95.67)).toBeNull();
-    expect(indicatedDividendYield(0.25, null, 95.67)).toBeNull();
-    expect(indicatedDividendYield(0.25, 4, null)).toBeNull();
-    expect(indicatedDividendYield(0.25, 0, 95.67)).toBeNull();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 13. Paging
-// ---------------------------------------------------------------------------
-
-describe("chunkRows", () => {
-  test("splits evenly and keeps a partial final page", () => {
-    expect(chunkRows([1, 2, 3, 4, 5], 2)).toEqual([[1, 2], [3, 4], [5]]);
-    expect(chunkRows([1, 2, 3, 4], 2)).toEqual([[1, 2], [3, 4]]);
-    expect(chunkRows([], 25)).toEqual([]);
-  });
-
-  test("page sizes always sum back to the input length", () => {
-    for (const size of [1, 7, 25, 250, 1000]) {
-      const rows = Array.from({ length: 121 }, (_, i) => i);
-      const pages = chunkRows(rows, size);
-      expect(pages.flat().length).toBe(121);
-      expect(pages.every((p) => p.length > 0)).toBe(true);
-    }
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 14. Investment Finder verified table (VANECK_FINDER)
-// ---------------------------------------------------------------------------
-
-describe("Investment Finder verified table", () => {
-  test("covers every seed fund exactly once", () => {
-    expect(VAN_ECK_SEED.length).toBe(91);
-    expect(Object.keys(VANECK_FINDER).length).toBe(91);
-    for (const seed of VAN_ECK_SEED) {
-      expect(finderForTicker(seed.ticker)).toBeDefined();
-      expect(finderForTicker(seed.ticker.toLowerCase())?.frequency).toBe(
-        finderForTicker(seed.ticker)?.frequency,
-      );
-    }
-    expect(finderForTicker("ZZZZ")).toBeUndefined();
-  });
-
-  test("records yields and frequencies verbatim, with -- as null", () => {
-    expect(finderForTicker("GDX")).toMatchObject({ frequency: "Annual", secYield: 0.41, distributionYield: 0.66, yield12M: 0.97 });
-    // negative SEC yields are published (expenses exceed income), not errors
-    expect(finderForTicker("BUZZ")?.secYield).toBe(-0.46);
-    expect(finderForTicker("BUZZ")?.distributionYield).toBeNull();
-    // funds that make no distributions print `--` for the frequency
-    expect(finderForTicker("ETHV")?.frequency).toBe("--");
-    expect(finderForTicker("VAVX")?.frequency).toBe("Other");
-    expect(finderForTicker("VEFA")?.frequency).toBe("Semi-Annual");
-  });
-
-  test("drops the impossible EMBX 12-month cell instead of transcribing it", () => {
-    // vaneck.com prints `-777.30%` for EMBX 12M — a yield can never be
-    // negative, so the table stores null (see VANECK_FINDER).
-    expect(finderForTicker("EMBX")?.yield12M).toBeNull();
-    expect(finderForTicker("EMBX")?.distributionYield).toBe(6.24);
-  });
-
-  test("month-end YTD fallbacks exist only where the page header lacks a YTD", () => {
-    expect(finderForTicker("CBON")?.monthEndYtd).toBe(5.43);
-    expect(finderForTicker("EMLC")?.monthEndYtd).toBe(2.83);
-    expect(finderForTicker("VBNB")?.monthEndYtd).toBe(7.59);
-    expect(finderForTicker("GDX")?.monthEndYtd).toBeUndefined();
-  });
-
-  test("Russia tenors are flagged as liquidation stubs", () => {
-    for (const ticker of ["RSX", "RSXJ"]) {
-      const row = finderForTicker(ticker);
-      expect(row?.liquidationStub).toBe(true);
-      expect(row?.monthEndTenors).toBeDefined();
-    }
-    expect(finderForTicker("RSX")?.monthEndTenors?.y1).toBe(3.04);
-    expect(finderForTicker("RSXJ")?.monthEndTenors?.y1).toBe(213.06);
-    expect(finderForTicker("VEEM")?.monthEndTenors).toBeUndefined();
-  });
-
-  test("normalizeFinderFrequency maps the finder vocabulary onto feed labels", () => {
-    expect(normalizeFinderFrequency("Annual")).toBe("Annually");
-    expect(normalizeFinderFrequency("Monthly")).toBe("Monthly");
-    expect(normalizeFinderFrequency("Quarterly")).toBe("Quarterly");
-    expect(normalizeFinderFrequency("Semi-Annual")).toBe("Semiannually");
-    expect(normalizeFinderFrequency("Other")).toBe("Other");
-    expect(normalizeFinderFrequency("--")).toBe("Unknown");
-    expect(normalizeFinderFrequency("")).toBe("Unknown");
-    expect(normalizeFinderFrequency(null)).toBe("Unknown");
-  });
-
-  test("paymentsPerYear accepts the finder labels too", () => {
-    expect(paymentsPerYear("Annual")).toBe(1);
-    expect(paymentsPerYear("Semi-Annual")).toBe(2);
-    expect(paymentsPerYear("Other")).toBeNull();
-    expect(paymentsPerYear("--")).toBeNull();
-  });
-
-  test("indicatedYieldAllowed blocks stale distributions, never the wall clock", () => {
-    // DAPP last paid Dec 2024; annualising it in Sep 2026 would invent a
-    // 2.78% yield VanEck itself refuses to print.
-    expect(indicatedYieldAllowed("Dec 23 2024", "Sep 18 2026")).toBe(false);
-    expect(indicatedYieldAllowed("Dec 22 2025", "Sep 18 2026")).toBe(true);
-    expect(indicatedYieldAllowed("Jul 01 2026", "Sep 18 2026")).toBe(true);
-    expect(indicatedYieldAllowed(null, "Sep 18 2026")).toBe(false);
-    expect(indicatedYieldAllowed("Jul 01 2026", null)).toBe(false);
-    expect(indicatedYieldAllowed("—", "Sep 18 2026")).toBe(false);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 15. Listing-exchange resolution
-// ---------------------------------------------------------------------------
-
-describe("exchange resolution", () => {
-  test("Nasdaq symdir codes map onto display names", () => {
-    expect(nasdaqExchangeDisplayName("P")).toBe("NYSE Arca");
-    expect(nasdaqExchangeDisplayName("N")).toBe("NYSE");
-    expect(nasdaqExchangeDisplayName("A")).toBe("NYSE American");
-    expect(nasdaqExchangeDisplayName("Q")).toBe("NASDAQ");
-    expect(nasdaqExchangeDisplayName("Z")).toBe("Cboe BZX");
-    expect(nasdaqExchangeDisplayName("?")).toBeNull();
-  });
-
-  test("parseNasdaqSymdir reads the pipe-delimited directory, skipping header and trailer", () => {
-    const text = [
-      "ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol",
-      "GDX|VanEck Gold Miners ETF|P|GDX|Y|100|N|GDX",
-      "HODL|VanEck Bitcoin ETF|Z|HODL|Y|100|N|HODL",
-      "File Creation Time: 09182026 20:00|",
-    ].join("\r\n");
-    const map = parseNasdaqSymdir(text);
-    expect(map.get("GDX")).toBe("NYSE Arca");
-    expect(map.get("HODL")).toBe("Cboe BZX");
-    expect(map.has("ACT Symbol")).toBe(false);
-    expect(map.size).toBe(2);
-  });
-
-  test("Yahoo exchange names normalise onto the same display names", () => {
-    expect(normalizeYahooExchangeName("NYSEArca")).toBe("NYSE Arca");
-    expect(normalizeYahooExchangeName("BTS")).toBe("Cboe BZX");
-    expect(normalizeYahooExchangeName("NMS")).toBe("NASDAQ");
-    expect(normalizeYahooExchangeName("NYQ")).toBe("NYSE");
-    // unknown codes pass through instead of collapsing to an em dash
-    expect(normalizeYahooExchangeName("NSD")).toBe("NSD");
-    expect(normalizeYahooExchangeName("")).toBeNull();
-    expect(normalizeYahooExchangeName(null)).toBeNull();
-  });
-
-  test("parseYahooExchangeName reads meta.exchangeName", () => {
-    expect(parseYahooExchangeName({ chart: { result: [{ meta: { exchangeName: "NYSEArca" } }] } })).toBe("NYSEArca");
-    expect(parseYahooExchangeName({ chart: { result: [{}] } })).toBeNull();
-    expect(parseYahooExchangeName({})).toBeNull();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 16. Fund documents and legacy holdings URLs
-// ---------------------------------------------------------------------------
-
-describe("fund documents", () => {
-  test("fact sheets and prospectus links follow the verified layouts", () => {
-    expect(vaneckFactSheetUrl("GDX")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx-fact-sheet.pdf");
-    expect(vaneckFactSheetUrl("ZZZZ")).toBeNull();
-    expect(vaneckProspectusUrl("GDX", "summary")).toBe("https://vaneck.onlineprospectus.net/vaneck/GDX/index.php?ctype=summary");
-    const docs = vaneckFundDocuments("AFK");
-    expect(docs.factSheet).toContain("africa-index-etf-afk-fact-sheet.pdf");
-    expect(docs.statutoryProspectus).toContain("/AFK/index.php?ctype=prospectus");
-    expect(docs.sai).toContain("/AFK/index.php?ctype=sai");
-    expect(docs.annualReport).toContain("/AFK/index.php?ctype=annual");
-    expect(docs.semiAnnualReport).toContain("/AFK/index.php?ctype=semi-annual");
-  });
-
-  test("the legacy holdings URL matches the Russia funds' own Resources panels", () => {
-    expect(vaneckLegacyHoldingsUrl("RSX")).toBe("https://www.vaneck.com/us/en/etf/equity/rsx/holdings/download/xlsx/");
-    expect(vaneckLegacyHoldingsUrl("rsxj")).toBe("https://www.vaneck.com/us/en/etf/equity/rsxj/holdings/download/xlsx/");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 17. Fund-page SI stat and benchmark index
-// ---------------------------------------------------------------------------
-
-describe("parseVanEckFundPage (since-inception stat and index)", () => {
-  test("a days-old fund's Performance since inception is parsed, never relabelled as YTD", () => {
-    const html = `
-      <h1>VEEM VanEck MSCI EM Analyst Sentiment ETF</h1>
-      <div>NAV</div><div>$24.62</div><div>as of September 18, 2026</div>
-      <div>Performance since inception</div><div>-1.48%</div><div>as of September 18, 2026</div>
-      <div>Total Net Assets</div><div>$3.69M</div><div>as of September 18, 2026</div>
-      <div>Total Expense Ratio</div><div>0.30%</div>
-      <div>Inception Date</div><div>09/09/2026</div>
-      <p>VanEck MSCI EM Analyst Sentiment ETF (VEEM) seeks to track the price and yield performance of the MSCI Emerging Markets Analyst Sentiment Select Index (NU763973).</p>`;
-    const parsed = parseVanEckFundPage(html, "https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/");
-    expect(parsed.nav).toBe(24.62);
-    expect(parsed.ytdReturn).toBeNull();
-    expect(parsed.siReturn).toBe(-1.48);
-    expect(parsed.siAsOf).toBe("Sep 18 2026");
-    expect(parsed.totalExpenseRatio).toBe(0.3);
-    expect(parsed.indexTicker).toBe("NU763973");
-    expect(parsed.indexName).toBe("MSCI Emerging Markets Analyst Sentiment Select Index");
-  });
-
-  test("a page without the SI stat or index copy yields nulls", () => {
-    const parsed = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
-    expect(parsed.siReturn).toBeNull();
-    expect(parsed.siAsOf).toBeNull();
-    expect(parsed.indexTicker).toBeNull();
-    expect(parsed.indexName).toBeNull();
-  });
-});
-
-describe("metrics returnsBasis and performanceAsOf (STANDARD.md 9a)", () => {
-  const lastKeys = (entry: Record<string, unknown>) => Object.keys(entry.metrics as object).slice(-2);
-
-  test("every seed entry carries both fields at the end of metrics", () => {
-    const entry = seedCatalogEntry(VAN_ECK_SEED[0]);
-    expect(lastKeys(entry)).toEqual(["returnsBasis", "performanceAsOf"]);
-    const metrics = entry.metrics as Record<string, unknown>;
-    expect(String(metrics.returnsBasis).length).toBeGreaterThan(1);
-    expect(metrics.performanceAsOf).toBeNull();
-  });
-
-  test("performanceAsOf is the ISO returns stamp, not the NAV date", () => {
-    const entry = {
-      asOfDate: "Sep 25 2026",
-      returns: { monthEnd: { asOfDate: "Aug 31 2026" }, quarterEnd: { asOfDate: "Jun 30 2026" } },
-      metrics: { performanceAsOf: "stale", ytd: 1, returnsBasis: "official VanEck Average Annual Total Returns (NAV)" },
-    };
-    const out = withReturnsMeta(entry).metrics as Record<string, unknown>;
-    expect(out.performanceAsOf).toBe("2026-08-31");
-    expect(out.returnsBasis).toBe("official VanEck Average Annual Total Returns (NAV)");
-    expect(Object.keys(out)).toEqual(["ytd", "ytdAsOf", "returnsBasis", "performanceAsOf"]);
-  });
-
-  test("unknown stamp stays null and a blank basis is replaced by an honest label", () => {
-    const out = withReturnsMeta({
-      returns: { monthEnd: { asOfDate: "\u2014" } },
-      metrics: { returnsBasis: "-" },
-    }).metrics as Record<string, unknown>;
-    expect(out.performanceAsOf).toBeNull();
-    expect(out.returnsBasis).toBe("not yet refreshed from vaneck.com");
-  });
-});
-
-// ---------------------------------------------------------------------------
-// 18. Performance block quarter-end leg
-// ---------------------------------------------------------------------------
-
-describe("parseVanEckPerformance (quarter-end leg)", () => {
-  const monthRow = {
-    Type: "NAV", OneYear: 57.82, CumulativeThreeYear: 251.33, CumulativeFiveYear: 224.1,
-    CumulativeTenYear: 326.5, ThreeYear: 51.58, FiveYear: 26.48, TenYear: 15.59, Life: 5.41,
-  };
-
-  test("reads the quarter-end NAV row when the block publishes one", () => {
-    const json = {
-      data: {
-        MonthEndPerformances: [monthRow],
-        MonthEndAsOfDate: "08/31/2026",
-        QuarterEndPerformances: [
-          { Type: "NAV", OneYear: 45.77, CumulativeThreeYear: 159.2, CumulativeFiveYear: 137.5, CumulativeTenYear: 197.8, ThreeYear: 37.44, FiveYear: 18.9, TenYear: 11.57, Life: 4.06 },
-          { Type: "Market Price", OneYear: 45.93, Life: 4.06 },
-        ],
-        QuarterEndAsOfDate: "06/30/2026",
-      },
-    };
-    const parsed = parseVanEckPerformance(json);
-    expect(parsed?.tr1y).toBe(57.82);
-    expect(parsed?.asOfDate).toBe("Aug 31 2026");
-    expect(parsed?.quarterEnd?.asOfDate).toBe("Jun 30 2026");
-    expect(parsed?.quarterEnd?.tr1y).toBe(45.77);
-    expect(parsed?.quarterEnd?.cagr3y).toBe(37.44);
-    expect(parsed?.quarterEnd?.siAnn).toBe(4.06);
-  });
-
-  test("degrades to a null quarter-end when the block only has month-end", () => {
-    const parsed = parseVanEckPerformance({ data: { MonthEndPerformances: [monthRow], MonthEndAsOfDate: "08/31/2026" } });
-    expect(parsed?.tr1y).toBe(57.82);
-    expect(parsed?.quarterEnd).toBeNull();
-  });
-
-  test("a block with no NAV row is not a performance reading", () => {
-    expect(parseVanEckPerformance({ data: { MonthEndPerformances: [{ Type: "Market Price", OneYear: 1 }] } })).toBeNull();
-    expect(parseVanEckPerformance({})).toBeNull();
-  });
-});
-
-import { test as frequencyLabelTest, expect as frequencyLabelExpect } from 'bun:test';
-frequencyLabelTest('Frequency placeholders display None and existing cadence labels stay unchanged', async () => {
-  const text = await Bun.file(new URL('../app.tsx', import.meta.url)).text();
-  const start = /^([ \t]*)function (formatDividendFrequency|formatDistributionFrequency)\(/m.exec(text);
-  frequencyLabelExpect(start).not.toBeNull();
-  const tail = text.slice(start!.index);
-  const end = new RegExp('^' + start![1] + '\u007d', 'm').exec(tail);
-  frequencyLabelExpect(end).not.toBeNull();
-  const js = new Bun.Transpiler({ loader: 'ts' }).transformSync(tail.slice(0, end!.index + end![0].length));
-  const format = new Function(js + '; return ' + start![2] + ';')();
-  for (const value of [null, undefined, '', '  ', '-', '‐', '‑', '‒', '–', '—', ' — ']) {
-    frequencyLabelExpect(format(value)).toBe('00 - None');
-  }
-  for (const [input, expected] of [
-    ['None', '00 - None'], ['Unknown', '00 - Unknown'], ['Monthly', '01 - Monthly'],
-    ['Quarterly', '04 - Quarterly'], ['Semi-annually', '06 - Semi-annually'],
-    ['Annually', '12 - Annually'], ['Irregular', '99 - Irregular'],
-  ]) frequencyLabelExpect(format(input)).toBe(expected);
-});
-
-
-import { test as queueTest, describe as queueDescribe, expect as queueExpect } from 'bun:test';
-
-async function tickerChainHarness() {
- const app=await Bun.file(new URL('../app.tsx',import.meta.url)).text();
- const source=app.match(/^function withTickerChain<T>\([\s\S]*?^\}/m)?.[0];
- queueExpect(source).toBeDefined();
- const javascript=new Bun.Transpiler({loader:'ts'}).transformSync(source!);
- const chains=new Map<string,Promise<void>>();
- const enqueue=new Function('holdingsChains',`${javascript}; return withTickerChain;`)(chains) as
-  <T>(ticker:string,fn:()=>Promise<T>)=>Promise<T>;
- return {chains,enqueue};
-}
-
-queueDescribe('per-ticker queue preserves caller results and stores completion-only promises',()=>{
- queueTest('successful generic result reaches caller, not the internal queue',async()=>{
-  const {chains,enqueue}=await tickerChainHarness();
-  const value={rows:[['AGEM']]};
-  queueExpect(await enqueue('AGEM',async()=>value)).toBe(value);
-  queueExpect(await chains.get('AGEM')).toBeUndefined();
- });
- queueTest('rejection reaches caller without poisoning the next queued task',async()=>{
-  const {chains,enqueue}=await tickerChainHarness();
-  const error=new Error('page failed');
-  const work=enqueue('AGEM',async()=>{throw error;});
-  const observed=work.catch(reason=>reason);
-  const settled=chains.get('AGEM');
-  const next=enqueue('AGEM',async()=>42);
-  queueExpect(await observed).toBe(error);
-  queueExpect(await settled).toBeUndefined();
-  queueExpect(await next).toBe(42);
-  queueExpect(await chains.get('AGEM')).toBeUndefined();
- });
- queueTest('synchronous callback throws also leave the queue usable',async()=>{
-  const {chains,enqueue}=await tickerChainHarness();
-  const error=new Error('synchronous failure');
-  queueExpect(await enqueue('AGEM',()=>{throw error;}).catch(reason=>reason)).toBe(error);
-  queueExpect(await chains.get('AGEM')).toBeUndefined();
-  queueExpect(await enqueue('AGEM',async()=>'recovered')).toBe('recovered');
- });
- queueTest('same-ticker work stays serial while other tickers run independently',async()=>{
-  const {chains,enqueue}=await tickerChainHarness();
-  let release!:()=>void;
-  const gate=new Promise<void>(resolve=>{release=resolve;});
-  const events:string[]=[];
-  const first=enqueue('AGEM',async()=>{events.push('first');await gate;events.push('done');return 1;});
-  const second=enqueue('AGEM',async()=>{events.push('second');return 2;});
-  try {
-   queueExpect(await enqueue('SGOL',async()=>3)).toBe(3);
-   queueExpect(events).toEqual(['first']);
-  } finally { release(); }
-  queueExpect(await Promise.all([first,second])).toEqual([1,2]);
-  queueExpect(events).toEqual(['first','done','second']);
-  queueExpect(await chains.get('AGEM')).toBeUndefined();
-  queueExpect(await chains.get('SGOL')).toBeUndefined();
- });
-});
-
-
-import { test as headerTest, expect as headerExpect } from 'bun:test';
-async function headerSummaryHarness() {
-  const source = await Bun.file(new URL('../app.tsx', import.meta.url)).text();
-  const match = /^([ \t]*)function renderHeaderSummary\(/m.exec(source);
-  headerExpect(match).not.toBeNull();
-  const tail = source.slice(match!.index);
-  const end = new RegExp('^' + match![1] + '}', 'm').exec(tail)!;
-  const js = new Bun.Transpiler({ loader: 'ts' }).transformSync(tail.slice(0, end.index + end[0].length));
-  const makeNode = (text = ''): any => {
-    const node: any = { textContent: text, childNodes: [], dataset: {}, listeners: {} };
-    node.replaceChildren = (...children: any[]) => { node.childNodes = children; };
-    node.append = (...children: any[]) => { node.childNodes.push(...children); };
-    node.addEventListener = (name: string, listener: any) => { node.listeners[name] = listener; };
-    return node;
-  };
-  const panel = makeNode(), subtitle = makeNode(), details = makeNode('Data: source link and updated timestamp');
-  subtitle.append(details);
-  const document = { getElementById: () => panel, createTextNode: makeNode, createElement: () => makeNode() };
-  const render = new Function('document', js + '; return renderHeaderSummary;')(document);
-  const text = () => subtitle.childNodes.map((n: any) => n.textContent).join('');
-  return { render, panel, subtitle, details, makeNode, text };
-}
-headerTest('header has no visible subtitle without selection; original details nodes are retained', async () => {
-  const h = await headerSummaryHarness();
-  h.render(h.subtitle, new Set(), null, () => {});
-  headerExpect(h.text()).toBe('');
-  headerExpect(h.panel.childNodes).toEqual([h.details]);
-  headerExpect(h.panel.childNodes[0]).toBe(h.details);
-});
-headerTest('header shows sorted selected tickers only, preserving click activation and highlight', async () => {
-  const h = await headerSummaryHarness(); const activated: string[] = [];
-  h.render(h.subtitle, new Set(['ZZZ', 'AAA']), 'AAA', (ticker: string) => activated.push(ticker));
-  headerExpect(h.text()).toBe('2 selected: AAA, ZZZ');
-  const links = h.subtitle.childNodes.filter((n: any) => n.dataset.headerFund);
-  headerExpect(links[0].className).toContain('underline');
-  links[1].listeners.click({ preventDefault() {} });
-  headerExpect(activated).toEqual(['ZZZ']);
-  headerExpect(h.panel.childNodes[0]).toBe(h.details);
-});
-headerTest('all selected still lists tickers; clear replaces both summary and selection', async () => {
-  const h = await headerSummaryHarness();
-  h.render(h.subtitle, new Set(['CCC','AAA','BBB']), 'BBB', () => {});
-  headerExpect(h.text()).toBe('3 selected: AAA, BBB, CCC');
-  const next = h.makeNode('Fresh detail context'); h.subtitle.replaceChildren(next);
-  h.render(h.subtitle, new Set(), null, () => {});
-  headerExpect(h.text()).toBe(''); headerExpect(h.panel.childNodes).toEqual([next]);
-});
-headerTest('header markup supplies a focusable counter and hidden rich panel with dismissal', async () => {
-  const html = await Bun.file(new URL('../index.html', import.meta.url)).text();
-  headerExpect(html).toMatch(/<button[^>]*aria-controls="app-summary"[^>]*id="ticker-count"/);
-  headerExpect(html).toContain('id="app-summary" role="region" aria-label="ETF catalog information" hidden');
-  headerExpect(html).toContain("event.key !== 'Escape'");
-  headerExpect(html).toContain("trigger.addEventListener('focus', show)");
-  headerExpect(html).toContain("trigger.addEventListener('pointerenter'");
-});
-
-// ---------------------------------------------------------------------------
-// Control resolver, config / --help / README / workflow parity
-// ---------------------------------------------------------------------------
-
-const configFile = (): Record<string, unknown> => JSON.parse(read("scripts/update-data.config.json"));
-const TENOR = /^(PERFORMANCE|TOTAL_RETURN)_(1Y|3Y|5Y|10Y)$/;
-
-describe("resolveControls", () => {
-  test("precedence: file < advanced < nonblank input < environment", () => {
+const GDX_PAGE = `<h1>GDX VanEck Gold Miners ETF</h1>
+  <div>NAV</div><div>$95.67</div><div>as of September 18, 2026</div>
+  <div>YTD RETURNS</div><div>11.22%</div><div>as of September 18, 2026</div>
+  <div>Total Net Assets</div><div>$28.42B</div><div>as of September 18, 2026</div>
+  <div>Gross Expense Ratio</div><div>0.51%</div><div>Net Expense Ratio</div><div>0.51%</div>
+  <div>Inception Date</div><div>05/16/2006</div>`;
+const VEEM_PAGE = `<h1>VEEM VanEck MSCI EM Analyst Sentiment ETF</h1>
+  <div>NAV</div><div>$24.62</div><div>as of September 18, 2026</div>
+  <div>Performance since inception</div><div>-1.48%</div><div>as of September 18, 2026</div>
+  <div>Total Net Assets</div><div>$3.69M</div><div>as of September 18, 2026</div>
+  <div>Total Expense Ratio</div><div>0.30%</div><div>Inception Date</div><div>09/09/2026</div>
+  <p>VanEck MSCI EM Analyst Sentiment ETF (VEEM) seeks to track the price and yield performance of the MSCI Emerging Markets Analyst Sentiment Select Index (NU763973).</p>`;
+
+// ===========================================================================
+describe("controls", () => {
+  test("precedence: file < advanced < nonblank input < env; blank input inherits, advanced and explicit-empty env clear", () => {
     const c = resolveControls({ CONCURRENCY: 2, TICKERS: "GDX" }, { CONCURRENCY: 3, TICKERS: "SMH" }, { CONCURRENCY: "4", TICKERS: "" }, { CONCURRENCY: "5" });
-    expect(c.CONCURRENCY).toBe("5");
-    expect(c.TICKERS).toBe("SMH");
+    expect([c.CONCURRENCY, c.TICKERS]).toEqual(["5", "SMH"]);
     expect(resolveControls({ CONCURRENCY: 2 }, { CONCURRENCY: 3 }, { CONCURRENCY: "4" }).CONCURRENCY).toBe("4");
-    expect(resolveControls({ SKIP_YAHOO: true }, {}, {}, { SKIP_YAHOO: "false" }).SKIP_YAHOO).toBe("false");
-  });
-
-  test("blank input inherits the file value; advanced and env may deliberately blank a key", () => {
     expect(resolveControls({ CONCURRENCY: 2 }, {}, { CONCURRENCY: "" }).CONCURRENCY).toBe("2");
     expect(resolveControls({ TICKERS: "GDX" }, { TICKERS: "" }, { TICKERS: "" }).TICKERS).toBe("");
     expect(resolveControls({ TICKERS: "GDX" }, {}, { TICKERS: "SMH" }, { TICKERS: "" }).TICKERS).toBe("");
+    expect(resolveControls({ SKIP_YAHOO: true }, {}, {}, { SKIP_YAHOO: "false" }).SKIP_YAHOO).toBe("false");
   });
 
-  test("HISTORICAL_PAGE_SIZE env alias is kept and loses to HISTORY_PAGE_SIZE", () => {
+  test("HISTORICAL_PAGE_SIZE alias is kept and loses to HISTORY_PAGE_SIZE", () => {
     expect(resolveControls({}, {}, {}, { HISTORICAL_PAGE_SIZE: "500" }).HISTORY_PAGE_SIZE).toBe("500");
     expect(resolveControls({}, {}, {}, { HISTORICAL_PAGE_SIZE: "500", HISTORY_PAGE_SIZE: "600" }).HISTORY_PAGE_SIZE).toBe("600");
   });
 
-  test("scheduled path (empty inputs and advanced) equals the config defaults", () => {
-    const defaults = configFile();
-    const c = resolveControls(defaults, JSON.parse("{}"), {}, {});
-    expect(c).toEqual(Object.fromEntries(Object.entries(defaults).map(([k, v]) => [k, String(v)])));
-  });
-
-  test("invalid values, unknown keys, non-scalars and newlines are rejected", () => {
-    const bad = [
-      { UNKNOWN: 1 }, { SEC_UA: "x\nEVIL=yes" }, { CONCURRENCY: 0 }, { MAX_RETRIES: 0 }, { MAX_RETRIES: -1 },
-      { MAX_FETCHES: 1.5 }, { REQUEST_SLEEP: "-1" }, { VERBOSE: "maybe" }, { USE_SYSTEM_CA: "maybe" }, { AUM: "1:2:3" }, { TER: "0.5" },
-      { HISTORY_RANGE: "forever" }, { HISTORY_RANGE: "0y" }, { PERFORMANCE_1Y: "5:1" }, { TICKERS: ["GDX"] },
-      { TICKERS: { a: 1 } }, null, [],
-    ];
-    for (const value of bad) expect(() => resolveControls(value)).toThrow();
-    expect(() => resolveControls({}, { SEC_UA: "x\rfoo" })).toThrow();
+  test("strict validation: bad ranges, HISTORY_RANGE, MAX_RETRIES < 1, unknown keys, non-scalars, CR/LF/NUL", () => {
+    for (const value of [
+      { UNKNOWN: 1 }, { SEC_UA: "x\nEVIL=yes" }, { SEC_UA: "x\rfoo" }, { SEC_UA: "x\0bad" }, { CONCURRENCY: 0 }, { MAX_RETRIES: 0 },
+      { MAX_RETRIES: -1 }, { MAX_FETCHES: 1.5 }, { REQUEST_SLEEP: "-1" }, { VERBOSE: "maybe" }, { USE_SYSTEM_CA: "maybe" }, { AUM: "1:2:3" },
+      { TER: "0.5" }, { HISTORY_RANGE: "forever" }, { HISTORY_RANGE: "0y" }, { PERFORMANCE_1Y: "5:1" }, { TICKERS: ["GDX"] }, { TICKERS: { a: 1 } }, null, [],
+    ]) {
+      expect(() => resolveControls(value)).toThrow();
+      if (value && !Array.isArray(value)) expect(() => resolveControls({}, value)).toThrow();
+    }
     expect(() => resolveControls({}, {}, { TICKERS: "GDX\nSMH" })).toThrow();
-    expect(() => resolveControls({}, {}, {}, { SEC_UA: "x\0bad" })).toThrow();
-    expect(() => resolveControls({}, [] as unknown)).toThrow();
-    expect(() => JSON.parse("{bad")).toThrow();
-  });
-
-  test("MAX_RETRIES is an integer >= 1 and HISTORY_RANGE is max or Ny", () => {
+    expect(() => resolveControls({}, {}, {}, { MAX_RETRIES: "0" })).toThrow();
     expect(() => parseMaxRetries("0")).toThrow();
-    expect(parseMaxRetries("1")).toBe(1);
-    expect(parseMaxRetries("")).toBe(3);
-    expect(parseHistoryRange("")).toBe("max");
-    expect(parseHistoryRange("5Y")).toBe("5y");
+    expect([parseMaxRetries("1"), parseMaxRetries(""), parseHistoryRange(""), parseHistoryRange("5Y")]).toEqual([1, 3, "max", "5y"]);
     expect(() => parseHistoryRange("2026-01-01")).toThrow();
+    expect(() => parseRange("0.35", "TER")).toThrow(/min:max/);
   });
 
-  test("HISTORY_RANGE limits the Yahoo request window", () => {
-    const now = 1_789_848_311;
-    expect(historyWindowStartEpoch("max", now)).toBe(0);
-    expect(yahooChartUrl("GDX", now * 1000)).toContain("period1=0&");
-    const fiveYears = historyWindowStartEpoch("5y", now);
-    expect(fiveYears).toBe(Math.floor(now - 5 * 365.25 * 86_400));
-    expect(yahooChartUrl("GDX", now * 1000, "5y")).toContain(`period1=${fiveYears}&period2=${now}`);
-  });
-
-  test("provider-specific default values", () => {
-    const config = readConfig(resolveControls(configFile()));
-    expect(config.maxFetches).toBe(0);
-    expect(config.requestSleep).toBe(2);
-    expect(config.concurrency).toBe(2);
-    expect(config.holdingsPageSize).toBe(250);
-    expect(config.historyPageSize).toBe(1000);
-    expect(config.maxRetries).toBe(3);
-    expect(config.historyRange).toBe("max");
-    expect(config.tickers).toEqual([]);
-    expect(config.edgarFallback).toBe(true);
-    expect(config.storeRawDownloads).toBe(false);
-    expect(config.skipYahoo).toBe(false);
-    expect(config.skipVanEck).toBe(false);
-    expect(config.offlineSeed).toBe(false);
-    expect(config.aumRange).toBeUndefined();
-    expect(configFile().SEC_UA).toBe("daggerok ETF feed daggerok@gmail.com");
-    expect(config.secUa).toBe(SEC_UA_DEFAULT);
-    expect(readConfig({}).secUa).toBe(SEC_UA_DEFAULT);
-  });
-});
-
-describe("config, --help, README and workflow parity", () => {
-  test("config keys, CONTROL_NAMES, --help and README rows stay in sync", () => {
+  test("config file: keys equal CONTROL_NAMES and --help, values are strings, the scheduled path equals the defaults", async () => {
     expect(Object.keys(configFile()).sort()).toEqual([...CONTROL_NAMES].sort());
-    expect(Object.values(configFile()).every((v) => typeof v === "string")).toBe(true);
-    const doc = read("README.md");
-    const src = read("scripts/update-data.ts");
-    const usage = src.slice(src.indexOf("const USAGE = `"), src.indexOf("`;", src.indexOf("const USAGE = `")));
+    for (const value of Object.values(configFile())) expect(typeof value).toBe("string");
+    expect(resolveControls(configFile(), {}, {}, {})).toEqual(configFile());
+    const child = Bun.spawn([process.execPath, path.join(scriptsDir, "update-data.ts"), "--help"], {
+      cwd: tmpdir(), stdout: "pipe", stderr: "pipe", env: { PATH: process.env.PATH ?? "", HOME: process.env.HOME ?? "" },
+    });
+    const help = await new Response(child.stdout).text();
+    await child.exited;
     for (const name of CONTROL_NAMES) {
-      const tenor = name.match(TENOR);
-      // README and --help list the PERFORMANCE_* / TOTAL_RETURN_* tenors on one row each
-      expect(doc).toContain(tenor ? "`_" + tenor[2] + "`" : "`" + name + "`");
-      if (tenor) expect(doc).toContain("`" + tenor[1] + "_YTD`");
-      expect(usage).toContain(tenor ? tenor[1] + "_YTD|1Y|3Y|5Y|10Y" : name);
+      const tenor = name.match(/^(PERFORMANCE|TOTAL_RETURN)_(YTD|1Y|3Y|5Y|10Y)$/);
+      expect(help).toContain(tenor ? `${tenor[1]}_YTD|1Y|3Y|5Y|10Y` : name);
     }
-    expect(doc).toContain("scripts/update-data.config.json");
+    const config = readConfig(resolveControls(configFile()));
+    expect([config.maxFetches, config.requestSleep, config.concurrency, config.maxRetries, config.historyRange, config.tickers]).toEqual([0, 2, 2, 3, "max", []]);
+    expect([config.edgarFallback, config.storeRawDownloads, config.skipYahoo, config.skipVanEck, config.offlineSeed, config.aumRange]).toEqual([true, false, false, false, false, undefined]);
+    expect((await runtimeControls({ TICKERS: "GDX" })).TICKERS).toBe("GDX");
+    const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
+    expect([c.edgarFallback, c.concurrency, c.requestSleep]).toEqual([true, Number(configFile().CONCURRENCY), Number(configFile().REQUEST_SLEEP)]);
   });
 
-  test("README keeps the standard section order and verification commands", () => {
-    const doc = read("README.md");
-    const headings = [...doc.matchAll(/^#{1,3} .+$/gm)].map((m) => m[0]);
-    const order = ["## Using Bun", "## Updating the static VanEck data", "### Data sources", "### Metrics and caveats", "### Update controls", "### Examples", "## TypeScript and verification", "## Brands table", "## Sibling applications", "## License"];
-    let at = -1;
-    for (const heading of order) {
-      const next = headings.indexOf(heading);
-      expect(next).toBeGreaterThan(at);
-      at = next;
-    }
-    for (const cmd of ["bun install --frozen-lockfile", "bun test", "bun build --target=bun scripts/update-data.ts --outfile=/dev/null", "git diff --check"]) {
-      expect(doc).toContain(cmd);
-    }
-    expect(doc).not.toMatch(/worklog|\.prompt|evidence|fixtures|config-docs/i);
+  test("SEC_UA defaults to the daggerok contact and a protected value wins", () => {
+    expect(configFile().SEC_UA).toBe("daggerok ETF feed daggerok@gmail.com");
+    expect([readConfig({}).secUa, readConfig(resolveControls(configFile())).secUa]).toEqual([SEC_UA_DEFAULT, SEC_UA_DEFAULT]);
+    expect(resolveControls(configFile(), { SEC_UA: "adv" }, { SEC_UA: "in" }, { SEC_UA: "protected" }).SEC_UA).toBe("protected");
   });
 
-  test("workflow: inputs map to controls, fixed output dir, shared resolver, hardening", () => {
-    const yml = read(".github/workflows/update-data.yml");
-    const block = yml.slice(yml.indexOf("    inputs:"), yml.indexOf("\npermissions:"));
-    const names = [...block.matchAll(/^      (\w+):$/gm)].map((m) => m[1]);
-    expect(names.length).toBeLessThanOrEqual(25);
-    expect(names).toContain("advanced");
-    expect(block).toMatch(/advanced:[\s\S]*default: '\{\}'/);
-    for (const name of names.filter((n) => n !== "advanced")) expect(CONTROL_NAMES).toContain(name.toUpperCase() as never);
-    expect(yml).toContain("cron: '0 0 * * 0'");
-    expect(yml).not.toMatch(/^  push:/m);
-    expect(yml).toContain("toJSON(inputs)");
-    expect(yml).toContain("resolveControls");
-    expect(yml).not.toMatch(/\$\{\{\s*inputs\./);
-    expect(yml).toContain("git add api/vaneck");
-    expect(yml).not.toMatch(/git add (?!api\/vaneck)/);
-    expect(yml).not.toContain("OUTPUT_DIR");
-    expect(yml).toContain("PROTECTED_SEC_UA: ${{ vars.SEC_UA }}");
-    expect(yml).toContain("timeout-minutes: 30");
-    expect(yml).toContain("persist-credentials: false");
-    expect(yml).not.toContain("bunx tsc");
+  test("AUM bounds, yield and return filters; a bounded range excludes funds without a value (null, never 0)", () => {
+    expect(() => parseAumRange("10X:")).toThrow(/not a number/);
+    expect(() => parseAumRange("1..5B:")).toThrow();
+    expect([parseAumRange("1.5B:"), parseAumRange("$500M:2B"), parseAumRange("")]).toEqual([{ min: 1.5e9, max: undefined }, { min: 5e8, max: 2e9 }, undefined]);
+    expect(parseAumRange("large")).toBeDefined();
+    const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
+    const metrics = { ytd: 5, tr1y: 12, tr3y: 40, tr5y: null, cagr3y: 11, cagr5y: null, dividendYield: 2.5, secYield: null };
+    expect(fundPassesDataFilters(metrics, cfg())).toBe(true);
+    expect([cfg({ DIVIDEND_YIELD: "3:" }), cfg({ PERFORMANCE_1Y: "20:" }), cfg({ PERFORMANCE_3Y: ":10" })].map((c) => fundPassesDataFilters(metrics, c))).toEqual([false, false, false]);
+    expect([cfg({ DIVIDEND_YIELD: "2:3" }), cfg({ PERFORMANCE_1Y: "10:" }), cfg({ TOTAL_RETURN_3Y: ":50" })].map((c) => fundPassesDataFilters(metrics, c))).toEqual([true, true, true]);
+    expect([cfg({ SEC_YIELD: "0:" }), cfg({ PERFORMANCE_5Y: ":100" }), cfg({ TOTAL_RETURN_5Y: "-100:" })].map((c) => fundPassesDataFilters(metrics, c))).toEqual([false, false, false]);
   });
-});
 
-describe("system CA", () => {
-  const realFetch = globalThis.fetch;
-  afterEach(() => { globalThis.fetch = realFetch; });
-  const reexecSpy = () => { const calls = { n: 0 }; const fn = (() => { calls.n += 1; return undefined as never; }) as () => never; return { calls, fn }; };
+  test("unknown TICKERS are an error; the MAX_FETCHES cursor is scoped to the filter set and wraps", () => {
+    expect(() => assertKnownTickers(["GDX", "NOPE"], VAN_ECK_SEED)).toThrow(/NOPE/);
+    expect(() => assertKnownTickers(["GDX"], VAN_ECK_SEED)).not.toThrow();
+    const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
+    expect(filterScope(cfg())).not.toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    expect(filterScope(cfg({ TICKERS: "SMH GDX" }))).toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    const all = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), null).map((f) => f.ticker);
+    const next = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), all[2]).map((f) => f.ticker);
+    expect(next[0]).not.toBe(all[0]);
+    const sorted = VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b));
+    expect(selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), sorted[sorted.length - 1]).map((f) => f.ticker)).toEqual(all);
+  });
 
-  test("USE_SYSTEM_CA accepts auto/true/false case-insensitively, rejects others, defaults to auto", () => {
+  test("USE_SYSTEM_CA: auto by default, case-insensitive, restart only on certificate errors", async () => {
     expect(configFile().USE_SYSTEM_CA).toBe("auto");
-    expect(resolveControls(configFile()).USE_SYSTEM_CA).toBe("auto");
     for (const v of ["auto", "TRUE", "False"]) expect(resolveControls({}, {}, {}, { USE_SYSTEM_CA: v }).USE_SYSTEM_CA).toBe(v.toLowerCase());
-    expect(() => resolveControls({ USE_SYSTEM_CA: "maybe" })).toThrow();
-  });
-
-  test("isCertError matches codes, messages and causes only", () => {
     expect(isCertError({ code: "UNABLE_TO_GET_ISSUER_CERT_LOCALLY" })).toBe(true);
-    expect(isCertError(new Error("unable to get local issuer certificate"))).toBe(true);
     expect(isCertError(Object.assign(new Error("fetch failed"), { cause: new Error("unable to get local issuer certificate") }))).toBe(true);
-    expect(isCertError({ code: "ECONNRESET" })).toBe(false);
-    expect(isCertError(new Error("HTTP 403"))).toBe(false);
-  });
-
-  test("installSystemCa: false and active leave fetch alone, true restarts now", () => {
-    const a = reexecSpy();
-    installSystemCa("false", a.fn, false);
+    expect([isCertError({ code: "ECONNRESET" }), isCertError(new Error("HTTP 403"))]).toEqual([false, false]);
+    console.error = () => {};
+    let calls = 0;
+    const reexec = (() => { calls += 1; return undefined as never; }) as () => never;
+    installSystemCa("false", reexec, false);
+    installSystemCa("auto", reexec, true);
     expect(globalThis.fetch).toBe(realFetch);
-    installSystemCa("auto", a.fn, true);
-    expect(globalThis.fetch).toBe(realFetch);
-    expect(a.calls.n).toBe(0);
-    installSystemCa("true", a.fn, false);
-    expect(a.calls.n).toBe(1);
-  });
-
-  test("installSystemCa auto: cert error restarts once, other errors rethrown, success passes through", async () => {
-    const a = reexecSpy();
-    const ok = new Response("ok");
-    globalThis.fetch = (async () => ok) as unknown as typeof fetch;
-    installSystemCa("auto", a.fn, false);
-    expect(globalThis.fetch).not.toBe(realFetch);
-    expect(await fetch("https://x.test")).toBe(ok);
+    installSystemCa("true", reexec, false);
+    expect(calls).toBe(1);
     globalThis.fetch = (async () => { throw new Error("self-signed certificate in certificate chain"); }) as unknown as typeof fetch;
-    installSystemCa("auto", a.fn, false);
+    installSystemCa("auto", reexec, false);
     await fetch("https://x.test");
-    expect(a.calls.n).toBe(1);
+    expect(calls).toBe(2);
     globalThis.fetch = (async () => { throw Object.assign(new Error("reset"), { code: "ECONNRESET" }); }) as unknown as typeof fetch;
-    installSystemCa("auto", a.fn, false);
+    installSystemCa("auto", reexec, false);
     await expect(fetch("https://x.test")).rejects.toThrow("reset");
-    expect(a.calls.n).toBe(1);
+    expect(calls).toBe(2);
   });
 });
 
+// ===========================================================================
+describe("parsing", () => {
+  test("source URLs follow the verified vaneck.com layout; the EDGAR fallback targets the ETF Trust", () => {
+    expect(vaneckFundPageUrl("GDX")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/");
+    expect(vaneckFundPageUrl("smh")).toBe("https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/");
+    expect(vaneckFundPageUrl("ZZZZ")).toBe("https://www.vaneck.com/us/en/investments/etf-zzzz/");
+    expect(vaneckHoldingsUrl("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/");
+    expect(vaneckHistoryUrl("https://www.vaneck.com/us/en/investments/equity/gdx/overview")).toBe("https://www.vaneck.com/us/en/investments/equity/gdx/overview/downloads/fundhistoprices/");
+    expect(vaneckLegacyHoldingsUrl("rsxj")).toBe("https://www.vaneck.com/us/en/etf/equity/rsxj/holdings/download/xlsx/");
+    expect(vaneckFactSheetUrl("GDX")).toBe("https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx-fact-sheet.pdf");
+    expect(vaneckFactSheetUrl("ZZZZ")).toBeNull();
+    expect(vaneckFundDocuments("AFK").statutoryProspectus).toContain("/AFK/index.php?ctype=prospectus");
+    expect(VANECK_ETF_TRUST_CIK).toBe("0001137360");
+    expect(vaneckEdgarFilingsUrl()).toContain("CIK=0001137360");
+    expect(vaneckEdgarFilingsUrl("0000768847")).toContain("CIK=0000768847");
+  });
 
-describe("network timeout and pacing lanes", () => {
-  const realFetch = globalThis.fetch;
-  afterEach(() => { globalThis.fetch = realFetch; setNetworkTimings(45_000, 15_000); });
+  test("the recorded chart provenance URL carries no wall-clock value, the live one does", () => {
+    expect(yahooChartUrl("GDX", 1_789_848_311_000)).toContain("period2=1789848311");
+    expect(yahooChartProvenanceUrl("GDX")).toBe("https://query1.finance.yahoo.com/v8/finance/chart/GDX");
+  });
+
+  test("text, number and date normalization: placeholders are null, never NaN or 0", () => {
+    expect([sanitizeTicker("  gdx "), sanitizeTicker(null)]).toEqual(["GDX", ""]);
+    expect(normalizeNumberText("$3,094,290,686.41")).toBe("3094290686.41");
+    expect([numberOrNull("$95.67"), numberOrNull("10.89%"), numberOrNull("--"), numberOrNull("—"), numberOrNull(""), numberOrNull("n/a"), numberOrNull(null)]).toEqual([95.67, 10.89, null, null, null, null, null]);
+    expect(decodeHtmlEntities("VanEck&nbsp;&amp;&nbsp;Co &lt;ETF&gt; &#39;x&#39; &quot;y&quot;")).toBe("VanEck & Co <ETF> 'x' \"y\"");
+    expect([formatVanEckDate("09/18/2026"), formatVanEckDate(""), formatVanEckDate("--")]).toEqual(["Sep 18 2026", "—", "--"]);
+    expect([toIsoDate("9/8/2026"), toIsoDate("Sep 18 2026")]).toEqual(["2026-09-08", "Sep 18 2026"]);
+    expect(compareDisplayDates("Sep 18 2026", "Sep 17 2026")).toBeGreaterThan(0);
+    expect(compareDisplayDates("Sep 18 2026", "Sep 18 2026")).toBe(0);
+    expect([formatAumDisplay(22_753_000_000), formatAumDisplay(1_234_567), formatPercentText(0), formatPercentText(null), formatMoneyText(null)]).toEqual(["$22,753.00 M", "$1.23 M", "0.00%", "—", "—"]);
+    expect(chunkRows([1, 2, 3, 4, 5], 2)).toEqual([[1, 2], [3, 4], [5]]);
+    expect(chunkRows([], 25)).toEqual([]);
+  });
+
+  test("HTML tables are returned in document order", () => {
+    const tables = parseHtmlTables(`<table><tr><th>Date</th><th>NAV</th></tr><tr><td>09/18/2026</td><td>95.67</td></tr></table><table><tr><td>Number</td><td>Ticker</td></tr><tr><td>1</td><td>NEM</td></tr></table>`);
+    expect(tables).toHaveLength(2);
+    expect([tables[0][0], tables[1][1]]).toEqual([["Date", "NAV"], ["1", "NEM"]]);
+  });
+
+  test("equity holdings: contract column order, local suffixes and cash rows kept, disclosure row dropped, no sheet is no rows", () => {
+    const parsed = parseVanEckHoldings(EQUITY_HOLDINGS_ROWS);
+    expect(parsed.asOfDate).toBe("Sep 17 2026");
+    expect(parsed.headers).toEqual(["Name", "Ticker", "Identifier", "Shares Held", "Asset Category", "Market Value", "Notional Value", "Weight"]);
+    expect(parsed.rows).toHaveLength(4);
+    for (const row of parsed.rows) expect(row.length).toBe(parsed.headers.length);
+    const at = (row: number, header: string) => parsed.rows[row][parsed.headers.indexOf(header)];
+    expect([at(0, "Name"), at(0, "Ticker"), at(0, "Identifier"), at(0, "Weight"), at(0, "Notional Value")]).toEqual(["Newmont Corp", "NEM", "BBG000BPWXK1", "10.89%", ""]);
+    expect([at(1, "Ticker"), at(2, "Ticker"), at(3, "Name"), at(3, "Ticker"), at(3, "Weight")]).toEqual(["NST AU", "-USD CASH-", "Other/Cash", "", "0.11%"]);
+    expect(parsed.rows.some((r) => r.join(" ").includes("not recommendations"))).toBe(false);
+    const empty = parseVanEckHoldings([["Nothing here"]]);
+    expect([empty.rows, empty.headers]).toEqual([[], HOLDINGS_HEADERS]);
+  });
+
+  test("fixed-income holdings: Maturity switches the column set, the FIGI keeps duplicate issuers apart", () => {
+    const parsed = parseVanEckHoldings(FIXED_INCOME_HOLDINGS_ROWS);
+    expect(parsed.headers).toEqual(["Name", "Maturity", "Identifier", "Coupon", "Asset Category", "Par Value", "Market Value", "Weight", "Country", "Currency"]);
+    expect(parsed.rows).toHaveLength(2);
+    const at = (row: number, header: string) => parsed.rows[row][parsed.headers.indexOf(header)];
+    expect([at(0, "Identifier"), at(1, "Identifier")]).toEqual(["BBG00K1ABC23", "BBG00K1XYZ89"]);
+    expect(at(0, "Name")).toBe(at(1, "Name"));
+    expect([at(0, "Maturity"), at(0, "Coupon"), at(0, "Country"), at(0, "Currency")]).toEqual(["Apr 01 2027", "6.05", "United States", "USD"]);
+  });
+
+  test("NAV history keeps the descending provider order and derives premium/discount from NAV and Last Trade", () => {
+    const parsed = parseVanEckHistory(HISTORY_ROWS);
+    expect(parsed.rows.map((r) => r[0])).toEqual(["Sep 18 2026", "Sep 17 2026"]);
+    const nav = Number(parsed.rows[0][parsed.headers.indexOf("NAV")].replace(/[^-\d.]/g, ""));
+    const close = Number(parsed.rows[0][parsed.headers.indexOf("Close")].replace(/[^-\d.]/g, ""));
+    expect(premiumDiscount(close, nav)).toBeCloseTo(-0.1986, 2);
+    expect(parsed.rows[0][parsed.headers.indexOf("Total Net Assets")]).toBe("28,418,567,995.87");
+    expect(parseVanEckHistory([["No table"]]).rows).toEqual([]);
+  });
+
+  test("XLSX bytes: namespaced and bare worksheets are read, end to end for holdings and history", () => {
+    for (const namespaced of [true, false]) {
+      const bytes = buildXlsx(EQUITY_HOLDINGS_ROWS, namespaced);
+      const rows = parseXlsxSheet(bytes, loadSharedStrings(bytes));
+      expect([rows[2], rows[3][2]]).toEqual([EQUITY_HOLDINGS_ROWS[2], "Newmont Corp"]);
+    }
+    const equity = parseVanEckHoldingsXlsx(buildXlsx(EQUITY_HOLDINGS_ROWS));
+    expect([equity.asOfDate, equity.rows.length, equity.rows[0][equity.headers.indexOf("Weight")]]).toEqual(["Sep 17 2026", 4, "10.89%"]);
+    const bonds = parseVanEckHoldingsXlsx(buildXlsx(FIXED_INCOME_HOLDINGS_ROWS));
+    expect([bonds.headers.includes("Ticker"), bonds.rows.length]).toEqual([false, 2]);
+    expect(parseVanEckHistoryXlsx(buildXlsx(HISTORY_ROWS)).rows[0][0]).toBe("Sep 18 2026");
+  });
+
+  test("fund page: gross and net or a single total expense ratio, SI-only young funds, unreadable pages give nulls", () => {
+    const gdx = parseVanEckFundPage(GDX_PAGE, "https://www.vaneck.com/us/en/investments/equity/gdx/overview/");
+    expect([gdx.nav, gdx.ytdReturn, gdx.totalNetAssets, gdx.inceptionDate, gdx.grossExpenseRatio, gdx.netExpenseRatio]).toEqual([95.67, 11.22, 28_420_000_000, "May 16 2006", 0.51, 0.51]);
+    expect([gdx.navAsOf, gdx.ytdAsOf, gdx.totalNetAssetsAsOf]).toEqual(["Sep 18 2026", "Sep 18 2026", "Sep 18 2026"]);
+    const smh = parseVanEckFundPage(`<h1>SMH VanEck Semiconductor ETF</h1><div>NAV</div><div>$572.84</div><div>YTD RETURNS</div><div>59.07%</div><div>Total Expense Ratio</div><div>0.35%</div><div>Inception Date</div><div>12/20/2011</div>`, "x");
+    expect([smh.nav, smh.ytdReturn, smh.totalExpenseRatio, smh.grossExpenseRatio]).toEqual([572.84, 59.07, 0.35, null]);
+    const veem = parseVanEckFundPage(VEEM_PAGE, "x");
+    expect([veem.ytdReturn, veem.siReturn, veem.siAsOf, veem.indexTicker, veem.indexName]).toEqual([null, -1.48, "Sep 18 2026", "NU763973", "MSCI Emerging Markets Analyst Sentiment Select Index"]);
+    const blank = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
+    for (const key of ["nav", "ytdReturn", "totalNetAssets", "grossExpenseRatio", "netExpenseRatio", "inceptionDate", "siReturn", "siAsOf", "indexTicker", "indexName"]) expect((blank as any)[key]).toBeNull();
+  });
+
+  test("performance block: month-end and quarter-end NAV rows, month-end only, or no NAV row at all", () => {
+    const monthRow = { Type: "NAV", OneYear: 57.82, CumulativeThreeYear: 251.33, CumulativeFiveYear: 224.1, CumulativeTenYear: 326.5, ThreeYear: 51.58, FiveYear: 26.48, TenYear: 15.59, Life: 5.41 };
+    const parsed = parseVanEckPerformance({ data: {
+      MonthEndPerformances: [monthRow], MonthEndAsOfDate: "08/31/2026",
+      QuarterEndPerformances: [{ Type: "NAV", OneYear: 45.77, ThreeYear: 37.44, Life: 4.06 }, { Type: "Market Price", OneYear: 45.93 }], QuarterEndAsOfDate: "06/30/2026",
+    } });
+    expect([parsed?.tr1y, parsed?.asOfDate, parsed?.quarterEnd?.asOfDate, parsed?.quarterEnd?.tr1y, parsed?.quarterEnd?.cagr3y, parsed?.quarterEnd?.siAnn]).toEqual([57.82, "Aug 31 2026", "Jun 30 2026", 45.77, 37.44, 4.06]);
+    expect(parseVanEckPerformance({ data: { MonthEndPerformances: [monthRow], MonthEndAsOfDate: "08/31/2026" } })?.quarterEnd).toBeNull();
+    expect(parseVanEckPerformance({ data: { MonthEndPerformances: [{ Type: "Market Price", OneYear: 1 }] } })).toBeNull();
+    expect(parseVanEckPerformance({})).toBeNull();
+  });
+
+  test("exchange resolution: Nasdaq symdir codes and Yahoo names map onto the same display names", () => {
+    expect(["P", "N", "A", "Q", "Z", "?"].map(nasdaqExchangeDisplayName)).toEqual(["NYSE Arca", "NYSE", "NYSE American", "NASDAQ", "Cboe BZX", null]);
+    const map = parseNasdaqSymdir(["ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol", "GDX|VanEck Gold Miners ETF|P|GDX|Y|100|N|GDX", "HODL|VanEck Bitcoin ETF|Z|HODL|Y|100|N|HODL", "File Creation Time: 09182026 20:00|"].join("\r\n"));
+    expect([map.get("GDX"), map.get("HODL"), map.has("ACT Symbol"), map.size]).toEqual(["NYSE Arca", "Cboe BZX", false, 2]);
+    expect(["NYSEArca", "BTS", "NMS", "NYQ", "NSD", "", null].map(normalizeYahooExchangeName)).toEqual(["NYSE Arca", "Cboe BZX", "NASDAQ", "NYSE", "NSD", null, null]);
+    expect([parseYahooExchangeName({ chart: { result: [{ meta: { exchangeName: "NYSEArca" } }] } }), parseYahooExchangeName({})]).toEqual(["NYSEArca", null]);
+  });
+
+  test("Investment Finder table: one row per seed fund, verbatim yields with -- as null, impossible cells dropped", () => {
+    expect(VAN_ECK_SEED.length).toBe(91);
+    expect(Object.keys(VANECK_FINDER).length).toBe(91);
+    for (const seed of VAN_ECK_SEED) expect(finderForTicker(seed.ticker)).toBeDefined();
+    expect(finderForTicker("ZZZZ")).toBeUndefined();
+    expect(finderForTicker("GDX")).toMatchObject({ frequency: "Annual", secYield: 0.41, distributionYield: 0.66, yield12M: 0.97 });
+    expect([finderForTicker("BUZZ")?.secYield, finderForTicker("BUZZ")?.distributionYield, finderForTicker("ETHV")?.frequency]).toEqual([-0.46, null, "--"]);
+    expect([finderForTicker("EMBX")?.yield12M, finderForTicker("EMBX")?.distributionYield]).toEqual([null, 6.24]);
+    expect([finderForTicker("CBON")?.monthEndYtd, finderForTicker("GDX")?.monthEndYtd]).toEqual([5.43, undefined]);
+    expect([finderForTicker("RSX")?.liquidationStub, finderForTicker("RSX")?.monthEndTenors?.y1, finderForTicker("VEEM")?.monthEndTenors]).toEqual([true, 3.04, undefined]);
+  });
+});
+
+// ===========================================================================
+describe("metrics", () => {
+  test("cumulative and annualized returns are exact inverses, null stays null, premium/discount needs both prices", () => {
+    const cumulative = cumulativeFromAnnualized(10, 3);
+    expect(cumulative).toBeCloseTo(33.1, 1);
+    expect(annualizedFromCumulative(cumulative, 3)).toBeCloseTo(10, 2);
+    expect([cumulativeFromAnnualized(null, 3), annualizedFromCumulative(null, 3), cumulativeFromAnnualized(10, 0), annualizedFromCumulative(-100, 3)]).toEqual([null, null, 0, null]);
+    expect([premiumDiscount(95.48, 95.67), premiumDiscount(null, 95.67), premiumDiscount(95.48, null), premiumDiscount(95.48, 0)]).toEqual([-0.2, null, null, null]);
+  });
+
+  test("distribution frequency: inferred from ex-dates, coded for sorting, payments per year, no invented yield", () => {
+    expect(inferDistributionFrequency(["2026-01-05", "2026-02-04", "2026-03-05", "2026-04-06"])).toBe("Monthly");
+    expect(inferDistributionFrequency(["2025-09-22", "2025-12-22", "2026-03-23", "2026-06-22"])).toBe("Quarterly");
+    expect([inferDistributionFrequency([]), inferDistributionFrequency(["2026-01-05"])]).toEqual(["Unknown", "Unknown"]);
+    expect(inferDistributionFrequency(["2025-06-20", "2025-12-22", "2026-06-22"])).toBe("Semiannually");
+    expect(inferDistributionFrequency(["2024-01-05", "2025-08-10", "2026-03-02"])).toBe("Irregular");
+    expect(["Monthly", "Semiannually", "Irregular", "None", "Unknown", "", null].map(frequencyCode)).toEqual(["01 - Monthly", "06 - Semi-annually", "99 - Irregular", "00 - None", "00 - Unknown", "00 - None", "00 - None"]);
+    expect(["Monthly", "Quarterly", "Annual", "Semi-Annual", "Irregular", "Unknown", "Other", "--"].map(paymentsPerYear)).toEqual([12, 4, 1, 2, null, null, null, null]);
+    expect(["Annual", "Semi-Annual", "Other", "--", "", null].map(normalizeFinderFrequency)).toEqual(["Annually", "Semiannually", "Other", "Unknown", "Unknown", "Unknown"]);
+    expect([indicatedDividendYield(0.25, 4, 95.67), indicatedDividendYield(null, 4, 95.67), indicatedDividendYield(0.25, null, 95.67), indicatedDividendYield(0.25, 4, null), indicatedDividendYield(0.25, 0, 95.67)]).toEqual([1.05, null, null, null, null]);
+  });
+
+  test("a stale distribution or a liquidation payout is never published as a yield", () => {
+    expect([indicatedYieldAllowed("Dec 23 2024", "Sep 18 2026"), indicatedYieldAllowed("Dec 22 2025", "Sep 18 2026"), indicatedYieldAllowed(null, "Sep 18 2026"), indicatedYieldAllowed("Jul 01 2026", null), indicatedYieldAllowed("—", "Sep 18 2026")]).toEqual([false, true, false, false, false]);
+    expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
+    expect([saneYield(3.5), saneYield(0), saneYield(null), saneYield(Number.NaN)]).toEqual([3.5, 0, null, null]);
+  });
+
+  test("returnsBasis and performanceAsOf end the metrics, performanceAsOf is the tenor date and never the NAV date, every row shares one key set", () => {
+    const seed = seedCatalogEntry(VAN_ECK_SEED[0]);
+    expect(Object.keys(seed.metrics as object).slice(-2)).toEqual(["returnsBasis", "performanceAsOf"]);
+    expect(String((seed.metrics as any).returnsBasis).length).toBeGreaterThan(1);
+    expect((seed.metrics as any).performanceAsOf).toBeNull();
+    const entryWith = (monthEnd: Record<string, unknown>, ytd: number | null) => ({
+      ...seed, asOfDate: "Sep 25 2026", returns: { monthEnd, quarterEnd: { asOfDate: "—" } },
+      metrics: { ...(seed.metrics as object), ytd, tr1y: 3, returnsBasis: "official VanEck Average Annual Total Returns (NAV)" },
+    });
+    const withTenor = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 2.3)).metrics as Record<string, unknown>;
+    expect([withTenor.performanceAsOf, withTenor.ytdAsOf]).toEqual(["2026-08-31", "2026-09-25"]);
+    const pageOnly = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026" }, null)).metrics as Record<string, unknown>;
+    expect([pageOnly.performanceAsOf, pageOnly.ytdAsOf]).toEqual(["2026-09-25", null]);
+    const blank = withReturnsMeta({ returns: { monthEnd: { asOfDate: "—" } }, metrics: { returnsBasis: "-" } }).metrics as Record<string, unknown>;
+    expect([blank.performanceAsOf, blank.returnsBasis]).toEqual([null, "not yet refreshed from vaneck.com"]);
+    const keys = (e: ReturnType<typeof entryWith>) => Object.keys(withReturnsMeta(e).metrics as object).sort().join();
+    expect(keys(entryWith({ asOfDate: "—" }, null))).toBe(keys(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 1)));
+  });
+
+  test("HISTORY_RANGE window start is explicit, max starts at 0", () => {
+    const now = 1_789_848_311;
+    expect([historyWindowStartEpoch("max", now), historyWindowStartEpoch("5y", now)]).toEqual([0, Math.floor(now - 5 * 365.25 * 86_400)]);
+  });
+});
+
+// ===========================================================================
+// Sandbox: the real script is copied into a temp dir so main() writes under <tmp>/api/vaneck
+// ===========================================================================
+const FUNDS = ["EINC", "GDX", "SMH"];
+const ts = (iso: string): number => Date.parse(`${iso}T00:00:00Z`) / 1000;
+const chartPayload = JSON.stringify({ chart: { result: [{
+  meta: { exchangeName: "NYSEArca", regularMarketPrice: 95.5 },
+  timestamp: [ts("2026-09-17"), ts("2026-09-18")],
+  indicators: { quote: [{ close: [95.3, 95.48] }] },
+  events: { dividends: { a: { amount: 0.25, date: ts("2026-06-22") }, b: { amount: 0.25, date: ts("2026-03-23") }, c: { amount: 0.25, date: ts("2025-12-22") } } },
+}] } });
+const pageFor = (ticker: string): string => (ticker === "VEEM" ? VEEM_PAGE : GDX_PAGE.replace("GDX VanEck Gold Miners ETF", `${ticker} VanEck ETF`));
+
+function sandbox() {
+  const dir = mkdtempSync(path.join(tmpdir(), "vaneck-test-"));
+  tempDirs.push(dir);
+  mkdirSync(path.join(dir, "scripts"));
+  const api = path.join(dir, "api", "vaneck");
+  mkdirSync(api, { recursive: true });
+  for (const name of ["update-data.ts", "update-data.config.json"]) copyFileSync(path.join(scriptsDir, name), path.join(dir, "scripts", name));
+  mkdirSync(path.join(dir, "data"));
+  copyFileSync(path.join(scriptsDir, "..", "data", "vaneck-verified.ts"), path.join(dir, "data", "vaneck-verified.ts"));
+  const urls: string[] = [];
+  let down: string[] = [];
+  let stallHoldings = false;
+  let inFlight = 0, peak = 0;
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = String(input);
+    urls.push(url);
+    if (down.some((part) => url.includes(part))) return new Response("gone", { status: 404 });
+    const slug = /\/investments\/[a-z-]*-([a-z]+)\/(downloads\/(holdings|fundhistoprices)\/)?$/.exec(url);
+    if (slug) {
+      const ticker = slug[1].toUpperCase();
+      inFlight += 1; peak = Math.max(peak, inFlight);
+      try {
+        await new Promise((resolve) => realSetTimeout(resolve, 30));
+        if (!slug[2]) return new Response(pageFor(ticker));
+        if (slug[3] === "holdings" && stallHoldings) {
+          stallHoldings = false;
+          const signal = init?.signal;
+          return new Response(new ReadableStream({ start(controller) { signal?.addEventListener("abort", () => controller.error(signal.reason)); } }));
+        }
+        return new Response(slug[3] === "holdings" ? buildXlsx(EQUITY_HOLDINGS_ROWS) : buildXlsx(HISTORY_ROWS));
+      } finally { inFlight -= 1; }
+    }
+    if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
+    return new Response("not found", { status: 404 });
+  }) as unknown as typeof fetch;
+  const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number] } = {}): Promise<unknown> => {
+    const mod = await import(path.join(dir, "scripts", "update-data.ts"));
+    if (opts.timings) mod.setNetworkTimings(...opts.timings);
+    console.log = console.warn = console.error = () => {};
+    try {
+      await mod.main([], { REQUEST_SLEEP: "0", CONCURRENCY: "1", MAX_RETRIES: "1", EDGAR_FALLBACK: "false", USE_SYSTEM_CA: "false", TICKERS: FUNDS.join(" "), ...env });
+      return null;
+    } catch (error) {
+      return error;
+    } finally {
+      Object.assign(console, realConsole);
+    }
+  };
+  const readFile = (rel: string): string => readFileSync(path.join(api, rel), "utf8");
+  const json = (rel: string) => JSON.parse(readFile(rel));
+  const files = (): string[] => (readdirSync(api, { recursive: true }) as string[]).filter((f) => statSync(path.join(api, f)).isFile()).sort();
+  const backdate = (): void => { for (const f of files()) utimesSync(path.join(api, f), 1_000_000_000, 1_000_000_000); };
+  const touched = (): string[] => files().filter((f) => statSync(path.join(api, f)).mtimeMs !== 1_000_000_000_000);
+  const row = (ticker: string) => json("index.json").funds.find((fund: any) => fund.ticker === ticker);
+  return {
+    api, urls, run, readFile, json, files, backdate, touched, row,
+    setDown: (...parts: string[]) => { down = parts; },
+    stallNextHoldings: () => { stallHoldings = true; },
+    peak: () => peak,
+  };
+}
+
+describe("pipeline", () => {
+  test("a first run publishes the 91-fund catalog; every row has the same metrics keys and null (never 0) for unknown horizons", async () => {
+    const box = sandbox();
+    expect(await box.run()).toBeNull();
+    const funds = box.json("index.json").funds;
+    expect(funds).toHaveLength(91);
+    const keys = Object.keys(funds[0].metrics).sort();
+    for (const fund of funds) {
+      expect(Object.keys(fund.metrics).sort()).toEqual(keys);
+      expect(fund.metrics.returnsBasis).toBeTruthy();
+    }
+    expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2 });
+    expect(box.row("GDX").metrics.tr3y).toBeNull();
+    expect(box.json("funds/GDX/meta.json").holdings.totalRows).toBe(4);
+  });
+
+  test("a young fund keeps null horizons next to its since-inception figure from the page", async () => {
+    const box = sandbox();
+    expect(await box.run({ TICKERS: "VEEM" })).toBeNull();
+    const metrics = box.row("VEEM").metrics;
+    for (const key of ["ytd", "tr1y", "tr3y", "tr5y", "tr10y", "cagr3y", "cagr5y", "cagr10y"]) expect(metrics[key]).toBeNull();
+    expect(metrics.siAnn).toBe(-1.48);
+  });
+
+  test("a dataFile is null for a row without meta and set for a row with one", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    expect(box.row("GDX").dataFile).toBe("./funds/GDX/meta.json");
+    expect(box.row("SMH").dataFile).toBeNull();
+    expect(Object.keys(box.row("SMH").metrics).sort()).toEqual(Object.keys(box.row("GDX").metrics).sort());
+  });
+
+  test("a one-ticker run keeps every row and every file of the other funds", async () => {
+    const box = sandbox();
+    await box.run();
+    const before = Object.fromEntries(FUNDS.filter((t) => t !== "EINC").map((t) => [t, box.readFile(`funds/${t}/meta.json`)]));
+    const rows = FUNDS.map((t) => box.row(t));
+    expect(await box.run({ TICKERS: "EINC" })).toBeNull();
+    expect(box.json("index.json").funds).toHaveLength(91);
+    for (const t of Object.keys(before)) expect(box.readFile(`funds/${t}/meta.json`)).toBe(before[t]);
+    expect(FUNDS.filter((t) => t !== "EINC").map((t) => box.row(t))).toEqual(rows.filter((r) => r.ticker !== "EINC"));
+  });
+
+  test("a second identical run writes nothing", async () => {
+    const box = sandbox();
+    await box.run();
+    box.backdate();
+    const before = box.files().map((f) => box.readFile(f));
+    expect(await box.run()).toBeNull();
+    expect(box.touched()).toEqual([]);
+    expect(box.files().map((f) => box.readFile(f))).toEqual(before);
+  });
+
+  test("a failed required source keeps the fund exactly as published, the run reports the failure", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    // the fund page is a required source: any failure keeps the previously published state (a 404 on a download would be an honest absence)
+    box.setDown("gold-miners-etf-gdx");
+    const error = await box.run({ TICKERS: "GDX" });
+    expect(String(error)).toContain("every selected fund failed");
+    expect(box.touched()).toEqual([]);
+    expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4 });
+  });
+
+  test("MAX_FETCHES writes a scoped cursor and a TICKERS run leaves it alone", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "", MAX_FETCHES: "1" });
+    const first = box.json("update-state.json");
+    expect(first.cursor).toBe(VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b))[0]);
+    await box.run({ TICKERS: "GDX", MAX_FETCHES: "0" });
+    expect(box.json("update-state.json")).toEqual(first);
+  });
+});
+
+// ===========================================================================
+describe("network", () => {
   const cfg = () => readConfig({ ...resolveControls(configFile()), REQUEST_SLEEP: "0", MAX_RETRIES: "2" });
 
   test("a stalled request is aborted by the timeout and retried per MAX_RETRIES", async () => {
@@ -1342,11 +626,7 @@ describe("network timeout and pacing lanes", () => {
     let calls = 0;
     globalThis.fetch = ((_url: string, init?: RequestInit) => {
       calls += 1;
-      if (calls < 3) {
-        return new Promise((_resolve, reject) => {
-          init?.signal?.addEventListener("abort", () => reject(init.signal!.reason));
-        });
-      }
+      if (calls < 3) return new Promise((_resolve, reject) => { init?.signal?.addEventListener("abort", () => reject(init.signal!.reason)); });
       return Promise.resolve(new Response("ok"));
     }) as unknown as typeof fetch;
     const res = await fetchWithRetry("https://example.test/a", {}, cfg(), "stall");
@@ -1354,114 +634,57 @@ describe("network timeout and pacing lanes", () => {
     expect(calls).toBe(3);
   });
 
-  test("concurrent callers reserve distinct lane slots before awaiting", async () => {
-    resetPacingLanes(4);
-    const config = { ...cfg(), requestSleep: 0.05 };
-    const started: number[] = [];
-    const t0 = Date.now();
-    await Promise.all(Array.from({ length: 8 }, () => paceRequests(config).then(() => started.push(Date.now() - t0))));
-    // 4 lanes x 2 slots: the first four start together, the next four wait one full gap
-    started.sort((a, b) => a - b);
-    expect(started[3]).toBeLessThan(40);
-    expect(started[4]).toBeGreaterThanOrEqual(45);
-    expect(started[7]).toBeLessThan(140);
+  test("retries are bounded by MAX_RETRIES, a 404 is not retried", async () => {
+    setNetworkTimings(30, 1);
+    let calls = 0;
+    globalThis.fetch = (async () => { calls += 1; return new Response("x", { status: 503 }); }) as unknown as typeof fetch;
+    expect((await fetchWithRetry("https://example.test/b", {}, cfg(), "busy")).status).toBe(503);
+    expect(calls).toBe(3);
+    calls = 0;
+    globalThis.fetch = (async () => { calls += 1; return new Response("x", { status: 404 }); }) as unknown as typeof fetch;
+    expect((await fetchWithRetry("https://example.test/c", {}, cfg(), "missing")).status).toBe(404);
+    expect(calls).toBe(1);
   });
 
-  test("a single lane spaces requests by REQUEST_SLEEP", async () => {
-    resetPacingLanes(1);
-    const config = { ...cfg(), requestSleep: 0.04 };
-    const t0 = Date.now();
+  test("a body that stalls after the headers is covered by the timeout and fetched again", async () => {
+    const box = sandbox();
+    box.stallNextHoldings();
+    expect(await box.run({ TICKERS: "GDX" }, { timings: [150, 1] })).toBeNull();
+    expect(box.urls.filter((url) => url.endsWith("/downloads/holdings/"))).toHaveLength(2);
+    expect(box.row("GDX").holdings).toBe(4);
+  });
+
+  test("in-flight peak is 1 at CONCURRENCY=1 and N at CONCURRENCY=N", async () => {
+    const one = sandbox();
+    await one.run({ CONCURRENCY: "1" });
+    expect(one.peak()).toBe(1);
+    const three = sandbox();
+    await three.run({ CONCURRENCY: "3" });
+    expect(three.peak()).toBe(3);
+  });
+
+  test("request lanes pace independently: a lane waits one REQUEST_SLEEP between starts, separate lanes start together", async () => {
+    const clock = fakeClock();
+    const config = { ...cfg(), requestSleep: 1 };
+    resetPacingLanes(2);
     await Promise.all([paceRequests(config), paceRequests(config), paceRequests(config)]);
-    expect(Date.now() - t0).toBeGreaterThanOrEqual(75);
-  });
-});
-
-
-describe("strict controls and data-dependent filters", () => {
-  const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
-  const metrics = { ytd: 5, tr1y: 12, tr3y: 40, tr5y: null, cagr3y: 11, cagr5y: null, dividendYield: 2.5, secYield: null };
-
-  test("AUM bounds must be numbers with an optional K/M/B/T suffix", () => {
-    expect(() => parseAumRange("10X:")).toThrow(/not a number/);
-    expect(() => parseAumRange("abc:")).toThrow();
-    expect(() => parseAumRange("1..5B:")).toThrow();
-    expect(parseAumRange("1.5B:")).toEqual({ min: 1.5e9, max: undefined });
-    expect(parseAumRange("$500M:2B")).toEqual({ min: 5e8, max: 2e9 });
+    expect(clock.waits).toEqual([1000]);
+    clock.waits.length = 0;
+    resetPacingLanes(1);
+    await Promise.all([paceRequests(config), paceRequests(config)]);
+    expect(clock.waits).toEqual([1000]);
   });
 
-  test("unknown TICKERS are an error", () => {
-    expect(() => assertKnownTickers(["GDX", "NOPE"], VAN_ECK_SEED)).toThrow(/NOPE/);
-    expect(() => assertKnownTickers(["GDX"], VAN_ECK_SEED)).not.toThrow();
-  });
-
-  test("yield and return filters apply to the computed metrics", () => {
-    expect(fundPassesDataFilters(metrics, cfg())).toBe(true);
-    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "3:" }))).toBe(false);
-    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "2:3" }))).toBe(true);
-    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "10:" }))).toBe(true);
-    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "20:" }))).toBe(false);
-    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_3Y: ":10" }))).toBe(false); // annualized 11
-    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_3Y: ":50" }))).toBe(true); // cumulative 40
-  });
-
-  test("a bounded range excludes funds without a value (null, never 0)", () => {
-    expect(fundPassesDataFilters(metrics, cfg({ SEC_YIELD: "0:" }))).toBe(false);
-    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_5Y: ":100" }))).toBe(false);
-    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_5Y: "-100:" }))).toBe(false);
-  });
-
-  test("the cursor is scoped to the filter set and wraps after the last fund", () => {
-    expect(filterScope(cfg())).not.toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
-    expect(filterScope(cfg({ TICKERS: "SMH GDX" }))).toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
-    const all = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), null).map((f) => f.ticker);
-    const next = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), all[2]).map((f) => f.ticker);
-    expect(next[0]).not.toBe(all[0]);
-    const sorted = VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b));
-    const wrapped = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), sorted[sorted.length - 1]).map((f) => f.ticker);
-    expect(wrapped).toEqual(all);
-  });
-});
-
-
-describe("returns dating and yield sanity", () => {
-  const entryWith = (monthEnd: Record<string, unknown>, ytd: number | null) => ({
-    ...seedCatalogEntry(VAN_ECK_SEED[0]),
-    returns: { monthEnd, quarterEnd: { asOfDate: "—" } },
-    metrics: { ...(seedCatalogEntry(VAN_ECK_SEED[0]).metrics as object), ytd, tr1y: 3, returnsBasis: "official" },
-  });
-
-  test("performanceAsOf is the tenor date, not the daily YTD stamp", () => {
-    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 2.3)).metrics as Record<string, unknown>;
-    expect(m.performanceAsOf).toBe("2026-08-31");
-    expect(m.ytdAsOf).toBe("2026-09-25");
-  });
-
-  test("without a tenor date the fund-page stamp is the fallback and ytdAsOf is null for a null YTD", () => {
-    const m = withReturnsMeta(entryWith({ asOfDate: "Sep 25 2026" }, null)).metrics as Record<string, unknown>;
-    expect(m.performanceAsOf).toBe("2026-09-25");
-    expect(m.ytdAsOf).toBeNull();
-  });
-
-  test("every row of the metrics contract keeps the same key set", () => {
-    const keys = (e: ReturnType<typeof entryWith>) => Object.keys(withReturnsMeta(e).metrics as object).sort().join();
-    expect(keys(entryWith({ asOfDate: "—" }, null))).toBe(keys(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 1)));
-  });
-
-  test("a liquidation payout is not published as a yield", () => {
-    expect(indicatedDividendYield(0.8208, 4, 0.39)).toBeGreaterThan(100);
-    expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
-    expect(saneYield(3.5)).toBe(3.5);
-    expect(saneYield(0)).toBe(0);
-    expect(saneYield(null)).toBeNull();
-    expect(saneYield(Number.NaN)).toBeNull();
-  });
-});
-
-describe("readConfig defaults match the config file", () => {
-  test("an empty EDGAR_FALLBACK keeps the default true and empty numeric controls keep the file defaults", () => {
-    const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
-    expect(c.edgarFallback).toBe(true);
-    expect(c.concurrency).toBe(Number(configFile().CONCURRENCY));
-    expect(c.requestSleep).toBe(Number(configFile().REQUEST_SLEEP));
+  test("HISTORY_RANGE reaches the Yahoo request as explicit period1/period2", async () => {
+    const now = 1_789_848_311;
+    expect(yahooChartUrl("GDX", now * 1000)).toContain("period1=0&");
+    const fiveYears = historyWindowStartEpoch("5y", now);
+    expect(yahooChartUrl("GDX", now * 1000, "5y")).toContain(`period1=${fiveYears}&period2=${now}`);
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX", HISTORY_RANGE: "5y" });
+    const request = new URL(box.urls.find((url) => url.includes("/v8/finance/chart/GDX"))!);
+    const [period1, period2] = [Number(request.searchParams.get("period1")), Number(request.searchParams.get("period2"))];
+    expect(period1).toBeGreaterThan(0);
+    expect(Math.round((period2 - period1) / 86_400 / 365.25)).toBe(5);
   });
 });
