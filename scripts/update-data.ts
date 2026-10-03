@@ -1324,22 +1324,40 @@ Examples:
 // now each get their own paced lane, so concurrency actually multiplies
 // throughput as documented instead of only overlapping wait time.
 let lastRequestAtLanes: number[] = [0];
-let pacingLanes: Promise<void>[] = [Promise.resolve()];
 
-async function paceRequests(config: UpdaterConfig): Promise<void> {
+/**
+ * Reserves the next slot of the least-recently-used lane synchronously (before
+ * any await), so concurrent callers never pick the same slot and wake together.
+ * Each lane starts its requests at least `requestSleep` seconds apart.
+ */
+export async function paceRequests(config: UpdaterConfig): Promise<void> {
   let lane = 0;
   for (let i = 1; i < lastRequestAtLanes.length; i++) if (lastRequestAtLanes[i] < lastRequestAtLanes[lane]) lane = i;
-  const wait = pacingLanes[lane].then(async () => {
-    const delay = config.requestSleep * 1000 - (Date.now() - lastRequestAtLanes[lane]);
-    if (delay > 0) await sleep(delay);
-    lastRequestAtLanes[lane] = Date.now();
-  });
-  pacingLanes[lane] = wait.catch(() => undefined);
-  return wait;
+  const now = Date.now();
+  const slot = Math.max(now, lastRequestAtLanes[lane] + config.requestSleep * 1000);
+  lastRequestAtLanes[lane] = slot;
+  if (slot > now) await sleep(slot - now);
+}
+
+/** Resets the pacing lanes (one per worker); used by main and tests. */
+export function resetPacingLanes(count: number): void {
+  lastRequestAtLanes = new Array(Math.max(1, count)).fill(0);
 }
 
 function errorMessage(error: unknown): string {
   return error instanceof Error ? error.message : String(error);
+}
+
+/** Per-attempt network budget (headers AND body): a stalled socket must not hold a worker forever. */
+let fetchTimeoutMs = 45_000;
+let retryBackoffMs = 15_000;
+export function setNetworkTimings(timeoutMs: number, backoffMs: number): void {
+  fetchTimeoutMs = timeoutMs;
+  retryBackoffMs = backoffMs;
+}
+function isTimeoutError(error: unknown): boolean {
+  const e = error as { name?: unknown; message?: unknown } | null;
+  return e?.name === 'TimeoutError' || e?.name === 'AbortError' || /timed out|aborted due to timeout/i.test(String(e?.message ?? ''));
 }
 
 const RETRY_STATUS = new Set([408, 425, 429, 500, 502, 503, 504]);
@@ -1425,9 +1443,10 @@ export async function fetchWithRetry(
   for (;;) {
     await paceRequests(config);
     try {
+      const attemptInit: RequestInit = { ...init, signal: AbortSignal.timeout(fetchTimeoutMs) };
       const response = isVanEck
-        ? await fetchVanEckWithManualRedirect(url, init, label)
-        : await fetch(url, init);
+        ? await fetchVanEckWithManualRedirect(url, attemptInit, label)
+        : await fetch(url, attemptInit);
       // VanEck sits behind a WAF that answers 403 while throttling, so a 403 is
       // retried like a 429 (bounded) rather than treated as "not found".
       if (response.ok || (!RETRY_STATUS.has(response.status) && response.status !== 403)) return response;
@@ -1436,7 +1455,7 @@ export async function fetchWithRetry(
     } catch (error) {
       const msg = errorMessage(error);
       const isRedirectLoop = /redirect(ed)? too many times/i.test(msg);
-      const isNetwork = isRedirectLoop || /fetch failed|network|ECONNRESET|ETIMEDOUT|Client network socket disconnected/i.test(msg);
+      const isNetwork = isRedirectLoop || isTimeoutError(error) || /fetch failed|network|ECONNRESET|ETIMEDOUT|Client network socket disconnected/i.test(msg);
       if (attempt >= config.maxRetries || (!isNetwork && !isRedirectLoop)) throw error;
       outputNote(`[ ${'retry'.padEnd(9)}] ${label}: ${msg} (retry ${attempt + 1}/${config.maxRetries})`);
       if (isRedirectLoop && isVanEck && attempt < config.maxRetries) {
@@ -1448,7 +1467,7 @@ export async function fetchWithRetry(
       if (isRedirectLoop) throw error;
     }
     attempt += 1;
-    await sleep(15000 * attempt);
+    await sleep(retryBackoffMs * attempt);
   }
 }
 
@@ -1469,16 +1488,32 @@ function secHeaders(config: UpdaterConfig): Record<string, string> {
   return { 'User-Agent': config.secUa, Accept: '*/*', 'Accept-Encoding': 'gzip, deflate' };
 }
 
+/** Fetches and reads the body; a body that stalls past the timeout is retried like a failed request. */
+async function fetchBody<T>(
+  url: string,
+  headers: Record<string, string>,
+  config: UpdaterConfig,
+  label: string,
+  read: (response: Response) => Promise<T>,
+): Promise<T> {
+  for (let attempt = 0; ; attempt++) {
+    const response = await fetchWithRetry(url, { headers }, config, label);
+    if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
+    try {
+      return await read(response);
+    } catch (error) {
+      if (!isTimeoutError(error) || attempt >= config.maxRetries) throw error;
+      outputNote(`[ ${'retry'.padEnd(9)}] ${label}: body timed out (retry ${attempt + 1}/${config.maxRetries})`);
+    }
+  }
+}
+
 async function fetchText(url: string, headers: Record<string, string>, config: UpdaterConfig, label = url): Promise<string> {
-  const response = await fetchWithRetry(url, { headers }, config, label);
-  if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
-  return response.text();
+  return fetchBody(url, headers, config, label, (response) => response.text());
 }
 
 async function fetchBytes(url: string, headers: Record<string, string>, config: UpdaterConfig, label = url): Promise<Uint8Array> {
-  const response = await fetchWithRetry(url, { headers }, config, label);
-  if (!response.ok) throw new Error(`${label}: HTTP ${response.status}`);
-  return new Uint8Array(await response.arrayBuffer());
+  return fetchBody(url, headers, config, label, async (response) => new Uint8Array(await response.arrayBuffer()));
 }
 
 export type YahooDistribution = { date: string; amount: number };
@@ -3045,8 +3080,7 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   const total = candidates.length;
   let processed = 0;
   const laneCount = Math.max(1, config.concurrency);
-  lastRequestAtLanes = new Array(laneCount).fill(0);
-  pacingLanes = new Array(laneCount).fill(null).map(() => Promise.resolve());
+  resetPacingLanes(laneCount);
   const workers = Array.from({ length: laneCount }, async () => {
     for (;;) {
       const seed = queue.shift();

@@ -73,6 +73,10 @@ import {
   parseMaxRetries,
   readConfig,
   resolveControls,
+  fetchWithRetry,
+  paceRequests,
+  resetPacingLanes,
+  setNetworkTimings,
 } from "./update-data";
 
 const REPO_ROOT = path.join(import.meta.dir, "..");
@@ -1319,5 +1323,50 @@ describe("system CA", () => {
     installSystemCa("auto", a.fn, false);
     await expect(fetch("https://x.test")).rejects.toThrow("reset");
     expect(a.calls.n).toBe(1);
+  });
+});
+
+
+describe("network timeout and pacing lanes", () => {
+  const realFetch = globalThis.fetch;
+  afterEach(() => { globalThis.fetch = realFetch; setNetworkTimings(45_000, 15_000); });
+  const cfg = () => readConfig({ ...resolveControls(configFile()), REQUEST_SLEEP: "0", MAX_RETRIES: "2" });
+
+  test("a stalled request is aborted by the timeout and retried per MAX_RETRIES", async () => {
+    setNetworkTimings(30, 1);
+    let calls = 0;
+    globalThis.fetch = ((_url: string, init?: RequestInit) => {
+      calls += 1;
+      if (calls < 3) {
+        return new Promise((_resolve, reject) => {
+          init?.signal?.addEventListener("abort", () => reject(init.signal!.reason));
+        });
+      }
+      return Promise.resolve(new Response("ok"));
+    }) as unknown as typeof fetch;
+    const res = await fetchWithRetry("https://example.test/a", {}, cfg(), "stall");
+    expect(await res.text()).toBe("ok");
+    expect(calls).toBe(3);
+  });
+
+  test("concurrent callers reserve distinct lane slots before awaiting", async () => {
+    resetPacingLanes(4);
+    const config = { ...cfg(), requestSleep: 0.05 };
+    const started: number[] = [];
+    const t0 = Date.now();
+    await Promise.all(Array.from({ length: 8 }, () => paceRequests(config).then(() => started.push(Date.now() - t0))));
+    // 4 lanes x 2 slots: the first four start together, the next four wait one full gap
+    started.sort((a, b) => a - b);
+    expect(started[3]).toBeLessThan(40);
+    expect(started[4]).toBeGreaterThanOrEqual(45);
+    expect(started[7]).toBeLessThan(140);
+  });
+
+  test("a single lane spaces requests by REQUEST_SLEEP", async () => {
+    resetPacingLanes(1);
+    const config = { ...cfg(), requestSleep: 0.04 };
+    const t0 = Date.now();
+    await Promise.all([paceRequests(config), paceRequests(config), paceRequests(config)]);
+    expect(Date.now() - t0).toBeGreaterThanOrEqual(75);
   });
 });
