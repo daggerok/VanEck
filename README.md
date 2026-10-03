@@ -102,10 +102,14 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `OFFLINE_SEED` | `false` | Replay `data/vaneck-verified.ts` instead of fetching, for a network-free run |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
 | `USE_SYSTEM_CA` | `auto` | TLS trust store: `auto` restarts the updater once with Bun's `--use-system-ca` when a request fails with an untrusted-certificate error; `true` always uses the system CA store; `false` never restarts. Not an individual workflow input: use `advanced`, the config file or the CLI environment. |
-| `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on VanEck's official fund-page return percent per tenor |
-| `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the derived total return percent per tenor |
+| `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the published return percent: YTD and 1Y as published, 3Y/5Y/10Y annualized |
+| `TOTAL_RETURN_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the cumulative total return percent per tenor |
 
-`TICKERS` combines with the AUM/TER/yield filters using AND logic; it does not override them. Funds not selected for a successful update keep their prior published metadata and data files, so a bounded or partly failed run can never empty the site.
+`TICKERS` combines with the AUM/TER/yield filters using AND logic; it does not override them. An unknown ticker, a malformed AUM bound or a bad range is an error, never a silent fallback.
+
+AUM, TER, `CATEGORY` and `TICKERS` select funds before any request. The yield (`DIVIDEND_YIELD`, `SEC_YIELD`) and return (`PERFORMANCE_*`, `TOTAL_RETURN_*`) filters are evaluated on each fund's freshly computed metrics before anything is written: a bounded range excludes funds whose value is `null`, and an excluded fund keeps its previous published files untouched. Funds not selected, excluded or failed keep their prior published metadata and data files, so a bounded or partly failed run can never empty the site.
+
+A fund is updated as a unit: pages are written first, then `meta.json`, then stale pages are removed, and the index row follows at the end of the run. If a required source (fund page, holdings or NAV history other than an HTTP 404, or the performance block) fails for a fund, that fund keeps its previous complete state instead of mixing fresh and stale columns. Every request has a 45 s timeout (headers and body) and a run stops taking new funds after 25 minutes, still writing the index. `MAX_FETCHES` resumes only inside the same filter set (the cursor stores the filter scope) and wraps around after the last fund; a `TICKERS` or filtered run never deletes the cursor. A fund row without `funds/<T>/meta.json` has `dataFile: null`. The index `generatedAt` only moves when the feed content changed, so a rerun with unchanged upstream data writes nothing.
 
 ### Examples
 

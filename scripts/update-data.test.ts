@@ -77,6 +77,10 @@ import {
   paceRequests,
   resetPacingLanes,
   setNetworkTimings,
+  assertKnownTickers,
+  filterScope,
+  fundPassesDataFilters,
+  selectCandidates,
 } from "./update-data";
 
 const REPO_ROOT = path.join(import.meta.dir, "..");
@@ -1368,5 +1372,51 @@ describe("network timeout and pacing lanes", () => {
     const t0 = Date.now();
     await Promise.all([paceRequests(config), paceRequests(config), paceRequests(config)]);
     expect(Date.now() - t0).toBeGreaterThanOrEqual(75);
+  });
+});
+
+
+describe("strict controls and data-dependent filters", () => {
+  const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
+  const metrics = { ytd: 5, tr1y: 12, tr3y: 40, tr5y: null, cagr3y: 11, cagr5y: null, dividendYield: 2.5, secYield: null };
+
+  test("AUM bounds must be numbers with an optional K/M/B/T suffix", () => {
+    expect(() => parseAumRange("10X:")).toThrow(/not a number/);
+    expect(() => parseAumRange("abc:")).toThrow();
+    expect(() => parseAumRange("1..5B:")).toThrow();
+    expect(parseAumRange("1.5B:")).toEqual({ min: 1.5e9, max: undefined });
+    expect(parseAumRange("$500M:2B")).toEqual({ min: 5e8, max: 2e9 });
+  });
+
+  test("unknown TICKERS are an error", () => {
+    expect(() => assertKnownTickers(["GDX", "NOPE"], VAN_ECK_SEED)).toThrow(/NOPE/);
+    expect(() => assertKnownTickers(["GDX"], VAN_ECK_SEED)).not.toThrow();
+  });
+
+  test("yield and return filters apply to the computed metrics", () => {
+    expect(fundPassesDataFilters(metrics, cfg())).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "3:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ DIVIDEND_YIELD: "2:3" }))).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "10:" }))).toBe(true);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_1Y: "20:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_3Y: ":10" }))).toBe(false); // annualized 11
+    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_3Y: ":50" }))).toBe(true); // cumulative 40
+  });
+
+  test("a bounded range excludes funds without a value (null, never 0)", () => {
+    expect(fundPassesDataFilters(metrics, cfg({ SEC_YIELD: "0:" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ PERFORMANCE_5Y: ":100" }))).toBe(false);
+    expect(fundPassesDataFilters(metrics, cfg({ TOTAL_RETURN_5Y: "-100:" }))).toBe(false);
+  });
+
+  test("the cursor is scoped to the filter set and wraps after the last fund", () => {
+    expect(filterScope(cfg())).not.toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    expect(filterScope(cfg({ TICKERS: "SMH GDX" }))).toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
+    const all = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), null).map((f) => f.ticker);
+    const next = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), all[2]).map((f) => f.ticker);
+    expect(next[0]).not.toBe(all[0]);
+    const sorted = VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b));
+    const wrapped = selectCandidates(VAN_ECK_SEED, cfg({ MAX_FETCHES: "3" }), sorted[sorted.length - 1]).map((f) => f.ticker);
+    expect(wrapped).toEqual(all);
   });
 });
