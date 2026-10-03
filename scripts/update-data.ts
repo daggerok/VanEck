@@ -1269,7 +1269,7 @@ Every variable below is optional.
                              resumes after the committed cursor in
                              api/vaneck/update-state.json.
   REQUEST_SLEEP        2     Minimum seconds between request starts.
-  CONCURRENCY          2     Parallel fund workers (starts stay globally paced).
+  CONCURRENCY          2     Parallel fund workers (each worker has its own paced request lane).
   MAX_RETRIES          3     Retries for network errors and 408/425/429/5xx (integer >= 1).
   TICKERS              ""    Space/comma separated tickers. ANDed with the other
                              filters, never overriding them.

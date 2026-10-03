@@ -94,7 +94,7 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `CATEGORY`* | `""` | Substring match on the vaneck.com asset class |
 | `HOLDINGS_PAGE_SIZE`*, `HISTORY_PAGE_SIZE`* | `250`, `1000` | Rows per generated JSON page (env alias `HISTORICAL_PAGE_SIZE`) |
 | `HISTORY_RANGE`* | `max` | Yahoo request window and published history rows: `max` or `Ny` (for example `5y`) |
-| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors and HTTP 408/425/429/403/5xx; integer >= 1 |
+| `MAX_RETRIES`* | `3` | Retries after the initial request for network errors, 45 s request timeouts (headers and body) and HTTP 408/425/429/403/5xx; integer >= 1 |
 | `SEC_UA`* | `daggerok ETF feed daggerok@gmail.com` | User-Agent declared to SEC EDGAR; the repository Actions variable `SEC_UA` overrides it |
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
 | `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
