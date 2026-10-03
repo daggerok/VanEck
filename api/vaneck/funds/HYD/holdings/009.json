@@ -2,7 +2,7 @@
  "ticker": "HYD",
  "page": 9,
  "pageSize": 250,
- "totalRows": 2024,
+ "totalRows": 2027,
  "headers": [
   "Name",
   "Maturity",
@@ -17,13 +17,49 @@
  ],
  "rows": [
   {
+   "Name": "City Of Williston Nd",
+   "Maturity": "Sep 01 2038",
+   "Identifier": "BBG005DLBTV7",
+   "Coupon": "7.750",
+   "Asset Category": "Bond",
+   "Par Value": "846,473",
+   "Market Value": "$32,250.63",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Michigan Tobacco Settlement Finance Aut",
+   "Maturity": "Jun 01 2052",
+   "Identifier": "BBG0010WQ374",
+   "Coupon": "",
+   "Asset Category": "Bond",
+   "Par Value": "260,000",
+   "Market Value": "$30,549.35",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Colorado Health Facilities Authority",
+   "Maturity": "Jul 01 2057",
+   "Identifier": "BBG019M4RMG1",
+   "Coupon": "2.000",
+   "Asset Category": "Bond",
+   "Par Value": "536,161",
+   "Market Value": "$26,808.05",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
    "Name": "Puerto Rico Sales Tax Financing Corp Sa",
    "Maturity": "Aug 01 2047",
    "Identifier": "BBG00NBR8D73",
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "77,374",
-   "Market Value": "$24,061.08",
+   "Market Value": "$23,750.45",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -35,7 +71,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "20,000",
-   "Market Value": "$19,907.56",
+   "Market Value": "$20,010.99",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -53,25 +89,13 @@
    "Currency": "USD"
   },
   {
-   "Name": "City Of Nevada Mo",
-   "Maturity": "Oct 01 2026",
-   "Identifier": "BBG0010MBV43",
-   "Coupon": "4.300",
-   "Asset Category": "Bond",
-   "Par Value": "15,000",
-   "Market Value": "$15,310.93",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
    "Name": "California County Tobacco Securitizatio",
    "Maturity": "Jun 01 2036",
    "Identifier": "BBG0010RV8B3",
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "15,000",
-   "Market Value": "$14,529.56",
+   "Market Value": "$14,491.71",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -107,7 +131,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,226.66",
+   "Market Value": "$5,202.90",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -119,7 +143,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,087.38",
+   "Market Value": "$5,089.26",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -131,7 +155,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,758.15",
+   "Market Value": "$4,706.50",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -143,7 +167,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,329.40",
+   "Market Value": "$4,323.31",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -155,7 +179,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,650.06",
+   "Market Value": "$3,672.12",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -167,7 +191,7 @@
    "Coupon": "3.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,641.43",
+   "Market Value": "$3,654.06",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -179,7 +203,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,456.15",
+   "Market Value": "$3,414.12",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -191,7 +215,7 @@
    "Coupon": "3.250",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,422.03",
+   "Market Value": "$3,390.94",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -203,7 +227,19 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "3,000",
-   "Market Value": "$3,017.26",
+   "Market Value": "$3,020.71",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Atoka Industrial Development Authority",
+   "Maturity": "Aug 01 2039",
+   "Identifier": "BBG00Q21FY24",
+   "Coupon": "8.000",
+   "Asset Category": "Bond",
+   "Par Value": "1,000,000",
+   "Market Value": "$2,850.00",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -215,7 +251,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$393.01",
+   "Market Value": "$387.27",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -286,9 +322,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "80,745,606",
-   "Market Value": "$80,745,606.20",
-   "Weight": "2.06%",
+   "Par Value": "111,327,658",
+   "Market Value": "$111,327,658.49",
+   "Weight": "2.84%",
    "Country": "",
    "Currency": "USD"
   },
@@ -299,8 +335,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-9,719,341.78",
-   "Weight": "-0.25%",
+   "Market Value": "$-33,402,535.21",
+   "Weight": "-0.85%",
    "Country": "",
    "Currency": "USD"
   }

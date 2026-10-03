@@ -9,23 +9,23 @@
  "ter": "0.36%",
  "terValue": 0.36,
  "nav": {
-  "display": "$111.34",
-  "value": 111.34,
-  "asOfDate": "Sep 25 2026"
+  "display": "$108.05",
+  "value": 108.05,
+  "asOfDate": "Oct 02 2026"
  },
- "navValue": 111.34,
+ "navValue": 108.05,
  "aum": {
-  "display": "$1.05B",
-  "value": 1045270079.52,
-  "asOfDate": "Sep 25 2026",
+  "display": "$1.03B",
+  "value": 1030567060.9,
+  "asOfDate": "Oct 02 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1045270079.52,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 1030567060.9,
+ "asOfDate": "Oct 02 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NASDAQ",
- "closePrice": "$111.35",
- "closePriceValue": 111.35,
+ "closePrice": "$108.06",
+ "closePriceValue": 108.06,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -40,6 +40,11 @@
    "Dividend"
   ],
   "rows": [
+   {
+    "Ex-Date": "Oct 01 2026",
+    "Payable Date": "Oct 06 2026",
+    "Dividend": "$0.3600"
+   },
    {
     "Ex-Date": "Jul 01 2026",
     "Payable Date": "Jul 07 2026",
@@ -321,34 +326,35 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 25 2026",
-   "ytd": 9.47,
-   "ytdText": "9.47%",
-   "yr1": 29.87,
-   "yr3": 13.65,
-   "yr5": 10.41,
-   "yr10": 8.78,
-   "sinceInception": 10.31
+   "asOfDate": "Oct 02 2026",
+   "ytd": 6.23,
+   "ytdText": "6.23%",
+   "yr1": 23.6,
+   "yr3": 13.35,
+   "yr5": 10.67,
+   "yr10": 8.69,
+   "sinceInception": 10,
+   "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
-   "asOfDate": "Jun 30 2026",
-   "yr1": 27.15,
-   "yr3": 13.83,
-   "yr5": 10.55,
-   "yr10": 8.46,
-   "sinceInception": 10.15
+   "asOfDate": "Sep 30 2026",
+   "yr1": 23.6,
+   "yr3": 13.35,
+   "yr5": 10.67,
+   "yr10": 8.69,
+   "sinceInception": 10
   }
  },
  "metrics": {
-  "ytd": 9.47,
-  "tr1y": 29.87,
-  "tr3y": 46.79,
-  "tr5y": 64.08,
-  "tr10y": 132.09,
-  "cagr3y": 13.65,
-  "cagr5y": 10.41,
-  "cagr10y": 8.78,
-  "siAnn": 10.31,
+  "ytd": 6.23,
+  "tr1y": 23.6,
+  "tr3y": 45.65,
+  "tr5y": 66,
+  "tr10y": 130.15,
+  "cagr3y": 13.35,
+  "cagr5y": 10.67,
+  "cagr10y": 8.69,
+  "siAnn": 10,
   "dividendYield": 2.25,
   "dividendYieldText": "2.25%",
   "distributionYield": 2.25,
@@ -357,18 +363,19 @@
   "yield12MText": "2.65%",
   "secYield": 1.87,
   "secYieldText": "1.87%",
+  "ytdAsOf": "2026-10-02",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-25"
+  "performanceAsOf": "2026-09-30"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "Equity Thematic",
  "terGross": "0.36%",
  "terGrossValue": 0.36,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Oct 02 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Oct 01 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -376,9 +383,9 @@
   ]
  },
  "history": {
-  "totalRows": 4064,
+  "totalRows": 4071,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Oct 02 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/pharmaceutical-etf-pph/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -389,7 +396,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 1050000000,
+ "totalNetAssets": 1030000000,
  "indexTicker": "MVPPHTR",
  "indexName": "US Listed Pharmaceutical 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -428,16 +435,16 @@
   "grossValue": 0.36
  },
  "marketPrice": {
-  "display": "$111.35",
-  "value": 111.35,
-  "asOfDate": "Sep 25 2026"
+  "display": "$108.06",
+  "value": 108.06,
+  "asOfDate": "Oct 02 2026"
  },
  "yields": {
   "dividendYield": 2.25,
   "dividendYieldText": "2.25%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.24,
-  "indicatedYieldText": "2.24%",
+  "indicatedYield": 1.33,
+  "indicatedYieldText": "1.33%",
   "distributionYield": 2.25,
   "distributionYieldText": "2.25%",
   "yield12M": 2.65,

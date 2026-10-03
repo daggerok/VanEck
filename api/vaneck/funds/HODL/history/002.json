@@ -1,0 +1,44 @@
+{
+ "ticker": "HODL",
+ "page": 2,
+ "pageSize": 1000,
+ "totalRows": 1003,
+ "headers": [
+  "Date",
+  "NAV",
+  "Close",
+  "Volume",
+  "Premium/Discount",
+  "Total Net Assets",
+  "Index Level"
+ ],
+ "rows": [
+  {
+   "Date": "Jan 06 2024",
+   "NAV": "49.5381",
+   "Close": "49.54",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "71,830,174.46",
+   "Index Level": "43,880.66"
+  },
+  {
+   "Date": "Jan 05 2024",
+   "NAV": "49.5381",
+   "Close": "49.54",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "71,830,174.46",
+   "Index Level": "43,774.20"
+  },
+  {
+   "Date": "Jan 04 2024",
+   "NAV": "50.0000",
+   "Close": "50.00",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "100,000.00",
+   "Index Level": "44,182.40"
+  }
+ ]
+}

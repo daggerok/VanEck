@@ -2,7 +2,7 @@
  "ticker": "HYEM",
  "page": 3,
  "pageSize": 250,
- "totalRows": 542,
+ "totalRows": 547,
  "headers": [
   "Name",
   "Maturity",
@@ -17,26 +17,14 @@
  ],
  "rows": [
   {
-   "Name": "Petrobras Global Finance Bv",
-   "Maturity": "Mar 19 2049",
-   "Identifier": "BBG00NKXZ8F2",
-   "Coupon": "6.900",
-   "Asset Category": "Bond",
-   "Par Value": "400,000",
-   "Market Value": "$383,666.66",
-   "Weight": "0.07%",
-   "Country": "Brazil",
-   "Currency": "USD"
-  },
-  {
    "Name": "Natura &Co Luxembourg Holdings Sarl",
    "Maturity": "May 03 2028",
    "Identifier": "BBG010FXDT92",
    "Coupon": "4.125",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$383,550.88",
-   "Weight": "0.07%",
+   "Market Value": "$380,699.56",
+   "Weight": "0.08%",
    "Country": "Brazil",
    "Currency": "USD"
   },
@@ -47,7 +35,55 @@
    "Coupon": "5.750",
    "Asset Category": "Bond",
    "Par Value": "375,000",
-   "Market Value": "$379,321.40",
+   "Market Value": "$379,755.30",
+   "Weight": "0.07%",
+   "Country": "Brazil",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Aragvi Finance International Dac",
+   "Maturity": "Nov 20 2029",
+   "Identifier": "BBG01QJS2JN0",
+   "Coupon": "11.125",
+   "Asset Category": "Bond",
+   "Par Value": "500,000",
+   "Market Value": "$379,579.40",
+   "Weight": "0.07%",
+   "Country": "Ireland",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Fs Luxembourg Sarl",
+   "Maturity": "Jun 25 2033",
+   "Identifier": "BBG01VJHQWZ5",
+   "Coupon": "8.625",
+   "Asset Category": "Bond",
+   "Par Value": "400,000",
+   "Market Value": "$378,643.66",
+   "Weight": "0.07%",
+   "Country": "Luxembourg",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Petrobras Global Finance Bv",
+   "Maturity": "Mar 19 2049",
+   "Identifier": "BBG00NKXZ8F2",
+   "Coupon": "6.900",
+   "Asset Category": "Bond",
+   "Par Value": "400,000",
+   "Market Value": "$375,525.34",
+   "Weight": "0.07%",
+   "Country": "Brazil",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Rede D'Or Finance Sarl",
+   "Maturity": "Jan 17 2028",
+   "Identifier": "BBG00JR5JVP1",
+   "Coupon": "4.950",
+   "Asset Category": "Bond",
+   "Par Value": "375,000",
+   "Market Value": "$373,408.88",
    "Weight": "0.07%",
    "Country": "Brazil",
    "Currency": "USD"
@@ -59,21 +95,21 @@
    "Coupon": "3.200",
    "Asset Category": "Bond",
    "Par Value": "425,000",
-   "Market Value": "$379,039.75",
+   "Market Value": "$373,151.87",
    "Weight": "0.07%",
    "Country": "Brazil",
    "Currency": "USD"
   },
   {
-   "Name": "Rumo Luxembourg Sarl",
-   "Maturity": "Jan 18 2032",
-   "Identifier": "BBG012JJ8R40",
-   "Coupon": "4.200",
+   "Name": "Petroleos Mexicanos",
+   "Maturity": "Jan 23 2045",
+   "Identifier": "BBG0076DCXD9",
+   "Coupon": "6.375",
    "Asset Category": "Bond",
-   "Par Value": "425,000",
-   "Market Value": "$376,879.38",
+   "Par Value": "475,000",
+   "Market Value": "$369,470.07",
    "Weight": "0.07%",
-   "Country": "Luxembourg",
+   "Country": "Mexico",
    "Currency": "USD"
   },
   {
@@ -83,33 +119,9 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "471,000",
-   "Market Value": "$374,716.16",
+   "Market Value": "$367,294.78",
    "Weight": "0.07%",
    "Country": "Netherlands",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Rede D'Or Finance Sarl",
-   "Maturity": "Jan 17 2028",
-   "Identifier": "BBG00JR5JVP1",
-   "Coupon": "4.950",
-   "Asset Category": "Bond",
-   "Par Value": "375,000",
-   "Market Value": "$374,191.96",
-   "Weight": "0.07%",
-   "Country": "Brazil",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Fs Luxembourg Sarl",
-   "Maturity": "Feb 11 2036",
-   "Identifier": "BBG01ZW8L9F9",
-   "Coupon": "8.125",
-   "Asset Category": "Bond",
-   "Par Value": "400,000",
-   "Market Value": "$367,312.49",
-   "Weight": "0.07%",
-   "Country": "Luxembourg",
    "Currency": "USD"
   },
   {
@@ -119,9 +131,45 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$364,619.08",
+   "Market Value": "$364,712.63",
    "Weight": "0.07%",
    "Country": "Cayman Islands",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Rumo Luxembourg Sarl",
+   "Maturity": "Jan 18 2032",
+   "Identifier": "BBG012JJ8R40",
+   "Coupon": "4.200",
+   "Asset Category": "Bond",
+   "Par Value": "425,000",
+   "Market Value": "$362,170.13",
+   "Weight": "0.07%",
+   "Country": "Luxembourg",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Fs Luxembourg Sarl",
+   "Maturity": "Feb 11 2036",
+   "Identifier": "BBG01ZW8L9F9",
+   "Coupon": "8.125",
+   "Asset Category": "Bond",
+   "Par Value": "400,000",
+   "Market Value": "$360,944.44",
+   "Weight": "0.07%",
+   "Country": "Luxembourg",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Brf Sa",
+   "Maturity": "Sep 21 2050",
+   "Identifier": "BBG00XDH22V4",
+   "Coupon": "5.750",
+   "Asset Category": "Bond",
+   "Par Value": "525,000",
+   "Market Value": "$355,381.26",
+   "Weight": "0.07%",
+   "Country": "Brazil",
    "Currency": "USD"
   },
   {
@@ -131,7 +179,7 @@
    "Coupon": "5.200",
    "Asset Category": "Bond",
    "Par Value": "425,000",
-   "Market Value": "$359,620.83",
+   "Market Value": "$351,550.55",
    "Weight": "0.07%",
    "Country": "Brazil",
    "Currency": "USD"
@@ -143,7 +191,7 @@
    "Coupon": "6.500",
    "Asset Category": "Bond",
    "Par Value": "350,000",
-   "Market Value": "$348,721.72",
+   "Market Value": "$348,231.34",
    "Weight": "0.07%",
    "Country": "Brazil",
    "Currency": "USD"
@@ -155,7 +203,7 @@
    "Coupon": "8.375",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$340,939.27",
+   "Market Value": "$336,573.48",
    "Weight": "0.07%",
    "Country": "United Arab Emirates",
    "Currency": "USD"
@@ -167,21 +215,9 @@
    "Coupon": "3.500",
    "Asset Category": "Bond",
    "Par Value": "650,000",
-   "Market Value": "$327,269.44",
+   "Market Value": "$329,594.13",
    "Weight": "0.06%",
    "Country": "China",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Karoon Usa Finance Inc",
-   "Maturity": "May 14 2029",
-   "Identifier": "BBG01MRJB2W7",
-   "Coupon": "10.500",
-   "Asset Category": "Bond",
-   "Par Value": "300,000",
-   "Market Value": "$322,557.30",
-   "Weight": "0.06%",
-   "Country": "Australia",
    "Currency": "USD"
   },
   {
@@ -191,9 +227,21 @@
    "Coupon": "5.093",
    "Asset Category": "Bond",
    "Par Value": "325,000",
-   "Market Value": "$320,695.22",
+   "Market Value": "$320,592.30",
    "Weight": "0.06%",
    "Country": "Brazil",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Karoon Usa Finance Inc",
+   "Maturity": "May 14 2029",
+   "Identifier": "BBG01MRJB2W7",
+   "Coupon": "10.500",
+   "Asset Category": "Bond",
+   "Par Value": "300,000",
+   "Market Value": "$318,467.90",
+   "Weight": "0.06%",
+   "Country": "Australia",
    "Currency": "USD"
   },
   {
@@ -203,19 +251,19 @@
    "Coupon": "12.750",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$315,056.94",
+   "Market Value": "$305,275.48",
    "Weight": "0.06%",
    "Country": "Ireland",
    "Currency": "USD"
   },
   {
-   "Name": "Tupy Overseas Sa",
-   "Maturity": "Feb 16 2031",
-   "Identifier": "BBG00Z5HYPS6",
-   "Coupon": "4.500",
+   "Name": "Ultrapar International Sa",
+   "Maturity": "Jun 06 2029",
+   "Identifier": "BBG00PBBLBG2",
+   "Coupon": "5.250",
    "Asset Category": "Bond",
-   "Par Value": "350,000",
-   "Market Value": "$302,312.50",
+   "Par Value": "300,000",
+   "Market Value": "$301,678.76",
    "Weight": "0.06%",
    "Country": "Brazil",
    "Currency": "USD"
@@ -227,21 +275,9 @@
    "Coupon": "5.350",
    "Asset Category": "Bond",
    "Par Value": "300,000",
-   "Market Value": "$301,735.22",
+   "Market Value": "$299,932.76",
    "Weight": "0.06%",
    "Country": "Mexico",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Ultrapar International Sa",
-   "Maturity": "Jun 06 2029",
-   "Identifier": "BBG00PBBLBG2",
-   "Coupon": "5.250",
-   "Asset Category": "Bond",
-   "Par Value": "300,000",
-   "Market Value": "$301,285.86",
-   "Weight": "0.06%",
-   "Country": "Brazil",
    "Currency": "USD"
   },
   {
@@ -251,9 +287,33 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "300,000",
-   "Market Value": "$300,397.52",
+   "Market Value": "$297,089.40",
    "Weight": "0.06%",
    "Country": "Cayman Islands",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Turkiye Sinai Kalkinma Bankasi As",
+   "Maturity": "Jul 07 2031",
+   "Identifier": "BBG023CNLVK3",
+   "Coupon": "7.250",
+   "Asset Category": "Bond",
+   "Par Value": "300,000",
+   "Market Value": "$294,689.13",
+   "Weight": "0.06%",
+   "Country": "Turkey",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Tupy Overseas Sa",
+   "Maturity": "Feb 16 2031",
+   "Identifier": "BBG00Z5HYPS6",
+   "Coupon": "4.500",
+   "Asset Category": "Bond",
+   "Par Value": "350,000",
+   "Market Value": "$290,631.25",
+   "Weight": "0.06%",
+   "Country": "Brazil",
    "Currency": "USD"
   },
   {
@@ -263,7 +323,7 @@
    "Coupon": "11.950",
    "Asset Category": "Bond",
    "Par Value": "300,000",
-   "Market Value": "$295,657.08",
+   "Market Value": "$284,324.17",
    "Weight": "0.06%",
    "Country": "Luxembourg",
    "Currency": "USD"
@@ -275,7 +335,7 @@
    "Coupon": "9.700",
    "Asset Category": "Bond",
    "Par Value": "300,000",
-   "Market Value": "$295,335.00",
+   "Market Value": "$280,600.83",
    "Weight": "0.06%",
    "Country": "Luxembourg",
    "Currency": "USD"
@@ -287,8 +347,8 @@
    "Coupon": "9.200",
    "Asset Category": "Bond",
    "Par Value": "300,000",
-   "Market Value": "$291,550.00",
-   "Weight": "0.06%",
+   "Market Value": "$277,086.66",
+   "Weight": "0.05%",
    "Country": "Luxembourg",
    "Currency": "USD"
   },
@@ -299,7 +359,7 @@
    "Coupon": "6.625",
    "Asset Category": "Bond",
    "Par Value": "234,719",
-   "Market Value": "$234,736.38",
+   "Market Value": "$231,665.84",
    "Weight": "0.05%",
    "Country": "Luxembourg",
    "Currency": "USD"
@@ -311,7 +371,7 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$206,796.37",
+   "Market Value": "$203,871.26",
    "Weight": "0.04%",
    "Country": "India",
    "Currency": "USD"
@@ -323,7 +383,7 @@
    "Coupon": "5.875",
    "Asset Category": "Bond",
    "Par Value": "325,000",
-   "Market Value": "$204,935.79",
+   "Market Value": "$199,343.30",
    "Weight": "0.04%",
    "Country": "Luxembourg",
    "Currency": "USD"
@@ -335,7 +395,7 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$204,057.27",
+   "Market Value": "$198,453.35",
    "Weight": "0.04%",
    "Country": "Mexico",
    "Currency": "USD"
@@ -347,7 +407,7 @@
    "Coupon": "6.875",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$195,622.00",
+   "Market Value": "$192,685.90",
    "Weight": "0.04%",
    "Country": "Turkey",
    "Currency": "USD"
@@ -359,7 +419,7 @@
    "Coupon": "5.875",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$191,590.64",
+   "Market Value": "$189,512.56",
    "Weight": "0.04%",
    "Country": "Turkey",
    "Currency": "USD"
@@ -371,7 +431,7 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "250,000",
-   "Market Value": "$190,999.30",
+   "Market Value": "$180,714.17",
    "Weight": "0.04%",
    "Country": "Mexico",
    "Currency": "USD"
@@ -383,8 +443,8 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "250,000",
-   "Market Value": "$187,247.56",
-   "Weight": "0.04%",
+   "Market Value": "$177,040.02",
+   "Weight": "0.03%",
    "Country": "Mexico",
    "Currency": "USD"
   },
@@ -395,7 +455,7 @@
    "Coupon": "5.625",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$177,896.17",
+   "Market Value": "$175,037.35",
    "Weight": "0.03%",
    "Country": "Brazil",
    "Currency": "USD"
@@ -407,7 +467,7 @@
    "Coupon": "5.625",
    "Asset Category": "Bond",
    "Par Value": "225,000",
-   "Market Value": "$170,658.13",
+   "Market Value": "$162,305.49",
    "Weight": "0.03%",
    "Country": "Mexico",
    "Currency": "USD"
@@ -419,7 +479,7 @@
    "Coupon": "6.625",
    "Asset Category": "Bond",
    "Par Value": "150,000",
-   "Market Value": "$135,348.27",
+   "Market Value": "$130,344.75",
    "Weight": "0.03%",
    "Country": "Mexico",
    "Currency": "USD"
@@ -431,7 +491,7 @@
    "Coupon": "9.750",
    "Asset Category": "Bond",
    "Par Value": "400,000",
-   "Market Value": "$113,374.43",
+   "Market Value": "$110,466.59",
    "Weight": "0.02%",
    "Country": "Turkey",
    "Currency": "USD"
@@ -443,7 +503,7 @@
    "Coupon": "14.250",
    "Asset Category": "Bond",
    "Par Value": "200,000",
-   "Market Value": "$13,390.00",
+   "Market Value": "$13,346.00",
    "Weight": "0.00%",
    "Country": "China",
    "Currency": "USD"
@@ -467,7 +527,7 @@
    "Coupon": "2.500",
    "Asset Category": "Bond",
    "Par Value": "684",
-   "Market Value": "$723.76",
+   "Market Value": "$722.02",
    "Weight": "0.00%",
    "Country": "Argentina",
    "Currency": "USD"
@@ -490,9 +550,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "6,014,510",
-   "Market Value": "$6,014,510.09",
-   "Weight": "1.16%",
+   "Par Value": "4,495,014",
+   "Market Value": "$4,495,013.66",
+   "Weight": "0.89%",
    "Country": "United States",
    "Currency": "USD"
   },
@@ -503,7 +563,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "93",
-   "Market Value": "$105.48",
+   "Market Value": "$104.47",
    "Weight": "0.00%",
    "Country": "Europe",
    "Currency": "EUR"
@@ -515,8 +575,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-274,682.82",
-   "Weight": "-0.05%",
+   "Market Value": "$-4,212,091.66",
+   "Weight": "-0.83%",
    "Country": "",
    "Currency": "USD"
   }

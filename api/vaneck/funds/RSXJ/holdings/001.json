@@ -2,7 +2,7 @@
  "ticker": "RSXJ",
  "page": 1,
  "pageSize": 250,
- "totalRows": 26,
+ "totalRows": 25,
  "headers": [
   "Name",
   "Ticker",
@@ -15,30 +15,20 @@
  ],
  "rows": [
   {
-   "Name": "Aeroflot Pjsc",
-   "Ticker": "AFLT RM",
-   "Identifier": "BBG004S683W7",
-   "Shares Held": "1,885,382",
+   "Name": "Lenta International Co Pjsc",
+   "Ticker": "LNTA RM",
+   "Identifier": "BBG000QQPXZ5",
+   "Shares Held": "263,199",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
    "Weight": "0.00%"
   },
   {
-   "Name": "Sistema Afk Pao",
-   "Ticker": "AFKS RM",
-   "Identifier": "BBG004S68614",
-   "Shares Held": "6,612,640",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Tgc-1 Pjsc",
-   "Ticker": "TGKA RM",
-   "Identifier": "BBG000QFH687",
-   "Shares Held": "1,701,100,000",
+   "Name": "Novorossiysk Commercial Sea Port Pjsc",
+   "Ticker": "NMTP RM",
+   "Identifier": "BBG004S68BR5",
+   "Shares Held": "8,972,400",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
@@ -55,10 +45,20 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "Mosenergo Pjsc",
-   "Ticker": "MSNG RM",
-   "Identifier": "BBG004S687W8",
-   "Shares Held": "19,492,800",
+   "Name": "Beluga Group Pjsc",
+   "Ticker": "BELU RM",
+   "Identifier": "BBG000TY1C41",
+   "Shares Held": "89,880",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Tgc-1 Pjsc",
+   "Ticker": "TGKA RM",
+   "Identifier": "BBG000QFH687",
+   "Shares Held": "1,701,100,000",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
@@ -85,26 +85,6 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "Samolet Group",
-   "Ticker": "SMLT RM",
-   "Identifier": "BBG00F6NKQX3",
-   "Shares Held": "16,988",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Ogk-2 Pjsc",
-   "Ticker": "OGKB RM",
-   "Identifier": "BBG000RK52V1",
-   "Shares Held": "51,450,600",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
    "Name": "Mechel Pjsc",
    "Ticker": "MTLR RM",
    "Identifier": "BBG004S68598",
@@ -115,10 +95,70 @@
    "Weight": "0.00%"
   },
   {
+   "Name": "Rosseti Lenenergo Pjsc",
+   "Ticker": "LSNGP RM",
+   "Identifier": "BBG000NLCCM3",
+   "Shares Held": "171,506",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Samolet Group",
+   "Ticker": "SMLT RM",
+   "Identifier": "BBG00F6NKQX3",
+   "Shares Held": "16,988",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Lsr Group Pjsc",
+   "Ticker": "LSRG RM",
+   "Identifier": "BBG004S68C39",
+   "Shares Held": "103,574",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Unipro Pao",
+   "Ticker": "UPRO RM",
+   "Identifier": "BBG004S686W0",
+   "Shares Held": "24,734,000",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Etalon Group Plc",
+   "Ticker": "ETLN LI",
+   "Identifier": "BBG001M2SC01",
+   "Shares Held": "394,873",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
    "Name": "Sfi Pjsc",
    "Ticker": "SFIN RM",
    "Identifier": "BBG003LYCMB1",
    "Shares Held": "2,663",
+   "Asset Category": "Stock",
+   "Market Value": "$.00",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Mosenergo Pjsc",
+   "Ticker": "MSNG RM",
+   "Identifier": "BBG004S687W8",
+   "Shares Held": "19,492,800",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
@@ -145,50 +185,30 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "Etalon Group Plc",
-   "Ticker": "ETLN LI",
-   "Identifier": "BBG001M2SC01",
-   "Shares Held": "394,873",
+   "Name": "Aeroflot Pjsc",
+   "Ticker": "AFLT RM",
+   "Identifier": "BBG004S683W7",
+   "Shares Held": "1,885,382",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
    "Weight": "0.00%"
   },
   {
-   "Name": "Novorossiysk Commercial Sea Port Pjsc",
-   "Ticker": "NMTP RM",
-   "Identifier": "BBG004S68BR5",
-   "Shares Held": "8,972,400",
+   "Name": "Sistema Afk Pao",
+   "Ticker": "AFKS RM",
+   "Identifier": "BBG004S68614",
+   "Shares Held": "6,612,640",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
    "Weight": "0.00%"
   },
   {
-   "Name": "Lenta International Co Pjsc",
-   "Ticker": "LNTA RM",
-   "Identifier": "BBG000QQPXZ5",
-   "Shares Held": "263,199",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Unipro Pao",
-   "Ticker": "UPRO RM",
-   "Identifier": "BBG004S686W0",
-   "Shares Held": "24,734,000",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Beluga Group Pjsc",
-   "Ticker": "BELU RM",
-   "Identifier": "BBG000TY1C41",
-   "Shares Held": "89,880",
+   "Name": "Ogk-2 Pjsc",
+   "Ticker": "OGKB RM",
+   "Identifier": "BBG000RK52V1",
+   "Shares Held": "51,450,600",
    "Asset Category": "Stock",
    "Market Value": "$.00",
    "Notional Value": "",
@@ -205,32 +225,12 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "Rosseti Lenenergo Pjsc",
-   "Ticker": "LSNGP RM",
-   "Identifier": "BBG000NLCCM3",
-   "Shares Held": "171,506",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Lsr Group Pjsc",
-   "Ticker": "LSRG RM",
-   "Identifier": "BBG004S68C39",
-   "Shares Held": "103,574",
-   "Asset Category": "Stock",
-   "Market Value": "$.00",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
    "Name": "",
    "Ticker": "-GBP CASH-",
    "Identifier": "",
    "Shares Held": "467",
    "Asset Category": "Cash Bal",
-   "Market Value": "$617.00",
+   "Market Value": "$616.60",
    "Notional Value": "",
    "Weight": "0.18%"
   },
@@ -240,7 +240,7 @@
    "Identifier": "",
    "Shares Held": "1",
    "Asset Category": "Cash Bal",
-   "Market Value": "$1.24",
+   "Market Value": "$1.23",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -255,24 +255,14 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "",
-   "Ticker": "-USD CASH-",
-   "Identifier": "",
-   "Shares Held": "-492",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$-491.85",
-   "Notional Value": "",
-   "Weight": "-0.14%"
-  },
-  {
    "Name": "Other/Cash",
    "Ticker": "",
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$348,660.56",
+   "Market Value": "$348,407.61",
    "Notional Value": "",
-   "Weight": "99.96%"
+   "Weight": "99.82%"
   }
  ]
 }

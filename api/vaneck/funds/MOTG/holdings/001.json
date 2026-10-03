@@ -2,7 +2,7 @@
  "ticker": "MOTG",
  "page": 1,
  "pageSize": 250,
- "totalRows": 82,
+ "totalRows": 83,
  "headers": [
   "Name",
   "Ticker",
@@ -15,14 +15,14 @@
  ],
  "rows": [
   {
-   "Name": "Danaher Corp",
-   "Ticker": "DHR",
-   "Identifier": "BBG000BH3JF8",
-   "Shares Held": "1,790",
+   "Name": "Microsoft Corp",
+   "Ticker": "MSFT",
+   "Identifier": "BBG000BPH459",
+   "Shares Held": "772",
    "Asset Category": "Stock",
-   "Market Value": "$400,548.30",
+   "Market Value": "$395,881.60",
    "Notional Value": "",
-   "Weight": "2.28%"
+   "Weight": "2.26%"
   },
   {
    "Name": "Taiwan Semiconductor Manufacturing Co L",
@@ -30,19 +30,19 @@
    "Identifier": "BBG000BN2JD8",
    "Shares Held": "5,000",
    "Asset Category": "Stock",
-   "Market Value": "$392,509.44",
+   "Market Value": "$393,684.06",
    "Notional Value": "",
-   "Weight": "2.23%"
+   "Weight": "2.25%"
   },
   {
-   "Name": "Microsoft Corp",
-   "Ticker": "MSFT",
-   "Identifier": "BBG000BPH459",
-   "Shares Held": "772",
+   "Name": "Danaher Corp",
+   "Ticker": "DHR",
+   "Identifier": "BBG000BH3JF8",
+   "Shares Held": "1,790",
    "Asset Category": "Stock",
-   "Market Value": "$384,401.96",
+   "Market Value": "$379,050.40",
    "Notional Value": "",
-   "Weight": "2.18%"
+   "Weight": "2.17%"
   },
   {
    "Name": "Nvidia Corp",
@@ -50,49 +50,9 @@
    "Identifier": "BBG000BBJQV0",
    "Shares Held": "1,593",
    "Asset Category": "Stock",
-   "Market Value": "$357,755.94",
+   "Market Value": "$367,759.98",
    "Notional Value": "",
-   "Weight": "2.03%"
-  },
-  {
-   "Name": "Estee Lauder Cos Inc/The",
-   "Ticker": "EL",
-   "Identifier": "BBG000FKJRC5",
-   "Shares Held": "3,736",
-   "Asset Category": "Stock",
-   "Market Value": "$356,302.32",
-   "Notional Value": "",
-   "Weight": "2.02%"
-  },
-  {
-   "Name": "Charles Schwab Corp/The",
-   "Ticker": "SCHW",
-   "Identifier": "BBG000BSLZY7",
-   "Shares Held": "3,572",
-   "Asset Category": "Stock",
-   "Market Value": "$355,378.28",
-   "Notional Value": "",
-   "Weight": "2.02%"
-  },
-  {
-   "Name": "Reckitt Benckiser Group Plc",
-   "Ticker": "RKT LN",
-   "Identifier": "BBG000C38NP3",
-   "Shares Held": "5,416",
-   "Asset Category": "Stock",
-   "Market Value": "$352,732.63",
-   "Notional Value": "",
-   "Weight": "2.00%"
-  },
-  {
-   "Name": "Bureau Veritas Sa",
-   "Ticker": "BVI FP",
-   "Identifier": "BBG000LHT4L5",
-   "Shares Held": "11,537",
-   "Asset Category": "Stock",
-   "Market Value": "$352,242.13",
-   "Notional Value": "",
-   "Weight": "2.00%"
+   "Weight": "2.10%"
   },
   {
    "Name": "Sony Group Corp",
@@ -100,39 +60,9 @@
    "Identifier": "BBG000C26F38",
    "Shares Held": "15,200",
    "Asset Category": "Stock",
-   "Market Value": "$351,597.56",
+   "Market Value": "$360,056.47",
    "Notional Value": "",
-   "Weight": "2.00%"
-  },
-  {
-   "Name": "Bae Systems Plc",
-   "Ticker": "BA/ LN",
-   "Identifier": "BBG000BD5TW4",
-   "Shares Held": "13,340",
-   "Asset Category": "Stock",
-   "Market Value": "$351,555.65",
-   "Notional Value": "",
-   "Weight": "2.00%"
-  },
-  {
-   "Name": "Dassault Aviation Sa",
-   "Ticker": "AM FP",
-   "Identifier": "BBG000BBR565",
-   "Shares Held": "1,055",
-   "Asset Category": "Stock",
-   "Market Value": "$350,906.64",
-   "Notional Value": "",
-   "Weight": "1.99%"
-  },
-  {
-   "Name": "Foshan Haitian Flavouring & Food Co Ltd",
-   "Ticker": "603288 C1",
-   "Identifier": "BBG007PXQ7D6",
-   "Shares Held": "69,200",
-   "Asset Category": "Stock",
-   "Market Value": "$349,573.52",
-   "Notional Value": "",
-   "Weight": "1.99%"
+   "Weight": "2.06%"
   },
   {
    "Name": "Spirax-Sarco Engineering Plc",
@@ -140,37 +70,77 @@
    "Identifier": "BBG000BF2FG0",
    "Shares Held": "3,769",
    "Asset Category": "Stock",
-   "Market Value": "$348,478.61",
+   "Market Value": "$359,208.47",
    "Notional Value": "",
-   "Weight": "1.98%"
+   "Weight": "2.05%"
   },
   {
-   "Name": "Thales Sa",
-   "Ticker": "HO FP",
-   "Identifier": "BBG000BCFRQ6",
-   "Shares Held": "1,304",
+   "Name": "Charles Schwab Corp/The",
+   "Ticker": "SCHW",
+   "Identifier": "BBG000BSLZY7",
+   "Shares Held": "3,572",
    "Asset Category": "Stock",
-   "Market Value": "$344,713.70",
+   "Market Value": "$351,377.64",
+   "Notional Value": "",
+   "Weight": "2.01%"
+  },
+  {
+   "Name": "Reckitt Benckiser Group Plc",
+   "Ticker": "RKT LN",
+   "Identifier": "BBG000C38NP3",
+   "Shares Held": "5,416",
+   "Asset Category": "Stock",
+   "Market Value": "$351,290.16",
+   "Notional Value": "",
+   "Weight": "2.01%"
+  },
+  {
+   "Name": "Bureau Veritas Sa",
+   "Ticker": "BVI FP",
+   "Identifier": "BBG000LHT4L5",
+   "Shares Held": "11,537",
+   "Asset Category": "Stock",
+   "Market Value": "$345,540.60",
+   "Notional Value": "",
+   "Weight": "1.97%"
+  },
+  {
+   "Name": "Bae Systems Plc",
+   "Ticker": "BA/ LN",
+   "Identifier": "BBG000BD5TW4",
+   "Shares Held": "13,340",
+   "Asset Category": "Stock",
+   "Market Value": "$343,332.40",
    "Notional Value": "",
    "Weight": "1.96%"
   },
   {
-   "Name": "Gsk Plc",
-   "Ticker": "GSK LN",
-   "Identifier": "BBG000CT5GJ1",
-   "Shares Held": "13,869",
+   "Name": "Foshan Haitian Flavouring & Food Co Ltd",
+   "Ticker": "603288 C1",
+   "Identifier": "BBG007PXQ7D6",
+   "Shares Held": "69,200",
    "Asset Category": "Stock",
-   "Market Value": "$343,845.90",
+   "Market Value": "$341,148.51",
    "Notional Value": "",
    "Weight": "1.95%"
   },
   {
-   "Name": "Zimmer Biomet Holdings Inc",
-   "Ticker": "ZBH",
-   "Identifier": "BBG000BKPL53",
-   "Shares Held": "3,776",
+   "Name": "Estee Lauder Cos Inc/The",
+   "Ticker": "EL",
+   "Identifier": "BBG000FKJRC5",
+   "Shares Held": "3,736",
    "Asset Category": "Stock",
-   "Market Value": "$338,669.44",
+   "Market Value": "$336,949.84",
+   "Notional Value": "",
+   "Weight": "1.93%"
+  },
+  {
+   "Name": "Dassault Aviation Sa",
+   "Ticker": "AM FP",
+   "Identifier": "BBG000BBR565",
+   "Shares Held": "1,055",
+   "Asset Category": "Stock",
+   "Market Value": "$336,502.90",
    "Notional Value": "",
    "Weight": "1.92%"
   },
@@ -180,39 +150,9 @@
    "Identifier": "BBG000DCR6J5",
    "Shares Held": "113,100",
    "Asset Category": "Stock",
-   "Market Value": "$334,781.33",
+   "Market Value": "$334,119.20",
    "Notional Value": "",
-   "Weight": "1.90%"
-  },
-  {
-   "Name": "Alibaba Group Holding Ltd",
-   "Ticker": "9988 HK",
-   "Identifier": "BBG00QV37ZP9",
-   "Shares Held": "24,100",
-   "Asset Category": "Stock",
-   "Market Value": "$333,907.52",
-   "Notional Value": "",
-   "Weight": "1.90%"
-  },
-  {
-   "Name": "Yum China Holdings Inc",
-   "Ticker": "YUMC",
-   "Identifier": "BBG00B8N0HG1",
-   "Shares Held": "8,124",
-   "Asset Category": "Stock",
-   "Market Value": "$333,002.76",
-   "Notional Value": "",
-   "Weight": "1.89%"
-  },
-  {
-   "Name": "Koninklijke Philips Nv",
-   "Ticker": "PHIA NA",
-   "Identifier": "BBG000JX4KH9",
-   "Shares Held": "13,582",
-   "Asset Category": "Stock",
-   "Market Value": "$332,972.41",
-   "Notional Value": "",
-   "Weight": "1.89%"
+   "Weight": "1.91%"
   },
   {
    "Name": "Hensoldt Ag",
@@ -220,7 +160,47 @@
    "Identifier": "BBG00GQ6M668",
    "Shares Held": "3,848",
    "Asset Category": "Stock",
-   "Market Value": "$332,802.72",
+   "Market Value": "$334,050.85",
+   "Notional Value": "",
+   "Weight": "1.91%"
+  },
+  {
+   "Name": "Yum China Holdings Inc",
+   "Ticker": "YUMC",
+   "Identifier": "BBG00B8N0HG1",
+   "Shares Held": "8,124",
+   "Asset Category": "Stock",
+   "Market Value": "$332,759.04",
+   "Notional Value": "",
+   "Weight": "1.90%"
+  },
+  {
+   "Name": "Thales Sa",
+   "Ticker": "HO FP",
+   "Identifier": "BBG000BCFRQ6",
+   "Shares Held": "1,304",
+   "Asset Category": "Stock",
+   "Market Value": "$332,602.72",
+   "Notional Value": "",
+   "Weight": "1.90%"
+  },
+  {
+   "Name": "Zimmer Biomet Holdings Inc",
+   "Ticker": "ZBH",
+   "Identifier": "BBG000BKPL53",
+   "Shares Held": "3,776",
+   "Asset Category": "Stock",
+   "Market Value": "$332,514.56",
+   "Notional Value": "",
+   "Weight": "1.90%"
+  },
+  {
+   "Name": "Huntington Ingalls Industries Inc",
+   "Ticker": "HII",
+   "Identifier": "BBG001KJ2HM9",
+   "Shares Held": "1,208",
+   "Asset Category": "Stock",
+   "Market Value": "$331,390.64",
    "Notional Value": "",
    "Weight": "1.89%"
   },
@@ -230,9 +210,39 @@
    "Identifier": "BBG000BH56D6",
    "Shares Held": "63,691",
    "Asset Category": "Stock",
-   "Market Value": "$328,167.54",
+   "Market Value": "$329,570.19",
    "Notional Value": "",
-   "Weight": "1.86%"
+   "Weight": "1.88%"
+  },
+  {
+   "Name": "Gsk Plc",
+   "Ticker": "GSK LN",
+   "Identifier": "BBG000CT5GJ1",
+   "Shares Held": "13,869",
+   "Asset Category": "Stock",
+   "Market Value": "$326,572.50",
+   "Notional Value": "",
+   "Weight": "1.87%"
+  },
+  {
+   "Name": "Koninklijke Philips Nv",
+   "Ticker": "PHIA NA",
+   "Identifier": "BBG000JX4KH9",
+   "Shares Held": "13,582",
+   "Asset Category": "Stock",
+   "Market Value": "$323,633.54",
+   "Notional Value": "",
+   "Weight": "1.85%"
+  },
+  {
+   "Name": "Alibaba Group Holding Ltd",
+   "Ticker": "9988 HK",
+   "Identifier": "BBG00QV37ZP9",
+   "Shares Held": "24,100",
+   "Asset Category": "Stock",
+   "Market Value": "$323,490.35",
+   "Notional Value": "",
+   "Weight": "1.85%"
   },
   {
    "Name": "Broadcom Inc",
@@ -240,19 +250,9 @@
    "Identifier": "BBG00KHY5S69",
    "Shares Held": "928",
    "Asset Category": "Stock",
-   "Market Value": "$325,134.08",
+   "Market Value": "$318,897.92",
    "Notional Value": "",
-   "Weight": "1.85%"
-  },
-  {
-   "Name": "Huntington Ingalls Industries Inc",
-   "Ticker": "HII",
-   "Identifier": "BBG001KJ2HM9",
-   "Shares Held": "1,208",
-   "Asset Category": "Stock",
-   "Market Value": "$321,328.00",
-   "Notional Value": "",
-   "Weight": "1.83%"
+   "Weight": "1.82%"
   },
   {
    "Name": "Ferrovial Se",
@@ -260,29 +260,9 @@
    "Identifier": "BBG01H0DF657",
    "Shares Held": "5,672",
    "Asset Category": "Stock",
-   "Market Value": "$313,647.95",
+   "Market Value": "$298,663.18",
    "Notional Value": "",
-   "Weight": "1.78%"
-  },
-  {
-   "Name": "Meta Platforms Inc",
-   "Ticker": "META",
-   "Identifier": "BBG000MM2P62",
-   "Shares Held": "294",
-   "Asset Category": "Stock",
-   "Market Value": "$228,611.46",
-   "Notional Value": "",
-   "Weight": "1.30%"
-  },
-  {
-   "Name": "Edenred",
-   "Ticker": "EDEN FP",
-   "Identifier": "BBG000W907Q0",
-   "Shares Held": "6,984",
-   "Asset Category": "Stock",
-   "Market Value": "$218,447.57",
-   "Notional Value": "",
-   "Weight": "1.24%"
+   "Weight": "1.71%"
   },
   {
    "Name": "Advantest Corp",
@@ -290,39 +270,9 @@
    "Identifier": "BBG000BGN014",
    "Shares Held": "1,000",
    "Asset Category": "Stock",
-   "Market Value": "$209,606.43",
+   "Market Value": "$235,563.61",
    "Notional Value": "",
-   "Weight": "1.19%"
-  },
-  {
-   "Name": "Allegion Plc",
-   "Ticker": "ALLE",
-   "Identifier": "BBG003PS7JV1",
-   "Shares Held": "1,347",
-   "Asset Category": "Stock",
-   "Market Value": "$205,390.56",
-   "Notional Value": "",
-   "Weight": "1.17%"
-  },
-  {
-   "Name": "Mtu Aero Engines Ag",
-   "Ticker": "MTX GR",
-   "Identifier": "BBG000BVTMG1",
-   "Shares Held": "487",
-   "Asset Category": "Stock",
-   "Market Value": "$205,033.04",
-   "Notional Value": "",
-   "Weight": "1.17%"
-  },
-  {
-   "Name": "Agilent Technologies Inc",
-   "Ticker": "A",
-   "Identifier": "BBG000C2V3D6",
-   "Shares Held": "1,174",
-   "Asset Category": "Stock",
-   "Market Value": "$202,914.16",
-   "Notional Value": "",
-   "Weight": "1.15%"
+   "Weight": "1.35%"
   },
   {
    "Name": "Lasertec Corp",
@@ -330,29 +280,39 @@
    "Identifier": "BBG000BMRC48",
    "Shares Held": "800",
    "Asset Category": "Stock",
-   "Market Value": "$202,335.15",
+   "Market Value": "$228,211.49",
    "Notional Value": "",
-   "Weight": "1.15%"
+   "Weight": "1.30%"
   },
   {
-   "Name": "Sartorius Stedim Biotech",
-   "Ticker": "DIM FP",
-   "Identifier": "BBG000FH5WS9",
-   "Shares Held": "817",
+   "Name": "Meta Platforms Inc",
+   "Ticker": "META",
+   "Identifier": "BBG000MM2P62",
+   "Shares Held": "294",
    "Asset Category": "Stock",
-   "Market Value": "$201,287.84",
+   "Market Value": "$213,423.42",
    "Notional Value": "",
-   "Weight": "1.14%"
+   "Weight": "1.22%"
   },
   {
-   "Name": "Kao Corp",
-   "Ticker": "4452 JP",
-   "Identifier": "BBG000BG5Y92",
-   "Shares Held": "9,200",
+   "Name": "Edenred",
+   "Ticker": "EDEN FP",
+   "Identifier": "BBG000W907Q0",
+   "Shares Held": "6,984",
    "Asset Category": "Stock",
-   "Market Value": "$200,726.89",
+   "Market Value": "$210,402.94",
    "Notional Value": "",
-   "Weight": "1.14%"
+   "Weight": "1.20%"
+  },
+  {
+   "Name": "Allegion Plc",
+   "Ticker": "ALLE",
+   "Identifier": "BBG003PS7JV1",
+   "Shares Held": "1,347",
+   "Asset Category": "Stock",
+   "Market Value": "$207,815.16",
+   "Notional Value": "",
+   "Weight": "1.19%"
   },
   {
    "Name": "Amphenol Corp",
@@ -360,29 +320,19 @@
    "Identifier": "BBG000B9YJ35",
    "Shares Held": "2,394",
    "Asset Category": "Stock",
-   "Market Value": "$198,893.52",
+   "Market Value": "$205,093.98",
    "Notional Value": "",
-   "Weight": "1.13%"
+   "Weight": "1.17%"
   },
   {
-   "Name": "Monolithic Power Systems Inc",
-   "Ticker": "MPWR",
-   "Identifier": "BBG000C30L48",
-   "Shares Held": "145",
+   "Name": "Kao Corp",
+   "Ticker": "4452 JP",
+   "Identifier": "BBG000BG5Y92",
+   "Shares Held": "9,200",
    "Asset Category": "Stock",
-   "Market Value": "$193,654.75",
+   "Market Value": "$202,600.50",
    "Notional Value": "",
-   "Weight": "1.10%"
-  },
-  {
-   "Name": "Bristol-Myers Squibb Co",
-   "Ticker": "BMY",
-   "Identifier": "BBG000DQLV23",
-   "Shares Held": "3,093",
-   "Asset Category": "Stock",
-   "Market Value": "$190,219.50",
-   "Notional Value": "",
-   "Weight": "1.08%"
+   "Weight": "1.16%"
   },
   {
    "Name": "Entegris Inc",
@@ -390,7 +340,67 @@
    "Identifier": "BBG000CTV4N4",
    "Shares Held": "1,277",
    "Asset Category": "Stock",
-   "Market Value": "$189,800.51",
+   "Market Value": "$202,378.96",
+   "Notional Value": "",
+   "Weight": "1.16%"
+  },
+  {
+   "Name": "Mtu Aero Engines Ag",
+   "Ticker": "MTX GR",
+   "Identifier": "BBG000BVTMG1",
+   "Shares Held": "487",
+   "Asset Category": "Stock",
+   "Market Value": "$202,132.40",
+   "Notional Value": "",
+   "Weight": "1.15%"
+  },
+  {
+   "Name": "Monolithic Power Systems Inc",
+   "Ticker": "MPWR",
+   "Identifier": "BBG000C30L48",
+   "Shares Held": "145",
+   "Asset Category": "Stock",
+   "Market Value": "$197,340.65",
+   "Notional Value": "",
+   "Weight": "1.13%"
+  },
+  {
+   "Name": "Tokyo Electron Ltd",
+   "Ticker": "8035 JP",
+   "Identifier": "BBG000BB59S7",
+   "Shares Held": "2,500",
+   "Asset Category": "Stock",
+   "Market Value": "$197,264.84",
+   "Notional Value": "",
+   "Weight": "1.13%"
+  },
+  {
+   "Name": "Agilent Technologies Inc",
+   "Ticker": "A",
+   "Identifier": "BBG000C2V3D6",
+   "Shares Held": "1,174",
+   "Asset Category": "Stock",
+   "Market Value": "$195,682.32",
+   "Notional Value": "",
+   "Weight": "1.12%"
+  },
+  {
+   "Name": "Disco Corp",
+   "Ticker": "6146 JP",
+   "Identifier": "BBG000BKFJQ6",
+   "Shares Held": "500",
+   "Asset Category": "Stock",
+   "Market Value": "$190,107.93",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "Sartorius Stedim Biotech",
+   "Ticker": "DIM FP",
+   "Identifier": "BBG000FH5WS9",
+   "Shares Held": "817",
+   "Asset Category": "Stock",
+   "Market Value": "$188,886.85",
    "Notional Value": "",
    "Weight": "1.08%"
   },
@@ -400,19 +410,9 @@
    "Identifier": "BBG000Q8XH27",
    "Shares Held": "14,304",
    "Asset Category": "Stock",
-   "Market Value": "$188,079.37",
+   "Market Value": "$188,485.12",
    "Notional Value": "",
-   "Weight": "1.07%"
-  },
-  {
-   "Name": "Roche Holding Ag",
-   "Ticker": "ROP SW",
-   "Identifier": "BBG020ZHBNC5",
-   "Shares Held": "428",
-   "Asset Category": "Stock",
-   "Market Value": "$187,793.41",
-   "Notional Value": "",
-   "Weight": "1.07%"
+   "Weight": "1.08%"
   },
   {
    "Name": "Inner Mongolia Yili Industrial Group Co",
@@ -420,49 +420,19 @@
    "Identifier": "BBG00709J682",
    "Shares Held": "46,400",
    "Asset Category": "Stock",
-   "Market Value": "$185,553.27",
+   "Market Value": "$188,168.98",
    "Notional Value": "",
-   "Weight": "1.05%"
+   "Weight": "1.08%"
   },
   {
-   "Name": "Hoshizaki Corp",
-   "Ticker": "6465 JP",
-   "Identifier": "BBG000C8NTC6",
-   "Shares Held": "5,500",
+   "Name": "Bristol-Myers Squibb Co",
+   "Ticker": "BMY",
+   "Identifier": "BBG000DQLV23",
+   "Shares Held": "3,093",
    "Asset Category": "Stock",
-   "Market Value": "$185,244.17",
+   "Market Value": "$188,147.19",
    "Notional Value": "",
-   "Weight": "1.05%"
-  },
-  {
-   "Name": "Walt Disney Co/The",
-   "Ticker": "DIS",
-   "Identifier": "BBG000BH4R78",
-   "Shares Held": "1,738",
-   "Asset Category": "Stock",
-   "Market Value": "$183,463.28",
-   "Notional Value": "",
-   "Weight": "1.04%"
-  },
-  {
-   "Name": "Us Bancorp",
-   "Ticker": "USB",
-   "Identifier": "BBG000FFDM15",
-   "Shares Held": "3,105",
-   "Asset Category": "Stock",
-   "Market Value": "$181,332.00",
-   "Notional Value": "",
-   "Weight": "1.03%"
-  },
-  {
-   "Name": "Symrise Ag",
-   "Ticker": "SY1 GR",
-   "Identifier": "BBG000N4B6Z1",
-   "Shares Held": "1,696",
-   "Asset Category": "Stock",
-   "Market Value": "$179,819.30",
-   "Notional Value": "",
-   "Weight": "1.02%"
+   "Weight": "1.08%"
   },
   {
    "Name": "Nxp Semiconductors Nv",
@@ -470,7 +440,47 @@
    "Identifier": "BBG000BND699",
    "Shares Held": "778",
    "Asset Category": "Stock",
-   "Market Value": "$179,064.48",
+   "Market Value": "$186,089.82",
+   "Notional Value": "",
+   "Weight": "1.06%"
+  },
+  {
+   "Name": "Hoshizaki Corp",
+   "Ticker": "6465 JP",
+   "Identifier": "BBG000C8NTC6",
+   "Shares Held": "5,500",
+   "Asset Category": "Stock",
+   "Market Value": "$182,224.84",
+   "Notional Value": "",
+   "Weight": "1.04%"
+  },
+  {
+   "Name": "Roche Holding Ag",
+   "Ticker": "ROP SW",
+   "Identifier": "BBG020ZHBNC5",
+   "Shares Held": "428",
+   "Asset Category": "Stock",
+   "Market Value": "$179,176.82",
+   "Notional Value": "",
+   "Weight": "1.02%"
+  },
+  {
+   "Name": "Us Bancorp",
+   "Ticker": "USB",
+   "Identifier": "BBG000FFDM15",
+   "Shares Held": "3,105",
+   "Asset Category": "Stock",
+   "Market Value": "$178,102.80",
+   "Notional Value": "",
+   "Weight": "1.02%"
+  },
+  {
+   "Name": "Shin-Etsu Chemical Co Ltd",
+   "Ticker": "4063 JP",
+   "Identifier": "BBG000BG24K8",
+   "Shares Held": "4,700",
+   "Asset Category": "Stock",
+   "Market Value": "$177,965.91",
    "Notional Value": "",
    "Weight": "1.02%"
   },
@@ -480,7 +490,17 @@
    "Identifier": "BBG000BQ3V25",
    "Shares Held": "4,392",
    "Asset Category": "Stock",
-   "Market Value": "$178,235.43",
+   "Market Value": "$177,008.83",
+   "Notional Value": "",
+   "Weight": "1.01%"
+  },
+  {
+   "Name": "Walt Disney Co/The",
+   "Ticker": "DIS",
+   "Identifier": "BBG000BH4R78",
+   "Shares Held": "1,738",
+   "Asset Category": "Stock",
+   "Market Value": "$176,111.54",
    "Notional Value": "",
    "Weight": "1.01%"
   },
@@ -490,47 +510,17 @@
    "Identifier": "BBG00B5C2SM5",
    "Shares Held": "28,370",
    "Asset Category": "Stock",
-   "Market Value": "$177,810.72",
-   "Notional Value": "",
-   "Weight": "1.01%"
-  },
-  {
-   "Name": "Ihi Corp",
-   "Ticker": "7013 JP",
-   "Identifier": "BBG000BM7CD0",
-   "Shares Held": "10,000",
-   "Asset Category": "Stock",
-   "Market Value": "$177,588.90",
-   "Notional Value": "",
-   "Weight": "1.01%"
-  },
-  {
-   "Name": "Ge Healthcare Technologies Inc",
-   "Ticker": "GEHC",
-   "Identifier": "BBG01BFR8YV1",
-   "Shares Held": "2,657",
-   "Asset Category": "Stock",
-   "Market Value": "$176,371.66",
+   "Market Value": "$175,225.70",
    "Notional Value": "",
    "Weight": "1.00%"
   },
   {
-   "Name": "Shin-Etsu Chemical Co Ltd",
-   "Ticker": "4063 JP",
-   "Identifier": "BBG000BG24K8",
-   "Shares Held": "4,700",
+   "Name": "Symrise Ag",
+   "Ticker": "SY1 GR",
+   "Identifier": "BBG000N4B6Z1",
+   "Shares Held": "1,696",
    "Asset Category": "Stock",
-   "Market Value": "$174,939.91",
-   "Notional Value": "",
-   "Weight": "0.99%"
-  },
-  {
-   "Name": "Safran Sa",
-   "Ticker": "SAF FP",
-   "Identifier": "BBG000BP01S8",
-   "Shares Held": "457",
-   "Asset Category": "Stock",
-   "Market Value": "$174,795.65",
+   "Market Value": "$172,811.61",
    "Notional Value": "",
    "Weight": "0.99%"
   },
@@ -540,7 +530,7 @@
    "Identifier": "BBG000JQSF25",
    "Shares Held": "36,553",
    "Asset Category": "Stock",
-   "Market Value": "$173,777.07",
+   "Market Value": "$172,489.08",
    "Notional Value": "",
    "Weight": "0.99%"
   },
@@ -550,59 +540,29 @@
    "Identifier": "BBG000BD2NY8",
    "Shares Held": "6,629",
    "Asset Category": "Stock",
-   "Market Value": "$172,354.00",
+   "Market Value": "$172,155.13",
    "Notional Value": "",
    "Weight": "0.98%"
   },
   {
-   "Name": "Tokyo Electron Ltd",
-   "Ticker": "8035 JP",
-   "Identifier": "BBG000BB59S7",
-   "Shares Held": "500",
+   "Name": "Ihi Corp",
+   "Ticker": "7013 JP",
+   "Identifier": "BBG000BM7CD0",
+   "Shares Held": "10,000",
    "Asset Category": "Stock",
-   "Market Value": "$170,927.42",
+   "Market Value": "$170,359.28",
    "Notional Value": "",
    "Weight": "0.97%"
   },
   {
-   "Name": "Hershey Co/The",
-   "Ticker": "HSY",
-   "Identifier": "BBG000BLHRS2",
-   "Shares Held": "1,023",
+   "Name": "Ge Healthcare Technologies Inc",
+   "Ticker": "GEHC",
+   "Identifier": "BBG01BFR8YV1",
+   "Shares Held": "2,657",
    "Asset Category": "Stock",
-   "Market Value": "$170,718.24",
+   "Market Value": "$169,994.86",
    "Notional Value": "",
    "Weight": "0.97%"
-  },
-  {
-   "Name": "Heineken Nv",
-   "Ticker": "HEIA NA",
-   "Identifier": "BBG000BW4R84",
-   "Shares Held": "2,108",
-   "Asset Category": "Stock",
-   "Market Value": "$170,391.69",
-   "Notional Value": "",
-   "Weight": "0.97%"
-  },
-  {
-   "Name": "Mondelez International Inc",
-   "Ticker": "MDLZ",
-   "Identifier": "BBG000D4LWF6",
-   "Shares Held": "2,790",
-   "Asset Category": "Stock",
-   "Market Value": "$169,799.40",
-   "Notional Value": "",
-   "Weight": "0.96%"
-  },
-  {
-   "Name": "Disco Corp",
-   "Ticker": "6146 JP",
-   "Identifier": "BBG000BKFJQ6",
-   "Shares Held": "500",
-   "Asset Category": "Stock",
-   "Market Value": "$169,567.67",
-   "Notional Value": "",
-   "Weight": "0.96%"
   },
   {
    "Name": "Unicharm Corp",
@@ -610,7 +570,37 @@
    "Identifier": "BBG000BDJH37",
    "Shares Held": "28,400",
    "Asset Category": "Stock",
-   "Market Value": "$169,420.42",
+   "Market Value": "$168,914.20",
+   "Notional Value": "",
+   "Weight": "0.97%"
+  },
+  {
+   "Name": "Hoya Corp",
+   "Ticker": "7741 JP",
+   "Identifier": "BBG000BGSH67",
+   "Shares Held": "1,100",
+   "Asset Category": "Stock",
+   "Market Value": "$168,690.79",
+   "Notional Value": "",
+   "Weight": "0.96%"
+  },
+  {
+   "Name": "Kweichow Moutai Co Ltd",
+   "Ticker": "600519 C1",
+   "Identifier": "BBG00709HTQ4",
+   "Shares Held": "900",
+   "Asset Category": "Stock",
+   "Market Value": "$168,617.87",
+   "Notional Value": "",
+   "Weight": "0.96%"
+  },
+  {
+   "Name": "Safran Sa",
+   "Ticker": "SAF FP",
+   "Identifier": "BBG000BP01S8",
+   "Shares Held": "457",
+   "Asset Category": "Stock",
+   "Market Value": "$168,091.42",
    "Notional Value": "",
    "Weight": "0.96%"
   },
@@ -620,29 +610,9 @@
    "Identifier": "",
    "Shares Held": "152",
    "Asset Category": "Stock",
-   "Market Value": "$168,002.56",
+   "Market Value": "$166,780.48",
    "Notional Value": "",
    "Weight": "0.95%"
-  },
-  {
-   "Name": "Tencent Holdings Ltd",
-   "Ticker": "700 HK",
-   "Identifier": "BBG000BJ35N5",
-   "Shares Held": "3,000",
-   "Asset Category": "Stock",
-   "Market Value": "$166,813.86",
-   "Notional Value": "",
-   "Weight": "0.95%"
-  },
-  {
-   "Name": "Kweichow Moutai Co Ltd",
-   "Ticker": "600519 C1",
-   "Identifier": "BBG00709HTQ4",
-   "Shares Held": "900",
-   "Asset Category": "Stock",
-   "Market Value": "$165,763.38",
-   "Notional Value": "",
-   "Weight": "0.94%"
   },
   {
    "Name": "Masco Corp",
@@ -650,7 +620,47 @@
    "Identifier": "BBG000BNNKG9",
    "Shares Held": "2,437",
    "Asset Category": "Stock",
-   "Market Value": "$164,034.47",
+   "Market Value": "$166,398.36",
+   "Notional Value": "",
+   "Weight": "0.95%"
+  },
+  {
+   "Name": "Heineken Nv",
+   "Ticker": "HEIA NA",
+   "Identifier": "BBG000BW4R84",
+   "Shares Held": "2,108",
+   "Asset Category": "Stock",
+   "Market Value": "$163,977.57",
+   "Notional Value": "",
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Tencent Holdings Ltd",
+   "Ticker": "700 HK",
+   "Identifier": "BBG000BJ35N5",
+   "Shares Held": "3,000",
+   "Asset Category": "Stock",
+   "Market Value": "$163,163.18",
+   "Notional Value": "",
+   "Weight": "0.93%"
+  },
+  {
+   "Name": "Be Semiconductor Industries Nv",
+   "Ticker": "BESI NA",
+   "Identifier": "BBG000FT9SV4",
+   "Shares Held": "752",
+   "Asset Category": "Stock",
+   "Market Value": "$163,096.33",
+   "Notional Value": "",
+   "Weight": "0.93%"
+  },
+  {
+   "Name": "Hershey Co/The",
+   "Ticker": "HSY",
+   "Identifier": "BBG000BLHRS2",
+   "Shares Held": "1,023",
+   "Asset Category": "Stock",
+   "Market Value": "$162,963.90",
    "Notional Value": "",
    "Weight": "0.93%"
   },
@@ -660,39 +670,19 @@
    "Identifier": "BBG000BC85S0",
    "Shares Held": "1,498",
    "Asset Category": "Stock",
-   "Market Value": "$163,993.18",
-   "Notional Value": "",
-   "Weight": "0.93%"
-  },
-  {
-   "Name": "Northrop Grumman Corp",
-   "Ticker": "NOC",
-   "Identifier": "BBG000BQ2C28",
-   "Shares Held": "318",
-   "Asset Category": "Stock",
-   "Market Value": "$161,855.64",
+   "Market Value": "$161,626.90",
    "Notional Value": "",
    "Weight": "0.92%"
   },
   {
-   "Name": "Be Semiconductor Industries Nv",
-   "Ticker": "BESI NA",
-   "Identifier": "BBG000FT9SV4",
-   "Shares Held": "752",
+   "Name": "Mondelez International Inc",
+   "Ticker": "MDLZ",
+   "Identifier": "BBG000D4LWF6",
+   "Shares Held": "2,790",
    "Asset Category": "Stock",
-   "Market Value": "$161,717.51",
+   "Market Value": "$161,150.40",
    "Notional Value": "",
    "Weight": "0.92%"
-  },
-  {
-   "Name": "Lvmh Moet Hennessy Louis Vuitton Se",
-   "Ticker": "MC FP",
-   "Identifier": "BBG000BC7Q05",
-   "Shares Held": "353",
-   "Asset Category": "Stock",
-   "Market Value": "$160,855.06",
-   "Notional Value": "",
-   "Weight": "0.91%"
   },
   {
    "Name": "Jd.Com Inc",
@@ -700,17 +690,7 @@
    "Identifier": "BBG00VC6RYV6",
    "Shares Held": "12,050",
    "Asset Category": "Stock",
-   "Market Value": "$160,729.91",
-   "Notional Value": "",
-   "Weight": "0.91%"
-  },
-  {
-   "Name": "Hoya Corp",
-   "Ticker": "7741 JP",
-   "Identifier": "BBG000BGSH67",
-   "Shares Held": "1,100",
-   "Asset Category": "Stock",
-   "Market Value": "$160,723.35",
+   "Market Value": "$158,849.11",
    "Notional Value": "",
    "Weight": "0.91%"
   },
@@ -720,9 +700,9 @@
    "Identifier": "BBG006YQKTG8",
    "Shares Held": "75,976",
    "Asset Category": "Stock",
-   "Market Value": "$159,744.87",
+   "Market Value": "$156,844.98",
    "Notional Value": "",
-   "Weight": "0.91%"
+   "Weight": "0.90%"
   },
   {
    "Name": "Sf Holding Co Ltd",
@@ -730,7 +710,27 @@
    "Identifier": "BBG00FNDGRJ5",
    "Shares Held": "34,200",
    "Asset Category": "Stock",
-   "Market Value": "$155,608.81",
+   "Market Value": "$156,047.72",
+   "Notional Value": "",
+   "Weight": "0.89%"
+  },
+  {
+   "Name": "Lpl Financial Holdings Inc",
+   "Ticker": "LPLA",
+   "Identifier": "BBG000P2TYL8",
+   "Shares Held": "493",
+   "Asset Category": "Stock",
+   "Market Value": "$153,889.95",
+   "Notional Value": "",
+   "Weight": "0.88%"
+  },
+  {
+   "Name": "Northrop Grumman Corp",
+   "Ticker": "NOC",
+   "Identifier": "BBG000BQ2C28",
+   "Shares Held": "318",
+   "Asset Category": "Stock",
+   "Market Value": "$153,276.00",
    "Notional Value": "",
    "Weight": "0.88%"
   },
@@ -740,19 +740,19 @@
    "Identifier": "BBG00NQKSQ99",
    "Shares Held": "3,832",
    "Asset Category": "Stock",
-   "Market Value": "$155,036.31",
+   "Market Value": "$150,981.96",
    "Notional Value": "",
-   "Weight": "0.88%"
+   "Weight": "0.86%"
   },
   {
-   "Name": "Lpl Financial Holdings Inc",
-   "Ticker": "LPLA",
-   "Identifier": "BBG000P2TYL8",
-   "Shares Held": "493",
+   "Name": "Lvmh Moet Hennessy Louis Vuitton Se",
+   "Ticker": "MC FP",
+   "Identifier": "BBG000BC7Q05",
+   "Shares Held": "353",
    "Asset Category": "Stock",
-   "Market Value": "$149,260.68",
+   "Market Value": "$150,122.18",
    "Notional Value": "",
-   "Weight": "0.85%"
+   "Weight": "0.86%"
   },
   {
    "Name": "Luzhou Laojiao Co Ltd",
@@ -760,9 +760,39 @@
    "Identifier": "BBG00F136BD3",
    "Shares Held": "13,900",
    "Asset Category": "Stock",
-   "Market Value": "$146,218.84",
+   "Market Value": "$149,554.47",
    "Notional Value": "",
-   "Weight": "0.83%"
+   "Weight": "0.85%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-USD CASH-",
+   "Identifier": "",
+   "Shares Held": "1,461",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$1,461.02",
+   "Notional Value": "",
+   "Weight": "0.01%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-AUD CASH-",
+   "Identifier": "",
+   "Shares Held": "772",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$534.66",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "",
+   "Ticker": "-NZD CASH-",
+   "Identifier": "",
+   "Shares Held": "367",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$205.85",
+   "Notional Value": "",
+   "Weight": "0.00%"
   },
   {
    "Name": "",
@@ -770,17 +800,7 @@
    "Identifier": "",
    "Shares Held": "92",
    "Asset Category": "Cash Bal",
-   "Market Value": "$104.30",
-   "Notional Value": "",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "",
-   "Ticker": "-AUD CASH-",
-   "Identifier": "",
-   "Shares Held": "14",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$10.10",
+   "Market Value": "$103.30",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -790,7 +810,7 @@
    "Identifier": "",
    "Shares Held": "21",
    "Asset Category": "Cash Bal",
-   "Market Value": "$2.26",
+   "Market Value": "$2.23",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -815,24 +835,14 @@
    "Weight": "0.00%"
   },
   {
-   "Name": "",
-   "Ticker": "-USD CASH-",
-   "Identifier": "",
-   "Shares Held": "-6,709",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$-6,709.08",
-   "Notional Value": "",
-   "Weight": "-0.04%"
-  },
-  {
    "Name": "Other/Cash",
    "Ticker": "",
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-27,972.18",
+   "Market Value": "$-24,978.61",
    "Notional Value": "",
-   "Weight": "-0.16%"
+   "Weight": "-0.14%"
   }
  ]
 }

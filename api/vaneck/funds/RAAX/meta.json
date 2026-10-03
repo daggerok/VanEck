@@ -9,28 +9,28 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$40.51",
-  "value": 40.51,
-  "asOfDate": "Sep 25 2026"
+  "display": "$40.30",
+  "value": 40.3,
+  "asOfDate": "Oct 02 2026"
  },
- "navValue": 40.51,
+ "navValue": 40.3,
  "aum": {
   "display": "$1.36B",
-  "value": 1355907155.42,
-  "asOfDate": "Sep 25 2026",
+  "value": 1360163371.37,
+  "asOfDate": "Oct 02 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1355907155.42,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 1360163371.37,
+ "asOfDate": "Oct 02 2026",
  "inceptionDate": "Apr 09 2018",
  "exchange": "NYSE Arca",
- "closePrice": "$40.55",
- "closePriceValue": 40.55,
+ "closePrice": "$40.32",
+ "closePriceValue": 40.32,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -86,34 +86,35 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 25 2026",
-   "ytd": 16.11,
-   "ytdText": "16.11%",
-   "yr1": 28.55,
-   "yr3": 19.71,
-   "yr5": 13.86,
+   "asOfDate": "Oct 02 2026",
+   "ytd": 15.52,
+   "ytdText": "15.52%",
+   "yr1": 18.44,
+   "yr3": 19.31,
+   "yr5": 13.29,
    "yr10": null,
-   "sinceInception": 9.47
+   "sinceInception": 8.91,
+   "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
-   "asOfDate": "Jun 30 2026",
-   "yr1": 28.62,
-   "yr3": 19.47,
-   "yr5": 12.9,
+   "asOfDate": "Sep 30 2026",
+   "yr1": 18.44,
+   "yr3": 19.31,
+   "yr5": 13.29,
    "yr10": null,
-   "sinceInception": 9.09
+   "sinceInception": 8.91
   }
  },
  "metrics": {
-  "ytd": 16.11,
-  "tr1y": 28.55,
-  "tr3y": 71.56,
-  "tr5y": 91.33,
+  "ytd": 15.52,
+  "tr1y": 18.44,
+  "tr3y": 69.83,
+  "tr5y": 86.63,
   "tr10y": null,
-  "cagr3y": 19.71,
-  "cagr5y": 13.86,
+  "cagr3y": 19.31,
+  "cagr5y": 13.29,
   "cagr10y": null,
-  "siAnn": 9.47,
+  "siAnn": 8.91,
   "dividendYield": 1.98,
   "dividendYieldText": "1.98%",
   "distributionYield": 1.98,
@@ -122,18 +123,19 @@
   "yield12MText": "2.87%",
   "secYield": 1.98,
   "secYieldText": "1.98%",
+  "ytdAsOf": "2026-10-02",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-25"
+  "performanceAsOf": "2026-09-30"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
  "terGross": "0.71%",
  "terGrossValue": 0.71,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Oct 02 2026",
  "holdings": {
-  "totalRows": 120,
+  "totalRows": 121,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Oct 01 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/real-assets-etf-raax/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -141,9 +143,9 @@
   ]
  },
  "history": {
-  "totalRows": 2481,
+  "totalRows": 2488,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Oct 02 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/real-assets-etf-raax/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -189,16 +191,16 @@
   "grossValue": 0.71
  },
  "marketPrice": {
-  "display": "$40.55",
-  "value": 40.55,
-  "asOfDate": "Sep 25 2026"
+  "display": "$40.32",
+  "value": 40.32,
+  "asOfDate": "Oct 02 2026"
  },
  "yields": {
   "dividendYield": 1.98,
   "dividendYieldText": "1.98%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.02,
-  "indicatedYieldText": "2.02%",
+  "indicatedYield": 2.03,
+  "indicatedYieldText": "2.03%",
   "distributionYield": 1.98,
   "distributionYieldText": "1.98%",
   "yield12M": 2.87,

@@ -11,26 +11,26 @@
  "nav": {
   "display": "$21.78",
   "value": 21.78,
-  "asOfDate": "Sep 25 2026"
+  "asOfDate": "Oct 02 2026"
  },
  "navValue": 21.78,
  "aum": {
-  "display": "$217768.43",
-  "value": 217768.43,
-  "asOfDate": "Sep 25 2026",
+  "display": "$217754.46",
+  "value": 217754.46,
+  "asOfDate": "Oct 02 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 217768.43,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 217754.46,
+ "asOfDate": "Oct 02 2026",
  "inceptionDate": "Jul 07 2026",
  "exchange": "NASDAQ",
- "closePrice": "$21.77",
- "closePriceValue": 21.77,
+ "closePrice": "$21.78",
+ "closePriceValue": 21.78,
  "premiumDiscount": {
-  "display": "0.00%",
-  "value": 0
+  "display": "0.01%",
+  "value": 0.01
  },
- "premiumDiscountValue": 0,
+ "premiumDiscountValue": 0.01,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -39,26 +39,33 @@
    "Payable Date",
    "Dividend"
   ],
-  "rows": [],
+  "rows": [
+   {
+    "Ex-Date": "Oct 01 2026",
+    "Payable Date": "Oct 06 2026",
+    "Dividend": "$0.1621"
+   }
+  ],
   "source": "VanEck Distribution History (official)"
  },
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Aug 31 2026",
-   "sinceInception": -7.63,
-   "yr1": null,
-   "yr3": null,
-   "yr5": null,
-   "yr10": null
-  },
-  "quarterEnd": {
-   "asOfDate": "Jun 30 2026",
+   "asOfDate": "Sep 30 2026",
+   "sinceInception": -13.08,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": null
+   "tenorsAsOf": "Sep 30 2026"
+  },
+  "quarterEnd": {
+   "asOfDate": "Sep 30 2026",
+   "yr1": null,
+   "yr3": null,
+   "yr5": null,
+   "yr10": null,
+   "sinceInception": -13.08
   }
  },
  "metrics": {
@@ -70,27 +77,28 @@
   "cagr3y": null,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": -7.63,
-  "dividendYield": null,
-  "dividendYieldText": "—",
+  "siAnn": -13.08,
+  "dividendYield": 2.98,
+  "dividendYieldText": "2.98%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
   "yield12MText": "—",
   "secYield": 2.9,
   "secYieldText": "2.90%",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-08-31"
+  "performanceAsOf": "2026-09-30"
  },
  "distributionFrequency": "04 - Quarterly",
  "providerCategory": "TruSectors",
  "terGross": "0.10%",
  "terGrossValue": 0.1,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Oct 02 2026",
  "holdings": {
   "totalRows": 33,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Oct 01 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/utilities-trusector-etf-truu/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -98,16 +106,16 @@
   ]
  },
  "history": {
-  "totalRows": 81,
+  "totalRows": 88,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Oct 02 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/utilities-trusector-etf-truu/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 217.77,
+ "totalNetAssets": 217.75,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -144,16 +152,16 @@
   "grossValue": 0.1
  },
  "marketPrice": {
-  "display": "$21.77",
-  "value": 21.77,
-  "asOfDate": "Sep 25 2026"
+  "display": "$21.78",
+  "value": 21.78,
+  "asOfDate": "Oct 02 2026"
  },
  "yields": {
-  "dividendYield": null,
-  "dividendYieldText": "—",
-  "dividendYieldKind": "no current yield: VanEck prints `--` and no recent distribution can be annualised",
-  "indicatedYield": null,
-  "indicatedYieldText": "—",
+  "dividendYield": 2.98,
+  "dividendYieldText": "2.98%",
+  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
+  "indicatedYield": 2.98,
+  "indicatedYieldText": "2.98%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,

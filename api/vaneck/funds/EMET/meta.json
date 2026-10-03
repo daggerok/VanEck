@@ -9,28 +9,28 @@
  "ter": "0.62%",
  "terValue": 0.62,
  "nav": {
-  "display": "$41.99",
-  "value": 41.99,
-  "asOfDate": "Sep 25 2026"
+  "display": "$41.43",
+  "value": 41.43,
+  "asOfDate": "Oct 02 2026"
  },
- "navValue": 41.99,
+ "navValue": 41.43,
  "aum": {
-  "display": "$35.69M",
-  "value": 35690396.11,
-  "asOfDate": "Sep 25 2026",
+  "display": "$35.22M",
+  "value": 35215018.59,
+  "asOfDate": "Oct 02 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 35690396.11,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 35215018.59,
+ "asOfDate": "Oct 02 2026",
  "inceptionDate": "Nov 09 2021",
  "exchange": "NYSE Arca",
- "closePrice": "$42.27",
- "closePriceValue": 42.27,
+ "closePrice": "$41.64",
+ "closePriceValue": 41.64,
  "premiumDiscount": {
-  "display": "0.28%",
-  "value": 0.28
+  "display": "0.21%",
+  "value": 0.21
  },
- "premiumDiscountValue": 0.28,
+ "premiumDiscountValue": 0.21,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -66,34 +66,35 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 25 2026",
-   "ytd": 13.33,
-   "ytdText": "13.33%",
-   "yr1": 71.62,
-   "yr3": 23.46,
+   "asOfDate": "Oct 02 2026",
+   "ytd": 11.82,
+   "ytdText": "11.82%",
+   "yr1": 31.26,
+   "yr3": 20.27,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 7.65
+   "sinceInception": 5.22,
+   "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
-   "asOfDate": "Jun 30 2026",
-   "yr1": 72.03,
-   "yr3": 16.33,
+   "asOfDate": "Sep 30 2026",
+   "yr1": 31.26,
+   "yr3": 20.27,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 5.12
+   "sinceInception": 5.22
   }
  },
  "metrics": {
-  "ytd": 13.33,
-  "tr1y": 71.62,
-  "tr3y": 88.2,
+  "ytd": 11.82,
+  "tr1y": 31.26,
+  "tr3y": 73.95,
   "tr5y": null,
   "tr10y": null,
-  "cagr3y": 23.46,
+  "cagr3y": 20.27,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": 7.65,
+  "siAnn": 5.22,
   "dividendYield": 1.62,
   "dividendYieldText": "1.62%",
   "distributionYield": 1.62,
@@ -102,18 +103,19 @@
   "yield12MText": "2.67%",
   "secYield": 0.66,
   "secYieldText": "0.66%",
+  "ytdAsOf": "2026-10-02",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-25"
+  "performanceAsOf": "2026-09-30"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
  "terGross": "0.62%",
  "terGrossValue": 0.62,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Oct 02 2026",
  "holdings": {
-  "totalRows": 65,
+  "totalRows": 64,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Oct 01 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -121,9 +123,9 @@
   ]
  },
  "history": {
-  "totalRows": 1782,
+  "totalRows": 1789,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Oct 02 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -131,7 +133,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 35690000,
+ "totalNetAssets": 35220000,
  "indexTicker": "MVGMETTR",
  "indexName": "MarketVector Global Electrification Metals Index",
  "categoryPath": "Equity > Natural Resources",
@@ -170,16 +172,16 @@
   "grossValue": 0.62
  },
  "marketPrice": {
-  "display": "$42.27",
-  "value": 42.27,
-  "asOfDate": "Sep 25 2026"
+  "display": "$41.64",
+  "value": 41.64,
+  "asOfDate": "Oct 02 2026"
  },
  "yields": {
   "dividendYield": 1.62,
   "dividendYieldText": "1.62%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.63,
-  "indicatedYieldText": "1.63%",
+  "indicatedYield": 1.65,
+  "indicatedYieldText": "1.65%",
   "distributionYield": 1.62,
   "distributionYieldText": "1.62%",
   "yield12M": 2.67,

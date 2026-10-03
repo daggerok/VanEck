@@ -9,19 +9,19 @@
  "ter": "0.84%",
  "terValue": 0.84,
  "nav": {
-  "display": "$0.39",
-  "value": 0.39,
-  "asOfDate": "Sep 25 2026"
+  "display": "$0.40",
+  "value": 0.4,
+  "asOfDate": "Oct 02 2026"
  },
- "navValue": 0.39,
+ "navValue": 0.4,
  "aum": {
-  "display": "$348823.12",
-  "value": 348823.12,
-  "asOfDate": "Sep 25 2026",
+  "display": "$349060.08",
+  "value": 349060.08,
+  "asOfDate": "Oct 02 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 348823.12,
- "asOfDate": "Sep 25 2026",
+ "aumValue": 349060.08,
+ "asOfDate": "Oct 02 2026",
  "inceptionDate": "Apr 13 2011",
  "exchange": "—",
  "closePrice": "—",
@@ -131,21 +131,22 @@
  "returns": {
   "derivedFrom": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
   "monthEnd": {
-   "asOfDate": "Sep 25 2026",
-   "ytd": 2.48,
-   "ytdText": "2.48%",
+   "asOfDate": "Oct 02 2026",
+   "ytd": 2.55,
+   "ytdText": "2.55%",
    "yr1": 213.06,
    "yr3": 181.4,
    "yr5": -22.25,
    "yr10": -7.78,
-   "sinceInception": -10.15
+   "sinceInception": -10.15,
+   "tenorsAsOf": "Aug 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "—"
   }
  },
  "metrics": {
-  "ytd": 2.48,
+  "ytd": 2.55,
   "tr1y": 213.06,
   "tr3y": null,
   "tr5y": null,
@@ -154,26 +155,27 @@
   "cagr5y": -22.25,
   "cagr10y": -7.78,
   "siAnn": -10.15,
-  "dividendYield": 210.46,
-  "dividendYieldText": "210.46%",
+  "dividendYield": null,
+  "dividendYieldText": "—",
   "distributionYield": null,
   "distributionYieldText": "—",
-  "yield12M": 213.11,
-  "yield12MText": "213.11%",
+  "yield12M": null,
+  "yield12MText": "—",
   "secYield": null,
   "secYieldText": "—",
+  "ytdAsOf": "2026-10-02",
   "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
-  "performanceAsOf": "2026-09-25"
+  "performanceAsOf": "2026-08-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
  "terGross": "9.50%",
  "terGrossValue": 9.5,
- "netAssetsAsOf": "Sep 25 2026",
+ "netAssetsAsOf": "Oct 02 2026",
  "holdings": {
-  "totalRows": 26,
+  "totalRows": 25,
   "pageSize": 250,
-  "asOfDate": "Sep 24 2026",
+  "asOfDate": "Oct 01 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -181,9 +183,9 @@
   ]
  },
  "history": {
-  "totalRows": 4238,
+  "totalRows": 4245,
   "pageSize": 1000,
-  "asOfDate": "Sep 25 2026",
+  "asOfDate": "Oct 02 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -194,7 +196,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 348.82,
+ "totalNetAssets": 349.06,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -233,18 +235,18 @@
  "marketPrice": {
   "display": "—",
   "value": null,
-  "asOfDate": "Sep 25 2026"
+  "asOfDate": "Oct 02 2026"
  },
  "yields": {
-  "dividendYield": 210.46,
-  "dividendYieldText": "210.46%",
-  "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
-  "indicatedYield": 210.46,
-  "indicatedYieldText": "210.46%",
+  "dividendYield": null,
+  "dividendYieldText": "—",
+  "dividendYieldKind": "no current yield: VanEck prints `--` and no recent distribution can be annualised",
+  "indicatedYield": null,
+  "indicatedYieldText": "—",
   "distributionYield": null,
   "distributionYieldText": "—",
-  "yield12M": 213.11,
-  "yield12MText": "213.11%",
+  "yield12M": null,
+  "yield12MText": "—",
   "distributionRate": null,
   "secYield": null,
   "secYieldText": "—",
