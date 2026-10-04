@@ -120,7 +120,6 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
 | `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
 | `EDGAR_FALLBACK`* | `true` | Use N-PORT-P when a holdings download is unavailable |
-| `OFFLINE_SEED` | `false` | Replay the verified snapshot inside `scripts/update-data.ts` instead of fetching, for a network-free run |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
 | `USE_SYSTEM_CA` | `auto` | TLS trust store: `auto` restarts the updater once with Bun's `--use-system-ca` when a request fails with an untrusted-certificate error; `true` always uses the system CA store; `false` never restarts. Not an individual workflow input: use `advanced`, the config file or the CLI environment. |
 | `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the published return percent: YTD and 1Y as published, 3Y/5Y/10Y annualized |
@@ -138,10 +137,9 @@ A fund is updated as a unit: pages are written first, then `meta.json`, then sta
 MAX_FETCHES=10 bun scripts/update-data.ts
 TICKERS="GDX SMH MOAT" bun scripts/update-data.ts
 AUM="1B:" TER=":0.5" bun scripts/update-data.ts
-OFFLINE_SEED=true bun scripts/update-data.ts
 ```
 
-Workflow `advanced` input example: `{"PERFORMANCE_1Y": "10:", "OFFLINE_SEED": false}`
+Workflow `advanced` input example: `{"PERFORMANCE_1Y": "10:", "SKIP_YAHOO": false}`
 
 ## TypeScript and verification
 

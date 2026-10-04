@@ -217,7 +217,7 @@ describe("controls", () => {
     }
     const config = readConfig(resolveControls(configFile()));
     expect([config.maxFetches, config.requestSleep, config.concurrency, config.maxRetries, config.historyRange, config.tickers]).toEqual([0, 2, 2, 3, "max", []]);
-    expect([config.edgarFallback, config.storeRawDownloads, config.skipYahoo, config.skipVanEck, config.offlineSeed, config.aumRange]).toEqual([true, false, false, false, false, undefined]);
+    expect([config.edgarFallback, config.storeRawDownloads, config.skipYahoo, config.skipVanEck, config.aumRange]).toEqual([true, false, false, false, undefined]);
     expect((await runtimeControls({ TICKERS: "GDX" })).TICKERS).toBe("GDX");
     const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
     expect([c.edgarFallback, c.concurrency, c.requestSleep]).toEqual([true, Number(configFile().CONCURRENCY), Number(configFile().REQUEST_SLEEP)]);
