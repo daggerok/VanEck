@@ -504,8 +504,6 @@ function sandbox() {
   const api = path.join(dir, "api", "vaneck");
   mkdirSync(api, { recursive: true });
   for (const name of ["update-data.ts", "update-data.config.json"]) copyFileSync(path.join(scriptsDir, name), path.join(dir, "scripts", name));
-  mkdirSync(path.join(dir, "data"));
-  copyFileSync(path.join(scriptsDir, "..", "data", "vaneck-verified.ts"), path.join(dir, "data", "vaneck-verified.ts"));
   const urls: string[] = [];
   let down: string[] = [];
   let stallHoldings = false;
