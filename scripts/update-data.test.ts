@@ -8,7 +8,7 @@ import {
   CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
   annualizedFromCumulative, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
-  frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
+  dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
   normalizeNumberText, normalizeYahooExchangeName, numberOrNull, paceRequests, parseAumRange, parseHistoryRange, parseHtmlTables,
   parseMaxRetries, parseNasdaqSymdir, parseRange, parseVanEckFundPage, parseVanEckHistory, parseVanEckHistoryXlsx,
@@ -461,6 +461,23 @@ describe("metrics", () => {
     expect(keys(entryWith({ asOfDate: "—" }, null))).toBe(keys(entryWith({ asOfDate: "Sep 25 2026", tenorsAsOf: "Aug 31 2026" }, 1)));
   });
 
+  test("dividendYieldBasis: one code per yield source, null exactly when the yield is null, same key set on every row", () => {
+    const seed = seedCatalogEntry(VAN_ECK_SEED[0]);
+    const row = (m: Record<string, unknown>) => withReturnsMeta({ ...seed, metrics: { ...(seed.metrics as object), ...m } }).metrics as Record<string, unknown>;
+    expect(row({}).dividendYieldBasis).toBeNull();
+    expect(row({ dividendYield: 3.1, distributionYield: 3.1, dividendYieldBasis: "official-distribution-rate" }).dividendYieldBasis).toBe("official-distribution-rate");
+    expect(row({ dividendYield: 1.05, distributionYield: null, dividendYieldBasis: "indicated" }).dividendYieldBasis).toBe("indicated");
+    // a row published before the key existed is classified from its own numbers
+    expect(row({ dividendYield: 3.1, distributionYield: 3.1 }).dividendYieldBasis).toBe("official-distribution-rate");
+    expect(row({ dividendYield: 1.05, distributionYield: null }).dividendYieldBasis).toBe("indicated");
+    // a stale code never survives a null yield; an unknown code is reclassified
+    expect(row({ dividendYield: null, dividendYieldBasis: "indicated" }).dividendYieldBasis).toBeNull();
+    expect(dividendYieldBasisOf({ dividendYield: 2, distributionYield: null, dividendYieldBasis: "bogus" })).toBe("indicated");
+    const keys = (m: Record<string, unknown>) => Object.keys(row(m)).sort().join();
+    expect(keys({})).toBe(keys({ dividendYield: 3.1, distributionYield: 3.1 }));
+    expect(Object.keys(seed.metrics as object)).toContain("dividendYieldBasis");
+  });
+
   test("HISTORY_RANGE window start is explicit, max starts at 0", () => {
     const now = 1_789_848_311;
     expect([historyWindowStartEpoch("max", now), historyWindowStartEpoch("5y", now)]).toEqual([0, Math.floor(now - 5 * 365.25 * 86_400)]);
@@ -555,6 +572,7 @@ describe("pipeline", () => {
     }
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2 });
     expect(box.row("GDX").metrics.tr3y).toBeNull();
+    for (const fund of funds) expect(fund.metrics.dividendYieldBasis).toBe(fund.metrics.dividendYield === null ? null : fund.metrics.distributionYield === fund.metrics.dividendYield ? "official-distribution-rate" : "indicated");
     expect(box.json("funds/GDX/meta.json").holdings.totalRows).toBe(4);
   });
 

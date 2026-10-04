@@ -2454,6 +2454,7 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
       siAnn: null,
       dividendYield: null,
       dividendYieldText: '—',
+      dividendYieldBasis: null,
       distributionYield: null,
       distributionYieldText: '—',
       yield12M: null,
@@ -2473,6 +2474,23 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
   };
 }
 
+/** Codes of `metrics.dividendYieldBasis`: which definition stands behind `dividendYield`. */
+export type DividendYieldBasis = 'official-distribution-rate' | 'indicated';
+const DIVIDEND_YIELD_BASES: readonly string[] = ['official-trailing-12m', 'official-distribution-rate', 'official-other', 'computed-trailing-12m', 'indicated'];
+
+/**
+ * `dividendYield` is the finder's official Distribution Yield (latest distribution annualised: a distribution
+ * rate) when published, else the indicated yield. `null` exactly when the yield is null. A row carrying no valid
+ * code (published by an older run) is classified from its own numbers: equal to `distributionYield` -> official.
+ */
+export function dividendYieldBasisOf(metrics: Record<string, unknown>): DividendYieldBasis | string | null {
+  const yieldValue = metrics.dividendYield;
+  if (typeof yieldValue !== 'number' || !Number.isFinite(yieldValue)) return null;
+  const code = metrics.dividendYieldBasis;
+  if (typeof code === 'string' && DIVIDEND_YIELD_BASES.includes(code)) return code;
+  return metrics.distributionYield === yieldValue ? 'official-distribution-rate' : 'indicated';
+}
+
 /**
  * STANDARD.md 9a: `metrics.returnsBasis` (non-empty label) and
  * `metrics.performanceAsOf` (ISO date of the returns, or null) always sit at
@@ -2481,7 +2499,8 @@ export function seedCatalogEntry(seed: VanEckSeedFund): CatalogEntry {
  * table month-end, else the finder month-end) - never the NAV date field.
  */
 export function withReturnsMeta(entry: CatalogEntry): CatalogEntry {
-  const { returnsBasis, performanceAsOf: _previous, ytdAsOf: _previousYtd, ...rest } = (entry.metrics as Record<string, unknown>) ?? {};
+  const { returnsBasis, performanceAsOf: _previous, ytdAsOf: _previousYtd, dividendYieldBasis: _previousBasis, ...rest } = (entry.metrics as Record<string, unknown>) ?? {};
+  const dividendYieldBasis = dividendYieldBasisOf({ ...rest, dividendYieldBasis: _previousBasis });
   const monthEnd = (entry.returns as { monthEnd?: { asOfDate?: unknown; tenorsAsOf?: unknown } } | undefined)?.monthEnd;
   const toIso = (stamp: unknown): string | null =>
     typeof stamp === 'string' && stamp !== '—' && Number.isFinite(Date.parse(`${stamp} UTC`))
@@ -2493,7 +2512,7 @@ export function withReturnsMeta(entry: CatalogEntry): CatalogEntry {
   const basis = typeof returnsBasis === 'string' && returnsBasis.trim() && returnsBasis.trim() !== '-' && returnsBasis.trim() !== '—'
     ? returnsBasis
     : 'not yet refreshed from vaneck.com';
-  return { ...entry, metrics: { ...rest, ytdAsOf: ytdIso, returnsBasis: basis, performanceAsOf: iso } };
+  return { ...entry, metrics: { ...rest, dividendYieldBasis, ytdAsOf: ytdIso, returnsBasis: basis, performanceAsOf: iso } };
 }
 
 /** Merges a verified fund-page snapshot onto a catalog entry. */
@@ -3079,6 +3098,7 @@ export async function updateFund(
   };
   metrics.dividendYield = dividendYield;
   metrics.dividendYieldText = formatPercentText(dividendYield);
+  metrics.dividendYieldBasis = dividendYield === null ? null : saneYield(officialDistributionYield) !== null ? 'official-distribution-rate' : 'indicated';
   const distributionsSource = vanEckDistributions
     ? 'VanEck Distribution History (official)'
     : yahooFallback
