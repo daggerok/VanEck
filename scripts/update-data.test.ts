@@ -78,7 +78,7 @@ function crc32(bytes: Uint8Array): number {
   for (const byte of bytes) crc = CRC_TABLE[(crc ^ byte) & 0xff] ^ (crc >>> 8);
   return (crc ^ 0xffffffff) >>> 0;
 }
-function buildZip(files: Map<string, Uint8Array>): Uint8Array {
+function buildZip(files: Map<string, Uint8Array>): Uint8Array<ArrayBuffer> {
   const encoder = new TextEncoder();
   const locals: Uint8Array[] = [];
   const centrals: Uint8Array[] = [];
@@ -120,7 +120,7 @@ function sheetXml(rows: string[][], namespaced: boolean): string {
   const root = namespaced ? `<x:worksheet xmlns:x="http://schemas.openxmlformats.org/spreadsheetml/2006/main">` : `<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">`;
   return `<?xml version="1.0" encoding="UTF-8"?>${root}<${p}sheetData>${body}</${p}sheetData>${namespaced ? "</x:worksheet>" : "</worksheet>"}`;
 }
-function buildXlsx(rows: string[][], namespaced = true): Uint8Array {
+function buildXlsx(rows: string[][], namespaced = true): Uint8Array<ArrayBuffer> {
   const encoder = new TextEncoder();
   return buildZip(new Map<string, Uint8Array>([
     ["xl/workbook.xml", encoder.encode('<?xml version="1.0"?><workbook/>')],
