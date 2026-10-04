@@ -161,6 +161,7 @@ import { fileURLToPath } from 'node:url';
 import {
   EQUITY_HOLDINGS_SNAPSHOTS,
   FUND_PAGE_SNAPSHOTS,
+  type FundPageSnapshot,
   HISTORY_SNAPSHOTS,
   SNAPSHOT_READ_AT,
 } from '../data/vaneck-verified';
@@ -2855,7 +2856,8 @@ export async function updateFund(
   };
 
   // --- fund page -----------------------------------------------------------
-  let pageSnapshot = FUND_PAGE_SNAPSHOTS[ticker] ?? null;
+  // The checked-in snapshot has no block ids (the optional chaining below skips the VanEck block fetches for it); the live parse has them.
+  let pageSnapshot: (FundPageSnapshot & Partial<Pick<ParsedFundPage, 'pageId' | 'performanceBlockId' | 'distributionsBlockId'>>) | null = FUND_PAGE_SNAPSHOTS[ticker] ?? null;
   if (!config.skipVanEck && !config.offlineSeed) {
     try {
       const html = await fetchText(vaneckFundPageUrl(ticker), browserHeaders(), config, `${ticker} fund page`);
@@ -3061,7 +3063,7 @@ export async function updateFund(
   const payments = paymentsPerYear(frequencyLabel);
   const latestExDate = latestNative?.exDate ?? latestYahoo?.date ?? null;
   const latestAmount = latestNative?.dividend ?? latestYahoo?.amount ?? null;
-  const navForYield = entry.navValue ?? entry.closePriceValue;
+  const navForYield = (entry.navValue ?? entry.closePriceValue) as number | null;
   // Official finder Distribution Yield first; the indicated yield only where
   // the finder prints `--` AND the latest payout is fresh enough to annualise.
   const officialDistributionYield = finder?.distributionYield ?? null;
