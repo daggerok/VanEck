@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$24.74",
-  "value": 24.74,
-  "asOfDate": "Oct 02 2026"
+  "display": "$24.52",
+  "value": 24.52,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 24.74,
+ "navValue": 24.52,
  "aum": {
-  "display": "$3.71M",
-  "value": 3711647.82,
-  "asOfDate": "Oct 02 2026",
+  "display": "$3.68M",
+  "value": 3677511.75,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3711647.82,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 3677511.75,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Sep 09 2026",
  "exchange": "NASDAQ",
- "closePrice": "$24.85",
- "closePriceValue": 24.85,
+ "closePrice": "$24.66",
+ "closePriceValue": 24.66,
  "premiumDiscount": {
-  "display": "0.10%",
-  "value": 0.1
+  "display": "0.14%",
+  "value": 0.14
  },
- "premiumDiscountValue": 0.1,
+ "premiumDiscountValue": 0.14,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -89,11 +89,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
-  "totalRows": 104,
+  "totalRows": 105,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 24,
+  "totalRows": 31,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 3710000,
+ "totalNetAssets": 3680000,
  "indexTicker": "NU763973",
  "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -149,9 +149,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$24.85",
-  "value": 24.85,
-  "asOfDate": "Oct 02 2026"
+  "display": "$24.66",
+  "value": 24.66,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": null,
@@ -167,6 +167,5 @@
   "secYield": null,
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

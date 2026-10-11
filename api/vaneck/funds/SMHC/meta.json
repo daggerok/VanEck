@@ -9,28 +9,28 @@
  "ter": "0.65%",
  "terValue": 0.65,
  "nav": {
-  "display": "$43.28",
-  "value": 43.28,
-  "asOfDate": "Oct 02 2026"
+  "display": "$41.19",
+  "value": 41.19,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 43.28,
+ "navValue": 41.19,
  "aum": {
-  "display": "$17.31M",
-  "value": 17311657,
-  "asOfDate": "Oct 02 2026",
+  "display": "$16.48M",
+  "value": 16475180.58,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 17311657,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 16475180.58,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Jun 23 2026",
  "exchange": "NASDAQ",
- "closePrice": "$43.21",
- "closePriceValue": 43.21,
+ "closePrice": "$40.95",
+ "closePriceValue": 40.95,
  "premiumDiscount": {
-  "display": "-0.07%",
-  "value": -0.07
+  "display": "-0.24%",
+  "value": -0.24
  },
- "premiumDiscountValue": -0.07,
+ "premiumDiscountValue": -0.24,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -89,11 +89,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.65%",
  "terGrossValue": 0.65,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
   "totalRows": 28,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/china-semiconductor-etf-smhc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 102,
+  "totalRows": 109,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/china-semiconductor-etf-smhc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 17310000,
+ "totalNetAssets": 16480000,
  "indexTicker": "MVSMHCTR",
  "indexName": "China Semiconductor 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -149,9 +149,9 @@
   "grossValue": 0.65
  },
  "marketPrice": {
-  "display": "$43.21",
-  "value": 43.21,
-  "asOfDate": "Oct 02 2026"
+  "display": "$40.95",
+  "value": 40.95,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": null,
@@ -167,6 +167,5 @@
   "secYield": -0.42,
   "secYieldText": "-0.42%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

@@ -11,26 +11,26 @@
  "nav": {
   "display": "$42.93",
   "value": 42.93,
-  "asOfDate": "Oct 02 2026"
+  "asOfDate": "Oct 09 2026"
  },
  "navValue": 42.93,
  "aum": {
   "display": "$84.78M",
-  "value": 84781263.21,
-  "asOfDate": "Oct 02 2026",
+  "value": 84780998.12,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 84781263.21,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 84780998.12,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Aug 24 2010",
  "exchange": "NYSE Arca",
- "closePrice": "$42.86",
- "closePriceValue": 42.86,
+ "closePrice": "$42.81",
+ "closePriceValue": 42.81,
  "premiumDiscount": {
-  "display": "-0.07%",
-  "value": -0.07
+  "display": "-0.12%",
+  "value": -0.12
  },
- "premiumDiscountValue": -0.07,
+ "premiumDiscountValue": -0.12,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,7 +116,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 02 2026",
+   "asOfDate": "Oct 09 2026",
    "ytd": -7.22,
    "ytdText": "-7.22%",
    "yr1": -2.57,
@@ -154,7 +154,7 @@
   "secYield": 0.18,
   "secYieldText": "0.18%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-02",
+  "ytdAsOf": "2026-10-09",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -162,11 +162,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.80%",
  "terGrossValue": 0.8,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
   "totalRows": 84,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -174,9 +174,9 @@
   ]
  },
  "history": {
-  "totalRows": 4406,
+  "totalRows": 4413,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -226,9 +226,9 @@
   "grossValue": 0.8
  },
  "marketPrice": {
-  "display": "$42.86",
-  "value": 42.86,
-  "asOfDate": "Oct 02 2026"
+  "display": "$42.81",
+  "value": 42.81,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": 0.86,
@@ -244,6 +244,5 @@
   "secYield": 0.18,
   "secYieldText": "0.18%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

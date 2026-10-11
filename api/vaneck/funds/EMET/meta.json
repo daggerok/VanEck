@@ -9,23 +9,23 @@
  "ter": "0.62%",
  "terValue": 0.62,
  "nav": {
-  "display": "$41.43",
-  "value": 41.43,
-  "asOfDate": "Oct 02 2026"
+  "display": "$41.35",
+  "value": 41.35,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 41.43,
+ "navValue": 41.35,
  "aum": {
-  "display": "$35.22M",
-  "value": 35215018.59,
-  "asOfDate": "Oct 02 2026",
+  "display": "$35.15M",
+  "value": 35146287.49,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 35215018.59,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 35146287.49,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Nov 09 2021",
  "exchange": "NYSE Arca",
- "closePrice": "$41.64",
- "closePriceValue": 41.64,
+ "closePrice": "$41.55",
+ "closePriceValue": 41.55,
  "premiumDiscount": {
   "display": "0.21%",
   "value": 0.21
@@ -66,9 +66,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 02 2026",
-   "ytd": 11.82,
-   "ytdText": "11.82%",
+   "asOfDate": "Oct 09 2026",
+   "ytd": 11.6,
+   "ytdText": "11.60%",
    "yr1": 31.26,
    "yr3": 20.27,
    "yr5": null,
@@ -86,7 +86,7 @@
   }
  },
  "metrics": {
-  "ytd": 11.82,
+  "ytd": 11.6,
   "tr1y": 31.26,
   "tr3y": 73.95,
   "tr5y": null,
@@ -104,7 +104,7 @@
   "secYield": 0.66,
   "secYieldText": "0.66%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-02",
+  "ytdAsOf": "2026-10-09",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -112,11 +112,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.62%",
  "terGrossValue": 0.62,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
   "totalRows": 64,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -124,9 +124,9 @@
   ]
  },
  "history": {
-  "totalRows": 1789,
+  "totalRows": 1796,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -134,7 +134,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 35220000,
+ "totalNetAssets": 35150000,
  "indexTicker": "MVGMETTR",
  "indexName": "MarketVector Global Electrification Metals Index",
  "categoryPath": "Equity > Natural Resources",
@@ -173,9 +173,9 @@
   "grossValue": 0.62
  },
  "marketPrice": {
-  "display": "$41.64",
-  "value": 41.64,
-  "asOfDate": "Oct 02 2026"
+  "display": "$41.55",
+  "value": 41.55,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": 1.62,
@@ -191,6 +191,5 @@
   "secYield": 0.66,
   "secYieldText": "0.66%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

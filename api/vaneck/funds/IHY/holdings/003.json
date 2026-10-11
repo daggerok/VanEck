@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 3,
  "pageSize": 250,
- "totalRows": 501,
+ "totalRows": 502,
  "headers": [
   "Name",
   "Maturity",
@@ -17,14 +17,26 @@
  ],
  "rows": [
   {
+   "Name": "",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "Cash Bal",
+   "Par Value": "5,866",
+   "Market Value": "$4,122.89",
+   "Weight": "0.01%",
+   "Country": "Canada",
+   "Currency": "CAD"
+  },
+  {
    "Name": "Other/Cash",
    "Maturity": "",
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-711,787.81",
-   "Weight": "-1.80%",
+   "Market Value": "$-49,385.49",
+   "Weight": "-0.13%",
    "Country": "",
    "Currency": "USD"
   }

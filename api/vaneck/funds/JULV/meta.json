@@ -9,28 +9,28 @@
  "ter": "0.50%",
  "terValue": 0.5,
  "nav": {
-  "display": "$30.94",
-  "value": 30.94,
-  "asOfDate": "Oct 02 2026"
+  "display": "$31.10",
+  "value": 31.1,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 30.94,
+ "navValue": 31.1,
  "aum": {
-  "display": "$77.03M",
-  "value": 77032271.15,
-  "asOfDate": "Oct 02 2026",
+  "display": "$77.76M",
+  "value": 77757649.34,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 77032271.15,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 77757649.34,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Aug 24 2026",
  "exchange": "NYSE Arca",
- "closePrice": "$30.83",
- "closePriceValue": 30.83,
+ "closePrice": "$31.02",
+ "closePriceValue": 31.02,
  "premiumDiscount": {
-  "display": "-0.11%",
-  "value": -0.11
+  "display": "-0.08%",
+  "value": -0.08
  },
- "premiumDiscountValue": -0.11,
+ "premiumDiscountValue": -0.08,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -89,11 +89,11 @@
  "providerCategory": "U.S. Equity",
  "terGross": "0.50%",
  "terGrossValue": 0.5,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
   "totalRows": 6,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 40,
+  "totalRows": 47,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/us-equity-buffer-july-etf-julv/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 77030000,
+ "totalNetAssets": 77760000,
  "categoryPath": "Equity > U.S. Equity",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -147,9 +147,9 @@
   "grossValue": 0.5
  },
  "marketPrice": {
-  "display": "$30.83",
-  "value": 30.83,
-  "asOfDate": "Oct 02 2026"
+  "display": "$31.02",
+  "value": 31.02,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": null,
@@ -165,6 +165,5 @@
   "secYield": null,
   "secYieldText": "—",
   "secYieldKind": "not published by VanEck for this fund (finder prints `--`)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

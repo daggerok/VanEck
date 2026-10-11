@@ -6,26 +6,26 @@
  "dataFile": "./funds/CLOI/meta.json",
  "cusip": null,
  "isin": null,
- "ter": "0.36%",
- "terValue": 0.36,
+ "ter": "0.29%",
+ "terValue": 0.29,
  "nav": {
-  "display": "$52.77",
-  "value": 52.77,
-  "asOfDate": "Oct 02 2026"
+  "display": "$52.82",
+  "value": 52.82,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 52.77,
+ "navValue": 52.82,
  "aum": {
-  "display": "$1.64B",
-  "value": 1641231357.92,
-  "asOfDate": "Oct 02 2026",
+  "display": "$1.72B",
+  "value": 1716667358.7,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1641231357.92,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 1716667358.7,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Jun 21 2022",
  "exchange": "NYSE Arca",
- "closePrice": "$52.79",
- "closePriceValue": 52.79,
+ "closePrice": "$52.83",
+ "closePriceValue": 52.83,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -301,9 +301,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 02 2026",
-   "ytd": 3.36,
-   "ytdText": "3.36%",
+   "asOfDate": "Oct 09 2026",
+   "ytd": 3.86,
+   "ytdText": "3.86%",
    "yr1": 5.1,
    "yr3": 6.59,
    "yr5": null,
@@ -321,7 +321,7 @@
   }
  },
  "metrics": {
-  "ytd": 3.36,
+  "ytd": 3.86,
   "tr1y": 5.1,
   "tr3y": 21.09,
   "tr5y": null,
@@ -336,10 +336,10 @@
   "distributionYieldText": "5.10%",
   "yield12M": 5.29,
   "yield12MText": "5.29%",
-  "secYield": 4.94,
-  "secYieldText": "4.94%",
+  "secYield": 4.91,
+  "secYieldText": "4.91%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-02",
+  "ytdAsOf": "2026-10-09",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -347,11 +347,11 @@
  "providerCategory": "Floating Rate",
  "terGross": "0.36%",
  "terGrossValue": 0.36,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
-  "totalRows": 183,
+  "totalRows": 185,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -359,9 +359,9 @@
   ]
  },
  "history": {
-  "totalRows": 1430,
+  "totalRows": 1437,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/clo-etf-cloi/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -369,9 +369,9 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 1640000000,
- "secYield": "4.94%",
- "secYieldValue": 4.94,
+ "totalNetAssets": 1720000000,
+ "secYield": "4.91%",
+ "secYieldValue": 4.91,
  "categoryPath": "Income > Floating Rate",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -402,30 +402,29 @@
   "semiAnnualReport": "https://vaneck.onlineprospectus.net/vaneck/CLOI/index.php?ctype=semi-annual"
  },
  "expenseRatio": {
-  "display": "0.36%",
-  "value": 0.36,
+  "display": "0.29%",
+  "value": 0.29,
   "gross": "0.36%",
   "grossValue": 0.36
  },
  "marketPrice": {
-  "display": "$52.79",
-  "value": 52.79,
-  "asOfDate": "Oct 02 2026"
+  "display": "$52.83",
+  "value": 52.83,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": 5.1,
   "dividendYieldText": "5.10%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 4.71,
-  "indicatedYieldText": "4.71%",
+  "indicatedYield": 4.7,
+  "indicatedYieldText": "4.70%",
   "distributionYield": 5.1,
   "distributionYieldText": "5.10%",
   "yield12M": 5.29,
   "yield12MText": "5.29%",
   "distributionRate": null,
-  "secYield": 4.94,
-  "secYieldText": "4.94%",
+  "secYield": 4.91,
+  "secYieldText": "4.91%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }

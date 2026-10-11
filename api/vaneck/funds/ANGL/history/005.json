@@ -1,0 +1,44 @@
+{
+ "ticker": "ANGL",
+ "page": 5,
+ "pageSize": 1000,
+ "totalRows": 4003,
+ "headers": [
+  "Date",
+  "NAV",
+  "Close",
+  "Volume",
+  "Premium/Discount",
+  "Total Net Assets",
+  "Index Level"
+ ],
+ "rows": [
+  {
+   "Date": "Apr 12 2012",
+   "NAV": "24.9721",
+   "Close": "25.30",
+   "Volume": "12,406",
+   "Premium/Discount": "0.33",
+   "Total Net Assets": "9,988,824.60",
+   "Index Level": "429.08"
+  },
+  {
+   "Date": "Apr 11 2012",
+   "NAV": "24.9547",
+   "Close": "25.15",
+   "Volume": "1,100",
+   "Premium/Discount": "0.20",
+   "Total Net Assets": "9,981,881.15",
+   "Index Level": "428.66"
+  },
+  {
+   "Date": "Apr 10 2012",
+   "NAV": "25.0000",
+   "Close": "25.00",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "10,000,000.00",
+   "Index Level": "429.15"
+  }
+ ]
+}

@@ -9,23 +9,23 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$25.49",
-  "value": 25.49,
-  "asOfDate": "Oct 02 2026"
+  "display": "$25.63",
+  "value": 25.63,
+  "asOfDate": "Oct 09 2026"
  },
- "navValue": 25.49,
+ "navValue": 25.63,
  "aum": {
-  "display": "$68.33M",
-  "value": 68325771.12,
-  "asOfDate": "Oct 02 2026",
+  "display": "$105.09M",
+  "value": 105086741.92,
+  "asOfDate": "Oct 09 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 68325771.12,
- "asOfDate": "Oct 02 2026",
+ "aumValue": 105086741.92,
+ "asOfDate": "Oct 09 2026",
  "inceptionDate": "Feb 18 2026",
  "exchange": "NASDAQ",
- "closePrice": "$25.50",
- "closePriceValue": 25.5,
+ "closePrice": "$25.64",
+ "closePriceValue": 25.64,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -100,11 +100,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Oct 02 2026",
+ "netAssetsAsOf": "Oct 09 2026",
  "holdings": {
   "totalRows": 8,
   "pageSize": 250,
-  "asOfDate": "Oct 01 2026",
+  "asOfDate": "Oct 08 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -112,16 +112,16 @@
   ]
  },
  "history": {
-  "totalRows": 227,
+  "totalRows": 234,
   "pageSize": 1000,
-  "asOfDate": "Oct 02 2026",
+  "asOfDate": "Oct 09 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 68330000,
+ "totalNetAssets": 105090000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -158,9 +158,9 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$25.50",
-  "value": 25.5,
-  "asOfDate": "Oct 02 2026"
+  "display": "$25.64",
+  "value": 25.64,
+  "asOfDate": "Oct 09 2026"
  },
  "yields": {
   "dividendYield": 0.9,
@@ -176,6 +176,5 @@
   "secYield": 0.86,
   "secYieldText": "0.86%",
   "secYieldKind": "official VanEck Investment Finder 30-Day SEC Yield (as of Sep 18 2026)"
- },
- "snapshotReadAt": "2026-09-19T00:00:00.000Z"
+ }
 }
