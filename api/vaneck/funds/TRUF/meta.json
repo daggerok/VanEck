@@ -9,23 +9,23 @@
  "ter": "0.10%",
  "terValue": 0.1,
  "nav": {
-  "display": "$28.54",
-  "value": 28.54,
-  "asOfDate": "Oct 09 2026"
+  "display": "$28.71",
+  "value": 28.71,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 28.54,
+ "navValue": 28.71,
  "aum": {
-  "display": "$570856.00",
-  "value": 570856,
-  "asOfDate": "Oct 09 2026",
+  "display": "$574143.75",
+  "value": 574143.75,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 570856,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 574143.75,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Apr 01 2026",
  "exchange": "NASDAQ",
- "closePrice": "$28.56",
- "closePriceValue": 28.56,
+ "closePrice": "$28.71",
+ "closePriceValue": 28.71,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -57,11 +57,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
-   "sinceInception": 8.75,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
+   "sinceInception": 8.75,
    "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
@@ -100,7 +100,7 @@
  "providerCategory": "TruSectors",
  "terGross": "0.10%",
  "terGrossValue": 0.1,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 79,
   "pageSize": 250,
@@ -112,16 +112,16 @@
   ]
  },
  "history": {
-  "totalRows": 192,
+  "totalRows": 195,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/financials-trusector-etf-truf/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 570.86,
+ "totalNetAssets": 574.14,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -158,9 +158,9 @@
   "grossValue": 0.1
  },
  "marketPrice": {
-  "display": "$28.56",
-  "value": 28.56,
-  "asOfDate": "Oct 09 2026"
+  "display": "$28.71",
+  "value": 28.71,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": 1.46,

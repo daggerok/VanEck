@@ -9,28 +9,28 @@
  "ter": "0.50%",
  "terValue": 0.5,
  "nav": {
-  "display": "$49.79",
-  "value": 49.79,
-  "asOfDate": "Oct 09 2026"
+  "display": "$48.54",
+  "value": 48.54,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 49.79,
+ "navValue": 48.54,
  "aum": {
-  "display": "$76.68M",
-  "value": 76679408.47,
-  "asOfDate": "Oct 09 2026",
+  "display": "$74.74M",
+  "value": 74744364.37,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 76679408.47,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 74744364.37,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Jun 01 2026",
  "exchange": "Cboe BZX",
- "closePrice": "$49.80",
- "closePriceValue": 49.8,
+ "closePrice": "$48.53",
+ "closePriceValue": 48.53,
  "premiumDiscount": {
-  "display": "0.01%",
-  "value": 0.01
+  "display": "-0.01%",
+  "value": -0.01
  },
- "premiumDiscountValue": 0.01,
+ "premiumDiscountValue": -0.01,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -46,11 +46,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
-   "sinceInception": -4.42,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
+   "sinceInception": -4.42,
    "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
@@ -89,7 +89,7 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.50%",
  "terGrossValue": 0.5,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 53,
   "pageSize": 250,
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 131,
+  "totalRows": 134,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/data-center-supply-chain-etf-rack/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 76680000,
+ "totalNetAssets": 74740000,
  "indexTicker": "MVRACKTR",
  "indexName": "Data Center Supply Chain Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -149,9 +149,9 @@
   "grossValue": 0.5
  },
  "marketPrice": {
-  "display": "$49.80",
-  "value": 49.8,
-  "asOfDate": "Oct 09 2026"
+  "display": "$48.53",
+  "value": 48.53,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": null,

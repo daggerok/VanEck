@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4674,
+ "totalRows": 4677,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 30 2020",
+   "NAV": "10.7436",
+   "Close": "10.46",
+   "Volume": "338,646",
+   "Premium/Discount": "-0.28",
+   "Total Net Assets": "270,739,038.70",
+   "Index Level": "1,028.18"
+  },
+  {
+   "Date": "Mar 27 2020",
+   "NAV": "10.6860",
+   "Close": "10.52",
+   "Volume": "308,501",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "269,286,948.94",
+   "Index Level": "1,055.26"
+  },
+  {
+   "Date": "Mar 26 2020",
+   "NAV": "11.1293",
+   "Close": "11.04",
+   "Volume": "401,279",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "280,457,162.11",
+   "Index Level": "1,043.80"
+  },
   {
    "Date": "Mar 25 2020",
    "NAV": "10.6454",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.03",
    "Total Net Assets": "330,773,200.18",
    "Index Level": "1,262.83"
-  },
-  {
-   "Date": "Apr 08 2016",
-   "NAV": "13.8758",
-   "Close": "13.87",
-   "Volume": "158,588",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "326,775,345.63",
-   "Index Level": "1,246.89"
-  },
-  {
-   "Date": "Apr 07 2016",
-   "NAV": "13.8633",
-   "Close": "13.81",
-   "Volume": "127,874",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "326,481,118.63",
-   "Index Level": "1,248.48"
-  },
-  {
-   "Date": "Apr 06 2016",
-   "NAV": "13.9559",
-   "Close": "13.96",
-   "Volume": "540,706",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "328,660,623.66",
-   "Index Level": "1,250.01"
   }
  ]
 }

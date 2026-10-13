@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 7305,
+ "totalRows": 7308,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jul 26 2018",
+   "NAV": "18.8566",
+   "Close": "18.87",
+   "Volume": "4,110",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "23,570,700.71",
+   "Index Level": "793.97"
+  },
+  {
+   "Date": "Jul 25 2018",
+   "NAV": "18.6463",
+   "Close": "18.57",
+   "Volume": "12,790",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "23,307,917.89",
+   "Index Level": "785.11"
+  },
+  {
+   "Date": "Jul 24 2018",
+   "NAV": "18.3040",
+   "Close": "18.38",
+   "Volume": "",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "22,879,992.54",
+   "Index Level": "770.71"
+  },
   {
    "Date": "Jul 23 2018",
    "NAV": "18.3436",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "15,240,231.25",
    "Index Level": "492.04"
-  },
-  {
-   "Date": "Oct 30 2015",
-   "NAV": "12.1922",
-   "Close": "12.19",
-   "Volume": "235",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "15,240,231.25",
-   "Index Level": "492.04"
-  },
-  {
-   "Date": "Oct 29 2015",
-   "NAV": "12.1944",
-   "Close": "12.19",
-   "Volume": "500",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "15,242,951.17",
-   "Index Level": "492.11"
-  },
-  {
-   "Date": "Oct 28 2015",
-   "NAV": "12.2320",
-   "Close": "12.00",
-   "Volume": "75",
-   "Premium/Discount": "-0.24",
-   "Total Net Assets": "15,289,988.12",
-   "Index Level": "493.62"
   }
  ]
 }

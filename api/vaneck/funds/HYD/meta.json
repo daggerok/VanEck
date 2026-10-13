@@ -9,28 +9,28 @@
  "ter": "0.32%",
  "terValue": 0.32,
  "nav": {
-  "display": "$47.69",
-  "value": 47.69,
-  "asOfDate": "Oct 09 2026"
+  "display": "$47.72",
+  "value": 47.72,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 47.69,
+ "navValue": 47.72,
  "aum": {
-  "display": "$4.09B",
-  "value": 4089565924.64,
-  "asOfDate": "Oct 09 2026",
+  "display": "$4.15B",
+  "value": 4149144815.25,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4089565924.64,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 4149144815.25,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Feb 04 2009",
  "exchange": "Cboe BZX",
- "closePrice": "$47.99",
- "closePriceValue": 47.99,
+ "closePrice": "$48.04",
+ "closePriceValue": 48.04,
  "premiumDiscount": {
-  "display": "0.30%",
-  "value": 0.3
+  "display": "0.31%",
+  "value": 0.31
  },
- "premiumDiscountValue": 0.3,
+ "premiumDiscountValue": 0.31,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -1106,9 +1106,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 09 2026",
-   "ytd": -2.72,
-   "ytdText": "-2.72%",
+   "asOfDate": "Sep 30 2026",
    "yr1": -1.36,
    "yr3": 3.7,
    "yr5": -1.23,
@@ -1126,7 +1124,7 @@
   }
  },
  "metrics": {
-  "ytd": -2.72,
+  "ytd": null,
   "tr1y": -1.36,
   "tr3y": 11.52,
   "tr5y": -6.01,
@@ -1144,7 +1142,7 @@
   "secYield": 4.95,
   "secYieldText": "4.95%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-09",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1152,7 +1150,7 @@
  "providerCategory": "Municipal Bond",
  "terGross": "0.32%",
  "terGrossValue": 0.32,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 2050,
   "pageSize": 250,
@@ -1172,9 +1170,9 @@
   ]
  },
  "history": {
-  "totalRows": 4804,
+  "totalRows": 4807,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -1185,7 +1183,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 4090000000,
+ "totalNetAssets": 4150000000.0000005,
  "secYield": "4.95%",
  "secYieldValue": 4.95,
  "indexTicker": "MHYX",
@@ -1226,9 +1224,9 @@
   "grossValue": 0.32
  },
  "marketPrice": {
-  "display": "$47.99",
-  "value": 47.99,
-  "asOfDate": "Oct 09 2026"
+  "display": "$48.04",
+  "value": 48.04,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": 4.52,

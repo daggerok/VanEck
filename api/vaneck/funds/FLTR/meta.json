@@ -9,23 +9,23 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$25.52",
-  "value": 25.52,
-  "asOfDate": "Oct 09 2026"
+  "display": "$25.53",
+  "value": 25.53,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 25.52,
+ "navValue": 25.53,
  "aum": {
-  "display": "$3.47B",
-  "value": 3470428116.64,
-  "asOfDate": "Oct 09 2026",
+  "display": "$3.54B",
+  "value": 3540479506.61,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3470428116.64,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 3540479506.61,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Apr 25 2011",
  "exchange": "NYSE Arca",
- "closePrice": "$25.53",
- "closePriceValue": 25.53,
+ "closePrice": "$25.54",
+ "closePriceValue": 25.54,
  "premiumDiscount": {
   "display": "0.01%",
   "value": 0.01
@@ -971,9 +971,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 09 2026",
-   "ytd": 3.48,
-   "ytdText": "3.48%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 4.66,
    "yr3": 5.87,
    "yr5": 4.74,
@@ -991,7 +989,7 @@
   }
  },
  "metrics": {
-  "ytd": 3.48,
+  "ytd": null,
   "tr1y": 4.66,
   "tr3y": 18.67,
   "tr5y": 26.04,
@@ -1009,7 +1007,7 @@
   "secYield": 4.26,
   "secYieldText": "4.26%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-09",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1017,7 +1015,7 @@
  "providerCategory": "Floating Rate",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 460,
   "pageSize": 250,
@@ -1030,9 +1028,9 @@
   ]
  },
  "history": {
-  "totalRows": 4245,
+  "totalRows": 4248,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ig-floating-rate-etf-fltr/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -1043,7 +1041,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 3470000000,
+ "totalNetAssets": 3540000000,
  "secYield": "4.26%",
  "secYieldValue": 4.26,
  "indexTicker": "MVFLTR",
@@ -1084,9 +1082,9 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$25.53",
-  "value": 25.53,
-  "asOfDate": "Oct 09 2026"
+  "display": "$25.54",
+  "value": 25.54,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": 4.26,

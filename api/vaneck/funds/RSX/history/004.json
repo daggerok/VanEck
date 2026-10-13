@@ -2,7 +2,7 @@
  "ticker": "RSX",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 5254,
+ "totalRows": 5257,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 08 2016",
+   "NAV": "16.4939",
+   "Close": "16.47",
+   "Volume": "14,071,584",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "1,955,348,286.36",
+   "Index Level": "471.04"
+  },
+  {
+   "Date": "Apr 07 2016",
+   "NAV": "16.0407",
+   "Close": "16.07",
+   "Volume": "9,311,460",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "1,901,622,520.30",
+   "Index Level": "458.49"
+  },
+  {
+   "Date": "Apr 06 2016",
+   "NAV": "16.0188",
+   "Close": "16.32",
+   "Volume": "12,315,356",
+   "Premium/Discount": "0.30",
+   "Total Net Assets": "1,899,033,405.23",
+   "Index Level": "456.47"
+  },
   {
    "Date": "Apr 05 2016",
    "NAV": "15.8473",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.03",
    "Total Net Assets": "2,079,930,846.33",
    "Index Level": "757.60"
-  },
-  {
-   "Date": "Apr 17 2012",
-   "NAV": "29.7359",
-   "Close": "29.89",
-   "Volume": "5,172,240",
-   "Premium/Discount": "0.15",
-   "Total Net Assets": "2,085,976,174.94",
-   "Index Level": "758.15"
-  },
-  {
-   "Date": "Apr 16 2012",
-   "NAV": "29.6934",
-   "Close": "29.65",
-   "Volume": "4,033,248",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "2,065,178,547.81",
-   "Index Level": "757.68"
-  },
-  {
-   "Date": "Apr 13 2012",
-   "NAV": "30.0180",
-   "Close": "30.14",
-   "Volume": "8,846,960",
-   "Premium/Discount": "0.12",
-   "Total Net Assets": "2,087,754,625.38",
-   "Index Level": "768.41"
   }
  ]
 }

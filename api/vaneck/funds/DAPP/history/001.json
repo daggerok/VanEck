@@ -2,7 +2,7 @@
  "ticker": "DAPP",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1738,
+ "totalRows": 1741,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 12 2026",
+   "NAV": "17.5505",
+   "Close": "17.57",
+   "Volume": "242,383",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "385,232,661.24",
+   "Index Level": "613.35"
+  },
+  {
+   "Date": "Oct 11 2026",
+   "NAV": "17.7940",
+   "Close": "17.82",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "390,577,335.55",
+   "Index Level": "621.29"
+  },
+  {
+   "Date": "Oct 10 2026",
+   "NAV": "17.7940",
+   "Close": "17.82",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "390,577,335.55",
+   "Index Level": "621.29"
+  },
   {
    "Date": "Oct 09 2026",
    "NAV": "17.7940",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.03",
    "Total Net Assets": "70,933,162.16",
    "Index Level": "262.59"
-  },
-  {
-   "Date": "Jan 16 2024",
-   "NAV": "7.9746",
-   "Close": "7.99",
-   "Volume": "486,228",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "72,967,442.47",
-   "Index Level": "270.24"
-  },
-  {
-   "Date": "Jan 15 2024",
-   "NAV": "8.3629",
-   "Close": "8.34",
-   "Volume": "388,925",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "76,520,342.64",
-   "Index Level": "281.72"
-  },
-  {
-   "Date": "Jan 14 2024",
-   "NAV": "8.3629",
-   "Close": "8.34",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "76,520,342.64",
-   "Index Level": "283.44"
   }
  ]
 }

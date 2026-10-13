@@ -2,7 +2,7 @@
  "ticker": "REMX",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4368,
+ "totalRows": 4371,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 12 2026",
+   "NAV": "58.3368",
+   "Close": "58.18",
+   "Volume": "1,170,993",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "1,664,056,277.18",
+   "Index Level": "475.62"
+  },
+  {
+   "Date": "Oct 11 2026",
+   "NAV": "60.9658",
+   "Close": "60.97",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "1,745,143,868.99",
+   "Index Level": "495.55"
+  },
+  {
+   "Date": "Oct 10 2026",
+   "NAV": "60.9658",
+   "Close": "60.97",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "1,745,143,868.99",
+   "Index Level": "495.55"
+  },
   {
    "Date": "Oct 09 2026",
    "NAV": "60.9658",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.27",
    "Total Net Assets": "350,096,132.67",
    "Index Level": "390.09"
-  },
-  {
-   "Date": "Jan 16 2024",
-   "NAV": "52.4749",
-   "Close": "52.12",
-   "Volume": "115,579",
-   "Premium/Discount": "-0.35",
-   "Total Net Assets": "360,764,446.36",
-   "Index Level": "402.56"
-  },
-  {
-   "Date": "Jan 15 2024",
-   "NAV": "54.5623",
-   "Close": "54.20",
-   "Volume": "49,376",
-   "Premium/Discount": "-0.36",
-   "Total Net Assets": "375,114,782.61",
-   "Index Level": "411.46"
-  },
-  {
-   "Date": "Jan 14 2024",
-   "NAV": "54.5623",
-   "Close": "54.20",
-   "Volume": "",
-   "Premium/Discount": "-0.36",
-   "Total Net Assets": "375,114,782.61",
-   "Index Level": "417.60"
   }
  ]
 }

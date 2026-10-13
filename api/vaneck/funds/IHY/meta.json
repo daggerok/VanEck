@@ -9,28 +9,28 @@
  "ter": "0.40%",
  "terValue": 0.4,
  "nav": {
-  "display": "$20.78",
-  "value": 20.78,
-  "asOfDate": "Oct 09 2026"
+  "display": "$20.76",
+  "value": 20.76,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 20.78,
+ "navValue": 20.76,
  "aum": {
-  "display": "$39.48M",
-  "value": 39476354.07,
-  "asOfDate": "Oct 09 2026",
+  "display": "$39.45M",
+  "value": 39448092.22,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 39476354.07,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 39448092.22,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Apr 02 2012",
  "exchange": "NYSE Arca",
- "closePrice": "$20.81",
- "closePriceValue": 20.81,
+ "closePrice": "$20.76",
+ "closePriceValue": 20.76,
  "premiumDiscount": {
-  "display": "0.03%",
-  "value": 0.03
+  "display": "0.00%",
+  "value": 0
  },
- "premiumDiscountValue": 0.03,
+ "premiumDiscountValue": 0,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -911,9 +911,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 09 2026",
-   "ytd": -1.2,
-   "ytdText": "-1.20%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 0.56,
    "yr3": 8.15,
    "yr5": 1.91,
@@ -931,7 +929,7 @@
   }
  },
  "metrics": {
-  "ytd": -1.2,
+  "ytd": null,
   "tr1y": 0.56,
   "tr3y": 26.51,
   "tr5y": 9.94,
@@ -949,7 +947,7 @@
   "secYield": 6.48,
   "secYieldText": "6.48%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-09",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -957,7 +955,7 @@
  "providerCategory": "International Bond",
  "terGross": "0.40%",
  "terGrossValue": 0.4,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 503,
   "pageSize": 250,
@@ -971,9 +969,9 @@
   ]
  },
  "history": {
-  "totalRows": 4008,
+  "totalRows": 4011,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -984,7 +982,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 39480000,
+ "totalNetAssets": 39450000,
  "secYield": "6.48%",
  "secYieldValue": 6.48,
  "indexTicker": "HXUS",
@@ -1025,16 +1023,16 @@
   "grossValue": 0.4
  },
  "marketPrice": {
-  "display": "$20.81",
-  "value": 20.81,
-  "asOfDate": "Oct 09 2026"
+  "display": "$20.76",
+  "value": 20.76,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": 5.57,
   "dividendYieldText": "5.57%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.1,
-  "indicatedYieldText": "6.10%",
+  "indicatedYield": 6.11,
+  "indicatedYieldText": "6.11%",
   "distributionYield": 5.57,
   "distributionYieldText": "5.57%",
   "yield12M": 5.7,

@@ -9,28 +9,28 @@
  "ter": "0.65%",
  "terValue": 0.65,
  "nav": {
-  "display": "$43.92",
-  "value": 43.92,
-  "asOfDate": "Oct 09 2026"
+  "display": "$42.63",
+  "value": 42.63,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 43.92,
+ "navValue": 42.63,
  "aum": {
-  "display": "$92.22M",
-  "value": 92222697.97,
-  "asOfDate": "Oct 09 2026",
+  "display": "$83.14M",
+  "value": 83135918.92,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 92222697.97,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 83135918.92,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Jul 23 2014",
  "exchange": "NYSE Arca",
- "closePrice": "$43.76",
- "closePriceValue": 43.76,
+ "closePrice": "$42.36",
+ "closePriceValue": 42.36,
  "premiumDiscount": {
-  "display": "-0.16%",
-  "value": -0.16
+  "display": "-0.27%",
+  "value": -0.27
  },
- "premiumDiscountValue": -0.16,
+ "premiumDiscountValue": -0.27,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -71,9 +71,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 09 2026",
-   "ytd": -0.35,
-   "ytdText": "-0.35%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 2.7,
    "yr3": 20.81,
    "yr5": -0.57,
@@ -91,7 +89,7 @@
   }
  },
  "metrics": {
-  "ytd": -0.35,
+  "ytd": null,
   "tr1y": 2.7,
   "tr3y": 76.34,
   "tr5y": -2.83,
@@ -109,7 +107,7 @@
   "secYield": -0.04,
   "secYieldText": "-0.04%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-09",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -117,7 +115,7 @@
  "providerCategory": "Country/Regional",
  "terGross": "1.00%",
  "terGrossValue": 1,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 100,
   "pageSize": 250,
@@ -129,9 +127,9 @@
   ]
  },
  "history": {
-  "totalRows": 3429,
+  "totalRows": 3432,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -141,7 +139,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 92220000,
+ "totalNetAssets": 83140000,
  "indexTicker": "SZ988107",
  "indexName": "ChiNext Index",
  "categoryPath": "Equity > Country/Regional",
@@ -180,9 +178,9 @@
   "grossValue": 1
  },
  "marketPrice": {
-  "display": "$43.76",
-  "value": 43.76,
-  "asOfDate": "Oct 09 2026"
+  "display": "$42.36",
+  "value": 42.36,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": 0.16,

@@ -2,7 +2,7 @@
  "ticker": "CLOI",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1437,
+ "totalRows": 1440,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 12 2026",
+   "NAV": "52.8395",
+   "Close": "52.87",
+   "Volume": "409,808",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "1,733,133,944.05",
+   "Index Level": "n.a."
+  },
+  {
+   "Date": "Oct 11 2026",
+   "NAV": "52.8205",
+   "Close": "52.83",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,716,667,358.70",
+   "Index Level": "180.17"
+  },
+  {
+   "Date": "Oct 10 2026",
+   "NAV": "52.8205",
+   "Close": "52.83",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,716,667,358.70",
+   "Index Level": "180.17"
+  },
   {
    "Date": "Oct 09 2026",
    "NAV": "52.8205",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "230,465,540.92",
    "Index Level": "153.11"
-  },
-  {
-   "Date": "Jan 16 2024",
-   "NAV": "52.3674",
-   "Close": "52.38",
-   "Volume": "22,727",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "230,416,530.18",
-   "Index Level": "153.07"
-  },
-  {
-   "Date": "Jan 15 2024",
-   "NAV": "52.3300",
-   "Close": "52.39",
-   "Volume": "50,024",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "230,252,109.81",
-   "Index Level": "152.98"
-  },
-  {
-   "Date": "Jan 14 2024",
-   "NAV": "52.3300",
-   "Close": "52.39",
-   "Volume": "",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "230,252,109.81",
-   "Index Level": "152.98"
   }
  ]
 }

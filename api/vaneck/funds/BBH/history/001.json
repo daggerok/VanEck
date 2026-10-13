@@ -2,7 +2,7 @@
  "ticker": "BBH",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4078,
+ "totalRows": 4081,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 12 2026",
+   "NAV": "239.2576",
+   "Close": "239.22",
+   "Volume": "10,159",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "482,463,601.69",
+   "Index Level": "5,991.50"
+  },
+  {
+   "Date": "Oct 11 2026",
+   "NAV": "240.4039",
+   "Close": "240.47",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "484,775,263.27",
+   "Index Level": "6,019.95"
+  },
+  {
+   "Date": "Oct 10 2026",
+   "NAV": "240.4039",
+   "Close": "240.47",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "484,775,263.27",
+   "Index Level": "6,019.95"
+  },
   {
    "Date": "Oct 09 2026",
    "NAV": "240.4039",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.03",
    "Total Net Assets": "473,040,664.22",
    "Index Level": "4,098.86"
-  },
-  {
-   "Date": "Jan 16 2024",
-   "NAV": "167.1324",
-   "Close": "167.19",
-   "Volume": "15,827",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "475,742,739.57",
-   "Index Level": "4,122.24"
-  },
-  {
-   "Date": "Jan 15 2024",
-   "NAV": "168.4111",
-   "Close": "168.38",
-   "Volume": "16,466",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "479,382,650.14",
-   "Index Level": "4,153.61"
-  },
-  {
-   "Date": "Jan 14 2024",
-   "NAV": "168.4111",
-   "Close": "168.38",
-   "Volume": "",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "479,382,650.14",
-   "Index Level": "4,153.61"
   }
  ]
 }

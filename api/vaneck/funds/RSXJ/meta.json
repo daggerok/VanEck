@@ -11,17 +11,17 @@
  "nav": {
   "display": "$0.40",
   "value": 0.4,
-  "asOfDate": "Oct 09 2026"
+  "asOfDate": "Oct 12 2026"
  },
  "navValue": 0.4,
  "aum": {
-  "display": "$349299.53",
-  "value": 349299.53,
-  "asOfDate": "Oct 09 2026",
+  "display": "$349402.16",
+  "value": 349402.16,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 349299.53,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 349402.16,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Apr 13 2011",
  "exchange": "—",
  "closePrice": "—",
@@ -131,9 +131,7 @@
  "returns": {
   "derivedFrom": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
   "monthEnd": {
-   "asOfDate": "Oct 09 2026",
-   "ytd": 2.62,
-   "ytdText": "2.62%",
+   "asOfDate": "Aug 31 2026",
    "yr1": 213.06,
    "yr3": 181.4,
    "yr5": -22.25,
@@ -146,7 +144,7 @@
   }
  },
  "metrics": {
-  "ytd": 2.62,
+  "ytd": null,
   "tr1y": 213.06,
   "tr3y": null,
   "tr5y": null,
@@ -164,7 +162,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": null,
-  "ytdAsOf": "2026-10-09",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
   "performanceAsOf": "2026-08-31"
  },
@@ -172,7 +170,7 @@
  "providerCategory": "Country/Regional",
  "terGross": "9.50%",
  "terGrossValue": 9.5,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 25,
   "pageSize": 250,
@@ -184,9 +182,9 @@
   ]
  },
  "history": {
-  "totalRows": 4252,
+  "totalRows": 4255,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/russia-small-cap-etf-rsxj/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -197,7 +195,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 349.3,
+ "totalNetAssets": 349.4,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -236,7 +234,7 @@
  "marketPrice": {
   "display": "—",
   "value": null,
-  "asOfDate": "Oct 09 2026"
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": null,

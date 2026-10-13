@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$24.52",
-  "value": 24.52,
-  "asOfDate": "Oct 09 2026"
+  "display": "$24.32",
+  "value": 24.32,
+  "asOfDate": "Oct 12 2026"
  },
- "navValue": 24.52,
+ "navValue": 24.32,
  "aum": {
-  "display": "$3.68M",
-  "value": 3677511.75,
-  "asOfDate": "Oct 09 2026",
+  "display": "$3.65M",
+  "value": 3647939.27,
+  "asOfDate": "Oct 12 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3677511.75,
- "asOfDate": "Oct 09 2026",
+ "aumValue": 3647939.27,
+ "asOfDate": "Oct 12 2026",
  "inceptionDate": "Sep 09 2026",
  "exchange": "NASDAQ",
- "closePrice": "$24.66",
- "closePriceValue": 24.66,
+ "closePrice": "$24.44",
+ "closePriceValue": 24.44,
  "premiumDiscount": {
-  "display": "0.14%",
-  "value": 0.14
+  "display": "0.12%",
+  "value": 0.12
  },
- "premiumDiscountValue": 0.14,
+ "premiumDiscountValue": 0.12,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -46,11 +46,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
-   "sinceInception": -2.44,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
+   "sinceInception": -2.44,
    "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
@@ -89,7 +89,7 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 09 2026",
+ "netAssetsAsOf": "Oct 12 2026",
  "holdings": {
   "totalRows": 105,
   "pageSize": 250,
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 31,
+  "totalRows": 34,
   "pageSize": 1000,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 12 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 3680000,
+ "totalNetAssets": 3650000,
  "indexTicker": "NU763973",
  "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -149,9 +149,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$24.66",
-  "value": 24.66,
-  "asOfDate": "Oct 09 2026"
+  "display": "$24.44",
+  "value": 24.44,
+  "asOfDate": "Oct 12 2026"
  },
  "yields": {
   "dividendYield": null,
