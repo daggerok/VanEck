@@ -6,7 +6,7 @@ import path from "node:path";
 
 import {
   CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
-  annualizedFromCumulative, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  annualizedFromCumulative, applyFundPageSnapshot, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
@@ -377,6 +377,12 @@ describe("parsing", () => {
     expect([smh.nav, smh.ytdReturn, smh.totalExpenseRatio, smh.grossExpenseRatio]).toEqual([572.84, 59.07, 0.35, null]);
     const veem = parseVanEckFundPage(VEEM_PAGE, "x");
     expect([veem.ytdReturn, veem.siReturn, veem.siAsOf, veem.indexTicker, veem.indexName]).toEqual([null, -1.48, "Sep 18 2026", "NU763973", "MSCI Emerging Markets Analyst Sentiment Select Index"]);
+    const tiny = parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$349.4K"), "x");
+    expect(tiny.totalNetAssets).toBe(349_400);
+    expect(parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$1,234.56"), "x").totalNetAssets).toBe(1234.56);
+    expect(parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$1.2T"), "x").totalNetAssets).toBe(1_200_000_000_000);
+    const sec = applyFundPageSnapshot({ ticker: "BIZD" } as any, { secYield: 9.91 } as any);
+    expect([sec.secYield, sec.secYieldValue, sec.secYieldText, (sec.metrics as any).secYield]).toEqual([9.91, 9.91, "9.91%", 9.91]);
     const blank = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
     for (const key of ["nav", "ytdReturn", "totalNetAssets", "grossExpenseRatio", "netExpenseRatio", "inceptionDate", "siReturn", "siAsOf", "indexTicker", "indexName"]) expect((blank as any)[key]).toBeNull();
   });
@@ -506,6 +512,7 @@ function sandbox() {
   for (const name of ["update-data.ts", "update-data.config.json"]) copyFileSync(path.join(scriptsDir, name), path.join(dir, "scripts", name));
   const urls: string[] = [];
   let down: string[] = [];
+  let emptyHoldings: string[] = [];
   let stallHoldings = false;
   let inFlight = 0, peak = 0;
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
@@ -519,6 +526,7 @@ function sandbox() {
       try {
         await new Promise((resolve) => realSetTimeout(resolve, 30));
         if (!slug[2]) return new Response(pageFor(ticker));
+        if (slug[3] === "holdings" && emptyHoldings.includes(ticker)) return new Response(new Uint8Array(0));
         if (slug[3] === "holdings" && stallHoldings) {
           stallHoldings = false;
           const signal = init?.signal;
@@ -530,10 +538,11 @@ function sandbox() {
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
     return new Response("not found", { status: 404 });
   }) as unknown as typeof fetch;
-  const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number] } = {}): Promise<unknown> => {
+  const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number]; lines?: string[] } = {}): Promise<unknown> => {
     const mod = await import(path.join(dir, "scripts", "update-data.ts"));
     if (opts.timings) mod.setNetworkTimings(...opts.timings);
     console.log = console.warn = console.error = () => {};
+    if (opts.lines) console.log = (line?: unknown) => { opts.lines!.push(...String(line).split("\n")); };
     try {
       await mod.main([], { REQUEST_SLEEP: "0", CONCURRENCY: "1", MAX_RETRIES: "1", EDGAR_FALLBACK: "false", USE_SYSTEM_CA: "false", TICKERS: FUNDS.join(" "), ...env });
       return null;
@@ -552,6 +561,7 @@ function sandbox() {
   return {
     api, urls, run, readFile, json, files, backdate, touched, row,
     setDown: (...parts: string[]) => { down = parts; },
+    setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
     stallNextHoldings: () => { stallHoldings = true; },
     peak: () => peak,
   };
@@ -572,6 +582,19 @@ describe("pipeline", () => {
     expect(box.row("GDX").metrics.tr3y).toBeNull();
     for (const fund of funds) expect(fund.metrics.dividendYieldBasis).toBe(fund.metrics.dividendYield === null ? null : fund.metrics.distributionYield === fund.metrics.dividendYield ? "official-distribution-rate" : "indicated");
     expect(box.json("funds/GDX/meta.json").holdings.totalRows).toBe(4);
+  });
+
+  test("console output: one catalog line, fund lines, two done lines from the reporter, 2-decimal yields", async () => {
+    const box = sandbox();
+    const lines: string[] = [];
+    expect(await box.run({ TICKERS: "GDX SMH" }, { lines })).toBeNull();
+    expect(lines.filter((line) => line.startsWith("[ catalog  ] "))).toEqual(["[ catalog  ] 91 VanEck ETFs (official VanEck ETF Guide, AUM as of 06/30/2026)"]);
+    expect(lines.some((line) => line === "")).toBe(false);
+    const funds = lines.filter((line) => /^\[ +\d+\/2 +\] /.test(line));
+    expect(funds).toHaveLength(2);
+    for (const line of funds) expect(line).not.toMatch(/(?:div|sec)=-?\d+\.\d{3,}|(?:div|sec)=[^ ]*%/);
+    expect(lines.at(-2)).toMatch(/^\[ done {5}\] 2 funds: 2 updated, 0 unchanged, 0 kept, 0 skipped, 0 failed in \d+\.\ds$/);
+    expect(lines.at(-1)).toMatch(/^\[ done {5}\] counts: 91 funds \/ \d[\d,]* holdings rows \/ \d[\d,]* history rows$/);
   });
 
   test("a young fund keeps null horizons next to its since-inception figure from the page", async () => {
@@ -621,6 +644,20 @@ describe("pipeline", () => {
     expect(String(error)).toContain("every selected fund failed");
     expect(box.touched()).toEqual([]);
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4 });
+  });
+
+  test("an empty holdings download is no holdings for a fund that never published any (OUNZ), a failure for one that did", async () => {
+    const box = sandbox();
+    box.setEmptyHoldings("OUNZ");
+    expect(await box.run({ TICKERS: "OUNZ" })).toBeNull();
+    expect(box.row("OUNZ")).toMatchObject({ dataFile: "./funds/OUNZ/meta.json", holdings: 0, history: 2 });
+    expect(box.json("funds/OUNZ/meta.json").holdings.totalRows).toBe(0);
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    box.setEmptyHoldings("GDX");
+    expect(String(await box.run({ TICKERS: "GDX" }))).toContain("every selected fund failed");
+    expect(box.touched()).toEqual([]);
+    expect(box.row("GDX")).toMatchObject({ holdings: 4 });
   });
 
   test("MAX_FETCHES writes a scoped cursor and a TICKERS run leaves it alone", async () => {

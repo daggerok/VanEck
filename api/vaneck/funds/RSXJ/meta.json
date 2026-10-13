@@ -131,7 +131,9 @@
  "returns": {
   "derivedFrom": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
   "monthEnd": {
-   "asOfDate": "Aug 31 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 2.65,
+   "ytdText": "2.65%",
    "yr1": 213.06,
    "yr3": 181.4,
    "yr5": -22.25,
@@ -144,7 +146,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 2.65,
   "tr1y": 213.06,
   "tr3y": null,
   "tr5y": null,
@@ -162,7 +164,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": null,
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Investment Finder month-end returns (NAV, as of Aug 31 2026); fund in liquidation — cumulative tenors not published",
   "performanceAsOf": "2026-08-31"
  },
@@ -195,7 +197,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 349.4,
+ "totalNetAssets": 349400,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",

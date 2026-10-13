@@ -361,7 +361,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -17.66,
+   "ytdText": "-17.66%",
    "yr1": -9.76,
    "yr3": 2.57,
    "yr5": -4.06,
@@ -379,7 +381,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -17.66,
   "tr1y": -9.76,
   "tr3y": 7.91,
   "tr5y": -18.7,
@@ -397,7 +399,7 @@
   "secYield": 17.42,
   "secYieldText": "17.42%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -431,8 +433,9 @@
   ]
  },
  "totalNetAssets": 311640000,
- "secYield": "17.42%",
+ "secYield": 17.42,
  "secYieldValue": 17.42,
+ "secYieldText": "17.42%",
  "indexTicker": "MVMORTTG",
  "indexName": "US Mortgage REITs Index",
  "categoryPath": "Income > Equity Income",

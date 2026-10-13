@@ -1106,7 +1106,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -2.67,
+   "ytdText": "-2.67%",
    "yr1": -1.36,
    "yr3": 3.7,
    "yr5": -1.23,
@@ -1124,7 +1126,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -2.67,
   "tr1y": -1.36,
   "tr3y": 11.52,
   "tr5y": -6.01,
@@ -1142,7 +1144,7 @@
   "secYield": 4.95,
   "secYieldText": "4.95%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1183,9 +1185,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 4150000000.0000005,
- "secYield": "4.95%",
+ "totalNetAssets": 4150000000,
+ "secYield": 4.95,
  "secYieldValue": 4.95,
+ "secYieldText": "4.95%",
  "indexTicker": "MHYX",
  "indexName": "ICE Broad High Yield Crossover Municipal Index",
  "categoryPath": "Income > Municipal Bond",

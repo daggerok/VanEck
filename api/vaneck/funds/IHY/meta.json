@@ -911,7 +911,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -1.27,
+   "ytdText": "-1.27%",
    "yr1": 0.56,
    "yr3": 8.15,
    "yr5": 1.91,
@@ -929,7 +931,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -1.27,
   "tr1y": 0.56,
   "tr3y": 26.51,
   "tr5y": 9.94,
@@ -947,7 +949,7 @@
   "secYield": 6.48,
   "secYieldText": "6.48%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -983,8 +985,9 @@
   ]
  },
  "totalNetAssets": 39450000,
- "secYield": "6.48%",
+ "secYield": 6.48,
  "secYieldValue": 6.48,
+ "secYieldText": "6.48%",
  "indexTicker": "HXUS",
  "indexName": "ICE BofA Global ex-US Issuers High Yield Constrained Index",
  "categoryPath": "Income > International Bond",

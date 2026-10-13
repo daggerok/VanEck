@@ -131,7 +131,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 2.7,
+   "ytdText": "2.70%",
    "yr1": 14.37,
    "yr3": 25.34,
    "yr5": 7.98,
@@ -149,7 +151,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 2.7,
   "tr1y": 14.37,
   "tr3y": 96.93,
   "tr5y": 46.79,
@@ -167,7 +169,7 @@
   "secYield": 1.68,
   "secYieldText": "1.68%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },

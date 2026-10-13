@@ -896,7 +896,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 3.26,
+   "ytdText": "3.26%",
    "yr1": 5.16,
    "yr3": 9.02,
    "yr5": 3.04,
@@ -914,7 +916,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 3.26,
   "tr1y": 5.16,
   "tr3y": 29.57,
   "tr5y": 16.18,
@@ -932,7 +934,7 @@
   "secYield": 6.16,
   "secYieldText": "6.16%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -965,8 +967,9 @@
   ]
  },
  "totalNetAssets": 2320000000,
- "secYield": "6.16%",
+ "secYield": 6.16,
  "secYieldValue": 6.16,
+ "secYieldText": "6.16%",
  "indexTicker": "PFAN4PM",
  "indexName": "ICE Exchange-Listed Fixed & Adjustable Rate Non-Financial Preferred Securities Index",
  "categoryPath": "Income > Equity Income",

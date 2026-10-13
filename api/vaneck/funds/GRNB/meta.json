@@ -621,7 +621,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -1.18,
+   "ytdText": "-1.18%",
    "yr1": -0.64,
    "yr3": 4.93,
    "yr5": 0.37,
@@ -639,7 +641,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -1.18,
   "tr1y": -0.64,
   "tr3y": 15.52,
   "tr5y": 1.85,
@@ -657,7 +659,7 @@
   "secYield": 5.53,
   "secYieldText": "5.53%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -690,8 +692,9 @@
   ]
  },
  "totalNetAssets": 193940000,
- "secYield": "5.53%",
+ "secYield": 5.53,
  "secYieldValue": 5.53,
+ "secYieldText": "5.53%",
  "indexTicker": "SPGRUSST",
  "indexName": "S&P Green Bond U.S. Dollar Select Index",
  "categoryPath": "Income > International Bond",

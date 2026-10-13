@@ -956,7 +956,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -8.53,
+   "ytdText": "-8.53%",
    "yr1": -6.77,
    "yr3": 6.32,
    "yr5": -3.33,
@@ -974,7 +976,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -8.53,
   "tr1y": -6.77,
   "tr3y": 20.17,
   "tr5y": -15.59,
@@ -992,7 +994,7 @@
   "secYield": 6.78,
   "secYieldText": "6.78%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1025,8 +1027,9 @@
   ]
  },
  "totalNetAssets": 196890000,
- "secYield": "6.78%",
+ "secYield": 6.78,
  "secYieldValue": 6.78,
+ "secYieldText": "6.78%",
  "indexTicker": "CEFMXTR",
  "indexName": "S-Network Municipal Bond Closed-End Fund Index",
  "categoryPath": "Income > Municipal Bond",

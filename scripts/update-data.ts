@@ -21,10 +21,12 @@ function outputConfigEntries(config: Record<string, any>): [string, string][] {
     performanceRanges: 'PERFORMANCE', totalReturnRanges: 'TOTAL_RETURN',
     skipVanEck: 'SKIP_VANECK', skipProShares: 'SKIP_PROSHARES',
     skipWisdomTree: 'SKIP_WISDOMTREE', skipGoldmanSachs: 'SKIP_GOLDMANSACHS',
+    skipGlobalX: 'SKIP_GLOBALX', skipNorthernTrust: 'SKIP_NORTHERNTRUST',
   };
-  const range = (v: any): string => v?.source ?? `${Number.isFinite(v?.min) ? v.min : ''}:${Number.isFinite(v?.max) ? v.max : ''}`;
+  const range = (v: any): string => typeof v === 'string' ? v : v?.source ?? `${Number.isFinite(v?.min) ? v.min : ''}:${Number.isFinite(v?.max) ? v.max : ''}`;
   for (const [key, value] of Object.entries(config)) {
-    const name = aliases[key] ?? key.replace(/([a-z0-9])([A-Z])/g, '$1_$2').toUpperCase();
+    if (['proxyGapMs', 'fetchTimeoutMs', 'retryDelayMs'].includes(key)) continue;
+    const name = aliases[key] ?? (/^[A-Z0-9_]+$/.test(key) ? key : key.replace(/([a-z0-9])([A-Z])/g, '$1_$2').toUpperCase());
     if (name === 'PERFORMANCE' || name === 'TOTAL_RETURN') {
       for (const period of ['YTD', '1Y', '3Y', '5Y', '10Y']) values.set(`${name}_${period}`, range(value?.[period]));
     } else if (['AUM', 'TER', 'DIVIDEND_YIELD', 'SEC_YIELD'].includes(name)) {
@@ -39,13 +41,18 @@ function outputConfigEntries(config: Record<string, any>): [string, string][] {
     return (ai < 0 ? first.length : ai) - (bi < 0 ? first.length : bi) || a.localeCompare(b);
   });
 }
+function outputConfigValue(key: string, value: string): string {
+  if (/TOKEN|PASSWORD|SECRET|COOKIE|SEC_UA/i.test(key)) return '<redacted>';
+  if (key === 'TICKERS' && ['', 'null', 'undefined'].includes(value)) return 'all';
+  return outputClean(value);
+}
 function outputPrintConfig(brand: string, config: Record<string, any>): void {
   const entries: [string, string][] = [...outputConfigEntries(config), ['VERBOSE', String(outputVerbose())]];
-  console.log(`[ config   ] ${brand} updater:\n${entries.map(([key, value]) => `              ${key}=${/TOKEN|PASSWORD|SECRET|COOKIE|SEC_UA/i.test(key) ? '<redacted>' : outputClean(value)}`).join('\n')}`);
+  console.log(`[ config   ] ${brand} updater:\n${entries.map(([key, value]) => `              ${key}=${outputConfigValue(key, value)}`).join('\n')}`);
 }
 function outputHasOutputFilters(config: Record<string, any>): boolean {
   return outputConfigEntries(config).some(([name, value]) =>
-    /^(TICKERS|CATEGORY|AUM|TER|DIVIDEND_YIELD|SEC_YIELD|PERFORMANCE_|TOTAL_RETURN_)/.test(name) &&
+    /^(CATEGORY|AUM|TER|DIVIDEND_YIELD|SEC_YIELD|PERFORMANCE_|TOTAL_RETURN_)/.test(name) &&
     !['', ':', 'null', 'all'].includes(value));
 }
 function outputPrintFilter(selected: number, total: number, deferred = false): void {
@@ -77,18 +84,29 @@ async function outputInspectFund(root: URL | string, ticker: string): Promise<{ 
 }
 const outputCount = (value: any): unknown => typeof value === 'number' ? value : Array.isArray(value) ? value.length : value?.totalRows ?? value?.rows?.length ?? null;
 const outputScalar = (value: any): any => value && typeof value === 'object' ? value.display ?? value.value ?? null : value;
+const outputUnits: Record<string, number> = { K: 1e3, M: 1e6, B: 1e9, T: 1e12, THOUSAND: 1e3, MILLION: 1e6, BILLION: 1e9, TRILLION: 1e12 };
 function outputMoney(value: any): string {
-  const raw = outputScalar(value);
+  const raw = value && typeof value === 'object' && typeof value.value === 'number' && Number.isFinite(value.value) ? value.value : outputScalar(value);
   if (raw === null || raw === undefined || raw === '—' || raw === '--') return 'null';
   const text = String(raw).replace(/[$,\s]/g, '');
-  const match = text.match(/^([+-]?[\d.]+)([KMBT])?$/i);
+  const match = text.match(/^([+-]?[\d.]+)(K|M|B|T|Thousand|Million|Billion|Trillion)?$/i);
   if (!match) return outputClean(raw);
-  const number = Number(match[1]) * ({ K: 1e3, M: 1e6, B: 1e9, T: 1e12 }[match[2]?.toUpperCase() as 'K' | 'M' | 'B' | 'T'] ?? 1);
+  const number = Number(match[1]) * (outputUnits[match[2]?.toUpperCase() ?? ''] ?? 1);
   if (!Number.isFinite(number)) return 'null';
   for (const [unit, scale] of [['T', 1e12], ['B', 1e9], ['M', 1e6], ['K', 1e3]] as const) {
     if (Math.abs(number) >= scale) return `$${(number / scale).toFixed(1)}${unit}`;
   }
   return `$${number.toFixed(2)}`;
+}
+/** Yields: rounded to 2 decimals without trailing zeros; placeholders are omitted like null. */
+function outputPercent(value: any): unknown {
+  const raw = outputScalar(value);
+  if (raw === null || raw === undefined) return null;
+  if (typeof raw === 'number') return Number.isFinite(raw) ? Number(raw.toFixed(2)) : null;
+  const text = String(raw).trim().replace(/%$/, '').trim();
+  if (['', '-', '—', '--', 'n/a'].includes(text.toLowerCase())) return null;
+  const number = Number(text.replace(/,/g, ''));
+  return Number.isFinite(number) ? Number(number.toFixed(2)) : outputClean(raw);
 }
 function outputFundLine(index: number, total: number, ticker: string, status: string, data: any = {}, reason?: unknown): string {
   const width = Math.max(2, String(total).length);
@@ -109,21 +127,34 @@ function outputFundLine(index: number, total: number, ticker: string, status: st
     field('divs', outputCount(data.worksheets?.Distributions ?? data.distributions)),
     field('netAssets', outputMoney(data.netAssets ?? data.aum)),
     field('total', outputMoney(data.totalFundNetAssets ?? data.totalNetAssets)),
-    field('div', outputScalar(data.trailingYield ?? data.yields?.effectiveYield ?? data.yields?.dividendYield ?? data.dividendYield ?? metrics.dividendYield)),
-    field('sec', outputScalar(data.secYield ?? data.yields?.secYield ?? metrics.secYield)),
+    field('div', outputPercent(data.trailingYield ?? data.yields?.effectiveYield ?? data.yields?.dividendYield ?? data.dividendYield ?? metrics.dividendYield)),
+    field('sec', outputPercent(data.secYield ?? data.yields?.secYield ?? metrics.secYield)),
     field('wp', data.workplaceRaw),
   ].filter(part => part !== '').join(' ');
   return `[ ${String(index).padStart(width)}/${String(total).padEnd(width)}  ] ${outputClean(ticker).padEnd(5)} ${status.padEnd(9)}${detail ? ` ${detail}` : ''}${reason ? ` reason=${outputClean(reason)}` : ''}`;
 }
 function outputCreateReporter(root: URL | string, total: number) {
   let completed = 0;
+  const tally = new Map<string, number>();
   return {
     before: (ticker: string) => outputInspectFund(root, ticker),
     async result(ticker: string, before: { digest: string }, status?: string, reason?: unknown, extra: any = {}) {
       const after = await outputInspectFund(root, ticker);
-      console.log(outputFundLine(++completed, total, ticker, status ?? (before.digest === after.digest ? 'unchanged' : 'updated'), { ...after.meta, ...extra }, reason));
+      const final = status ?? (before.digest === after.digest ? 'unchanged' : 'updated');
+      tally.set(final, (tally.get(final) ?? 0) + 1);
+      console.log(outputFundLine(++completed, total, ticker, final, { ...after.meta, ...extra }, reason));
+    },
+    /** First [ done ] line: the statuses of every fund line this reporter printed. */
+    summary(startedAt: number): string {
+      const order = ['updated', 'unchanged', 'kept', 'skipped', 'failed'];
+      const statuses = [...order, ...[...tally.keys()].filter(status => !order.includes(status))];
+      return `[ done     ] ${completed} fund${completed === 1 ? '' : 's'}: ${statuses.map(status => `${tally.get(status) ?? 0} ${status}`).join(', ')} in ${((Date.now() - startedAt) / 1000).toFixed(1)}s`;
     },
   };
+}
+/** Second [ done ] line: published totals. */
+function outputCounts(funds: number, holdings: number, history: number): string {
+  return `[ done     ] counts: ${funds.toLocaleString('en-US')} funds / ${holdings.toLocaleString('en-US')} holdings rows / ${history.toLocaleString('en-US')} history rows`;
 }
 
 /**
@@ -1629,7 +1660,7 @@ async function fetchNasdaqExchanges(config: UpdaterConfig): Promise<Map<string, 
     // authoritative over the consolidated tape's duplicate row.
     return nasdaqExchangeCache;
   } catch (error) {
-    console.warn(`  ! Nasdaq symbol directory unavailable (${errorMessage(error)}); exchange falls back to Yahoo`);
+    outputNote(`[ ${'exchange'.padEnd(9)}] Nasdaq symbol directory unavailable (${errorMessage(error)}); exchange falls back to Yahoo`);
     return null;
   }
 }
@@ -2168,12 +2199,13 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
     return found ? Number(found[1]) : null;
   };
   const compactMoney = (blob: string): number | null => {
-    const found = /\$\s?([\d,]+(?:\.\d+)?)\s*([BM])?/.exec(blob);
+    // Small funds print thousands (`$349.4K`, RSXJ and the TRU* funds): every unit counts.
+    const found = /\$\s?([\d,]+(?:\.\d+)?)\s*([KMBT])?\b/i.exec(blob);
     if (!found) return null;
     const base = Number(found[1].replace(/,/g, ''));
     if (!Number.isFinite(base)) return null;
-    const suffix = (found[2] || '').toUpperCase();
-    return suffix === 'B' ? base * 1e9 : suffix === 'M' ? base * 1e6 : base;
+    const multiplier: Record<string, number> = { K: 1e3, M: 1e6, B: 1e9, T: 1e12 };
+    return round(base * (multiplier[(found[2] || '').toUpperCase()] ?? 1), 2);
   };
   const navBlob = near(/\bNAV\b/);
   const ytdBlob = near(/YTD RETURNS/i);
@@ -2531,8 +2563,9 @@ export function applyFundPageSnapshot(entry: CatalogEntry, snapshot: Record<stri
   if (s.inceptionDate) merged.inceptionDate = formatVanEckDate(s.inceptionDate);
   if ((s as Record<string, unknown>).secYield !== undefined && s.secYield !== null) {
     const v = s.secYield as number;
-    merged.secYield = `${v.toFixed(2)}%`;
+    merged.secYield = v;
     merged.secYieldValue = v;
+    merged.secYieldText = `${v.toFixed(2)}%`;
     const metrics = (merged.metrics as Record<string, unknown>) ?? {};
     merged.metrics = { ...metrics, secYield: v, secYieldText: `${v.toFixed(2)}%` };
   }
@@ -2763,6 +2796,16 @@ async function removeStalePages(ticker: string, kind: 'holdings' | 'history', pa
   }
 }
 
+/** Rows of the previously published holdings (0 when the fund has no meta or published none). */
+async function publishedHoldingsCount(ticker: string): Promise<number> {
+  try {
+    const meta = JSON.parse(await readFile(path.join(API_ROOT, 'funds', ticker, 'meta.json'), 'utf8'));
+    return Number(meta?.holdings?.totalRows) || 0;
+  } catch {
+    return 0;
+  }
+}
+
 function toKeyedRows(headers: string[], rows: string[][]): Record<string, string>[] {
   return rows.map((row) => {
     const out: Record<string, string> = {};
@@ -2785,6 +2828,7 @@ export async function updateFund(
   // the fund's previous complete published state instead of mixing fresh and stale columns.
   const failedSources: string[] = [];
   const isNotFound = (error: unknown) => /HTTP 404\b/.test(errorMessage(error));
+  const isEmptyDownload = (error: unknown) => /: empty download\b/.test(errorMessage(error));
   const source: Record<string, string> = {
     provider: 'Van Eck Associates Corporation (VanEck US ETFs)',
     fundPage: entry.fundPage as string,
@@ -2819,7 +2863,9 @@ export async function updateFund(
   let holdingsMissing = false;
   if (liveVanEck) {
     try {
-      holdings = parseVanEckHoldingsXlsx(await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`));
+      const bytes = await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`);
+      if (!bytes.length) throw new Error(`${ticker} holdings: empty download (HTTP 200, 0 bytes)`);
+      holdings = parseVanEckHoldingsXlsx(bytes);
     } catch (error) {
       // The suspended Russia funds never moved to `/downloads/holdings/`;
       // retry once against the legacy pre-redesign path before giving up.
@@ -2829,7 +2875,12 @@ export async function updateFund(
         source.holdingsDownload = legacyUrl;
       } catch (legacyError) {
         outputNote(`[ ${'holdings'.padEnd(9)}] ${ticker}: holdings unavailable (${errorMessage(error)}; legacy: ${errorMessage(legacyError)})`);
-        holdingsMissing = isNotFound(error) && isNotFound(legacyError);
+        // A physical metal trust (OUNZ) holds bullion, not securities: its
+        // holdings download answers an empty 200. That is an honest absence
+        // only while the fund never published holdings; otherwise the
+        // download is broken and the published state is kept.
+        holdingsMissing = (isNotFound(error) && isNotFound(legacyError))
+          || (isEmptyDownload(error) && !(await publishedHoldingsCount(ticker)));
         if (!holdingsMissing) failedSources.push('holdings');
       }
     }
@@ -3141,13 +3192,14 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   if (controls.VERBOSE !== undefined && env === process.env) process.env.VERBOSE = controls.VERBOSE;
   installSystemCa(controls.USE_SYSTEM_CA ?? 'auto');
   const config = readConfig(controls);
+  const startedAt = Date.now();
   outputPrintConfig('VanEck', config);
   const stats: RunStats = { updated: 0, unchanged: 0, skipped: 0, failed: 0 };
   assertKnownTickers(config.tickers, VAN_ECK_SEED);
   const scope = filterScope(config);
   const cursor = config.maxFetches > 0 ? await readCursor(scope) : null;
   const candidates = selectCandidates(VAN_ECK_SEED, config, cursor);
-
+  console.log(`[ catalog  ] ${VAN_ECK_SEED.length} VanEck ETFs (official VanEck ETF Guide, AUM as of ${AUM_AS_OF_GUIDE})`);
   outputPrintFilter(candidates.length, VAN_ECK_SEED.length, outputHasOutputFilters(config));
   const output = outputCreateReporter(API_ROOT, candidates.length);
   if (cursor) console.log(`Resuming after cursor ${cursor}.`);
@@ -3170,7 +3222,8 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
         if (entry) byTicker.set(seed.ticker, entry);
         else stats.skipped += 1;
         processed += 1;
-        await output.result(seed.ticker, before);
+        if (entry) await output.result(seed.ticker, before);
+        else await output.result(seed.ticker, before, 'skipped', 'yield/return filter');
       } catch (error) {
         processed += 1;
         await output.result(seed.ticker, before, 'failed', errorMessage(error));
@@ -3243,9 +3296,8 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
     await rm(statePath);
   }
 
-  console.log(
-    `Done. updated=${stats.updated} unchanged=${stats.unchanged} skipped=${stats.skipped} failed=${stats.failed} · funds=${counts.funds} holdings=${counts.holdings} history=${counts.history}`,
-  );
+  console.log(output.summary(startedAt));
+  console.log(outputCounts(counts.funds, counts.holdings, counts.history));
   if (candidates.length > 0 && stats.failed >= candidates.length && byTicker.size === 0) {
     throw new Error(`every selected fund failed (${stats.failed}/${candidates.length})`);
   }
