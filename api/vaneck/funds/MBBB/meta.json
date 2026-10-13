@@ -396,7 +396,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -2.54,
+   "ytdText": "-2.54%",
    "yr1": -2.49,
    "yr3": 5.46,
    "yr5": 0.15,
@@ -414,7 +416,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -2.54,
   "tr1y": -2.49,
   "tr3y": 17.29,
   "tr5y": 0.77,
@@ -432,7 +434,7 @@
   "secYield": 5.93,
   "secYieldText": "5.93%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -463,8 +465,9 @@
   ]
  },
  "totalNetAssets": 4570000,
- "secYield": "5.93%",
+ "secYield": 5.93,
  "secYieldValue": 5.93,
+ "secYieldText": "5.93%",
  "categoryPath": "Income > Corporate Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",

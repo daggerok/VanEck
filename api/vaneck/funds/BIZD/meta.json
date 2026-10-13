@@ -321,7 +321,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -6.23,
+   "ytdText": "-6.23%",
    "yr1": -3.53,
    "yr3": 3.89,
    "yr5": 5.11,
@@ -339,7 +341,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -6.23,
   "tr1y": -3.53,
   "tr3y": 12.13,
   "tr5y": 28.3,
@@ -357,7 +359,7 @@
   "secYield": 9.91,
   "secYieldText": "9.91%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -390,8 +392,9 @@
   ]
  },
  "totalNetAssets": 1440000000,
- "secYield": "9.91%",
+ "secYield": 9.91,
  "secYieldValue": 9.91,
+ "secYieldText": "9.91%",
  "indexTicker": "MVBDCTRG",
  "indexName": "US Business Development Companies Index",
  "categoryPath": "Income > Floating Rate",

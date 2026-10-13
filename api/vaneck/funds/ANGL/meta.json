@@ -911,7 +911,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -1.11,
+   "ytdText": "-1.11%",
    "yr1": 0.3,
    "yr3": 7.45,
    "yr5": 2.28,
@@ -929,7 +931,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -1.11,
   "tr1y": 0.3,
   "tr3y": 24.06,
   "tr5y": 11.93,
@@ -947,7 +949,7 @@
   "secYield": 7.36,
   "secYieldText": "7.36%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -981,8 +983,9 @@
   ]
  },
  "totalNetAssets": 3020000000,
- "secYield": "7.36%",
+ "secYield": 7.36,
  "secYieldValue": 7.36,
+ "secYieldText": "7.36%",
  "indexTicker": "H0CF",
  "indexName": "Constrained Index",
  "categoryPath": "Income > Corporate Bond",

@@ -336,7 +336,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 25.64,
+   "ytdText": "25.64%",
    "yr1": 18.34,
    "yr3": 24.91,
    "yr5": 20.27,
@@ -354,7 +356,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 25.64,
   "tr1y": 18.34,
   "tr3y": 94.87,
   "tr5y": 151.64,
@@ -372,7 +374,7 @@
   "secYield": 3.57,
   "secYieldText": "3.57%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -406,8 +408,9 @@
   ]
  },
  "totalNetAssets": 81000000,
- "secYield": "3.57%",
+ "secYield": 3.57,
  "secYieldValue": 3.57,
+ "secYieldText": "3.57%",
  "indexTicker": "MVEINCTG",
  "indexName": "North America Energy Infrastructure Index",
  "categoryPath": "Income > Equity Income",

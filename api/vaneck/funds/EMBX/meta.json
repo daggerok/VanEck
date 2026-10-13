@@ -106,7 +106,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 1.97,
+   "ytdText": "1.97%",
    "yr1": 4.61,
    "yr3": 10.51,
    "yr5": 4.68,
@@ -124,7 +126,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 1.97,
   "tr1y": 4.61,
   "tr3y": 34.95,
   "tr5y": 25.67,
@@ -142,7 +144,7 @@
   "secYield": 5.99,
   "secYieldText": "5.99%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -175,8 +177,9 @@
   ]
  },
  "totalNetAssets": 294590000,
- "secYield": "5.99%",
+ "secYield": 5.99,
  "secYieldValue": 5.99,
+ "secYieldText": "5.99%",
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",

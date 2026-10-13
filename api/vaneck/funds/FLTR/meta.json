@@ -971,7 +971,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 3.51,
+   "ytdText": "3.51%",
    "yr1": 4.66,
    "yr3": 5.87,
    "yr5": 4.74,
@@ -989,7 +991,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 3.51,
   "tr1y": 4.66,
   "tr3y": 18.67,
   "tr5y": 26.04,
@@ -1007,7 +1009,7 @@
   "secYield": 4.26,
   "secYieldText": "4.26%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1042,8 +1044,9 @@
   ]
  },
  "totalNetAssets": 3540000000,
- "secYield": "4.26%",
+ "secYield": 4.26,
  "secYieldValue": 4.26,
+ "secYieldText": "4.26%",
  "indexTicker": "MVFLTR",
  "indexName": "US Investment Grade Floating Rate Index",
  "categoryPath": "Income > Floating Rate",

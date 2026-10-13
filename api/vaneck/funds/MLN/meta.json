@@ -1171,7 +1171,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": -4.84,
+   "ytdText": "-4.84%",
    "yr1": -3.07,
    "yr3": 2.89,
    "yr5": -2.23,
@@ -1189,7 +1191,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -4.84,
   "tr1y": -3.07,
   "tr3y": 8.91,
   "tr5y": -10.65,
@@ -1207,7 +1209,7 @@
   "secYield": 4.8,
   "secYieldText": "4.80%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1244,8 +1246,9 @@
   ]
  },
  "totalNetAssets": 686070000,
- "secYield": "4.80%",
+ "secYield": 4.8,
  "secYieldValue": 4.8,
+ "secYieldText": "4.80%",
  "indexTicker": "MBNL",
  "indexName": "ICE Long AMT-Free Broad National Municipal Index",
  "categoryPath": "Income > Municipal Bond",

@@ -906,7 +906,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 12 2026",
+   "ytd": 2.7,
+   "ytdText": "2.70%",
    "yr1": 4.15,
    "yr3": 9.79,
    "yr5": 3,
@@ -924,7 +926,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 2.7,
   "tr1y": 4.15,
   "tr3y": 32.35,
   "tr5y": 15.94,
@@ -942,7 +944,7 @@
   "secYield": 7.62,
   "secYieldText": "7.62%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-12",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -977,8 +979,9 @@
   ]
  },
  "totalNetAssets": 510600000,
- "secYield": "7.62%",
+ "secYield": 7.62,
  "secYieldValue": 7.62,
+ "secYieldText": "7.62%",
  "indexTicker": "EMLH",
  "indexName": "ICE BofA Diversified High Yield US Emerging Markets Corporate Plus Index",
  "categoryPath": "Income > International Bond",
