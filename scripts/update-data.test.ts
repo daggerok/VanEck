@@ -538,10 +538,11 @@ function sandbox() {
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
     return new Response("not found", { status: 404 });
   }) as unknown as typeof fetch;
-  const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number] } = {}): Promise<unknown> => {
+  const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number]; lines?: string[] } = {}): Promise<unknown> => {
     const mod = await import(path.join(dir, "scripts", "update-data.ts"));
     if (opts.timings) mod.setNetworkTimings(...opts.timings);
     console.log = console.warn = console.error = () => {};
+    if (opts.lines) console.log = (line?: unknown) => { opts.lines!.push(...String(line).split("\n")); };
     try {
       await mod.main([], { REQUEST_SLEEP: "0", CONCURRENCY: "1", MAX_RETRIES: "1", EDGAR_FALLBACK: "false", USE_SYSTEM_CA: "false", TICKERS: FUNDS.join(" "), ...env });
       return null;
@@ -581,6 +582,19 @@ describe("pipeline", () => {
     expect(box.row("GDX").metrics.tr3y).toBeNull();
     for (const fund of funds) expect(fund.metrics.dividendYieldBasis).toBe(fund.metrics.dividendYield === null ? null : fund.metrics.distributionYield === fund.metrics.dividendYield ? "official-distribution-rate" : "indicated");
     expect(box.json("funds/GDX/meta.json").holdings.totalRows).toBe(4);
+  });
+
+  test("console output: one catalog line, fund lines, two done lines from the reporter, 2-decimal yields", async () => {
+    const box = sandbox();
+    const lines: string[] = [];
+    expect(await box.run({ TICKERS: "GDX SMH" }, { lines })).toBeNull();
+    expect(lines.filter((line) => line.startsWith("[ catalog  ] "))).toEqual(["[ catalog  ] 91 VanEck ETFs (official VanEck ETF Guide, AUM as of 06/30/2026)"]);
+    expect(lines.some((line) => line === "")).toBe(false);
+    const funds = lines.filter((line) => /^\[ +\d+\/2 +\] /.test(line));
+    expect(funds).toHaveLength(2);
+    for (const line of funds) expect(line).not.toMatch(/(?:div|sec)=-?\d+\.\d{3,}|(?:div|sec)=[^ ]*%/);
+    expect(lines.at(-2)).toMatch(/^\[ done {5}\] 2 funds: 2 updated, 0 unchanged, 0 kept, 0 skipped, 0 failed in \d+\.\ds$/);
+    expect(lines.at(-1)).toMatch(/^\[ done {5}\] counts: 91 funds \/ \d[\d,]* holdings rows \/ \d[\d,]* history rows$/);
   });
 
   test("a young fund keeps null horizons next to its since-inception figure from the page", async () => {
