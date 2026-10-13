@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T04:12:26Z",
+ "generatedAt": "2026-10-13T05:09:01Z",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
   "market": "us",
@@ -17,7 +17,7 @@
  "counts": {
   "funds": 91,
   "holdings": 12354,
-  "history": 245726
+  "history": 245743
  },
  "funds": [
   {
@@ -4302,17 +4302,17 @@
    "isin": null,
    "ter": "0.25%",
    "terValue": 0.25,
-   "nav": "$41.22",
-   "navValue": 41.22,
-   "aum": "$2.77B",
-   "aumValue": 2769424478.55,
-   "asOfDate": "Sep 25 2026",
+   "nav": "$40.05",
+   "navValue": 40.05,
+   "aum": "$2.70B",
+   "aumValue": 2699030060.87,
+   "asOfDate": "Oct 12 2026",
    "inceptionDate": "May 16 2014",
    "exchange": "NYSE Arca",
-   "closePrice": "$41.23",
-   "closePriceValue": 41.23,
-   "premiumDiscount": "0.00%",
-   "premiumDiscountValue": 0,
+   "closePrice": "$40.06",
+   "closePriceValue": 40.06,
+   "premiumDiscount": "-0.01%",
+   "premiumDiscountValue": -0.01,
    "distributions": {
     "frequency": "Unknown",
     "exDate": "—",
@@ -4320,34 +4320,35 @@
    },
    "returns": {
     "monthEnd": {
-     "asOfDate": "Sep 25 2026",
-     "ytd": -0.7,
-     "ytdText": "-0.70%",
-     "yr1": 28.59,
-     "yr3": 31.56,
-     "yr5": 19.35,
-     "yr10": 12.67,
-     "sinceInception": 10.18
+     "asOfDate": "Oct 12 2026",
+     "ytd": -3.52,
+     "ytdText": "-3.52%",
+     "yr1": 7.4,
+     "yr3": 30.67,
+     "yr5": 18.68,
+     "yr10": 11.79,
+     "sinceInception": 9.49,
+     "tenorsAsOf": "Sep 30 2026"
     },
     "quarterEnd": {
-     "asOfDate": "Jun 30 2026",
-     "yr1": 21.08,
-     "yr3": 27.74,
-     "yr5": 17.6,
-     "yr10": 11.41,
-     "sinceInception": 9.4
+     "asOfDate": "Sep 30 2026",
+     "yr1": 7.4,
+     "yr3": 30.67,
+     "yr5": 18.68,
+     "yr10": 11.79,
+     "sinceInception": 9.49
     }
    },
    "metrics": {
-    "ytd": -0.7,
-    "tr1y": 28.59,
-    "tr3y": 127.71,
-    "tr5y": 142.21,
-    "tr10y": 229.74,
-    "cagr3y": 31.56,
-    "cagr5y": 19.35,
-    "cagr10y": 12.67,
-    "siAnn": 10.18,
+    "ytd": -3.52,
+    "tr1y": 7.4,
+    "tr3y": 123.13,
+    "tr5y": 135.46,
+    "tr10y": 204.71,
+    "cagr3y": 30.67,
+    "cagr5y": 18.68,
+    "cagr10y": 11.79,
+    "siAnn": 9.49,
     "dividendYield": null,
     "dividendYieldText": "—",
     "distributionYield": null,
@@ -4357,18 +4358,18 @@
     "secYield": null,
     "secYieldText": "—",
     "dividendYieldBasis": null,
-    "ytdAsOf": "2026-09-25",
+    "ytdAsOf": "2026-10-12",
     "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-    "performanceAsOf": "2026-09-25"
+    "performanceAsOf": "2026-09-30"
    },
    "distributionFrequency": "00 - Unknown",
    "providerCategory": "Commodity",
    "terGross": "0.25%",
    "terGrossValue": 0.25,
-   "netAssetsAsOf": "Sep 25 2026",
+   "netAssetsAsOf": "Oct 12 2026",
    "holdings": 0,
-   "history": 4516,
-   "totalNetAssets": 2770000000
+   "history": 4533,
+   "totalNetAssets": 2700000000
   },
   {
    "ticker": "PFXF",
