@@ -2168,12 +2168,13 @@ export function parseVanEckFundPage(html: string, fundPage: string): ParsedFundP
     return found ? Number(found[1]) : null;
   };
   const compactMoney = (blob: string): number | null => {
-    const found = /\$\s?([\d,]+(?:\.\d+)?)\s*([BM])?/.exec(blob);
+    // Small funds print thousands (`$349.4K`, RSXJ and the TRU* funds): every unit counts.
+    const found = /\$\s?([\d,]+(?:\.\d+)?)\s*([KMBT])?\b/i.exec(blob);
     if (!found) return null;
     const base = Number(found[1].replace(/,/g, ''));
     if (!Number.isFinite(base)) return null;
-    const suffix = (found[2] || '').toUpperCase();
-    return suffix === 'B' ? base * 1e9 : suffix === 'M' ? base * 1e6 : base;
+    const multiplier: Record<string, number> = { K: 1e3, M: 1e6, B: 1e9, T: 1e12 };
+    return round(base * (multiplier[(found[2] || '').toUpperCase()] ?? 1), 2);
   };
   const navBlob = near(/\bNAV\b/);
   const ytdBlob = near(/YTD RETURNS/i);
@@ -2531,8 +2532,9 @@ export function applyFundPageSnapshot(entry: CatalogEntry, snapshot: Record<stri
   if (s.inceptionDate) merged.inceptionDate = formatVanEckDate(s.inceptionDate);
   if ((s as Record<string, unknown>).secYield !== undefined && s.secYield !== null) {
     const v = s.secYield as number;
-    merged.secYield = `${v.toFixed(2)}%`;
+    merged.secYield = v;
     merged.secYieldValue = v;
+    merged.secYieldText = `${v.toFixed(2)}%`;
     const metrics = (merged.metrics as Record<string, unknown>) ?? {};
     merged.metrics = { ...metrics, secYield: v, secYieldText: `${v.toFixed(2)}%` };
   }

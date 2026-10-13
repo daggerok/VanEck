@@ -6,7 +6,7 @@ import path from "node:path";
 
 import {
   CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
-  annualizedFromCumulative, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  annualizedFromCumulative, applyFundPageSnapshot, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
@@ -377,6 +377,12 @@ describe("parsing", () => {
     expect([smh.nav, smh.ytdReturn, smh.totalExpenseRatio, smh.grossExpenseRatio]).toEqual([572.84, 59.07, 0.35, null]);
     const veem = parseVanEckFundPage(VEEM_PAGE, "x");
     expect([veem.ytdReturn, veem.siReturn, veem.siAsOf, veem.indexTicker, veem.indexName]).toEqual([null, -1.48, "Sep 18 2026", "NU763973", "MSCI Emerging Markets Analyst Sentiment Select Index"]);
+    const tiny = parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$349.4K"), "x");
+    expect(tiny.totalNetAssets).toBe(349_400);
+    expect(parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$1,234.56"), "x").totalNetAssets).toBe(1234.56);
+    expect(parseVanEckFundPage(GDX_PAGE.replace("$28.42B", "$1.2T"), "x").totalNetAssets).toBe(1_200_000_000_000);
+    const sec = applyFundPageSnapshot({ ticker: "BIZD" } as any, { secYield: 9.91 } as any);
+    expect([sec.secYield, sec.secYieldValue, sec.secYieldText, (sec.metrics as any).secYield]).toEqual([9.91, 9.91, "9.91%", 9.91]);
     const blank = parseVanEckFundPage("<html><body>Loading…</body></html>", "x");
     for (const key of ["nav", "ytdReturn", "totalNetAssets", "grossExpenseRatio", "netExpenseRatio", "inceptionDate", "siReturn", "siAsOf", "indexTicker", "indexName"]) expect((blank as any)[key]).toBeNull();
   });
