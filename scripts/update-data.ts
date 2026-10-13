@@ -2763,6 +2763,16 @@ async function removeStalePages(ticker: string, kind: 'holdings' | 'history', pa
   }
 }
 
+/** Rows of the previously published holdings (0 when the fund has no meta or published none). */
+async function publishedHoldingsCount(ticker: string): Promise<number> {
+  try {
+    const meta = JSON.parse(await readFile(path.join(API_ROOT, 'funds', ticker, 'meta.json'), 'utf8'));
+    return Number(meta?.holdings?.totalRows) || 0;
+  } catch {
+    return 0;
+  }
+}
+
 function toKeyedRows(headers: string[], rows: string[][]): Record<string, string>[] {
   return rows.map((row) => {
     const out: Record<string, string> = {};
@@ -2785,6 +2795,7 @@ export async function updateFund(
   // the fund's previous complete published state instead of mixing fresh and stale columns.
   const failedSources: string[] = [];
   const isNotFound = (error: unknown) => /HTTP 404\b/.test(errorMessage(error));
+  const isEmptyDownload = (error: unknown) => /: empty download\b/.test(errorMessage(error));
   const source: Record<string, string> = {
     provider: 'Van Eck Associates Corporation (VanEck US ETFs)',
     fundPage: entry.fundPage as string,
@@ -2819,7 +2830,9 @@ export async function updateFund(
   let holdingsMissing = false;
   if (liveVanEck) {
     try {
-      holdings = parseVanEckHoldingsXlsx(await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`));
+      const bytes = await fetchBytes(source.holdingsDownload, browserHeaders(), config, `${ticker} holdings`);
+      if (!bytes.length) throw new Error(`${ticker} holdings: empty download (HTTP 200, 0 bytes)`);
+      holdings = parseVanEckHoldingsXlsx(bytes);
     } catch (error) {
       // The suspended Russia funds never moved to `/downloads/holdings/`;
       // retry once against the legacy pre-redesign path before giving up.
@@ -2829,7 +2842,12 @@ export async function updateFund(
         source.holdingsDownload = legacyUrl;
       } catch (legacyError) {
         outputNote(`[ ${'holdings'.padEnd(9)}] ${ticker}: holdings unavailable (${errorMessage(error)}; legacy: ${errorMessage(legacyError)})`);
-        holdingsMissing = isNotFound(error) && isNotFound(legacyError);
+        // A physical metal trust (OUNZ) holds bullion, not securities: its
+        // holdings download answers an empty 200. That is an honest absence
+        // only while the fund never published holdings; otherwise the
+        // download is broken and the published state is kept.
+        holdingsMissing = (isNotFound(error) && isNotFound(legacyError))
+          || (isEmptyDownload(error) && !(await publishedHoldingsCount(ticker)));
         if (!holdingsMissing) failedSources.push('holdings');
       }
     }

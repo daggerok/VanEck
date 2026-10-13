@@ -506,6 +506,7 @@ function sandbox() {
   for (const name of ["update-data.ts", "update-data.config.json"]) copyFileSync(path.join(scriptsDir, name), path.join(dir, "scripts", name));
   const urls: string[] = [];
   let down: string[] = [];
+  let emptyHoldings: string[] = [];
   let stallHoldings = false;
   let inFlight = 0, peak = 0;
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
@@ -519,6 +520,7 @@ function sandbox() {
       try {
         await new Promise((resolve) => realSetTimeout(resolve, 30));
         if (!slug[2]) return new Response(pageFor(ticker));
+        if (slug[3] === "holdings" && emptyHoldings.includes(ticker)) return new Response(new Uint8Array(0));
         if (slug[3] === "holdings" && stallHoldings) {
           stallHoldings = false;
           const signal = init?.signal;
@@ -552,6 +554,7 @@ function sandbox() {
   return {
     api, urls, run, readFile, json, files, backdate, touched, row,
     setDown: (...parts: string[]) => { down = parts; },
+    setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
     stallNextHoldings: () => { stallHoldings = true; },
     peak: () => peak,
   };
@@ -621,6 +624,20 @@ describe("pipeline", () => {
     expect(String(error)).toContain("every selected fund failed");
     expect(box.touched()).toEqual([]);
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4 });
+  });
+
+  test("an empty holdings download is no holdings for a fund that never published any (OUNZ), a failure for one that did", async () => {
+    const box = sandbox();
+    box.setEmptyHoldings("OUNZ");
+    expect(await box.run({ TICKERS: "OUNZ" })).toBeNull();
+    expect(box.row("OUNZ")).toMatchObject({ dataFile: "./funds/OUNZ/meta.json", holdings: 0, history: 2 });
+    expect(box.json("funds/OUNZ/meta.json").holdings.totalRows).toBe(0);
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    box.setEmptyHoldings("GDX");
+    expect(String(await box.run({ TICKERS: "GDX" }))).toContain("every selected fund failed");
+    expect(box.touched()).toEqual([]);
+    expect(box.row("GDX")).toMatchObject({ holdings: 4 });
   });
 
   test("MAX_FETCHES writes a scoped cursor and a TICKERS run leaves it alone", async () => {
