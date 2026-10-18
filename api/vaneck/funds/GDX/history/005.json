@@ -2,7 +2,7 @@
  "ticker": "GDX",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 7455,
+ "totalRows": 7459,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 03 2015",
+   "NAV": "14.9836",
+   "Close": "14.94",
+   "Volume": "27,602,145",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "4,534,089,056.20",
+   "Index Level": "461.53"
+  },
+  {
+   "Date": "Nov 02 2015",
+   "NAV": "15.0745",
+   "Close": "15.02",
+   "Volume": "37,036,254",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "4,561,584,724.13",
+   "Index Level": "463.71"
+  },
+  {
+   "Date": "Nov 01 2015",
+   "NAV": "14.9762",
+   "Close": "14.96",
+   "Volume": "42,003,165",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "4,540,824,755.04",
+   "Index Level": "461.58"
+  },
+  {
+   "Date": "Oct 31 2015",
+   "NAV": "14.9762",
+   "Close": "14.96",
+   "Volume": "42,003,165",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "4,540,824,755.04",
+   "Index Level": "461.58"
+  },
   {
    "Date": "Oct 30 2015",
    "NAV": "14.9762",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "7,815,885,286.27",
    "Index Level": "1,278.47"
-  },
-  {
-   "Date": "Feb 06 2013",
-   "NAV": "42.5118",
-   "Close": "42.54",
-   "Volume": "8,173,421",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "7,781,895,606.64",
-   "Index Level": "1,275.68"
-  },
-  {
-   "Date": "Feb 05 2013",
-   "NAV": "42.2754",
-   "Close": "42.26",
-   "Volume": "7,646,281",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "7,738,611,366.05",
-   "Index Level": "1,268.56"
-  },
-  {
-   "Date": "Feb 04 2013",
-   "NAV": "42.3281",
-   "Close": "42.34",
-   "Volume": "9,922,470",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "7,695,352,871.49",
-   "Index Level": "1,270.13"
-  },
-  {
-   "Date": "Feb 03 2013",
-   "NAV": "42.1959",
-   "Close": "42.22",
-   "Volume": "",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "7,816,892,808.49",
-   "Index Level": "1,266.11"
   }
  ]
 }

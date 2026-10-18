@@ -2,7 +2,7 @@
  "ticker": "BUZZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1769,
+ "totalRows": 1773,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "34.6738",
+   "Close": "34.67",
+   "Volume": "14,052",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "91,885,662.44",
+   "Index Level": "838.00"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "36.6598",
+   "Close": "36.67",
+   "Volume": "30,965",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "120,977,350.96",
+   "Index Level": "885.86"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "36.0547",
+   "Close": "36.04",
+   "Volume": "61,955",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "118,980,644.05",
+   "Index Level": "871.48"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "37.6495",
+   "Close": "37.64",
+   "Volume": "13,494",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "100,712,527.29",
+   "Index Level": "910.96"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "37.8874",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "58,717,445.07",
    "Index Level": "427.51"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "17.9290",
-   "Close": "17.92",
-   "Volume": "",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "58,717,445.07",
-   "Index Level": "427.51"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "17.9290",
-   "Close": "17.92",
-   "Volume": "10,219",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "58,717,445.07",
-   "Index Level": "427.51"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "17.6034",
-   "Close": "17.60",
-   "Volume": "9,401",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "64,692,482.94",
-   "Index Level": "419.70"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "17.5056",
-   "Close": "17.48",
-   "Volume": "15,688",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "64,770,585.84",
-   "Index Level": "417.36"
   }
  ]
 }

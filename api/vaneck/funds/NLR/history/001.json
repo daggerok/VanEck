@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 5180,
+ "totalRows": 5184,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "94.7110",
+   "Close": "94.34",
+   "Volume": "611,505",
+   "Premium/Discount": "-0.37",
+   "Total Net Assets": "3,202,807,194.12",
+   "Index Level": "2,720.27"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "96.1937",
+   "Close": "96.46",
+   "Volume": "550,385",
+   "Premium/Discount": "0.27",
+   "Total Net Assets": "3,257,756,870.94",
+   "Index Level": "2,750.92"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "94.7076",
+   "Close": "94.52",
+   "Volume": "640,883",
+   "Premium/Discount": "-0.19",
+   "Total Net Assets": "3,207,426,790.36",
+   "Index Level": "2,720.53"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "99.3851",
+   "Close": "99.38",
+   "Volume": "376,653",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "3,365,838,225.41",
+   "Index Level": "2,847.10"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "100.7497",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.29",
    "Total Net Assets": "148,722,352.59",
    "Index Level": "2,092.52"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "75.6229",
-   "Close": "75.91",
-   "Volume": "",
-   "Premium/Discount": "0.29",
-   "Total Net Assets": "148,722,352.59",
-   "Index Level": "2,092.52"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "75.6229",
-   "Close": "75.91",
-   "Volume": "37,200",
-   "Premium/Discount": "0.29",
-   "Total Net Assets": "148,722,352.59",
-   "Index Level": "2,092.52"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "76.3255",
-   "Close": "76.54",
-   "Volume": "29,198",
-   "Premium/Discount": "0.21",
-   "Total Net Assets": "150,104,165.94",
-   "Index Level": "2,110.96"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "76.3627",
-   "Close": "75.91",
-   "Volume": "38,941",
-   "Premium/Discount": "-0.45",
-   "Total Net Assets": "146,359,183.85",
-   "Index Level": "2,117.04"
   }
  ]
 }

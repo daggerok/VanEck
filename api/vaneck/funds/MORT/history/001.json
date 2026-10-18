@@ -2,7 +2,7 @@
  "ticker": "MORT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4169,
+ "totalRows": 4173,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "7.6770",
+   "Close": "7.68",
+   "Volume": "4,535,339",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "305,929,959.32",
+   "Index Level": "1,594.52"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "7.7948",
+   "Close": "7.79",
+   "Volume": "2,165,848",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "311,792,416.59",
+   "Index Level": "1,618.93"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "7.6117",
+   "Close": "7.62",
+   "Volume": "2,045,152",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "307,894,607.13",
+   "Index Level": "1,580.92"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "7.6808",
+   "Close": "7.69",
+   "Volume": "1,607,807",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "310,306,130.65",
+   "Index Level": "1,595.23"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "7.7140",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "253,979,692.31",
    "Index Level": "1,678.05"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "11.5708",
-   "Close": "11.56",
-   "Volume": "",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "253,979,692.31",
-   "Index Level": "1,678.05"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "11.5708",
-   "Close": "11.56",
-   "Volume": "146,386",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "253,979,692.31",
-   "Index Level": "1,678.05"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "11.4607",
-   "Close": "11.47",
-   "Volume": "80,090",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "251,561,921.12",
-   "Index Level": "1,662.05"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "11.4127",
-   "Close": "11.41",
-   "Volume": "174,046",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "248,795,707.41",
-   "Index Level": "1,655.06"
   }
  ]
 }

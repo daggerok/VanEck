@@ -2,7 +2,7 @@
  "ticker": "MOO",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 5166,
+ "totalRows": 5170,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "81.8240",
+   "Close": "81.79",
+   "Volume": "87,566",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "1,108,714,855.55",
+   "Index Level": "4,557.99"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "82.0484",
+   "Close": "82.14",
+   "Volume": "180,221",
+   "Premium/Discount": "0.09",
+   "Total Net Assets": "1,111,755,900.20",
+   "Index Level": "4,560.39"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "82.1240",
+   "Close": "82.18",
+   "Volume": "246,432",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "1,112,779,646.66",
+   "Index Level": "4,571.65"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "81.9852",
+   "Close": "81.97",
+   "Volume": "61,745",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "1,110,899,849.73",
+   "Index Level": "4,558.69"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "80.8096",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "845,129,202.08",
    "Index Level": "3,774.87"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "72.2333",
-   "Close": "72.18",
-   "Volume": "",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "845,129,202.08",
-   "Index Level": "3,774.87"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "72.2333",
-   "Close": "72.18",
-   "Volume": "76,812",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "845,129,202.08",
-   "Index Level": "3,774.87"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "71.9228",
-   "Close": "71.87",
-   "Volume": "30,143",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "841,496,257.37",
-   "Index Level": "3,757.41"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "71.8134",
-   "Close": "71.85",
-   "Volume": "55,934",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "843,807,025.41",
-   "Index Level": "3,755.79"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "MOAT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3996,
+ "totalRows": 4000,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "110.6347",
+   "Close": "110.63",
+   "Volume": "505,164",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "11,655,361,035.38",
+   "Index Level": "26,212.29"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "111.2561",
+   "Close": "111.23",
+   "Volume": "422,614",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "11,737,521,320.82",
+   "Index Level": "26,359.51"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "109.0767",
+   "Close": "109.06",
+   "Volume": "664,115",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "11,523,957,106.80",
+   "Index Level": "25,842.10"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "109.3265",
+   "Close": "109.31",
+   "Volume": "306,779",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "11,577,675,569.24",
+   "Index Level": "25,900.98"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "109.2832",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "13,419,426,955.96",
    "Index Level": "19,105.03"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "83.9764",
-   "Close": "83.97",
-   "Volume": "",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "13,419,426,955.96",
-   "Index Level": "19,105.03"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "83.9764",
-   "Close": "83.97",
-   "Volume": "1,188,634",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "13,419,426,955.96",
-   "Index Level": "19,105.03"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "83.1205",
-   "Close": "83.10",
-   "Volume": "962,155",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "13,266,025,161.98",
-   "Index Level": "18,909.95"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "82.5652",
-   "Close": "82.58",
-   "Volume": "1,074,022",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "13,148,511,757.00",
-   "Index Level": "18,783.14"
   }
  ]
 }

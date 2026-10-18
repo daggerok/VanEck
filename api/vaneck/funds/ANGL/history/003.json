@@ -2,7 +2,7 @@
  "ticker": "ANGL",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4006,
+ "totalRows": 4010,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "25.1138",
+   "Close": "25.70",
+   "Volume": "1,004,161",
+   "Premium/Discount": "0.59",
+   "Total Net Assets": "1,462,877,926.09",
+   "Index Level": "735.64"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "25.2069",
+   "Close": "25.65",
+   "Volume": "733,928",
+   "Premium/Discount": "0.44",
+   "Total Net Assets": "1,468,303,618.49",
+   "Index Level": "737.55"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "25.1118",
+   "Close": "24.93",
+   "Volume": "1,367,361",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "1,462,762,929.23",
+   "Index Level": "735.97"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "25.4697",
+   "Close": "25.30",
+   "Volume": "566,723",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "1,483,611,732.99",
+   "Index Level": "741.08"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "25.1566",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.07",
    "Total Net Assets": "126,481,771.66",
    "Index Level": "607.57"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "26.2621",
-   "Close": "26.26",
-   "Volume": "50,073",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "126,058,016.98",
-   "Index Level": "605.68"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "26.1843",
-   "Close": "26.16",
-   "Volume": "45,631",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "125,684,801.00",
-   "Index Level": "603.62"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "25.8808",
-   "Close": "25.97",
-   "Volume": "87,495",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "124,227,819.70",
-   "Index Level": "596.83"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "25.7384",
-   "Close": "25.83",
-   "Volume": "62,339",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "123,544,366.90",
-   "Index Level": "593.96"
   }
  ]
 }

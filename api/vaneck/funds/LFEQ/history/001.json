@@ -2,7 +2,7 @@
  "ticker": "LFEQ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 2625,
+ "totalRows": 2629,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "60.8080",
+   "Close": "60.81",
+   "Volume": "1,113",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "27,363,609.91",
+   "Index Level": "467,243.38"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "61.4869",
+   "Close": "61.50",
+   "Volume": "156",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "27,669,080.68",
+   "Index Level": "472,400.91"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "61.3144",
+   "Close": "61.26",
+   "Volume": "1,076",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "27,591,472.09",
+   "Index Level": "470,835.51"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "61.9889",
+   "Close": "61.98",
+   "Volume": "384",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "27,894,982.71",
+   "Index Level": "476,105.42"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "61.9837",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "24,415,663.53",
    "Index Level": "302,516.61"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "40.6928",
-   "Close": "40.67",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "24,415,663.53",
-   "Index Level": "302,516.61"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "40.6928",
-   "Close": "40.67",
-   "Volume": "735",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "24,415,663.53",
-   "Index Level": "302,516.61"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "40.2011",
-   "Close": "40.19",
-   "Volume": "2,104",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "24,120,668.56",
-   "Index Level": "298,819.64"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "39.8472",
-   "Close": "39.85",
-   "Volume": "461",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "23,908,326.40",
-   "Index Level": "296,187.41"
   }
  ]
 }

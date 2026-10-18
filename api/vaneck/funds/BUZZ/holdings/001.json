@@ -2,7 +2,7 @@
  "ticker": "BUZZ",
  "page": 1,
  "pageSize": 250,
- "totalRows": 77,
+ "totalRows": 78,
  "headers": [
   "Name",
   "Ticker",
@@ -15,642 +15,702 @@
  ],
  "rows": [
   {
-   "Name": "Moderna Inc",
-   "Ticker": "MRNA",
-   "Identifier": "BBG003PHHZT1",
-   "Shares Held": "21,529",
-   "Asset Category": "Stock",
-   "Market Value": "$4,844,025.00",
-   "Notional Value": "",
-   "Weight": "4.70%"
-  },
-  {
    "Name": "Gamestop Corp",
    "Ticker": "GME",
    "Identifier": "BBG000BB5BF6",
-   "Shares Held": "144,251",
+   "Shares Held": "120,246",
    "Asset Category": "Stock",
-   "Market Value": "$3,831,306.56",
+   "Market Value": "$3,369,292.92",
    "Notional Value": "",
-   "Weight": "3.72%"
-  },
-  {
-   "Name": "Strategy Inc",
-   "Ticker": "MSTR",
-   "Identifier": "BBG000GQJPZ0",
-   "Shares Held": "22,867",
-   "Asset Category": "Stock",
-   "Market Value": "$3,529,292.78",
-   "Notional Value": "",
-   "Weight": "3.42%"
-  },
-  {
-   "Name": "Super Micro Computer Inc",
-   "Ticker": "SMCI",
-   "Identifier": "BBG000MYZDJ3",
-   "Shares Held": "78,686",
-   "Asset Category": "Stock",
-   "Market Value": "$3,293,402.53",
-   "Notional Value": "",
-   "Weight": "3.20%"
-  },
-  {
-   "Name": "Meta Platforms Inc",
-   "Ticker": "META",
-   "Identifier": "BBG000MM2P62",
-   "Shares Held": "4,565",
-   "Asset Category": "Stock",
-   "Market Value": "$3,280,728.55",
-   "Notional Value": "",
-   "Weight": "3.18%"
-  },
-  {
-   "Name": "Palantir Technologies Inc",
-   "Ticker": "PLTR",
-   "Identifier": "BBG000N7QR55",
-   "Shares Held": "14,816",
-   "Asset Category": "Stock",
-   "Market Value": "$3,097,284.80",
-   "Notional Value": "",
-   "Weight": "3.01%"
-  },
-  {
-   "Name": "Tesla Inc",
-   "Ticker": "TSLA",
-   "Identifier": "BBG000N9MNX3",
-   "Shares Held": "8,091",
-   "Asset Category": "Stock",
-   "Market Value": "$3,096,425.70",
-   "Notional Value": "",
-   "Weight": "3.00%"
-  },
-  {
-   "Name": "Micron Technology Inc",
-   "Ticker": "MU",
-   "Identifier": "BBG000C5Z1S3",
-   "Shares Held": "3,009",
-   "Asset Category": "Stock",
-   "Market Value": "$3,096,261.00",
-   "Notional Value": "",
-   "Weight": "3.00%"
-  },
-  {
-   "Name": "Nvidia Corp",
-   "Ticker": "NVDA",
-   "Identifier": "BBG000BBJQV0",
-   "Shares Held": "13,471",
-   "Asset Category": "Stock",
-   "Market Value": "$3,088,630.88",
-   "Notional Value": "",
-   "Weight": "3.00%"
-  },
-  {
-   "Name": "Apple Inc",
-   "Ticker": "AAPL",
-   "Identifier": "BBG000B9XRY4",
-   "Shares Held": "9,007",
-   "Asset Category": "Stock",
-   "Market Value": "$3,032,116.48",
-   "Notional Value": "",
-   "Weight": "2.94%"
-  },
-  {
-   "Name": "Intel Corp",
-   "Ticker": "INTC",
-   "Identifier": "BBG000C0G1D1",
-   "Shares Held": "27,657",
-   "Asset Category": "Stock",
-   "Market Value": "$2,895,687.90",
-   "Notional Value": "",
-   "Weight": "2.81%"
-  },
-  {
-   "Name": "Yandex Nv",
-   "Ticker": "NBIS",
-   "Identifier": "BBG001NVJ6W4",
-   "Shares Held": "12,894",
-   "Asset Category": "Stock",
-   "Market Value": "$2,850,476.58",
-   "Notional Value": "",
-   "Weight": "2.77%"
-  },
-  {
-   "Name": "Sandisk Corp/De",
-   "Ticker": "SNDK",
-   "Identifier": "BBG01R388JG1",
-   "Shares Held": "1,737",
-   "Asset Category": "Stock",
-   "Market Value": "$2,747,621.34",
-   "Notional Value": "",
-   "Weight": "2.67%"
-  },
-  {
-   "Name": "Immunitybio Inc",
-   "Ticker": "IBRX",
-   "Identifier": "BBG007T9DYW9",
-   "Shares Held": "257,457",
-   "Asset Category": "Stock",
-   "Market Value": "$2,705,873.07",
-   "Notional Value": "",
-   "Weight": "2.63%"
-  },
-  {
-   "Name": "Broadcom Inc",
-   "Ticker": "AVGO",
-   "Identifier": "BBG00KHY5S69",
-   "Shares Held": "7,111",
-   "Asset Category": "Stock",
-   "Market Value": "$2,570,910.94",
-   "Notional Value": "",
-   "Weight": "2.49%"
-  },
-  {
-   "Name": "Ast Spacemobile Inc",
-   "Ticker": "ASTS",
-   "Identifier": "BBG00Q402TR2",
-   "Shares Held": "49,095",
-   "Asset Category": "Stock",
-   "Market Value": "$2,502,126.68",
-   "Notional Value": "",
-   "Weight": "2.43%"
-  },
-  {
-   "Name": "Iren Ltd",
-   "Ticker": "IREN",
-   "Identifier": "BBG010J28KQ2",
-   "Shares Held": "67,399",
-   "Asset Category": "Stock",
-   "Market Value": "$2,371,770.81",
-   "Notional Value": "",
-   "Weight": "2.30%"
-  },
-  {
-   "Name": "Marvell Technology Inc",
-   "Ticker": "MRVL",
-   "Identifier": "BBG00ZXBJ153",
-   "Shares Held": "8,129",
-   "Asset Category": "Stock",
-   "Market Value": "$2,237,751.12",
-   "Notional Value": "",
-   "Weight": "2.17%"
+   "Weight": "3.47%"
   },
   {
    "Name": "Nike Inc",
    "Ticker": "NKE",
    "Identifier": "BBG000C5HS04",
-   "Shares Held": "60,132",
+   "Shares Held": "87,502",
    "Asset Category": "Stock",
-   "Market Value": "$2,087,181.72",
+   "Market Value": "$3,249,824.28",
    "Notional Value": "",
-   "Weight": "2.03%"
+   "Weight": "3.35%"
   },
   {
-   "Name": "Sofi Technologies Inc",
-   "Ticker": "SOFI",
-   "Identifier": "BBG00YB1ZD58",
-   "Shares Held": "131,936",
+   "Name": "Meta Platforms Inc",
+   "Ticker": "META",
+   "Identifier": "BBG000MM2P62",
+   "Shares Held": "4,217",
    "Asset Category": "Stock",
-   "Market Value": "$2,084,588.80",
+   "Market Value": "$3,106,748.24",
    "Notional Value": "",
-   "Weight": "2.02%"
-  },
-  {
-   "Name": "Rocket Lab Corp",
-   "Ticker": "RKLB",
-   "Identifier": "BBG01V7JN3F3",
-   "Shares Held": "28,937",
-   "Asset Category": "Stock",
-   "Market Value": "$1,973,792.77",
-   "Notional Value": "",
-   "Weight": "1.92%"
+   "Weight": "3.20%"
   },
   {
    "Name": "Oracle Corp",
    "Ticker": "ORCL",
    "Identifier": "BBG000BQLTW7",
-   "Shares Held": "13,758",
+   "Shares Held": "22,403",
    "Asset Category": "Stock",
-   "Market Value": "$1,945,381.20",
+   "Market Value": "$3,012,531.41",
    "Notional Value": "",
-   "Weight": "1.89%"
+   "Weight": "3.10%"
+  },
+  {
+   "Name": "Tesla Inc",
+   "Ticker": "TSLA",
+   "Identifier": "BBG000N9MNX3",
+   "Shares Held": "8,106",
+   "Asset Category": "Stock",
+   "Market Value": "$2,937,938.64",
+   "Notional Value": "",
+   "Weight": "3.02%"
+  },
+  {
+   "Name": "Nvidia Corp",
+   "Ticker": "NVDA",
+   "Identifier": "BBG000BBJQV0",
+   "Shares Held": "13,189",
+   "Asset Category": "Stock",
+   "Market Value": "$2,865,046.47",
+   "Notional Value": "",
+   "Weight": "2.95%"
+  },
+  {
+   "Name": "Immunitybio Inc",
+   "Ticker": "IBRX",
+   "Identifier": "BBG007T9DYW9",
+   "Shares Held": "279,630",
+   "Asset Category": "Stock",
+   "Market Value": "$2,796,300.00",
+   "Notional Value": "",
+   "Weight": "2.88%"
   },
   {
    "Name": "Advanced Micro Devices Inc",
    "Ticker": "AMD",
    "Identifier": "BBG000BBQCY0",
-   "Shares Held": "3,158",
+   "Shares Held": "4,898",
    "Asset Category": "Stock",
-   "Market Value": "$1,920,379.80",
+   "Market Value": "$2,753,802.54",
    "Notional Value": "",
-   "Weight": "1.86%"
+   "Weight": "2.83%"
   },
   {
-   "Name": "Robinhood Markets Inc",
-   "Ticker": "HOOD",
-   "Identifier": "BBG008NMBXN8",
-   "Shares Held": "17,592",
+   "Name": "Micron Technology Inc",
+   "Ticker": "MU",
+   "Identifier": "BBG000C5Z1S3",
+   "Shares Held": "2,934",
    "Asset Category": "Stock",
-   "Market Value": "$1,917,879.84",
+   "Market Value": "$2,732,258.16",
    "Notional Value": "",
-   "Weight": "1.86%"
+   "Weight": "2.81%"
+  },
+  {
+   "Name": "Iovance Biotherapeutics Inc",
+   "Ticker": "IOVA",
+   "Identifier": "BBG000FTLBV7",
+   "Shares Held": "185,288",
+   "Asset Category": "Stock",
+   "Market Value": "$2,727,984.85",
+   "Notional Value": "",
+   "Weight": "2.81%"
+  },
+  {
+   "Name": "Blackberry Ltd",
+   "Ticker": "BBRY",
+   "Identifier": "BBG000CR90K4",
+   "Shares Held": "309,822",
+   "Asset Category": "Stock",
+   "Market Value": "$2,695,990.49",
+   "Notional Value": "",
+   "Weight": "2.78%"
+  },
+  {
+   "Name": "Iren Ltd",
+   "Ticker": "IREN",
+   "Identifier": "BBG010J28KQ2",
+   "Shares Held": "85,125",
+   "Asset Category": "Stock",
+   "Market Value": "$2,586,948.75",
+   "Notional Value": "",
+   "Weight": "2.66%"
+  },
+  {
+   "Name": "Sofi Technologies Inc",
+   "Ticker": "SOFI",
+   "Identifier": "BBG00YB1ZD58",
+   "Shares Held": "169,820",
+   "Asset Category": "Stock",
+   "Market Value": "$2,562,583.80",
+   "Notional Value": "",
+   "Weight": "2.64%"
+  },
+  {
+   "Name": "Super Micro Computer Inc",
+   "Ticker": "SMCI",
+   "Identifier": "BBG000MYZDJ3",
+   "Shares Held": "71,073",
+   "Asset Category": "Stock",
+   "Market Value": "$2,493,951.57",
+   "Notional Value": "",
+   "Weight": "2.57%"
+  },
+  {
+   "Name": "Intel Corp",
+   "Ticker": "INTC",
+   "Identifier": "BBG000C0G1D1",
+   "Shares Held": "25,410",
+   "Asset Category": "Stock",
+   "Market Value": "$2,423,351.70",
+   "Notional Value": "",
+   "Weight": "2.49%"
   },
   {
    "Name": "Alphabet Inc",
    "Ticker": "GOOGL",
    "Identifier": "BBG009S39JX6",
-   "Shares Held": "5,126",
+   "Shares Held": "6,798",
    "Asset Category": "Stock",
-   "Market Value": "$1,802,609.16",
+   "Market Value": "$2,373,997.56",
    "Notional Value": "",
-   "Weight": "1.75%"
+   "Weight": "2.44%"
   },
   {
-   "Name": "Amazon.Com Inc",
-   "Ticker": "AMZN",
-   "Identifier": "BBG000BVPV84",
-   "Shares Held": "5,810",
+   "Name": "Ast Spacemobile Inc",
+   "Ticker": "ASTS",
+   "Identifier": "BBG00Q402TR2",
+   "Shares Held": "53,396",
    "Asset Category": "Stock",
-   "Market Value": "$1,524,718.30",
+   "Market Value": "$2,373,986.16",
    "Notional Value": "",
-   "Weight": "1.48%"
-  },
-  {
-   "Name": "Applovin Corp",
-   "Ticker": "APP",
-   "Identifier": "BBG006HFPX77",
-   "Shares Held": "5,200",
-   "Asset Category": "Stock",
-   "Market Value": "$1,440,608.00",
-   "Notional Value": "",
-   "Weight": "1.40%"
+   "Weight": "2.44%"
   },
   {
    "Name": "Applied Digital Corp",
    "Ticker": "APLD",
    "Identifier": "BBG000DSJYS8",
-   "Shares Held": "56,827",
+   "Shares Held": "113,087",
    "Asset Category": "Stock",
-   "Market Value": "$1,345,663.36",
+   "Market Value": "$2,305,843.93",
    "Notional Value": "",
-   "Weight": "1.31%"
+   "Weight": "2.37%"
   },
   {
-   "Name": "Bloom Energy Corp",
-   "Ticker": "BE",
-   "Identifier": "BBG000N7KBZ3",
-   "Shares Held": "4,279",
+   "Name": "Robinhood Markets Inc",
+   "Ticker": "HOOD",
+   "Identifier": "BBG008NMBXN8",
+   "Shares Held": "21,888",
    "Asset Category": "Stock",
-   "Market Value": "$1,200,259.50",
+   "Market Value": "$2,276,133.12",
    "Notional Value": "",
-   "Weight": "1.16%"
+   "Weight": "2.34%"
   },
   {
-   "Name": "Dell Technologies Inc",
-   "Ticker": "DELL",
-   "Identifier": "BBG00DW3SZS1",
-   "Shares Held": "2,037",
+   "Name": "Yandex Nv",
+   "Ticker": "NBIS",
+   "Identifier": "BBG001NVJ6W4",
+   "Shares Held": "11,085",
    "Asset Category": "Stock",
-   "Market Value": "$1,193,804.22",
+   "Market Value": "$2,088,524.85",
    "Notional Value": "",
-   "Weight": "1.16%"
+   "Weight": "2.15%"
   },
   {
-   "Name": "Lululemon Athletica Inc",
-   "Ticker": "LULU",
-   "Identifier": "BBG000R8ZVD1",
-   "Shares Held": "12,543",
+   "Name": "Amazon.Com Inc",
+   "Ticker": "AMZN",
+   "Identifier": "BBG000BVPV84",
+   "Shares Held": "7,938",
    "Asset Category": "Stock",
-   "Market Value": "$1,185,313.50",
+   "Market Value": "$2,022,284.88",
    "Notional Value": "",
-   "Weight": "1.15%"
+   "Weight": "2.08%"
   },
   {
-   "Name": "Paypal Holdings Inc",
-   "Ticker": "PYPL",
-   "Identifier": "BBG0077VNXV6",
-   "Shares Held": "21,311",
+   "Name": "Apple Inc",
+   "Ticker": "AAPL",
+   "Identifier": "BBG000B9XRY4",
+   "Shares Held": "5,899",
    "Asset Category": "Stock",
-   "Market Value": "$1,183,399.83",
+   "Market Value": "$2,017,458.00",
    "Notional Value": "",
-   "Weight": "1.15%"
+   "Weight": "2.08%"
   },
   {
-   "Name": "Cipher Mining Inc",
-   "Ticker": "CIFR",
-   "Identifier": "BBG00XYHY0K2",
-   "Shares Held": "85,762",
+   "Name": "Palantir Technologies Inc",
+   "Ticker": "PLTR",
+   "Identifier": "BBG000N7QR55",
+   "Shares Held": "9,656",
    "Asset Category": "Stock",
-   "Market Value": "$1,159,502.24",
+   "Market Value": "$1,936,028.00",
    "Notional Value": "",
-   "Weight": "1.13%"
+   "Weight": "1.99%"
   },
   {
-   "Name": "Bitmine Immersion Technologies Inc",
-   "Ticker": "BMNR",
-   "Identifier": "BBG000BWFL03",
-   "Shares Held": "45,485",
+   "Name": "Strategy Inc",
+   "Ticker": "MSTR",
+   "Identifier": "BBG000GQJPZ0",
+   "Shares Held": "12,446",
    "Asset Category": "Stock",
-   "Market Value": "$1,093,004.55",
+   "Market Value": "$1,882,955.34",
    "Notional Value": "",
-   "Weight": "1.06%"
+   "Weight": "1.94%"
   },
   {
-   "Name": "Uipath Inc",
-   "Ticker": "PATH",
-   "Identifier": "BBG00GKS1G03",
-   "Shares Held": "80,180",
+   "Name": "Sandisk Corp/De",
+   "Ticker": "SNDK",
+   "Identifier": "BBG01R388JG1",
+   "Shares Held": "1,342",
    "Asset Category": "Stock",
-   "Market Value": "$1,080,826.40",
+   "Market Value": "$1,871,861.86",
    "Notional Value": "",
-   "Weight": "1.05%"
+   "Weight": "1.93%"
   },
   {
-   "Name": "Coreweave Inc",
-   "Ticker": "CRWV",
-   "Identifier": "BBG011ZTRJ21",
-   "Shares Held": "12,675",
+   "Name": "Applovin Corp",
+   "Ticker": "APP",
+   "Identifier": "BBG006HFPX77",
+   "Shares Held": "5,998",
    "Asset Category": "Stock",
-   "Market Value": "$1,040,364.00",
+   "Market Value": "$1,675,181.42",
    "Notional Value": "",
-   "Weight": "1.01%"
+   "Weight": "1.72%"
   },
   {
-   "Name": "Walmart Inc",
-   "Ticker": "WMT",
-   "Identifier": "BBG000BWXBC2",
-   "Shares Held": "8,592",
+   "Name": "Rocket Lab Corp",
+   "Ticker": "RKLB",
+   "Identifier": "BBG01V7JN3F3",
+   "Shares Held": "28,064",
    "Asset Category": "Stock",
-   "Market Value": "$956,719.20",
+   "Market Value": "$1,550,536.00",
    "Notional Value": "",
-   "Weight": "0.93%"
+   "Weight": "1.60%"
+  },
+  {
+   "Name": "Broadcom Inc",
+   "Ticker": "AVGO",
+   "Identifier": "BBG00KHY5S69",
+   "Shares Held": "4,309",
+   "Asset Category": "Stock",
+   "Market Value": "$1,483,717.97",
+   "Notional Value": "",
+   "Weight": "1.53%"
   },
   {
    "Name": "Microsoft Corp",
    "Ticker": "MSFT",
    "Identifier": "BBG000BPH459",
-   "Shares Held": "1,709",
+   "Shares Held": "2,731",
    "Asset Category": "Stock",
-   "Market Value": "$914,434.63",
+   "Market Value": "$1,473,210.64",
    "Notional Value": "",
-   "Weight": "0.89%"
-  },
-  {
-   "Name": "Servicenow Inc",
-   "Ticker": "NOW",
-   "Identifier": "BBG000M1R011",
-   "Shares Held": "6,403",
-   "Asset Category": "Stock",
-   "Market Value": "$901,926.58",
-   "Notional Value": "",
-   "Weight": "0.88%"
-  },
-  {
-   "Name": "Coinbase Global Inc",
-   "Ticker": "COIN",
-   "Identifier": "BBG00ZGF7771",
-   "Shares Held": "4,950",
-   "Asset Category": "Stock",
-   "Market Value": "$887,980.50",
-   "Notional Value": "",
-   "Weight": "0.86%"
+   "Weight": "1.52%"
   },
   {
    "Name": "Netflix Inc",
    "Ticker": "NFLX",
    "Identifier": "BBG000CL9VN6",
-   "Shares Held": "12,489",
+   "Shares Held": "20,289",
    "Asset Category": "Stock",
-   "Market Value": "$877,976.70",
+   "Market Value": "$1,473,184.29",
    "Notional Value": "",
-   "Weight": "0.85%"
+   "Weight": "1.52%"
   },
   {
-   "Name": "Hims & Hers Health Inc",
-   "Ticker": "HIMS",
-   "Identifier": "BBG00Q53VYM7",
-   "Shares Held": "28,334",
+   "Name": "Moderna Inc",
+   "Ticker": "MRNA",
+   "Identifier": "BBG003PHHZT1",
+   "Shares Held": "5,569",
    "Asset Category": "Stock",
-   "Market Value": "$876,087.28",
+   "Market Value": "$1,317,068.50",
    "Notional Value": "",
-   "Weight": "0.85%"
-  },
-  {
-   "Name": "Reddit Inc",
-   "Ticker": "RDDT",
-   "Identifier": "BBG005K1D4S0",
-   "Shares Held": "5,282",
-   "Asset Category": "Stock",
-   "Market Value": "$844,644.62",
-   "Notional Value": "",
-   "Weight": "0.82%"
-  },
-  {
-   "Name": "Uber Technologies Inc",
-   "Ticker": "UBER",
-   "Identifier": "BBG002B04MT8",
-   "Shares Held": "10,942",
-   "Asset Category": "Stock",
-   "Market Value": "$782,462.42",
-   "Notional Value": "",
-   "Weight": "0.76%"
-  },
-  {
-   "Name": "Terawulf Inc",
-   "Ticker": "WULF",
-   "Identifier": "BBG0122MC900",
-   "Shares Held": "56,285",
-   "Asset Category": "Stock",
-   "Market Value": "$775,044.45",
-   "Notional Value": "",
-   "Weight": "0.75%"
-  },
-  {
-   "Name": "Celsius Holdings Inc",
-   "Ticker": "CELH",
-   "Identifier": "BBG000NY37X4",
-   "Shares Held": "26,592",
-   "Asset Category": "Stock",
-   "Market Value": "$759,999.36",
-   "Notional Value": "",
-   "Weight": "0.74%"
-  },
-  {
-   "Name": "Ionq Inc",
-   "Ticker": "IONQ",
-   "Identifier": "BBG00XZP0LB4",
-   "Shares Held": "18,767",
-   "Asset Category": "Stock",
-   "Market Value": "$748,615.63",
-   "Notional Value": "",
-   "Weight": "0.73%"
-  },
-  {
-   "Name": "Snap Inc",
-   "Ticker": "SNAP",
-   "Identifier": "BBG00441QMJ7",
-   "Shares Held": "111,850",
-   "Asset Category": "Stock",
-   "Market Value": "$696,825.50",
-   "Notional Value": "",
-   "Weight": "0.68%"
-  },
-  {
-   "Name": "Crowdstrike Holdings Inc",
-   "Ticker": "CRWD",
-   "Identifier": "BBG00BLYKS03",
-   "Shares Held": "2,355",
-   "Asset Category": "Stock",
-   "Market Value": "$647,719.20",
-   "Notional Value": "",
-   "Weight": "0.63%"
-  },
-  {
-   "Name": "Sentinelone Inc",
-   "Ticker": "S",
-   "Identifier": "BBG00B6F2F09",
-   "Shares Held": "23,021",
-   "Asset Category": "Stock",
-   "Market Value": "$604,761.67",
-   "Notional Value": "",
-   "Weight": "0.59%"
-  },
-  {
-   "Name": "Rivian Automotive Inc",
-   "Ticker": "RIVN",
-   "Identifier": "BBG00741Y1N2",
-   "Shares Held": "43,143",
-   "Asset Category": "Stock",
-   "Market Value": "$602,276.28",
-   "Notional Value": "",
-   "Weight": "0.58%"
-  },
-  {
-   "Name": "Trade Desk Inc/The",
-   "Ticker": "TTD",
-   "Identifier": "BBG00629NGT2",
-   "Shares Held": "47,979",
-   "Asset Category": "Stock",
-   "Market Value": "$579,586.32",
-   "Notional Value": "",
-   "Weight": "0.56%"
-  },
-  {
-   "Name": "Salesforce.Com Inc",
-   "Ticker": "CRM",
-   "Identifier": "BBG000BN2DC2",
-   "Shares Held": "2,422",
-   "Asset Category": "Stock",
-   "Market Value": "$554,952.86",
-   "Notional Value": "",
-   "Weight": "0.54%"
-  },
-  {
-   "Name": "Hewlett Packard Enterprise Co",
-   "Ticker": "HPE",
-   "Identifier": "BBG0078W3NQ3",
-   "Shares Held": "7,404",
-   "Asset Category": "Stock",
-   "Market Value": "$543,897.84",
-   "Notional Value": "",
-   "Weight": "0.53%"
-  },
-  {
-   "Name": "Take-Two Interactive Software Inc",
-   "Ticker": "TTWO",
-   "Identifier": "BBG000BS1YV5",
-   "Shares Held": "2,458",
-   "Asset Category": "Stock",
-   "Market Value": "$524,635.52",
-   "Notional Value": "",
-   "Weight": "0.51%"
-  },
-  {
-   "Name": "Adobe Inc",
-   "Ticker": "ADBE",
-   "Identifier": "BBG000BB5006",
-   "Shares Held": "1,825",
-   "Asset Category": "Stock",
-   "Market Value": "$442,142.75",
-   "Notional Value": "",
-   "Weight": "0.43%"
-  },
-  {
-   "Name": "Oklo Inc",
-   "Ticker": "OKLO",
-   "Identifier": "BBG0112CBLW3",
-   "Shares Held": "12,585",
-   "Asset Category": "Stock",
-   "Market Value": "$436,699.50",
-   "Notional Value": "",
-   "Weight": "0.42%"
-  },
-  {
-   "Name": "Tg Therapeutics Inc",
-   "Ticker": "TGTX",
-   "Identifier": "BBG000FVZQY1",
-   "Shares Held": "7,457",
-   "Asset Category": "Stock",
-   "Market Value": "$412,894.09",
-   "Notional Value": "",
-   "Weight": "0.40%"
-  },
-  {
-   "Name": "Galaxy Digital Inc",
-   "Ticker": "GLXY",
-   "Identifier": "BBG0120SWLS0",
-   "Shares Held": "19,870",
-   "Asset Category": "Stock",
-   "Market Value": "$403,957.10",
-   "Notional Value": "",
-   "Weight": "0.39%"
-  },
-  {
-   "Name": "Cisco Systems Inc",
-   "Ticker": "CSCO",
-   "Identifier": "BBG000C3J3C9",
-   "Shares Held": "3,412",
-   "Asset Category": "Stock",
-   "Market Value": "$403,946.68",
-   "Notional Value": "",
-   "Weight": "0.39%"
-  },
-  {
-   "Name": "Tempus Ai Inc",
-   "Ticker": "TEM",
-   "Identifier": "BBG01MZQYJF9",
-   "Shares Held": "5,582",
-   "Asset Category": "Stock",
-   "Market Value": "$395,931.26",
-   "Notional Value": "",
-   "Weight": "0.38%"
-  },
-  {
-   "Name": "Circle Internet Group Inc",
-   "Ticker": "CRCL",
-   "Identifier": "BBG01T61V2V3",
-   "Shares Held": "4,612",
-   "Asset Category": "Stock",
-   "Market Value": "$389,760.12",
-   "Notional Value": "",
-   "Weight": "0.38%"
-  },
-  {
-   "Name": "Paramount Skydance Corp",
-   "Ticker": "PSKY",
-   "Identifier": "BBG01VS5NK99",
-   "Shares Held": "42,171",
-   "Asset Category": "Stock",
-   "Market Value": "$386,286.36",
-   "Notional Value": "",
-   "Weight": "0.37%"
+   "Weight": "1.36%"
   },
   {
    "Name": "Mcdonald's Corp",
    "Ticker": "MCD",
    "Identifier": "BBG000BNSZP1",
-   "Shares Held": "1,611",
+   "Shares Held": "4,533",
    "Asset Category": "Stock",
-   "Market Value": "$378,955.53",
+   "Market Value": "$1,099,252.50",
+   "Notional Value": "",
+   "Weight": "1.13%"
+  },
+  {
+   "Name": "Coreweave Inc",
+   "Ticker": "CRWV",
+   "Identifier": "BBG011ZTRJ21",
+   "Shares Held": "15,175",
+   "Asset Category": "Stock",
+   "Market Value": "$1,057,545.75",
+   "Notional Value": "",
+   "Weight": "1.09%"
+  },
+  {
+   "Name": "Trade Desk Inc/The",
+   "Ticker": "TTD",
+   "Identifier": "BBG00629NGT2",
+   "Shares Held": "69,065",
+   "Asset Category": "Stock",
+   "Market Value": "$906,823.45",
+   "Notional Value": "",
+   "Weight": "0.93%"
+  },
+  {
+   "Name": "Coinbase Global Inc",
+   "Ticker": "COIN",
+   "Identifier": "BBG00ZGF7771",
+   "Shares Held": "4,780",
+   "Asset Category": "Stock",
+   "Market Value": "$878,611.80",
+   "Notional Value": "",
+   "Weight": "0.90%"
+  },
+  {
+   "Name": "Bloom Energy Corp",
+   "Ticker": "BE",
+   "Identifier": "BBG000N7KBZ3",
+   "Shares Held": "3,495",
+   "Asset Category": "Stock",
+   "Market Value": "$825,868.50",
+   "Notional Value": "",
+   "Weight": "0.85%"
+  },
+  {
+   "Name": "Uber Technologies Inc",
+   "Ticker": "UBER",
+   "Identifier": "BBG002B04MT8",
+   "Shares Held": "11,302",
+   "Asset Category": "Stock",
+   "Market Value": "$805,493.54",
+   "Notional Value": "",
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Ionq Inc",
+   "Ticker": "IONQ",
+   "Identifier": "BBG00XZP0LB4",
+   "Shares Held": "23,362",
+   "Asset Category": "Stock",
+   "Market Value": "$802,484.70",
+   "Notional Value": "",
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Bitmine Immersion Technologies Inc",
+   "Ticker": "BMNR",
+   "Identifier": "BBG000BWFL03",
+   "Shares Held": "34,248",
+   "Asset Category": "Stock",
+   "Market Value": "$800,033.28",
+   "Notional Value": "",
+   "Weight": "0.82%"
+  },
+  {
+   "Name": "Boeing Co/The",
+   "Ticker": "BA",
+   "Identifier": "BBG000BCSST7",
+   "Shares Held": "4,221",
+   "Asset Category": "Stock",
+   "Market Value": "$796,629.33",
+   "Notional Value": "",
+   "Weight": "0.82%"
+  },
+  {
+   "Name": "Hims & Hers Health Inc",
+   "Ticker": "HIMS",
+   "Identifier": "BBG00Q53VYM7",
+   "Shares Held": "26,054",
+   "Asset Category": "Stock",
+   "Market Value": "$765,466.52",
+   "Notional Value": "",
+   "Weight": "0.79%"
+  },
+  {
+   "Name": "Cipher Mining Inc",
+   "Ticker": "CIFR",
+   "Identifier": "BBG00XYHY0K2",
+   "Shares Held": "68,043",
+   "Asset Category": "Stock",
+   "Market Value": "$683,151.72",
+   "Notional Value": "",
+   "Weight": "0.70%"
+  },
+  {
+   "Name": "Rivian Automotive Inc",
+   "Ticker": "RIVN",
+   "Identifier": "BBG00741Y1N2",
+   "Shares Held": "51,017",
+   "Asset Category": "Stock",
+   "Market Value": "$664,241.34",
+   "Notional Value": "",
+   "Weight": "0.68%"
+  },
+  {
+   "Name": "Vistra Corp",
+   "Ticker": "VST",
+   "Identifier": "BBG00DXDL6Q1",
+   "Shares Held": "4,235",
+   "Asset Category": "Stock",
+   "Market Value": "$652,909.95",
+   "Notional Value": "",
+   "Weight": "0.67%"
+  },
+  {
+   "Name": "Terawulf Inc",
+   "Ticker": "WULF",
+   "Identifier": "BBG0122MC900",
+   "Shares Held": "51,027",
+   "Asset Category": "Stock",
+   "Market Value": "$643,960.74",
+   "Notional Value": "",
+   "Weight": "0.66%"
+  },
+  {
+   "Name": "Snap Inc",
+   "Ticker": "SNAP",
+   "Identifier": "BBG00441QMJ7",
+   "Shares Held": "95,391",
+   "Asset Category": "Stock",
+   "Market Value": "$614,318.04",
+   "Notional Value": "",
+   "Weight": "0.63%"
+  },
+  {
+   "Name": "Mp Materials Corp",
+   "Ticker": "MP",
+   "Identifier": "BBG00TJGL0F0",
+   "Shares Held": "13,558",
+   "Asset Category": "Stock",
+   "Market Value": "$564,261.20",
+   "Notional Value": "",
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Credo Technology Group Holding Ltd",
+   "Ticker": "CRDO",
+   "Identifier": "BBG00T68J2G0",
+   "Shares Held": "3,083",
+   "Asset Category": "Stock",
+   "Market Value": "$550,425.56",
+   "Notional Value": "",
+   "Weight": "0.57%"
+  },
+  {
+   "Name": "Servicenow Inc",
+   "Ticker": "NOW",
+   "Identifier": "BBG000M1R011",
+   "Shares Held": "3,682",
+   "Asset Category": "Stock",
+   "Market Value": "$547,034.74",
+   "Notional Value": "",
+   "Weight": "0.56%"
+  },
+  {
+   "Name": "Circle Internet Group Inc",
+   "Ticker": "CRCL",
+   "Identifier": "BBG01T61V2V3",
+   "Shares Held": "5,968",
+   "Asset Category": "Stock",
+   "Market Value": "$519,036.96",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Grab Holdings Ltd",
+   "Ticker": "GRAB",
+   "Identifier": "BBG011768M53",
+   "Shares Held": "170,054",
+   "Asset Category": "Stock",
+   "Market Value": "$510,264.03",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Draftkings Inc",
+   "Ticker": "DKNG",
+   "Identifier": "BBG0134WCM78",
+   "Shares Held": "26,205",
+   "Asset Category": "Stock",
+   "Market Value": "$506,018.55",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Zeta Global Holdings Corp",
+   "Ticker": "ZETA",
+   "Identifier": "BBG010FXVQ98",
+   "Shares Held": "14,951",
+   "Asset Category": "Stock",
+   "Market Value": "$501,706.37",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Marvell Technology Inc",
+   "Ticker": "MRVL",
+   "Identifier": "BBG00ZXBJ153",
+   "Shares Held": "2,039",
+   "Asset Category": "Stock",
+   "Market Value": "$491,888.36",
+   "Notional Value": "",
+   "Weight": "0.51%"
+  },
+  {
+   "Name": "Crowdstrike Holdings Inc",
+   "Ticker": "CRWD",
+   "Identifier": "BBG00BLYKS03",
+   "Shares Held": "1,997",
+   "Asset Category": "Stock",
+   "Market Value": "$488,406.29",
+   "Notional Value": "",
+   "Weight": "0.50%"
+  },
+  {
+   "Name": "Applied Optoelectronics Inc",
+   "Ticker": "AAOI",
+   "Identifier": "",
+   "Shares Held": "5,700",
+   "Asset Category": "Stock",
+   "Market Value": "$477,356.46",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Dell Technologies Inc",
+   "Ticker": "DELL",
+   "Identifier": "BBG00DW3SZS1",
+   "Shares Held": "1,007",
+   "Asset Category": "Stock",
+   "Market Value": "$476,703.73",
+   "Notional Value": "",
+   "Weight": "0.49%"
+  },
+  {
+   "Name": "Galaxy Digital Inc",
+   "Ticker": "GLXY",
+   "Identifier": "BBG0120SWLS0",
+   "Shares Held": "24,948",
+   "Asset Category": "Stock",
+   "Market Value": "$455,301.00",
+   "Notional Value": "",
+   "Weight": "0.47%"
+  },
+  {
+   "Name": "Qualcomm Inc",
+   "Ticker": "QCOM",
+   "Identifier": "BBG000CGC1X8",
+   "Shares Held": "2,520",
+   "Asset Category": "Stock",
+   "Market Value": "$449,568.00",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Western Digital Corp",
+   "Ticker": "WDC",
+   "Identifier": "BBG000BWNFZ9",
+   "Shares Held": "1,245",
+   "Asset Category": "Stock",
+   "Market Value": "$443,869.00",
+   "Notional Value": "",
+   "Weight": "0.46%"
+  },
+  {
+   "Name": "Sentinelone Inc",
+   "Ticker": "S",
+   "Identifier": "BBG00B6F2F09",
+   "Shares Held": "18,118",
+   "Asset Category": "Stock",
+   "Market Value": "$423,417.66",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Adobe Inc",
+   "Ticker": "ADBE",
+   "Identifier": "BBG000BB5006",
+   "Shares Held": "1,679",
+   "Asset Category": "Stock",
+   "Market Value": "$422,553.93",
+   "Notional Value": "",
+   "Weight": "0.44%"
+  },
+  {
+   "Name": "Reddit Inc",
+   "Ticker": "RDDT",
+   "Identifier": "BBG005K1D4S0",
+   "Shares Held": "2,532",
+   "Asset Category": "Stock",
+   "Market Value": "$403,499.52",
+   "Notional Value": "",
+   "Weight": "0.42%"
+  },
+  {
+   "Name": "Lululemon Athletica Inc",
+   "Ticker": "LULU",
+   "Identifier": "BBG000R8ZVD1",
+   "Shares Held": "4,052",
+   "Asset Category": "Stock",
+   "Market Value": "$401,512.68",
+   "Notional Value": "",
+   "Weight": "0.41%"
+  },
+  {
+   "Name": "Uipath Inc",
+   "Ticker": "PATH",
+   "Identifier": "BBG00GKS1G03",
+   "Shares Held": "27,984",
+   "Asset Category": "Stock",
+   "Market Value": "$383,660.64",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Celsius Holdings Inc",
+   "Ticker": "CELH",
+   "Identifier": "BBG000NY37X4",
+   "Shares Held": "13,618",
+   "Asset Category": "Stock",
+   "Market Value": "$383,482.88",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Unity Software Inc",
+   "Ticker": "U",
+   "Identifier": "BBG0056JW5G6",
+   "Shares Held": "8,741",
+   "Asset Category": "Stock",
+   "Market Value": "$378,910.71",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Qxo Inc",
+   "Ticker": "QXO",
+   "Identifier": "BBG000BV5627",
+   "Shares Held": "32,232",
+   "Asset Category": "Stock",
+   "Market Value": "$360,425.83",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "International Business Machines Corp",
+   "Ticker": "IBM",
+   "Identifier": "BBG000BLNNH6",
+   "Shares Held": "1,534",
+   "Asset Category": "Stock",
+   "Market Value": "$359,211.91",
+   "Notional Value": "",
+   "Weight": "0.37%"
+  },
+  {
+   "Name": "Costco Wholesale Corp",
+   "Ticker": "COST",
+   "Identifier": "BBG000F6H8W8",
+   "Shares Held": "365",
+   "Asset Category": "Stock",
+   "Market Value": "$357,045.04",
    "Notional Value": "",
    "Weight": "0.37%"
   },
@@ -658,121 +718,71 @@
    "Name": "Norwegian Cruise Line Holdings Ltd",
    "Ticker": "NCLH",
    "Identifier": "BBG000BSRN78",
-   "Shares Held": "23,992",
+   "Shares Held": "22,490",
    "Asset Category": "Stock",
-   "Market Value": "$373,555.44",
+   "Market Value": "$346,121.10",
    "Notional Value": "",
    "Weight": "0.36%"
   },
   {
-   "Name": "Snowflake Inc",
-   "Ticker": "SNOW",
-   "Identifier": "BBG007DHGNJ4",
-   "Shares Held": "1,010",
+   "Name": "Caterpillar Inc",
+   "Ticker": "CAT",
+   "Identifier": "BBG000BF0K17",
+   "Shares Held": "459",
    "Asset Category": "Stock",
-   "Market Value": "$372,578.90",
-   "Notional Value": "",
-   "Weight": "0.36%"
-  },
-  {
-   "Name": "Boeing Co/The",
-   "Ticker": "BA",
-   "Identifier": "BBG000BCSST7",
-   "Shares Held": "1,901",
-   "Asset Category": "Stock",
-   "Market Value": "$361,893.37",
+   "Market Value": "$337,726.29",
    "Notional Value": "",
    "Weight": "0.35%"
   },
   {
-   "Name": "Intuit Inc",
-   "Ticker": "INTU",
-   "Identifier": "BBG000BH5DV1",
-   "Shares Held": "1,033",
+   "Name": "Paypal Holdings Inc",
+   "Ticker": "PYPL",
+   "Identifier": "BBG0077VNXV6",
+   "Shares Held": "5,882",
    "Asset Category": "Stock",
-   "Market Value": "$312,740.75",
+   "Market Value": "$336,215.12",
    "Notional Value": "",
-   "Weight": "0.30%"
+   "Weight": "0.35%"
   },
   {
-   "Name": "Draftkings Inc",
-   "Ticker": "DKNG",
-   "Identifier": "BBG0134WCM78",
-   "Shares Held": "15,190",
+   "Name": "Tempus Ai Inc",
+   "Ticker": "TEM",
+   "Identifier": "BBG01MZQYJF9",
+   "Shares Held": "4,570",
    "Asset Category": "Stock",
-   "Market Value": "$297,420.20",
+   "Market Value": "$325,064.10",
    "Notional Value": "",
-   "Weight": "0.29%"
+   "Weight": "0.33%"
   },
   {
-   "Name": "Qualcomm Inc",
-   "Ticker": "QCOM",
-   "Identifier": "BBG000CGC1X8",
-   "Shares Held": "1,685",
+   "Name": "Oklo Inc",
+   "Ticker": "OKLO",
+   "Identifier": "BBG0112CBLW3",
+   "Shares Held": "10,685",
    "Asset Category": "Stock",
-   "Market Value": "$295,717.50",
+   "Market Value": "$320,656.85",
    "Notional Value": "",
-   "Weight": "0.29%"
+   "Weight": "0.33%"
   },
   {
-   "Name": "Vistra Corp",
-   "Ticker": "VST",
-   "Identifier": "BBG00DXDL6Q1",
-   "Shares Held": "1,764",
+   "Name": "Paramount Skydance Corp",
+   "Ticker": "SKYD/WS",
+   "Identifier": "BBG025K36C59",
+   "Shares Held": "51,996",
    "Asset Category": "Stock",
-   "Market Value": "$284,850.72",
+   "Market Value": "$163,787.40",
    "Notional Value": "",
-   "Weight": "0.28%"
-  },
-  {
-   "Name": "Barrick Mining Corp",
-   "Ticker": "B",
-   "Identifier": "BBG000BB07P9",
-   "Shares Held": "6,378",
-   "Asset Category": "Stock",
-   "Market Value": "$261,880.68",
-   "Notional Value": "",
-   "Weight": "0.25%"
-  },
-  {
-   "Name": "Venture Global Inc",
-   "Ticker": "VG",
-   "Identifier": "BBG01RGY23K6",
-   "Shares Held": "19,858",
-   "Asset Category": "Stock",
-   "Market Value": "$261,331.28",
-   "Notional Value": "",
-   "Weight": "0.25%"
-  },
-  {
-   "Name": "D-Wave Quantum Inc",
-   "Ticker": "QBTS",
-   "Identifier": "BBG0192379V9",
-   "Shares Held": "14,808",
-   "Asset Category": "Stock",
-   "Market Value": "$215,752.56",
-   "Notional Value": "",
-   "Weight": "0.21%"
-  },
-  {
-   "Name": "Riot Platforms Inc",
-   "Ticker": "RIOT",
-   "Identifier": "BBG000BQ4512",
-   "Shares Held": "12,183",
-   "Asset Category": "Stock",
-   "Market Value": "$205,709.96",
-   "Notional Value": "",
-   "Weight": "0.20%"
+   "Weight": "0.17%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "-48,909",
+   "Shares Held": "163,379",
    "Asset Category": "Cash Bal",
-   "Market Value": "$-48,909.45",
+   "Market Value": "$163,379.19",
    "Notional Value": "",
-   "Weight": "-0.05%"
+   "Weight": "0.17%"
   },
   {
    "Name": "Other/Cash",
@@ -780,9 +790,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-124,323.27",
+   "Market Value": "$-133,358.60",
    "Notional Value": "",
-   "Weight": "-0.12%"
+   "Weight": "-0.14%"
   }
  ]
 }

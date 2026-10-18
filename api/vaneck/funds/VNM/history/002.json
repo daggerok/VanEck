@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4677,
+ "totalRows": 4681,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "12.9281",
+   "Close": "12.93",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "524,879,717.08",
+   "Index Level": "1,399.41"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "12.9281",
+   "Close": "12.93",
+   "Volume": "270,334",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "524,879,717.08",
+   "Index Level": "1,399.41"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "12.8778",
+   "Close": "12.91",
+   "Volume": "649,263",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "524,772,048.36",
+   "Index Level": "1,395.14"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "12.7828",
+   "Close": "12.63",
+   "Volume": "1,056,684",
+   "Premium/Discount": "-0.15",
+   "Total Net Assets": "520,900,156.05",
+   "Index Level": "1,388.93"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "12.8189",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.21",
    "Total Net Assets": "297,107,284.02",
    "Index Level": "1,136.40"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "11.0403",
-   "Close": "10.74",
-   "Volume": "117,416",
-   "Premium/Discount": "-0.31",
-   "Total Net Assets": "278,216,309.53",
-   "Index Level": "1,081.88"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "10.9384",
-   "Close": "10.65",
-   "Volume": "97,913",
-   "Premium/Discount": "-0.29",
-   "Total Net Assets": "275,648,109.28",
-   "Index Level": "1,057.85"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "10.7010",
-   "Close": "10.33",
-   "Volume": "250,521",
-   "Premium/Discount": "-0.37",
-   "Total Net Assets": "269,664,735.02",
-   "Index Level": "1,053.01"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "10.5440",
-   "Close": "10.44",
-   "Volume": "136,064",
-   "Premium/Discount": "-0.10",
-   "Total Net Assets": "265,707,893.11",
-   "Index Level": "1,038.29"
   }
  ]
 }

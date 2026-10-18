@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5180,
+ "totalRows": 5184,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 23 2012",
+   "NAV": "47.0764",
+   "Close": "46.71",
+   "Volume": "143,509",
+   "Premium/Discount": "-0.37",
+   "Total Net Assets": "91,798,900.99",
+   "Index Level": "945.98"
+  },
+  {
+   "Date": "Apr 20 2012",
+   "NAV": "47.7819",
+   "Close": "47.58",
+   "Volume": "3,454",
+   "Premium/Discount": "-0.20",
+   "Total Net Assets": "93,174,799.19",
+   "Index Level": "956.60"
+  },
+  {
+   "Date": "Apr 19 2012",
+   "NAV": "47.3577",
+   "Close": "47.13",
+   "Volume": "10,939",
+   "Premium/Discount": "-0.23",
+   "Total Net Assets": "92,347,544.63",
+   "Index Level": "950.12"
+  },
+  {
+   "Date": "Apr 18 2012",
+   "NAV": "47.7776",
+   "Close": "47.52",
+   "Volume": "7,093",
+   "Premium/Discount": "-0.26",
+   "Total Net Assets": "93,166,337.24",
+   "Index Level": "957.80"
+  },
   {
    "Date": "Apr 17 2012",
    "NAV": "47.8830",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.36",
    "Total Net Assets": "200,531,942.04",
    "Index Level": "1,571.72"
-  },
-  {
-   "Date": "May 05 2008",
-   "NAV": "94.2345",
-   "Close": "94.44",
-   "Volume": "14,470",
-   "Premium/Discount": "0.21",
-   "Total Net Assets": "197,892,475.38",
-   "Index Level": "1,558.65"
-  },
-  {
-   "Date": "May 02 2008",
-   "NAV": "94.2946",
-   "Close": "94.32",
-   "Volume": "15,488",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "198,018,648.50",
-   "Index Level": "1,554.62"
-  },
-  {
-   "Date": "May 01 2008",
-   "NAV": "94.6612",
-   "Close": "93.99",
-   "Volume": "12,092",
-   "Premium/Discount": "-0.67",
-   "Total Net Assets": "198,788,439.98",
-   "Index Level": "1,563.71"
-  },
-  {
-   "Date": "Apr 30 2008",
-   "NAV": "94.2595",
-   "Close": "93.99",
-   "Volume": "10,306",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "197,944,915.10",
-   "Index Level": "1,563.71"
   }
  ]
 }

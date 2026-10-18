@@ -9,28 +9,28 @@
  "ter": "0.64%",
  "terValue": 0.64,
  "nav": {
-  "display": "$135.55",
-  "value": 135.55,
-  "asOfDate": "Oct 12 2026"
+  "display": "$131.84",
+  "value": 131.84,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 135.55,
+ "navValue": 131.84,
  "aum": {
-  "display": "$129.90M",
-  "value": 129902021.46,
-  "asOfDate": "Oct 12 2026",
+  "display": "$126.34M",
+  "value": 126337239.33,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 129902021.46,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 126337239.33,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "May 03 2007",
  "exchange": "NYSE Arca",
- "closePrice": "$135.05",
- "closePriceValue": 135.05,
+ "closePrice": "$131.33",
+ "closePriceValue": 131.33,
  "premiumDiscount": {
-  "display": "-0.51%",
-  "value": -0.51
+  "display": "-0.50%",
+  "value": -0.5
  },
- "premiumDiscountValue": -0.51,
+ "premiumDiscountValue": -0.5,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -131,7 +131,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 16 2026",
+   "ytd": 1.67,
+   "ytdText": "1.67%",
    "yr1": 6.26,
    "yr3": 9.88,
    "yr5": -0.9,
@@ -149,7 +151,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 1.67,
   "tr1y": 6.26,
   "tr3y": 32.65,
   "tr5y": -4.44,
@@ -167,7 +169,7 @@
   "secYield": 0.59,
   "secYieldText": "0.59%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-16",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -175,11 +177,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.64%",
  "terGrossValue": 0.64,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
-  "totalRows": 64,
+  "totalRows": 63,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -187,9 +189,9 @@
   ]
  },
  "history": {
-  "totalRows": 5250,
+  "totalRows": 5254,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/low-carbon-energy-etf-smog/downloads/fundhistoprices/)",
   "pageCount": 6,
   "pages": [
@@ -201,7 +203,7 @@
    "history/006.json"
   ]
  },
- "totalNetAssets": 129900000,
+ "totalNetAssets": 126340000,
  "indexTicker": "MVSMOGTR",
  "indexName": "MVIS Global Low Carbon Energy Index",
  "categoryPath": "Equity > Natural Resources",
@@ -240,16 +242,16 @@
   "grossValue": 0.64
  },
  "marketPrice": {
-  "display": "$135.05",
-  "value": 135.05,
-  "asOfDate": "Oct 12 2026"
+  "display": "$131.33",
+  "value": 131.33,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
   "dividendYield": 1.49,
   "dividendYieldText": "1.49%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.5,
-  "indicatedYieldText": "1.50%",
+  "indicatedYield": 1.54,
+  "indicatedYieldText": "1.54%",
   "distributionYield": 1.49,
   "distributionYieldText": "1.49%",
   "yield12M": 1.7,

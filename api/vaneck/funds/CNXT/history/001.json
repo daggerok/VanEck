@@ -2,7 +2,7 @@
  "ticker": "CNXT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3432,
+ "totalRows": 3436,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "39.6367",
+   "Close": "39.35",
+   "Volume": "21,342",
+   "Premium/Discount": "-0.29",
+   "Total Net Assets": "73,327,941.38",
+   "Index Level": "3,158.77"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "40.5535",
+   "Close": "40.26",
+   "Volume": "53,632",
+   "Premium/Discount": "-0.29",
+   "Total Net Assets": "75,023,985.57",
+   "Index Level": "3,169.04"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "40.6535",
+   "Close": "40.47",
+   "Volume": "142,319",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "79,274,295.83",
+   "Index Level": "3,265.10"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "42.7921",
+   "Close": "42.52",
+   "Volume": "62,785",
+   "Premium/Discount": "-0.27",
+   "Total Net Assets": "83,444,649.84",
+   "Index Level": "3,367.55"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "42.6338",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "15,516,668.80",
    "Index Level": "1,753.71"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "22.1667",
-   "Close": "22.12",
-   "Volume": "",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "15,516,668.80",
-   "Index Level": "1,753.71"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "22.1667",
-   "Close": "22.12",
-   "Volume": "4,597",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "15,516,668.80",
-   "Index Level": "1,753.71"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "22.2703",
-   "Close": "22.07",
-   "Volume": "1,920",
-   "Premium/Discount": "-0.20",
-   "Total Net Assets": "15,589,175.64",
-   "Index Level": "1,770.24"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "21.8222",
-   "Close": "21.69",
-   "Volume": "2,980",
-   "Premium/Discount": "-0.13",
-   "Total Net Assets": "15,275,543.28",
-   "Index Level": "1,734.66"
   }
  ]
 }

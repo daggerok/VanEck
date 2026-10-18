@@ -2,7 +2,7 @@
  "ticker": "REMX",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4371,
+ "totalRows": 4375,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "46.6770",
+   "Close": "47.10",
+   "Volume": "5,371",
+   "Premium/Discount": "0.42",
+   "Total Net Assets": "31,506,373.77",
+   "Index Level": "286.08"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "46.2573",
+   "Close": "46.71",
+   "Volume": "4,055",
+   "Premium/Discount": "0.45",
+   "Total Net Assets": "31,223,063.10",
+   "Index Level": "282.57"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "45.4586",
+   "Close": "45.60",
+   "Volume": "2,668",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "30,683,955.89",
+   "Index Level": "277.74"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "44.6584",
+   "Close": "45.18",
+   "Volume": "3,359",
+   "Premium/Discount": "0.52",
+   "Total Net Assets": "30,143,832.29",
+   "Index Level": "274.03"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "43.6049",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-1.40",
    "Total Net Assets": "205,361,278.07",
    "Index Level": "1,121.00"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "192.1642",
-   "Close": "192.12",
-   "Volume": "11,062",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "204,174,434.56",
-   "Index Level": "1,119.59"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "198.6432",
-   "Close": "198.00",
-   "Volume": "2,367",
-   "Premium/Discount": "-0.64",
-   "Total Net Assets": "211,058,452.29",
-   "Index Level": "1,154.27"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "198.8830",
-   "Close": "198.60",
-   "Volume": "3,723",
-   "Premium/Discount": "-0.28",
-   "Total Net Assets": "211,313,195.78",
-   "Index Level": "1,160.42"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "199.6415",
-   "Close": "199.08",
-   "Volume": "3,840",
-   "Premium/Discount": "-0.56",
-   "Total Net Assets": "212,119,111.38",
-   "Index Level": "1,162.33"
   }
  ]
 }

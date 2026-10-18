@@ -2,7 +2,7 @@
  "ticker": "EINC",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4467,
+ "totalRows": 4471,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "118.5844",
+   "Close": "118.67",
+   "Volume": "2,914",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "81,790,058.10",
+   "Index Level": "3,720.70"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "115.2682",
+   "Close": "115.40",
+   "Volume": "1,813",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "79,502,753.66",
+   "Index Level": "3,616.11"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "117.4051",
+   "Close": "117.46",
+   "Volume": "3,512",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "80,976,637.70",
+   "Index Level": "3,682.24"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "118.5766",
+   "Close": "118.71",
+   "Volume": "1,085",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "81,784,645.08",
+   "Index Level": "3,721.13"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "117.4454",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.15",
    "Total Net Assets": "39,991,866.71",
    "Index Level": "1,863.12"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "67.8150",
-   "Close": "67.66",
-   "Volume": "",
-   "Premium/Discount": "-0.15",
-   "Total Net Assets": "39,991,866.71",
-   "Index Level": "1,863.12"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "67.8150",
-   "Close": "67.66",
-   "Volume": "197",
-   "Premium/Discount": "-0.15",
-   "Total Net Assets": "39,991,866.71",
-   "Index Level": "1,863.12"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "67.8594",
-   "Close": "67.80",
-   "Volume": "4,929",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "40,018,071.55",
-   "Index Level": "1,864.43"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "67.7603",
-   "Close": "67.47",
-   "Volume": "1,845",
-   "Premium/Discount": "-0.29",
-   "Total Net Assets": "39,959,597.64",
-   "Index Level": "1,861.86"
   }
  ]
 }

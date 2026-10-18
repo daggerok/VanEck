@@ -2,7 +2,7 @@
  "ticker": "SMOG",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5250,
+ "totalRows": 5254,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "96.7631",
+   "Close": "96.60",
+   "Volume": "",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "143,528,541.18",
+   "Index Level": "2,259.50"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "96.7631",
+   "Close": "96.60",
+   "Volume": "6,627",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "143,528,541.18",
+   "Index Level": "2,259.50"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "97.0487",
+   "Close": "96.87",
+   "Volume": "3,923",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "143,952,138.82",
+   "Index Level": "2,268.08"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "97.3281",
+   "Close": "97.12",
+   "Volume": "4,018",
+   "Premium/Discount": "-0.21",
+   "Total Net Assets": "144,366,585.02",
+   "Index Level": "2,276.54"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "100.0559",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.18",
    "Total Net Assets": "85,423,473.76",
    "Index Level": "1,372.19"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "57.0811",
-   "Close": "57.05",
-   "Volume": "2,588",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "78,960,095.62",
-   "Index Level": "1,274.27"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "57.5997",
-   "Close": "57.37",
-   "Volume": "7,500",
-   "Premium/Discount": "-0.23",
-   "Total Net Assets": "79,677,578.61",
-   "Index Level": "1,284.53"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "56.7140",
-   "Close": "56.75",
-   "Volume": "9,448",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "78,452,373.84",
-   "Index Level": "1,268.06"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "60.2346",
-   "Close": "60.38",
-   "Volume": "10,404",
-   "Premium/Discount": "0.15",
-   "Total Net Assets": "83,322,406.85",
-   "Index Level": "1,346.18"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "3.40%",
  "terValue": 3.4,
  "nav": {
-  "display": "$19.12",
-  "value": 19.12,
-  "asOfDate": "Oct 12 2026"
+  "display": "$19.65",
+  "value": 19.65,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 19.12,
+ "navValue": 19.65,
  "aum": {
-  "display": "$196.89M",
-  "value": 196890953.18,
-  "asOfDate": "Oct 12 2026",
+  "display": "$198.94M",
+  "value": 198935459.21,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 196890953.18,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 198935459.21,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "Jul 12 2011",
  "exchange": "Cboe BZX",
- "closePrice": "$19.16",
- "closePriceValue": 19.16,
+ "closePrice": "$19.70",
+ "closePriceValue": 19.7,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "0.05%",
+  "value": 0.05
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": 0.05,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -956,9 +956,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 12 2026",
-   "ytd": -8.53,
-   "ytdText": "-8.53%",
+   "asOfDate": "Oct 16 2026",
+   "ytd": -5.98,
+   "ytdText": "-5.98%",
    "yr1": -6.77,
    "yr3": 6.32,
    "yr5": -3.33,
@@ -976,7 +976,7 @@
   }
  },
  "metrics": {
-  "ytd": -8.53,
+  "ytd": -5.98,
   "tr1y": -6.77,
   "tr3y": 20.17,
   "tr5y": -15.59,
@@ -991,10 +991,10 @@
   "distributionYieldText": "6.32%",
   "yield12M": 5.55,
   "yield12MText": "5.55%",
-  "secYield": 6.78,
-  "secYieldText": "6.78%",
+  "secYield": 6.69,
+  "secYieldText": "6.69%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-12",
+  "ytdAsOf": "2026-10-16",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1002,11 +1002,11 @@
  "providerCategory": "Municipal Bond",
  "terGross": "1.97%",
  "terGrossValue": 1.97,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
   "totalRows": 38,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -1014,9 +1014,9 @@
   ]
  },
  "history": {
-  "totalRows": 3869,
+  "totalRows": 3873,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/cef-municipal-income-etf-xmpt/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -1026,10 +1026,10 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 196890000,
- "secYield": 6.78,
- "secYieldValue": 6.78,
- "secYieldText": "6.78%",
+ "totalNetAssets": 198940000,
+ "secYield": 6.69,
+ "secYieldValue": 6.69,
+ "secYieldText": "6.69%",
  "indexTicker": "CEFMXTR",
  "indexName": "S-Network Municipal Bond Closed-End Fund Index",
  "categoryPath": "Income > Municipal Bond",
@@ -1068,23 +1068,23 @@
   "grossValue": 1.97
  },
  "marketPrice": {
-  "display": "$19.16",
-  "value": 19.16,
-  "asOfDate": "Oct 12 2026"
+  "display": "$19.70",
+  "value": 19.7,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
   "dividendYield": 6.32,
   "dividendYieldText": "6.32%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.71,
-  "indicatedYieldText": "6.71%",
+  "indicatedYield": 6.53,
+  "indicatedYieldText": "6.53%",
   "distributionYield": 6.32,
   "distributionYieldText": "6.32%",
   "yield12M": 5.55,
   "yield12MText": "5.55%",
   "distributionRate": null,
-  "secYield": 6.78,
-  "secYieldText": "6.78%",
+  "secYield": 6.69,
+  "secYieldText": "6.69%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

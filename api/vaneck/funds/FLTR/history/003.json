@@ -2,7 +2,7 @@
  "ticker": "FLTR",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4248,
+ "totalRows": 4252,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "24.0168",
+   "Close": "23.80",
+   "Volume": "204,945",
+   "Premium/Discount": "-0.22",
+   "Total Net Assets": "450,315,563.19",
+   "Index Level": "1,149.02"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "23.9570",
+   "Close": "23.83",
+   "Volume": "64,644",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "449,193,372.29",
+   "Index Level": "1,146.08"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "23.9326",
+   "Close": "23.92",
+   "Volume": "101,337",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "448,736,665.32",
+   "Index Level": "1,144.42"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "23.8416",
+   "Close": "23.62",
+   "Volume": "62,183",
+   "Premium/Discount": "-0.22",
+   "Total Net Assets": "470,872,210.83",
+   "Index Level": "1,137.21"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "23.7086",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.13",
    "Total Net Assets": "79,155,445.07",
    "Index Level": "1,069.25"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "24.7295",
-   "Close": "24.62",
-   "Volume": "6,983",
-   "Premium/Discount": "-0.11",
-   "Total Net Assets": "79,134,532.01",
-   "Index Level": "1,068.99"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "24.7262",
-   "Close": "24.63",
-   "Volume": "13,952",
-   "Premium/Discount": "-0.10",
-   "Total Net Assets": "79,123,833.69",
-   "Index Level": "1,068.79"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "24.7207",
-   "Close": "24.60",
-   "Volume": "8,938",
-   "Premium/Discount": "-0.12",
-   "Total Net Assets": "79,106,118.40",
-   "Index Level": "1,068.43"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "24.7248",
-   "Close": "24.58",
-   "Volume": "9,680",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "79,119,315.83",
-   "Index Level": "1,068.39"
   }
  ]
 }

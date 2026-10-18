@@ -9,23 +9,23 @@
  "ter": "0.10%",
  "terValue": 0.1,
  "nav": {
-  "display": "$24.19",
-  "value": 24.19,
-  "asOfDate": "Oct 12 2026"
+  "display": "$23.99",
+  "value": 23.99,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 24.19,
+ "navValue": 23.99,
  "aum": {
-  "display": "$241923.53",
-  "value": 241923.53,
-  "asOfDate": "Oct 12 2026",
+  "display": "$239852.96",
+  "value": 239852.96,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 241923.53,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 239852.96,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "Jun 02 2026",
  "exchange": "NASDAQ",
- "closePrice": "$24.20",
- "closePriceValue": 24.2,
+ "closePrice": "$23.98",
+ "closePriceValue": 23.98,
  "premiumDiscount": {
   "display": "0.00%",
   "value": 0
@@ -78,8 +78,8 @@
   "cagr5y": null,
   "cagr10y": null,
   "siAnn": -3.7,
-  "dividendYield": 1.3,
-  "dividendYieldText": "1.30%",
+  "dividendYield": 1.31,
+  "dividendYieldText": "1.31%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
@@ -95,11 +95,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.10%",
  "terGrossValue": 0.1,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
   "totalRows": 85,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/industrials-trusector-etf-trui/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 133,
+  "totalRows": 137,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/industrials-trusector-etf-trui/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 241920,
+ "totalNetAssets": 239850,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -153,16 +153,16 @@
   "grossValue": 0.1
  },
  "marketPrice": {
-  "display": "$24.20",
-  "value": 24.2,
-  "asOfDate": "Oct 12 2026"
+  "display": "$23.98",
+  "value": 23.98,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
-  "dividendYield": 1.3,
-  "dividendYieldText": "1.30%",
+  "dividendYield": 1.31,
+  "dividendYieldText": "1.31%",
   "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
-  "indicatedYield": 1.3,
-  "indicatedYieldText": "1.30%",
+  "indicatedYield": 1.31,
+  "indicatedYieldText": "1.31%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,

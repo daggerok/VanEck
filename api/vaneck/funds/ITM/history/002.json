@@ -2,7 +2,7 @@
  "ticker": "ITM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5101,
+ "totalRows": 5105,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "46.4885",
+   "Close": "46.36",
+   "Volume": "",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "2,024,521,681.64",
+   "Index Level": "158.51"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "46.4885",
+   "Close": "46.36",
+   "Volume": "522,724",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "2,024,521,681.64",
+   "Index Level": "158.51"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "46.5974",
+   "Close": "46.38",
+   "Volume": "322,299",
+   "Premium/Discount": "-0.22",
+   "Total Net Assets": "2,029,267,913.07",
+   "Index Level": "158.88"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "46.7255",
+   "Close": "46.54",
+   "Volume": "256,205",
+   "Premium/Discount": "-0.19",
+   "Total Net Assets": "2,034,845,826.97",
+   "Index Level": "159.30"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "46.8590",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.85",
    "Total Net Assets": "1,626,443,019.65",
    "Index Level": "151.97"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "48.7385",
-   "Close": "47.81",
-   "Volume": "248,727",
-   "Premium/Discount": "-0.93",
-   "Total Net Assets": "1,613,192,619.91",
-   "Index Level": "150.67"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "48.3346",
-   "Close": "47.37",
-   "Volume": "288,205",
-   "Premium/Discount": "-0.96",
-   "Total Net Assets": "1,599,821,083.65",
-   "Index Level": "149.29"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "48.6346",
-   "Close": "47.81",
-   "Volume": "419,409",
-   "Premium/Discount": "-0.82",
-   "Total Net Assets": "1,629,206,463.56",
-   "Index Level": "150.47"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "49.9230",
-   "Close": "49.13",
-   "Volume": "182,883",
-   "Premium/Discount": "-0.80",
-   "Total Net Assets": "1,672,365,054.81",
-   "Index Level": "153.81"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "MOTI",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3188,
+ "totalRows": 3192,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "29.4394",
+   "Close": "29.50",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "222,267,171.63",
+   "Index Level": "1,918.44"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "29.4394",
+   "Close": "29.50",
+   "Volume": "27,346",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "222,267,171.63",
+   "Index Level": "1,918.44"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "29.3025",
+   "Close": "29.44",
+   "Volume": "17,599",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "221,234,061.85",
+   "Index Level": "1,913.73"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "29.0152",
+   "Close": "29.11",
+   "Volume": "8,911",
+   "Premium/Discount": "0.09",
+   "Total Net Assets": "219,064,813.89",
+   "Index Level": "1,900.98"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "29.6322",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "49,775,265.60",
    "Index Level": "1,395.20"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "23.5054",
-   "Close": "23.37",
-   "Volume": "17,409",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "47,010,789.65",
-   "Index Level": "1,339.32"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "24.0379",
-   "Close": "23.84",
-   "Volume": "7,483",
-   "Premium/Discount": "-0.20",
-   "Total Net Assets": "54,085,180.12",
-   "Index Level": "1,359.02"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "23.5327",
-   "Close": "23.32",
-   "Volume": "209,993",
-   "Premium/Discount": "-0.21",
-   "Total Net Assets": "52,948,512.44",
-   "Index Level": "1,356.04"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "24.3524",
-   "Close": "24.61",
-   "Volume": "11,331",
-   "Premium/Discount": "0.26",
-   "Total Net Assets": "54,792,940.68",
-   "Index Level": "1,398.94"
   }
  ]
 }

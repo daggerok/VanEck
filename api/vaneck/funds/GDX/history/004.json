@@ -2,7 +2,7 @@
  "ticker": "GDX",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 7455,
+ "totalRows": 7459,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jul 30 2018",
+   "NAV": "21.2143",
+   "Close": "21.27",
+   "Volume": "19,636,481",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "8,550,458,537.95",
+   "Index Level": "673.89"
+  },
+  {
+   "Date": "Jul 29 2018",
+   "NAV": "21.2328",
+   "Close": "21.23",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "8,509,093,584.81",
+   "Index Level": "675.02"
+  },
+  {
+   "Date": "Jul 28 2018",
+   "NAV": "21.2328",
+   "Close": "21.23",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "8,509,093,584.81",
+   "Index Level": "675.02"
+  },
+  {
+   "Date": "Jul 27 2018",
+   "NAV": "21.2328",
+   "Close": "21.32",
+   "Volume": "23,548,014",
+   "Premium/Discount": "0.09",
+   "Total Net Assets": "8,509,093,584.81",
+   "Index Level": "675.02"
+  },
   {
    "Date": "Jul 26 2018",
    "NAV": "21.3477",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "4,439,739,745.15",
    "Index Level": "452.46"
-  },
-  {
-   "Date": "Nov 03 2015",
-   "NAV": "14.9836",
-   "Close": "14.94",
-   "Volume": "27,602,145",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "4,534,089,056.20",
-   "Index Level": "461.53"
-  },
-  {
-   "Date": "Nov 02 2015",
-   "NAV": "15.0745",
-   "Close": "15.02",
-   "Volume": "37,036,254",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "4,561,584,724.13",
-   "Index Level": "463.71"
-  },
-  {
-   "Date": "Nov 01 2015",
-   "NAV": "14.9762",
-   "Close": "14.96",
-   "Volume": "42,003,165",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "4,540,824,755.04",
-   "Index Level": "461.58"
-  },
-  {
-   "Date": "Oct 31 2015",
-   "NAV": "14.9762",
-   "Close": "14.96",
-   "Volume": "42,003,165",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "4,540,824,755.04",
-   "Index Level": "461.58"
   }
  ]
 }

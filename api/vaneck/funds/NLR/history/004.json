@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 5180,
+ "totalRows": 5184,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "48.4359",
+   "Close": "48.14",
+   "Volume": "366",
+   "Premium/Discount": "-0.30",
+   "Total Net Assets": "39,554,338.39",
+   "Index Level": "1,061.75"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "48.3987",
+   "Close": "48.25",
+   "Volume": "1,424",
+   "Premium/Discount": "-0.15",
+   "Total Net Assets": "39,523,927.88",
+   "Index Level": "1,057.14"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "48.3258",
+   "Close": "48.25",
+   "Volume": "1,618",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "39,464,411.93",
+   "Index Level": "1,056.42"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "47.8396",
+   "Close": "47.97",
+   "Volume": "394",
+   "Premium/Discount": "0.13",
+   "Total Net Assets": "39,067,319.69",
+   "Index Level": "1,048.05"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "47.8857",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.30",
    "Total Net Assets": "89,432,651.29",
    "Index Level": "940.54"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "47.0764",
-   "Close": "46.71",
-   "Volume": "143,509",
-   "Premium/Discount": "-0.37",
-   "Total Net Assets": "91,798,900.99",
-   "Index Level": "945.98"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "47.7819",
-   "Close": "47.58",
-   "Volume": "3,454",
-   "Premium/Discount": "-0.20",
-   "Total Net Assets": "93,174,799.19",
-   "Index Level": "956.60"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "47.3577",
-   "Close": "47.13",
-   "Volume": "10,939",
-   "Premium/Discount": "-0.23",
-   "Total Net Assets": "92,347,544.63",
-   "Index Level": "950.12"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "47.7776",
-   "Close": "47.52",
-   "Volume": "7,093",
-   "Premium/Discount": "-0.26",
-   "Total Net Assets": "93,166,337.24",
-   "Index Level": "957.80"
   }
  ]
 }

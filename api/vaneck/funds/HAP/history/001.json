@@ -2,7 +2,7 @@
  "ticker": "HAP",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4915,
+ "totalRows": 4919,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "75.1451",
+   "Close": "75.17",
+   "Volume": "13,739",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "330,638,474.78",
+   "Index Level": "3,014.57"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "74.4459",
+   "Close": "74.50",
+   "Volume": "26,561",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "327,562,116.57",
+   "Index Level": "2,982.29"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "74.4790",
+   "Close": "74.53",
+   "Volume": "22,623",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "327,707,585.24",
+   "Index Level": "2,987.26"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "75.1355",
+   "Close": "75.20",
+   "Volume": "10,542",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "338,109,800.85",
+   "Index Level": "3,011.19"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "74.5166",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.04",
    "Total Net Assets": "110,893,472.74",
    "Index Level": "1,755.16"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "46.2056",
-   "Close": "46.24",
-   "Volume": "",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "110,893,472.74",
-   "Index Level": "1,755.16"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "46.2056",
-   "Close": "46.24",
-   "Volume": "9,341",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "110,893,472.74",
-   "Index Level": "1,755.16"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "46.1488",
-   "Close": "46.17",
-   "Volume": "8,123",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "110,757,215.55",
-   "Index Level": "1,752.21"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "46.0908",
-   "Close": "46.10",
-   "Volume": "141,159",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "110,617,874.85",
-   "Index Level": "1,753.28"
   }
  ]
 }

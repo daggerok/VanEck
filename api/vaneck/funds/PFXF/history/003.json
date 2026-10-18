@@ -2,7 +2,7 @@
  "ticker": "PFXF",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3939,
+ "totalRows": 3943,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "15.5567",
+   "Close": "15.50",
+   "Volume": "212,866",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "591,155,082.73",
+   "Index Level": "63.91"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "15.8128",
+   "Close": "15.63",
+   "Volume": "317,112",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "603,259,013.59",
+   "Index Level": "64.95"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "15.6793",
+   "Close": "15.68",
+   "Volume": "490,340",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "599,734,124.09",
+   "Index Level": "64.41"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "16.3058",
+   "Close": "16.50",
+   "Volume": "184,756",
+   "Premium/Discount": "0.19",
+   "Total Net Assets": "623,695,888.81",
+   "Index Level": "66.63"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "16.6679",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.11",
    "Total Net Assets": "288,977,156.56",
    "Index Level": "65.52"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "20.1417",
-   "Close": "20.13",
-   "Volume": "135,360",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "290,040,304.54",
-   "Index Level": "65.78"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "20.1153",
-   "Close": "20.16",
-   "Volume": "93,718",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "287,648,391.23",
-   "Index Level": "65.69"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "20.0856",
-   "Close": "20.18",
-   "Volume": "263,777",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "287,224,331.74",
-   "Index Level": "65.58"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "19.9827",
-   "Close": "20.04",
-   "Volume": "151,166",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "285,752,502.74",
-   "Index Level": "65.26"
   }
  ]
 }

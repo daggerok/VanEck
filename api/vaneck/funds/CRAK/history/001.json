@@ -2,7 +2,7 @@
  "ticker": "CRAK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3162,
+ "totalRows": 3166,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "67.2396",
+   "Close": "67.34",
+   "Volume": "686,412",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "810,236,849.40",
+   "Index Level": "7,441.15"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "66.8972",
+   "Close": "67.27",
+   "Volume": "870,623",
+   "Premium/Discount": "0.37",
+   "Total Net Assets": "797,749,107.51",
+   "Index Level": "7,405.41"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "67.9469",
+   "Close": "68.15",
+   "Volume": "983,821",
+   "Premium/Discount": "0.20",
+   "Total Net Assets": "762,703,632.17",
+   "Index Level": "7,532.96"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "67.5500",
+   "Close": "67.94",
+   "Volume": "1,031,339",
+   "Premium/Discount": "0.39",
+   "Total Net Assets": "737,984,012.69",
+   "Index Level": "7,471.55"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "65.6936",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.14",
    "Total Net Assets": "31,642,962.08",
    "Index Level": "3,394.73"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "33.3084",
-   "Close": "33.17",
-   "Volume": "",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "31,642,962.08",
-   "Index Level": "3,394.73"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "33.3084",
-   "Close": "33.17",
-   "Volume": "5,807",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "31,642,962.08",
-   "Index Level": "3,394.73"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "33.2523",
-   "Close": "33.21",
-   "Volume": "2,309",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "31,589,672.67",
-   "Index Level": "3,387.01"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "33.1736",
-   "Close": "33.18",
-   "Volume": "3,013",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "31,514,946.32",
-   "Index Level": "3,388.15"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "XMPT",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3869,
+ "totalRows": 3873,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 07 2022",
+   "NAV": "21.9110",
+   "Close": "21.88",
+   "Volume": "46,569",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "145,707,862.28",
+   "Index Level": "2,418.47"
+  },
+  {
+   "Date": "Dec 06 2022",
+   "NAV": "21.8339",
+   "Close": "21.84",
+   "Volume": "24,815",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "145,195,119.48",
+   "Index Level": "2,409.95"
+  },
+  {
+   "Date": "Dec 05 2022",
+   "NAV": "21.7910",
+   "Close": "21.76",
+   "Volume": "71,408",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "146,544,310.94",
+   "Index Level": "2,405.20"
+  },
+  {
+   "Date": "Dec 02 2022",
+   "NAV": "21.9227",
+   "Close": "21.90",
+   "Volume": "95,155",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "143,593,947.83",
+   "Index Level": "2,419.63"
+  },
   {
    "Date": "Dec 01 2022",
    "NAV": "21.9801",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.06",
    "Total Net Assets": "120,753,992.27",
    "Index Level": "2,195.90"
-  },
-  {
-   "Date": "Dec 18 2018",
-   "NAV": "23.8497",
-   "Close": "23.82",
-   "Volume": "45,956",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "120,441,000.73",
-   "Index Level": "2,190.44"
-  },
-  {
-   "Date": "Dec 17 2018",
-   "NAV": "23.8383",
-   "Close": "23.87",
-   "Volume": "19,823",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "120,383,468.92",
-   "Index Level": "2,189.35"
-  },
-  {
-   "Date": "Dec 14 2018",
-   "NAV": "23.9994",
-   "Close": "23.99",
-   "Volume": "14,797",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "121,197,162.19",
-   "Index Level": "2,204.18"
-  },
-  {
-   "Date": "Dec 13 2018",
-   "NAV": "24.0730",
-   "Close": "24.11",
-   "Volume": "18,088",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "121,568,584.00",
-   "Index Level": "2,210.92"
   }
  ]
 }

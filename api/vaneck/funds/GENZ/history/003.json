@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 6839,
+ "totalRows": 6843,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 25 2021",
+   "NAV": "54.6232",
+   "Close": "54.82",
+   "Volume": "",
+   "Premium/Discount": "0.20",
+   "Total Net Assets": "167,966,287.85",
+   "Index Level": "1,500.04"
+  },
+  {
+   "Date": "Apr 24 2021",
+   "NAV": "54.6232",
+   "Close": "54.82",
+   "Volume": "",
+   "Premium/Discount": "0.20",
+   "Total Net Assets": "167,966,287.85",
+   "Index Level": "1,500.04"
+  },
+  {
+   "Date": "Apr 23 2021",
+   "NAV": "54.6232",
+   "Close": "54.82",
+   "Volume": "23,943",
+   "Premium/Discount": "0.20",
+   "Total Net Assets": "167,966,287.85",
+   "Index Level": "1,500.04"
+  },
+  {
+   "Date": "Apr 22 2021",
+   "NAV": "53.7891",
+   "Close": "53.93",
+   "Volume": "25,035",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "165,401,521.98",
+   "Index Level": "1,481.82"
+  },
   {
    "Date": "Apr 21 2021",
    "NAV": "54.3351",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.07",
    "Total Net Assets": "32,311,804.39",
    "Index Level": "1,173.82"
-  },
-  {
-   "Date": "Jul 30 2018",
-   "NAV": "45.7655",
-   "Close": "45.87",
-   "Volume": "2,394",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "32,035,824.72",
-   "Index Level": "1,166.17"
-  },
-  {
-   "Date": "Jul 29 2018",
-   "NAV": "45.8713",
-   "Close": "45.96",
-   "Volume": "",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "32,109,937.23",
-   "Index Level": "1,170.46"
-  },
-  {
-   "Date": "Jul 28 2018",
-   "NAV": "45.8713",
-   "Close": "45.96",
-   "Volume": "",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "32,109,937.23",
-   "Index Level": "1,170.49"
-  },
-  {
-   "Date": "Jul 27 2018",
-   "NAV": "45.8713",
-   "Close": "45.96",
-   "Volume": "4,147",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "32,109,937.23",
-   "Index Level": "1,170.53"
   }
  ]
 }

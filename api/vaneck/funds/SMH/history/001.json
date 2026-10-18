@@ -2,7 +2,7 @@
  "ticker": "SMH",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4081,
+ "totalRows": 4085,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "539.7465",
+   "Close": "539.79",
+   "Volume": "18,316,823",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "65,682,763,092.88",
+   "Index Level": "22,111.51"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "558.7089",
+   "Close": "558.84",
+   "Volume": "14,855,347",
+   "Premium/Discount": "0.13",
+   "Total Net Assets": "67,710,982,497.81",
+   "Index Level": "22,888.59"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "564.9725",
+   "Close": "564.74",
+   "Volume": "11,671,614",
+   "Premium/Discount": "-0.23",
+   "Total Net Assets": "68,978,547,131.54",
+   "Index Level": "23,145.07"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "588.2784",
+   "Close": "588.12",
+   "Volume": "8,007,327",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "71,206,314,938.25",
+   "Index Level": "24,100.04"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "590.5183",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.07",
    "Total Net Assets": "12,796,846,714.47",
    "Index Level": "7,570.56"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "187.2475",
-   "Close": "187.18",
-   "Volume": "",
-   "Premium/Discount": "-0.07",
-   "Total Net Assets": "12,796,846,714.47",
-   "Index Level": "7,570.56"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "187.2475",
-   "Close": "187.18",
-   "Volume": "12,732,315",
-   "Premium/Discount": "-0.07",
-   "Total Net Assets": "12,796,846,714.47",
-   "Index Level": "7,570.56"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "180.3298",
-   "Close": "180.31",
-   "Volume": "11,963,064",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "12,215,881,036.99",
-   "Index Level": "7,290.77"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "174.6388",
-   "Close": "174.64",
-   "Volume": "6,751,117",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "11,847,822,464.28",
-   "Index Level": "7,060.57"
   }
  ]
 }

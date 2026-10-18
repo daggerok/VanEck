@@ -9,28 +9,28 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "$36.72",
-  "value": 36.72,
-  "asOfDate": "Oct 12 2026"
+  "display": "$35.15",
+  "value": 35.15,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 36.72,
+ "navValue": 35.15,
  "aum": {
-  "display": "$113.83M",
-  "value": 113833822.23,
-  "asOfDate": "Oct 12 2026",
+  "display": "$108.98M",
+  "value": 108976321.24,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 113833822.23,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 108976321.24,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "Jun 25 2024",
  "exchange": "Cboe BZX",
- "closePrice": "$36.79",
- "closePriceValue": 36.79,
+ "closePrice": "$35.22",
+ "closePriceValue": 35.22,
  "premiumDiscount": {
-  "display": "0.07%",
-  "value": 0.07
+  "display": "0.06%",
+  "value": 0.06
  },
- "premiumDiscountValue": 0.07,
+ "premiumDiscountValue": 0.06,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -45,7 +45,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 16 2026",
+   "ytd": -18.97,
+   "ytdText": "-18.97%",
    "yr1": -35.43,
    "yr3": null,
    "yr5": null,
@@ -63,7 +65,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -18.97,
   "tr1y": -35.43,
   "tr3y": null,
   "tr5y": null,
@@ -81,7 +83,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": null,
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-16",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -89,11 +91,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +103,16 @@
   ]
  },
  "history": {
-  "totalRows": 840,
+  "totalRows": 844,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 113830000,
+ "totalNetAssets": 108980000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -147,9 +149,9 @@
   "grossValue": 0.2
  },
  "marketPrice": {
-  "display": "$36.79",
-  "value": 36.79,
-  "asOfDate": "Oct 12 2026"
+  "display": "$35.22",
+  "value": 35.22,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
   "dividendYield": null,

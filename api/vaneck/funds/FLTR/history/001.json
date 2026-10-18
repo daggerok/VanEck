@@ -2,7 +2,7 @@
  "ticker": "FLTR",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4248,
+ "totalRows": 4252,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "25.5351",
+   "Close": "25.55",
+   "Volume": "2,371,931",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "3,549,384,756.68",
+   "Index Level": "1,558.35"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "25.5340",
+   "Close": "25.56",
+   "Volume": "2,044,862",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "3,541,563,767.65",
+   "Index Level": "1,558.27"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "25.5318",
+   "Close": "25.55",
+   "Volume": "1,262,153",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "3,541,266,095.59",
+   "Index Level": "1,558.15"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "25.5297",
+   "Close": "25.54",
+   "Volume": "1,687,175",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "3,540,969,804.88",
+   "Index Level": "1,558.02"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "25.5262",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.03",
    "Total Net Assets": "1,297,823,883.65",
    "Index Level": "1,336.48"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "25.2741",
-   "Close": "25.30",
-   "Volume": "",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "1,297,823,883.65",
-   "Index Level": "1,336.48"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "25.2741",
-   "Close": "25.30",
-   "Volume": "351,559",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "1,297,823,883.65",
-   "Index Level": "1,336.48"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "25.2663",
-   "Close": "25.29",
-   "Volume": "279,059",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "1,297,422,692.26",
-   "Index Level": "1,336.03"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "25.2503",
-   "Close": "25.26",
-   "Volume": "493,855",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "1,296,600,871.88",
-   "Index Level": "1,335.24"
   }
  ]
 }

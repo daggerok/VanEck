@@ -2,7 +2,7 @@
  "ticker": "MOTI",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3188,
+ "totalRows": 3192,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "23.5054",
+   "Close": "23.37",
+   "Volume": "17,409",
+   "Premium/Discount": "-0.14",
+   "Total Net Assets": "47,010,789.65",
+   "Index Level": "1,339.32"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "24.0379",
+   "Close": "23.84",
+   "Volume": "7,483",
+   "Premium/Discount": "-0.20",
+   "Total Net Assets": "54,085,180.12",
+   "Index Level": "1,359.02"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "23.5327",
+   "Close": "23.32",
+   "Volume": "209,993",
+   "Premium/Discount": "-0.21",
+   "Total Net Assets": "52,948,512.44",
+   "Index Level": "1,356.04"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "24.3524",
+   "Close": "24.61",
+   "Volume": "11,331",
+   "Premium/Discount": "0.26",
+   "Total Net Assets": "54,792,940.68",
+   "Index Level": "1,398.94"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "24.5751",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "11,152,432.89",
    "Index Level": "1,340.43"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "27.8931",
-   "Close": "28.00",
-   "Volume": "5,652",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "11,157,241.27",
-   "Index Level": "1,339.70"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "27.8000",
-   "Close": "27.95",
-   "Volume": "3,310",
-   "Premium/Discount": "0.15",
-   "Total Net Assets": "11,120,010.06",
-   "Index Level": "1,333.48"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "27.2665",
-   "Close": "27.14",
-   "Volume": "1,223",
-   "Premium/Discount": "-0.12",
-   "Total Net Assets": "10,906,606.65",
-   "Index Level": "1,306.22"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "27.0830",
-   "Close": "27.14",
-   "Volume": "1,223",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "10,833,181.91",
-   "Index Level": "1,304.86"
   }
  ]
 }

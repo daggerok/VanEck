@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4011,
+ "totalRows": 4015,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "23.6726",
+   "Close": "23.65",
+   "Volume": "11,678",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "127,831,820.98",
+   "Index Level": "361.21"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "23.6203",
+   "Close": "23.63",
+   "Volume": "10,964",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "127,549,675.88",
+   "Index Level": "360.49"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "23.5536",
+   "Close": "23.65",
+   "Volume": "14,535",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "127,189,533.89",
+   "Index Level": "359.42"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "23.5477",
+   "Close": "23.58",
+   "Volume": "18,641",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "127,157,339.76",
+   "Index Level": "359.43"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "23.4621",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.42",
    "Total Net Assets": "19,699,848.13",
    "Index Level": "292.25"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "24.5487",
-   "Close": "25.12",
-   "Volume": "80,074",
-   "Premium/Discount": "0.57",
-   "Total Net Assets": "19,638,969.36",
-   "Index Level": "291.20"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "24.6167",
-   "Close": "25.16",
-   "Volume": "2,822",
-   "Premium/Discount": "0.54",
-   "Total Net Assets": "19,693,389.01",
-   "Index Level": "292.05"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "24.5611",
-   "Close": "25.08",
-   "Volume": "38,051",
-   "Premium/Discount": "0.52",
-   "Total Net Assets": "19,648,841.75",
-   "Index Level": "291.34"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "24.5582",
-   "Close": "25.40",
-   "Volume": "3,275",
-   "Premium/Discount": "0.84",
-   "Total Net Assets": "19,646,540.63",
-   "Index Level": "291.03"
   }
  ]
 }

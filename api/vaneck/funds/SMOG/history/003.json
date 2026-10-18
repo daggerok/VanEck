@@ -2,7 +2,7 @@
  "ticker": "SMOG",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 5250,
+ "totalRows": 5254,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "57.0811",
+   "Close": "57.05",
+   "Volume": "2,588",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "78,960,095.62",
+   "Index Level": "1,274.27"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "57.5997",
+   "Close": "57.37",
+   "Volume": "7,500",
+   "Premium/Discount": "-0.23",
+   "Total Net Assets": "79,677,578.61",
+   "Index Level": "1,284.53"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "56.7140",
+   "Close": "56.75",
+   "Volume": "9,448",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "78,452,373.84",
+   "Index Level": "1,268.06"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "60.2346",
+   "Close": "60.38",
+   "Volume": "10,404",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "83,322,406.85",
+   "Index Level": "1,346.18"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "60.3479",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.32",
    "Total Net Assets": "93,483,022.85",
    "Index Level": "1,109.16"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "52.7183",
-   "Close": "52.60",
-   "Volume": "2,315",
-   "Premium/Discount": "-0.12",
-   "Total Net Assets": "94,012,406.22",
-   "Index Level": "1,114.86"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "52.8204",
-   "Close": "52.79",
-   "Volume": "3,569",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "94,194,493.80",
-   "Index Level": "1,115.82"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "51.9564",
-   "Close": "51.76",
-   "Volume": "5,948",
-   "Premium/Discount": "-0.19",
-   "Total Net Assets": "92,653,680.19",
-   "Index Level": "1,096.29"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "51.6079",
-   "Close": "51.54",
-   "Volume": "4,346",
-   "Premium/Discount": "-0.07",
-   "Total Net Assets": "92,032,238.36",
-   "Index Level": "1,092.60"
   }
  ]
 }

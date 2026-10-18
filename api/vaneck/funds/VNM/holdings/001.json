@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 1,
  "pageSize": 250,
- "totalRows": 62,
+ "totalRows": 63,
  "headers": [
   "Name",
   "Ticker",
@@ -15,24 +15,24 @@
  ],
  "rows": [
   {
-   "Name": "Vinhomes Jsc",
-   "Ticker": "VHM VN",
-   "Identifier": "BBG00KMYS8P1",
-   "Shares Held": "14,371,134",
-   "Asset Category": "Stock",
-   "Market Value": "$36,639,401.87",
-   "Notional Value": "",
-   "Weight": "7.78%"
-  },
-  {
    "Name": "Vingroup Jsc",
    "Ticker": "VIC VN",
    "Identifier": "BBG000TD3TC9",
    "Shares Held": "4,182,998",
    "Asset Category": "Stock",
-   "Market Value": "$36,470,694.23",
+   "Market Value": "$35,381,914.37",
    "Notional Value": "",
-   "Weight": "7.75%"
+   "Weight": "7.63%"
+  },
+  {
+   "Name": "Vinhomes Jsc",
+   "Ticker": "VHM VN",
+   "Identifier": "BBG00KMYS8P1",
+   "Shares Held": "14,371,134",
+   "Asset Category": "Stock",
+   "Market Value": "$32,848,384.87",
+   "Notional Value": "",
+   "Weight": "7.09%"
   },
   {
    "Name": "Masan Group Corp",
@@ -40,9 +40,9 @@
    "Identifier": "BBG000PSPMR5",
    "Shares Held": "10,986,176",
    "Asset Category": "Stock",
-   "Market Value": "$31,502,181.05",
+   "Market Value": "$29,995,615.14",
    "Notional Value": "",
-   "Weight": "6.69%"
+   "Weight": "6.47%"
   },
   {
    "Name": "Masan Consumer Corp",
@@ -50,9 +50,9 @@
    "Identifier": "BBG001MJ8MC1",
    "Shares Held": "5,256,800",
    "Asset Category": "Stock",
-   "Market Value": "$29,038,977.35",
+   "Market Value": "$28,489,734.30",
    "Notional Value": "",
-   "Weight": "6.17%"
+   "Weight": "6.15%"
   },
   {
    "Name": "Vietnam Dairy Products Jsc",
@@ -60,19 +60,9 @@
    "Identifier": "BBG000BF6N60",
    "Shares Held": "11,385,441",
    "Asset Category": "Stock",
-   "Market Value": "$25,390,027.06",
+   "Market Value": "$25,219,147.95",
    "Notional Value": "",
-   "Weight": "5.39%"
-  },
-  {
-   "Name": "Bank For Foreign Trade Of Vietnam Jsc",
-   "Ticker": "VCB VN",
-   "Identifier": "BBG000BM8HF6",
-   "Shares Held": "10,837,101",
-   "Asset Category": "Stock",
-   "Market Value": "$23,742,332.27",
-   "Notional Value": "",
-   "Weight": "5.04%"
+   "Weight": "5.44%"
   },
   {
    "Name": "Hoa Phat Group Jsc",
@@ -80,9 +70,19 @@
    "Identifier": "BBG000TX8GM7",
    "Shares Held": "29,566,998",
    "Asset Category": "Stock",
-   "Market Value": "$22,970,285.78",
+   "Market Value": "$23,773,483.13",
    "Notional Value": "",
-   "Weight": "4.88%"
+   "Weight": "5.13%"
+  },
+  {
+   "Name": "Bank For Foreign Trade Of Vietnam Jsc",
+   "Ticker": "VCB VN",
+   "Identifier": "BBG000BM8HF6",
+   "Shares Held": "10,837,101",
+   "Asset Category": "Stock",
+   "Market Value": "$23,728,329.82",
+   "Notional Value": "",
+   "Weight": "5.12%"
   },
   {
    "Name": "Vps Securities Jsc",
@@ -90,9 +90,9 @@
    "Identifier": "BBG008KG3LL1",
    "Shares Held": "16,738,100",
    "Asset Category": "Stock",
-   "Market Value": "$17,135,411.44",
+   "Market Value": "$18,073,078.14",
    "Notional Value": "",
-   "Weight": "3.64%"
+   "Weight": "3.90%"
   },
   {
    "Name": "Ssi Securities Corp",
@@ -100,9 +100,9 @@
    "Identifier": "BBG000BN4DR4",
    "Shares Held": "22,577,991",
    "Asset Category": "Stock",
-   "Market Value": "$16,592,932.94",
+   "Market Value": "$16,882,930.57",
    "Notional Value": "",
-   "Weight": "3.52%"
+   "Weight": "3.64%"
   },
   {
    "Name": "Vix Securities Jsc",
@@ -110,9 +110,9 @@
    "Identifier": "BBG000Q3LMQ4",
    "Shares Held": "29,364,779",
    "Asset Category": "Stock",
-   "Market Value": "$13,237,199.37",
+   "Market Value": "$13,406,294.19",
    "Notional Value": "",
-   "Weight": "2.81%"
+   "Weight": "2.89%"
   },
   {
    "Name": "Vinpearl Jsc",
@@ -120,19 +120,9 @@
    "Identifier": "BBG009LJFB04",
    "Shares Held": "4,186,500",
    "Asset Category": "Stock",
-   "Market Value": "$13,069,665.30",
+   "Market Value": "$12,490,126.88",
    "Notional Value": "",
-   "Weight": "2.78%"
-  },
-  {
-   "Name": "Saigon Thuong Tin Commercial Jsb",
-   "Ticker": "STB VN",
-   "Identifier": "BBG000D7H3V0",
-   "Shares Held": "4,646,000",
-   "Asset Category": "Stock",
-   "Market Value": "$12,082,676.78",
-   "Notional Value": "",
-   "Weight": "2.57%"
+   "Weight": "2.70%"
   },
   {
    "Name": "Vietjet Aviation Jsc",
@@ -140,9 +130,9 @@
    "Identifier": "BBG000QBJXH5",
    "Shares Held": "2,393,662",
    "Asset Category": "Stock",
-   "Market Value": "$11,933,584.84",
+   "Market Value": "$11,793,870.76",
    "Notional Value": "",
-   "Weight": "2.53%"
+   "Weight": "2.54%"
   },
   {
    "Name": "Fpt Corp",
@@ -150,7 +140,17 @@
    "Identifier": "BBG000PMZJZ5",
    "Shares Held": "5,136,000",
    "Asset Category": "Stock",
-   "Market Value": "$11,494,386.34",
+   "Market Value": "$11,543,911.25",
+   "Notional Value": "",
+   "Weight": "2.49%"
+  },
+  {
+   "Name": "Saigon Thuong Tin Commercial Jsb",
+   "Ticker": "STB VN",
+   "Identifier": "BBG000D7H3V0",
+   "Shares Held": "4,646,000",
+   "Asset Category": "Stock",
+   "Market Value": "$11,295,319.43",
    "Notional Value": "",
    "Weight": "2.44%"
   },
@@ -160,9 +160,9 @@
    "Identifier": "BBG004MP70P6",
    "Shares Held": "11,494,622",
    "Asset Category": "Stock",
-   "Market Value": "$10,289,270.71",
+   "Market Value": "$10,079,902.15",
    "Notional Value": "",
-   "Weight": "2.19%"
+   "Weight": "2.17%"
   },
   {
    "Name": "Techcom Securities Jsc",
@@ -170,9 +170,9 @@
    "Identifier": "BBG00YPQWJB1",
    "Shares Held": "8,636,580",
    "Asset Category": "Stock",
-   "Market Value": "$9,033,214.69",
+   "Market Value": "$9,246,820.27",
    "Notional Value": "",
-   "Weight": "1.92%"
+   "Weight": "2.00%"
   },
   {
    "Name": "Vietcap Securities Jsc",
@@ -180,9 +180,9 @@
    "Identifier": "BBG0073XTVS8",
    "Shares Held": "12,403,687",
    "Asset Category": "Stock",
-   "Market Value": "$8,896,208.92",
+   "Market Value": "$9,078,691.04",
    "Notional Value": "",
-   "Weight": "1.89%"
+   "Weight": "1.96%"
   },
   {
    "Name": "Southeast Asia Commercial Joint Stock B",
@@ -190,9 +190,9 @@
    "Identifier": "BBG009CXDMM7",
    "Shares Held": "12,897,400",
    "Asset Category": "Stock",
-   "Market Value": "$8,372,022.72",
+   "Market Value": "$7,925,971.48",
    "Notional Value": "",
-   "Weight": "1.78%"
+   "Weight": "1.71%"
   },
   {
    "Name": "Vndirect Securities Corp",
@@ -200,9 +200,9 @@
    "Identifier": "BBG000QK20H5",
    "Shares Held": "14,610,825",
    "Asset Category": "Stock",
-   "Market Value": "$7,455,740.56",
+   "Market Value": "$7,510,471.87",
    "Notional Value": "",
-   "Weight": "1.58%"
+   "Weight": "1.62%"
   },
   {
    "Name": "Saigon - Hanoi Commercial Joint Stock B",
@@ -210,9 +210,9 @@
    "Identifier": "BBG000G88YK9",
    "Shares Held": "18,020,131",
    "Asset Category": "Stock",
-   "Market Value": "$6,963,857.03",
+   "Market Value": "$7,259,434.53",
    "Notional Value": "",
-   "Weight": "1.48%"
+   "Weight": "1.57%"
   },
   {
    "Name": "Gelex Group Jsc",
@@ -220,9 +220,9 @@
    "Identifier": "BBG00B8G4S87",
    "Shares Held": "7,467,600",
    "Asset Category": "Stock",
-   "Market Value": "$6,419,527.78",
+   "Market Value": "$6,482,001.26",
    "Notional Value": "",
-   "Weight": "1.36%"
+   "Weight": "1.40%"
   },
   {
    "Name": "Vietnam Maritime Commercial Jsb",
@@ -230,9 +230,9 @@
    "Identifier": "BBG004LNP3V9",
    "Shares Held": "11,169,040",
    "Asset Category": "Stock",
-   "Market Value": "$6,304,822.83",
+   "Market Value": "$6,335,846.06",
    "Notional Value": "",
-   "Weight": "1.34%"
+   "Weight": "1.37%"
   },
   {
    "Name": "No Va Land Investment Group Corp",
@@ -240,19 +240,9 @@
    "Identifier": "BBG003RR1FD5",
    "Shares Held": "13,919,727",
    "Asset Category": "Stock",
-   "Market Value": "$5,884,189.53",
+   "Market Value": "$5,771,128.61",
    "Notional Value": "",
    "Weight": "1.25%"
-  },
-  {
-   "Name": "Gelex Electric Equipment Jsc",
-   "Ticker": "GEE VN",
-   "Identifier": "BBG015PZHH97",
-   "Shares Held": "1,993,100",
-   "Asset Category": "Stock",
-   "Market Value": "$5,429,216.41",
-   "Notional Value": "",
-   "Weight": "1.15%"
   },
   {
    "Name": "Thanh Thanh Cong - Bien Hoa Jsc",
@@ -260,9 +250,9 @@
    "Identifier": "BBG000DWVGH6",
    "Shares Held": "5,995,471",
    "Asset Category": "Stock",
-   "Market Value": "$5,293,323.76",
+   "Market Value": "$5,248,615.09",
    "Notional Value": "",
-   "Weight": "1.12%"
+   "Weight": "1.13%"
   },
   {
    "Name": "Kinh Bac City Development Share Holding",
@@ -270,19 +260,19 @@
    "Identifier": "BBG000V13PL0",
    "Shares Held": "5,129,700",
    "Asset Category": "Stock",
-   "Market Value": "$5,057,737.63",
+   "Market Value": "$5,121,471.77",
    "Notional Value": "",
-   "Weight": "1.07%"
+   "Weight": "1.11%"
   },
   {
-   "Name": "Hagl Jsc",
-   "Ticker": "HAG VN",
-   "Identifier": "BBG000GCXWG1",
-   "Shares Held": "7,725,700",
+   "Name": "Gelex Electric Equipment Jsc",
+   "Ticker": "GEE VN",
+   "Identifier": "BBG015PZHH97",
+   "Shares Held": "1,993,100",
    "Asset Category": "Stock",
-   "Market Value": "$4,361,197.26",
+   "Market Value": "$5,056,523.13",
    "Notional Value": "",
-   "Weight": "0.93%"
+   "Weight": "1.09%"
   },
   {
    "Name": "Vietnam Export Import Commercial Jsb",
@@ -290,9 +280,9 @@
    "Identifier": "BBG000DB3KG5",
    "Shares Held": "7,006,229",
    "Asset Category": "Stock",
-   "Market Value": "$4,356,603.27",
+   "Market Value": "$4,463,089.76",
    "Notional Value": "",
-   "Weight": "0.93%"
+   "Weight": "0.96%"
   },
   {
    "Name": "Vp Bank Securities Ltd Co",
@@ -300,9 +290,19 @@
    "Identifier": "BBG00CFY25J8",
    "Shares Held": "4,863,800",
    "Asset Category": "Stock",
-   "Market Value": "$4,331,054.82",
+   "Market Value": "$4,346,117.45",
    "Notional Value": "",
-   "Weight": "0.92%"
+   "Weight": "0.94%"
+  },
+  {
+   "Name": "Hagl Jsc",
+   "Ticker": "HAG VN",
+   "Identifier": "BBG000GCXWG1",
+   "Shares Held": "7,725,700",
+   "Asset Category": "Stock",
+   "Market Value": "$4,336,458.13",
+   "Notional Value": "",
+   "Weight": "0.94%"
   },
   {
    "Name": "Petrovietnam Power Corp",
@@ -310,29 +310,9 @@
    "Identifier": "BBG002NF5FT6",
    "Shares Held": "7,958,047",
    "Asset Category": "Stock",
-   "Market Value": "$3,830,728.20",
+   "Market Value": "$3,761,510.97",
    "Notional Value": "",
    "Weight": "0.81%"
-  },
-  {
-   "Name": "Van Phu - Invest Investment Jsc",
-   "Ticker": "VPI VN",
-   "Identifier": "BBG00JC6HXT9",
-   "Shares Held": "1,780,507",
-   "Asset Category": "Stock",
-   "Market Value": "$3,818,173.12",
-   "Notional Value": "",
-   "Weight": "0.81%"
-  },
-  {
-   "Name": "Bao Viet Holdings",
-   "Ticker": "BVH VN",
-   "Identifier": "BBG000N1D2L9",
-   "Shares Held": "1,252,396",
-   "Asset Category": "Stock",
-   "Market Value": "$3,690,763.86",
-   "Notional Value": "",
-   "Weight": "0.78%"
   },
   {
    "Name": "Nam A Commercial Jsb",
@@ -340,9 +320,29 @@
    "Identifier": "BBG00N6NJMG6",
    "Shares Held": "7,744,200",
    "Asset Category": "Stock",
-   "Market Value": "$3,637,399.89",
+   "Market Value": "$3,623,562.09",
    "Notional Value": "",
-   "Weight": "0.77%"
+   "Weight": "0.78%"
+  },
+  {
+   "Name": "Bao Viet Holdings",
+   "Ticker": "BVH VN",
+   "Identifier": "BBG000N1D2L9",
+   "Shares Held": "1,252,396",
+   "Asset Category": "Stock",
+   "Market Value": "$3,464,590.55",
+   "Notional Value": "",
+   "Weight": "0.75%"
+  },
+  {
+   "Name": "Van Phu - Invest Investment Jsc",
+   "Ticker": "VPI VN",
+   "Identifier": "BBG00JC6HXT9",
+   "Shares Held": "1,780,507",
+   "Asset Category": "Stock",
+   "Market Value": "$3,399,568.89",
+   "Notional Value": "",
+   "Weight": "0.73%"
   },
   {
    "Name": "Petrovietnam Drilling & Well Services J",
@@ -350,9 +350,9 @@
    "Identifier": "BBG000QFV9X7",
    "Shares Held": "4,933,967",
    "Asset Category": "Stock",
-   "Market Value": "$3,463,585.35",
+   "Market Value": "$3,367,377.33",
    "Notional Value": "",
-   "Weight": "0.74%"
+   "Weight": "0.73%"
   },
   {
    "Name": "Petrovietnam Technical Services Corp",
@@ -360,9 +360,9 @@
    "Identifier": "BBG000TFTNF6",
    "Shares Held": "2,626,688",
    "Asset Category": "Stock",
-   "Market Value": "$3,439,549.83",
+   "Market Value": "$3,205,815.96",
    "Notional Value": "",
-   "Weight": "0.73%"
+   "Weight": "0.69%"
   },
   {
    "Name": "Tasco Jsc",
@@ -370,7 +370,7 @@
    "Identifier": "BBG000VGW3Y0",
    "Shares Held": "6,512,400",
    "Asset Category": "Stock",
-   "Market Value": "$3,120,194.74",
+   "Market Value": "$3,070,818.23",
    "Notional Value": "",
    "Weight": "0.66%"
   },
@@ -380,19 +380,9 @@
    "Identifier": "BBG003QTZ0W7",
    "Shares Held": "2,215,932",
    "Asset Category": "Stock",
-   "Market Value": "$2,894,359.28",
+   "Market Value": "$2,813,068.50",
    "Notional Value": "",
    "Weight": "0.61%"
-  },
-  {
-   "Name": "Sai Gon Vrg Investment Corp",
-   "Ticker": "SIP VN",
-   "Identifier": "BBG003SZSNJ4",
-   "Shares Held": "1,476,620",
-   "Asset Category": "Stock",
-   "Market Value": "$2,819,630.71",
-   "Notional Value": "",
-   "Weight": "0.60%"
   },
   {
    "Name": "Saigon Beer Alcohol Beverage Corp",
@@ -400,7 +390,17 @@
    "Identifier": "BBG000V9NNW4",
    "Shares Held": "1,663,000",
    "Asset Category": "Stock",
-   "Market Value": "$2,756,222.02",
+   "Market Value": "$2,771,076.70",
+   "Notional Value": "",
+   "Weight": "0.60%"
+  },
+  {
+   "Name": "Sai Gon Vrg Investment Corp",
+   "Ticker": "SIP VN",
+   "Identifier": "BBG003SZSNJ4",
+   "Shares Held": "1,476,620",
+   "Asset Category": "Stock",
+   "Market Value": "$2,748,823.56",
    "Notional Value": "",
    "Weight": "0.59%"
   },
@@ -410,9 +410,9 @@
    "Identifier": "BBG000LNDM11",
    "Shares Held": "1,362,736",
    "Asset Category": "Stock",
-   "Market Value": "$2,659,022.76",
+   "Market Value": "$2,665,111.95",
    "Notional Value": "",
-   "Weight": "0.56%"
+   "Weight": "0.58%"
   },
   {
    "Name": "Baf Viet Nam Agriculture Jsc",
@@ -420,19 +420,9 @@
    "Identifier": "BBG013T7PJ15",
    "Shares Held": "2,176,460",
    "Asset Category": "Stock",
-   "Market Value": "$2,618,898.50",
+   "Market Value": "$2,611,849.83",
    "Notional Value": "",
    "Weight": "0.56%"
-  },
-  {
-   "Name": "Petrovietnam Fertilizer & Chemicals Jsc",
-   "Ticker": "DPM VN",
-   "Identifier": "BBG000TSXTH8",
-   "Shares Held": "2,997,686",
-   "Asset Category": "Stock",
-   "Market Value": "$2,536,583.73",
-   "Notional Value": "",
-   "Weight": "0.54%"
   },
   {
    "Name": "Vietnam Airlines Jsc",
@@ -440,27 +430,27 @@
    "Identifier": "BBG000FWLXH8",
    "Shares Held": "3,228,000",
    "Asset Category": "Stock",
-   "Market Value": "$2,528,663.08",
+   "Market Value": "$2,554,529.23",
    "Notional Value": "",
-   "Weight": "0.54%"
+   "Weight": "0.55%"
   },
   {
-   "Name": "Idico Corp Jsc",
-   "Ticker": "IDC VN",
-   "Identifier": "BBG0055XHM94",
-   "Shares Held": "1,840,687",
+   "Name": "Vietnam Construction And Import-Export",
+   "Ticker": "VCG VN",
+   "Identifier": "BBG000BLCJC2",
+   "Shares Held": "4,256,276",
    "Asset Category": "Stock",
-   "Market Value": "$2,524,801.53",
+   "Market Value": "$2,477,410.74",
    "Notional Value": "",
-   "Weight": "0.54%"
+   "Weight": "0.53%"
   },
   {
-   "Name": "Vinh Hoan Corp",
-   "Ticker": "VHC VN",
-   "Identifier": "BBG000V0W6M1",
-   "Shares Held": "1,222,260",
+   "Name": "Petrovietnam Fertilizer & Chemicals Jsc",
+   "Ticker": "DPM VN",
+   "Identifier": "BBG000TSXTH8",
+   "Shares Held": "2,997,686",
    "Asset Category": "Stock",
-   "Market Value": "$2,475,833.17",
+   "Market Value": "$2,456,264.96",
    "Notional Value": "",
    "Weight": "0.53%"
   },
@@ -470,17 +460,57 @@
    "Identifier": "BBG000BG7X29",
    "Shares Held": "5,565,262",
    "Asset Category": "Stock",
-   "Market Value": "$2,432,885.28",
+   "Market Value": "$2,436,704.98",
+   "Notional Value": "",
+   "Weight": "0.53%"
+  },
+  {
+   "Name": "Vinh Hoan Corp",
+   "Ticker": "VHC VN",
+   "Identifier": "BBG000V0W6M1",
+   "Shares Held": "1,222,260",
+   "Asset Category": "Stock",
+   "Market Value": "$2,400,344.27",
    "Notional Value": "",
    "Weight": "0.52%"
   },
   {
-   "Name": "Vietnam Construction And Import-Export",
-   "Ticker": "VCG VN",
-   "Identifier": "BBG000BLCJC2",
-   "Shares Held": "4,256,276",
+   "Name": "Idico Corp Jsc",
+   "Ticker": "IDC VN",
+   "Identifier": "BBG0055XHM94",
+   "Shares Held": "1,840,687",
    "Asset Category": "Stock",
-   "Market Value": "$2,246,244.73",
+   "Market Value": "$2,397,524.52",
+   "Notional Value": "",
+   "Weight": "0.52%"
+  },
+  {
+   "Name": "Hoang Huy Investment Financial Services",
+   "Ticker": "TCH VN",
+   "Identifier": "BBG00DVPC837",
+   "Shares Held": "5,335,470",
+   "Asset Category": "Stock",
+   "Market Value": "$2,297,687.03",
+   "Notional Value": "",
+   "Weight": "0.50%"
+  },
+  {
+   "Name": "Khang Dien House Trading And Investment",
+   "Ticker": "KDH VN",
+   "Identifier": "BBG000Q7Z3F4",
+   "Shares Held": "4,162,149",
+   "Asset Category": "Stock",
+   "Market Value": "$2,202,591.01",
+   "Notional Value": "",
+   "Weight": "0.48%"
+  },
+  {
+   "Name": "Sai Gon-Ha Noi Securities Jsc",
+   "Ticker": "SHS VN",
+   "Identifier": "BBG000JP1G79",
+   "Shares Held": "4,666,624",
+   "Asset Category": "Stock",
+   "Market Value": "$2,201,820.92",
    "Notional Value": "",
    "Weight": "0.48%"
   },
@@ -490,39 +520,9 @@
    "Identifier": "BBG008D1PSN1",
    "Shares Held": "1,648,100",
    "Asset Category": "Stock",
-   "Market Value": "$2,219,245.20",
+   "Market Value": "$2,159,416.77",
    "Notional Value": "",
    "Weight": "0.47%"
-  },
-  {
-   "Name": "Hoang Huy Investment Financial Services",
-   "Ticker": "TCH VN",
-   "Identifier": "BBG00DVPC837",
-   "Shares Held": "5,335,470",
-   "Asset Category": "Stock",
-   "Market Value": "$2,217,978.70",
-   "Notional Value": "",
-   "Weight": "0.47%"
-  },
-  {
-   "Name": "Khang Dien House Trading And Investment",
-   "Ticker": "KDH VN",
-   "Identifier": "BBG000Q7Z3F4",
-   "Shares Held": "4,162,149",
-   "Asset Category": "Stock",
-   "Market Value": "$2,156,143.00",
-   "Notional Value": "",
-   "Weight": "0.46%"
-  },
-  {
-   "Name": "Sai Gon-Ha Noi Securities Jsc",
-   "Ticker": "SHS VN",
-   "Identifier": "BBG000JP1G79",
-   "Shares Held": "4,666,624",
-   "Asset Category": "Stock",
-   "Market Value": "$2,107,269.43",
-   "Notional Value": "",
-   "Weight": "0.45%"
   },
   {
    "Name": "Dat Xanh Group Jsc",
@@ -530,9 +530,9 @@
    "Identifier": "BBG000Q1XB43",
    "Shares Held": "5,263,514",
    "Asset Category": "Stock",
-   "Market Value": "$1,986,198.78",
+   "Market Value": "$2,092,014.19",
    "Notional Value": "",
-   "Weight": "0.42%"
+   "Weight": "0.45%"
   },
   {
    "Name": "Fpt Securities Jsc",
@@ -540,9 +540,9 @@
    "Identifier": "BBG0019LTG04",
    "Shares Held": "2,768,627",
    "Asset Category": "Stock",
-   "Market Value": "$1,893,829.64",
+   "Market Value": "$2,005,238.32",
    "Notional Value": "",
-   "Weight": "0.40%"
+   "Weight": "0.43%"
   },
   {
    "Name": "Hoa Sen Group",
@@ -550,9 +550,9 @@
    "Identifier": "BBG000KFK1K6",
    "Shares Held": "4,816,611",
    "Asset Category": "Stock",
-   "Market Value": "$1,842,689.54",
+   "Market Value": "$1,950,405.50",
    "Notional Value": "",
-   "Weight": "0.39%"
+   "Weight": "0.42%"
   },
   {
    "Name": "Development Investment Construction Jsc",
@@ -560,9 +560,9 @@
    "Identifier": "BBG000TW9M63",
    "Shares Held": "5,036,947",
    "Asset Category": "Stock",
-   "Market Value": "$1,829,668.34",
+   "Market Value": "$1,874,658.66",
    "Notional Value": "",
-   "Weight": "0.39%"
+   "Weight": "0.40%"
   },
   {
    "Name": "No Va Land Investment Group Corp",
@@ -570,9 +570,9 @@
    "Identifier": "BBG025B6VXZ5",
    "Shares Held": "14,320,527",
    "Asset Category": "Stock",
-   "Market Value": "$175,403.08",
+   "Market Value": "$128,963.89",
    "Notional Value": "",
-   "Weight": "0.04%"
+   "Weight": "0.03%"
   },
   {
    "Name": "Dcvfmvn Diamond ETF",
@@ -580,7 +580,7 @@
    "Identifier": "BBG00TR4HHL9",
    "Shares Held": "62,610",
    "Asset Category": "Stock",
-   "Market Value": "$78,481.53",
+   "Market Value": "$77,972.20",
    "Notional Value": "",
    "Weight": "0.02%"
   },
@@ -590,7 +590,7 @@
    "Identifier": "BBG0076J67K2",
    "Shares Held": "59",
    "Asset Category": "Stock",
-   "Market Value": "$23.47",
+   "Market Value": "$25.15",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -600,7 +600,17 @@
    "Identifier": "BBG000Q6YTV2",
    "Shares Held": "11",
    "Asset Category": "Stock",
-   "Market Value": "$6.21",
+   "Market Value": "$6.30",
+   "Notional Value": "",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "6,512,400",
+   "Asset Category": "other",
+   "Market Value": "$.00",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -608,9 +618,9 @@
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "844,139",
+   "Shares Held": "844,610",
    "Asset Category": "Cash Bal",
-   "Market Value": "$844,139.38",
+   "Market Value": "$844,610.16",
    "Notional Value": "",
    "Weight": "0.18%"
   },
@@ -620,7 +630,7 @@
    "Identifier": "",
    "Shares Held": "10,754,495,161",
    "Asset Category": "Cash Bal",
-   "Market Value": "$415,536.31",
+   "Market Value": "$415,664.79",
    "Notional Value": "",
    "Weight": "0.09%"
   },
@@ -630,9 +640,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-156,886.43",
+   "Market Value": "$-204,873.55",
    "Notional Value": "",
-   "Weight": "-0.03%"
+   "Weight": "-0.04%"
   }
  ]
 }

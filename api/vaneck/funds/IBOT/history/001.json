@@ -2,7 +2,7 @@
  "ticker": "IBOT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1241,
+ "totalRows": 1245,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "62.4998",
+   "Close": "62.65",
+   "Volume": "13,633",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "99,999,624.84",
+   "Index Level": "1,018.76"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "63.2772",
+   "Close": "63.35",
+   "Volume": "5,673",
+   "Premium/Discount": "0.07",
+   "Total Net Assets": "101,243,450.69",
+   "Index Level": "1,017.05"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "63.5713",
+   "Close": "63.82",
+   "Volume": "7,910",
+   "Premium/Discount": "0.24",
+   "Total Net Assets": "101,714,130.00",
+   "Index Level": "1,033.95"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "65.0397",
+   "Close": "65.15",
+   "Volume": "7,359",
+   "Premium/Discount": "0.11",
+   "Total Net Assets": "104,063,524.38",
+   "Index Level": "1,050.34"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "64.9229",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.06",
    "Total Net Assets": "5,921,476.44",
    "Index Level": "611.28"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "39.4765",
-   "Close": "39.54",
-   "Volume": "",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "5,921,476.44",
-   "Index Level": "611.28"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "39.4765",
-   "Close": "39.54",
-   "Volume": "1,342",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "5,921,476.44",
-   "Index Level": "611.28"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "38.9647",
-   "Close": "39.07",
-   "Volume": "2,641",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "5,844,697.45",
-   "Index Level": "602.84"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "38.2177",
-   "Close": "38.33",
-   "Volume": "7,129",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "5,732,656.74",
-   "Index Level": "594.02"
   }
  ]
 }

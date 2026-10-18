@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4677,
+ "totalRows": 4681,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "14.1089",
+   "Close": "14.34",
+   "Volume": "242,622",
+   "Premium/Discount": "0.23",
+   "Total Net Assets": "332,263,774.07",
+   "Index Level": "1,265.40"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "14.0729",
+   "Close": "14.25",
+   "Volume": "168,450",
+   "Premium/Discount": "0.17",
+   "Total Net Assets": "331,416,996.80",
+   "Index Level": "1,260.47"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "14.1564",
+   "Close": "14.32",
+   "Volume": "223,468",
+   "Premium/Discount": "0.16",
+   "Total Net Assets": "333,382,398.42",
+   "Index Level": "1,267.77"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "14.0456",
+   "Close": "14.08",
+   "Volume": "135,499",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "330,773,200.18",
+   "Index Level": "1,262.83"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "13.8758",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.17",
    "Total Net Assets": "334,299,402.14",
    "Index Level": "1,525.27"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "20.0407",
-   "Close": "20.02",
-   "Volume": "156,306",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "331,673,047.79",
-   "Index Level": "1,518.75"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "20.1326",
-   "Close": "20.17",
-   "Volume": "83,686",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "332,188,477.32",
-   "Index Level": "1,525.54"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "20.0809",
-   "Close": "20.28",
-   "Volume": "240,946",
-   "Premium/Discount": "0.20",
-   "Total Net Assets": "330,330,923.53",
-   "Index Level": "1,524.40"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "20.4136",
-   "Close": "20.83",
-   "Volume": "353,583",
-   "Premium/Discount": "0.42",
-   "Total Net Assets": "334,783,584.34",
-   "Index Level": "1,547.27"
   }
  ]
 }

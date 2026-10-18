@@ -2,7 +2,7 @@
  "ticker": "HYD",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4807,
+ "totalRows": 4811,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "62.9258",
+   "Close": "62.84",
+   "Volume": "298,023",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "1,872,042,315.72",
+   "Index Level": "143.00"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "62.8853",
+   "Close": "62.84",
+   "Volume": "420,703",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "1,870,838,544.84",
+   "Index Level": "142.92"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "62.8614",
+   "Close": "62.48",
+   "Volume": "299,525",
+   "Premium/Discount": "-0.38",
+   "Total Net Assets": "1,870,126,315.79",
+   "Index Level": "142.88"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "62.8764",
+   "Close": "62.56",
+   "Volume": "568,098",
+   "Premium/Discount": "-0.32",
+   "Total Net Assets": "1,930,306,056.28",
+   "Index Level": "142.87"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "62.8165",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.14",
    "Total Net Assets": "548,111,986.06",
    "Index Level": "109.99"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "62.8864",
-   "Close": "63.12",
-   "Volume": "135,630",
-   "Premium/Discount": "0.23",
-   "Total Net Assets": "540,823,049.33",
-   "Index Level": "109.91"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "62.7795",
-   "Close": "63.08",
-   "Volume": "141,731",
-   "Premium/Discount": "0.30",
-   "Total Net Assets": "539,904,026.10",
-   "Index Level": "109.77"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "62.7123",
-   "Close": "62.90",
-   "Volume": "125,472",
-   "Premium/Discount": "0.19",
-   "Total Net Assets": "539,325,387.76",
-   "Index Level": "109.71"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "62.5598",
-   "Close": "62.78",
-   "Volume": "120,662",
-   "Premium/Discount": "0.22",
-   "Total Net Assets": "531,758,514.76",
-   "Index Level": "109.48"
   }
  ]
 }

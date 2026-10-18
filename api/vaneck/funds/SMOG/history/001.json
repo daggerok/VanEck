@@ -2,7 +2,7 @@
  "ticker": "SMOG",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 5250,
+ "totalRows": 5254,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "131.8350",
+   "Close": "131.33",
+   "Volume": "1,109",
+   "Premium/Discount": "-0.50",
+   "Total Net Assets": "126,337,239.33",
+   "Index Level": "3,213.80"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "133.0642",
+   "Close": "132.81",
+   "Volume": "831",
+   "Premium/Discount": "-0.26",
+   "Total Net Assets": "127,515,161.16",
+   "Index Level": "3,219.25"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "133.1896",
+   "Close": "132.90",
+   "Volume": "685",
+   "Premium/Discount": "-0.29",
+   "Total Net Assets": "127,635,361.46",
+   "Index Level": "3,243.66"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "135.8856",
+   "Close": "135.71",
+   "Volume": "567",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "130,218,918.72",
+   "Index Level": "3,293.58"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "135.5549",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.16",
    "Total Net Assets": "143,528,541.18",
    "Index Level": "2,259.50"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "96.7631",
-   "Close": "96.60",
-   "Volume": "",
-   "Premium/Discount": "-0.16",
-   "Total Net Assets": "143,528,541.18",
-   "Index Level": "2,259.50"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "96.7631",
-   "Close": "96.60",
-   "Volume": "6,627",
-   "Premium/Discount": "-0.16",
-   "Total Net Assets": "143,528,541.18",
-   "Index Level": "2,259.50"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "97.0487",
-   "Close": "96.87",
-   "Volume": "3,923",
-   "Premium/Discount": "-0.18",
-   "Total Net Assets": "143,952,138.82",
-   "Index Level": "2,268.08"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "97.3281",
-   "Close": "97.12",
-   "Volume": "4,018",
-   "Premium/Discount": "-0.21",
-   "Total Net Assets": "144,366,585.02",
-   "Index Level": "2,276.54"
   }
  ]
 }

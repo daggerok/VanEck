@@ -2,7 +2,7 @@
  "ticker": "RTH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4081,
+ "totalRows": 4085,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "76.9997",
+   "Close": "77.01",
+   "Volume": "20,696",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "140,257,259.06",
+   "Index Level": "3,266.85"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "76.9545",
+   "Close": "76.95",
+   "Volume": "46,596",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "140,175,048.57",
+   "Index Level": "3,264.90"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "76.1300",
+   "Close": "76.15",
+   "Volume": "16,824",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "138,673,146.18",
+   "Index Level": "3,229.97"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "75.4238",
+   "Close": "75.47",
+   "Volume": "81,320",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "137,386,728.07",
+   "Index Level": "3,200.03"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "75.8379",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.04",
    "Total Net Assets": "50,124,230.62",
    "Index Level": "1,658.24"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "41.2424",
-   "Close": "41.25",
-   "Volume": "315,003",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "50,378,918.55",
-   "Index Level": "1,666.65"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "41.9060",
-   "Close": "41.90",
-   "Volume": "538,817",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "70,047,211.06",
-   "Index Level": "1,693.53"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "41.8088",
-   "Close": "41.79",
-   "Volume": "57,784",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "69,884,633.68",
-   "Index Level": "1,689.58"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "42.0373",
-   "Close": "42.05",
-   "Volume": "49,700",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "78,674,042.80",
-   "Index Level": "1,698.92"
   }
  ]
 }

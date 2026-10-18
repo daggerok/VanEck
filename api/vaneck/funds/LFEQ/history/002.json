@@ -2,7 +2,7 @@
  "ticker": "LFEQ",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2625,
+ "totalRows": 2629,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "40.6928",
+   "Close": "40.67",
+   "Volume": "",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "24,415,663.53",
+   "Index Level": "302,516.61"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "40.6928",
+   "Close": "40.67",
+   "Volume": "735",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "24,415,663.53",
+   "Index Level": "302,516.61"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "40.2011",
+   "Close": "40.19",
+   "Volume": "2,104",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "24,120,668.56",
+   "Index Level": "298,819.64"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "39.8472",
+   "Close": "39.85",
+   "Volume": "461",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "23,908,326.40",
+   "Index Level": "296,187.41"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "40.0710",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "40,983,338.12",
    "Index Level": "171,047.05"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "23.2673",
-   "Close": "23.24",
-   "Volume": "15,712",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "38,391,114.43",
-   "Index Level": "159,805.62"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "23.6144",
-   "Close": "23.59",
-   "Volume": "33,680",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "38,963,674.43",
-   "Index Level": "162,239.83"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "23.0785",
-   "Close": "22.88",
-   "Volume": "22,354",
-   "Premium/Discount": "-0.20",
-   "Total Net Assets": "40,387,375.90",
-   "Index Level": "158,592.77"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "24.1607",
-   "Close": "24.10",
-   "Volume": "42,296",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "42,281,295.14",
-   "Index Level": "165,915.53"
   }
  ]
 }

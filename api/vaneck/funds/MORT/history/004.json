@@ -2,7 +2,7 @@
  "ticker": "MORT",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4169,
+ "totalRows": 4173,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 14 2016",
+   "NAV": "19.8340",
+   "Close": "19.84",
+   "Volume": "14,304",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "95,203,396.31",
+   "Index Level": "1,366.89"
+  },
+  {
+   "Date": "Apr 13 2016",
+   "NAV": "19.8882",
+   "Close": "19.89",
+   "Volume": "14,537",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "95,463,252.86",
+   "Index Level": "1,370.59"
+  },
+  {
+   "Date": "Apr 12 2016",
+   "NAV": "19.7462",
+   "Close": "19.77",
+   "Volume": "43,251",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "94,781,613.51",
+   "Index Level": "1,360.82"
+  },
+  {
+   "Date": "Apr 11 2016",
+   "NAV": "19.7419",
+   "Close": "19.75",
+   "Volume": "16,155",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "94,761,211.16",
+   "Index Level": "1,360.51"
+  },
   {
    "Date": "Apr 08 2016",
    "NAV": "19.4842",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "32,506,818.18",
    "Index Level": "1,100.37"
-  },
-  {
-   "Date": "Apr 23 2012",
-   "NAV": "24.8436",
-   "Close": "24.89",
-   "Volume": "46,971",
-   "Premium/Discount": "0.05",
-   "Total Net Assets": "32,296,678.94",
-   "Index Level": "1,093.24"
-  },
-  {
-   "Date": "Apr 20 2012",
-   "NAV": "24.8370",
-   "Close": "24.90",
-   "Volume": "4,876",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "32,288,061.53",
-   "Index Level": "1,092.92"
-  },
-  {
-   "Date": "Apr 19 2012",
-   "NAV": "24.6832",
-   "Close": "24.76",
-   "Volume": "17,308",
-   "Premium/Discount": "0.08",
-   "Total Net Assets": "29,619,780.99",
-   "Index Level": "1,086.07"
-  },
-  {
-   "Date": "Apr 18 2012",
-   "NAV": "24.6742",
-   "Close": "24.74",
-   "Volume": "23,855",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "29,609,000.51",
-   "Index Level": "1,085.73"
   }
  ]
 }

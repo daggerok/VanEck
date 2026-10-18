@@ -9,28 +9,28 @@
  "ter": "0.76%",
  "terValue": 0.76,
  "nav": {
-  "display": "$26.87",
-  "value": 26.87,
-  "asOfDate": "Oct 12 2026"
+  "display": "$26.88",
+  "value": 26.88,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 26.87,
+ "navValue": 26.88,
  "aum": {
-  "display": "$96.75M",
-  "value": 96745727.78,
-  "asOfDate": "Oct 12 2026",
+  "display": "$96.77M",
+  "value": 96768951.42,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 96745727.78,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 96768951.42,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "Jul 10 2008",
  "exchange": "NYSE Arca",
- "closePrice": "$26.69",
- "closePriceValue": 26.69,
+ "closePrice": "$26.79",
+ "closePriceValue": 26.79,
  "premiumDiscount": {
-  "display": "-0.18%",
-  "value": -0.18
+  "display": "-0.09%",
+  "value": -0.09
  },
- "premiumDiscountValue": -0.18,
+ "premiumDiscountValue": -0.09,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -131,9 +131,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 12 2026",
-   "ytd": 2.7,
-   "ytdText": "2.70%",
+   "asOfDate": "Oct 16 2026",
+   "ytd": 2.72,
+   "ytdText": "2.72%",
    "yr1": 14.37,
    "yr3": 25.34,
    "yr5": 7.98,
@@ -151,7 +151,7 @@
   }
  },
  "metrics": {
-  "ytd": 2.7,
+  "ytd": 2.72,
   "tr1y": 14.37,
   "tr3y": 96.93,
   "tr5y": 46.79,
@@ -169,7 +169,7 @@
   "secYield": 1.68,
   "secYieldText": "1.68%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-12",
+  "ytdAsOf": "2026-10-16",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -177,11 +177,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.76%",
  "terGrossValue": 0.76,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
   "totalRows": 84,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -189,9 +189,9 @@
   ]
  },
  "history": {
-  "totalRows": 4951,
+  "totalRows": 4955,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/africa-index-etf-afk/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -202,7 +202,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 96750000,
+ "totalNetAssets": 96770000,
  "indexTicker": "MVAFKTR",
  "indexName": "GDP Africa Index",
  "categoryPath": "Equity > Country/Regional",
@@ -241,9 +241,9 @@
   "grossValue": 0.76
  },
  "marketPrice": {
-  "display": "$26.69",
-  "value": 26.69,
-  "asOfDate": "Oct 12 2026"
+  "display": "$26.79",
+  "value": 26.79,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
   "dividendYield": 0.95,

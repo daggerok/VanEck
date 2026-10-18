@@ -2,7 +2,7 @@
  "ticker": "REMX",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4371,
+ "totalRows": 4375,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "54.1807",
+   "Close": "54.23",
+   "Volume": "1,337,274",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "1,545,504,781.30",
+   "Index Level": "443.26"
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "55.2631",
+   "Close": "55.74",
+   "Volume": "1,867,977",
+   "Premium/Discount": "0.48",
+   "Total Net Assets": "1,576,379,239.03",
+   "Index Level": "446.13"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "55.8221",
+   "Close": "55.78",
+   "Volume": "805,412",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "1,592,324,474.25",
+   "Index Level": "458.79"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "57.3781",
+   "Close": "57.45",
+   "Volume": "710,533",
+   "Premium/Discount": "0.07",
+   "Total Net Assets": "1,636,710,839.69",
+   "Index Level": "467.48"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "58.3368",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.05",
    "Total Net Assets": "341,865,643.52",
    "Index Level": "378.02"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "49.7260",
-   "Close": "49.78",
-   "Volume": "",
-   "Premium/Discount": "0.05",
-   "Total Net Assets": "341,865,643.52",
-   "Index Level": "378.02"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "49.7260",
-   "Close": "49.78",
-   "Volume": "151,510",
-   "Premium/Discount": "0.05",
-   "Total Net Assets": "341,865,643.52",
-   "Index Level": "378.02"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "50.4267",
-   "Close": "50.71",
-   "Volume": "191,939",
-   "Premium/Discount": "0.28",
-   "Total Net Assets": "346,683,020.73",
-   "Index Level": "384.45"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "50.9232",
-   "Close": "50.65",
-   "Volume": "159,616",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "350,096,132.67",
-   "Index Level": "390.09"
   }
  ]
 }

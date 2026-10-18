@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4677,
+ "totalRows": 4681,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 16 2026",
+   "NAV": "16.5585",
+   "Close": "16.45",
+   "Volume": "402,250",
+   "Premium/Discount": "-0.11",
+   "Total Net Assets": "462,810,384.73",
+   "Index Level": "n.a."
+  },
+  {
+   "Date": "Oct 15 2026",
+   "NAV": "16.5816",
+   "Close": "16.48",
+   "Volume": "454,152",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "463,456,919.98",
+   "Index Level": "1,841.71"
+  },
+  {
+   "Date": "Oct 14 2026",
+   "NAV": "16.4624",
+   "Close": "16.39",
+   "Volume": "225,094",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "460,122,993.25",
+   "Index Level": "1,841.57"
+  },
+  {
+   "Date": "Oct 13 2026",
+   "NAV": "16.6477",
+   "Close": "16.53",
+   "Volume": "632,953",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "465,303,011.64",
+   "Index Level": "1,852.26"
+  },
   {
    "Date": "Oct 12 2026",
    "NAV": "16.6860",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "524,879,717.08",
    "Index Level": "1,399.41"
-  },
-  {
-   "Date": "Jan 20 2024",
-   "NAV": "12.9281",
-   "Close": "12.93",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "524,879,717.08",
-   "Index Level": "1,399.41"
-  },
-  {
-   "Date": "Jan 19 2024",
-   "NAV": "12.9281",
-   "Close": "12.93",
-   "Volume": "270,334",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "524,879,717.08",
-   "Index Level": "1,399.41"
-  },
-  {
-   "Date": "Jan 18 2024",
-   "NAV": "12.8778",
-   "Close": "12.91",
-   "Volume": "649,263",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "524,772,048.36",
-   "Index Level": "1,395.14"
-  },
-  {
-   "Date": "Jan 17 2024",
-   "NAV": "12.7828",
-   "Close": "12.63",
-   "Volume": "1,056,684",
-   "Premium/Discount": "-0.15",
-   "Total Net Assets": "520,900,156.05",
-   "Index Level": "1,388.93"
   }
  ]
 }

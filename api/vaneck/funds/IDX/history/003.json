@@ -2,7 +2,7 @@
  "ticker": "IDX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4820,
+ "totalRows": 4824,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 03 2020",
+   "NAV": "13.0777",
+   "Close": "12.29",
+   "Volume": "68,592",
+   "Premium/Discount": "-0.79",
+   "Total Net Assets": "22,232,021.48",
+   "Index Level": "6,685.35"
+  },
+  {
+   "Date": "Apr 02 2020",
+   "NAV": "12.9561",
+   "Close": "12.60",
+   "Volume": "7,673",
+   "Premium/Discount": "-0.36",
+   "Total Net Assets": "22,025,391.51",
+   "Index Level": "6,515.11"
+  },
+  {
+   "Date": "Apr 01 2020",
+   "NAV": "12.4910",
+   "Close": "11.91",
+   "Volume": "5,825",
+   "Premium/Discount": "-0.58",
+   "Total Net Assets": "21,234,699.36",
+   "Index Level": "6,372.34"
+  },
+  {
+   "Date": "Mar 31 2020",
+   "NAV": "12.8490",
+   "Close": "12.74",
+   "Volume": "5,260",
+   "Premium/Discount": "-0.11",
+   "Total Net Assets": "21,843,313.88",
+   "Index Level": "6,542.18"
+  },
   {
    "Date": "Mar 30 2020",
    "NAV": "12.5525",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "116,977,017.97",
    "Index Level": "9,551.67"
-  },
-  {
-   "Date": "Apr 14 2016",
-   "NAV": "20.6212",
-   "Close": "20.66",
-   "Volume": "125,973",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "116,509,908.59",
-   "Index Level": "9,500.19"
-  },
-  {
-   "Date": "Apr 13 2016",
-   "NAV": "20.8682",
-   "Close": "20.99",
-   "Volume": "54,510",
-   "Premium/Discount": "0.12",
-   "Total Net Assets": "117,905,138.78",
-   "Index Level": "9,599.90"
-  },
-  {
-   "Date": "Apr 12 2016",
-   "NAV": "20.8448",
-   "Close": "20.92",
-   "Volume": "36,369",
-   "Premium/Discount": "0.08",
-   "Total Net Assets": "117,773,176.54",
-   "Index Level": "9,572.57"
-  },
-  {
-   "Date": "Apr 11 2016",
-   "NAV": "20.5416",
-   "Close": "20.57",
-   "Volume": "47,853",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "116,059,885.55",
-   "Index Level": "9,489.42"
   }
  ]
 }

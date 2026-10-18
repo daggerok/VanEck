@@ -9,28 +9,28 @@
  "ter": "0.39%",
  "terValue": 0.39,
  "nav": {
-  "display": "$28.90",
-  "value": 28.9,
-  "asOfDate": "Oct 12 2026"
+  "display": "$27.96",
+  "value": 27.96,
+  "asOfDate": "Oct 16 2026"
  },
- "navValue": 28.9,
+ "navValue": 27.96,
  "aum": {
-  "display": "$98.84M",
-  "value": 98840042.19,
-  "asOfDate": "Oct 12 2026",
+  "display": "$95.36M",
+  "value": 95357680.8,
+  "asOfDate": "Oct 16 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 98840042.19,
- "asOfDate": "Oct 12 2026",
+ "aumValue": 95357680.8,
+ "asOfDate": "Oct 16 2026",
  "inceptionDate": "May 07 2026",
  "exchange": "NASDAQ",
- "closePrice": "$28.95",
- "closePriceValue": 28.95,
+ "closePrice": "$27.94",
+ "closePriceValue": 27.94,
  "premiumDiscount": {
-  "display": "0.05%",
-  "value": 0.05
+  "display": "-0.03%",
+  "value": -0.03
  },
- "premiumDiscountValue": 0.05,
+ "premiumDiscountValue": -0.03,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -46,11 +46,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row + Investment Finder month-end YTD (NAV)",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
+   "sinceInception": 19.03,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 19.03,
    "tenorsAsOf": "Sep 30 2026",
    "ytd": 7.59,
    "ytdText": "7.59%"
@@ -91,11 +91,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.39%",
  "terGrossValue": 0.39,
- "netAssetsAsOf": "Oct 12 2026",
+ "netAssetsAsOf": "Oct 16 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
-  "asOfDate": "Oct 09 2026",
+  "asOfDate": "Oct 15 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -103,16 +103,16 @@
   ]
  },
  "history": {
-  "totalRows": 159,
+  "totalRows": 163,
   "pageSize": 1000,
-  "asOfDate": "Oct 12 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/bnb-etf-vbnb/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 98840000,
+ "totalNetAssets": 95360000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -149,9 +149,9 @@
   "grossValue": 0.39
  },
  "marketPrice": {
-  "display": "$28.95",
-  "value": 28.95,
-  "asOfDate": "Oct 12 2026"
+  "display": "$27.94",
+  "value": 27.94,
+  "asOfDate": "Oct 16 2026"
  },
  "yields": {
   "dividendYield": null,

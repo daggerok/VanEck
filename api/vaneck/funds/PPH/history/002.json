@@ -2,7 +2,7 @@
  "ticker": "PPH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4081,
+ "totalRows": 4085,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,42 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 20 2024",
+   "NAV": "84.4135",
+   "Close": "84.38",
+   "Volume": "",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "446,390,334.78",
+   "Index Level": "4,094.83"
+  },
+  {
+   "Date": "Jan 19 2024",
+   "NAV": "84.4135",
+   "Close": "84.38",
+   "Volume": "181,423",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "446,390,334.78",
+   "Index Level": "4,094.83"
+  },
+  {
+   "Date": "Jan 18 2024",
+   "NAV": "84.3738",
+   "Close": "84.32",
+   "Volume": "109,849",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "441,961,777.35",
+   "Index Level": "4,092.87"
+  },
+  {
+   "Date": "Jan 17 2024",
+   "NAV": "84.3381",
+   "Close": "84.33",
+   "Volume": "44,924",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "441,774,405.20",
+   "Index Level": "4,091.28"
+  },
   {
    "Date": "Jan 16 2024",
    "NAV": "84.7490",
@@ -8976,42 +9012,6 @@
    "Premium/Discount": "0.01",
    "Total Net Assets": "184,253,343.90",
    "Index Level": "2,537.19"
-  },
-  {
-   "Date": "Apr 03 2020",
-   "NAV": "52.6678",
-   "Close": "52.62",
-   "Volume": "16,678",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "175,812,500.15",
-   "Index Level": "2,421.27"
-  },
-  {
-   "Date": "Apr 02 2020",
-   "NAV": "52.9235",
-   "Close": "52.96",
-   "Volume": "22,858",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "176,665,778.70",
-   "Index Level": "2,432.96"
-  },
-  {
-   "Date": "Apr 01 2020",
-   "NAV": "52.3794",
-   "Close": "52.32",
-   "Volume": "35,891",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "172,230,757.53",
-   "Index Level": "2,408.32"
-  },
-  {
-   "Date": "Mar 31 2020",
-   "NAV": "54.4505",
-   "Close": "54.39",
-   "Volume": "35,849",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "179,040,611.66",
-   "Index Level": "2,487.70"
   }
  ]
 }
