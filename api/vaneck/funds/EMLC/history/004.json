@@ -2,7 +2,7 @@
  "ticker": "EMLC",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4443,
+ "totalRows": 4446,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 19 2016",
+   "NAV": "37.6791",
+   "Close": "37.82",
+   "Volume": "187,631",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "1,461,948,394.69",
+   "Index Level": "128.22"
+  },
+  {
+   "Date": "Apr 18 2016",
+   "NAV": "37.3190",
+   "Close": "37.30",
+   "Volume": "365,781",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "1,447,976,458.93",
+   "Index Level": "126.94"
+  },
+  {
+   "Date": "Apr 15 2016",
+   "NAV": "37.2423",
+   "Close": "37.30",
+   "Volume": "137,861",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "1,445,000,134.14",
+   "Index Level": "126.71"
+  },
   {
    "Date": "Apr 14 2016",
    "NAV": "37.2929",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.32",
    "Total Net Assets": "740,848,345.30",
    "Index Level": "141.72"
-  },
-  {
-   "Date": "Apr 26 2012",
-   "NAV": "52.3077",
-   "Close": "52.56",
-   "Volume": "151,079",
-   "Premium/Discount": "0.25",
-   "Total Net Assets": "737,538,099.51",
-   "Index Level": "141.11"
-  },
-  {
-   "Date": "Apr 25 2012",
-   "NAV": "52.2028",
-   "Close": "52.64",
-   "Volume": "119,916",
-   "Premium/Discount": "0.44",
-   "Total Net Assets": "736,058,940.19",
-   "Index Level": "140.79"
-  },
-  {
-   "Date": "Apr 24 2012",
-   "NAV": "52.0743",
-   "Close": "52.24",
-   "Volume": "193,473",
-   "Premium/Discount": "0.17",
-   "Total Net Assets": "734,247,771.93",
-   "Index Level": "140.41"
   }
  ]
 }

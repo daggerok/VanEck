@@ -2,7 +2,7 @@
  "ticker": "TRUO",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 137,
+ "totalRows": 140,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "26.5968",
+   "Close": "26.61",
+   "Volume": "11",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "531,936.71",
+   "Index Level": "2,224.62"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "26.7080",
+   "Close": "26.71",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "534,159.48",
+   "Index Level": "2,233.38"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "26.7080",
+   "Close": "26.71",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "534,159.48",
+   "Index Level": "2,233.38"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "26.7080",
    "Close": "26.71",
    "Volume": "30",
    "Premium/Discount": "0.00",
    "Total Net Assets": "534,159.48",
-   "Index Level": "n.a."
+   "Index Level": "2,233.38"
   },
   {
    "Date": "Oct 15 2026",

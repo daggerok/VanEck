@@ -9,28 +9,28 @@
  "ter": "0.65%",
  "terValue": 0.65,
  "nav": {
-  "display": "$49.62",
-  "value": 49.62,
-  "asOfDate": "Oct 16 2026"
+  "display": "$49.48",
+  "value": 49.48,
+  "asOfDate": "Oct 19 2026"
  },
- "navValue": 49.62,
+ "navValue": 49.48,
  "aum": {
-  "display": "$294.90M",
-  "value": 294902170.23,
-  "asOfDate": "Oct 16 2026",
+  "display": "$294.04M",
+  "value": 294037110.77,
+  "asOfDate": "Oct 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 294902170.23,
- "asOfDate": "Oct 16 2026",
+ "aumValue": 294037110.77,
+ "asOfDate": "Oct 19 2026",
  "inceptionDate": "Jul 09 2012",
  "exchange": "NYSE Arca",
- "closePrice": "$49.60",
- "closePriceValue": 49.6,
+ "closePrice": "$49.41",
+ "closePriceValue": 49.41,
  "premiumDiscount": {
-  "display": "-0.03%",
-  "value": -0.03
+  "display": "-0.07%",
+  "value": -0.07
  },
- "premiumDiscountValue": -0.03,
+ "premiumDiscountValue": -0.07,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -106,9 +106,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 16 2026",
-   "ytd": 2.07,
-   "ytdText": "2.07%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 4.61,
    "yr3": 10.51,
    "yr5": 4.68,
@@ -126,7 +124,7 @@
   }
  },
  "metrics": {
-  "ytd": 2.07,
+  "ytd": null,
   "tr1y": 4.61,
   "tr3y": 34.95,
   "tr5y": 25.67,
@@ -141,10 +139,10 @@
   "distributionYieldText": "6.24%",
   "yield12M": null,
   "yield12MText": "—",
-  "secYield": 6.09,
-  "secYieldText": "6.09%",
+  "secYield": 6.13,
+  "secYieldText": "6.13%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-16",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -152,11 +150,11 @@
  "providerCategory": "International Bond",
  "terGross": "0.76%",
  "terGrossValue": 0.76,
- "netAssetsAsOf": "Oct 16 2026",
+ "netAssetsAsOf": "Oct 19 2026",
  "holdings": {
-  "totalRows": 147,
+  "totalRows": 146,
   "pageSize": 250,
-  "asOfDate": "Oct 15 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/emerging-markets-bond-etf-embx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -164,9 +162,9 @@
   ]
  },
  "history": {
-  "totalRows": 3574,
+  "totalRows": 3577,
   "pageSize": 1000,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/emerging-markets-bond-etf-embx/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -176,10 +174,10 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 294900000,
- "secYield": 6.09,
- "secYieldValue": 6.09,
- "secYieldText": "6.09%",
+ "totalNetAssets": 294040000,
+ "secYield": 6.13,
+ "secYieldValue": 6.13,
+ "secYieldText": "6.13%",
  "categoryPath": "Income > International Bond",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -216,23 +214,23 @@
   "grossValue": 0.76
  },
  "marketPrice": {
-  "display": "$49.60",
-  "value": 49.6,
-  "asOfDate": "Oct 16 2026"
+  "display": "$49.41",
+  "value": 49.41,
+  "asOfDate": "Oct 19 2026"
  },
  "yields": {
   "dividendYield": 6.24,
   "dividendYieldText": "6.24%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 5.62,
-  "indicatedYieldText": "5.62%",
+  "indicatedYield": 5.63,
+  "indicatedYieldText": "5.63%",
   "distributionYield": 6.24,
   "distributionYieldText": "6.24%",
   "yield12M": null,
   "yield12MText": "—",
   "distributionRate": null,
-  "secYield": 6.09,
-  "secYieldText": "6.09%",
+  "secYield": 6.13,
+  "secYieldText": "6.13%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

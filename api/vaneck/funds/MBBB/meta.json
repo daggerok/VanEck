@@ -9,28 +9,28 @@
  "ter": "0.25%",
  "terValue": 0.25,
  "nav": {
-  "display": "$20.43",
-  "value": 20.43,
-  "asOfDate": "Oct 16 2026"
+  "display": "$20.33",
+  "value": 20.33,
+  "asOfDate": "Oct 19 2026"
  },
- "navValue": 20.43,
+ "navValue": 20.33,
  "aum": {
-  "display": "$4.60M",
-  "value": 4596017.11,
-  "asOfDate": "Oct 16 2026",
+  "display": "$4.57M",
+  "value": 4574382.32,
+  "asOfDate": "Oct 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4596017.11,
- "asOfDate": "Oct 16 2026",
+ "aumValue": 4574382.32,
+ "asOfDate": "Oct 19 2026",
  "inceptionDate": "Dec 01 2020",
  "exchange": "Cboe BZX",
- "closePrice": "$20.37",
- "closePriceValue": 20.37,
+ "closePrice": "$20.29",
+ "closePriceValue": 20.29,
  "premiumDiscount": {
-  "display": "-0.06%",
-  "value": -0.06
+  "display": "-0.04%",
+  "value": -0.04
  },
- "premiumDiscountValue": -0.06,
+ "premiumDiscountValue": -0.04,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -396,9 +396,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 16 2026",
-   "ytd": -2,
-   "ytdText": "-2.00%",
+   "asOfDate": "Sep 30 2026",
    "yr1": -2.49,
    "yr3": 5.46,
    "yr5": 0.15,
@@ -416,7 +414,7 @@
   }
  },
  "metrics": {
-  "ytd": -2,
+  "ytd": null,
   "tr1y": -2.49,
   "tr3y": 17.29,
   "tr5y": 0.77,
@@ -434,7 +432,7 @@
   "secYield": 5.94,
   "secYieldText": "5.94%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-16",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -442,11 +440,11 @@
  "providerCategory": "Corporate Bond",
  "terGross": "0.25%",
  "terGrossValue": 0.25,
- "netAssetsAsOf": "Oct 16 2026",
+ "netAssetsAsOf": "Oct 19 2026",
  "holdings": {
   "totalRows": 156,
   "pageSize": 250,
-  "asOfDate": "Oct 15 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -454,9 +452,9 @@
   ]
  },
  "history": {
-  "totalRows": 1834,
+  "totalRows": 1837,
   "pageSize": 1000,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/moodys-analytics-bbb-corporate-bond-etf-mbbb/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -464,7 +462,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 4600000,
+ "totalNetAssets": 4570000,
  "secYield": 5.94,
  "secYieldValue": 5.94,
  "secYieldText": "5.94%",
@@ -504,16 +502,16 @@
   "grossValue": 0.25
  },
  "marketPrice": {
-  "display": "$20.37",
-  "value": 20.37,
-  "asOfDate": "Oct 16 2026"
+  "display": "$20.29",
+  "value": 20.29,
+  "asOfDate": "Oct 19 2026"
  },
  "yields": {
   "dividendYield": 5.24,
   "dividendYieldText": "5.24%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 5.11,
-  "indicatedYieldText": "5.11%",
+  "indicatedYield": 5.14,
+  "indicatedYieldText": "5.14%",
   "distributionYield": 5.24,
   "distributionYieldText": "5.24%",
   "yield12M": 4.87,

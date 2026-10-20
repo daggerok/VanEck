@@ -2,7 +2,7 @@
  "ticker": "ESPO",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2369,
+ "totalRows": 2372,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 23 2024",
+   "NAV": "57.4068",
+   "Close": "57.27",
+   "Volume": "18,227",
+   "Premium/Discount": "-0.14",
+   "Total Net Assets": "252,589,711.37",
+   "Index Level": "6,037.74"
+  },
+  {
+   "Date": "Jan 22 2024",
+   "NAV": "56.6616",
+   "Close": "56.46",
+   "Volume": "43,939",
+   "Premium/Discount": "-0.20",
+   "Total Net Assets": "249,311,103.48",
+   "Index Level": "5,963.88"
+  },
+  {
+   "Date": "Jan 21 2024",
+   "NAV": "56.4786",
+   "Close": "56.36",
+   "Volume": "",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "248,505,639.47",
+   "Index Level": "5,930.58"
+  },
   {
    "Date": "Jan 20 2024",
    "NAV": "56.4786",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.13",
    "Total Net Assets": "132,997,357.15",
    "Index Level": "3,859.35"
-  },
-  {
-   "Date": "Apr 08 2020",
-   "NAV": "39.6643",
-   "Close": "39.75",
-   "Volume": "50,537",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "132,875,505.05",
-   "Index Level": "3,850.52"
-  },
-  {
-   "Date": "Apr 07 2020",
-   "NAV": "39.3551",
-   "Close": "39.67",
-   "Volume": "155,004",
-   "Premium/Discount": "0.31",
-   "Total Net Assets": "131,839,508.69",
-   "Index Level": "3,832.09"
-  },
-  {
-   "Date": "Apr 06 2020",
-   "NAV": "39.9501",
-   "Close": "40.05",
-   "Volume": "100,139",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "127,840,348.80",
-   "Index Level": "3,859.70"
   }
  ]
 }

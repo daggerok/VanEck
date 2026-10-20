@@ -17,16 +17,16 @@
  ],
  "rows": [
   {
-   "Name": "European Investment Bank",
-   "Maturity": "Jan 24 2031",
-   "Identifier": "BBG01LB0V843",
-   "Coupon": "5.250",
+   "Name": "China Government Bond",
+   "Maturity": "May 15 2036",
+   "Identifier": "BBG02267ZR49",
+   "Coupon": "1.720",
    "Asset Category": "Bond",
-   "Par Value": "31,050,000",
-   "Market Value": "$8,122,996.15",
+   "Par Value": "53,800,000",
+   "Market Value": "$8,156,168.47",
    "Weight": "0.16%",
-   "Country": "Luxembourg",
-   "Currency": "PLN"
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "India Government Bond",
@@ -35,43 +35,7 @@
    "Coupon": "7.720",
    "Asset Category": "Bond",
    "Par Value": "753,740,000",
-   "Market Value": "$8,114,389.06",
-   "Weight": "0.16%",
-   "Country": "India",
-   "Currency": "INR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Jan 25 2030",
-   "Identifier": "BBG01RVXTLJ4",
-   "Coupon": "1.430",
-   "Asset Category": "Bond",
-   "Par Value": "53,000,000",
-   "Market Value": "$8,035,994.36",
-   "Weight": "0.16%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Apr 15 2029",
-   "Identifier": "BBG01MBJ1MG9",
-   "Coupon": "2.050",
-   "Asset Category": "Bond",
-   "Par Value": "52,030,000",
-   "Market Value": "$8,009,159.80",
-   "Weight": "0.16%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "India Government Bond",
-   "Maturity": "Dec 23 2029",
-   "Identifier": "BBG01R9M2HF5",
-   "Coupon": "6.750",
-   "Asset Category": "Bond",
-   "Par Value": "748,190,000",
-   "Market Value": "$8,009,131.92",
+   "Market Value": "$8,151,982.45",
    "Weight": "0.16%",
    "Country": "India",
    "Currency": "INR"
@@ -83,10 +47,34 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "2,443,200,000",
-   "Market Value": "$8,001,649.23",
+   "Market Value": "$8,074,989.46",
    "Weight": "0.16%",
    "Country": "Hungary",
    "Currency": "HUF"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Jan 25 2030",
+   "Identifier": "BBG01RVXTLJ4",
+   "Coupon": "1.430",
+   "Asset Category": "Bond",
+   "Par Value": "53,000,000",
+   "Market Value": "$8,043,254.82",
+   "Weight": "0.16%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "India Government Bond",
+   "Maturity": "Dec 23 2029",
+   "Identifier": "BBG01R9M2HF5",
+   "Coupon": "6.750",
+   "Asset Category": "Bond",
+   "Par Value": "748,190,000",
+   "Market Value": "$8,042,730.13",
+   "Weight": "0.16%",
+   "Country": "India",
+   "Currency": "INR"
   },
   {
    "Name": "Czech Republic Government Bond",
@@ -95,10 +83,22 @@
    "Coupon": "5.750",
    "Asset Category": "Bond",
    "Par Value": "163,130,000",
-   "Market Value": "$7,987,196.48",
+   "Market Value": "$8,031,411.13",
    "Weight": "0.16%",
    "Country": "Czech Republic",
    "Currency": "CZK"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Apr 15 2029",
+   "Identifier": "BBG01MBJ1MG9",
+   "Coupon": "2.050",
+   "Asset Category": "Bond",
+   "Par Value": "52,030,000",
+   "Market Value": "$8,016,353.99",
+   "Weight": "0.16%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "Indonesia Treasury Bond",
@@ -107,7 +107,7 @@
    "Coupon": "8.250",
    "Asset Category": "Bond",
    "Par Value": "128,282,000,000",
-   "Market Value": "$7,933,811.24",
+   "Market Value": "$7,897,622.74",
    "Weight": "0.16%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -119,7 +119,7 @@
    "Coupon": "10.875",
    "Asset Category": "Bond",
    "Par Value": "114,445,000",
-   "Market Value": "$7,832,083.98",
+   "Market Value": "$7,882,270.12",
    "Weight": "0.16%",
    "Country": "South Africa",
    "Currency": "ZAR"
@@ -131,22 +131,10 @@
    "Coupon": "5.940",
    "Asset Category": "Bond",
    "Par Value": "25,503,000",
-   "Market Value": "$7,818,520.54",
+   "Market Value": "$7,835,551.04",
    "Weight": "0.16%",
    "Country": "Peru",
    "Currency": "PEN"
-  },
-  {
-   "Name": "Thailand Government Bond",
-   "Maturity": "Jun 17 2046",
-   "Identifier": "BBG00D2Y83S9",
-   "Coupon": "2.875",
-   "Asset Category": "Bond",
-   "Par Value": "269,623,000",
-   "Market Value": "$7,747,716.70",
-   "Weight": "0.16%",
-   "Country": "Thailand",
-   "Currency": "THB"
   },
   {
    "Name": "Romania Government Bond",
@@ -155,7 +143,31 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "36,100,000",
-   "Market Value": "$7,707,238.07",
+   "Market Value": "$7,777,634.32",
+   "Weight": "0.16%",
+   "Country": "Romania",
+   "Currency": "RON"
+  },
+  {
+   "Name": "Thailand Government Bond",
+   "Maturity": "Jun 17 2046",
+   "Identifier": "BBG00D2Y83S9",
+   "Coupon": "2.875",
+   "Asset Category": "Bond",
+   "Par Value": "269,623,000",
+   "Market Value": "$7,749,658.30",
+   "Weight": "0.16%",
+   "Country": "Thailand",
+   "Currency": "THB"
+  },
+  {
+   "Name": "Romania Government Bond",
+   "Maturity": "Jul 29 2030",
+   "Identifier": "BBG01QLJFMP4",
+   "Coupon": "6.850",
+   "Asset Category": "Bond",
+   "Par Value": "35,875,000",
+   "Market Value": "$7,701,345.20",
    "Weight": "0.16%",
    "Country": "Romania",
    "Currency": "RON"
@@ -167,8 +179,8 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "133,390,000",
-   "Market Value": "$7,677,655.87",
-   "Weight": "0.15%",
+   "Market Value": "$7,698,429.56",
+   "Weight": "0.16%",
    "Country": "Supra-National",
    "Currency": "MXN"
   },
@@ -179,22 +191,10 @@
    "Coupon": "1.340",
    "Asset Category": "Bond",
    "Par Value": "260,167,000",
-   "Market Value": "$7,663,389.07",
+   "Market Value": "$7,664,310.58",
    "Weight": "0.15%",
    "Country": "Thailand",
    "Currency": "THB"
-  },
-  {
-   "Name": "Romania Government Bond",
-   "Maturity": "Jul 29 2030",
-   "Identifier": "BBG01QLJFMP4",
-   "Coupon": "6.850",
-   "Asset Category": "Bond",
-   "Par Value": "35,875,000",
-   "Market Value": "$7,645,489.56",
-   "Weight": "0.15%",
-   "Country": "Romania",
-   "Currency": "RON"
   },
   {
    "Name": "China Government Bond",
@@ -203,7 +203,7 @@
    "Coupon": "1.670",
    "Asset Category": "Bond",
    "Par Value": "50,240,000",
-   "Market Value": "$7,632,394.12",
+   "Market Value": "$7,639,149.18",
    "Weight": "0.15%",
    "Country": "China",
    "Currency": "CNY"
@@ -215,22 +215,10 @@
    "Coupon": "1.910",
    "Asset Category": "Bond",
    "Par Value": "49,850,000",
-   "Market Value": "$7,616,869.06",
+   "Market Value": "$7,623,780.57",
    "Weight": "0.15%",
    "Country": "China",
    "Currency": "CNY"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "May 15 2031",
-   "Identifier": "BBG009QNZKZ0",
-   "Coupon": "8.750",
-   "Asset Category": "Bond",
-   "Par Value": "122,383,000,000",
-   "Market Value": "$7,532,094.45",
-   "Weight": "0.15%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
   },
   {
    "Name": "Malaysia Government Investment Issue",
@@ -239,22 +227,10 @@
    "Coupon": "4.417",
    "Asset Category": "Bond",
    "Par Value": "29,797,000",
-   "Market Value": "$7,505,472.79",
+   "Market Value": "$7,566,135.80",
    "Weight": "0.15%",
    "Country": "Malaysia",
    "Currency": "MYR"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "May 15 2027",
-   "Identifier": "BBG0022GWRN7",
-   "Coupon": "7.000",
-   "Asset Category": "Bond",
-   "Par Value": "130,757,000,000",
-   "Market Value": "$7,498,006.67",
-   "Weight": "0.15%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
   },
   {
    "Name": "Bonos De La Tesoreria De La Republica E",
@@ -263,10 +239,22 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "7,325,000,000",
-   "Market Value": "$7,475,241.90",
+   "Market Value": "$7,487,109.37",
    "Weight": "0.15%",
    "Country": "Chile",
    "Currency": "CLP"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "May 15 2027",
+   "Identifier": "BBG0022GWRN7",
+   "Coupon": "7.000",
+   "Asset Category": "Bond",
+   "Par Value": "130,757,000,000",
+   "Market Value": "$7,476,896.01",
+   "Weight": "0.15%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Dominican Republic International Bond",
@@ -275,10 +263,22 @@
    "Coupon": "11.250",
    "Asset Category": "Bond",
    "Par Value": "405,400,000",
-   "Market Value": "$7,456,984.53",
+   "Market Value": "$7,449,653.02",
    "Weight": "0.15%",
    "Country": "Dominican Republic",
    "Currency": "DOP"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "May 15 2031",
+   "Identifier": "BBG009QNZKZ0",
+   "Coupon": "8.750",
+   "Asset Category": "Bond",
+   "Par Value": "122,383,000,000",
+   "Market Value": "$7,410,093.99",
+   "Weight": "0.15%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Malaysia Government Investment Issue",
@@ -287,19 +287,7 @@
    "Coupon": "3.612",
    "Asset Category": "Bond",
    "Par Value": "30,192,000",
-   "Market Value": "$7,392,090.17",
-   "Weight": "0.15%",
-   "Country": "Malaysia",
-   "Currency": "MYR"
-  },
-  {
-   "Name": "Malaysia Government Investment Issue",
-   "Maturity": "Jul 16 2040",
-   "Identifier": "BBG01RQ1WQV1",
-   "Coupon": "3.974",
-   "Asset Category": "Bond",
-   "Par Value": "30,110,000",
-   "Market Value": "$7,348,046.82",
+   "Market Value": "$7,391,975.25",
    "Weight": "0.15%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -311,10 +299,22 @@
    "Coupon": "7.350",
    "Asset Category": "Bond",
    "Par Value": "725,000,000",
-   "Market Value": "$7,337,659.20",
+   "Market Value": "$7,389,795.02",
    "Weight": "0.15%",
    "Country": "United States",
    "Currency": "INR"
+  },
+  {
+   "Name": "Malaysia Government Investment Issue",
+   "Maturity": "Jul 16 2040",
+   "Identifier": "BBG01RQ1WQV1",
+   "Coupon": "3.974",
+   "Asset Category": "Bond",
+   "Par Value": "30,110,000",
+   "Market Value": "$7,378,721.09",
+   "Weight": "0.15%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
   },
   {
    "Name": "Bonos De La Tesoreria De La Republica E",
@@ -323,7 +323,7 @@
    "Coupon": "6.200",
    "Asset Category": "Bond",
    "Par Value": "7,070,000,000",
-   "Market Value": "$7,303,398.31",
+   "Market Value": "$7,318,674.28",
    "Weight": "0.15%",
    "Country": "Chile",
    "Currency": "CLP"
@@ -335,8 +335,8 @@
    "Coupon": "6.250",
    "Asset Category": "Bond",
    "Par Value": "141,183,000",
-   "Market Value": "$7,180,039.18",
-   "Weight": "0.14%",
+   "Market Value": "$7,219,935.77",
+   "Weight": "0.15%",
    "Country": "South Africa",
    "Currency": "ZAR"
   },
@@ -347,22 +347,10 @@
    "Coupon": "1.840",
    "Asset Category": "Bond",
    "Par Value": "247,078,000",
-   "Market Value": "$7,160,877.19",
+   "Market Value": "$7,162,063.62",
    "Weight": "0.14%",
    "Country": "Thailand",
    "Currency": "THB"
-  },
-  {
-   "Name": "India Government Bond",
-   "Maturity": "Apr 18 2029",
-   "Identifier": "BBG016PTLZQ5",
-   "Coupon": "7.100",
-   "Asset Category": "Bond",
-   "Par Value": "654,350,000",
-   "Market Value": "$7,160,712.59",
-   "Weight": "0.14%",
-   "Country": "India",
-   "Currency": "INR"
   },
   {
    "Name": "Romania Government Bond",
@@ -371,22 +359,10 @@
    "Coupon": "5.800",
    "Asset Category": "Bond",
    "Par Value": "33,600,000",
-   "Market Value": "$7,108,778.35",
+   "Market Value": "$7,158,046.01",
    "Weight": "0.14%",
    "Country": "Romania",
    "Currency": "RON"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Jun 25 2031",
-   "Identifier": "BBG01NC9K0H4",
-   "Coupon": "2.120",
-   "Asset Category": "Bond",
-   "Par Value": "45,620,000",
-   "Market Value": "$7,100,937.16",
-   "Weight": "0.14%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "International Bank For Reconstruction &",
@@ -395,10 +371,22 @@
    "Coupon": "6.500",
    "Asset Category": "Bond",
    "Par Value": "691,900,000",
-   "Market Value": "$7,087,241.03",
+   "Market Value": "$7,110,112.52",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "INR"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Jun 25 2031",
+   "Identifier": "BBG01NC9K0H4",
+   "Coupon": "2.120",
+   "Asset Category": "Bond",
+   "Par Value": "45,620,000",
+   "Market Value": "$7,105,340.83",
+   "Weight": "0.14%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "International Bank For Reconstruction &",
@@ -407,10 +395,46 @@
    "Coupon": "5.300",
    "Asset Category": "Bond",
    "Par Value": "141,000,000",
-   "Market Value": "$7,067,962.89",
+   "Market Value": "$7,056,169.37",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "MXN"
+  },
+  {
+   "Name": "Hungary Government Bond",
+   "Maturity": "Jun 22 2034",
+   "Identifier": "BBG00YTQC093",
+   "Coupon": "2.250",
+   "Asset Category": "Bond",
+   "Par Value": "2,783,390,000",
+   "Market Value": "$7,017,625.25",
+   "Weight": "0.14%",
+   "Country": "Hungary",
+   "Currency": "HUF"
+  },
+  {
+   "Name": "Republic Of South Africa Government Bon",
+   "Maturity": "Mar 31 2033",
+   "Identifier": "BBG01PL0CN32",
+   "Coupon": "10.000",
+   "Asset Category": "Bond",
+   "Par Value": "107,313,000",
+   "Market Value": "$7,012,461.84",
+   "Weight": "0.14%",
+   "Country": "South Africa",
+   "Currency": "ZAR"
+  },
+  {
+   "Name": "Kreditanstalt Fuer Wiederaufbau",
+   "Maturity": "Feb 17 2028",
+   "Identifier": "BBG0204S1D74",
+   "Coupon": "3.500",
+   "Asset Category": "Bond",
+   "Par Value": "27,000,000",
+   "Market Value": "$7,011,665.03",
+   "Weight": "0.14%",
+   "Country": "Germany",
+   "Currency": "PLN"
   },
   {
    "Name": "Colombian Tes",
@@ -419,7 +443,7 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "34,400,900,000",
-   "Market Value": "$7,018,851.18",
+   "Market Value": "$6,999,870.27",
    "Weight": "0.14%",
    "Country": "Colombia",
    "Currency": "COP"
@@ -431,46 +455,22 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "43,310,000",
-   "Market Value": "$6,976,769.65",
+   "Market Value": "$6,988,211.12",
    "Weight": "0.14%",
    "Country": "United Kingdom",
    "Currency": "CNY"
   },
   {
-   "Name": "Kreditanstalt Fuer Wiederaufbau",
-   "Maturity": "Feb 17 2028",
-   "Identifier": "BBG0204S1D74",
-   "Coupon": "3.500",
+   "Name": "India Government Bond",
+   "Maturity": "Apr 18 2029",
+   "Identifier": "BBG016PTLZQ5",
+   "Coupon": "7.100",
    "Asset Category": "Bond",
-   "Par Value": "27,000,000",
-   "Market Value": "$6,974,926.18",
+   "Par Value": "654,350,000",
+   "Market Value": "$6,946,186.82",
    "Weight": "0.14%",
-   "Country": "Germany",
-   "Currency": "PLN"
-  },
-  {
-   "Name": "Republic Of South Africa Government Bon",
-   "Maturity": "Mar 31 2033",
-   "Identifier": "BBG01PL0CN32",
-   "Coupon": "10.000",
-   "Asset Category": "Bond",
-   "Par Value": "107,313,000",
-   "Market Value": "$6,972,593.51",
-   "Weight": "0.14%",
-   "Country": "South Africa",
-   "Currency": "ZAR"
-  },
-  {
-   "Name": "Hungary Government Bond",
-   "Maturity": "Jun 22 2034",
-   "Identifier": "BBG00YTQC093",
-   "Coupon": "2.250",
-   "Asset Category": "Bond",
-   "Par Value": "2,783,390,000",
-   "Market Value": "$6,936,127.01",
-   "Weight": "0.14%",
-   "Country": "Hungary",
-   "Currency": "HUF"
+   "Country": "India",
+   "Currency": "INR"
   },
   {
    "Name": "China Government Bond",
@@ -479,7 +479,7 @@
    "Coupon": "1.660",
    "Asset Category": "Bond",
    "Par Value": "45,110,000",
-   "Market Value": "$6,882,072.55",
+   "Market Value": "$6,889,175.01",
    "Weight": "0.14%",
    "Country": "China",
    "Currency": "CNY"
@@ -491,22 +491,10 @@
    "Coupon": "7.000",
    "Asset Category": "Bond",
    "Par Value": "672,000,000",
-   "Market Value": "$6,785,832.67",
+   "Market Value": "$6,811,534.39",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "INR"
-  },
-  {
-   "Name": "Malaysia Government Bond",
-   "Maturity": "Jul 15 2055",
-   "Identifier": "BBG01W047PJ6",
-   "Coupon": "3.917",
-   "Asset Category": "Bond",
-   "Par Value": "29,325,000",
-   "Market Value": "$6,774,135.72",
-   "Weight": "0.14%",
-   "Country": "Malaysia",
-   "Currency": "MYR"
   },
   {
    "Name": "Romania Government Bond",
@@ -515,10 +503,22 @@
    "Coupon": "4.850",
    "Asset Category": "Bond",
    "Par Value": "33,395,000",
-   "Market Value": "$6,755,213.37",
+   "Market Value": "$6,806,496.95",
    "Weight": "0.14%",
    "Country": "Romania",
    "Currency": "RON"
+  },
+  {
+   "Name": "Malaysia Government Bond",
+   "Maturity": "Jul 15 2055",
+   "Identifier": "BBG01W047PJ6",
+   "Coupon": "3.917",
+   "Asset Category": "Bond",
+   "Par Value": "29,325,000",
+   "Market Value": "$6,773,661.66",
+   "Weight": "0.14%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
   },
   {
    "Name": "Bonos De La Tesoreria De La Republica E",
@@ -527,22 +527,10 @@
    "Coupon": "5.300",
    "Asset Category": "Bond",
    "Par Value": "6,850,000,000",
-   "Market Value": "$6,743,381.40",
+   "Market Value": "$6,756,648.40",
    "Weight": "0.14%",
    "Country": "Chile",
    "Currency": "CLP"
-  },
-  {
-   "Name": "African Development Bank",
-   "Maturity": "May 23 2035",
-   "Identifier": "BBG01V2ZXN03",
-   "Coupon": "6.550",
-   "Asset Category": "Bond",
-   "Par Value": "696,500,000",
-   "Market Value": "$6,700,817.83",
-   "Weight": "0.14%",
-   "Country": "Côte D'Ivoire",
-   "Currency": "INR"
   },
   {
    "Name": "Romania Government Bond",
@@ -551,7 +539,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "31,985,000",
-   "Market Value": "$6,698,787.61",
+   "Market Value": "$6,748,925.34",
    "Weight": "0.14%",
    "Country": "Romania",
    "Currency": "RON"
@@ -563,10 +551,22 @@
    "Coupon": "7.650",
    "Asset Category": "Bond",
    "Par Value": "30,310,000",
-   "Market Value": "$6,669,206.18",
-   "Weight": "0.13%",
+   "Market Value": "$6,719,396.42",
+   "Weight": "0.14%",
    "Country": "Romania",
    "Currency": "RON"
+  },
+  {
+   "Name": "African Development Bank",
+   "Maturity": "May 23 2035",
+   "Identifier": "BBG01V2ZXN03",
+   "Coupon": "6.550",
+   "Asset Category": "Bond",
+   "Par Value": "696,500,000",
+   "Market Value": "$6,713,699.25",
+   "Weight": "0.14%",
+   "Country": "Côte D'Ivoire",
+   "Currency": "INR"
   },
   {
    "Name": "Malaysia Government Bond",
@@ -575,7 +575,7 @@
    "Coupon": "4.921",
    "Asset Category": "Bond",
    "Par Value": "24,540,000",
-   "Market Value": "$6,649,790.79",
+   "Market Value": "$6,640,027.76",
    "Weight": "0.13%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -587,34 +587,10 @@
    "Coupon": "0.050",
    "Asset Category": "Bond",
    "Par Value": "163,820,000",
-   "Market Value": "$6,600,901.02",
+   "Market Value": "$6,635,259.98",
    "Weight": "0.13%",
    "Country": "Czech Republic",
    "Currency": "CZK"
-  },
-  {
-   "Name": "Malaysia Government Bond",
-   "Maturity": "Jul 02 2035",
-   "Identifier": "BBG01VRSNC25",
-   "Coupon": "3.476",
-   "Asset Category": "Bond",
-   "Par Value": "27,232,000",
-   "Market Value": "$6,580,368.93",
-   "Weight": "0.13%",
-   "Country": "Malaysia",
-   "Currency": "MYR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Feb 15 2035",
-   "Identifier": "BBG01S7H0564",
-   "Coupon": "1.610",
-   "Asset Category": "Bond",
-   "Par Value": "43,630,000",
-   "Market Value": "$6,571,697.32",
-   "Weight": "0.13%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "Republic Of South Africa Government Bon",
@@ -623,22 +599,46 @@
    "Coupon": "6.500",
    "Asset Category": "Bond",
    "Par Value": "137,305,779",
-   "Market Value": "$6,567,950.71",
+   "Market Value": "$6,612,053.37",
    "Weight": "0.13%",
    "Country": "South Africa",
    "Currency": "ZAR"
   },
   {
-   "Name": "International Bank For Reconstruction &",
-   "Maturity": "Jan 19 2029",
-   "Identifier": "BBG01C8SMF13",
-   "Coupon": "6.250",
+   "Name": "Czech Republic Government Bond",
+   "Maturity": "Jun 16 2031",
+   "Identifier": "BBG01GZWSBB7",
+   "Coupon": "6.200",
    "Asset Category": "Bond",
-   "Par Value": "113,800,000,000",
-   "Market Value": "$6,553,044.95",
+   "Par Value": "131,300,000",
+   "Market Value": "$6,594,935.35",
    "Weight": "0.13%",
-   "Country": "United States",
-   "Currency": "IDR"
+   "Country": "Czech Republic",
+   "Currency": "CZK"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Feb 15 2035",
+   "Identifier": "BBG01S7H0564",
+   "Coupon": "1.610",
+   "Asset Category": "Bond",
+   "Par Value": "43,630,000",
+   "Market Value": "$6,578,113.47",
+   "Weight": "0.13%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "Malaysia Government Bond",
+   "Maturity": "Jul 02 2035",
+   "Identifier": "BBG01VRSNC25",
+   "Coupon": "3.476",
+   "Asset Category": "Bond",
+   "Par Value": "27,232,000",
+   "Market Value": "$6,567,887.37",
+   "Weight": "0.13%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
   },
   {
    "Name": "China Government Bond",
@@ -647,10 +647,22 @@
    "Coupon": "1.550",
    "Asset Category": "Bond",
    "Par Value": "43,250,000",
-   "Market Value": "$6,543,793.88",
+   "Market Value": "$6,549,217.89",
    "Weight": "0.13%",
    "Country": "China",
    "Currency": "CNY"
+  },
+  {
+   "Name": "International Bank For Reconstruction &",
+   "Maturity": "Jan 19 2029",
+   "Identifier": "BBG01C8SMF13",
+   "Coupon": "6.250",
+   "Asset Category": "Bond",
+   "Par Value": "113,800,000,000",
+   "Market Value": "$6,507,349.16",
+   "Weight": "0.13%",
+   "Country": "United States",
+   "Currency": "IDR"
   },
   {
    "Name": "Bonos De La Tesoreria De La Republica E",
@@ -659,22 +671,22 @@
    "Coupon": "5.800",
    "Asset Category": "Bond",
    "Par Value": "6,380,000,000",
-   "Market Value": "$6,446,013.19",
+   "Market Value": "$6,465,939.50",
    "Weight": "0.13%",
    "Country": "Chile",
    "Currency": "CLP"
   },
   {
-   "Name": "China Government Bond",
-   "Maturity": "Sep 15 2030",
-   "Identifier": "BBG01J798WS1",
-   "Coupon": "2.600",
+   "Name": "Romania Government Bond",
+   "Maturity": "Jan 26 2028",
+   "Identifier": "BBG00RM4T2V7",
+   "Coupon": "4.150",
    "Asset Category": "Bond",
-   "Par Value": "40,990,000",
-   "Market Value": "$6,441,181.15",
+   "Par Value": "30,505,000",
+   "Market Value": "$6,462,436.29",
    "Weight": "0.13%",
-   "Country": "China",
-   "Currency": "CNY"
+   "Country": "Romania",
+   "Currency": "RON"
   },
   {
    "Name": "India Government Bond",
@@ -683,7 +695,7 @@
    "Coupon": "7.040",
    "Asset Category": "Bond",
    "Par Value": "594,180,000",
-   "Market Value": "$6,434,994.18",
+   "Market Value": "$6,459,393.92",
    "Weight": "0.13%",
    "Country": "India",
    "Currency": "INR"
@@ -695,22 +707,22 @@
    "Coupon": "4.200",
    "Asset Category": "Bond",
    "Par Value": "145,800,000",
-   "Market Value": "$6,428,128.42",
+   "Market Value": "$6,446,590.09",
    "Weight": "0.13%",
    "Country": "Czech Republic",
    "Currency": "CZK"
   },
   {
-   "Name": "Romania Government Bond",
-   "Maturity": "Jan 26 2028",
-   "Identifier": "BBG00RM4T2V7",
-   "Coupon": "4.150",
+   "Name": "China Government Bond",
+   "Maturity": "Sep 15 2030",
+   "Identifier": "BBG01J798WS1",
+   "Coupon": "2.600",
    "Asset Category": "Bond",
-   "Par Value": "30,505,000",
-   "Market Value": "$6,418,551.62",
+   "Par Value": "40,990,000",
+   "Market Value": "$6,446,346.02",
    "Weight": "0.13%",
-   "Country": "Romania",
-   "Currency": "RON"
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -719,45 +731,9 @@
    "Coupon": "2.350",
    "Asset Category": "Bond",
    "Par Value": "39,930,000",
-   "Market Value": "$6,354,930.42",
+   "Market Value": "$6,362,807.18",
    "Weight": "0.13%",
    "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Colombian Tes",
-   "Maturity": "Oct 18 2034",
-   "Identifier": "BBG00N13MCM6",
-   "Coupon": "7.250",
-   "Asset Category": "Bond",
-   "Par Value": "25,318,700,000",
-   "Market Value": "$6,342,577.37",
-   "Weight": "0.13%",
-   "Country": "Colombia",
-   "Currency": "COP"
-  },
-  {
-   "Name": "Czech Republic Government Bond",
-   "Maturity": "Jun 16 2031",
-   "Identifier": "BBG01GZWSBB7",
-   "Coupon": "6.200",
-   "Asset Category": "Bond",
-   "Par Value": "125,320,000",
-   "Market Value": "$6,268,517.46",
-   "Weight": "0.13%",
-   "Country": "Czech Republic",
-   "Currency": "CZK"
-  },
-  {
-   "Name": "International Bank For Reconstruction &",
-   "Maturity": "Aug 02 2033",
-   "Identifier": "BBG01P0K1LR1",
-   "Coupon": "2.500",
-   "Asset Category": "Bond",
-   "Par Value": "40,000,000",
-   "Market Value": "$6,254,987.18",
-   "Weight": "0.13%",
-   "Country": "United States",
    "Currency": "CNY"
   },
   {
@@ -767,21 +743,21 @@
    "Coupon": "6.360",
    "Asset Category": "Bond",
    "Par Value": "606,200,000",
-   "Market Value": "$6,251,310.28",
+   "Market Value": "$6,267,513.96",
    "Weight": "0.13%",
    "Country": "India",
    "Currency": "INR"
   },
   {
-   "Name": "China Government Bond",
-   "Maturity": "Dec 25 2032",
-   "Identifier": "BBG01Z2ZG1N6",
-   "Coupon": "1.660",
+   "Name": "International Bank For Reconstruction &",
+   "Maturity": "Aug 02 2033",
+   "Identifier": "BBG01P0K1LR1",
+   "Coupon": "2.500",
    "Asset Category": "Bond",
-   "Par Value": "40,660,000",
-   "Market Value": "$6,230,503.22",
+   "Par Value": "40,000,000",
+   "Market Value": "$6,261,024.49",
    "Weight": "0.13%",
-   "Country": "China",
+   "Country": "United States",
    "Currency": "CNY"
   },
   {
@@ -791,10 +767,22 @@
    "Coupon": "4.500",
    "Asset Category": "Bond",
    "Par Value": "656,380,000",
-   "Market Value": "$6,222,846.45",
+   "Market Value": "$6,254,496.47",
    "Weight": "0.13%",
    "Country": "Serbia",
    "Currency": "RSD"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Dec 25 2032",
+   "Identifier": "BBG01Z2ZG1N6",
+   "Coupon": "1.660",
+   "Asset Category": "Bond",
+   "Par Value": "40,660,000",
+   "Market Value": "$6,236,080.90",
+   "Weight": "0.13%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -803,7 +791,7 @@
    "Coupon": "1.620",
    "Asset Category": "Bond",
    "Par Value": "41,070,000",
-   "Market Value": "$6,179,294.12",
+   "Market Value": "$6,184,257.06",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
@@ -815,7 +803,7 @@
    "Coupon": "2.500",
    "Asset Category": "Bond",
    "Par Value": "39,000,000",
-   "Market Value": "$6,099,426.37",
+   "Market Value": "$6,104,801.88",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "CNY"
@@ -827,7 +815,7 @@
    "Coupon": "2.680",
    "Asset Category": "Bond",
    "Par Value": "38,400,000",
-   "Market Value": "$6,074,465.47",
+   "Market Value": "$6,079,657.06",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
@@ -839,22 +827,10 @@
    "Coupon": "4.254",
    "Asset Category": "Bond",
    "Par Value": "23,631,000",
-   "Market Value": "$6,071,095.12",
+   "Market Value": "$6,057,270.91",
    "Weight": "0.12%",
    "Country": "Malaysia",
    "Currency": "MYR"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "May 15 2028",
-   "Identifier": "BBG0038RJDV2",
-   "Coupon": "6.125",
-   "Asset Category": "Bond",
-   "Par Value": "106,625,000,000",
-   "Market Value": "$6,023,687.49",
-   "Weight": "0.12%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
   },
   {
    "Name": "China Government Bond",
@@ -863,22 +839,22 @@
    "Coupon": "2.550",
    "Asset Category": "Bond",
    "Par Value": "39,030,000",
-   "Market Value": "$5,990,956.39",
+   "Market Value": "$5,996,309.06",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
   },
   {
-   "Name": "Thailand Government Bond",
-   "Maturity": "Jun 17 2042",
-   "Identifier": "BBG00XS4XRW7",
-   "Coupon": "2.000",
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "May 15 2028",
+   "Identifier": "BBG0038RJDV2",
+   "Coupon": "6.125",
    "Asset Category": "Bond",
-   "Par Value": "220,333,000",
-   "Market Value": "$5,933,642.76",
+   "Par Value": "106,625,000,000",
+   "Market Value": "$5,990,047.49",
    "Weight": "0.12%",
-   "Country": "Thailand",
-   "Currency": "THB"
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Romania Government Bond",
@@ -887,10 +863,34 @@
    "Coupon": "4.150",
    "Asset Category": "Bond",
    "Par Value": "29,715,000",
-   "Market Value": "$5,930,949.59",
+   "Market Value": "$5,975,963.42",
    "Weight": "0.12%",
    "Country": "Romania",
    "Currency": "RON"
+  },
+  {
+   "Name": "Thailand Government Bond",
+   "Maturity": "Jun 17 2042",
+   "Identifier": "BBG00XS4XRW7",
+   "Coupon": "2.000",
+   "Asset Category": "Bond",
+   "Par Value": "220,333,000",
+   "Market Value": "$5,934,820.61",
+   "Weight": "0.12%",
+   "Country": "Thailand",
+   "Currency": "THB"
+  },
+  {
+   "Name": "Inter-American Development Bank",
+   "Maturity": "Jan 25 2029",
+   "Identifier": "BBG01KYM6GD2",
+   "Coupon": "7.000",
+   "Asset Category": "Bond",
+   "Par Value": "555,000,000",
+   "Market Value": "$5,933,692.42",
+   "Weight": "0.12%",
+   "Country": "United States",
+   "Currency": "INR"
   },
   {
    "Name": "China Government Bond",
@@ -899,7 +899,7 @@
    "Coupon": "1.260",
    "Asset Category": "Bond",
    "Par Value": "39,440,000",
-   "Market Value": "$5,927,967.34",
+   "Market Value": "$5,933,325.07",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
@@ -911,22 +911,10 @@
    "Coupon": "3.810",
    "Asset Category": "Bond",
    "Par Value": "29,690,000",
-   "Market Value": "$5,924,739.52",
+   "Market Value": "$5,925,541.49",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
-  },
-  {
-   "Name": "Inter-American Development Bank",
-   "Maturity": "Jan 25 2029",
-   "Identifier": "BBG01KYM6GD2",
-   "Coupon": "7.000",
-   "Asset Category": "Bond",
-   "Par Value": "555,000,000",
-   "Market Value": "$5,913,143.60",
-   "Weight": "0.12%",
-   "Country": "United States",
-   "Currency": "INR"
   },
   {
    "Name": "India Government Bond",
@@ -935,22 +923,22 @@
    "Coupon": "7.020",
    "Asset Category": "Bond",
    "Par Value": "550,530,000",
-   "Market Value": "$5,882,154.47",
+   "Market Value": "$5,898,643.44",
    "Weight": "0.12%",
    "Country": "India",
    "Currency": "INR"
   },
   {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "May 15 2038",
-   "Identifier": "BBG00HDDV9B3",
-   "Coupon": "7.500",
+   "Name": "China Government Bond",
+   "Maturity": "Feb 25 2036",
+   "Identifier": "BBG0204NHKP2",
+   "Coupon": "1.750",
    "Asset Category": "Bond",
-   "Par Value": "99,292,000,000",
-   "Market Value": "$5,852,660.07",
+   "Par Value": "38,660,000",
+   "Market Value": "$5,849,005.64",
    "Weight": "0.12%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -959,10 +947,22 @@
    "Coupon": "3.290",
    "Asset Category": "Bond",
    "Par Value": "36,430,000",
-   "Market Value": "$5,837,015.77",
+   "Market Value": "$5,842,138.26",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
+  },
+  {
+   "Name": "Colombian Tes",
+   "Maturity": "Oct 18 2034",
+   "Identifier": "BBG00N13MCM6",
+   "Coupon": "7.250",
+   "Asset Category": "Bond",
+   "Par Value": "25,318,700,000",
+   "Market Value": "$5,808,844.05",
+   "Weight": "0.12%",
+   "Country": "Colombia",
+   "Currency": "COP"
   },
   {
    "Name": "China Government Bond",
@@ -971,7 +971,7 @@
    "Coupon": "1.420",
    "Asset Category": "Bond",
    "Par Value": "38,510,000",
-   "Market Value": "$5,788,465.28",
+   "Market Value": "$5,793,641.76",
    "Weight": "0.12%",
    "Country": "China",
    "Currency": "CNY"
@@ -983,10 +983,58 @@
    "Coupon": "3.635",
    "Asset Category": "Bond",
    "Par Value": "23,431,000",
-   "Market Value": "$5,785,651.39",
+   "Market Value": "$5,787,357.41",
    "Weight": "0.12%",
    "Country": "Malaysia",
    "Currency": "MYR"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "May 15 2038",
+   "Identifier": "BBG00HDDV9B3",
+   "Coupon": "7.500",
+   "Asset Category": "Bond",
+   "Par Value": "99,292,000,000",
+   "Market Value": "$5,764,557.28",
+   "Weight": "0.12%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
+  },
+  {
+   "Name": "Hungary Government Bond",
+   "Maturity": "Apr 25 2041",
+   "Identifier": "BBG00RCZ81Q0",
+   "Coupon": "3.000",
+   "Asset Category": "Bond",
+   "Par Value": "2,354,050,000",
+   "Market Value": "$5,740,004.03",
+   "Weight": "0.12%",
+   "Country": "Hungary",
+   "Currency": "HUF"
+  },
+  {
+   "Name": "Czech Republic Government Bond",
+   "Maturity": "Jul 30 2037",
+   "Identifier": "BBG012919QL2",
+   "Coupon": "1.950",
+   "Asset Category": "Bond",
+   "Par Value": "168,890,000",
+   "Market Value": "$5,703,686.42",
+   "Weight": "0.12%",
+   "Country": "Czech Republic",
+   "Currency": "CZK"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Nov 25 2033",
+   "Identifier": "BBG01K7F2RV7",
+   "Coupon": "2.670",
+   "Asset Category": "Bond",
+   "Par Value": "34,840,000",
+   "Market Value": "$5,700,174.40",
+   "Weight": "0.12%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -995,8 +1043,8 @@
    "Coupon": "2.200",
    "Asset Category": "Bond",
    "Par Value": "36,800,000",
-   "Market Value": "$5,704,458.24",
-   "Weight": "0.12%",
+   "Market Value": "$5,695,621.64",
+   "Weight": "0.11%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -1007,46 +1055,10 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "35,190,000",
-   "Market Value": "$5,697,713.36",
-   "Weight": "0.12%",
+   "Market Value": "$5,655,388.77",
+   "Weight": "0.11%",
    "Country": "Brazil",
    "Currency": "BRL"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Nov 25 2033",
-   "Identifier": "BBG01K7F2RV7",
-   "Coupon": "2.670",
-   "Asset Category": "Bond",
-   "Par Value": "34,840,000",
-   "Market Value": "$5,692,856.79",
-   "Weight": "0.11%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Czech Republic Government Bond",
-   "Maturity": "Jul 30 2037",
-   "Identifier": "BBG012919QL2",
-   "Coupon": "1.950",
-   "Asset Category": "Bond",
-   "Par Value": "168,890,000",
-   "Market Value": "$5,682,393.02",
-   "Weight": "0.11%",
-   "Country": "Czech Republic",
-   "Currency": "CZK"
-  },
-  {
-   "Name": "Hungary Government Bond",
-   "Maturity": "Apr 25 2041",
-   "Identifier": "BBG00RCZ81Q0",
-   "Coupon": "3.000",
-   "Asset Category": "Bond",
-   "Par Value": "2,354,050,000",
-   "Market Value": "$5,639,962.51",
-   "Weight": "0.11%",
-   "Country": "Hungary",
-   "Currency": "HUF"
   },
   {
    "Name": "Romania Government Bond",
@@ -1055,7 +1067,7 @@
    "Coupon": "7.500",
    "Asset Category": "Bond",
    "Par Value": "25,505,000",
-   "Market Value": "$5,592,496.67",
+   "Market Value": "$5,629,396.63",
    "Weight": "0.11%",
    "Country": "Romania",
    "Currency": "RON"
@@ -1067,34 +1079,10 @@
    "Coupon": "7.060",
    "Asset Category": "Bond",
    "Par Value": "524,460,000",
-   "Market Value": "$5,558,194.05",
+   "Market Value": "$5,574,499.42",
    "Weight": "0.11%",
    "Country": "India",
    "Currency": "INR"
-  },
-  {
-   "Name": "European Bank For Reconstruction & Deve",
-   "Maturity": "Jun 03 2036",
-   "Identifier": "BBG022MFYFJ4",
-   "Coupon": "8.750",
-   "Asset Category": "Bond",
-   "Par Value": "100,000,000",
-   "Market Value": "$5,556,152.12",
-   "Weight": "0.11%",
-   "Country": "United Kingdom",
-   "Currency": "MXN"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Dec 25 2030",
-   "Identifier": "BBG01KN0MGH0",
-   "Coupon": "2.540",
-   "Asset Category": "Bond",
-   "Par Value": "34,720,000",
-   "Market Value": "$5,551,430.29",
-   "Weight": "0.11%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "Romania Government Bond",
@@ -1103,10 +1091,34 @@
    "Coupon": "4.750",
    "Asset Category": "Bond",
    "Par Value": "30,410,000",
-   "Market Value": "$5,532,968.70",
+   "Market Value": "$5,573,883.09",
    "Weight": "0.11%",
    "Country": "Romania",
    "Currency": "RON"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Dec 25 2030",
+   "Identifier": "BBG01KN0MGH0",
+   "Coupon": "2.540",
+   "Asset Category": "Bond",
+   "Par Value": "34,720,000",
+   "Market Value": "$5,555,505.71",
+   "Weight": "0.11%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "European Bank For Reconstruction & Deve",
+   "Maturity": "Jun 03 2036",
+   "Identifier": "BBG022MFYFJ4",
+   "Coupon": "8.750",
+   "Asset Category": "Bond",
+   "Par Value": "100,000,000",
+   "Market Value": "$5,540,989.63",
+   "Weight": "0.11%",
+   "Country": "United Kingdom",
+   "Currency": "MXN"
   },
   {
    "Name": "India Government Bond",
@@ -1115,7 +1127,7 @@
    "Coupon": "7.320",
    "Asset Category": "Bond",
    "Par Value": "506,070,000",
-   "Market Value": "$5,521,698.84",
+   "Market Value": "$5,532,573.55",
    "Weight": "0.11%",
    "Country": "India",
    "Currency": "INR"
@@ -1127,7 +1139,7 @@
    "Coupon": "2.500",
    "Asset Category": "Bond",
    "Par Value": "26,405,000",
-   "Market Value": "$5,476,696.58",
+   "Market Value": "$5,510,707.20",
    "Weight": "0.11%",
    "Country": "Romania",
    "Currency": "RON"
@@ -1139,7 +1151,7 @@
    "Coupon": "3.650",
    "Asset Category": "Bond",
    "Par Value": "29,745,000",
-   "Market Value": "$5,434,343.95",
+   "Market Value": "$5,475,709.82",
    "Weight": "0.11%",
    "Country": "Romania",
    "Currency": "RON"
@@ -1151,19 +1163,7 @@
    "Coupon": "1.780",
    "Asset Category": "Bond",
    "Par Value": "35,490,000",
-   "Market Value": "$5,415,370.85",
-   "Weight": "0.11%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Feb 25 2036",
-   "Identifier": "BBG0204NHKP2",
-   "Coupon": "1.750",
-   "Asset Category": "Bond",
-   "Par Value": "35,680,000",
-   "Market Value": "$5,394,814.18",
+   "Market Value": "$5,419,515.30",
    "Weight": "0.11%",
    "Country": "China",
    "Currency": "CNY"
@@ -1175,22 +1175,10 @@
    "Coupon": "10.750",
    "Asset Category": "Bond",
    "Par Value": "291,600,000",
-   "Market Value": "$5,386,174.30",
+   "Market Value": "$5,388,019.13",
    "Weight": "0.11%",
    "Country": "Dominican Republic",
    "Currency": "DOP"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "Apr 15 2039",
-   "Identifier": "BBG00MXQS0V2",
-   "Coupon": "8.375",
-   "Asset Category": "Bond",
-   "Par Value": "88,463,000,000",
-   "Market Value": "$5,374,752.69",
-   "Weight": "0.11%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
   },
   {
    "Name": "International Bank For Reconstruction &",
@@ -1199,7 +1187,7 @@
    "Coupon": "7.050",
    "Asset Category": "Bond",
    "Par Value": "514,000,000",
-   "Market Value": "$5,348,621.80",
+   "Market Value": "$5,360,541.89",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "INR"
@@ -1211,7 +1199,7 @@
    "Coupon": "2.280",
    "Asset Category": "Bond",
    "Par Value": "33,950,000",
-   "Market Value": "$5,343,574.62",
+   "Market Value": "$5,347,215.11",
    "Weight": "0.11%",
    "Country": "China",
    "Currency": "CNY"
@@ -1223,10 +1211,22 @@
    "Coupon": "6.010",
    "Asset Category": "Bond",
    "Par Value": "514,550,000",
-   "Market Value": "$5,308,556.75",
+   "Market Value": "$5,321,385.34",
    "Weight": "0.11%",
    "Country": "India",
    "Currency": "INR"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "Apr 15 2039",
+   "Identifier": "BBG00MXQS0V2",
+   "Coupon": "8.375",
+   "Asset Category": "Bond",
+   "Par Value": "88,463,000,000",
+   "Market Value": "$5,291,532.79",
+   "Weight": "0.11%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "China Government Bond",
@@ -1235,31 +1235,7 @@
    "Coupon": "3.270",
    "Asset Category": "Bond",
    "Par Value": "32,170,000",
-   "Market Value": "$5,283,714.67",
-   "Weight": "0.11%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "European Bank For Reconstruction & Deve",
-   "Maturity": "Feb 07 2028",
-   "Identifier": "BBG00Z3J9GS2",
-   "Coupon": "4.250",
-   "Asset Category": "Bond",
-   "Par Value": "94,030,000,000",
-   "Market Value": "$5,252,248.81",
-   "Weight": "0.11%",
-   "Country": "United Kingdom",
-   "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Sep 25 2054",
-   "Identifier": "BBG01PRC0M44",
-   "Coupon": "2.190",
-   "Asset Category": "Bond",
-   "Par Value": "34,270,000",
-   "Market Value": "$5,242,821.10",
+   "Market Value": "$5,289,474.10",
    "Weight": "0.11%",
    "Country": "China",
    "Currency": "CNY"
@@ -1271,10 +1247,22 @@
    "Coupon": "5.300",
    "Asset Category": "Bond",
    "Par Value": "5,240,000,000",
-   "Market Value": "$5,241,561.24",
+   "Market Value": "$5,255,442.20",
    "Weight": "0.11%",
    "Country": "Chile",
    "Currency": "CLP"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Sep 25 2054",
+   "Identifier": "BBG01PRC0M44",
+   "Coupon": "2.190",
+   "Asset Category": "Bond",
+   "Par Value": "34,270,000",
+   "Market Value": "$5,237,232.52",
+   "Weight": "0.11%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "European Investment Bank",
@@ -1283,10 +1271,22 @@
    "Coupon": "4.500",
    "Asset Category": "Bond",
    "Par Value": "96,500,000",
-   "Market Value": "$5,225,014.77",
+   "Market Value": "$5,228,002.03",
    "Weight": "0.11%",
    "Country": "Luxembourg",
    "Currency": "MXN"
+  },
+  {
+   "Name": "European Bank For Reconstruction & Deve",
+   "Maturity": "Feb 07 2028",
+   "Identifier": "BBG00Z3J9GS2",
+   "Coupon": "4.250",
+   "Asset Category": "Bond",
+   "Par Value": "94,030,000,000",
+   "Market Value": "$5,220,341.51",
+   "Weight": "0.11%",
+   "Country": "United Kingdom",
+   "Currency": "IDR"
   },
   {
    "Name": "Indonesia Treasury Bond",
@@ -1295,8 +1295,8 @@
    "Coupon": "6.375",
    "Asset Category": "Bond",
    "Par Value": "92,953,000,000",
-   "Market Value": "$5,219,204.97",
-   "Weight": "0.11%",
+   "Market Value": "$5,173,395.97",
+   "Weight": "0.10%",
    "Country": "Indonesia",
    "Currency": "IDR"
   },
@@ -1307,22 +1307,22 @@
    "Coupon": "6.250",
    "Asset Category": "Bond",
    "Par Value": "24,516,000,000",
-   "Market Value": "$5,112,563.32",
+   "Market Value": "$5,097,405.22",
    "Weight": "0.10%",
    "Country": "Colombia",
    "Currency": "COP"
   },
   {
-   "Name": "International Bank For Reconstruction &",
-   "Maturity": "Feb 09 2029",
-   "Identifier": "BBG014VSMND5",
-   "Coupon": "5.350",
+   "Name": "Hungary Government Bond",
+   "Maturity": "Oct 27 2038",
+   "Identifier": "BBG00JXGPT05",
+   "Coupon": "3.000",
    "Asset Category": "Bond",
-   "Par Value": "90,560,000,000",
-   "Market Value": "$5,099,038.99",
+   "Par Value": "1,983,900,000",
+   "Market Value": "$5,094,403.46",
    "Weight": "0.10%",
-   "Country": "United States",
-   "Currency": "IDR"
+   "Country": "Hungary",
+   "Currency": "HUF"
   },
   {
    "Name": "China Government Bond",
@@ -1331,7 +1331,7 @@
    "Coupon": "2.520",
    "Asset Category": "Bond",
    "Par Value": "31,680,000",
-   "Market Value": "$5,084,557.51",
+   "Market Value": "$5,091,040.57",
    "Weight": "0.10%",
    "Country": "China",
    "Currency": "CNY"
@@ -1343,10 +1343,22 @@
    "Coupon": "3.020",
    "Asset Category": "Bond",
    "Par Value": "30,990,000",
-   "Market Value": "$5,057,396.77",
+   "Market Value": "$5,060,597.54",
    "Weight": "0.10%",
    "Country": "China",
    "Currency": "CNY"
+  },
+  {
+   "Name": "International Bank For Reconstruction &",
+   "Maturity": "Feb 09 2029",
+   "Identifier": "BBG014VSMND5",
+   "Coupon": "5.350",
+   "Asset Category": "Bond",
+   "Par Value": "90,560,000,000",
+   "Market Value": "$5,050,802.87",
+   "Weight": "0.10%",
+   "Country": "United States",
+   "Currency": "IDR"
   },
   {
    "Name": "India Government Bond",
@@ -1355,34 +1367,10 @@
    "Coupon": "7.380",
    "Asset Category": "Bond",
    "Par Value": "465,050,000",
-   "Market Value": "$5,040,899.16",
+   "Market Value": "$5,044,859.40",
    "Weight": "0.10%",
    "Country": "India",
    "Currency": "INR"
-  },
-  {
-   "Name": "Hungary Government Bond",
-   "Maturity": "Oct 27 2038",
-   "Identifier": "BBG00JXGPT05",
-   "Coupon": "3.000",
-   "Asset Category": "Bond",
-   "Par Value": "1,983,900,000",
-   "Market Value": "$5,013,079.54",
-   "Weight": "0.10%",
-   "Country": "Hungary",
-   "Currency": "HUF"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Jul 15 2055",
-   "Identifier": "BBG01VYCM1N4",
-   "Coupon": "1.900",
-   "Asset Category": "Bond",
-   "Par Value": "34,650,000",
-   "Market Value": "$5,002,409.91",
-   "Weight": "0.10%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "Czech Republic Government Bond",
@@ -1391,10 +1379,22 @@
    "Coupon": "4.950",
    "Asset Category": "Bond",
    "Par Value": "108,330,000",
-   "Market Value": "$4,990,291.50",
+   "Market Value": "$5,004,675.18",
    "Weight": "0.10%",
    "Country": "Czech Republic",
    "Currency": "CZK"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Jul 15 2055",
+   "Identifier": "BBG01VYCM1N4",
+   "Coupon": "1.900",
+   "Asset Category": "Bond",
+   "Par Value": "34,650,000",
+   "Market Value": "$4,994,942.97",
+   "Weight": "0.10%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -1403,7 +1403,7 @@
    "Coupon": "1.870",
    "Asset Category": "Bond",
    "Par Value": "32,470,000",
-   "Market Value": "$4,976,534.65",
+   "Market Value": "$4,979,331.02",
    "Weight": "0.10%",
    "Country": "China",
    "Currency": "CNY"
@@ -1415,7 +1415,7 @@
    "Coupon": "2.620",
    "Asset Category": "Bond",
    "Par Value": "31,340,000",
-   "Market Value": "$4,945,327.86",
+   "Market Value": "$4,951,543.94",
    "Weight": "0.10%",
    "Country": "China",
    "Currency": "CNY"
@@ -1427,22 +1427,10 @@
    "Coupon": "1.500",
    "Asset Category": "Bond",
    "Par Value": "167,090,000",
-   "Market Value": "$4,841,412.00",
+   "Market Value": "$4,857,138.00",
    "Weight": "0.10%",
    "Country": "Czech Republic",
    "Currency": "CZK"
-  },
-  {
-   "Name": "Turkiye Government Bond",
-   "Maturity": "Mar 08 2028",
-   "Identifier": "BBG00K7D7038",
-   "Coupon": "12.400",
-   "Asset Category": "Bond",
-   "Par Value": "309,630,000",
-   "Market Value": "$4,828,239.08",
-   "Weight": "0.10%",
-   "Country": "Turkey",
-   "Currency": "TRY"
   },
   {
    "Name": "Republic Of Poland Government Bond",
@@ -1451,10 +1439,22 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "20,940,000",
-   "Market Value": "$4,804,572.32",
+   "Market Value": "$4,826,035.29",
    "Weight": "0.10%",
    "Country": "Poland",
    "Currency": "PLN"
+  },
+  {
+   "Name": "Turkiye Government Bond",
+   "Maturity": "Mar 08 2028",
+   "Identifier": "BBG00K7D7038",
+   "Coupon": "12.400",
+   "Asset Category": "Bond",
+   "Par Value": "309,630,000",
+   "Market Value": "$4,825,735.31",
+   "Weight": "0.10%",
+   "Country": "Turkey",
+   "Currency": "TRY"
   },
   {
    "Name": "European Bank For Reconstruction & Deve",
@@ -1463,8 +1463,8 @@
    "Coupon": "6.250",
    "Asset Category": "Bond",
    "Par Value": "450,800,000",
-   "Market Value": "$4,701,085.80",
-   "Weight": "0.09%",
+   "Market Value": "$4,717,986.93",
+   "Weight": "0.10%",
    "Country": "United Kingdom",
    "Currency": "INR"
   },
@@ -1475,31 +1475,7 @@
    "Coupon": "2.110",
    "Asset Category": "Bond",
    "Par Value": "29,600,000",
-   "Market Value": "$4,632,681.11",
-   "Weight": "0.09%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "Aug 15 2032",
-   "Identifier": "BBG00F7YXHQ2",
-   "Coupon": "7.500",
-   "Asset Category": "Bond",
-   "Par Value": "79,678,000,000",
-   "Market Value": "$4,595,675.49",
-   "Weight": "0.09%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Oct 15 2053",
-   "Identifier": "BBG01JP5PT98",
-   "Coupon": "3.000",
-   "Asset Category": "Bond",
-   "Par Value": "25,630,000",
-   "Market Value": "$4,575,826.16",
+   "Market Value": "$4,637,847.90",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
@@ -1511,7 +1487,19 @@
    "Coupon": "2.400",
    "Asset Category": "Bond",
    "Par Value": "29,790,000",
-   "Market Value": "$4,573,988.34",
+   "Market Value": "$4,578,055.98",
+   "Weight": "0.09%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Oct 15 2053",
+   "Identifier": "BBG01JP5PT98",
+   "Coupon": "3.000",
+   "Asset Category": "Bond",
+   "Par Value": "25,630,000",
+   "Market Value": "$4,572,642.32",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
@@ -1523,7 +1511,7 @@
    "Coupon": "2.500",
    "Asset Category": "Bond",
    "Par Value": "29,960,000",
-   "Market Value": "$4,544,689.17",
+   "Market Value": "$4,548,742.34",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
@@ -1535,10 +1523,22 @@
    "Coupon": "2.790",
    "Asset Category": "Bond",
    "Par Value": "28,190,000",
-   "Market Value": "$4,516,107.94",
+   "Market Value": "$4,520,123.00",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "Aug 15 2032",
+   "Identifier": "BBG00F7YXHQ2",
+   "Coupon": "7.500",
+   "Asset Category": "Bond",
+   "Par Value": "79,678,000,000",
+   "Market Value": "$4,513,898.07",
+   "Weight": "0.09%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "China Government Bond",
@@ -1547,7 +1547,7 @@
    "Coupon": "1.850",
    "Asset Category": "Bond",
    "Par Value": "29,590,000",
-   "Market Value": "$4,474,851.34",
+   "Market Value": "$4,478,430.63",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
@@ -1559,7 +1559,7 @@
    "Coupon": "2.670",
    "Asset Category": "Bond",
    "Par Value": "27,490,000",
-   "Market Value": "$4,470,216.72",
+   "Market Value": "$4,475,216.76",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
@@ -1571,7 +1571,7 @@
    "Coupon": "1.600",
    "Asset Category": "Bond",
    "Par Value": "154,862,000",
-   "Market Value": "$4,412,227.88",
+   "Market Value": "$4,412,903.65",
    "Weight": "0.09%",
    "Country": "Thailand",
    "Currency": "THB"
@@ -1583,31 +1583,7 @@
    "Coupon": "9.000",
    "Asset Category": "Bond",
    "Par Value": "75,196,000,000",
-   "Market Value": "$4,412,208.42",
-   "Weight": "0.09%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Oct 15 2029",
-   "Identifier": "BBG01Q7741T0",
-   "Coupon": "1.740",
-   "Asset Category": "Bond",
-   "Par Value": "28,610,000",
-   "Market Value": "$4,335,591.87",
-   "Weight": "0.09%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Perusahaan Penerbit Sbsn Indonesia",
-   "Maturity": "Nov 15 2031",
-   "Identifier": "BBG00C0D7TS3",
-   "Coupon": "8.875",
-   "Asset Category": "Bond",
-   "Par Value": "69,630,000,000",
-   "Market Value": "$4,329,580.16",
+   "Market Value": "$4,377,462.73",
    "Weight": "0.09%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -1619,10 +1595,34 @@
    "Coupon": "4.250",
    "Asset Category": "Bond",
    "Par Value": "24,650,000",
-   "Market Value": "$4,323,096.32",
+   "Market Value": "$4,364,768.09",
    "Weight": "0.09%",
    "Country": "Romania",
    "Currency": "RON"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Oct 15 2029",
+   "Identifier": "BBG01Q7741T0",
+   "Coupon": "1.740",
+   "Asset Category": "Bond",
+   "Par Value": "28,610,000",
+   "Market Value": "$4,339,558.75",
+   "Weight": "0.09%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "Perusahaan Penerbit Sbsn Indonesia",
+   "Maturity": "Nov 15 2031",
+   "Identifier": "BBG00C0D7TS3",
+   "Coupon": "8.875",
+   "Asset Category": "Bond",
+   "Par Value": "69,630,000,000",
+   "Market Value": "$4,313,789.41",
+   "Weight": "0.09%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "China Government Bond",
@@ -1631,22 +1631,10 @@
    "Coupon": "2.800",
    "Asset Category": "Bond",
    "Par Value": "26,900,000",
-   "Market Value": "$4,295,389.59",
+   "Market Value": "$4,300,599.20",
    "Weight": "0.09%",
    "Country": "China",
    "Currency": "CNY"
-  },
-  {
-   "Name": "Turkiye Government Bond",
-   "Maturity": "Aug 11 2027",
-   "Identifier": "BBG00HG8TKP4",
-   "Coupon": "10.500",
-   "Asset Category": "Bond",
-   "Par Value": "244,971,000",
-   "Market Value": "$4,241,942.76",
-   "Weight": "0.09%",
-   "Country": "Turkey",
-   "Currency": "TRY"
   },
   {
    "Name": "Romania Government Bond",
@@ -1655,7 +1643,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "18,940,000",
-   "Market Value": "$4,241,646.92",
+   "Market Value": "$4,268,586.84",
    "Weight": "0.09%",
    "Country": "Romania",
    "Currency": "RON"
@@ -1667,10 +1655,22 @@
    "Coupon": "4.500",
    "Asset Category": "Bond",
    "Par Value": "1,411,110,000",
-   "Market Value": "$4,210,106.71",
+   "Market Value": "$4,253,190.83",
    "Weight": "0.09%",
    "Country": "Hungary",
    "Currency": "HUF"
+  },
+  {
+   "Name": "Turkiye Government Bond",
+   "Maturity": "Aug 11 2027",
+   "Identifier": "BBG00HG8TKP4",
+   "Coupon": "10.500",
+   "Asset Category": "Bond",
+   "Par Value": "244,971,000",
+   "Market Value": "$4,239,085.18",
+   "Weight": "0.09%",
+   "Country": "Turkey",
+   "Currency": "TRY"
   },
   {
    "Name": "Malaysia Government Investment Issue",
@@ -1679,7 +1679,7 @@
    "Coupon": "4.258",
    "Asset Category": "Bond",
    "Par Value": "16,811,000",
-   "Market Value": "$4,197,201.35",
+   "Market Value": "$4,197,831.91",
    "Weight": "0.08%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -1691,7 +1691,7 @@
    "Coupon": "2.880",
    "Asset Category": "Bond",
    "Par Value": "25,600,000",
-   "Market Value": "$4,191,975.53",
+   "Market Value": "$4,193,606.59",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1703,7 +1703,7 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "26,010,000",
-   "Market Value": "$4,181,935.27",
+   "Market Value": "$4,186,355.40",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1715,31 +1715,7 @@
    "Coupon": "1.450",
    "Asset Category": "Bond",
    "Par Value": "27,520,000",
-   "Market Value": "$4,159,328.61",
-   "Weight": "0.08%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Nov 15 2027",
-   "Identifier": "BBG01QPRFWR8",
-   "Coupon": "1.420",
-   "Asset Category": "Bond",
-   "Par Value": "27,150,000",
-   "Market Value": "$4,119,123.29",
-   "Weight": "0.08%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Aug 29 2034",
-   "Identifier": "BBG01PD075X3",
-   "Coupon": "2.170",
-   "Asset Category": "Bond",
-   "Par Value": "26,220,000",
-   "Market Value": "$4,117,961.61",
+   "Market Value": "$4,160,627.56",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1751,10 +1727,34 @@
    "Coupon": "7.050",
    "Asset Category": "Bond",
    "Par Value": "392,000,000",
-   "Market Value": "$4,111,064.19",
+   "Market Value": "$4,128,017.69",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "INR"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Nov 15 2027",
+   "Identifier": "BBG01QPRFWR8",
+   "Coupon": "1.420",
+   "Asset Category": "Bond",
+   "Par Value": "27,150,000",
+   "Market Value": "$4,122,799.56",
+   "Weight": "0.08%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Aug 29 2034",
+   "Identifier": "BBG01PD075X3",
+   "Coupon": "2.170",
+   "Asset Category": "Bond",
+   "Par Value": "26,220,000",
+   "Market Value": "$4,122,545.04",
+   "Weight": "0.08%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -1763,7 +1763,7 @@
    "Coupon": "2.690",
    "Asset Category": "Bond",
    "Par Value": "25,560,000",
-   "Market Value": "$4,102,390.80",
+   "Market Value": "$4,105,371.88",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1775,7 +1775,7 @@
    "Coupon": "2.470",
    "Asset Category": "Bond",
    "Par Value": "25,010,000",
-   "Market Value": "$4,062,668.43",
+   "Market Value": "$4,068,084.13",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1787,7 +1787,7 @@
    "Coupon": "4.504",
    "Asset Category": "Bond",
    "Par Value": "15,740,000",
-   "Market Value": "$4,035,396.27",
+   "Market Value": "$4,037,181.83",
    "Weight": "0.08%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -1799,7 +1799,31 @@
    "Coupon": "2.850",
    "Asset Category": "Bond",
    "Par Value": "26,390,000",
-   "Market Value": "$4,032,962.84",
+   "Market Value": "$4,036,209.06",
+   "Weight": "0.08%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "May 20 2054",
+   "Identifier": "BBG01MVJZLN4",
+   "Coupon": "2.570",
+   "Asset Category": "Bond",
+   "Par Value": "24,130,000",
+   "Market Value": "$4,010,275.94",
+   "Weight": "0.08%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Jan 25 2031",
+   "Identifier": "BBG01ZP7N404",
+   "Coupon": "1.540",
+   "Asset Category": "Bond",
+   "Par Value": "26,180,000",
+   "Market Value": "$3,988,008.72",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1811,46 +1835,10 @@
    "Coupon": "8.250",
    "Asset Category": "Bond",
    "Par Value": "66,786,000,000",
-   "Market Value": "$4,023,612.70",
+   "Market Value": "$3,976,197.62",
    "Weight": "0.08%",
    "Country": "Indonesia",
    "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "May 20 2054",
-   "Identifier": "BBG01MVJZLN4",
-   "Coupon": "2.570",
-   "Asset Category": "Bond",
-   "Par Value": "24,130,000",
-   "Market Value": "$4,013,895.53",
-   "Weight": "0.08%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "Jun 15 2036",
-   "Identifier": "BBG00YQ8KDT7",
-   "Coupon": "6.250",
-   "Asset Category": "Bond",
-   "Par Value": "74,645,000,000",
-   "Market Value": "$3,987,842.20",
-   "Weight": "0.08%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Jan 25 2031",
-   "Identifier": "BBG01ZP7N404",
-   "Coupon": "1.540",
-   "Asset Category": "Bond",
-   "Par Value": "26,180,000",
-   "Market Value": "$3,985,127.67",
-   "Weight": "0.08%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "Malaysia Government Bond",
@@ -1859,10 +1847,22 @@
    "Coupon": "3.336",
    "Asset Category": "Bond",
    "Par Value": "16,040,000",
-   "Market Value": "$3,963,231.46",
+   "Market Value": "$3,958,270.74",
    "Weight": "0.08%",
    "Country": "Malaysia",
    "Currency": "MYR"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "Jun 15 2036",
+   "Identifier": "BBG00YQ8KDT7",
+   "Coupon": "6.250",
+   "Asset Category": "Bond",
+   "Par Value": "74,645,000,000",
+   "Market Value": "$3,933,048.61",
+   "Weight": "0.08%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Dominican Republic International Bond",
@@ -1871,7 +1871,7 @@
    "Coupon": "11.250",
    "Asset Category": "Bond",
    "Par Value": "213,400,000",
-   "Market Value": "$3,925,309.47",
+   "Market Value": "$3,921,450.21",
    "Weight": "0.08%",
    "Country": "Dominican Republic",
    "Currency": "DOP"
@@ -1883,7 +1883,7 @@
    "Coupon": "2.800",
    "Asset Category": "Bond",
    "Par Value": "23,750,000",
-   "Market Value": "$3,880,482.36",
+   "Market Value": "$3,883,723.38",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1895,7 +1895,7 @@
    "Coupon": "3.130",
    "Asset Category": "Bond",
    "Par Value": "23,990,000",
-   "Market Value": "$3,852,580.58",
+   "Market Value": "$3,856,088.48",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1907,22 +1907,10 @@
    "Coupon": "2.910",
    "Asset Category": "Bond",
    "Par Value": "24,820,000",
-   "Market Value": "$3,843,566.62",
+   "Market Value": "$3,846,964.81",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
-  },
-  {
-   "Name": "Malaysia Government Investment Issue",
-   "Maturity": "Mar 31 2038",
-   "Identifier": "BBG019V5ZWG7",
-   "Coupon": "4.662",
-   "Asset Category": "Bond",
-   "Par Value": "14,702,000",
-   "Market Value": "$3,828,470.83",
-   "Weight": "0.08%",
-   "Country": "Malaysia",
-   "Currency": "MYR"
   },
   {
    "Name": "Inter-American Development Bank",
@@ -1931,10 +1919,22 @@
    "Coupon": "7.000",
    "Asset Category": "Bond",
    "Par Value": "387,000,000",
-   "Market Value": "$3,827,783.93",
+   "Market Value": "$3,841,878.28",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "INR"
+  },
+  {
+   "Name": "Malaysia Government Investment Issue",
+   "Maturity": "Mar 31 2038",
+   "Identifier": "BBG019V5ZWG7",
+   "Coupon": "4.662",
+   "Asset Category": "Bond",
+   "Par Value": "14,702,000",
+   "Market Value": "$3,809,535.81",
+   "Weight": "0.08%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
   },
   {
    "Name": "International Finance Corp",
@@ -1943,7 +1943,7 @@
    "Coupon": "7.020",
    "Asset Category": "Bond",
    "Par Value": "70,500,000",
-   "Market Value": "$3,799,008.64",
+   "Market Value": "$3,799,579.82",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "MXN"
@@ -1955,7 +1955,7 @@
    "Coupon": "1.450",
    "Asset Category": "Bond",
    "Par Value": "24,960,000",
-   "Market Value": "$3,777,062.58",
+   "Market Value": "$3,780,457.58",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1967,7 +1967,7 @@
    "Coupon": "2.270",
    "Asset Category": "Bond",
    "Par Value": "23,550,000",
-   "Market Value": "$3,750,086.07",
+   "Market Value": "$3,751,679.38",
    "Weight": "0.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -1979,7 +1979,7 @@
    "Coupon": "3.237",
    "Asset Category": "Bond",
    "Par Value": "14,920,000",
-   "Market Value": "$3,650,098.55",
+   "Market Value": "$3,651,135.55",
    "Weight": "0.07%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -1991,7 +1991,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "65,300,000",
-   "Market Value": "$3,623,135.92",
+   "Market Value": "$3,620,304.38",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "MXN"
@@ -2003,7 +2003,7 @@
    "Coupon": "1.570",
    "Asset Category": "Bond",
    "Par Value": "23,820,000",
-   "Market Value": "$3,614,707.02",
+   "Market Value": "$3,616,903.05",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2015,7 +2015,7 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "22,990,000",
-   "Market Value": "$3,607,251.73",
+   "Market Value": "$3,610,491.00",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2027,7 +2027,7 @@
    "Coupon": "6.950",
    "Asset Category": "Bond",
    "Par Value": "340,500,000",
-   "Market Value": "$3,601,575.95",
+   "Market Value": "$3,608,968.15",
    "Weight": "0.07%",
    "Country": "Luxembourg",
    "Currency": "INR"
@@ -2039,22 +2039,10 @@
    "Coupon": "7.240",
    "Asset Category": "Bond",
    "Par Value": "350,520,000",
-   "Market Value": "$3,510,080.18",
+   "Market Value": "$3,526,337.56",
    "Weight": "0.07%",
    "Country": "India",
    "Currency": "INR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Apr 12 2051",
-   "Identifier": "BBG00ZWTJKN3",
-   "Coupon": "3.720",
-   "Asset Category": "Bond",
-   "Par Value": "17,810,000",
-   "Market Value": "$3,503,156.95",
-   "Weight": "0.07%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "Republic Of Poland Government Bond",
@@ -2063,19 +2051,19 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "13,804,000",
-   "Market Value": "$3,499,523.92",
+   "Market Value": "$3,517,403.63",
    "Weight": "0.07%",
    "Country": "Poland",
    "Currency": "PLN"
   },
   {
    "Name": "China Government Bond",
-   "Maturity": "Nov 18 2031",
-   "Identifier": "BBG013GPFVB2",
-   "Coupon": "2.890",
+   "Maturity": "Apr 12 2051",
+   "Identifier": "BBG00ZWTJKN3",
+   "Coupon": "3.720",
    "Asset Category": "Bond",
-   "Par Value": "21,300,000",
-   "Market Value": "$3,470,249.33",
+   "Par Value": "17,810,000",
+   "Market Value": "$3,503,158.58",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2087,7 +2075,7 @@
    "Coupon": "10.125",
    "Asset Category": "Bond",
    "Par Value": "53,460,000",
-   "Market Value": "$3,449,945.58",
+   "Market Value": "$3,475,447.16",
    "Weight": "0.07%",
    "Country": "South Africa",
    "Currency": "ZAR"
@@ -2099,19 +2087,19 @@
    "Coupon": "9.875",
    "Asset Category": "Bond",
    "Par Value": "54,100,000",
-   "Market Value": "$3,448,183.07",
+   "Market Value": "$3,472,340.78",
    "Weight": "0.07%",
    "Country": "South Africa",
    "Currency": "ZAR"
   },
   {
    "Name": "China Government Bond",
-   "Maturity": "May 25 2044",
-   "Identifier": "BBG01MZDWGS2",
-   "Coupon": "2.490",
+   "Maturity": "Nov 18 2031",
+   "Identifier": "BBG013GPFVB2",
+   "Coupon": "2.890",
    "Asset Category": "Bond",
-   "Par Value": "20,940,000",
-   "Market Value": "$3,408,714.45",
+   "Par Value": "21,300,000",
+   "Market Value": "$3,472,103.56",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2123,7 +2111,19 @@
    "Coupon": "2.040",
    "Asset Category": "Bond",
    "Par Value": "21,770,000",
-   "Market Value": "$3,408,555.70",
+   "Market Value": "$3,412,096.13",
+   "Weight": "0.07%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "May 25 2044",
+   "Identifier": "BBG01MZDWGS2",
+   "Coupon": "2.490",
+   "Asset Category": "Bond",
+   "Par Value": "20,940,000",
+   "Market Value": "$3,410,982.27",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2135,19 +2135,7 @@
    "Coupon": "1.920",
    "Asset Category": "Bond",
    "Par Value": "22,960,000",
-   "Market Value": "$3,403,380.27",
-   "Weight": "0.07%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Aug 25 2055",
-   "Identifier": "BBG01WRSVQ78",
-   "Coupon": "2.150",
-   "Asset Category": "Bond",
-   "Par Value": "22,280,000",
-   "Market Value": "$3,371,515.16",
+   "Market Value": "$3,406,132.82",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2159,10 +2147,22 @@
    "Coupon": "17.800",
    "Asset Category": "Bond",
    "Par Value": "262,153,000",
-   "Market Value": "$3,369,050.74",
+   "Market Value": "$3,387,318.44",
    "Weight": "0.07%",
    "Country": "Turkey",
    "Currency": "TRY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Aug 25 2055",
+   "Identifier": "BBG01WRSVQ78",
+   "Coupon": "2.150",
+   "Asset Category": "Bond",
+   "Par Value": "22,280,000",
+   "Market Value": "$3,366,952.65",
+   "Weight": "0.07%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "Mexican Bonos",
@@ -2171,19 +2171,7 @@
    "Coupon": "8.500",
    "Asset Category": "Bond",
    "Par Value": "60,204,000",
-   "Market Value": "$3,361,498.83",
-   "Weight": "0.07%",
-   "Country": "Mexico",
-   "Currency": "MXN"
-  },
-  {
-   "Name": "Mexican Bonos",
-   "Maturity": "May 24 2035",
-   "Identifier": "BBG01HFTZH69",
-   "Coupon": "8.000",
-   "Asset Category": "Bond",
-   "Par Value": "64,550,000",
-   "Market Value": "$3,360,497.94",
+   "Market Value": "$3,363,380.51",
    "Weight": "0.07%",
    "Country": "Mexico",
    "Currency": "MXN"
@@ -2195,10 +2183,22 @@
    "Coupon": "3.624",
    "Asset Category": "Bond",
    "Par Value": "13,780,000",
-   "Market Value": "$3,353,311.28",
+   "Market Value": "$3,357,189.13",
    "Weight": "0.07%",
    "Country": "Malaysia",
    "Currency": "MYR"
+  },
+  {
+   "Name": "Mexican Bonos",
+   "Maturity": "May 24 2035",
+   "Identifier": "BBG01HFTZH69",
+   "Coupon": "8.000",
+   "Asset Category": "Bond",
+   "Par Value": "64,550,000",
+   "Market Value": "$3,354,439.56",
+   "Weight": "0.07%",
+   "Country": "Mexico",
+   "Currency": "MXN"
   },
   {
    "Name": "China Government Bond",
@@ -2207,7 +2207,7 @@
    "Coupon": "1.490",
    "Asset Category": "Bond",
    "Par Value": "21,690,000",
-   "Market Value": "$3,297,562.63",
+   "Market Value": "$3,297,506.50",
    "Weight": "0.07%",
    "Country": "China",
    "Currency": "CNY"
@@ -2219,7 +2219,7 @@
    "Coupon": "7.370",
    "Asset Category": "Bond",
    "Par Value": "297,530,000",
-   "Market Value": "$3,274,876.66",
+   "Market Value": "$3,285,590.94",
    "Weight": "0.07%",
    "Country": "India",
    "Currency": "INR"
@@ -2231,7 +2231,7 @@
    "Coupon": "8.500",
    "Asset Category": "Bond",
    "Par Value": "126,992,000",
-   "Market Value": "$3,263,085.36",
+   "Market Value": "$3,272,979.06",
    "Weight": "0.07%",
    "Country": "Uruguay",
    "Currency": "UYU"
@@ -2243,7 +2243,7 @@
    "Coupon": "10.500",
    "Asset Category": "Bond",
    "Par Value": "184,450,000",
-   "Market Value": "$3,258,924.80",
+   "Market Value": "$3,259,827.29",
    "Weight": "0.07%",
    "Country": "Dominican Republic",
    "Currency": "DOP"
@@ -2255,21 +2255,9 @@
    "Coupon": "7.400",
    "Asset Category": "Bond",
    "Par Value": "302,500,000",
-   "Market Value": "$3,234,571.23",
+   "Market Value": "$3,244,505.08",
    "Weight": "0.07%",
    "Country": "Luxembourg",
-   "Currency": "INR"
-  },
-  {
-   "Name": "India Government Bond",
-   "Maturity": "Apr 17 2030",
-   "Identifier": "BBG01G68Q9C8",
-   "Coupon": "7.170",
-   "Asset Category": "Bond",
-   "Par Value": "295,020,000",
-   "Market Value": "$3,220,887.42",
-   "Weight": "0.07%",
-   "Country": "India",
    "Currency": "INR"
   },
   {
@@ -2279,7 +2267,7 @@
    "Coupon": "2.750",
    "Asset Category": "Bond",
    "Par Value": "20,000,000",
-   "Market Value": "$3,201,320.90",
+   "Market Value": "$3,204,243.96",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "CNY"
@@ -2291,7 +2279,7 @@
    "Coupon": "2.600",
    "Asset Category": "Bond",
    "Par Value": "19,980,000",
-   "Market Value": "$3,198,569.68",
+   "Market Value": "$3,200,952.10",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2303,7 +2291,7 @@
    "Coupon": "2.800",
    "Asset Category": "Bond",
    "Par Value": "19,990,000",
-   "Market Value": "$3,151,876.38",
+   "Market Value": "$3,154,670.35",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2315,7 +2303,7 @@
    "Coupon": "6.375",
    "Asset Category": "Bond",
    "Par Value": "58,856,000,000",
-   "Market Value": "$3,148,912.06",
+   "Market Value": "$3,135,717.17",
    "Weight": "0.06%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -2327,10 +2315,22 @@
    "Coupon": "1.650",
    "Asset Category": "Bond",
    "Par Value": "20,610,000",
-   "Market Value": "$3,127,298.09",
+   "Market Value": "$3,130,094.64",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
+  },
+  {
+   "Name": "India Government Bond",
+   "Maturity": "Apr 17 2030",
+   "Identifier": "BBG01G68Q9C8",
+   "Coupon": "7.170",
+   "Asset Category": "Bond",
+   "Par Value": "295,020,000",
+   "Market Value": "$3,118,538.79",
+   "Weight": "0.06%",
+   "Country": "India",
+   "Currency": "INR"
   },
   {
    "Name": "Thailand Government Bond",
@@ -2339,7 +2339,7 @@
    "Coupon": "1.300",
    "Asset Category": "Bond",
    "Par Value": "102,310,000",
-   "Market Value": "$3,042,731.99",
+   "Market Value": "$3,043,071.64",
    "Weight": "0.06%",
    "Country": "Thailand",
    "Currency": "THB"
@@ -2351,7 +2351,19 @@
    "Coupon": "2.330",
    "Asset Category": "Bond",
    "Par Value": "19,200,000",
-   "Market Value": "$3,036,703.45",
+   "Market Value": "$3,038,815.02",
+   "Weight": "0.06%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Apr 15 2052",
+   "Identifier": "BBG016N7N4C7",
+   "Coupon": "3.320",
+   "Asset Category": "Bond",
+   "Par Value": "15,640,000",
+   "Market Value": "$2,920,397.46",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2363,19 +2375,19 @@
    "Coupon": "12.250",
    "Asset Category": "Bond",
    "Par Value": "32,500,000,000",
-   "Market Value": "$2,921,789.43",
+   "Market Value": "$2,913,609.61",
    "Weight": "0.06%",
    "Country": "Uzbekistan",
    "Currency": "UZS"
   },
   {
    "Name": "China Government Bond",
-   "Maturity": "Apr 15 2052",
-   "Identifier": "BBG016N7N4C7",
-   "Coupon": "3.320",
+   "Maturity": "Jan 15 2055",
+   "Identifier": "BBG01RMXSJL7",
+   "Coupon": "1.920",
    "Asset Category": "Bond",
-   "Par Value": "15,640,000",
-   "Market Value": "$2,921,191.32",
+   "Par Value": "19,610,000",
+   "Market Value": "$2,840,097.99",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2387,22 +2399,10 @@
    "Coupon": "9.500",
    "Asset Category": "Bond",
    "Par Value": "45,438,000,000",
-   "Market Value": "$2,846,860.70",
+   "Market Value": "$2,807,174.43",
    "Weight": "0.06%",
    "Country": "Indonesia",
    "Currency": "IDR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Jan 15 2055",
-   "Identifier": "BBG01RMXSJL7",
-   "Coupon": "1.920",
-   "Asset Category": "Bond",
-   "Par Value": "19,610,000",
-   "Market Value": "$2,843,526.17",
-   "Weight": "0.06%",
-   "Country": "China",
-   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -2411,7 +2411,7 @@
    "Coupon": "3.530",
    "Asset Category": "Bond",
    "Par Value": "14,510,000",
-   "Market Value": "$2,822,466.63",
+   "Market Value": "$2,784,215.23",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2423,7 +2423,7 @@
    "Coupon": "2.440",
    "Asset Category": "Bond",
    "Par Value": "18,200,000",
-   "Market Value": "$2,752,132.61",
+   "Market Value": "$2,754,626.31",
    "Weight": "0.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -2435,7 +2435,7 @@
    "Coupon": "3.280",
    "Asset Category": "Bond",
    "Par Value": "17,240,000",
-   "Market Value": "$2,718,583.03",
+   "Market Value": "$2,720,908.31",
    "Weight": "0.05%",
    "Country": "China",
    "Currency": "CNY"
@@ -2447,7 +2447,7 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "10,150,000",
-   "Market Value": "$2,673,314.34",
+   "Market Value": "$2,683,575.41",
    "Weight": "0.05%",
    "Country": "Luxembourg",
    "Currency": "PLN"
@@ -2459,7 +2459,7 @@
    "Coupon": "8.500",
    "Asset Category": "Bond",
    "Par Value": "15,000,000,000",
-   "Market Value": "$2,618,636.18",
+   "Market Value": "$2,612,954.74",
    "Weight": "0.05%",
    "Country": "Paraguay",
    "Currency": "PYG"
@@ -2471,7 +2471,7 @@
    "Coupon": "7.260",
    "Asset Category": "Bond",
    "Par Value": "238,310,000",
-   "Market Value": "$2,573,398.21",
+   "Market Value": "$2,582,378.68",
    "Weight": "0.05%",
    "Country": "India",
    "Currency": "INR"
@@ -2483,7 +2483,7 @@
    "Coupon": "1.980",
    "Asset Category": "Bond",
    "Par Value": "17,010,000",
-   "Market Value": "$2,557,929.67",
+   "Market Value": "$2,559,919.55",
    "Weight": "0.05%",
    "Country": "China",
    "Currency": "CNY"
@@ -2495,19 +2495,7 @@
    "Coupon": "3.120",
    "Asset Category": "Bond",
    "Par Value": "13,920,000",
-   "Market Value": "$2,553,228.12",
-   "Weight": "0.05%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Apr 15 2053",
-   "Identifier": "BBG01G65BQV1",
-   "Coupon": "3.190",
-   "Asset Category": "Bond",
-   "Par Value": "13,530,000",
-   "Market Value": "$2,480,708.96",
+   "Market Value": "$2,552,164.68",
    "Weight": "0.05%",
    "Country": "China",
    "Currency": "CNY"
@@ -2519,10 +2507,22 @@
    "Coupon": "3.766",
    "Asset Category": "Bond",
    "Par Value": "10,380,000",
-   "Market Value": "$2,480,648.10",
+   "Market Value": "$2,480,119.97",
    "Weight": "0.05%",
    "Country": "Malaysia",
    "Currency": "MYR"
+  },
+  {
+   "Name": "China Government Bond",
+   "Maturity": "Apr 15 2053",
+   "Identifier": "BBG01G65BQV1",
+   "Coupon": "3.190",
+   "Asset Category": "Bond",
+   "Par Value": "13,530,000",
+   "Market Value": "$2,479,371.23",
+   "Weight": "0.05%",
+   "Country": "China",
+   "Currency": "CNY"
   },
   {
    "Name": "China Government Bond",
@@ -2531,7 +2531,7 @@
    "Coupon": "2.760",
    "Asset Category": "Bond",
    "Par Value": "15,150,000",
-   "Market Value": "$2,459,692.10",
+   "Market Value": "$2,461,184.45",
    "Weight": "0.05%",
    "Country": "China",
    "Currency": "CNY"
@@ -2543,7 +2543,7 @@
    "Coupon": "12.000",
    "Asset Category": "Bond",
    "Par Value": "7,100,000,000",
-   "Market Value": "$2,452,084.13",
+   "Market Value": "$2,448,942.43",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "COP"
@@ -2555,7 +2555,7 @@
    "Coupon": "13.625",
    "Asset Category": "Bond",
    "Par Value": "120,880,000",
-   "Market Value": "$2,441,645.54",
+   "Market Value": "$2,436,600.90",
    "Weight": "0.05%",
    "Country": "Dominican Republic",
    "Currency": "DOP"
@@ -2567,7 +2567,7 @@
    "Coupon": "2.620",
    "Asset Category": "Bond",
    "Par Value": "15,270,000",
-   "Market Value": "$2,377,928.13",
+   "Market Value": "$2,380,087.14",
    "Weight": "0.05%",
    "Country": "China",
    "Currency": "CNY"
@@ -2579,7 +2579,7 @@
    "Coupon": "7.250",
    "Asset Category": "Bond",
    "Par Value": "10,330,000",
-   "Market Value": "$2,252,682.30",
+   "Market Value": "$2,265,247.54",
    "Weight": "0.05%",
    "Country": "Romania",
    "Currency": "RON"
@@ -2591,7 +2591,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "212,300,000",
-   "Market Value": "$2,201,230.97",
+   "Market Value": "$2,205,110.27",
    "Weight": "0.04%",
    "Country": "United States",
    "Currency": "INR"
@@ -2603,7 +2603,7 @@
    "Coupon": "1.400",
    "Asset Category": "Bond",
    "Par Value": "14,450,000",
-   "Market Value": "$2,192,760.77",
+   "Market Value": "$2,194,718.61",
    "Weight": "0.04%",
    "Country": "China",
    "Currency": "CNY"
@@ -2615,7 +2615,7 @@
    "Coupon": "2.810",
    "Asset Category": "Bond",
    "Par Value": "14,000,000",
-   "Market Value": "$2,132,600.35",
+   "Market Value": "$2,135,051.39",
    "Weight": "0.04%",
    "Country": "Finland",
    "Currency": "CNY"
@@ -2627,7 +2627,7 @@
    "Coupon": "2.400",
    "Asset Category": "Bond",
    "Par Value": "14,000,000",
-   "Market Value": "$2,129,077.87",
+   "Market Value": "$2,131,464.42",
    "Weight": "0.04%",
    "Country": "Philippines",
    "Currency": "CNY"
@@ -2639,7 +2639,7 @@
    "Coupon": "10.500",
    "Asset Category": "Bond",
    "Par Value": "33,582,000,000",
-   "Market Value": "$2,124,668.81",
+   "Market Value": "$2,104,737.87",
    "Weight": "0.04%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -2651,7 +2651,7 @@
    "Coupon": "5.020",
    "Asset Category": "Bond",
    "Par Value": "40,000,000",
-   "Market Value": "$2,055,323.65",
+   "Market Value": "$2,056,506.62",
    "Weight": "0.04%",
    "Country": "United States",
    "Currency": "MXN"
@@ -2663,7 +2663,7 @@
    "Coupon": "1.660",
    "Asset Category": "Bond",
    "Par Value": "13,470,000",
-   "Market Value": "$2,022,011.16",
+   "Market Value": "$2,022,536.51",
    "Weight": "0.04%",
    "Country": "China",
    "Currency": "CNY"
@@ -2675,7 +2675,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "51,600,000",
-   "Market Value": "$1,982,081.07",
+   "Market Value": "$1,986,919.74",
    "Weight": "0.04%",
    "Country": "Czech Republic",
    "Currency": "CZK"
@@ -2687,7 +2687,7 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "595,000,000",
-   "Market Value": "$1,925,262.16",
+   "Market Value": "$1,944,812.60",
    "Weight": "0.04%",
    "Country": "Hungary",
    "Currency": "HUF"
@@ -2699,22 +2699,10 @@
    "Coupon": "6.940",
    "Asset Category": "Bond",
    "Par Value": "182,400,000",
-   "Market Value": "$1,924,977.75",
+   "Market Value": "$1,930,274.78",
    "Weight": "0.04%",
    "Country": "India",
    "Currency": "INR"
-  },
-  {
-   "Name": "Bonos De La Tesoreria De La Republica E",
-   "Maturity": "May 01 2034",
-   "Identifier": "BBG01B36BKL7",
-   "Coupon": "7.000",
-   "Asset Category": "Bond",
-   "Par Value": "1,635,000,000",
-   "Market Value": "$1,842,858.56",
-   "Weight": "0.04%",
-   "Country": "Chile",
-   "Currency": "CLP"
   },
   {
    "Name": "Thailand Government Bond",
@@ -2723,10 +2711,22 @@
    "Coupon": "3.220",
    "Asset Category": "Bond",
    "Par Value": "60,580,000",
-   "Market Value": "$1,823,765.04",
+   "Market Value": "$1,824,241.80",
    "Weight": "0.04%",
    "Country": "Thailand",
    "Currency": "THB"
+  },
+  {
+   "Name": "Bonos De La Tesoreria De La Republica E",
+   "Maturity": "May 01 2034",
+   "Identifier": "BBG01B36BKL7",
+   "Coupon": "7.000",
+   "Asset Category": "Bond",
+   "Par Value": "1,635,000,000",
+   "Market Value": "$1,824,117.10",
+   "Weight": "0.04%",
+   "Country": "Chile",
+   "Currency": "CLP"
   },
   {
    "Name": "China Government Bond",
@@ -2735,7 +2735,7 @@
    "Coupon": "2.480",
    "Asset Category": "Bond",
    "Par Value": "11,770,000",
-   "Market Value": "$1,806,174.16",
+   "Market Value": "$1,807,774.66",
    "Weight": "0.04%",
    "Country": "China",
    "Currency": "CNY"
@@ -2747,7 +2747,7 @@
    "Coupon": "4.750",
    "Asset Category": "Bond",
    "Par Value": "6,970,000",
-   "Market Value": "$1,791,592.85",
+   "Market Value": "$1,799,152.61",
    "Weight": "0.04%",
    "Country": "Poland",
    "Currency": "PLN"
@@ -2759,7 +2759,7 @@
    "Coupon": "7.070",
    "Asset Category": "Bond",
    "Par Value": "32,700,000",
-   "Market Value": "$1,787,241.56",
+   "Market Value": "$1,783,381.14",
    "Weight": "0.04%",
    "Country": "United States",
    "Currency": "MXN"
@@ -2771,7 +2771,7 @@
    "Coupon": "2.250",
    "Asset Category": "Bond",
    "Par Value": "10,740,000",
-   "Market Value": "$1,697,256.24",
+   "Market Value": "$1,700,255.49",
    "Weight": "0.03%",
    "Country": "China",
    "Currency": "CNY"
@@ -2783,7 +2783,7 @@
    "Coupon": "5.130",
    "Asset Category": "Bond",
    "Par Value": "33,000,000",
-   "Market Value": "$1,626,164.12",
+   "Market Value": "$1,617,536.14",
    "Weight": "0.03%",
    "Country": "United States",
    "Currency": "MXN"
@@ -2795,7 +2795,7 @@
    "Coupon": "3.227",
    "Asset Category": "Bond",
    "Par Value": "6,559,000",
-   "Market Value": "$1,597,823.67",
+   "Market Value": "$1,598,077.85",
    "Weight": "0.03%",
    "Country": "Malaysia",
    "Currency": "MYR"
@@ -2807,7 +2807,7 @@
    "Coupon": "2.380",
    "Asset Category": "Bond",
    "Par Value": "9,990,000",
-   "Market Value": "$1,590,223.71",
+   "Market Value": "$1,587,950.73",
    "Weight": "0.03%",
    "Country": "China",
    "Currency": "CNY"
@@ -2819,7 +2819,7 @@
    "Coupon": "2.370",
    "Asset Category": "Bond",
    "Par Value": "9,880,000",
-   "Market Value": "$1,540,050.32",
+   "Market Value": "$1,541,417.90",
    "Weight": "0.03%",
    "Country": "China",
    "Currency": "CNY"
@@ -2831,22 +2831,10 @@
    "Coupon": "11.700",
    "Asset Category": "Bond",
    "Par Value": "130,712,000",
-   "Market Value": "$1,490,116.58",
+   "Market Value": "$1,490,548.73",
    "Weight": "0.03%",
    "Country": "Turkey",
    "Currency": "TRY"
-  },
-  {
-   "Name": "Indonesia Treasury Bond",
-   "Maturity": "May 15 2032",
-   "Identifier": "BBG0243G2Z00",
-   "Coupon": "7.250",
-   "Asset Category": "Bond",
-   "Par Value": "25,640,000,000",
-   "Market Value": "$1,486,874.63",
-   "Weight": "0.03%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
   },
   {
    "Name": "International Bank For Reconstruction &",
@@ -2855,19 +2843,19 @@
    "Coupon": "5.730",
    "Asset Category": "Bond",
    "Par Value": "5,600,000",
-   "Market Value": "$1,466,702.37",
+   "Market Value": "$1,474,470.88",
    "Weight": "0.03%",
    "Country": "United States",
    "Currency": "PLN"
   },
   {
    "Name": "Indonesia Treasury Bond",
-   "Maturity": "Jul 15 2037",
-   "Identifier": "BBG014C1Z2R2",
-   "Coupon": "6.375",
+   "Maturity": "May 15 2032",
+   "Identifier": "BBG0243G2Z00",
+   "Coupon": "7.250",
    "Asset Category": "Bond",
-   "Par Value": "26,900,000,000",
-   "Market Value": "$1,409,837.38",
+   "Par Value": "25,640,000,000",
+   "Market Value": "$1,457,115.37",
    "Weight": "0.03%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -2879,10 +2867,22 @@
    "Coupon": "6.790",
    "Asset Category": "Bond",
    "Par Value": "134,300,000",
-   "Market Value": "$1,398,111.38",
+   "Market Value": "$1,401,625.18",
    "Weight": "0.03%",
    "Country": "India",
    "Currency": "INR"
+  },
+  {
+   "Name": "Indonesia Treasury Bond",
+   "Maturity": "Jul 15 2037",
+   "Identifier": "BBG014C1Z2R2",
+   "Coupon": "6.375",
+   "Asset Category": "Bond",
+   "Par Value": "26,900,000,000",
+   "Market Value": "$1,398,441.22",
+   "Weight": "0.03%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
   },
   {
    "Name": "Perusahaan Penerbit Sbsn Indonesia",
@@ -2891,7 +2891,7 @@
    "Coupon": "6.875",
    "Asset Category": "Bond",
    "Par Value": "24,600,000,000",
-   "Market Value": "$1,352,291.37",
+   "Market Value": "$1,338,140.99",
    "Weight": "0.03%",
    "Country": "Indonesia",
    "Currency": "IDR"
@@ -2903,7 +2903,7 @@
    "Coupon": "3.010",
    "Asset Category": "Bond",
    "Par Value": "8,020,000",
-   "Market Value": "$1,251,165.30",
+   "Market Value": "$1,252,049.53",
    "Weight": "0.03%",
    "Country": "China",
    "Currency": "CNY"
@@ -2915,7 +2915,7 @@
    "Coupon": "8.500",
    "Asset Category": "Bond",
    "Par Value": "47,912,000",
-   "Market Value": "$1,231,113.47",
+   "Market Value": "$1,234,846.20",
    "Weight": "0.02%",
    "Country": "Uruguay",
    "Currency": "UYU"
@@ -2927,7 +2927,7 @@
    "Coupon": "2.640",
    "Asset Category": "Bond",
    "Par Value": "7,570,000",
-   "Market Value": "$1,175,124.37",
+   "Market Value": "$1,176,159.78",
    "Weight": "0.02%",
    "Country": "China",
    "Currency": "CNY"
@@ -2939,7 +2939,7 @@
    "Coupon": "6.500",
    "Asset Category": "Bond",
    "Par Value": "19,830,000",
-   "Market Value": "$1,094,243.26",
+   "Market Value": "$1,094,404.11",
    "Weight": "0.02%",
    "Country": "Luxembourg",
    "Currency": "MXN"
@@ -2951,7 +2951,7 @@
    "Coupon": "2.620",
    "Asset Category": "Bond",
    "Par Value": "6,780,000",
-   "Market Value": "$1,049,037.86",
+   "Market Value": "$1,049,969.18",
    "Weight": "0.02%",
    "Country": "China",
    "Currency": "CNY"
@@ -2963,7 +2963,7 @@
    "Coupon": "1.320",
    "Asset Category": "Bond",
    "Par Value": "6,810,000",
-   "Market Value": "$1,028,190.47",
+   "Market Value": "$1,029,113.34",
    "Weight": "0.02%",
    "Country": "China",
    "Currency": "CNY"
@@ -2975,7 +2975,7 @@
    "Coupon": "2.875",
    "Asset Category": "Bond",
    "Par Value": "4,088,000",
-   "Market Value": "$1,006,285.69",
+   "Market Value": "$1,010,944.08",
    "Weight": "0.02%",
    "Country": "Luxembourg",
    "Currency": "PLN"
@@ -2987,7 +2987,7 @@
    "Coupon": "5.250",
    "Asset Category": "Bond",
    "Par Value": "18,000,000,000",
-   "Market Value": "$948,480.31",
+   "Market Value": "$935,376.32",
    "Weight": "0.02%",
    "Country": "United Kingdom",
    "Currency": "IDR"
@@ -2999,7 +2999,7 @@
    "Coupon": "5.125",
    "Asset Category": "Bond",
    "Par Value": "15,160,000,000",
-   "Market Value": "$860,194.50",
+   "Market Value": "$856,672.63",
    "Weight": "0.02%",
    "Country": "United Kingdom",
    "Currency": "IDR"
@@ -3011,7 +3011,7 @@
    "Coupon": "3.987",
    "Asset Category": "Bond",
    "Par Value": "3,170,000",
-   "Market Value": "$769,392.63",
+   "Market Value": "$770,158.15",
    "Weight": "0.02%",
    "Country": "Malaysia",
    "Currency": "MYR"

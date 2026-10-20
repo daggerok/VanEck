@@ -2,7 +2,7 @@
  "ticker": "OUNZ",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4537,
+ "totalRows": 4540,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 23 2024",
+   "NAV": "19.6180",
+   "Close": "19.62",
+   "Volume": "817,846",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "771,339,708.05",
+   "Index Level": "n.a."
+  },
+  {
+   "Date": "Jan 22 2024",
+   "NAV": "19.5428",
+   "Close": "19.55",
+   "Volume": "1,166,716",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "768,382,411.14",
+   "Index Level": "n.a."
+  },
+  {
+   "Date": "Jan 21 2024",
+   "NAV": "19.6147",
+   "Close": "19.61",
+   "Volume": "",
+   "Premium/Discount": "-19.63",
+   "Total Net Assets": "771,209,541.12",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Jan 20 2024",
    "NAV": "19.6147",
@@ -8984,33 +9011,6 @@
    "Volume": "226,834",
    "Premium/Discount": "0.02",
    "Total Net Assets": "446,201,068.20",
-   "Index Level": "n.a."
-  },
-  {
-   "Date": "Apr 28 2021",
-   "NAV": "17.2567",
-   "Close": "17.36",
-   "Volume": "274,724",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "448,622,126.04",
-   "Index Level": "n.a."
-  },
-  {
-   "Date": "Apr 27 2021",
-   "NAV": "17.3732",
-   "Close": "17.30",
-   "Volume": "293,066",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "451,650,865.78",
-   "Index Level": "n.a."
-  },
-  {
-   "Date": "Apr 26 2021",
-   "NAV": "17.2681",
-   "Close": "17.35",
-   "Volume": "500,196",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "448,919,465.28",
    "Index Level": "n.a."
   }
  ]

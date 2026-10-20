@@ -2,7 +2,7 @@
  "ticker": "ITM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5105,
+ "totalRows": 5108,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 23 2024",
+   "NAV": "46.4732",
+   "Close": "46.30",
+   "Volume": "258,039",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "2,016,885,962.78",
+   "Index Level": "158.48"
+  },
+  {
+   "Date": "Jan 22 2024",
+   "NAV": "46.5315",
+   "Close": "46.39",
+   "Volume": "498,068",
+   "Premium/Discount": "-0.14",
+   "Total Net Assets": "2,019,415,551.04",
+   "Index Level": "158.67"
+  },
+  {
+   "Date": "Jan 21 2024",
+   "NAV": "46.4885",
+   "Close": "46.36",
+   "Volume": "",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "2,024,521,681.64",
+   "Index Level": "158.51"
+  },
   {
    "Date": "Jan 20 2024",
    "NAV": "46.4885",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.23",
    "Total Net Assets": "1,630,345,107.83",
    "Index Level": "154.17"
-  },
-  {
-   "Date": "Apr 08 2020",
-   "NAV": "49.5707",
-   "Close": "49.01",
-   "Volume": "185,669",
-   "Premium/Discount": "-0.56",
-   "Total Net Assets": "1,618,429,607.27",
-   "Index Level": "153.31"
-  },
-  {
-   "Date": "Apr 07 2020",
-   "NAV": "49.3859",
-   "Close": "48.73",
-   "Volume": "573,614",
-   "Premium/Discount": "-0.66",
-   "Total Net Assets": "1,609,926,874.45",
-   "Index Level": "152.71"
-  },
-  {
-   "Date": "Apr 06 2020",
-   "NAV": "49.1389",
-   "Close": "48.29",
-   "Volume": "1,044,106",
-   "Premium/Discount": "-0.85",
-   "Total Net Assets": "1,626,443,019.65",
-   "Index Level": "151.97"
   }
  ]
 }

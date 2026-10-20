@@ -9,28 +9,28 @@
  "ter": "0.46%",
  "terValue": 0.46,
  "nav": {
-  "display": "$110.63",
-  "value": 110.63,
-  "asOfDate": "Oct 16 2026"
+  "display": "$110.50",
+  "value": 110.5,
+  "asOfDate": "Oct 19 2026"
  },
- "navValue": 110.63,
+ "navValue": 110.5,
  "aum": {
-  "display": "$11.66B",
-  "value": 11655361035.38,
-  "asOfDate": "Oct 16 2026",
+  "display": "$11.62B",
+  "value": 11624340628.82,
+  "asOfDate": "Oct 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 11655361035.38,
- "asOfDate": "Oct 16 2026",
+ "aumValue": 11624340628.82,
+ "asOfDate": "Oct 19 2026",
  "inceptionDate": "Apr 24 2012",
  "exchange": "Cboe BZX",
- "closePrice": "$110.63",
- "closePriceValue": 110.63,
+ "closePrice": "$110.48",
+ "closePriceValue": 110.48,
  "premiumDiscount": {
-  "display": "0.00%",
-  "value": 0
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": 0,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,9 +116,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 16 2026",
-   "ytd": 6.85,
-   "ytdText": "6.85%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 8.04,
    "yr3": 13.03,
    "yr5": 8.86,
@@ -136,7 +134,7 @@
   }
  },
  "metrics": {
-  "ytd": 6.85,
+  "ytd": null,
   "tr1y": 8.04,
   "tr3y": 44.42,
   "tr5y": 52.91,
@@ -154,7 +152,7 @@
   "secYield": 1,
   "secYieldText": "1.00%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-16",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -162,11 +160,11 @@
  "providerCategory": "Moat Investing",
  "terGross": "0.46%",
  "terGrossValue": 0.46,
- "netAssetsAsOf": "Oct 16 2026",
+ "netAssetsAsOf": "Oct 19 2026",
  "holdings": {
   "totalRows": 56,
   "pageSize": 250,
-  "asOfDate": "Oct 15 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-wide-moat-etf-moat/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -174,19 +172,20 @@
   ]
  },
  "history": {
-  "totalRows": 4000,
+  "totalRows": 4003,
   "pageSize": 1000,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-wide-moat-etf-moat/downloads/fundhistoprices/)",
-  "pageCount": 4,
+  "pageCount": 5,
   "pages": [
    "history/001.json",
    "history/002.json",
    "history/003.json",
-   "history/004.json"
+   "history/004.json",
+   "history/005.json"
   ]
  },
- "totalNetAssets": 11660000000,
+ "totalNetAssets": 11620000000,
  "categoryPath": "Equity > Moat Investing",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -223,9 +222,9 @@
   "grossValue": 0.46
  },
  "marketPrice": {
-  "display": "$110.63",
-  "value": 110.63,
-  "asOfDate": "Oct 16 2026"
+  "display": "$110.48",
+  "value": 110.48,
+  "asOfDate": "Oct 19 2026"
  },
  "yields": {
   "dividendYield": 1.31,

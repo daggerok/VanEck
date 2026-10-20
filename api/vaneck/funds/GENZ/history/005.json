@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 6843,
+ "totalRows": 6846,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 06 2015",
+   "NAV": "34.0853",
+   "Close": "34.01",
+   "Volume": "4,027",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "27,268,239.09",
+   "Index Level": "778.60"
+  },
+  {
+   "Date": "Nov 05 2015",
+   "NAV": "34.2077",
+   "Close": "34.35",
+   "Volume": "646",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "27,366,153.84",
+   "Index Level": "782.14"
+  },
+  {
+   "Date": "Nov 04 2015",
+   "NAV": "34.3156",
+   "Close": "34.04",
+   "Volume": "9,750",
+   "Premium/Discount": "-0.28",
+   "Total Net Assets": "27,452,476.89",
+   "Index Level": "785.14"
+  },
   {
    "Date": "Nov 03 2015",
    "NAV": "34.5640",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.17",
    "Total Net Assets": "49,098,544.86",
    "Index Level": "836.06"
-  },
-  {
-   "Date": "Feb 09 2013",
-   "NAV": "39.2788",
-   "Close": "39.11",
-   "Volume": "",
-   "Premium/Discount": "-0.17",
-   "Total Net Assets": "49,098,544.86",
-   "Index Level": "836.06"
-  },
-  {
-   "Date": "Feb 08 2013",
-   "NAV": "39.2788",
-   "Close": "39.11",
-   "Volume": "19,049",
-   "Premium/Discount": "-0.17",
-   "Total Net Assets": "49,098,544.86",
-   "Index Level": "836.06"
-  },
-  {
-   "Date": "Feb 07 2013",
-   "NAV": "38.3145",
-   "Close": "38.13",
-   "Volume": "15,347",
-   "Premium/Discount": "-0.18",
-   "Total Net Assets": "47,893,179.57",
-   "Index Level": "816.58"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "GPZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 500,
+ "totalRows": 503,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "20.9592",
+   "Close": "20.98",
+   "Volume": "169,184",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "233,170,981.61",
+   "Index Level": "2,637.34"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "20.9424",
+   "Close": "20.91",
+   "Volume": "",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "232,984,435.18",
+   "Index Level": "2,635.75"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "20.9424",
+   "Close": "20.91",
+   "Volume": "",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "232,984,435.18",
+   "Index Level": "2,635.75"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "20.9424",
    "Close": "20.91",
    "Volume": "206,603",
    "Premium/Discount": "-0.03",
    "Total Net Assets": "232,984,435.18",
-   "Index Level": "n.a."
+   "Index Level": "2,635.75"
   },
   {
    "Date": "Oct 15 2026",

@@ -2,7 +2,7 @@
  "ticker": "TRUF",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 199,
+ "totalRows": 202,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "28.7142",
+   "Close": "28.73",
+   "Volume": "6",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "574,282.98",
+   "Index Level": "2,634.16"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "28.9501",
+   "Close": "28.95",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "579,001.45",
+   "Index Level": "2,656.24"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "28.9501",
+   "Close": "28.95",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "579,001.45",
+   "Index Level": "2,656.24"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "28.9501",
    "Close": "28.95",
    "Volume": "9",
    "Premium/Discount": "0.00",
    "Total Net Assets": "579,001.45",
-   "Index Level": "n.a."
+   "Index Level": "2,656.24"
   },
   {
    "Date": "Oct 15 2026",

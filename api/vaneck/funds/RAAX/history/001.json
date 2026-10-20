@@ -2,7 +2,7 @@
  "ticker": "RAAX",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 2502,
+ "totalRows": 2505,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 19 2026",
+   "NAV": "40.2678",
+   "Close": "40.39",
+   "Volume": "196,645",
+   "Premium/Discount": "0.12",
+   "Total Net Assets": "1,405,345,456.45",
+   "Index Level": "373.63"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "40.4821",
+   "Close": "40.60",
+   "Volume": "",
+   "Premium/Discount": "0.12",
+   "Total Net Assets": "1,412,826,697.26",
+   "Index Level": "374.52"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "40.4821",
+   "Close": "40.60",
+   "Volume": "",
+   "Premium/Discount": "0.12",
+   "Total Net Assets": "1,412,826,697.26",
+   "Index Level": "374.52"
+  },
   {
    "Date": "Oct 16 2026",
    "NAV": "40.4821",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "97,486,120.69",
    "Index Level": "226.93"
-  },
-  {
-   "Date": "Jan 23 2024",
-   "NAV": "24.8347",
-   "Close": "24.92",
-   "Volume": "43,616",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "97,476,179.44",
-   "Index Level": "224.87"
-  },
-  {
-   "Date": "Jan 22 2024",
-   "NAV": "24.7776",
-   "Close": "24.80",
-   "Volume": "14,757",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "97,251,933.34",
-   "Index Level": "223.21"
-  },
-  {
-   "Date": "Jan 21 2024",
-   "NAV": "24.7383",
-   "Close": "24.76",
-   "Volume": "",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "97,097,751.50",
-   "Index Level": "222.88"
   }
  ]
 }

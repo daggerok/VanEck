@@ -2,7 +2,7 @@
  "ticker": "WARP",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 164,
+ "totalRows": 167,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "17.5783",
+   "Close": "17.56",
+   "Volume": "23,514",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "37,266,011.68",
+   "Index Level": "1,547.75"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "17.4607",
+   "Close": "17.49",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "37,016,738.85",
+   "Index Level": "1,539.16"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "17.4607",
+   "Close": "17.49",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "37,016,738.85",
+   "Index Level": "1,539.16"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "17.4607",
    "Close": "17.49",
    "Volume": "37,644",
    "Premium/Discount": "0.03",
    "Total Net Assets": "37,016,738.85",
-   "Index Level": "n.a."
+   "Index Level": "1,539.16"
   },
   {
    "Date": "Oct 15 2026",

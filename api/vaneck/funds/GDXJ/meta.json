@@ -9,28 +9,28 @@
  "ter": "0.52%",
  "terValue": 0.52,
  "nav": {
-  "display": "$109.76",
-  "value": 109.76,
-  "asOfDate": "Oct 16 2026"
+  "display": "$108.56",
+  "value": 108.56,
+  "asOfDate": "Oct 19 2026"
  },
- "navValue": 109.76,
+ "navValue": 108.56,
  "aum": {
-  "display": "$8.10B",
-  "value": 8104059579.86,
-  "asOfDate": "Oct 16 2026",
+  "display": "$8.04B",
+  "value": 8037134596.53,
+  "asOfDate": "Oct 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 8104059579.86,
- "asOfDate": "Oct 16 2026",
+ "aumValue": 8037134596.53,
+ "asOfDate": "Oct 19 2026",
  "inceptionDate": "Nov 10 2009",
  "exchange": "NYSE Arca",
- "closePrice": "$109.91",
- "closePriceValue": 109.91,
+ "closePrice": "$108.36",
+ "closePriceValue": 108.36,
  "premiumDiscount": {
-  "display": "0.15%",
-  "value": 0.15
+  "display": "-0.20%",
+  "value": -0.2
  },
- "premiumDiscountValue": 0.15,
+ "premiumDiscountValue": -0.2,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -121,9 +121,7 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 16 2026",
-   "ytd": -3.92,
-   "ytdText": "-3.92%",
+   "asOfDate": "Sep 30 2026",
    "yr1": 17.85,
    "yr3": 55.02,
    "yr5": 26.29,
@@ -141,7 +139,7 @@
   }
  },
  "metrics": {
-  "ytd": -3.92,
+  "ytd": null,
   "tr1y": 17.85,
   "tr3y": 272.52,
   "tr5y": 221.31,
@@ -159,7 +157,7 @@
   "secYield": 0.26,
   "secYieldText": "0.26%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-16",
+  "ytdAsOf": null,
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -167,11 +165,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.52%",
  "terGrossValue": 0.52,
- "netAssetsAsOf": "Oct 16 2026",
+ "netAssetsAsOf": "Oct 19 2026",
  "holdings": {
   "totalRows": 162,
   "pageSize": 250,
-  "asOfDate": "Oct 15 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -179,9 +177,9 @@
   ]
  },
  "history": {
-  "totalRows": 4617,
+  "totalRows": 4620,
   "pageSize": 1000,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/junior-gold-miners-etf-gdxj/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -192,7 +190,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 8100000000,
+ "totalNetAssets": 8040000000,
  "indexTicker": "MVGDXJTR",
  "indexName": "Global Junior Gold Miners Index",
  "categoryPath": "Equity > Natural Resources",
@@ -231,16 +229,16 @@
   "grossValue": 0.52
  },
  "marketPrice": {
-  "display": "$109.91",
-  "value": 109.91,
-  "asOfDate": "Oct 16 2026"
+  "display": "$108.36",
+  "value": 108.36,
+  "asOfDate": "Oct 19 2026"
  },
  "yields": {
   "dividendYield": 2.13,
   "dividendYieldText": "2.13%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.41,
-  "indicatedYieldText": "2.41%",
+  "indicatedYield": 2.44,
+  "indicatedYieldText": "2.44%",
   "distributionYield": 2.13,
   "distributionYieldText": "2.13%",
   "yield12M": 3.12,

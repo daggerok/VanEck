@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$80.80",
-  "value": 80.8,
-  "asOfDate": "Oct 16 2026"
+  "display": "$80.32",
+  "value": 80.32,
+  "asOfDate": "Oct 19 2026"
  },
- "navValue": 80.8,
+ "navValue": 80.32,
  "aum": {
-  "display": "$4.04M",
-  "value": 4039980.89,
-  "asOfDate": "Oct 16 2026",
+  "display": "$4.02M",
+  "value": 4016158.27,
+  "asOfDate": "Oct 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4039980.89,
- "asOfDate": "Oct 16 2026",
+ "aumValue": 4016158.27,
+ "asOfDate": "Oct 19 2026",
  "inceptionDate": "Apr 01 2026",
  "exchange": "NASDAQ",
- "closePrice": "$81.00",
- "closePriceValue": 81,
+ "closePrice": "$80.43",
+ "closePriceValue": 80.43,
  "premiumDiscount": {
-  "display": "0.20%",
-  "value": 0.2
+  "display": "0.11%",
+  "value": 0.11
  },
- "premiumDiscountValue": 0.2,
+ "premiumDiscountValue": 0.11,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -52,11 +52,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
-   "sinceInception": 13.33,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
+   "sinceInception": 13.33,
    "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
@@ -95,11 +95,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 16 2026",
+ "netAssetsAsOf": "Oct 19 2026",
  "holdings": {
   "totalRows": 110,
   "pageSize": 250,
-  "asOfDate": "Oct 15 2026",
+  "asOfDate": "Oct 16 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 199,
+  "totalRows": 202,
   "pageSize": 1000,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 4040000,
+ "totalNetAssets": 4020000,
  "indexTicker": "NU763972",
  "indexName": "MSCI EAFE Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -155,16 +155,16 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$81.00",
-  "value": 81,
-  "asOfDate": "Oct 16 2026"
+  "display": "$80.43",
+  "value": 80.43,
+  "asOfDate": "Oct 19 2026"
  },
  "yields": {
   "dividendYield": 0.76,
   "dividendYieldText": "0.76%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.54,
-  "indicatedYieldText": "1.54%",
+  "indicatedYield": 1.55,
+  "indicatedYieldText": "1.55%",
   "distributionYield": 0.76,
   "distributionYieldText": "0.76%",
   "yield12M": null,

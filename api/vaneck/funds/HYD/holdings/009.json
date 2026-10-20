@@ -2,7 +2,7 @@
  "ticker": "HYD",
  "page": 9,
  "pageSize": 250,
- "totalRows": 2077,
+ "totalRows": 2096,
  "headers": [
   "Name",
   "Maturity",
@@ -17,13 +17,241 @@
  ],
  "rows": [
   {
+   "Name": "North Carolina Medical Care Commission",
+   "Maturity": "Oct 01 2030",
+   "Identifier": "BBG00DK59S88",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "165,000",
+   "Market Value": "$165,475.05",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Illinois Finance Authority",
+   "Maturity": "Feb 15 2045",
+   "Identifier": "BBG00JKZN7K5",
+   "Coupon": "5.125",
+   "Asset Category": "Bond",
+   "Par Value": "5,466,605",
+   "Market Value": "$163,998.15",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New Hope Cultural Education Facilities",
+   "Maturity": "Jan 01 2050",
+   "Identifier": "BBG00QXSVVM7",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "185,000",
+   "Market Value": "$162,344.14",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Bristol Industrial Development Authorit",
+   "Maturity": "Nov 01 2044",
+   "Identifier": "BBG007LT85D3",
+   "Coupon": "6.350",
+   "Asset Category": "Bond",
+   "Par Value": "250,000",
+   "Market Value": "$160,000.00",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Capital Trust Agency Inc",
+   "Maturity": "Jul 01 2029",
+   "Identifier": "BBG00N9MSWM6",
+   "Coupon": "4.500",
+   "Asset Category": "Bond",
+   "Par Value": "160,000",
+   "Market Value": "$159,659.90",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "North Broward Hospital District",
+   "Maturity": "Jan 01 2032",
+   "Identifier": "BBG00JB4WF71",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "155,000",
+   "Market Value": "$158,387.53",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New Hope Cultural Education Facilities",
+   "Maturity": "Jan 01 2055",
+   "Identifier": "BBG00QXSVVN6",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "185,000",
+   "Market Value": "$157,661.71",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "City Of Roseville Ca",
+   "Maturity": "Sep 01 2034",
+   "Identifier": "BBG00GTPWKH9",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "155,000",
+   "Market Value": "$157,009.97",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New York State Dormitory Authority",
+   "Maturity": "Jul 01 2031",
+   "Identifier": "BBG0010R3986",
+   "Coupon": "5.250",
+   "Asset Category": "Bond",
+   "Par Value": "150,000",
+   "Market Value": "$156,163.73",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "City Of Chicago Il",
+   "Maturity": "Jan 01 2032",
+   "Identifier": "BBG0011KKD46",
+   "Coupon": "",
+   "Asset Category": "Bond",
+   "Par Value": "195,000",
+   "Market Value": "$154,701.71",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Anaheim Community Facilities District",
+   "Maturity": "Sep 01 2036",
+   "Identifier": "BBG00DGZKD05",
+   "Coupon": "4.000",
+   "Asset Category": "Bond",
+   "Par Value": "160,000",
+   "Market Value": "$154,151.64",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "St Louis County Industrial Development",
+   "Maturity": "Dec 01 2035",
+   "Identifier": "BBG00BCR0NV7",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "150,000",
+   "Market Value": "$152,894.66",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Illinois Finance Authority",
+   "Maturity": "Sep 01 2040",
+   "Identifier": "BBG00R3MYYL3",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "175,000",
+   "Market Value": "$152,782.36",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Flint Hospital Building Authority",
+   "Maturity": "Jul 01 2028",
+   "Identifier": "BBG01946JVL9",
+   "Coupon": "4.750",
+   "Asset Category": "Bond",
+   "Par Value": "150,000",
+   "Market Value": "$150,622.25",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Kentucky Economic Development Finance A",
+   "Maturity": "Nov 15 2045",
+   "Identifier": "BBG003GQVH33",
+   "Coupon": "5.500",
+   "Asset Category": "Bond",
+   "Par Value": "180,000",
+   "Market Value": "$149,391.82",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "County Of Clark Nv",
+   "Maturity": "Aug 01 2035",
+   "Identifier": "BBG00BDPVLS4",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "145,000",
+   "Market Value": "$146,602.93",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Indiana Finance Authority",
+   "Maturity": "Oct 01 2032",
+   "Identifier": "BBG003TV19Q4",
+   "Coupon": "5.000",
+   "Asset Category": "Bond",
+   "Par Value": "150,000",
+   "Market Value": "$145,728.19",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New Jersey Economic Development Authori",
+   "Maturity": "Jul 01 2030",
+   "Identifier": "BBG0088JZ3R8",
+   "Coupon": "4.125",
+   "Asset Category": "Bond",
+   "Par Value": "150,000",
+   "Market Value": "$143,983.86",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New Hampshire Business Finance Authorit",
+   "Maturity": "Dec 15 2034",
+   "Identifier": "BBG020NPMX45",
+   "Coupon": "",
+   "Asset Category": "Bond",
+   "Par Value": "250,000",
+   "Market Value": "$142,042.73",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
    "Name": "City Of Detroit Mi",
    "Maturity": "Apr 01 2046",
    "Identifier": "BBG00Z5KGS76",
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "135,000",
-   "Market Value": "$131,343.00",
+   "Market Value": "$131,339.54",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -35,7 +263,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "130,000",
-   "Market Value": "$130,288.66",
+   "Market Value": "$130,351.12",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -47,7 +275,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "150,000",
-   "Market Value": "$129,011.64",
+   "Market Value": "$129,001.68",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -59,7 +287,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "250,000",
-   "Market Value": "$128,582.68",
+   "Market Value": "$128,672.88",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -71,7 +299,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "140,000",
-   "Market Value": "$128,005.08",
+   "Market Value": "$128,061.02",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -83,7 +311,7 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "125,000",
-   "Market Value": "$127,719.25",
+   "Market Value": "$127,769.91",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -95,7 +323,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "125,000",
-   "Market Value": "$126,909.33",
+   "Market Value": "$126,959.45",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -107,7 +335,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "125,000",
-   "Market Value": "$126,893.01",
+   "Market Value": "$126,941.82",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -119,7 +347,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "125,000",
-   "Market Value": "$126,718.69",
+   "Market Value": "$126,765.20",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -131,7 +359,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "135,000",
-   "Market Value": "$123,634.97",
+   "Market Value": "$123,682.50",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -143,7 +371,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "250,000",
-   "Market Value": "$123,395.08",
+   "Market Value": "$123,485.43",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -155,7 +383,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "125,000",
-   "Market Value": "$123,282.18",
+   "Market Value": "$123,343.99",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -167,7 +395,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "145,000",
-   "Market Value": "$118,345.52",
+   "Market Value": "$118,403.75",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -191,7 +419,7 @@
    "Coupon": "5.700",
    "Asset Category": "Bond",
    "Par Value": "110,000",
-   "Market Value": "$112,942.91",
+   "Market Value": "$112,991.44",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -203,7 +431,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "110,000",
-   "Market Value": "$111,231.28",
+   "Market Value": "$111,276.74",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -215,7 +443,7 @@
    "Coupon": "3.375",
    "Asset Category": "Bond",
    "Par Value": "115,000",
-   "Market Value": "$105,098.15",
+   "Market Value": "$105,165.96",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -227,7 +455,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$102,399.00",
+   "Market Value": "$102,392.95",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -239,19 +467,7 @@
    "Coupon": "5.250",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$101,762.20",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
-   "Name": "San Joaquin Hills Transportation Corrid",
-   "Maturity": "Jan 15 2049",
-   "Identifier": "BBG007DMTT06",
-   "Coupon": "5.250",
-   "Asset Category": "Bond",
-   "Par Value": "100,000",
-   "Market Value": "$101,185.51",
+   "Market Value": "$101,799.19",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -263,7 +479,19 @@
    "Coupon": "5.375",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$101,170.78",
+   "Market Value": "$101,213.05",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "San Joaquin Hills Transportation Corrid",
+   "Maturity": "Jan 15 2049",
+   "Identifier": "BBG007DMTT06",
+   "Coupon": "5.250",
+   "Asset Category": "Bond",
+   "Par Value": "100,000",
+   "Market Value": "$101,177.18",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -275,7 +503,7 @@
    "Coupon": "4.250",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$100,706.42",
+   "Market Value": "$100,730.87",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -287,7 +515,7 @@
    "Coupon": "5.150",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$100,653.41",
+   "Market Value": "$100,696.68",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -299,7 +527,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "115,000",
-   "Market Value": "$98,609.37",
+   "Market Value": "$98,656.74",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -311,7 +539,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "250,000",
-   "Market Value": "$98,126.20",
+   "Market Value": "$98,147.38",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -323,7 +551,7 @@
    "Coupon": "3.800",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$97,648.98",
+   "Market Value": "$97,700.17",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -335,7 +563,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$95,684.37",
+   "Market Value": "$95,740.50",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -347,7 +575,7 @@
    "Coupon": "3.000",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$95,212.95",
+   "Market Value": "$95,268.68",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -359,7 +587,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "100,000",
-   "Market Value": "$92,363.19",
+   "Market Value": "$92,400.38",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -371,7 +599,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "109,000",
-   "Market Value": "$90,070.96",
+   "Market Value": "$90,068.46",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -383,7 +611,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "95,000",
-   "Market Value": "$88,373.18",
+   "Market Value": "$88,428.94",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -395,7 +623,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "85,000",
-   "Market Value": "$83,695.07",
+   "Market Value": "$83,728.82",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -407,7 +635,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "105,000",
-   "Market Value": "$82,885.52",
+   "Market Value": "$82,883.35",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -419,7 +647,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "90,000",
-   "Market Value": "$82,253.38",
+   "Market Value": "$82,289.46",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -455,7 +683,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "105,000",
-   "Market Value": "$70,963.01",
+   "Market Value": "$70,993.63",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -467,7 +695,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "165,000",
-   "Market Value": "$68,229.63",
+   "Market Value": "$68,242.05",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -479,7 +707,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "65,000",
-   "Market Value": "$67,241.61",
+   "Market Value": "$67,267.01",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -491,7 +719,7 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "70,000",
-   "Market Value": "$65,279.77",
+   "Market Value": "$66,957.25",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -503,7 +731,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "115,000",
-   "Market Value": "$62,362.09",
+   "Market Value": "$62,365.21",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -515,7 +743,7 @@
    "Coupon": "5.500",
    "Asset Category": "Bond",
    "Par Value": "60,000",
-   "Market Value": "$61,283.61",
+   "Market Value": "$61,309.56",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -527,7 +755,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "180,000",
-   "Market Value": "$56,578.28",
+   "Market Value": "$56,555.89",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -539,7 +767,7 @@
    "Coupon": "5.750",
    "Asset Category": "Bond",
    "Par Value": "55,000",
-   "Market Value": "$54,283.07",
+   "Market Value": "$54,318.83",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -563,7 +791,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "55,000",
-   "Market Value": "$45,758.87",
+   "Market Value": "$45,783.46",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -587,7 +815,7 @@
    "Coupon": "4.750",
    "Asset Category": "Bond",
    "Par Value": "45,000",
-   "Market Value": "$40,026.52",
+   "Market Value": "$40,085.44",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -599,7 +827,7 @@
    "Coupon": "5.375",
    "Asset Category": "Bond",
    "Par Value": "35,000",
-   "Market Value": "$34,272.79",
+   "Market Value": "$34,279.88",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -617,25 +845,25 @@
    "Currency": "USD"
   },
   {
-   "Name": "New Hope Cultural Education Facilities",
-   "Maturity": "Aug 15 2027",
-   "Identifier": "BBG00JX783Y4",
-   "Coupon": "5.250",
-   "Asset Category": "Bond",
-   "Par Value": "75,000",
-   "Market Value": "$32,250.00",
-   "Weight": "0.00%",
-   "Country": "",
-   "Currency": "USD"
-  },
-  {
    "Name": "Michigan Tobacco Settlement Finance Aut",
    "Maturity": "Jun 01 2052",
    "Identifier": "BBG0010WQ374",
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "260,000",
-   "Market Value": "$31,566.31",
+   "Market Value": "$31,665.71",
+   "Weight": "0.00%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New Hope Cultural Education Facilities",
+   "Maturity": "Aug 15 2027",
+   "Identifier": "BBG00JX783Y4",
+   "Coupon": "5.250",
+   "Asset Category": "Bond",
+   "Par Value": "75,000",
+   "Market Value": "$28,687.50",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -659,7 +887,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "77,374",
-   "Market Value": "$23,789.97",
+   "Market Value": "$23,780.63",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -671,7 +899,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "20,000",
-   "Market Value": "$20,293.75",
+   "Market Value": "$20,302.17",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -695,7 +923,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "15,000",
-   "Market Value": "$14,749.36",
+   "Market Value": "$14,766.86",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -731,7 +959,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,267.58",
+   "Market Value": "$5,270.78",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -743,7 +971,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$5,098.92",
+   "Market Value": "$5,100.37",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -755,7 +983,7 @@
    "Coupon": "6.750",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,734.26",
+   "Market Value": "$4,734.49",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -767,7 +995,7 @@
    "Coupon": "5.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$4,399.45",
+   "Market Value": "$4,405.52",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -779,7 +1007,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,731.78",
+   "Market Value": "$3,733.98",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -791,7 +1019,7 @@
    "Coupon": "3.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,729.26",
+   "Market Value": "$3,729.90",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -803,7 +1031,7 @@
    "Coupon": "3.250",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,441.83",
+   "Market Value": "$3,441.58",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -815,7 +1043,7 @@
    "Coupon": "4.000",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$3,434.28",
+   "Market Value": "$3,434.17",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -827,7 +1055,7 @@
    "Coupon": "6.000",
    "Asset Category": "Bond",
    "Par Value": "3,000",
-   "Market Value": "$3,028.35",
+   "Market Value": "$3,029.45",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -851,7 +1079,7 @@
    "Coupon": "",
    "Asset Category": "Bond",
    "Par Value": "5,000",
-   "Market Value": "$401.59",
+   "Market Value": "$402.99",
    "Weight": "0.00%",
    "Country": "",
    "Currency": "USD"
@@ -922,9 +1150,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "298,041,559",
-   "Market Value": "$298,041,559.37",
-   "Weight": "6.86%",
+   "Par Value": "330,756,411",
+   "Market Value": "$330,756,410.55",
+   "Weight": "7.51%",
    "Country": "",
    "Currency": "USD"
   },
@@ -935,8 +1163,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-30,727,037.31",
-   "Weight": "-0.71%",
+   "Market Value": "$-64,938,634.38",
+   "Weight": "-1.47%",
    "Country": "",
    "Currency": "USD"
   }

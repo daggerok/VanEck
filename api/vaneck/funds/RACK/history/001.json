@@ -2,7 +2,7 @@
  "ticker": "RACK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 138,
+ "totalRows": 141,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "44.2192",
+   "Close": "44.25",
+   "Volume": "24,530",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "68,982,008.51",
+   "Index Level": "3,488.92"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "43.8579",
+   "Close": "43.92",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "67,541,135.45",
+   "Index Level": "3,460.25"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "43.8579",
+   "Close": "43.92",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "67,541,135.45",
+   "Index Level": "3,460.25"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "43.8579",
    "Close": "43.92",
    "Volume": "61,584",
    "Premium/Discount": "0.06",
    "Total Net Assets": "67,541,135.45",
-   "Index Level": "n.a."
+   "Index Level": "3,460.25"
   },
   {
    "Date": "Oct 15 2026",

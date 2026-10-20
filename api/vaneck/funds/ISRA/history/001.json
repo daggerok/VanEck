@@ -2,7 +2,7 @@
  "ticker": "ISRA",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3707,
+ "totalRows": 3710,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 19 2026",
+   "NAV": "64.7667",
+   "Close": "64.99",
+   "Volume": "3,989",
+   "Premium/Discount": "0.22",
+   "Total Net Assets": "153,820,797.33",
+   "Index Level": "922.81"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "64.5498",
+   "Close": "64.71",
+   "Volume": "",
+   "Premium/Discount": "0.16",
+   "Total Net Assets": "153,305,828.74",
+   "Index Level": "920.72"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "64.5498",
+   "Close": "64.71",
+   "Volume": "",
+   "Premium/Discount": "0.16",
+   "Total Net Assets": "153,305,828.74",
+   "Index Level": "920.72"
+  },
   {
    "Date": "Oct 16 2026",
    "NAV": "64.5498",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.08",
    "Total Net Assets": "58,785,326.91",
    "Index Level": "472.73"
-  },
-  {
-   "Date": "Jan 23 2024",
-   "NAV": "34.4733",
-   "Close": "34.53",
-   "Volume": "1,006",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "58,604,542.83",
-   "Index Level": "471.27"
-  },
-  {
-   "Date": "Jan 22 2024",
-   "NAV": "34.3308",
-   "Close": "34.50",
-   "Volume": "2,224",
-   "Premium/Discount": "0.17",
-   "Total Net Assets": "58,362,416.41",
-   "Index Level": "469.55"
-  },
-  {
-   "Date": "Jan 21 2024",
-   "NAV": "34.3052",
-   "Close": "34.45",
-   "Volume": "",
-   "Premium/Discount": "0.14",
-   "Total Net Assets": "58,318,764.24",
-   "Index Level": "466.57"
   }
  ]
 }

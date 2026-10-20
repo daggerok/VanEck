@@ -2,7 +2,7 @@
  "ticker": "PIT",
  "page": 1,
  "pageSize": 250,
- "totalRows": 37,
+ "totalRows": 36,
  "headers": [
   "Name",
   "Ticker",
@@ -20,9 +20,9 @@
    "Identifier": "BBG02444V9G5",
    "Shares Held": "184,704,000",
    "Asset Category": "Bond",
-   "Market Value": "$183,622,757.56",
+   "Market Value": "$183,687,261.74",
    "Notional Value": "",
-   "Weight": "38.13%"
+   "Weight": "37.30%"
   },
   {
    "Name": "United States Treasury Bill",
@@ -30,248 +30,238 @@
    "Identifier": "BBG021Y5W787",
    "Shares Held": "145,754,000",
    "Asset Category": "Bond",
-   "Market Value": "$145,440,426.30",
+   "Market Value": "$145,488,736.47",
    "Notional Value": "",
-   "Weight": "30.20%"
+   "Weight": "29.54%"
   },
   {
    "Name": "United States Treasury Bill",
    "Ticker": "912797VS3",
    "Identifier": "BBG023C7WHV5",
-   "Shares Held": "133,304,000",
+   "Shares Held": "137,591,000",
    "Asset Category": "Bond",
-   "Market Value": "$132,051,974.18",
+   "Market Value": "$136,349,623.73",
    "Notional Value": "",
-   "Weight": "27.42%"
+   "Weight": "27.68%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "12,100",
+   "Asset Category": "other",
+   "Market Value": "$15,711,850.00",
+   "Notional Value": "",
+   "Weight": "3.19%"
   },
   {
    "Name": "Gold 100 Oz Futr Dec26",
    "Ticker": "GCZ6",
    "Identifier": "BBG00YMWRPM1",
-   "Shares Held": "133",
+   "Shares Held": "134",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "55462330.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Copper Future Dec26",
-   "Ticker": "HGZ6",
-   "Identifier": "BBG012NM1M00",
-   "Shares Held": "215",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "35241187.50",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Wti Crude Future Dec26",
-   "Ticker": "CLZ6",
-   "Identifier": "BBG00J6PLYZ0",
-   "Shares Held": "354",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "34161000.00",
+   "Notional Value": "56026740.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Brent Crude Futr Jan27",
    "Ticker": "COF7",
    "Identifier": "BBG00MQ6YG88",
-   "Shares Held": "326",
+   "Shares Held": "441",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "33633420.00",
+   "Notional Value": "47107620.00",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Copper Future Dec26",
+   "Ticker": "HGZ6",
+   "Identifier": "BBG012NM1M00",
+   "Shares Held": "217",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "35661237.50",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Wti Crude Future Dec26",
+   "Ticker": "CLZ6",
+   "Identifier": "BBG00J6PLYZ0",
+   "Shares Held": "357",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "35350140.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Ny Harb Ulsd Fut Feb27",
    "Ticker": "HOG7",
    "Identifier": "BBG01KBJXC89",
-   "Shares Held": "170",
+   "Shares Held": "171",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "31801560.00",
+   "Notional Value": "32484186.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Gasoline Rbob Fut Jan27",
    "Ticker": "XBF7",
    "Identifier": "BBG01BPY92X2",
-   "Shares Held": "218",
+   "Shares Held": "220",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "27457012.80",
+   "Notional Value": "28399140.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Gasoline Rbob Fut Dec26",
    "Ticker": "XBZ6",
    "Identifier": "BBG01BPY9654",
-   "Shares Held": "211",
+   "Shares Held": "213",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "27293187.60",
+   "Notional Value": "28128907.80",
    "Weight": "0.00%"
   },
   {
    "Name": "Ny Harb Ulsd Fut Dec26",
    "Ticker": "HOZ6",
    "Identifier": "BBG01BPYL856",
-   "Shares Held": "133",
+   "Shares Held": "134",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "26000037.00",
+   "Notional Value": "26582169.60",
    "Weight": "0.00%"
   },
   {
    "Name": "Brent Crude Futr Feb27",
    "Ticker": "COG7",
    "Identifier": "BBG00MYZP7P6",
-   "Shares Held": "209",
+   "Shares Held": "211",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "21025400.00",
+   "Notional Value": "21929230.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Ny Harb Ulsd Fut Jan27",
    "Ticker": "HOF7",
    "Identifier": "BBG01BPYL721",
-   "Shares Held": "106",
+   "Shares Held": "107",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "20279750.40",
+   "Notional Value": "20785199.40",
    "Weight": "0.00%"
   },
   {
    "Name": "Silver Future Dec26",
    "Ticker": "SIZ6",
    "Identifier": "BBG0147CGRQ1",
-   "Shares Held": "70",
+   "Shares Held": "71",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "20004600.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Cattle Feeder Fut Nov26",
-   "Ticker": "FCX6",
-   "Identifier": "BBG01Y5LDK03",
-   "Shares Held": "93",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "15900675.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Low Su Gasoil G Nov26",
-   "Ticker": "QSX6",
-   "Identifier": "BBG00QTZK0D6",
-   "Shares Held": "111",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "15856350.00",
+   "Notional Value": "20343275.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Wti Crude Future Jan27",
    "Ticker": "CLF7",
    "Identifier": "BBG00JVDD4R3",
-   "Shares Held": "167",
+   "Shares Held": "169",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "15846630.00",
+   "Notional Value": "16467360.00",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Cattle Feeder Fut Nov26",
+   "Ticker": "FCX6",
+   "Identifier": "BBG01Y5LDK03",
+   "Shares Held": "94",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "16069300.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Lme Pri Alum Futr Nov26",
    "Ticker": "LAX26",
    "Identifier": "BBG00DDR0220",
-   "Shares Held": "202",
+   "Shares Held": "204",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "15126669.00",
+   "Notional Value": "15369156.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Lme Zinc Future Nov26",
    "Ticker": "LXX6",
    "Identifier": "BBG0120CXMK0",
-   "Shares Held": "140",
+   "Shares Held": "141",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "12871285.00",
+   "Notional Value": "13063191.75",
    "Weight": "0.00%"
   },
   {
    "Name": "Live Cattle Futr Dec26",
    "Ticker": "LCZ6",
    "Identifier": "BBG01VF40LW3",
-   "Shares Held": "131",
+   "Shares Held": "132",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "11907900.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Brent Crude Futr Dec26",
-   "Ticker": "COZ6",
-   "Identifier": "BBG00MFMZ6Y7",
-   "Shares Held": "108",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "11439360.00",
+   "Notional Value": "12056880.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Coffee 'C' Future Dec26",
    "Ticker": "KCZ6",
    "Identifier": "BBG01KTZVKC3",
-   "Shares Held": "96",
+   "Shares Held": "97",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "10612800.00",
+   "Notional Value": "11116200.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Soybean Future Jan27",
    "Ticker": "S F7",
    "Identifier": "BBG01QRB0NR7",
-   "Shares Held": "113",
+   "Shares Held": "114",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "7219287.50",
+   "Notional Value": "7271775.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Lean Hogs Future Dec26",
    "Ticker": "LHZ6",
    "Identifier": "BBG01VGC3V04",
-   "Shares Held": "249",
+   "Shares Held": "251",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "6631368.00",
+   "Notional Value": "6719772.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Low Su Gasoil G Dec26",
    "Ticker": "QSZ6",
    "Identifier": "BBG00R3MZDK9",
-   "Shares Held": "41",
+   "Shares Held": "42",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "5685675.00",
+   "Notional Value": "5751900.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Soybean Oil Futr Dec26",
    "Ticker": "BOZ6",
    "Identifier": "BBG01BXXLQ77",
-   "Shares Held": "113",
+   "Shares Held": "114",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "4552770.00",
+   "Notional Value": "4591692.00",
    "Weight": "0.00%"
   },
   {
@@ -281,17 +271,17 @@
    "Shares Held": "122",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "3947920.00",
+   "Notional Value": "3801520.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Corn Future Dec26",
    "Ticker": "C Z6",
    "Identifier": "BBG01BXXLQR5",
-   "Shares Held": "103",
+   "Shares Held": "104",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "2461700.00",
+   "Notional Value": "2466100.00",
    "Weight": "0.00%"
   },
   {
@@ -301,7 +291,7 @@
    "Shares Held": "21",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1702575.00",
+   "Notional Value": "1714755.00",
    "Weight": "0.00%"
   },
   {
@@ -311,7 +301,7 @@
    "Shares Held": "22",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1282820.00",
+   "Notional Value": "1241900.00",
    "Weight": "0.00%"
   },
   {
@@ -321,7 +311,7 @@
    "Shares Held": "3",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1079778.00",
+   "Notional Value": "1085376.00",
    "Weight": "0.00%"
   },
   {
@@ -331,7 +321,7 @@
    "Shares Held": "2",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "501271.50",
+   "Notional Value": "503922.00",
    "Weight": "0.00%"
   },
   {
@@ -341,28 +331,28 @@
    "Shares Held": "14",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "301875.00",
+   "Notional Value": "298305.00",
    "Weight": "0.00%"
   },
   {
    "Name": "Natural Gas Futr Dec26",
    "Ticker": "NGZ26",
    "Identifier": "BBG005N1SZT1",
-   "Shares Held": "2",
+   "Shares Held": "3",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "70660.00",
+   "Notional Value": "101580.00",
    "Weight": "0.00%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "6,634,177",
+   "Shares Held": "7,319,579",
    "Asset Category": "Cash Bal",
-   "Market Value": "$6,634,176.51",
+   "Market Value": "$7,319,578.87",
    "Notional Value": "",
-   "Weight": "1.38%"
+   "Weight": "1.49%"
   },
   {
    "Name": "",
@@ -370,7 +360,7 @@
    "Identifier": "",
    "Shares Held": "-77",
    "Asset Category": "Cash Bal",
-   "Market Value": "$-101.56",
+   "Market Value": "$-102.34",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -380,9 +370,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$13,776,984.51",
+   "Market Value": "$19,666,019.53",
    "Notional Value": "",
-   "Weight": "2.86%"
+   "Weight": "0.80%"
   }
  ]
 }

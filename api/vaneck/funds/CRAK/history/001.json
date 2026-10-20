@@ -2,7 +2,7 @@
  "ticker": "CRAK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3166,
+ "totalRows": 3169,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 19 2026",
+   "NAV": "66.6078",
+   "Close": "66.45",
+   "Volume": "675,175",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "802,624,431.13",
+   "Index Level": "7,381.39"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "67.2396",
+   "Close": "67.34",
+   "Volume": "",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "810,236,849.40",
+   "Index Level": "7,441.15"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "67.2396",
+   "Close": "67.34",
+   "Volume": "",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "810,236,849.40",
+   "Index Level": "7,441.15"
+  },
   {
    "Date": "Oct 16 2026",
    "NAV": "67.2396",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.14",
    "Total Net Assets": "32,075,345.43",
    "Index Level": "3,445.43"
-  },
-  {
-   "Date": "Jan 23 2024",
-   "NAV": "33.2999",
-   "Close": "33.21",
-   "Volume": "4,563",
-   "Premium/Discount": "-0.09",
-   "Total Net Assets": "31,634,912.87",
-   "Index Level": "3,399.90"
-  },
-  {
-   "Date": "Jan 22 2024",
-   "NAV": "33.3441",
-   "Close": "33.26",
-   "Volume": "1,630",
-   "Premium/Discount": "-0.08",
-   "Total Net Assets": "31,676,868.48",
-   "Index Level": "3,403.34"
-  },
-  {
-   "Date": "Jan 21 2024",
-   "NAV": "33.3084",
-   "Close": "33.17",
-   "Volume": "",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "31,642,962.08",
-   "Index Level": "3,394.73"
   }
  ]
 }

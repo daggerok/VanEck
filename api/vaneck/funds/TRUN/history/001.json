@@ -2,7 +2,7 @@
  "ticker": "TRUN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 102,
+ "totalRows": 105,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "32.0232",
+   "Close": "32.06",
+   "Volume": "164",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "320,231.86",
+   "Index Level": "3,152.47"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "32.2288",
+   "Close": "32.25",
+   "Volume": "",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "322,287.61",
+   "Index Level": "3,173.14"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "32.2288",
+   "Close": "32.25",
+   "Volume": "",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "322,287.61",
+   "Index Level": "3,173.14"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "32.2288",
    "Close": "32.25",
    "Volume": "49",
    "Premium/Discount": "0.02",
    "Total Net Assets": "322,287.61",
-   "Index Level": "n.a."
+   "Index Level": "3,173.14"
   },
   {
    "Date": "Oct 15 2026",

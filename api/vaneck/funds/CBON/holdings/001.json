@@ -2,7 +2,7 @@
  "ticker": "CBON",
  "page": 1,
  "pageSize": 250,
- "totalRows": 44,
+ "totalRows": 45,
  "headers": [
   "Name",
   "Maturity",
@@ -17,13 +17,25 @@
  ],
  "rows": [
   {
+   "Name": "Other",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "other",
+   "Par Value": "10,000,000",
+   "Market Value": "$1,545,109.33",
+   "Weight": "4.57%",
+   "Country": "",
+   "Currency": "USD"
+  },
+  {
    "Name": "China Petroleum & Chemical Corp",
    "Maturity": "Jan 14 2030",
    "Identifier": "BBG01RQ19TC2",
    "Coupon": "1.750",
    "Asset Category": "Bond",
    "Par Value": "10,000,000",
-   "Market Value": "$1,520,725.14",
+   "Market Value": "$1,524,550.10",
    "Weight": "4.51%",
    "Country": "China",
    "Currency": "CNY"
@@ -35,8 +47,8 @@
    "Coupon": "1.880",
    "Asset Category": "Bond",
    "Par Value": "10,000,000",
-   "Market Value": "$1,516,907.50",
-   "Weight": "4.50%",
+   "Market Value": "$1,517,866.33",
+   "Weight": "4.49%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -47,7 +59,7 @@
    "Coupon": "1.650",
    "Asset Category": "Bond",
    "Par Value": "10,000,000",
-   "Market Value": "$1,507,675.26",
+   "Market Value": "$1,509,940.96",
    "Weight": "4.47%",
    "Country": "China",
    "Currency": "CNY"
@@ -59,8 +71,8 @@
    "Coupon": "1.950",
    "Asset Category": "Bond",
    "Par Value": "10,000,000",
-   "Market Value": "$1,503,824.13",
-   "Weight": "4.46%",
+   "Market Value": "$1,505,297.50",
+   "Weight": "4.45%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -71,8 +83,8 @@
    "Coupon": "2.390",
    "Asset Category": "Bond",
    "Par Value": "8,700,000",
-   "Market Value": "$1,360,061.62",
-   "Weight": "4.03%",
+   "Market Value": "$1,367,654.52",
+   "Weight": "4.05%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -83,8 +95,8 @@
    "Coupon": "1.720",
    "Asset Category": "Bond",
    "Par Value": "8,700,000",
-   "Market Value": "$1,326,862.95",
-   "Weight": "3.94%",
+   "Market Value": "$1,328,333.33",
+   "Weight": "3.93%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -95,7 +107,7 @@
    "Coupon": "1.700",
    "Asset Category": "Bond",
    "Par Value": "8,000,000",
-   "Market Value": "$1,214,780.34",
+   "Market Value": "$1,216,863.74",
    "Weight": "3.60%",
    "Country": "China",
    "Currency": "CNY"
@@ -107,7 +119,7 @@
    "Coupon": "1.780",
    "Asset Category": "Bond",
    "Par Value": "7,900,000",
-   "Market Value": "$1,199,637.36",
+   "Market Value": "$1,203,358.64",
    "Weight": "3.56%",
    "Country": "China",
    "Currency": "CNY"
@@ -119,7 +131,7 @@
    "Coupon": "2.470",
    "Asset Category": "Bond",
    "Par Value": "7,000,000",
-   "Market Value": "$1,082,737.42",
+   "Market Value": "$1,084,262.88",
    "Weight": "3.21%",
    "Country": "China",
    "Currency": "CNY"
@@ -131,8 +143,8 @@
    "Coupon": "1.660",
    "Asset Category": "Bond",
    "Par Value": "6,650,000",
-   "Market Value": "$1,003,491.09",
-   "Weight": "2.98%",
+   "Market Value": "$1,009,490.98",
+   "Weight": "2.99%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -143,7 +155,7 @@
    "Coupon": "2.000",
    "Asset Category": "Bond",
    "Par Value": "6,250,000",
-   "Market Value": "$948,026.32",
+   "Market Value": "$949,782.07",
    "Weight": "2.81%",
    "Country": "China",
    "Currency": "CNY"
@@ -155,8 +167,8 @@
    "Coupon": "1.590",
    "Asset Category": "Bond",
    "Par Value": "5,970,000",
-   "Market Value": "$902,224.90",
-   "Weight": "2.68%",
+   "Market Value": "$903,344.94",
+   "Weight": "2.67%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -167,7 +179,7 @@
    "Coupon": "1.460",
    "Asset Category": "Bond",
    "Par Value": "5,850,000",
-   "Market Value": "$882,723.61",
+   "Market Value": "$883,895.79",
    "Weight": "2.62%",
    "Country": "China",
    "Currency": "CNY"
@@ -179,7 +191,7 @@
    "Coupon": "1.290",
    "Asset Category": "Bond",
    "Par Value": "5,660,000",
-   "Market Value": "$852,533.96",
+   "Market Value": "$853,799.78",
    "Weight": "2.53%",
    "Country": "China",
    "Currency": "CNY"
@@ -191,8 +203,8 @@
    "Coupon": "2.880",
    "Asset Category": "Bond",
    "Par Value": "5,500,000",
-   "Market Value": "$834,773.71",
-   "Weight": "2.48%",
+   "Market Value": "$836,235.58",
+   "Weight": "2.47%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -203,7 +215,7 @@
    "Coupon": "1.400",
    "Asset Category": "Bond",
    "Par Value": "5,400,000",
-   "Market Value": "$813,660.87",
+   "Market Value": "$815,700.23",
    "Weight": "2.41%",
    "Country": "China",
    "Currency": "CNY"
@@ -215,7 +227,7 @@
    "Coupon": "3.660",
    "Asset Category": "Bond",
    "Par Value": "4,790,000",
-   "Market Value": "$796,443.62",
+   "Market Value": "$798,612.31",
    "Weight": "2.36%",
    "Country": "China",
    "Currency": "CNY"
@@ -227,7 +239,7 @@
    "Coupon": "3.450",
    "Asset Category": "Bond",
    "Par Value": "4,800,000",
-   "Market Value": "$759,928.59",
+   "Market Value": "$761,645.30",
    "Weight": "2.25%",
    "Country": "China",
    "Currency": "CNY"
@@ -239,8 +251,8 @@
    "Coupon": "3.060",
    "Asset Category": "Bond",
    "Par Value": "4,640,000",
-   "Market Value": "$756,471.03",
-   "Weight": "2.24%",
+   "Market Value": "$759,550.90",
+   "Weight": "2.25%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -251,7 +263,7 @@
    "Coupon": "1.910",
    "Asset Category": "Bond",
    "Par Value": "4,730,000",
-   "Market Value": "$722,158.31",
+   "Market Value": "$723,419.74",
    "Weight": "2.14%",
    "Country": "China",
    "Currency": "CNY"
@@ -263,7 +275,7 @@
    "Coupon": "3.480",
    "Asset Category": "Bond",
    "Par Value": "4,460,000",
-   "Market Value": "$713,702.79",
+   "Market Value": "$714,713.70",
    "Weight": "2.12%",
    "Country": "China",
    "Currency": "CNY"
@@ -275,7 +287,7 @@
    "Coupon": "2.820",
    "Asset Category": "Bond",
    "Par Value": "4,600,000",
-   "Market Value": "$700,827.03",
+   "Market Value": "$701,524.34",
    "Weight": "2.08%",
    "Country": "China",
    "Currency": "CNY"
@@ -287,7 +299,7 @@
    "Coupon": "3.700",
    "Asset Category": "Bond",
    "Par Value": "4,150,000",
-   "Market Value": "$694,768.40",
+   "Market Value": "$696,759.92",
    "Weight": "2.06%",
    "Country": "China",
    "Currency": "CNY"
@@ -299,7 +311,7 @@
    "Coupon": "3.280",
    "Asset Category": "Bond",
    "Par Value": "4,300,000",
-   "Market Value": "$661,191.35",
+   "Market Value": "$662,092.95",
    "Weight": "1.96%",
    "Country": "China",
    "Currency": "CNY"
@@ -311,8 +323,8 @@
    "Coupon": "2.690",
    "Asset Category": "Bond",
    "Par Value": "4,060,000",
-   "Market Value": "$650,090.98",
-   "Weight": "1.93%",
+   "Market Value": "$654,308.16",
+   "Weight": "1.94%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -323,7 +335,7 @@
    "Coupon": "2.870",
    "Asset Category": "Bond",
    "Par Value": "3,950,000",
-   "Market Value": "$602,500.54",
+   "Market Value": "$603,340.59",
    "Weight": "1.79%",
    "Country": "China",
    "Currency": "CNY"
@@ -335,20 +347,8 @@
    "Coupon": "2.520",
    "Asset Category": "Bond",
    "Par Value": "3,900,000",
-   "Market Value": "$598,660.83",
-   "Weight": "1.78%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
-   "Name": "Export-Import Bank Of China/The",
-   "Maturity": "Jul 16 2031",
-   "Identifier": "BBG011RSSMT5",
-   "Coupon": "3.380",
-   "Asset Category": "Bond",
-   "Par Value": "3,400,000",
-   "Market Value": "$555,087.87",
-   "Weight": "1.65%",
+   "Market Value": "$599,648.71",
+   "Weight": "1.77%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -359,8 +359,20 @@
    "Coupon": "2.270",
    "Asset Category": "Bond",
    "Par Value": "3,490,000",
-   "Market Value": "$554,030.12",
-   "Weight": "1.64%",
+   "Market Value": "$557,572.31",
+   "Weight": "1.65%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "Export-Import Bank Of China/The",
+   "Maturity": "Jul 16 2031",
+   "Identifier": "BBG011RSSMT5",
+   "Coupon": "3.380",
+   "Asset Category": "Bond",
+   "Par Value": "3,400,000",
+   "Market Value": "$556,737.35",
+   "Weight": "1.65%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -371,7 +383,7 @@
    "Coupon": "1.790",
    "Asset Category": "Bond",
    "Par Value": "3,590,000",
-   "Market Value": "$551,974.14",
+   "Market Value": "$554,078.37",
    "Weight": "1.64%",
    "Country": "China",
    "Currency": "CNY"
@@ -383,7 +395,7 @@
    "Coupon": "1.670",
    "Asset Category": "Bond",
    "Par Value": "3,380,000",
-   "Market Value": "$512,229.68",
+   "Market Value": "$515,135.92",
    "Weight": "1.52%",
    "Country": "China",
    "Currency": "CNY"
@@ -395,7 +407,7 @@
    "Coupon": "3.740",
    "Asset Category": "Bond",
    "Par Value": "3,020,000",
-   "Market Value": "$506,197.91",
+   "Market Value": "$507,486.06",
    "Weight": "1.50%",
    "Country": "China",
    "Currency": "CNY"
@@ -407,8 +419,8 @@
    "Coupon": "2.820",
    "Asset Category": "Bond",
    "Par Value": "3,080,000",
-   "Market Value": "$499,970.81",
-   "Weight": "1.48%",
+   "Market Value": "$502,872.11",
+   "Weight": "1.49%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -419,8 +431,8 @@
    "Coupon": "2.670",
    "Asset Category": "Bond",
    "Par Value": "2,590,000",
-   "Market Value": "$422,374.21",
-   "Weight": "1.25%",
+   "Market Value": "$425,167.20",
+   "Weight": "1.26%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -431,7 +443,7 @@
    "Coupon": "4.040",
    "Asset Category": "Bond",
    "Par Value": "2,640,000",
-   "Market Value": "$407,730.69",
+   "Market Value": "$408,293.38",
    "Weight": "1.21%",
    "Country": "China",
    "Currency": "CNY"
@@ -443,7 +455,7 @@
    "Coupon": "2.960",
    "Asset Category": "Bond",
    "Par Value": "2,420,000",
-   "Market Value": "$384,896.58",
+   "Market Value": "$385,910.09",
    "Weight": "1.14%",
    "Country": "China",
    "Currency": "CNY"
@@ -455,7 +467,7 @@
    "Coupon": "2.550",
    "Asset Category": "Bond",
    "Par Value": "2,290,000",
-   "Market Value": "$351,333.45",
+   "Market Value": "$351,636.45",
    "Weight": "1.04%",
    "Country": "China",
    "Currency": "CNY"
@@ -467,8 +479,8 @@
    "Coupon": "3.650",
    "Asset Category": "Bond",
    "Par Value": "1,950,000",
-   "Market Value": "$311,926.62",
-   "Weight": "0.93%",
+   "Market Value": "$312,491.36",
+   "Weight": "0.92%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -479,7 +491,7 @@
    "Coupon": "2.350",
    "Asset Category": "Bond",
    "Par Value": "1,760,000",
-   "Market Value": "$279,589.52",
+   "Market Value": "$281,234.29",
    "Weight": "0.83%",
    "Country": "China",
    "Currency": "CNY"
@@ -491,7 +503,7 @@
    "Coupon": "4.890",
    "Asset Category": "Bond",
    "Par Value": "1,600,000",
-   "Market Value": "$257,277.11",
+   "Market Value": "$257,684.84",
    "Weight": "0.76%",
    "Country": "China",
    "Currency": "CNY"
@@ -503,7 +515,7 @@
    "Coupon": "3.100",
    "Asset Category": "Bond",
    "Par Value": "580,000",
-   "Market Value": "$96,164.76",
+   "Market Value": "$96,721.73",
    "Weight": "0.29%",
    "Country": "China",
    "Currency": "CNY"
@@ -514,9 +526,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "4,984,171",
-   "Market Value": "$4,984,170.66",
-   "Weight": "14.79%",
+   "Par Value": "4,992,084",
+   "Market Value": "$4,992,084.46",
+   "Weight": "14.77%",
    "Country": "United States",
    "Currency": "USD"
   },
@@ -526,9 +538,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "2,096,067",
-   "Market Value": "$313,313.47",
-   "Weight": "0.93%",
+   "Par Value": "2,037,672",
+   "Market Value": "$304,876.43",
+   "Weight": "0.90%",
    "Country": "China",
    "Currency": "CNY"
   },
@@ -539,8 +551,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-3,406,917.10",
-   "Weight": "-10.11%",
+   "Market Value": "$-4,949,817.67",
+   "Weight": "-14.65%",
    "Country": "",
    "Currency": "USD"
   }

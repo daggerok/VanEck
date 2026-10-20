@@ -2,7 +2,7 @@
  "ticker": "TRUH",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 199,
+ "totalRows": 202,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "30.6097",
+   "Close": "30.64",
+   "Volume": "533",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "612,193.40",
+   "Index Level": "2,348.05"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "30.7981",
+   "Close": "30.81",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "615,962.43",
+   "Index Level": "2,362.68"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "30.7981",
+   "Close": "30.81",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "615,962.43",
+   "Index Level": "2,362.68"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "30.7981",
    "Close": "30.81",
    "Volume": "987",
    "Premium/Discount": "0.01",
    "Total Net Assets": "615,962.43",
-   "Index Level": "n.a."
+   "Index Level": "2,362.68"
   },
   {
    "Date": "Oct 15 2026",

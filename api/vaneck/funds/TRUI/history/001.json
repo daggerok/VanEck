@@ -2,7 +2,7 @@
  "ticker": "TRUI",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 137,
+ "totalRows": 140,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 19 2026",
+   "NAV": "23.8315",
+   "Close": "23.85",
+   "Volume": "9",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "238,315.02",
+   "Index Level": "2,634.59"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "23.9853",
+   "Close": "23.98",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "239,852.96",
+   "Index Level": "2,652.39"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "23.9853",
+   "Close": "23.98",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "239,852.96",
+   "Index Level": "2,652.39"
+  },
+  {
    "Date": "Oct 16 2026",
    "NAV": "23.9853",
    "Close": "23.98",
    "Volume": "8",
    "Premium/Discount": "0.00",
    "Total Net Assets": "239,852.96",
-   "Index Level": "n.a."
+   "Index Level": "2,652.39"
   },
   {
    "Date": "Oct 15 2026",

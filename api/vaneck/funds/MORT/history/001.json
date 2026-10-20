@@ -2,7 +2,7 @@
  "ticker": "MORT",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4173,
+ "totalRows": 4176,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 19 2026",
+   "NAV": "7.4358",
+   "Close": "7.44",
+   "Volume": "3,260,583",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "300,779,809.56",
+   "Index Level": "1,544.53"
+  },
+  {
+   "Date": "Oct 18 2026",
+   "NAV": "7.6770",
+   "Close": "7.68",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "305,929,959.32",
+   "Index Level": "1,594.52"
+  },
+  {
+   "Date": "Oct 17 2026",
+   "NAV": "7.6770",
+   "Close": "7.68",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "305,929,959.32",
+   "Index Level": "1,594.52"
+  },
   {
    "Date": "Oct 16 2026",
    "NAV": "7.6770",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "255,482,867.63",
    "Index Level": "1,672.83"
-  },
-  {
-   "Date": "Jan 23 2024",
-   "NAV": "11.5921",
-   "Close": "11.60",
-   "Volume": "191,162",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "255,026,724.96",
-   "Index Level": "1,681.22"
-  },
-  {
-   "Date": "Jan 22 2024",
-   "NAV": "11.5561",
-   "Close": "11.55",
-   "Volume": "284,950",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "253,657,221.65",
-   "Index Level": "1,675.98"
-  },
-  {
-   "Date": "Jan 21 2024",
-   "NAV": "11.5708",
-   "Close": "11.56",
-   "Volume": "",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "253,979,692.31",
-   "Index Level": "1,678.05"
   }
  ]
 }
