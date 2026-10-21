@@ -9,28 +9,28 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$39.75",
-  "value": 39.75,
-  "asOfDate": "Oct 19 2026"
+  "display": "$40.15",
+  "value": 40.15,
+  "asOfDate": "Oct 20 2026"
  },
- "navValue": 39.75,
+ "navValue": 40.15,
  "aum": {
-  "display": "$97.59M",
-  "value": 97590641.03,
-  "asOfDate": "Oct 19 2026",
+  "display": "$98.57M",
+  "value": 98568174.05,
+  "asOfDate": "Oct 20 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 97590641.03,
- "asOfDate": "Oct 19 2026",
+ "aumValue": 98568174.05,
+ "asOfDate": "Oct 20 2026",
  "inceptionDate": "Oct 10 2006",
  "exchange": "NYSE Arca",
- "closePrice": "$39.80",
- "closePriceValue": 39.8,
+ "closePrice": "$40.13",
+ "closePriceValue": 40.13,
  "premiumDiscount": {
-  "display": "0.05%",
-  "value": 0.05
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": 0.05,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -146,7 +146,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 20 2026",
+   "ytd": 5.14,
+   "ytdText": "5.14%",
    "yr1": -0.66,
    "yr3": 11,
    "yr5": 6.63,
@@ -164,7 +166,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 5.14,
   "tr1y": -0.66,
   "tr3y": 36.76,
   "tr5y": 37.87,
@@ -182,7 +184,7 @@
   "secYield": 0.56,
   "secYieldText": "0.56%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-20",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -190,11 +192,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.62%",
  "terGrossValue": 0.62,
- "netAssetsAsOf": "Oct 19 2026",
+ "netAssetsAsOf": "Oct 20 2026",
  "holdings": {
   "totalRows": 29,
   "pageSize": 250,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -202,9 +204,9 @@
   ]
  },
  "history": {
-  "totalRows": 7315,
+  "totalRows": 7316,
   "pageSize": 1000,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 20 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/enviromental-services-etf-evx/downloads/fundhistoprices/)",
   "pageCount": 8,
   "pages": [
@@ -218,7 +220,7 @@
    "history/008.json"
   ]
  },
- "totalNetAssets": 97590000,
+ "totalNetAssets": 98570000,
  "indexTicker": "MVEVX",
  "indexName": "Global Environmental Services Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -257,9 +259,9 @@
   "grossValue": 0.62
  },
  "marketPrice": {
-  "display": "$39.80",
-  "value": 39.8,
-  "asOfDate": "Oct 19 2026"
+  "display": "$40.13",
+  "value": 40.13,
+  "asOfDate": "Oct 20 2026"
  },
  "yields": {
   "dividendYield": 0.18,

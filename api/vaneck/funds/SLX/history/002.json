@@ -2,7 +2,7 @@
  "ticker": "SLX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5397,
+ "totalRows": 5398,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "69.4426",
+   "Close": "69.37",
+   "Volume": "10,873",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "131,940,870.38",
+   "Index Level": "1,368.73"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "68.9399",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.03",
    "Total Net Assets": "33,727,244.16",
    "Index Level": "377.09"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "23.4534",
-   "Close": "23.42",
-   "Volume": "9,931",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "34,007,393.62",
-   "Index Level": "380.20"
   }
  ]
 }

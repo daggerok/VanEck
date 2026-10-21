@@ -2,7 +2,7 @@
  "ticker": "AFK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4958,
+ "totalRows": 4959,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "26.7842",
+   "Close": "26.67",
+   "Volume": "146,339",
+   "Premium/Discount": "-0.11",
+   "Total Net Assets": "96,423,191.97",
+   "Index Level": "2,146.43"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "26.6159",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.19",
    "Total Net Assets": "40,635,900.58",
    "Index Level": "1,075.56"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "13.7555",
-   "Close": "13.53",
-   "Volume": "3,302",
-   "Premium/Discount": "-0.23",
-   "Total Net Assets": "40,578,731.00",
-   "Index Level": "1,074.64"
   }
  ]
 }

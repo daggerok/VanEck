@@ -9,28 +9,28 @@
  "ter": "0.32%",
  "terValue": 0.32,
  "nav": {
-  "display": "$48.40",
-  "value": 48.4,
-  "asOfDate": "Oct 19 2026"
+  "display": "$48.39",
+  "value": 48.39,
+  "asOfDate": "Oct 20 2026"
  },
- "navValue": 48.4,
+ "navValue": 48.39,
  "aum": {
   "display": "$4.40B",
-  "value": 4404512198.8,
-  "asOfDate": "Oct 19 2026",
+  "value": 4403762406.87,
+  "asOfDate": "Oct 20 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4404512198.8,
- "asOfDate": "Oct 19 2026",
+ "aumValue": 4403762406.87,
+ "asOfDate": "Oct 20 2026",
  "inceptionDate": "Feb 04 2009",
  "exchange": "Cboe BZX",
- "closePrice": "$48.55",
- "closePriceValue": 48.55,
+ "closePrice": "$48.64",
+ "closePriceValue": 48.64,
  "premiumDiscount": {
-  "display": "0.15%",
-  "value": 0.15
+  "display": "0.25%",
+  "value": 0.25
  },
- "premiumDiscountValue": 0.15,
+ "premiumDiscountValue": 0.25,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -1106,7 +1106,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 20 2026",
+   "ytd": -1.29,
+   "ytdText": "-1.29%",
    "yr1": -1.36,
    "yr3": 3.7,
    "yr5": -1.23,
@@ -1124,7 +1126,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -1.29,
   "tr1y": -1.36,
   "tr3y": 11.52,
   "tr5y": -6.01,
@@ -1139,10 +1141,10 @@
   "distributionYieldText": "4.52%",
   "yield12M": 4.3,
   "yield12MText": "4.30%",
-  "secYield": 4.83,
-  "secYieldText": "4.83%",
+  "secYield": 4.8,
+  "secYieldText": "4.80%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-20",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -1150,11 +1152,11 @@
  "providerCategory": "Municipal Bond",
  "terGross": "0.32%",
  "terGrossValue": 0.32,
- "netAssetsAsOf": "Oct 19 2026",
+ "netAssetsAsOf": "Oct 20 2026",
  "holdings": {
-  "totalRows": 2096,
+  "totalRows": 2099,
   "pageSize": 250,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/holdings/)",
   "pageCount": 9,
   "pages": [
@@ -1170,9 +1172,9 @@
   ]
  },
  "history": {
-  "totalRows": 4814,
+  "totalRows": 4815,
   "pageSize": 1000,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 20 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/high-yield-muni-etf-hyd/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -1184,9 +1186,9 @@
   ]
  },
  "totalNetAssets": 4400000000,
- "secYield": 4.83,
- "secYieldValue": 4.83,
- "secYieldText": "4.83%",
+ "secYield": 4.8,
+ "secYieldValue": 4.8,
+ "secYieldText": "4.80%",
  "indexTicker": "MHYX",
  "indexName": "ICE Broad High Yield Crossover Municipal Index",
  "categoryPath": "Income > Municipal Bond",
@@ -1225,23 +1227,23 @@
   "grossValue": 0.32
  },
  "marketPrice": {
-  "display": "$48.55",
-  "value": 48.55,
-  "asOfDate": "Oct 19 2026"
+  "display": "$48.64",
+  "value": 48.64,
+  "asOfDate": "Oct 20 2026"
  },
  "yields": {
   "dividendYield": 4.52,
   "dividendYieldText": "4.52%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 4.51,
-  "indicatedYieldText": "4.51%",
+  "indicatedYield": 4.52,
+  "indicatedYieldText": "4.52%",
   "distributionYield": 4.52,
   "distributionYieldText": "4.52%",
   "yield12M": 4.3,
   "yield12MText": "4.30%",
   "distributionRate": null,
-  "secYield": 4.83,
-  "secYieldText": "4.83%",
+  "secYield": 4.8,
+  "secYieldText": "4.80%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

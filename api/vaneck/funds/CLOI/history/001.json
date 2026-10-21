@@ -2,7 +2,7 @@
  "ticker": "CLOI",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1447,
+ "totalRows": 1448,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "52.8928",
+   "Close": "52.91",
+   "Volume": "157,238",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,761,331,169.24",
+   "Index Level": "180.39"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "52.8820",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "231,021,564.40",
    "Index Level": "153.37"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "52.4969",
-   "Close": "52.50",
-   "Volume": "15,796",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "230,986,402.63",
-   "Index Level": "153.38"
   }
  ]
 }

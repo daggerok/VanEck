@@ -2,7 +2,7 @@
  "ticker": "DESK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1127,
+ "totalRows": 1128,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "37.0479",
+   "Close": "37.03",
+   "Volume": "469",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "5,557,178.89",
+   "Index Level": "843.71"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "36.1738",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "1,142,071.20",
    "Index Level": "750.78"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "37.5527",
-   "Close": "37.54",
-   "Volume": "209",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "1,126,580.23",
-   "Index Level": "740.61"
   }
  ]
 }

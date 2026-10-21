@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 7315,
+ "totalRows": 7316,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "29.2427",
+   "Close": "29.36",
+   "Volume": "109,680",
+   "Premium/Discount": "0.11",
+   "Total Net Assets": "70,182,568.02",
+   "Index Level": "1,283.03"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "29.6543",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.09",
    "Total Net Assets": "55,948,368.88",
    "Index Level": "1,203.09"
-  },
-  {
-   "Date": "Apr 29 2021",
-   "NAV": "28.0212",
-   "Close": "28.13",
-   "Volume": "22,380",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "56,042,323.78",
-   "Index Level": "1,205.09"
   }
  ]
 }

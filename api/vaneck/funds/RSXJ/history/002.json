@@ -2,7 +2,7 @@
  "ticker": "RSXJ",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4262,
+ "totalRows": 4263,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "0.3849",
+   "Close": "n.a.",
+   "Volume": "n.a.",
+   "Premium/Discount": "n.a.",
+   "Total Net Assets": "339,986.31",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "0.3848",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.29",
    "Total Net Assets": "26,782,984.55",
    "Index Level": "459.33"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "27.4692",
-   "Close": "26.46",
-   "Volume": "2,438",
-   "Premium/Discount": "-1.01",
-   "Total Net Assets": "27,010,999.41",
-   "Index Level": "464.33"
   }
  ]
 }

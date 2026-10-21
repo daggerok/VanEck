@@ -2,7 +2,7 @@
  "ticker": "SMB",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5054,
+ "totalRows": 5055,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "17.0586",
+   "Close": "17.02",
+   "Volume": "91,321",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "251,614,985.65",
+   "Index Level": "122.07"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "17.0568",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "204,966,319.61",
    "Index Level": "118.76"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "17.6294",
-   "Close": "17.65",
-   "Volume": "134,140",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "204,501,516.43",
-   "Index Level": "118.33"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 7315,
+ "totalRows": 7316,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 07 2015",
+   "NAV": "12.3462",
+   "Close": "12.34",
+   "Volume": "130",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "15,432,777.43",
+   "Index Level": "498.29"
+  },
   {
    "Date": "Nov 06 2015",
    "NAV": "12.3462",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "19,018,008.29",
    "Index Level": "422.21"
-  },
-  {
-   "Date": "Feb 10 2013",
-   "NAV": "10.9002",
-   "Close": "10.87",
-   "Volume": "",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "19,075,416.12",
-   "Index Level": "423.46"
   }
  ]
 }

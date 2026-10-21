@@ -9,28 +9,28 @@
  "ter": "0.25%",
  "terValue": 0.25,
  "nav": {
-  "display": "$27.38",
-  "value": 27.38,
-  "asOfDate": "Oct 19 2026"
+  "display": "$27.32",
+  "value": 27.32,
+  "asOfDate": "Oct 20 2026"
  },
- "navValue": 27.38,
+ "navValue": 27.32,
  "aum": {
-  "display": "$2.99B",
-  "value": 2989062145.32,
-  "asOfDate": "Oct 19 2026",
+  "display": "$2.94B",
+  "value": 2943557038.57,
+  "asOfDate": "Oct 20 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 2989062145.32,
- "asOfDate": "Oct 19 2026",
+ "aumValue": 2943557038.57,
+ "asOfDate": "Oct 20 2026",
  "inceptionDate": "Apr 10 2012",
  "exchange": "NASDAQ",
- "closePrice": "$27.30",
- "closePriceValue": 27.3,
+ "closePrice": "$27.32",
+ "closePriceValue": 27.32,
  "premiumDiscount": {
-  "display": "-0.09%",
-  "value": -0.09
+  "display": "0.00%",
+  "value": 0
  },
- "premiumDiscountValue": -0.09,
+ "premiumDiscountValue": 0,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -911,7 +911,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 20 2026",
+   "ytd": -2.31,
+   "ytdText": "-2.31%",
    "yr1": 0.3,
    "yr3": 7.45,
    "yr5": 2.28,
@@ -929,7 +931,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": -2.31,
   "tr1y": 0.3,
   "tr3y": 24.06,
   "tr5y": 11.93,
@@ -944,10 +946,10 @@
   "distributionYieldText": "6.70%",
   "yield12M": 6.43,
   "yield12MText": "6.43%",
-  "secYield": 7.52,
-  "secYieldText": "7.52%",
+  "secYield": 7.58,
+  "secYieldText": "7.58%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-20",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -955,11 +957,11 @@
  "providerCategory": "Corporate Bond",
  "terGross": "0.25%",
  "terGrossValue": 0.25,
- "netAssetsAsOf": "Oct 19 2026",
+ "netAssetsAsOf": "Oct 20 2026",
  "holdings": {
   "totalRows": 134,
   "pageSize": 250,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -967,9 +969,9 @@
   ]
  },
  "history": {
-  "totalRows": 4013,
+  "totalRows": 4014,
   "pageSize": 1000,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 20 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/angel-high-yield-bond-etf-angl/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -980,10 +982,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 2990000000,
- "secYield": 7.52,
- "secYieldValue": 7.52,
- "secYieldText": "7.52%",
+ "totalNetAssets": 2940000000,
+ "secYield": 7.58,
+ "secYieldValue": 7.58,
+ "secYieldText": "7.58%",
  "indexTicker": "H0CF",
  "indexName": "Constrained Index",
  "categoryPath": "Income > Corporate Bond",
@@ -1022,23 +1024,23 @@
   "grossValue": 0.25
  },
  "marketPrice": {
-  "display": "$27.30",
-  "value": 27.3,
-  "asOfDate": "Oct 19 2026"
+  "display": "$27.32",
+  "value": 27.32,
+  "asOfDate": "Oct 20 2026"
  },
  "yields": {
   "dividendYield": 6.7,
   "dividendYieldText": "6.70%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.94,
-  "indicatedYieldText": "6.94%",
+  "indicatedYield": 6.95,
+  "indicatedYieldText": "6.95%",
   "distributionYield": 6.7,
   "distributionYieldText": "6.70%",
   "yield12M": 6.43,
   "yield12MText": "6.43%",
   "distributionRate": null,
-  "secYield": 7.52,
-  "secYieldText": "7.52%",
+  "secYield": 7.58,
+  "secYieldText": "7.58%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

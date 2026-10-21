@@ -2,7 +2,7 @@
  "ticker": "ANGL",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4013,
+ "totalRows": 4014,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 20 2016",
+   "NAV": "26.8317",
+   "Close": "26.88",
+   "Volume": "188,067",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "128,792,270.22",
+   "Index Level": "618.48"
+  },
   {
    "Date": "Apr 19 2016",
    "NAV": "26.6104",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.35",
    "Total Net Assets": "10,079,957.40",
    "Index Level": "433.63"
-  },
-  {
-   "Date": "Apr 27 2012",
-   "NAV": "25.1647",
-   "Close": "25.46",
-   "Volume": "64,895",
-   "Premium/Discount": "0.30",
-   "Total Net Assets": "10,065,871.77",
-   "Index Level": "432.97"
   }
  ]
 }

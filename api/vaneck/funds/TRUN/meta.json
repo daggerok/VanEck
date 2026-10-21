@@ -9,28 +9,28 @@
  "ter": "0.16%",
  "terValue": 0.16,
  "nav": {
-  "display": "$32.02",
-  "value": 32.02,
-  "asOfDate": "Oct 19 2026"
+  "display": "$32.08",
+  "value": 32.08,
+  "asOfDate": "Oct 20 2026"
  },
- "navValue": 32.02,
+ "navValue": 32.08,
  "aum": {
-  "display": "$320231.86",
-  "value": 320231.86,
-  "asOfDate": "Oct 19 2026",
+  "display": "$320816.39",
+  "value": 320816.39,
+  "asOfDate": "Oct 20 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 320231.86,
- "asOfDate": "Oct 19 2026",
+ "aumValue": 320816.39,
+ "asOfDate": "Oct 20 2026",
  "inceptionDate": "Jul 07 2026",
  "exchange": "NASDAQ",
- "closePrice": "$32.06",
- "closePriceValue": 32.06,
+ "closePrice": "$32.10",
+ "closePriceValue": 32.1,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -52,11 +52,11 @@
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
    "asOfDate": "Sep 30 2026",
+   "sinceInception": 13.69,
    "yr1": null,
    "yr3": null,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 13.69,
    "tenorsAsOf": "Sep 30 2026"
   },
   "quarterEnd": {
@@ -95,11 +95,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.16%",
  "terGrossValue": 0.16,
- "netAssetsAsOf": "Oct 19 2026",
+ "netAssetsAsOf": "Oct 20 2026",
  "holdings": {
   "totalRows": 24,
   "pageSize": 250,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/energy-trusector-etf-trun/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 105,
+  "totalRows": 106,
   "pageSize": 1000,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 20 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/energy-trusector-etf-trun/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 320230,
+ "totalNetAssets": 320820,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -153,9 +153,9 @@
   "grossValue": 0.16
  },
  "marketPrice": {
-  "display": "$32.06",
-  "value": 32.06,
-  "asOfDate": "Oct 19 2026"
+  "display": "$32.10",
+  "value": 32.1,
+  "asOfDate": "Oct 20 2026"
  },
  "yields": {
   "dividendYield": 2.27,

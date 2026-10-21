@@ -2,7 +2,7 @@
  "ticker": "ESPO",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 2372,
+ "totalRows": 2373,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "102.1835",
+   "Close": "102.15",
+   "Volume": "13,800",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "260,568,027.73",
+   "Index Level": "11,080.07"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "100.8727",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.08",
    "Total Net Assets": "256,850,309.98",
    "Index Level": "6,158.90"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "58.0534",
-   "Close": "57.86",
-   "Volume": "17,055",
-   "Premium/Discount": "-0.19",
-   "Total Net Assets": "255,434,767.79",
-   "Index Level": "6,112.12"
   }
  ]
 }

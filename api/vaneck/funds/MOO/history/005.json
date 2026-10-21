@@ -2,7 +2,7 @@
  "ticker": "MOO",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5173,
+ "totalRows": 5174,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 27 2012",
+   "NAV": "52.6614",
+   "Close": "52.71",
+   "Volume": "478,521",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "5,869,116,504.91",
+   "Index Level": "2,147.78"
+  },
   {
    "Date": "Apr 26 2012",
    "NAV": "52.4033",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.31",
    "Total Net Assets": "1,786,100,772.73",
    "Index Level": "2,402.32"
-  },
-  {
-   "Date": "May 09 2008",
-   "NAV": "61.2402",
-   "Close": "61.75",
-   "Volume": "751,979",
-   "Premium/Discount": "0.51",
-   "Total Net Assets": "1,757,594,283.62",
-   "Index Level": "2,373.89"
   }
  ]
 }

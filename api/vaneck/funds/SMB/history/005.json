@@ -2,7 +2,7 @@
  "ticker": "SMB",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5054,
+ "totalRows": 5055,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 27 2012",
+   "NAV": "17.7457",
+   "Close": "17.81",
+   "Volume": "40,228",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "135,754,614.58",
+   "Index Level": "103.32"
+  },
   {
    "Date": "Apr 26 2012",
    "NAV": "17.7452",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "4,953,117.40",
    "Index Level": "85.89"
-  },
-  {
-   "Date": "May 09 2008",
-   "NAV": "16.5039",
-   "Close": "16.48",
-   "Volume": "14,106",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "4,951,174.84",
-   "Index Level": "85.86"
   }
  ]
 }

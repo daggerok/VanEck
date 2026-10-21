@@ -2,7 +2,7 @@
  "ticker": "PPH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4088,
+ "totalRows": 4089,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "84.2584",
+   "Close": "84.25",
+   "Volume": "90,997",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "437,144,266.35",
+   "Index Level": "4,087.51"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "84.5952",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "193,180,093.29",
    "Index Level": "2,620.82"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "57.3505",
-   "Close": "57.41",
-   "Volume": "33,531",
-   "Premium/Discount": "0.06",
-   "Total Net Assets": "194,311,501.34",
-   "Index Level": "2,636.00"
   }
  ]
 }

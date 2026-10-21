@@ -2,7 +2,7 @@
  "ticker": "RAAX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2505,
+ "totalRows": 2506,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "24.8372",
+   "Close": "24.72",
+   "Volume": "111,411",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "97,486,120.69",
+   "Index Level": "226.93"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "24.8347",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.04",
    "Total Net Assets": "17,375,957.24",
    "Index Level": "135.20"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "19.2153",
-   "Close": "19.22",
-   "Volume": "2,729",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "17,293,721.21",
-   "Index Level": "135.39"
   }
  ]
 }

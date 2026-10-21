@@ -2,7 +2,7 @@
  "ticker": "RTH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4088,
+ "totalRows": 4089,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "188.9715",
+   "Close": "188.97",
+   "Volume": "2,272",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "174,143,099.66",
+   "Index Level": "8,710.69"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "189.7978",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "92,997,747.11",
    "Index Level": "5,035.34"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "111.9052",
-   "Close": "112.00",
-   "Volume": "27,809",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "91,933,606.31",
-   "Index Level": "4,977.53"
   }
  ]
 }

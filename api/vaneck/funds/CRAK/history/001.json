@@ -2,7 +2,7 @@
  "ticker": "CRAK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3169,
+ "totalRows": 3170,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "65.8489",
+   "Close": "65.93",
+   "Volume": "1,045,422",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "803,356,321.75",
+   "Index Level": "7,280.96"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "66.6078",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "32,318,946.95",
    "Index Level": "3,467.08"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "33.7635",
-   "Close": "33.62",
-   "Volume": "34,834",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "32,075,345.43",
-   "Index Level": "3,445.43"
   }
  ]
 }

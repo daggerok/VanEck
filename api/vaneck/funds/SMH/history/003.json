@@ -2,7 +2,7 @@
  "ticker": "SMH",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4088,
+ "totalRows": 4089,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 09 2020",
+   "NAV": "61.9826",
+   "Close": "61.94",
+   "Volume": "20,813,728",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "1,793,892,547.26",
+   "Index Level": "2,423.31"
+  },
   {
    "Date": "Apr 08 2020",
    "NAV": "63.5280",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.01",
    "Total Net Assets": "271,955,054.63",
    "Index Level": "1,002.05"
-  },
-  {
-   "Date": "Apr 20 2016",
-   "NAV": "27.2501",
-   "Close": "27.24",
-   "Volume": "5,984,296",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "284,542,123.13",
-   "Index Level": "1,008.25"
   }
  ]
 }

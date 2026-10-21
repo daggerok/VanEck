@@ -2,7 +2,7 @@
  "ticker": "MOTI",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3195,
+ "totalRows": 3196,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 09 2020",
+   "NAV": "25.9189",
+   "Close": "25.96",
+   "Volume": "29,500",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "51,837,856.10",
+   "Index Level": "1,470.65"
+  },
   {
    "Date": "Apr 08 2020",
    "NAV": "25.4699",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.50",
    "Total Net Assets": "11,303,898.75",
    "Index Level": "1,362.22"
-  },
-  {
-   "Date": "Apr 20 2016",
-   "NAV": "28.3549",
-   "Close": "28.58",
-   "Volume": "1,144",
-   "Premium/Discount": "0.23",
-   "Total Net Assets": "11,341,974.71",
-   "Index Level": "1,361.53"
   }
  ]
 }

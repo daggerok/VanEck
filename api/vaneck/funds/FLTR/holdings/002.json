@@ -17,25 +17,13 @@
  ],
  "rows": [
   {
-   "Name": "Nordea Bank Abp",
-   "Maturity": "May 22 2028",
-   "Identifier": "BBG022DRKP38",
-   "Coupon": "4.111",
-   "Asset Category": "Bond",
-   "Par Value": "4,900,000",
-   "Market Value": "$4,937,180.92",
-   "Weight": "0.14%",
-   "Country": "Finland",
-   "Currency": "USD"
-  },
-  {
    "Name": "Merck & Co Inc",
    "Maturity": "Mar 15 2029",
    "Identifier": "BBG01YV6C4X8",
    "Coupon": "4.467",
    "Asset Category": "Bond",
    "Par Value": "4,905,000",
-   "Market Value": "$4,934,670.00",
+   "Market Value": "$4,935,264.64",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "USD"
@@ -47,7 +35,7 @@
    "Coupon": "4.345",
    "Asset Category": "Bond",
    "Par Value": "4,900,000",
-   "Market Value": "$4,932,881.52",
+   "Market Value": "$4,933,481.30",
    "Weight": "0.14%",
    "Country": "Sweden",
    "Currency": "USD"
@@ -59,7 +47,7 @@
    "Coupon": "4.028",
    "Asset Category": "Bond",
    "Par Value": "4,900,000",
-   "Market Value": "$4,932,206.14",
+   "Market Value": "$4,932,772.87",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "USD"
@@ -71,7 +59,7 @@
    "Coupon": "4.001",
    "Asset Category": "Bond",
    "Par Value": "4,900,000",
-   "Market Value": "$4,931,722.44",
+   "Market Value": "$4,932,304.90",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "USD"
@@ -83,7 +71,7 @@
    "Coupon": "4.782",
    "Asset Category": "Bond",
    "Par Value": "4,950,000",
-   "Market Value": "$4,929,086.84",
+   "Market Value": "$4,929,860.98",
    "Weight": "0.14%",
    "Country": "United States",
    "Currency": "USD"
@@ -95,7 +83,7 @@
    "Coupon": "4.666",
    "Asset Category": "Bond",
    "Par Value": "4,895,000",
-   "Market Value": "$4,922,479.10",
+   "Market Value": "$4,923,077.67",
    "Weight": "0.14%",
    "Country": "Canada",
    "Currency": "USD"
@@ -107,9 +95,21 @@
    "Coupon": "4.431",
    "Asset Category": "Bond",
    "Par Value": "4,945,000",
-   "Market Value": "$4,919,647.33",
+   "Market Value": "$4,915,390.74",
    "Weight": "0.14%",
    "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "National Bank Of Canada",
+   "Maturity": "Jan 20 2029",
+   "Identifier": "BBG01ZK2JD50",
+   "Coupon": "4.435",
+   "Asset Category": "Bond",
+   "Par Value": "4,900,000",
+   "Market Value": "$4,910,234.99",
+   "Weight": "0.14%",
+   "Country": "Canada",
    "Currency": "USD"
   },
   {
@@ -119,7 +119,7 @@
    "Coupon": "4.639",
    "Asset Category": "Bond",
    "Par Value": "4,875,000",
-   "Market Value": "$4,897,442.94",
+   "Market Value": "$4,898,037.57",
    "Weight": "0.14%",
    "Country": "Canada",
    "Currency": "USD"
@@ -131,7 +131,7 @@
    "Coupon": "5.101",
    "Asset Category": "Bond",
    "Par Value": "4,720,000",
-   "Market Value": "$4,767,297.96",
+   "Market Value": "$4,767,897.14",
    "Weight": "0.13%",
    "Country": "France",
    "Currency": "USD"
@@ -140,10 +140,10 @@
    "Name": "Cooperatieve Rabobank Ua/Ny",
    "Maturity": "Oct 17 2028",
    "Identifier": "BBG01XV1PW83",
-   "Coupon": "4.255",
+   "Coupon": "4.489",
    "Asset Category": "Bond",
    "Par Value": "4,685,000",
-   "Market Value": "$4,698,714.01",
+   "Market Value": "$4,699,475.47",
    "Weight": "0.13%",
    "Country": "United States",
    "Currency": "USD"
@@ -155,7 +155,7 @@
    "Coupon": "4.151",
    "Asset Category": "Bond",
    "Par Value": "4,650,000",
-   "Market Value": "$4,694,928.67",
+   "Market Value": "$4,695,499.33",
    "Weight": "0.13%",
    "Country": "Australia",
    "Currency": "USD"
@@ -167,7 +167,7 @@
    "Coupon": "4.828",
    "Asset Category": "Bond",
    "Par Value": "4,655,000",
-   "Market Value": "$4,685,554.07",
+   "Market Value": "$4,686,103.27",
    "Weight": "0.13%",
    "Country": "Australia",
    "Currency": "USD"
@@ -179,7 +179,7 @@
    "Coupon": "4.511",
    "Asset Category": "Bond",
    "Par Value": "4,650,000",
-   "Market Value": "$4,682,025.72",
+   "Market Value": "$4,682,572.91",
    "Weight": "0.13%",
    "Country": "Australia",
    "Currency": "USD"
@@ -191,7 +191,7 @@
    "Coupon": "4.289",
    "Asset Category": "Bond",
    "Par Value": "4,500,000",
-   "Market Value": "$4,556,308.93",
+   "Market Value": "$4,550,488.96",
    "Weight": "0.13%",
    "Country": "United States",
    "Currency": "USD"
@@ -203,7 +203,7 @@
    "Coupon": "4.275",
    "Asset Category": "Bond",
    "Par Value": "4,500,000",
-   "Market Value": "$4,526,877.41",
+   "Market Value": "$4,527,410.26",
    "Weight": "0.13%",
    "Country": "United States",
    "Currency": "USD"
@@ -215,7 +215,7 @@
    "Coupon": "4.317",
    "Asset Category": "Bond",
    "Par Value": "4,475,000",
-   "Market Value": "$4,520,894.69",
+   "Market Value": "$4,521,401.25",
    "Weight": "0.13%",
    "Country": "United States",
    "Currency": "USD"
@@ -224,10 +224,10 @@
    "Name": "Royal Bank Of Canada",
    "Maturity": "Oct 18 2028",
    "Identifier": "BBG01Q6W1ZL2",
-   "Coupon": "4.525",
+   "Coupon": "4.759",
    "Asset Category": "Bond",
    "Par Value": "4,475,000",
-   "Market Value": "$4,492,277.27",
+   "Market Value": "$4,492,796.14",
    "Weight": "0.12%",
    "Country": "Canada",
    "Currency": "USD"
@@ -239,7 +239,7 @@
    "Coupon": "4.809",
    "Asset Category": "Bond",
    "Par Value": "4,400,000",
-   "Market Value": "$4,419,014.54",
+   "Market Value": "$4,419,585.46",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -251,7 +251,7 @@
    "Coupon": "4.388",
    "Asset Category": "Bond",
    "Par Value": "4,383,000",
-   "Market Value": "$4,418,191.01",
+   "Market Value": "$4,418,707.70",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -263,7 +263,7 @@
    "Coupon": "4.639",
    "Asset Category": "Bond",
    "Par Value": "4,400,000",
-   "Market Value": "$4,416,864.61",
+   "Market Value": "$4,417,407.63",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -275,7 +275,7 @@
    "Coupon": "4.929",
    "Asset Category": "Bond",
    "Par Value": "4,199,000",
-   "Market Value": "$4,296,503.78",
+   "Market Value": "$4,297,021.48",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -287,19 +287,7 @@
    "Coupon": "4.588",
    "Asset Category": "Bond",
    "Par Value": "4,198,000",
-   "Market Value": "$4,258,081.96",
-   "Weight": "0.12%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Cooperatieve Rabobank Ua/Ny",
-   "Maturity": "Jun 09 2028",
-   "Identifier": "BBG022QNVBT4",
-   "Coupon": "4.048",
-   "Asset Category": "Bond",
-   "Par Value": "4,225,000",
-   "Market Value": "$4,243,660.84",
+   "Market Value": "$4,258,593.36",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -311,9 +299,21 @@
    "Coupon": "4.269",
    "Asset Category": "Bond",
    "Par Value": "4,190,000",
-   "Market Value": "$4,242,569.29",
+   "Market Value": "$4,244,963.34",
    "Weight": "0.12%",
    "Country": "Australia",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Cooperatieve Rabobank Ua/Ny",
+   "Maturity": "Jun 09 2028",
+   "Identifier": "BBG022QNVBT4",
+   "Coupon": "4.048",
+   "Asset Category": "Bond",
+   "Par Value": "4,225,000",
+   "Market Value": "$4,244,165.98",
+   "Weight": "0.12%",
+   "Country": "United States",
    "Currency": "USD"
   },
   {
@@ -323,7 +323,7 @@
    "Coupon": "4.852",
    "Asset Category": "Bond",
    "Par Value": "4,179,000",
-   "Market Value": "$4,223,533.19",
+   "Market Value": "$4,225,852.86",
    "Weight": "0.12%",
    "Country": "Japan",
    "Currency": "USD"
@@ -335,7 +335,7 @@
    "Coupon": "4.454",
    "Asset Category": "Bond",
    "Par Value": "4,170,000",
-   "Market Value": "$4,203,390.52",
+   "Market Value": "$4,203,897.96",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -347,7 +347,7 @@
    "Coupon": "3.988",
    "Asset Category": "Bond",
    "Par Value": "4,125,000",
-   "Market Value": "$4,158,086.07",
+   "Market Value": "$4,158,567.40",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -359,7 +359,7 @@
    "Coupon": "4.146",
    "Asset Category": "Bond",
    "Par Value": "4,125,000",
-   "Market Value": "$4,153,911.54",
+   "Market Value": "$4,154,402.16",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -371,7 +371,7 @@
    "Coupon": "5.101",
    "Asset Category": "Bond",
    "Par Value": "4,080,000",
-   "Market Value": "$4,152,211.00",
+   "Market Value": "$4,150,833.63",
    "Weight": "0.12%",
    "Country": "France",
    "Currency": "USD"
@@ -383,7 +383,7 @@
    "Coupon": "5.525",
    "Asset Category": "Bond",
    "Par Value": "4,086,000",
-   "Market Value": "$4,149,727.44",
+   "Market Value": "$4,150,260.62",
    "Weight": "0.12%",
    "Country": "United States",
    "Currency": "USD"
@@ -395,7 +395,7 @@
    "Coupon": "4.856",
    "Asset Category": "Bond",
    "Par Value": "4,098,000",
-   "Market Value": "$4,141,756.82",
+   "Market Value": "$4,142,245.76",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -407,7 +407,7 @@
    "Coupon": "4.289",
    "Asset Category": "Bond",
    "Par Value": "4,123,000",
-   "Market Value": "$4,128,488.01",
+   "Market Value": "$4,128,976.06",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -419,7 +419,7 @@
    "Coupon": "4.958",
    "Asset Category": "Bond",
    "Par Value": "4,100,000",
-   "Market Value": "$4,126,696.28",
+   "Market Value": "$4,127,211.83",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -431,7 +431,7 @@
    "Coupon": "4.550",
    "Asset Category": "Bond",
    "Par Value": "4,094,000",
-   "Market Value": "$4,121,902.85",
+   "Market Value": "$4,122,375.26",
    "Weight": "0.11%",
    "Country": "Japan",
    "Currency": "USD"
@@ -443,7 +443,7 @@
    "Coupon": "4.814",
    "Asset Category": "Bond",
    "Par Value": "4,000,000",
-   "Market Value": "$4,072,097.98",
+   "Market Value": "$4,067,938.07",
    "Weight": "0.11%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -455,7 +455,7 @@
    "Coupon": "4.328",
    "Asset Category": "Bond",
    "Par Value": "3,975,000",
-   "Market Value": "$4,017,351.08",
+   "Market Value": "$4,017,851.42",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -467,7 +467,7 @@
    "Coupon": "4.639",
    "Asset Category": "Bond",
    "Par Value": "3,980,000",
-   "Market Value": "$3,995,891.10",
+   "Market Value": "$3,996,408.95",
    "Weight": "0.11%",
    "Country": "Spain",
    "Currency": "USD"
@@ -479,7 +479,7 @@
    "Coupon": "4.329",
    "Asset Category": "Bond",
    "Par Value": "3,925,000",
-   "Market Value": "$3,977,564.86",
+   "Market Value": "$3,978,042.10",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -491,7 +491,7 @@
    "Coupon": "4.068",
    "Asset Category": "Bond",
    "Par Value": "3,950,000",
-   "Market Value": "$3,973,168.99",
+   "Market Value": "$3,973,631.12",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -503,7 +503,7 @@
    "Coupon": "4.563",
    "Asset Category": "Bond",
    "Par Value": "3,925,000",
-   "Market Value": "$3,971,893.66",
+   "Market Value": "$3,972,389.17",
    "Weight": "0.11%",
    "Country": "Canada",
    "Currency": "USD"
@@ -515,7 +515,7 @@
    "Coupon": "4.377",
    "Asset Category": "Bond",
    "Par Value": "3,925,000",
-   "Market Value": "$3,963,909.90",
+   "Market Value": "$3,964,389.49",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -527,7 +527,7 @@
    "Coupon": "4.835",
    "Asset Category": "Bond",
    "Par Value": "3,925,000",
-   "Market Value": "$3,959,081.33",
+   "Market Value": "$3,959,572.56",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -539,7 +539,7 @@
    "Coupon": "4.938",
    "Asset Category": "Bond",
    "Par Value": "3,925,000",
-   "Market Value": "$3,956,054.62",
+   "Market Value": "$3,956,548.11",
    "Weight": "0.11%",
    "Country": "Canada",
    "Currency": "USD"
@@ -551,7 +551,7 @@
    "Coupon": "4.326",
    "Asset Category": "Bond",
    "Par Value": "3,898,000",
-   "Market Value": "$3,930,951.40",
+   "Market Value": "$3,931,441.78",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -563,7 +563,7 @@
    "Coupon": "4.912",
    "Asset Category": "Bond",
    "Par Value": "3,900,000",
-   "Market Value": "$3,922,804.94",
+   "Market Value": "$3,923,331.41",
    "Weight": "0.11%",
    "Country": "United States",
    "Currency": "USD"
@@ -575,7 +575,7 @@
    "Coupon": "4.744",
    "Asset Category": "Bond",
    "Par Value": "3,630,000",
-   "Market Value": "$3,687,821.40",
+   "Market Value": "$3,678,313.05",
    "Weight": "0.10%",
    "Country": "France",
    "Currency": "USD"
@@ -587,7 +587,7 @@
    "Coupon": "4.449",
    "Asset Category": "Bond",
    "Par Value": "3,559,000",
-   "Market Value": "$3,602,292.63",
+   "Market Value": "$3,602,751.07",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -596,10 +596,10 @@
    "Name": "Morgan Stanley Bank Na",
    "Maturity": "Jan 14 2028",
    "Identifier": "BBG01L0QQCZ1",
-   "Coupon": "4.744",
+   "Coupon": "4.979",
    "Asset Category": "Bond",
    "Par Value": "3,575,000",
-   "Market Value": "$3,585,997.67",
+   "Market Value": "$3,585,912.40",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -611,19 +611,7 @@
    "Coupon": "4.339",
    "Asset Category": "Bond",
    "Par Value": "3,550,000",
-   "Market Value": "$3,557,212.47",
-   "Weight": "0.10%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "New York Life Global Funding",
-   "Maturity": "Apr 20 2029",
-   "Identifier": "BBG021MB03K7",
-   "Coupon": "4.329",
-   "Asset Category": "Bond",
-   "Par Value": "3,500,000",
-   "Market Value": "$3,543,981.44",
+   "Market Value": "$3,557,626.87",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -635,7 +623,7 @@
    "Coupon": "4.100",
    "Asset Category": "Bond",
    "Par Value": "3,500,000",
-   "Market Value": "$3,538,166.88",
+   "Market Value": "$3,538,566.72",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -647,7 +635,7 @@
    "Coupon": "4.298",
    "Asset Category": "Bond",
    "Par Value": "3,500,000",
-   "Market Value": "$3,537,423.18",
+   "Market Value": "$3,533,144.21",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -659,7 +647,7 @@
    "Coupon": "4.166",
    "Asset Category": "Bond",
    "Par Value": "3,502,000",
-   "Market Value": "$3,529,936.88",
+   "Market Value": "$3,530,367.26",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -671,7 +659,7 @@
    "Coupon": "4.779",
    "Asset Category": "Bond",
    "Par Value": "3,500,000",
-   "Market Value": "$3,506,000.82",
+   "Market Value": "$3,505,553.28",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -683,7 +671,19 @@
    "Coupon": "4.326",
    "Asset Category": "Bond",
    "Par Value": "3,470,000",
-   "Market Value": "$3,502,854.15",
+   "Market Value": "$3,503,309.38",
+   "Weight": "0.10%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "New York Life Global Funding",
+   "Maturity": "Apr 20 2029",
+   "Identifier": "BBG021MB03K7",
+   "Coupon": "4.329",
+   "Asset Category": "Bond",
+   "Par Value": "3,500,000",
+   "Market Value": "$3,502,050.14",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -695,7 +695,7 @@
    "Coupon": "4.582",
    "Asset Category": "Bond",
    "Par Value": "3,475,000",
-   "Market Value": "$3,501,593.96",
+   "Market Value": "$3,502,046.06",
    "Weight": "0.10%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -707,7 +707,7 @@
    "Coupon": "4.025",
    "Asset Category": "Bond",
    "Par Value": "3,450,000",
-   "Market Value": "$3,484,617.23",
+   "Market Value": "$3,485,028.37",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -719,7 +719,7 @@
    "Coupon": "4.839",
    "Asset Category": "Bond",
    "Par Value": "3,425,000",
-   "Market Value": "$3,467,162.51",
+   "Market Value": "$3,467,590.37",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -731,7 +731,7 @@
    "Coupon": "4.051",
    "Asset Category": "Bond",
    "Par Value": "3,425,000",
-   "Market Value": "$3,455,743.25",
+   "Market Value": "$3,456,136.13",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -743,7 +743,7 @@
    "Coupon": "4.312",
    "Asset Category": "Bond",
    "Par Value": "3,425,000",
-   "Market Value": "$3,446,380.92",
+   "Market Value": "$3,446,793.42",
    "Weight": "0.10%",
    "Country": "Canada",
    "Currency": "USD"
@@ -755,7 +755,7 @@
    "Coupon": "4.455",
    "Asset Category": "Bond",
    "Par Value": "3,425,000",
-   "Market Value": "$3,445,642.08",
+   "Market Value": "$3,446,057.71",
    "Weight": "0.10%",
    "Country": "Canada",
    "Currency": "USD"
@@ -767,7 +767,7 @@
    "Coupon": "4.403",
    "Asset Category": "Bond",
    "Par Value": "3,400,000",
-   "Market Value": "$3,434,072.33",
+   "Market Value": "$3,434,497.14",
    "Weight": "0.10%",
    "Country": "United States",
    "Currency": "USD"
@@ -779,7 +779,7 @@
    "Coupon": "4.101",
    "Asset Category": "Bond",
    "Par Value": "3,345,000",
-   "Market Value": "$3,374,837.87",
+   "Market Value": "$3,375,218.59",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -791,7 +791,7 @@
    "Coupon": "4.455",
    "Asset Category": "Bond",
    "Par Value": "3,350,000",
-   "Market Value": "$3,373,425.18",
+   "Market Value": "$3,373,834.45",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -803,7 +803,7 @@
    "Coupon": "4.759",
    "Asset Category": "Bond",
    "Par Value": "3,350,000",
-   "Market Value": "$3,361,641.52",
+   "Market Value": "$3,362,057.15",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -815,7 +815,7 @@
    "Coupon": "4.441",
    "Asset Category": "Bond",
    "Par Value": "3,300,000",
-   "Market Value": "$3,320,388.87",
+   "Market Value": "$3,320,774.63",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -827,7 +827,7 @@
    "Coupon": "4.738",
    "Asset Category": "Bond",
    "Par Value": "3,275,000",
-   "Market Value": "$3,289,640.30",
+   "Market Value": "$3,290,032.53",
    "Weight": "0.09%",
    "Country": "Canada",
    "Currency": "USD"
@@ -839,7 +839,7 @@
    "Coupon": "4.469",
    "Asset Category": "Bond",
    "Par Value": "3,275,000",
-   "Market Value": "$3,284,927.70",
+   "Market Value": "$3,285,313.95",
    "Weight": "0.09%",
    "Country": "Canada",
    "Currency": "USD"
@@ -851,7 +851,7 @@
    "Coupon": "4.578",
    "Asset Category": "Bond",
    "Par Value": "3,250,000",
-   "Market Value": "$3,263,146.76",
+   "Market Value": "$3,263,523.21",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -860,10 +860,10 @@
    "Name": "Public Storage Operating Co",
    "Maturity": "Apr 16 2027",
    "Identifier": "BBG01MC1PNV2",
-   "Coupon": "4.364",
+   "Coupon": "4.599",
    "Asset Category": "Bond",
    "Par Value": "3,200,000",
-   "Market Value": "$3,207,890.07",
+   "Market Value": "$3,208,313.81",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -875,7 +875,7 @@
    "Coupon": "4.509",
    "Asset Category": "Bond",
    "Par Value": "3,175,000",
-   "Market Value": "$3,186,388.84",
+   "Market Value": "$3,186,763.01",
    "Weight": "0.09%",
    "Country": "Canada",
    "Currency": "USD"
@@ -887,7 +887,7 @@
    "Coupon": "4.229",
    "Asset Category": "Bond",
    "Par Value": "3,150,000",
-   "Market Value": "$3,159,699.64",
+   "Market Value": "$3,159,359.58",
    "Weight": "0.09%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -899,7 +899,7 @@
    "Coupon": "4.105",
    "Asset Category": "Bond",
    "Par Value": "3,125,000",
-   "Market Value": "$3,152,314.65",
+   "Market Value": "$3,152,689.72",
    "Weight": "0.09%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -911,7 +911,7 @@
    "Coupon": "5.200",
    "Asset Category": "Bond",
    "Par Value": "3,125,000",
-   "Market Value": "$3,147,221.81",
+   "Market Value": "$3,147,674.60",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -923,7 +923,7 @@
    "Coupon": "4.824",
    "Asset Category": "Bond",
    "Par Value": "3,100,000",
-   "Market Value": "$3,117,441.87",
+   "Market Value": "$3,117,858.12",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -935,7 +935,7 @@
    "Coupon": "4.524",
    "Asset Category": "Bond",
    "Par Value": "3,070,000",
-   "Market Value": "$3,105,701.45",
+   "Market Value": "$3,106,086.79",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -947,7 +947,7 @@
    "Coupon": "4.148",
    "Asset Category": "Bond",
    "Par Value": "3,075,000",
-   "Market Value": "$3,104,139.14",
+   "Market Value": "$3,103,875.87",
    "Weight": "0.09%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -959,7 +959,7 @@
    "Coupon": "4.337",
    "Asset Category": "Bond",
    "Par Value": "3,075,000",
-   "Market Value": "$3,100,906.91",
+   "Market Value": "$3,100,723.62",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -971,7 +971,7 @@
    "Coupon": "5.587",
    "Asset Category": "Bond",
    "Par Value": "3,071,000",
-   "Market Value": "$3,093,218.67",
+   "Market Value": "$3,093,684.07",
    "Weight": "0.09%",
    "Country": "United States",
    "Currency": "USD"
@@ -983,7 +983,7 @@
    "Coupon": "4.776",
    "Asset Category": "Bond",
    "Par Value": "3,050,000",
-   "Market Value": "$3,087,811.71",
+   "Market Value": "$3,088,186.78",
    "Weight": "0.09%",
    "Country": "Canada",
    "Currency": "USD"
@@ -995,7 +995,7 @@
    "Coupon": "4.264",
    "Asset Category": "Bond",
    "Par Value": "3,025,000",
-   "Market Value": "$3,065,552.61",
+   "Market Value": "$3,066,581.74",
    "Weight": "0.09%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -1007,7 +1007,7 @@
    "Coupon": "4.530",
    "Asset Category": "Bond",
    "Par Value": "3,009,000",
-   "Market Value": "$3,051,297.25",
+   "Market Value": "$3,051,677.67",
    "Weight": "0.08%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1019,7 +1019,7 @@
    "Coupon": "4.485",
    "Asset Category": "Bond",
    "Par Value": "3,009,000",
-   "Market Value": "$3,039,716.82",
+   "Market Value": "$3,040,102.68",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1031,7 +1031,7 @@
    "Coupon": "4.330",
    "Asset Category": "Bond",
    "Par Value": "3,000,000",
-   "Market Value": "$3,039,586.49",
+   "Market Value": "$3,039,956.31",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1043,7 +1043,7 @@
    "Coupon": "4.857",
    "Asset Category": "Bond",
    "Par Value": "3,001,000",
-   "Market Value": "$3,035,695.33",
+   "Market Value": "$3,037,214.70",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1055,7 +1055,7 @@
    "Coupon": "4.241",
    "Asset Category": "Bond",
    "Par Value": "3,000,000",
-   "Market Value": "$3,025,439.19",
+   "Market Value": "$3,025,824.30",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1067,19 +1067,7 @@
    "Coupon": "4.688",
    "Asset Category": "Bond",
    "Par Value": "3,000,000",
-   "Market Value": "$3,013,082.66",
-   "Weight": "0.08%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Massmutual Global Funding Ii",
-   "Maturity": "Aug 01 2028",
-   "Identifier": "BBG01WBZKX94",
-   "Coupon": "4.351",
-   "Asset Category": "Bond",
-   "Par Value": "2,975,000",
-   "Market Value": "$3,010,963.92",
+   "Market Value": "$3,013,439.16",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1091,7 +1079,19 @@
    "Coupon": "4.450",
    "Asset Category": "Bond",
    "Par Value": "3,007,000",
-   "Market Value": "$3,009,367.36",
+   "Market Value": "$3,009,763.65",
+   "Weight": "0.08%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Massmutual Global Funding Ii",
+   "Maturity": "Aug 01 2028",
+   "Identifier": "BBG01WBZKX94",
+   "Coupon": "4.351",
+   "Asset Category": "Bond",
+   "Par Value": "2,975,000",
+   "Market Value": "$3,008,730.73",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1103,7 +1103,7 @@
    "Coupon": "4.539",
    "Asset Category": "Bond",
    "Par Value": "2,998,000",
-   "Market Value": "$3,008,531.56",
+   "Market Value": "$3,008,015.93",
    "Weight": "0.08%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -1115,7 +1115,7 @@
    "Coupon": "4.757",
    "Asset Category": "Bond",
    "Par Value": "3,002,000",
-   "Market Value": "$3,001,656.68",
+   "Market Value": "$3,002,076.63",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1127,7 +1127,7 @@
    "Coupon": "4.496",
    "Asset Category": "Bond",
    "Par Value": "2,950,000",
-   "Market Value": "$2,992,542.97",
+   "Market Value": "$2,992,905.67",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1139,7 +1139,7 @@
    "Coupon": "4.567",
    "Asset Category": "Bond",
    "Par Value": "2,950,000",
-   "Market Value": "$2,977,173.10",
+   "Market Value": "$2,977,552.72",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1151,7 +1151,7 @@
    "Coupon": "4.982",
    "Asset Category": "Bond",
    "Par Value": "2,942,000",
-   "Market Value": "$2,968,006.70",
+   "Market Value": "$2,968,398.33",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1163,7 +1163,7 @@
    "Coupon": "4.215",
    "Asset Category": "Bond",
    "Par Value": "2,950,000",
-   "Market Value": "$2,967,934.18",
+   "Market Value": "$2,968,042.41",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1175,7 +1175,7 @@
    "Coupon": "4.300",
    "Asset Category": "Bond",
    "Par Value": "2,950,000",
-   "Market Value": "$2,956,044.95",
+   "Market Value": "$2,956,392.33",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1187,7 +1187,7 @@
    "Coupon": "4.472",
    "Asset Category": "Bond",
    "Par Value": "2,895,000",
-   "Market Value": "$2,934,927.94",
+   "Market Value": "$2,935,283.19",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1199,7 +1199,7 @@
    "Coupon": "4.174",
    "Asset Category": "Bond",
    "Par Value": "2,900,000",
-   "Market Value": "$2,930,131.95",
+   "Market Value": "$2,931,443.63",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1211,7 +1211,7 @@
    "Coupon": "4.734",
    "Asset Category": "Bond",
    "Par Value": "2,885,000",
-   "Market Value": "$2,915,746.72",
+   "Market Value": "$2,916,090.35",
    "Weight": "0.08%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1223,7 +1223,7 @@
    "Coupon": "4.204",
    "Asset Category": "Bond",
    "Par Value": "2,877,000",
-   "Market Value": "$2,907,110.20",
+   "Market Value": "$2,907,444.11",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1235,7 +1235,7 @@
    "Coupon": "4.609",
    "Asset Category": "Bond",
    "Par Value": "2,850,000",
-   "Market Value": "$2,857,968.42",
+   "Market Value": "$2,858,324.37",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1247,7 +1247,7 @@
    "Coupon": "4.396",
    "Asset Category": "Bond",
    "Par Value": "2,821,000",
-   "Market Value": "$2,856,742.07",
+   "Market Value": "$2,857,065.16",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1259,7 +1259,7 @@
    "Coupon": "4.147",
    "Asset Category": "Bond",
    "Par Value": "2,810,000",
-   "Market Value": "$2,836,222.53",
+   "Market Value": "$2,836,548.24",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1271,7 +1271,7 @@
    "Coupon": "4.491",
    "Asset Category": "Bond",
    "Par Value": "2,794,000",
-   "Market Value": "$2,835,852.29",
+   "Market Value": "$2,836,190.64",
    "Weight": "0.08%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1283,7 +1283,7 @@
    "Coupon": "4.956",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,831,474.98",
+   "Market Value": "$2,831,814.29",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1295,7 +1295,7 @@
    "Coupon": "4.131",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,830,805.00",
+   "Market Value": "$2,831,131.00",
    "Weight": "0.08%",
    "Country": "France",
    "Currency": "USD"
@@ -1307,7 +1307,7 @@
    "Coupon": "4.382",
    "Asset Category": "Bond",
    "Par Value": "2,795,000",
-   "Market Value": "$2,825,220.65",
+   "Market Value": "$2,825,560.08",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1319,7 +1319,7 @@
    "Coupon": "5.158",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,823,771.22",
+   "Market Value": "$2,824,111.06",
    "Weight": "0.08%",
    "Country": "Japan",
    "Currency": "USD"
@@ -1331,7 +1331,7 @@
    "Coupon": "4.366",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,820,926.35",
+   "Market Value": "$2,821,232.79",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1343,7 +1343,7 @@
    "Coupon": "5.384",
    "Asset Category": "Bond",
    "Par Value": "2,795,000",
-   "Market Value": "$2,820,367.71",
+   "Market Value": "$2,820,710.64",
    "Weight": "0.08%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1355,7 +1355,7 @@
    "Coupon": "4.357",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,816,845.46",
+   "Market Value": "$2,817,167.14",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1367,7 +1367,7 @@
    "Coupon": "4.558",
    "Asset Category": "Bond",
    "Par Value": "2,800,000",
-   "Market Value": "$2,813,574.25",
+   "Market Value": "$2,813,910.65",
    "Weight": "0.08%",
    "Country": "Australia",
    "Currency": "USD"
@@ -1379,7 +1379,7 @@
    "Coupon": "4.948",
    "Asset Category": "Bond",
    "Par Value": "2,795,000",
-   "Market Value": "$2,813,263.70",
+   "Market Value": "$2,813,621.99",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1391,7 +1391,7 @@
    "Coupon": "4.865",
    "Asset Category": "Bond",
    "Par Value": "2,775,000",
-   "Market Value": "$2,804,574.00",
+   "Market Value": "$2,804,909.23",
    "Weight": "0.08%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1403,7 +1403,7 @@
    "Coupon": "4.843",
    "Asset Category": "Bond",
    "Par Value": "2,758,000",
-   "Market Value": "$2,791,434.64",
+   "Market Value": "$2,790,485.27",
    "Weight": "0.08%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1415,7 +1415,7 @@
    "Coupon": "4.722",
    "Asset Category": "Bond",
    "Par Value": "2,755,000",
-   "Market Value": "$2,788,509.26",
+   "Market Value": "$2,788,848.32",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1427,7 +1427,7 @@
    "Coupon": "4.358",
    "Asset Category": "Bond",
    "Par Value": "2,750,000",
-   "Market Value": "$2,780,412.53",
+   "Market Value": "$2,780,755.80",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1439,7 +1439,7 @@
    "Coupon": "4.383",
    "Asset Category": "Bond",
    "Par Value": "2,747,000",
-   "Market Value": "$2,777,498.46",
+   "Market Value": "$2,777,814.22",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1451,7 +1451,7 @@
    "Coupon": "4.072",
    "Asset Category": "Bond",
    "Par Value": "2,750,000",
-   "Market Value": "$2,774,508.84",
+   "Market Value": "$2,774,843.66",
    "Weight": "0.08%",
    "Country": "Australia",
    "Currency": "USD"
@@ -1463,7 +1463,7 @@
    "Coupon": "4.869",
    "Asset Category": "Bond",
    "Par Value": "2,735,000",
-   "Market Value": "$2,774,508.14",
+   "Market Value": "$2,774,837.59",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1475,7 +1475,7 @@
    "Coupon": "4.858",
    "Asset Category": "Bond",
    "Par Value": "2,741,000",
-   "Market Value": "$2,760,424.45",
+   "Market Value": "$2,760,745.87",
    "Weight": "0.08%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1487,7 +1487,7 @@
    "Coupon": "4.959",
    "Asset Category": "Bond",
    "Par Value": "2,687,000",
-   "Market Value": "$2,730,675.68",
+   "Market Value": "$2,731,014.47",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1499,7 +1499,7 @@
    "Coupon": "4.584",
    "Asset Category": "Bond",
    "Par Value": "2,700,000",
-   "Market Value": "$2,728,307.65",
+   "Market Value": "$2,728,642.69",
    "Weight": "0.08%",
    "Country": "United States",
    "Currency": "USD"
@@ -1508,10 +1508,10 @@
    "Name": "Cooperatieve Rabobank Ua/Ny",
    "Maturity": "Jan 14 2028",
    "Identifier": "BBG01ZG41KW4",
-   "Coupon": "4.070",
+   "Coupon": "4.309",
    "Asset Category": "Bond",
    "Par Value": "2,695,000",
-   "Market Value": "$2,699,303.16",
+   "Market Value": "$2,699,615.53",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1523,7 +1523,7 @@
    "Coupon": "4.267",
    "Asset Category": "Bond",
    "Par Value": "2,635,000",
-   "Market Value": "$2,657,415.20",
+   "Market Value": "$2,657,702.80",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1535,7 +1535,7 @@
    "Coupon": "4.544",
    "Asset Category": "Bond",
    "Par Value": "2,625,000",
-   "Market Value": "$2,643,722.41",
+   "Market Value": "$2,644,044.70",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1547,7 +1547,7 @@
    "Coupon": "4.574",
    "Asset Category": "Bond",
    "Par Value": "2,600,000",
-   "Market Value": "$2,629,551.38",
+   "Market Value": "$2,629,862.79",
    "Weight": "0.07%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1559,7 +1559,7 @@
    "Coupon": "4.631",
    "Asset Category": "Bond",
    "Par Value": "2,525,000",
-   "Market Value": "$2,546,555.49",
+   "Market Value": "$2,546,850.47",
    "Weight": "0.07%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1571,7 +1571,7 @@
    "Coupon": "4.234",
    "Asset Category": "Bond",
    "Par Value": "2,475,000",
-   "Market Value": "$2,500,744.65",
+   "Market Value": "$2,501,039.61",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1583,7 +1583,7 @@
    "Coupon": "4.389",
    "Asset Category": "Bond",
    "Par Value": "2,475,000",
-   "Market Value": "$2,494,768.16",
+   "Market Value": "$2,494,749.73",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1595,7 +1595,7 @@
    "Coupon": "4.839",
    "Asset Category": "Bond",
    "Par Value": "2,475,000",
-   "Market Value": "$2,492,716.02",
+   "Market Value": "$2,493,029.44",
    "Weight": "0.07%",
    "Country": "United States",
    "Currency": "USD"
@@ -1607,7 +1607,7 @@
    "Coupon": "4.500",
    "Asset Category": "Bond",
    "Par Value": "2,249,000",
-   "Market Value": "$2,286,153.45",
+   "Market Value": "$2,286,428.23",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1619,7 +1619,7 @@
    "Coupon": "4.609",
    "Asset Category": "Bond",
    "Par Value": "2,250,000",
-   "Market Value": "$2,271,302.64",
+   "Market Value": "$2,271,565.33",
    "Weight": "0.06%",
    "Country": "Finland",
    "Currency": "USD"
@@ -1631,7 +1631,7 @@
    "Coupon": "4.064",
    "Asset Category": "Bond",
    "Par Value": "2,250,000",
-   "Market Value": "$2,267,257.64",
+   "Market Value": "$2,267,529.61",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1643,7 +1643,7 @@
    "Coupon": "4.678",
    "Asset Category": "Bond",
    "Par Value": "2,250,000",
-   "Market Value": "$2,260,929.00",
+   "Market Value": "$2,261,217.51",
    "Weight": "0.06%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -1655,7 +1655,7 @@
    "Coupon": "4.308",
    "Asset Category": "Bond",
    "Par Value": "2,250,000",
-   "Market Value": "$2,253,884.62",
+   "Market Value": "$2,254,150.89",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1667,7 +1667,7 @@
    "Coupon": "4.716",
    "Asset Category": "Bond",
    "Par Value": "2,225,000",
-   "Market Value": "$2,239,184.53",
+   "Market Value": "$2,239,478.84",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1679,7 +1679,7 @@
    "Coupon": "5.701",
    "Asset Category": "Bond",
    "Par Value": "2,201,000",
-   "Market Value": "$2,236,447.98",
+   "Market Value": "$2,236,215.05",
    "Weight": "0.06%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1691,7 +1691,7 @@
    "Coupon": "4.689",
    "Asset Category": "Bond",
    "Par Value": "2,215,000",
-   "Market Value": "$2,233,692.65",
+   "Market Value": "$2,233,975.34",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1703,7 +1703,7 @@
    "Coupon": "4.651",
    "Asset Category": "Bond",
    "Par Value": "2,203,000",
-   "Market Value": "$2,222,440.91",
+   "Market Value": "$2,222,748.73",
    "Weight": "0.06%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1715,7 +1715,7 @@
    "Coupon": "4.107",
    "Asset Category": "Bond",
    "Par Value": "2,200,000",
-   "Market Value": "$2,220,702.63",
+   "Market Value": "$2,220,966.40",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1727,7 +1727,7 @@
    "Coupon": "4.326",
    "Asset Category": "Bond",
    "Par Value": "2,200,000",
-   "Market Value": "$2,219,248.12",
+   "Market Value": "$2,219,504.65",
    "Weight": "0.06%",
    "Country": "Sweden",
    "Currency": "USD"
@@ -1739,7 +1739,7 @@
    "Coupon": "5.259",
    "Asset Category": "Bond",
    "Par Value": "2,200,000",
-   "Market Value": "$2,218,188.31",
+   "Market Value": "$2,218,451.95",
    "Weight": "0.06%",
    "Country": "Spain",
    "Currency": "USD"
@@ -1751,7 +1751,7 @@
    "Coupon": "4.549",
    "Asset Category": "Bond",
    "Par Value": "2,175,000",
-   "Market Value": "$2,211,729.22",
+   "Market Value": "$2,211,999.98",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1763,7 +1763,7 @@
    "Coupon": "4.609",
    "Asset Category": "Bond",
    "Par Value": "2,200,000",
-   "Market Value": "$2,204,192.41",
+   "Market Value": "$2,204,466.07",
    "Weight": "0.06%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1775,7 +1775,7 @@
    "Coupon": "4.246",
    "Asset Category": "Bond",
    "Par Value": "2,175,000",
-   "Market Value": "$2,195,612.38",
+   "Market Value": "$2,195,863.09",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1787,7 +1787,7 @@
    "Coupon": "4.193",
    "Asset Category": "Bond",
    "Par Value": "2,175,000",
-   "Market Value": "$2,193,859.69",
+   "Market Value": "$2,194,122.88",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1799,7 +1799,7 @@
    "Coupon": "5.037",
    "Asset Category": "Bond",
    "Par Value": "2,175,000",
-   "Market Value": "$2,192,123.28",
+   "Market Value": "$2,192,391.34",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1808,10 +1808,10 @@
    "Name": "General Motors Financial Co Inc",
    "Maturity": "Jul 15 2027",
    "Identifier": "BBG01N9VWZH9",
-   "Coupon": "4.714",
+   "Coupon": "4.949",
    "Asset Category": "Bond",
    "Par Value": "2,165,000",
-   "Market Value": "$2,173,345.22",
+   "Market Value": "$2,173,614.11",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1823,7 +1823,7 @@
    "Coupon": "4.638",
    "Asset Category": "Bond",
    "Par Value": "2,150,000",
-   "Market Value": "$2,158,524.36",
+   "Market Value": "$2,158,772.44",
    "Weight": "0.06%",
    "Country": "Canada",
    "Currency": "USD"
@@ -1832,10 +1832,10 @@
    "Name": "John Deere Capital Corp",
    "Maturity": "Jul 15 2027",
    "Identifier": "BBG01PKLS708",
-   "Coupon": "4.337",
+   "Coupon": "4.579",
    "Asset Category": "Bond",
    "Par Value": "2,150,000",
-   "Market Value": "$2,156,662.10",
+   "Market Value": "$2,156,912.49",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1847,7 +1847,7 @@
    "Coupon": "4.769",
    "Asset Category": "Bond",
    "Par Value": "2,125,000",
-   "Market Value": "$2,139,031.57",
+   "Market Value": "$2,139,303.57",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1859,7 +1859,7 @@
    "Coupon": "5.936",
    "Asset Category": "Bond",
    "Par Value": "2,075,000",
-   "Market Value": "$2,116,287.84",
+   "Market Value": "$2,116,566.33",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1871,7 +1871,7 @@
    "Coupon": "4.195",
    "Asset Category": "Bond",
    "Par Value": "2,095,000",
-   "Market Value": "$2,112,591.93",
+   "Market Value": "$2,112,845.14",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1883,7 +1883,7 @@
    "Coupon": "4.876",
    "Asset Category": "Bond",
    "Par Value": "1,988,000",
-   "Market Value": "$2,002,496.58",
+   "Market Value": "$2,002,741.55",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1895,7 +1895,7 @@
    "Coupon": "5.021",
    "Asset Category": "Bond",
    "Par Value": "1,975,000",
-   "Market Value": "$2,000,744.04",
+   "Market Value": "$2,001,004.45",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1907,7 +1907,7 @@
    "Coupon": "4.270",
    "Asset Category": "Bond",
    "Par Value": "1,975,000",
-   "Market Value": "$1,998,715.03",
+   "Market Value": "$1,998,954.10",
    "Weight": "0.06%",
    "Country": "United States",
    "Currency": "USD"
@@ -1919,7 +1919,7 @@
    "Coupon": "4.916",
    "Asset Category": "Bond",
    "Par Value": "1,970,000",
-   "Market Value": "$1,988,987.33",
+   "Market Value": "$1,989,210.41",
    "Weight": "0.06%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -1931,20 +1931,8 @@
    "Coupon": "4.829",
    "Asset Category": "Bond",
    "Par Value": "1,975,000",
-   "Market Value": "$1,982,510.89",
+   "Market Value": "$1,982,767.05",
    "Weight": "0.06%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Metropolitan Life Global Funding I",
-   "Maturity": "Jun 11 2027",
-   "Identifier": "BBG01N61GTP1",
-   "Coupon": "4.591",
-   "Asset Category": "Bond",
-   "Par Value": "1,950,000",
-   "Market Value": "$1,963,186.19",
-   "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
   },
@@ -1955,7 +1943,19 @@
    "Coupon": "4.475",
    "Asset Category": "Bond",
    "Par Value": "1,950,000",
-   "Market Value": "$1,962,885.66",
+   "Market Value": "$1,963,585.88",
+   "Weight": "0.05%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Metropolitan Life Global Funding I",
+   "Maturity": "Jun 11 2027",
+   "Identifier": "BBG01N61GTP1",
+   "Coupon": "4.591",
+   "Asset Category": "Bond",
+   "Par Value": "1,950,000",
+   "Market Value": "$1,963,418.83",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -1967,7 +1967,7 @@
    "Coupon": "4.270",
    "Asset Category": "Bond",
    "Par Value": "1,930,000",
-   "Market Value": "$1,933,162.27",
+   "Market Value": "$1,932,421.44",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -1979,7 +1979,7 @@
    "Coupon": "4.796",
    "Asset Category": "Bond",
    "Par Value": "1,913,000",
-   "Market Value": "$1,932,049.58",
+   "Market Value": "$1,932,152.54",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -1988,10 +1988,10 @@
    "Name": "Societe Generale Sa",
    "Maturity": "Jan 19 2028",
    "Identifier": "BBG01KZJ6NM3",
-   "Coupon": "5.325",
+   "Coupon": "5.559",
    "Asset Category": "Bond",
    "Par Value": "1,925,000",
-   "Market Value": "$1,929,842.02",
+   "Market Value": "$1,930,079.30",
    "Weight": "0.05%",
    "Country": "France",
    "Currency": "USD"
@@ -2003,7 +2003,7 @@
    "Coupon": "4.458",
    "Asset Category": "Bond",
    "Par Value": "1,850,000",
-   "Market Value": "$1,855,318.60",
+   "Market Value": "$1,855,541.70",
    "Weight": "0.05%",
    "Country": "Canada",
    "Currency": "USD"
@@ -2015,7 +2015,7 @@
    "Coupon": "4.480",
    "Asset Category": "Bond",
    "Par Value": "1,775,000",
-   "Market Value": "$1,795,924.94",
+   "Market Value": "$1,796,157.33",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2027,7 +2027,7 @@
    "Coupon": "4.537",
    "Asset Category": "Bond",
    "Par Value": "1,775,000",
-   "Market Value": "$1,791,475.29",
+   "Market Value": "$1,793,313.54",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2039,7 +2039,7 @@
    "Coupon": "4.489",
    "Asset Category": "Bond",
    "Par Value": "1,770,000",
-   "Market Value": "$1,773,745.44",
+   "Market Value": "$1,773,962.75",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2051,7 +2051,7 @@
    "Coupon": "4.371",
    "Asset Category": "Bond",
    "Par Value": "1,730,000",
-   "Market Value": "$1,750,314.30",
+   "Market Value": "$1,750,525.05",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2063,7 +2063,7 @@
    "Coupon": "4.282",
    "Asset Category": "Bond",
    "Par Value": "1,725,000",
-   "Market Value": "$1,743,945.69",
+   "Market Value": "$1,744,161.71",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2075,7 +2075,7 @@
    "Coupon": "4.266",
    "Asset Category": "Bond",
    "Par Value": "1,697,000",
-   "Market Value": "$1,721,523.15",
+   "Market Value": "$1,720,802.05",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2087,7 +2087,7 @@
    "Coupon": "5.747",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,718,853.80",
+   "Market Value": "$1,718,890.60",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2099,31 +2099,7 @@
    "Coupon": "5.078",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,711,897.91",
-   "Weight": "0.05%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "National Rural Utilities Cooperative Fi",
-   "Maturity": "Dec 03 2027",
-   "Identifier": "BBG0227KPK72",
-   "Coupon": "4.419",
-   "Asset Category": "Bond",
-   "Par Value": "1,700,000",
-   "Market Value": "$1,710,936.41",
-   "Weight": "0.05%",
-   "Country": "United States",
-   "Currency": "USD"
-  },
-  {
-   "Name": "Mercedes-Benz Finance North America Llc",
-   "Maturity": "Mar 10 2028",
-   "Identifier": "BBG020T6TRC8",
-   "Coupon": "4.375",
-   "Asset Category": "Bond",
-   "Par Value": "1,700,000",
-   "Market Value": "$1,710,788.21",
+   "Market Value": "$1,712,119.33",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2135,7 +2111,31 @@
    "Coupon": "4.729",
    "Asset Category": "Bond",
    "Par Value": "1,705,000",
-   "Market Value": "$1,710,581.67",
+   "Market Value": "$1,711,904.55",
+   "Weight": "0.05%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "National Rural Utilities Cooperative Fi",
+   "Maturity": "Dec 03 2027",
+   "Identifier": "BBG0227KPK72",
+   "Coupon": "4.419",
+   "Asset Category": "Bond",
+   "Par Value": "1,700,000",
+   "Market Value": "$1,711,145.37",
+   "Weight": "0.05%",
+   "Country": "United States",
+   "Currency": "USD"
+  },
+  {
+   "Name": "Mercedes-Benz Finance North America Llc",
+   "Maturity": "Mar 10 2028",
+   "Identifier": "BBG020T6TRC8",
+   "Coupon": "4.375",
+   "Asset Category": "Bond",
+   "Par Value": "1,700,000",
+   "Market Value": "$1,711,003.41",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2147,7 +2147,7 @@
    "Coupon": "4.374",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,708,874.26",
+   "Market Value": "$1,709,083.65",
    "Weight": "0.05%",
    "Country": "Australia",
    "Currency": "USD"
@@ -2159,7 +2159,7 @@
    "Coupon": "5.488",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,707,998.60",
+   "Market Value": "$1,708,205.86",
    "Weight": "0.05%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -2171,7 +2171,7 @@
    "Coupon": "4.607",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,707,701.89",
+   "Market Value": "$1,707,919.69",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2183,7 +2183,7 @@
    "Coupon": "4.495",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,707,607.96",
+   "Market Value": "$1,707,814.38",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2195,7 +2195,7 @@
    "Coupon": "4.439",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,705,534.58",
+   "Market Value": "$1,705,733.34",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2207,7 +2207,7 @@
    "Coupon": "4.659",
    "Asset Category": "Bond",
    "Par Value": "1,700,000",
-   "Market Value": "$1,700,950.27",
+   "Market Value": "$1,701,169.91",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2219,7 +2219,7 @@
    "Coupon": "4.465",
    "Asset Category": "Bond",
    "Par Value": "1,675,000",
-   "Market Value": "$1,696,830.18",
+   "Market Value": "$1,698,283.39",
    "Weight": "0.05%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -2231,7 +2231,7 @@
    "Coupon": "4.964",
    "Asset Category": "Bond",
    "Par Value": "1,675,000",
-   "Market Value": "$1,694,945.81",
+   "Market Value": "$1,695,255.59",
    "Weight": "0.05%",
    "Country": "United Kingdom",
    "Currency": "USD"
@@ -2243,7 +2243,7 @@
    "Coupon": "4.726",
    "Asset Category": "Bond",
    "Par Value": "1,680,000",
-   "Market Value": "$1,694,646.41",
+   "Market Value": "$1,694,845.64",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2255,7 +2255,7 @@
    "Coupon": "4.308",
    "Asset Category": "Bond",
    "Par Value": "1,670,000",
-   "Market Value": "$1,693,319.48",
+   "Market Value": "$1,693,518.50",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2267,7 +2267,7 @@
    "Coupon": "4.559",
    "Asset Category": "Bond",
    "Par Value": "1,680,000",
-   "Market Value": "$1,688,056.81",
+   "Market Value": "$1,688,267.64",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2279,7 +2279,7 @@
    "Coupon": "4.893",
    "Asset Category": "Bond",
    "Par Value": "1,670,000",
-   "Market Value": "$1,685,547.62",
+   "Market Value": "$1,685,760.55",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2291,7 +2291,7 @@
    "Coupon": "4.337",
    "Asset Category": "Bond",
    "Par Value": "1,675,000",
-   "Market Value": "$1,684,388.36",
+   "Market Value": "$1,685,293.19",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2303,7 +2303,7 @@
    "Coupon": "4.586",
    "Asset Category": "Bond",
    "Par Value": "1,661,000",
-   "Market Value": "$1,680,571.04",
+   "Market Value": "$1,680,771.89",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2315,7 +2315,7 @@
    "Coupon": "4.619",
    "Asset Category": "Bond",
    "Par Value": "1,652,000",
-   "Market Value": "$1,675,579.99",
+   "Market Value": "$1,675,780.72",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2327,7 +2327,7 @@
    "Coupon": "4.388",
    "Asset Category": "Bond",
    "Par Value": "1,650,000",
-   "Market Value": "$1,670,943.40",
+   "Market Value": "$1,671,152.14",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2339,7 +2339,7 @@
    "Coupon": "4.674",
    "Asset Category": "Bond",
    "Par Value": "1,650,000",
-   "Market Value": "$1,666,554.95",
+   "Market Value": "$1,666,758.08",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2351,7 +2351,7 @@
    "Coupon": "4.374",
    "Asset Category": "Bond",
    "Par Value": "1,650,000",
-   "Market Value": "$1,660,279.28",
+   "Market Value": "$1,659,476.19",
    "Weight": "0.05%",
    "Country": "Australia",
    "Currency": "USD"
@@ -2363,7 +2363,7 @@
    "Coupon": "4.593",
    "Asset Category": "Bond",
    "Par Value": "1,625,000",
-   "Market Value": "$1,646,414.00",
+   "Market Value": "$1,646,608.25",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2375,7 +2375,7 @@
    "Coupon": "4.645",
    "Asset Category": "Bond",
    "Par Value": "1,625,000",
-   "Market Value": "$1,639,913.00",
+   "Market Value": "$1,640,115.07",
    "Weight": "0.05%",
    "Country": "United States",
    "Currency": "USD"
@@ -2387,7 +2387,7 @@
    "Coupon": "4.808",
    "Asset Category": "Bond",
    "Par Value": "1,625,000",
-   "Market Value": "$1,635,819.76",
+   "Market Value": "$1,636,034.01",
    "Weight": "0.05%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -2399,7 +2399,7 @@
    "Coupon": "4.599",
    "Asset Category": "Bond",
    "Par Value": "1,600,000",
-   "Market Value": "$1,603,391.88",
+   "Market Value": "$1,603,591.19",
    "Weight": "0.04%",
    "Country": "United States",
    "Currency": "USD"
@@ -2411,7 +2411,7 @@
    "Coupon": "4.629",
    "Asset Category": "Bond",
    "Par Value": "1,250,000",
-   "Market Value": "$1,254,332.73",
+   "Market Value": "$1,254,478.33",
    "Weight": "0.03%",
    "Country": "United States",
    "Currency": "USD"
@@ -2423,7 +2423,7 @@
    "Coupon": "4.968",
    "Asset Category": "Bond",
    "Par Value": "1,082,000",
-   "Market Value": "$1,087,223.41",
+   "Market Value": "$1,087,353.51",
    "Weight": "0.03%",
    "Country": "United States",
    "Currency": "USD"
@@ -2435,7 +2435,7 @@
    "Coupon": "4.738",
    "Asset Category": "Bond",
    "Par Value": "1,000,000",
-   "Market Value": "$1,004,173.88",
+   "Market Value": "$1,004,313.73",
    "Weight": "0.03%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -2444,10 +2444,10 @@
    "Name": "John Deere Capital Corp",
    "Maturity": "Apr 19 2027",
    "Identifier": "BBG01MG6D5H5",
-   "Coupon": "4.262",
+   "Coupon": "4.499",
    "Asset Category": "Bond",
    "Par Value": "1,000,000",
-   "Market Value": "$1,001,936.87",
+   "Market Value": "$1,002,046.32",
    "Weight": "0.03%",
    "Country": "United States",
    "Currency": "USD"
@@ -2459,7 +2459,7 @@
    "Coupon": "4.488",
    "Asset Category": "Bond",
    "Par Value": "750,000",
-   "Market Value": "$753,443.17",
+   "Market Value": "$753,733.42",
    "Weight": "0.02%",
    "Country": "United States",
    "Currency": "USD"
@@ -2471,7 +2471,7 @@
    "Coupon": "4.344",
    "Asset Category": "Bond",
    "Par Value": "50,000",
-   "Market Value": "$50,730.38",
+   "Market Value": "$50,730.91",
    "Weight": "0.00%",
    "Country": "South Korea",
    "Currency": "USD"
@@ -2482,9 +2482,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "10,499,538",
-   "Market Value": "$10,499,538.25",
-   "Weight": "0.29%",
+   "Par Value": "16,303,110",
+   "Market Value": "$16,303,109.96",
+   "Weight": "0.45%",
    "Country": "United States",
    "Currency": "USD"
   },
@@ -2495,8 +2495,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$5,488,609.96",
-   "Weight": "0.15%",
+   "Market Value": "$1,091,066.12",
+   "Weight": "0.03%",
    "Country": "",
    "Currency": "USD"
   }

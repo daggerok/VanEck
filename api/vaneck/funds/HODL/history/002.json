@@ -2,7 +2,7 @@
  "ticker": "HODL",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 1020,
+ "totalRows": 1021,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "45.0096",
+   "Close": "44.84",
+   "Volume": "47,874",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "110,273,586.21",
+   "Index Level": "39,776.41"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "44.4009",

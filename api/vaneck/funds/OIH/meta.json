@@ -9,28 +9,28 @@
  "ter": "0.35%",
  "terValue": 0.35,
  "nav": {
-  "display": "$385.49",
-  "value": 385.49,
-  "asOfDate": "Oct 19 2026"
+  "display": "$385.23",
+  "value": 385.23,
+  "asOfDate": "Oct 20 2026"
  },
- "navValue": 385.49,
+ "navValue": 385.23,
  "aum": {
   "display": "$1.77B",
-  "value": 1773477981.93,
-  "asOfDate": "Oct 19 2026",
+  "value": 1772247406.29,
+  "asOfDate": "Oct 20 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 1773477981.93,
- "asOfDate": "Oct 19 2026",
+ "aumValue": 1772247406.29,
+ "asOfDate": "Oct 20 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NYSE Arca",
- "closePrice": "$385.12",
- "closePriceValue": 385.12,
+ "closePrice": "$384.89",
+ "closePriceValue": 384.89,
  "premiumDiscount": {
-  "display": "-0.37%",
-  "value": -0.37
+  "display": "-0.34%",
+  "value": -0.34
  },
- "premiumDiscountValue": -0.37,
+ "premiumDiscountValue": -0.34,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,7 +116,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Sep 30 2026",
+   "asOfDate": "Oct 20 2026",
+   "ytd": 35.42,
+   "ytdText": "35.42%",
    "yr1": 48.05,
    "yr3": 4.89,
    "yr5": 15.52,
@@ -134,7 +136,7 @@
   }
  },
  "metrics": {
-  "ytd": null,
+  "ytd": 35.42,
   "tr1y": 48.05,
   "tr3y": 15.4,
   "tr5y": 105.75,
@@ -152,7 +154,7 @@
   "secYield": 1.22,
   "secYieldText": "1.22%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": null,
+  "ytdAsOf": "2026-10-20",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -160,11 +162,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
- "netAssetsAsOf": "Oct 19 2026",
+ "netAssetsAsOf": "Oct 20 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Oct 16 2026",
+  "asOfDate": "Oct 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -172,9 +174,9 @@
   ]
  },
  "history": {
-  "totalRows": 4088,
+  "totalRows": 4089,
   "pageSize": 1000,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 20 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-services-etf-oih/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -224,9 +226,9 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "$385.12",
-  "value": 385.12,
-  "asOfDate": "Oct 19 2026"
+  "display": "$384.89",
+  "value": 384.89,
+  "asOfDate": "Oct 20 2026"
  },
  "yields": {
   "dividendYield": 1.22,

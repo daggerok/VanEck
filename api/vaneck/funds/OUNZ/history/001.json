@@ -2,7 +2,7 @@
  "ticker": "OUNZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4540,
+ "totalRows": 4541,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "39.5799",
+   "Close": "39.57",
+   "Volume": "340,600",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "2,667,468,727.78",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "39.7857",
@@ -9002,15 +9011,6 @@
    "Volume": "999,739",
    "Premium/Discount": "-0.00",
    "Total Net Assets": "767,879,836.85",
-   "Index Level": "n.a."
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "19.4596",
-   "Close": "19.46",
-   "Volume": "1,299,944",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "765,112,669.01",
    "Index Level": "n.a."
   }
  ]

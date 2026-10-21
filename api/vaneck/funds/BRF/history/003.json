@@ -2,7 +2,7 @@
  "ticker": "BRF",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4747,
+ "totalRows": 4748,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 09 2020",
+   "NAV": "14.2051",
+   "Close": "14.19",
+   "Volume": "17,119",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "46,876,840.89",
+   "Index Level": "1,541.09"
+  },
   {
    "Date": "Apr 08 2020",
    "NAV": "14.0102",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.17",
    "Total Net Assets": "84,489,416.64",
    "Index Level": "1,209.24"
-  },
-  {
-   "Date": "Apr 20 2016",
-   "NAV": "13.3057",
-   "Close": "13.21",
-   "Volume": "75,605",
-   "Premium/Discount": "-0.10",
-   "Total Net Assets": "84,491,271.30",
-   "Index Level": "1,205.92"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "IDX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4827,
+ "totalRows": 4828,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "16.1648",
+   "Close": "16.17",
+   "Volume": "3,488",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "27,480,116.86",
+   "Index Level": "9,096.89"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "16.3656",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.33",
    "Total Net Assets": "23,437,133.74",
    "Index Level": "6,970.19"
-  },
-  {
-   "Date": "Apr 09 2020",
-   "NAV": "13.6947",
-   "Close": "13.51",
-   "Volume": "10,446",
-   "Premium/Discount": "-0.18",
-   "Total Net Assets": "23,280,917.14",
-   "Index Level": "6,934.29"
   }
  ]
 }

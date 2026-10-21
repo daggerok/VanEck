@@ -2,7 +2,7 @@
  "ticker": "SLX",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 5397,
+ "totalRows": 5398,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 20 2016",
+   "NAV": "30.3986",
+   "Close": "30.42",
+   "Volume": "97,820",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "103,355,204.44",
+   "Index Level": "430.78"
+  },
   {
    "Date": "Apr 19 2016",
    "NAV": "29.9059",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.09",
    "Total Net Assets": "134,655,969.13",
    "Index Level": "643.58"
-  },
-  {
-   "Date": "Apr 27 2012",
-   "NAV": "52.2222",
-   "Close": "52.23",
-   "Volume": "72,380",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "133,166,558.43",
-   "Index Level": "648.91"
   }
  ]
 }

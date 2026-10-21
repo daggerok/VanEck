@@ -2,7 +2,7 @@
  "ticker": "IBOT",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 1248,
+ "totalRows": 1249,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 24 2024",
+   "NAV": "40.1934",
+   "Close": "40.26",
+   "Volume": "2,613",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "6,029,007.65",
+   "Index Level": "624.85"
+  },
   {
    "Date": "Jan 23 2024",
    "NAV": "39.8970",

@@ -2,7 +2,7 @@
  "ticker": "XMPT",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3874,
+ "totalRows": 3875,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 20 2018",
+   "NAV": "23.7713",
+   "Close": "23.82",
+   "Volume": "37,648",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "120,045,291.35",
+   "Index Level": "2,183.24"
+  },
   {
    "Date": "Dec 19 2018",
    "NAV": "23.9117",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.04",
    "Total Net Assets": "39,376,505.61",
    "Index Level": "1,959.24"
-  },
-  {
-   "Date": "Dec 31 2014",
-   "NAV": "26.1856",
-   "Close": "26.13",
-   "Volume": "10,665",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "39,278,402.89",
-   "Index Level": "1,954.28"
   }
  ]
 }

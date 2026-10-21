@@ -2,7 +2,7 @@
  "ticker": "BUZZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1776,
+ "totalRows": 1777,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "35.3727",
+   "Close": "35.38",
+   "Volume": "22,457",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "92,853,390.41",
+   "Index Level": "854.94"
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "35.0354",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "58,759,349.78",
    "Index Level": "427.82"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "17.9476",
-   "Close": "17.93",
-   "Volume": "21,108",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "58,778,414.03",
-   "Index Level": "427.99"
   }
  ]
 }

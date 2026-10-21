@@ -2,7 +2,7 @@
  "ticker": "GLIN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4423,
+ "totalRows": 4424,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 20 2026",
+   "NAV": "45.0343",
+   "Close": "44.90",
+   "Volume": "3,428",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "86,689,577.93",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Oct 19 2026",
    "NAV": "44.6616",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.38",
    "Total Net Assets": "100,791,841.61",
    "Index Level": "293.86"
-  },
-  {
-   "Date": "Jan 24 2024",
-   "NAV": "44.3743",
-   "Close": "44.75",
-   "Volume": "17,496",
-   "Premium/Discount": "0.38",
-   "Total Net Assets": "100,949,949.71",
-   "Index Level": "294.89"
   }
  ]
 }

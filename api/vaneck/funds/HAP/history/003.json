@@ -2,7 +2,7 @@
  "ticker": "HAP",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4922,
+ "totalRows": 4923,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 09 2020",
+   "NAV": "27.4038",
+   "Close": "27.31",
+   "Volume": "5,403",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "41,105,640.90",
+   "Index Level": "930.77"
+  },
   {
    "Date": "Apr 08 2020",
    "NAV": "26.9412",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.05",
    "Total Net Assets": "83,571,487.87",
    "Index Level": "936.01"
-  },
-  {
-   "Date": "Apr 20 2016",
-   "NAV": "30.5135",
-   "Close": "30.58",
-   "Volume": "43,859",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "83,912,054.34",
-   "Index Level": "936.29"
   }
  ]
 }
