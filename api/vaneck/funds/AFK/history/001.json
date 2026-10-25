@@ -2,7 +2,7 @@
  "ticker": "AFK",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4959,
+ "totalRows": 4962,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 23 2026",
+   "NAV": "25.7841",
+   "Close": "25.68",
+   "Volume": "10,899",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "92,822,825.91",
+   "Index Level": "2,065.03"
+  },
+  {
+   "Date": "Oct 22 2026",
+   "NAV": "26.0735",
+   "Close": "25.85",
+   "Volume": "14,142",
+   "Premium/Discount": "-0.22",
+   "Total Net Assets": "93,864,491.53",
+   "Index Level": "2,088.56"
+  },
+  {
+   "Date": "Oct 21 2026",
+   "NAV": "26.7151",
+   "Close": "26.57",
+   "Volume": "4,050",
+   "Premium/Discount": "-0.15",
+   "Total Net Assets": "96,174,348.61",
+   "Index Level": "2,140.15"
+  },
   {
    "Date": "Oct 20 2026",
    "NAV": "26.7842",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.34",
    "Total Net Assets": "40,915,189.61",
    "Index Level": "1,082.76"
-  },
-  {
-   "Date": "Jan 27 2024",
-   "NAV": "13.8696",
-   "Close": "13.52",
-   "Volume": "",
-   "Premium/Discount": "-0.34",
-   "Total Net Assets": "40,915,189.61",
-   "Index Level": "1,082.76"
-  },
-  {
-   "Date": "Jan 26 2024",
-   "NAV": "13.8696",
-   "Close": "13.52",
-   "Volume": "7,029",
-   "Premium/Discount": "-0.34",
-   "Total Net Assets": "40,915,189.61",
-   "Index Level": "1,082.76"
-  },
-  {
-   "Date": "Jan 25 2024",
-   "NAV": "13.7749",
-   "Close": "13.58",
-   "Volume": "7,922",
-   "Premium/Discount": "-0.19",
-   "Total Net Assets": "40,635,900.58",
-   "Index Level": "1,075.56"
   }
  ]
 }

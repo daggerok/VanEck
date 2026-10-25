@@ -9,28 +9,28 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$25.31",
-  "value": 25.31,
-  "asOfDate": "Oct 20 2026"
+  "display": "$24.07",
+  "value": 24.07,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 25.31,
+ "navValue": 24.07,
  "aum": {
-  "display": "$105.03M",
-  "value": 105033843.92,
-  "asOfDate": "Oct 20 2026",
+  "display": "$109.27M",
+  "value": 109270376.75,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 105033843.92,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 109270376.75,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Feb 18 2026",
  "exchange": "NASDAQ",
- "closePrice": "$25.30",
- "closePriceValue": 25.3,
+ "closePrice": "$24.09",
+ "closePriceValue": 24.09,
  "premiumDiscount": {
-  "display": "-0.01%",
-  "value": -0.01
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": -0.01,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -100,11 +100,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
   "totalRows": 8,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -112,16 +112,16 @@
   ]
  },
  "history": {
-  "totalRows": 245,
+  "totalRows": 248,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 105030000,
+ "totalNetAssets": 109270000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -158,16 +158,16 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$25.30",
-  "value": 25.3,
-  "asOfDate": "Oct 20 2026"
+  "display": "$24.09",
+  "value": 24.09,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": 0.9,
   "dividendYieldText": "0.90%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.85,
-  "indicatedYieldText": "0.85%",
+  "indicatedYield": 0.89,
+  "indicatedYieldText": "0.89%",
   "distributionYield": 0.9,
   "distributionYieldText": "0.90%",
   "yield12M": null,

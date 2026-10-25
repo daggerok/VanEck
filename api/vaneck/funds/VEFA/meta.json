@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$80.58",
-  "value": 80.58,
-  "asOfDate": "Oct 20 2026"
+  "display": "$79.70",
+  "value": 79.7,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 80.58,
+ "navValue": 79.7,
  "aum": {
-  "display": "$4.03M",
-  "value": 4028759.68,
-  "asOfDate": "Oct 20 2026",
+  "display": "$3.99M",
+  "value": 3985184.51,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4028759.68,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 3985184.51,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Apr 01 2026",
  "exchange": "NASDAQ",
- "closePrice": "$80.91",
- "closePriceValue": 80.91,
+ "closePrice": "$79.88",
+ "closePriceValue": 79.88,
  "premiumDiscount": {
-  "display": "0.33%",
-  "value": 0.33
+  "display": "0.17%",
+  "value": 0.17
  },
- "premiumDiscountValue": 0.33,
+ "premiumDiscountValue": 0.17,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -95,11 +95,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
   "totalRows": 110,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 203,
+  "totalRows": 206,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 4030000,
+ "totalNetAssets": 3990000,
  "indexTicker": "NU763972",
  "indexName": "MSCI EAFE Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -155,16 +155,16 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$80.91",
-  "value": 80.91,
-  "asOfDate": "Oct 20 2026"
+  "display": "$79.88",
+  "value": 79.88,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": 0.76,
   "dividendYieldText": "0.76%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.55,
-  "indicatedYieldText": "1.55%",
+  "indicatedYield": 1.56,
+  "indicatedYieldText": "1.56%",
   "distributionYield": 0.76,
   "distributionYieldText": "0.76%",
   "yield12M": null,

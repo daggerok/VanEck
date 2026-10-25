@@ -2,7 +2,7 @@
  "ticker": "SHYD",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3572,
+ "totalRows": 3575,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 15 2020",
+   "NAV": "23.5198",
+   "Close": "22.63",
+   "Volume": "51,924",
+   "Premium/Discount": "-0.89",
+   "Total Net Assets": "283,413,122.33",
+   "Index Level": "146.44"
+  },
+  {
+   "Date": "Apr 14 2020",
+   "NAV": "23.5117",
+   "Close": "22.70",
+   "Volume": "328,161",
+   "Premium/Discount": "-0.81",
+   "Total Net Assets": "283,315,802.66",
+   "Index Level": "146.34"
+  },
+  {
+   "Date": "Apr 13 2020",
+   "NAV": "23.4515",
+   "Close": "22.56",
+   "Volume": "136,778",
+   "Premium/Discount": "-0.89",
+   "Total Net Assets": "282,590,250.46",
+   "Index Level": "146.16"
+  },
   {
    "Date": "Apr 09 2020",
    "NAV": "23.3769",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "105,457,163.63",
    "Index Level": "131.47"
-  },
-  {
-   "Date": "Apr 25 2016",
-   "NAV": "25.1094",
-   "Close": "25.18",
-   "Volume": "13,868",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "105,459,622.07",
-   "Index Level": "131.45"
-  },
-  {
-   "Date": "Apr 22 2016",
-   "NAV": "25.1049",
-   "Close": "25.19",
-   "Volume": "55,995",
-   "Premium/Discount": "0.08",
-   "Total Net Assets": "105,440,736.50",
-   "Index Level": "131.40"
-  },
-  {
-   "Date": "Apr 21 2016",
-   "NAV": "25.1031",
-   "Close": "25.17",
-   "Volume": "16,281",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "102,922,618.22",
-   "Index Level": "131.38"
   }
  ]
 }

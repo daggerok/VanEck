@@ -2,7 +2,7 @@
  "ticker": "GLIN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4424,
+ "totalRows": 4427,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,40 @@
  ],
  "rows": [
   {
+   "Date": "Oct 23 2026",
+   "NAV": "43.8597",
+   "Close": "43.63",
+   "Volume": "3,363",
+   "Premium/Discount": "-0.23",
+   "Total Net Assets": "84,428,534.94",
+   "Index Level": "316.77"
+  },
+  {
+   "Date": "Oct 22 2026",
+   "NAV": "44.7921",
+   "Close": "44.70",
+   "Volume": "3,918",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "86,223,269.47",
+   "Index Level": "322.64"
+  },
+  {
+   "Date": "Oct 21 2026",
+   "NAV": "44.8273",
+   "Close": "44.41",
+   "Volume": "2,767",
+   "Premium/Discount": "-0.41",
+   "Total Net Assets": "86,291,126.24",
+   "Index Level": "323.50"
+  },
+  {
    "Date": "Oct 20 2026",
    "NAV": "45.0343",
    "Close": "44.90",
    "Volume": "3,428",
    "Premium/Discount": "-0.13",
    "Total Net Assets": "86,689,577.93",
-   "Index Level": "n.a."
+   "Index Level": "324.66"
   },
   {
    "Date": "Oct 19 2026",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.34",
    "Total Net Assets": "100,685,986.45",
    "Index Level": "294.02"
-  },
-  {
-   "Date": "Jan 27 2024",
-   "NAV": "44.2582",
-   "Close": "44.60",
-   "Volume": "",
-   "Premium/Discount": "0.34",
-   "Total Net Assets": "100,685,986.45",
-   "Index Level": "294.02"
-  },
-  {
-   "Date": "Jan 26 2024",
-   "NAV": "44.2582",
-   "Close": "44.60",
-   "Volume": "14,138",
-   "Premium/Discount": "0.34",
-   "Total Net Assets": "100,685,986.45",
-   "Index Level": "294.02"
-  },
-  {
-   "Date": "Jan 25 2024",
-   "NAV": "44.3048",
-   "Close": "44.69",
-   "Volume": "19,120",
-   "Premium/Discount": "0.38",
-   "Total Net Assets": "100,791,841.61",
-   "Index Level": "293.86"
   }
  ]
 }

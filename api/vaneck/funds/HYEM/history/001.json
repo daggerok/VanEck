@@ -2,7 +2,7 @@
  "ticker": "HYEM",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3994,
+ "totalRows": 3997,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 23 2026",
+   "NAV": "19.3506",
+   "Close": "19.35",
+   "Volume": "61,226",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "506,985,026.59",
+   "Index Level": "360.85"
+  },
+  {
+   "Date": "Oct 22 2026",
+   "NAV": "19.3565",
+   "Close": "19.36",
+   "Volume": "155,248",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "507,140,127.32",
+   "Index Level": "360.95"
+  },
+  {
+   "Date": "Oct 21 2026",
+   "NAV": "19.3703",
+   "Close": "19.34",
+   "Volume": "62,339",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "507,500,653.04",
+   "Index Level": "361.23"
+  },
   {
    "Date": "Oct 20 2026",
    "NAV": "19.3590",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "0.07",
    "Total Net Assets": "363,685,136.00",
    "Index Level": "288.23"
-  },
-  {
-   "Date": "Jan 27 2024",
-   "NAV": "18.6505",
-   "Close": "18.72",
-   "Volume": "",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "363,685,136.00",
-   "Index Level": "288.23"
-  },
-  {
-   "Date": "Jan 26 2024",
-   "NAV": "18.6505",
-   "Close": "18.72",
-   "Volume": "52,483",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "363,685,136.00",
-   "Index Level": "288.23"
-  },
-  {
-   "Date": "Jan 25 2024",
-   "NAV": "18.6218",
-   "Close": "18.70",
-   "Volume": "20,206",
-   "Premium/Discount": "0.08",
-   "Total Net Assets": "363,124,846.07",
-   "Index Level": "287.73"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.66%",
  "terValue": 0.66,
  "nav": {
-  "display": "$16.66",
-  "value": 16.66,
-  "asOfDate": "Oct 20 2026"
+  "display": "$17.28",
+  "value": 17.28,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 16.66,
+ "navValue": 17.28,
  "aum": {
-  "display": "$465.66M",
-  "value": 465657189.61,
-  "asOfDate": "Oct 20 2026",
+  "display": "$483.01M",
+  "value": 483011423.95,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 465657189.61,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 483011423.95,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Aug 11 2009",
  "exchange": "Cboe BZX",
- "closePrice": "$16.56",
- "closePriceValue": 16.56,
+ "closePrice": "$17.15",
+ "closePriceValue": 17.15,
  "premiumDiscount": {
-  "display": "-0.10%",
-  "value": -0.1
+  "display": "-0.13%",
+  "value": -0.13
  },
- "premiumDiscountValue": -0.1,
+ "premiumDiscountValue": -0.13,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -146,9 +146,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 20 2026",
-   "ytd": -11.55,
-   "ytdText": "-11.55%",
+   "asOfDate": "Oct 23 2026",
+   "ytd": -8.25,
+   "ytdText": "-8.25%",
    "yr1": -4.13,
    "yr3": 9.85,
    "yr5": -1.07,
@@ -166,7 +166,7 @@
   }
  },
  "metrics": {
-  "ytd": -11.55,
+  "ytd": -8.25,
   "tr1y": -4.13,
   "tr3y": 32.54,
   "tr5y": -5.25,
@@ -184,7 +184,7 @@
   "secYield": 1.29,
   "secYieldText": "1.29%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-20",
+  "ytdAsOf": "2026-10-23",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -192,11 +192,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.66%",
  "terGrossValue": 0.66,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
   "totalRows": 61,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -204,9 +204,9 @@
   ]
  },
  "history": {
-  "totalRows": 4685,
+  "totalRows": 4688,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/vietnam-etf-vnm/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -217,7 +217,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 465660000,
+ "totalNetAssets": 483010000,
  "indexTicker": "MVVNMLTR",
  "indexName": "Vietnam Local Index",
  "categoryPath": "Equity > Country/Regional",
@@ -256,16 +256,16 @@
   "grossValue": 0.66
  },
  "marketPrice": {
-  "display": "$16.56",
-  "value": 16.56,
-  "asOfDate": "Oct 20 2026"
+  "display": "$17.15",
+  "value": 17.15,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": 0.21,
   "dividendYieldText": "0.21%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.23,
-  "indicatedYieldText": "0.23%",
+  "indicatedYield": 0.22,
+  "indicatedYieldText": "0.22%",
   "distributionYield": 0.21,
   "distributionYieldText": "0.21%",
   "yield12M": 0.2,

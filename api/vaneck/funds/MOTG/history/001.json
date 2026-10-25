@@ -2,7 +2,7 @@
  "ticker": "MOTG",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 2363,
+ "totalRows": 2366,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 23 2026",
+   "NAV": "39.7643",
+   "Close": "39.74",
+   "Volume": "2,265",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "17,893,950.64",
+   "Index Level": "5,445.42"
+  },
+  {
+   "Date": "Oct 22 2026",
+   "NAV": "39.8585",
+   "Close": "39.85",
+   "Volume": "779",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "17,936,323.55",
+   "Index Level": "5,452.36"
+  },
+  {
+   "Date": "Oct 21 2026",
+   "NAV": "39.9496",
+   "Close": "39.91",
+   "Volume": "305",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "17,977,297.89",
+   "Index Level": "5,468.04"
+  },
   {
    "Date": "Oct 20 2026",
    "NAV": "40.0662",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "17,482,628.09",
    "Index Level": "3,801.53"
-  },
-  {
-   "Date": "Jan 27 2024",
-   "NAV": "34.9653",
-   "Close": "34.94",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "17,482,628.09",
-   "Index Level": "3,801.53"
-  },
-  {
-   "Date": "Jan 26 2024",
-   "NAV": "34.9653",
-   "Close": "34.94",
-   "Volume": "419",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "17,482,628.09",
-   "Index Level": "3,801.53"
-  },
-  {
-   "Date": "Jan 25 2024",
-   "NAV": "34.9131",
-   "Close": "34.90",
-   "Volume": "17",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "17,456,551.02",
-   "Index Level": "3,801.88"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "$19.92",
-  "value": 19.92,
-  "asOfDate": "Oct 20 2026"
+  "display": "$18.75",
+  "value": 18.75,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 19.92,
+ "navValue": 18.75,
  "aum": {
-  "display": "$19.92M",
-  "value": 19919134.7,
-  "asOfDate": "Oct 20 2026",
+  "display": "$18.75M",
+  "value": 18752352.8,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 19919134.7,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 18752352.8,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Dec 22 2025",
  "exchange": "NASDAQ",
- "closePrice": "$19.92",
- "closePriceValue": 19.92,
+ "closePrice": "$18.69",
+ "closePriceValue": 18.69,
  "premiumDiscount": {
-  "display": "0.00%",
-  "value": 0
+  "display": "-0.07%",
+  "value": -0.07
  },
- "premiumDiscountValue": 0,
+ "premiumDiscountValue": -0.07,
  "distributions": {
   "frequency": "Other",
   "paymentsPerYear": null,
@@ -56,9 +56,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 20 2026",
-   "ytd": -19.49,
-   "ytdText": "-19.49%",
+   "asOfDate": "Oct 23 2026",
+   "ytd": -24.2,
+   "ytdText": "-24.20%",
    "yr1": null,
    "yr3": null,
    "yr5": null,
@@ -76,7 +76,7 @@
   }
  },
  "metrics": {
-  "ytd": -19.49,
+  "ytd": -24.2,
   "tr1y": null,
   "tr3y": null,
   "tr5y": null,
@@ -94,7 +94,7 @@
   "secYield": 3.96,
   "secYieldText": "3.96%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-20",
+  "ytdAsOf": "2026-10-23",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -102,11 +102,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -114,16 +114,16 @@
   ]
  },
  "history": {
-  "totalRows": 302,
+  "totalRows": 305,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/avalanche-etf-vavx/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 19920000,
+ "totalNetAssets": 18750000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -160,9 +160,9 @@
   "grossValue": 0.2
  },
  "marketPrice": {
-  "display": "$19.92",
-  "value": 19.92,
-  "asOfDate": "Oct 20 2026"
+  "display": "$18.69",
+  "value": 18.69,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": 0.98,

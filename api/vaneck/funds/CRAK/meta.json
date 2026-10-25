@@ -9,28 +9,28 @@
  "ter": "0.61%",
  "terValue": 0.61,
  "nav": {
-  "display": "$65.85",
-  "value": 65.85,
-  "asOfDate": "Oct 20 2026"
+  "display": "$64.40",
+  "value": 64.4,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 65.85,
+ "navValue": 64.4,
  "aum": {
-  "display": "$803.36M",
-  "value": 803356321.75,
-  "asOfDate": "Oct 20 2026",
+  "display": "$785.63M",
+  "value": 785633075.93,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 803356321.75,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 785633075.93,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Aug 18 2015",
  "exchange": "NYSE Arca",
- "closePrice": "$65.93",
- "closePriceValue": 65.93,
+ "closePrice": "$64.26",
+ "closePriceValue": 64.26,
  "premiumDiscount": {
-  "display": "0.08%",
-  "value": 0.08
+  "display": "-0.14%",
+  "value": -0.14
  },
- "premiumDiscountValue": 0.08,
+ "premiumDiscountValue": -0.14,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -101,9 +101,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 20 2026",
-   "ytd": 75.31,
-   "ytdText": "75.31%",
+   "asOfDate": "Oct 23 2026",
+   "ytd": 71.45,
+   "ytdText": "71.45%",
    "yr1": 75.84,
    "yr3": 26.96,
    "yr5": 20.72,
@@ -121,7 +121,7 @@
   }
  },
  "metrics": {
-  "ytd": 75.31,
+  "ytd": 71.45,
   "tr1y": 75.84,
   "tr3y": 104.67,
   "tr5y": 156.37,
@@ -139,7 +139,7 @@
   "secYield": 1.18,
   "secYieldText": "1.18%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-20",
+  "ytdAsOf": "2026-10-23",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -147,11 +147,11 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.94%",
  "terGrossValue": 0.94,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
-  "totalRows": 32,
+  "totalRows": 31,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -159,9 +159,9 @@
   ]
  },
  "history": {
-  "totalRows": 3170,
+  "totalRows": 3173,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/oil-refiners-etf-crak/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -171,7 +171,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 803360000,
+ "totalNetAssets": 785630000,
  "indexTicker": "MVCRAKTR",
  "indexName": "Global Oil Refiners Index",
  "categoryPath": "Equity > Natural Resources",
@@ -210,16 +210,16 @@
   "grossValue": 0.94
  },
  "marketPrice": {
-  "display": "$65.93",
-  "value": 65.93,
-  "asOfDate": "Oct 20 2026"
+  "display": "$64.26",
+  "value": 64.26,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": 1.16,
   "dividendYieldText": "1.16%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.15,
-  "indicatedYieldText": "1.15%",
+  "indicatedYield": 1.17,
+  "indicatedYieldText": "1.17%",
   "distributionYield": 1.16,
   "distributionYieldText": "1.16%",
   "yield12M": 3.58,

@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$23.22",
-  "value": 23.22,
-  "asOfDate": "Oct 20 2026"
+  "display": "$22.74",
+  "value": 22.74,
+  "asOfDate": "Oct 23 2026"
  },
- "navValue": 23.22,
+ "navValue": 22.74,
  "aum": {
-  "display": "$3.48M",
-  "value": 3483023.05,
-  "asOfDate": "Oct 20 2026",
+  "display": "$3.41M",
+  "value": 3410567.12,
+  "asOfDate": "Oct 23 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3483023.05,
- "asOfDate": "Oct 20 2026",
+ "aumValue": 3410567.12,
+ "asOfDate": "Oct 23 2026",
  "inceptionDate": "Sep 09 2026",
  "exchange": "NASDAQ",
- "closePrice": "$23.29",
- "closePriceValue": 23.29,
+ "closePrice": "$22.89",
+ "closePriceValue": 22.89,
  "premiumDiscount": {
-  "display": "0.07%",
-  "value": 0.07
+  "display": "0.15%",
+  "value": 0.15
  },
- "premiumDiscountValue": 0.07,
+ "premiumDiscountValue": 0.15,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -89,11 +89,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 20 2026",
+ "netAssetsAsOf": "Oct 23 2026",
  "holdings": {
   "totalRows": 104,
   "pageSize": 250,
-  "asOfDate": "Oct 19 2026",
+  "asOfDate": "Oct 22 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 42,
+  "totalRows": 45,
   "pageSize": 1000,
-  "asOfDate": "Oct 20 2026",
+  "asOfDate": "Oct 23 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 3480000,
+ "totalNetAssets": 3410000,
  "indexTicker": "NU763973",
  "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -149,9 +149,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$23.29",
-  "value": 23.29,
-  "asOfDate": "Oct 20 2026"
+  "display": "$22.89",
+  "value": 22.89,
+  "asOfDate": "Oct 23 2026"
  },
  "yields": {
   "dividendYield": null,

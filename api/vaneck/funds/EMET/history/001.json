@@ -2,7 +2,7 @@
  "ticker": "EMET",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1807,
+ "totalRows": 1810,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,33 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 23 2026",
+   "NAV": "36.1736",
+   "Close": "36.00",
+   "Volume": "3,189",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "30,747,565.71",
+   "Index Level": "4,095.07"
+  },
+  {
+   "Date": "Oct 22 2026",
+   "NAV": "36.2679",
+   "Close": "36.19",
+   "Volume": "2,033",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "30,827,690.44",
+   "Index Level": "4,098.28"
+  },
+  {
+   "Date": "Oct 21 2026",
+   "NAV": "38.2097",
+   "Close": "38.04",
+   "Volume": "5,878",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "32,478,242.99",
+   "Index Level": "4,308.48"
+  },
   {
    "Date": "Oct 20 2026",
    "NAV": "38.5880",
@@ -8985,33 +9012,6 @@
    "Premium/Discount": "-0.03",
    "Total Net Assets": "24,390,311.83",
    "Index Level": "2,381.77"
-  },
-  {
-   "Date": "Jan 27 2024",
-   "NAV": "22.1730",
-   "Close": "22.14",
-   "Volume": "",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "24,390,311.83",
-   "Index Level": "2,381.77"
-  },
-  {
-   "Date": "Jan 26 2024",
-   "NAV": "22.1730",
-   "Close": "22.14",
-   "Volume": "6,870",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "24,390,311.83",
-   "Index Level": "2,381.77"
-  },
-  {
-   "Date": "Jan 25 2024",
-   "NAV": "22.0717",
-   "Close": "22.03",
-   "Volume": "5,439",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "24,278,831.10",
-   "Index Level": "2,370.81"
   }
  ]
 }
