@@ -7,7 +7,7 @@ import path from "node:path";
 import {
   CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
   annualizedFromCumulative, applyFundPageSnapshot, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
-  fetchWithRetry, filterScope, finderForTicker, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
+  fetchWithRetry, filterScope, finderForTicker, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
   normalizeNumberText, normalizeYahooExchangeName, numberOrNull, paceRequests, parseAumRange, parseHistoryRange, parseHtmlTables,
@@ -136,7 +136,7 @@ const EQUITY_HOLDINGS_ROWS = [
   [],
   ["Number", "Ticker", "Holding Name", "Identifier (FIGI)", "Shares", "Asset Class", "Market Value (US$)", "Notional Value", "% of Net Assets"],
   ["1", "NEM", "Newmont Corp", "BBG000BPWXK1", "24,875,719", "Stock", "$3,094,290,686.41", "--", "10.89"],
-  ["2", "NST AU", "Northern Star Resources Ltd", "BBG00X7YS2P3", "9,000,000", "Stock", "$100,000,000.00", "--", "0.35"],
+  ["2", "NST AU", "Northern Star Resources Ltd", "BBG00X7YS2P3", "9,000,000", "Stock", "$100,000,000.00", "--", "88.80"],
   ["3", "-USD CASH-", "", "", "0", "Cash", "$57,000,000.00", "--", "0.20"],
   ["4", "--", "Other/Cash", "--", "--", "Cash", "$31,792,656.80", "--", "0.11"],
   ["This information is not recommendations to buy or to sell any security."],
@@ -336,6 +336,21 @@ describe("parsing", () => {
     expect([empty.rows, empty.headers]).toEqual([[], HOLDINGS_HEADERS]);
   });
 
+  test('holdings guard: header-only, renamed weight column, broken weights, a bad weight sum and a halved sheet are rejected', () => {
+    const headers = ['Name', 'Ticker', 'Weight'];
+    const rows = [{ Name: 'A', Ticker: 'A', Weight: '60%' }, { Name: 'B', Ticker: 'B', Weight: '40%' }];
+    expect(holdingsGuard(headers, rows, 2)).toBeNull();
+    expect(holdingsGuard(headers, [['A', 'A', '60'], ['B', 'B', '40']], null)).toBeNull();
+    expect(holdingsGuard([], [], 0)).toBeNull(); // nothing published before: an empty sheet is honest
+    expect(holdingsGuard(headers, [], 505)).toContain('no holdings rows');
+    expect(holdingsGuard(['Name', 'Ticker', 'Wt'], rows, 2)).toContain('no weight column');
+    expect(holdingsGuard(headers, rows.map((row) => ({ ...row, Weight: '6\u200B0' })), 2)).toContain('numeric weight');
+    const allocation = [{ Name: 'Cash&Collateral', Ticker: '-', Weight: '100' }, { Name: 'Equities', Ticker: '-', Weight: '476' }];
+    expect(holdingsGuard(headers, allocation, 2)).toContain('outside 50..150');
+    expect(holdingsGuard(headers, allocation, 2, ['sum'])).toBeNull();
+    expect(holdingsGuard(headers, rows, 5)).toContain('less than half');
+  });
+
   test("fixed-income holdings: Maturity switches the column set, the FIGI keeps duplicate issuers apart", () => {
     const parsed = parseVanEckHoldings(FIXED_INCOME_HOLDINGS_ROWS);
     expect(parsed.headers).toEqual(["Name", "Maturity", "Identifier", "Coupon", "Asset Category", "Par Value", "Market Value", "Weight", "Country", "Currency"]);
@@ -513,6 +528,7 @@ function sandbox() {
   const urls: string[] = [];
   let down: string[] = [];
   let emptyHoldings: string[] = [];
+  let holdingsSheet = EQUITY_HOLDINGS_ROWS;
   let stallHoldings = false;
   let inFlight = 0, peak = 0;
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
@@ -532,7 +548,7 @@ function sandbox() {
           const signal = init?.signal;
           return new Response(new ReadableStream({ start(controller) { signal?.addEventListener("abort", () => controller.error(signal.reason)); } }));
         }
-        return new Response(slug[3] === "holdings" ? buildXlsx(EQUITY_HOLDINGS_ROWS) : buildXlsx(HISTORY_ROWS));
+        return new Response(slug[3] === "holdings" ? buildXlsx(holdingsSheet) : buildXlsx(HISTORY_ROWS));
       } finally { inFlight -= 1; }
     }
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
@@ -562,6 +578,7 @@ function sandbox() {
     api, urls, run, readFile, json, files, backdate, touched, row,
     setDown: (...parts: string[]) => { down = parts; },
     setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
+    setHoldingsSheet: (rows: string[][]) => { holdingsSheet = rows; },
     stallNextHoldings: () => { stallHoldings = true; },
     peak: () => peak,
   };
@@ -658,6 +675,23 @@ describe("pipeline", () => {
     expect(String(await box.run({ TICKERS: "GDX" }))).toContain("every selected fund failed");
     expect(box.touched()).toEqual([]);
     expect(box.row("GDX")).toMatchObject({ holdings: 4 });
+  });
+
+  test("holdings that fail the guard (no header row -> 0 rows, broken weights) keep the fund exactly as published and report it failed", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    const before = box.files().map((f) => box.readFile(f));
+    const noHeader = EQUITY_HOLDINGS_ROWS.filter((row) => !row.includes("Holding Name")); // parses to 0 rows
+    const brokenWeights = EQUITY_HOLDINGS_ROWS.map((row, i) => (i > 2 && row.length > 1 ? [...row.slice(0, -1), "--"] : row));
+    for (const sheet of [noHeader, brokenWeights]) {
+      box.setHoldingsSheet(sheet);
+      const lines: string[] = [];
+      expect(String(await box.run({ TICKERS: "GDX" }, { lines }))).toContain("every selected fund failed");
+      expect(lines.find((line) => line.includes(" GDX "))).toMatch(/ failed .*holdings guard: /);
+      expect(box.touched()).toEqual([]);
+      expect(box.files().map((f) => box.readFile(f))).toEqual(before);
+    }
   });
 
   test("MAX_FETCHES writes a scoped cursor and a TICKERS run leaves it alone", async () => {
