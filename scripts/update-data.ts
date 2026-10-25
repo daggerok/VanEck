@@ -2798,11 +2798,11 @@ async function removeStalePages(ticker: string, kind: 'holdings' | 'history', pa
   }
 }
 
-/** Rows of the previously published holdings (0 when the fund has no meta or published none). */
-async function publishedHoldingsCount(ticker: string): Promise<number> {
+/** Rows of the previously published holdings or history (0 when the fund has no meta or published none). */
+async function publishedRowCount(ticker: string, kind: 'holdings' | 'history'): Promise<number> {
   try {
     const meta = JSON.parse(await readFile(path.join(API_ROOT, 'funds', ticker, 'meta.json'), 'utf8'));
-    return Number(meta?.holdings?.totalRows) || 0;
+    return Number(meta?.[kind]?.totalRows) || 0;
   } catch {
     return 0;
   }
@@ -2882,7 +2882,7 @@ export async function updateFund(
         // only while the fund never published holdings; otherwise the
         // download is broken and the published state is kept.
         holdingsMissing = (isNotFound(error) && isNotFound(legacyError))
-          || (isEmptyDownload(error) && !(await publishedHoldingsCount(ticker)));
+          || (isEmptyDownload(error) && !(await publishedRowCount(ticker, 'holdings')));
         if (!holdingsMissing) failedSources.push('holdings');
       }
     }
@@ -2891,7 +2891,7 @@ export async function updateFund(
   // a sheet without its header row that parses to 0 rows) never replace the published ones: the fund is kept and reported failed.
   // `holdings` is only ever a freshly downloaded sheet here (the previous sheet is never re-read as retention).
   const holdingsProblem = holdings
-    ? holdingsGuard(holdings.headers, holdings.rows, await publishedHoldingsCount(ticker), HOLDINGS_GUARD_RELAX[ticker] ?? HOLDINGS_GUARD_RELAX['*'] ?? [])
+    ? holdingsGuard(holdings.headers, holdings.rows, await publishedRowCount(ticker, 'holdings'), HOLDINGS_GUARD_RELAX[ticker] ?? HOLDINGS_GUARD_RELAX['*'] ?? [])
     : null;
   if (holdingsProblem) throw new Error(`${ticker}: holdings guard: ${holdingsProblem}; kept the previous published state`);
   const holdingsPages = holdings ? chunkRows(toKeyedRows(holdings.headers, holdings.rows), config.holdingsPageSize) : [];
@@ -2908,7 +2908,12 @@ export async function updateFund(
   let history: ParsedHistory | null = null;
   if (liveVanEck) {
     try {
-      history = parseVanEckHistoryXlsx(await fetchBytes(source.navDownload, browserHeaders(), config, `${ticker} NAV history`));
+      const parsed = parseVanEckHistoryXlsx(await fetchBytes(source.navDownload, browserHeaders(), config, `${ticker} NAV history`));
+      // A sheet without its header row parses to 0 rows. NAV history only grows, so 0 rows after history was published
+      // is a broken download: fail the source (the fund keeps its published state) instead of deleting the history pages.
+      const published = parsed.rows.length ? 0 : await publishedRowCount(ticker, 'history');
+      if (published) throw new Error(`${ticker} NAV history: no rows in the download (${published} published)`);
+      history = parsed;
     } catch (error) {
       outputNote(`[ ${'history'.padEnd(9)}] ${ticker}: NAV history unavailable (${errorMessage(error)})`);
       if (!isNotFound(error)) failedSources.push('NAV history');

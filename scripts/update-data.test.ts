@@ -529,6 +529,7 @@ function sandbox() {
   let down: string[] = [];
   let emptyHoldings: string[] = [];
   let holdingsSheet = EQUITY_HOLDINGS_ROWS;
+  let historySheet = HISTORY_ROWS;
   let stallHoldings = false;
   let inFlight = 0, peak = 0;
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
@@ -548,7 +549,7 @@ function sandbox() {
           const signal = init?.signal;
           return new Response(new ReadableStream({ start(controller) { signal?.addEventListener("abort", () => controller.error(signal.reason)); } }));
         }
-        return new Response(slug[3] === "holdings" ? buildXlsx(holdingsSheet) : buildXlsx(HISTORY_ROWS));
+        return new Response(slug[3] === "holdings" ? buildXlsx(holdingsSheet) : buildXlsx(historySheet));
       } finally { inFlight -= 1; }
     }
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
@@ -579,6 +580,7 @@ function sandbox() {
     setDown: (...parts: string[]) => { down = parts; },
     setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
     setHoldingsSheet: (rows: string[][]) => { holdingsSheet = rows; },
+    setHistorySheet: (rows: string[][]) => { historySheet = rows; },
     stallNextHoldings: () => { stallHoldings = true; },
     peak: () => peak,
   };
@@ -692,6 +694,21 @@ describe("pipeline", () => {
       expect(box.touched()).toEqual([]);
       expect(box.files().map((f) => box.readFile(f))).toEqual(before);
     }
+  });
+
+  test("a NAV history download without its header row fails the source once history was published, never deletes the pages", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    const before = box.files().map((f) => box.readFile(f));
+    box.setHistorySheet(HISTORY_ROWS.filter((row) => !row.includes("Last Trade"))); // parses to 0 rows
+    expect(String(await box.run({ TICKERS: "GDX" }))).toContain("every selected fund failed");
+    expect(box.touched()).toEqual([]);
+    expect(box.files().map((f) => box.readFile(f))).toEqual(before);
+    expect(box.files()).toContain("funds/GDX/history/001.json");
+    // a fund that never published history has nothing to lose: it is still published, with no history
+    expect(await box.run({ TICKERS: "SMH" })).toBeNull();
+    expect(box.row("SMH")).toMatchObject({ dataFile: "./funds/SMH/meta.json", history: 0, holdings: 4 });
   });
 
   test("MAX_FETCHES writes a scoped cursor and a TICKERS run leaves it alone", async () => {
