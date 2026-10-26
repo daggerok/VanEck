@@ -6,7 +6,7 @@ import path from "node:path";
 
 import {
   CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
-  annualizedFromCumulative, applyFundPageSnapshot, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  annualizedFromCumulative, applyFundPageSnapshot, nportIsNewer, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
@@ -694,6 +694,58 @@ describe("pipeline", () => {
       expect(box.touched()).toEqual([]);
       expect(box.files().map((f) => box.readFile(f))).toEqual(before);
     }
+  });
+
+  test("EDGAR_FALLBACK: a failed holdings download takes the fund's own N-PORT-P filing only when it is newer; false never asks SEC", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" }); // published: the 09/17/2026 daily holdings, 4 rows
+    box.backdate();
+    // GDX is series S000009191 of VanEck ETF Trust; the accession prefix 0001410368 is the filer agent, the archive folder the trust
+    let period = "2026-06-30";
+    let series = "S000009191";
+    const nportXml = () => `<edgarSubmission><formData><genInfo><regCik>0001137360</regCik><seriesId>${series}</seriesId><repPdDate>${period}</repPdDate></genInfo>
+      <invstOrSecs><invstOrSec><name>Newmont Corp</name><cusip>651639106</cusip><identifiers><isin value="US6516391066"/></identifiers><balance>100.00000000</balance><valUSD>6000.50000000</valUSD><pctVal>60.123456</pctVal><assetCat>EC</assetCat></invstOrSec>
+      <invstOrSec><name>Cash</name><cusip>000000000</cusip><identifiers><other otherDesc="internal" value="CASHUSD"/></identifiers><valUSD>4000</valUSD><pctVal>39.876544</pctVal></invstOrSec></invstOrSecs></formData></edgarSubmission>`;
+    const inner = globalThis.fetch;
+    globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      const url = String(input);
+      if (/\/downloads\/holdings\/$|\/holdings\/download\/xlsx\/$/.test(url)) { box.urls.push(url); return new Response("busy", { status: 500 }); }
+      if (!url.startsWith("https://www.sec.gov/")) return inner(input, init);
+      box.urls.push(url);
+      if (url.endsWith("/company_tickers_mf.json")) return new Response(JSON.stringify({ fields: ["cik", "seriesId", "classId", "symbol"], data: [[1137360, "S000009191", "C000025003", "GDX"]] }));
+      if (url.includes("browse-edgar") && url.includes("CIK=S000009191")) return new Response(`<feed><entry><content><accession-number>0001410368-26-086986</accession-number><filing-date>2026-08-26</filing-date><filing-type>NPORT-P</filing-type></content></entry></feed>`);
+      if (url === "https://www.sec.gov/Archives/edgar/data/1137360/000141036826086986/primary_doc.xml") return new Response(nportXml());
+      return new Response("not found", { status: 404 });
+    }) as unknown as typeof fetch;
+    const timings: [number, number] = [5000, 1];
+    const holdings = () => box.json("funds/GDX/meta.json").holdings;
+    // off: no SEC request, the failed download keeps the fund as published
+    expect(String(await box.run({ TICKERS: "GDX" }, { timings }))).toContain("every selected fund failed");
+    expect(box.urls.filter((url) => url.includes("sec.gov"))).toEqual([]);
+    // on, but the June filing is older than the published September holdings: not used, the fund is kept
+    expect(String(await box.run({ TICKERS: "GDX", EDGAR_FALLBACK: "true" }, { timings }))).toContain("every selected fund failed");
+    expect(box.urls.some((url) => url.includes("primary_doc.xml"))).toBe(true);
+    expect(box.touched()).toEqual([]);
+    // a filing of another series is never used, even a newer one
+    period = "2026-09-30";
+    series = "S000034411";
+    expect(String(await box.run({ TICKERS: "GDX", EDGAR_FALLBACK: "true" }, { timings }))).toContain("every selected fund failed");
+    expect(box.touched()).toEqual([]);
+    // the fund's own newer filing replaces the holdings; values the filing lacks stay empty
+    series = "S000009191";
+    expect(await box.run({ TICKERS: "GDX", EDGAR_FALLBACK: "true" }, { timings })).toBeNull();
+    expect(holdings()).toMatchObject({ totalRows: 2, asOfDate: "Sep 30 2026", source: "SEC EDGAR Form N-PORT-P (accession 0001410368-26-086986, report period 2026-09-30)" });
+    expect(box.json("funds/GDX/holdings/001.json").rows).toEqual([
+      { Name: "Newmont Corp", Ticker: "", Identifier: "651639106", Weight: "60.1235%", "Market Value": "6000.5", "Shares Held": "100", "Asset Category": "EC" },
+      { Name: "Cash", Ticker: "", Identifier: "CASHUSD", Weight: "39.8765%", "Market Value": "4000", "Shares Held": "", "Asset Category": "" },
+    ]);
+    // the same filing again: published unchanged
+    box.backdate();
+    expect(await box.run({ TICKERS: "GDX", EDGAR_FALLBACK: "true" }, { timings })).toBeNull();
+    expect(box.touched()).toEqual([]);
+    expect(nportIsNewer("2026-09-30", { totalRows: 4, asOfDate: "Sep 17 2026" })).toBe(true);
+    expect(nportIsNewer("2026-09-17", { totalRows: 4, asOfDate: "Sep 17 2026" })).toBe(false);
+    expect(nportIsNewer("2026-06-30", { totalRows: 0 })).toBe(true);
   });
 
   test("a NAV history download without its header row fails the source once history was published, never deletes the pages", async () => {
