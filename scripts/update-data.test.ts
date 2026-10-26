@@ -7,7 +7,7 @@ import path from "node:path";
 import {
   CLOSED_FUNDS, CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
   annualizedFromCumulative, applyFundPageSnapshot, nportIsNewer, assertKnownTickers, chunkRows, closedFund, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
-  fetchWithRetry, filterScope, finderForTicker, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
+  fetchWithRetry, filterScope, finderForTicker, finderYtdUsable, publishedHasTenors, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
   normalizeNumberText, normalizeYahooExchangeName, numberOrNull, paceRequests, parseAumRange, parseHistoryRange, parseHtmlTables,
@@ -15,7 +15,7 @@ import {
   parseVanEckHoldings, parseVanEckHoldingsXlsx, parseVanEckPerformance, parseXlsxSheet, parseYahooExchangeName, paymentsPerYear,
   premiumDiscount, readConfig, resetPacingLanes, resolveControls, runtimeControls, saneYield, sanitizeTicker, seedCatalogEntry,
   selectCandidates, setNetworkTimings, toIsoDate, vaneckEdgarFilingsUrl, vaneckFactSheetUrl, vaneckFundDocuments,
-  vaneckFundPageUrl, vaneckHistoryUrl, vaneckHoldingsUrl, vaneckLegacyHoldingsUrl, withReturnsMeta, yahooChartProvenanceUrl,
+  vaneckFundPageUrl, vaneckHistoryUrl, vaneckHoldingsUrl, vaneckLegacyHoldingsUrl, withReturnsMeta, withoutTooYoungTenors, yahooChartProvenanceUrl,
   yahooChartUrl,
 } from "./update-data";
 
@@ -470,6 +470,36 @@ describe("metrics", () => {
     expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
     expect([saneYield(3.5), saneYield(0), saneYield(null), saneYield(Number.NaN)]).toEqual([3.5, 0, null, null]);
   });
+
+  test("horizons longer than the fund's age at the table date are null (cumulative Life of a young fund is no siAnn)", () => {
+    const entry = (inceptionDate: string, value: number) => ({
+      inceptionDate,
+      metrics: { ytd: 3, tr1y: value, tr3y: value, cagr3y: value, tr5y: null, cagr5y: null, tr10y: null, cagr10y: null, siAnn: value },
+      returns: { monthEnd: { asOfDate: "Oct 23 2026", tenorsAsOf: "Sep 30 2026", ytd: 3, yr1: value, yr3: value, sinceInception: value }, quarterEnd: { asOfDate: "Jun 30 2026", yr1: value, sinceInception: value } },
+    });
+    // TRUF, launched 2026-04-01: Life 8.75 as of 2026-09-30 is cumulative
+    const truf = withoutTooYoungTenors(entry("Apr 01 2026", 8.75)) as any;
+    expect([truf.metrics.siAnn, truf.metrics.tr1y, truf.metrics.ytd, truf.returns.monthEnd.sinceInception, truf.returns.monthEnd.ytd, truf.returns.quarterEnd.sinceInception]).toEqual([null, null, 3, null, 3, null]);
+    // VSOL, 335 days at the table date: VanEck put -36.56 into 1 Year too
+    expect((withoutTooYoungTenors(entry("Oct 30 2025", -36.56)) as any).metrics.tr1y).toBeNull();
+    // 1.5 years at month end: 1Y and siAnn stay, 3Y goes; the quarter-end table (Jun 30) is younger than a year and loses its 1Y
+    const mid = withoutTooYoungTenors(entry("Mar 01 2025", 5)) as any;
+    expect([mid.metrics.tr1y, mid.metrics.siAnn, mid.metrics.cagr3y, mid.returns.monthEnd.yr3, mid.returns.quarterEnd.yr1, mid.returns.quarterEnd.sinceInception]).toEqual([5, 5, null, null, 5, 5]);
+    const early = withoutTooYoungTenors(entry("Aug 01 2025", 5)) as any;
+    expect([early.metrics.siAnn, early.returns.quarterEnd.yr1, early.returns.quarterEnd.sinceInception]).toEqual([5, null, null]);
+    // old fund and unknown inception keep everything
+    expect(withoutTooYoungTenors(entry("May 16 2006", 7))).toEqual(entry("May 16 2006", 7));
+    expect(withoutTooYoungTenors(entry("—", 7))).toEqual(entry("—", 7));
+  });
+
+  test("the finder month-end YTD keeps its own date and is no YTD in another year; a meta with tenors is detected", () => {
+    const row = withReturnsMeta({ metrics: { ytd: 5.43, returnsBasis: "x" }, returns: { monthEnd: { asOfDate: "Sep 30 2026", tenorsAsOf: "Sep 30 2026", ytd: 5.43, ytdAsOf: "Aug 31 2026" } } }) as any;
+    expect([row.metrics.ytdAsOf, row.metrics.performanceAsOf]).toEqual(["2026-08-31", "2026-09-30"]);
+    const daily = withReturnsMeta({ metrics: { ytd: 11.22, returnsBasis: "x" }, returns: { monthEnd: { asOfDate: "Sep 18 2026", tenorsAsOf: "Aug 31 2026" } } }) as any;
+    expect([daily.metrics.ytdAsOf, daily.metrics.performanceAsOf]).toEqual(["2026-09-18", "2026-08-31"]);
+    expect([finderYtdUsable("2026"), finderYtdUsable("2027")]).toEqual([true, false]);
+    expect([publishedHasTenors({ metrics: { tr1y: 0, siAnn: null } }), publishedHasTenors({ metrics: { tr1y: null, siAnn: null } }), publishedHasTenors(null)]).toEqual([true, false, false]);
+  });
 });
 
 describe("metrics 2", () => {
@@ -541,6 +571,8 @@ function sandbox() {
   let holdingsSheet = EQUITY_HOLDINGS_ROWS;
   let historySheet = HISTORY_ROWS;
   let stallHoldings = false;
+  let pages: Record<string, string> = {};
+  let performanceJson: string | null = null;
   let inFlight = 0, peak = 0;
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
     const url = String(input);
@@ -552,7 +584,7 @@ function sandbox() {
       inFlight += 1; peak = Math.max(peak, inFlight);
       try {
         await new Promise((resolve) => realSetTimeout(resolve, 30));
-        if (!slug[2]) return new Response(pageFor(ticker));
+        if (!slug[2]) return new Response(pages[ticker] ?? pageFor(ticker));
         if (slug[3] === "holdings" && emptyHoldings.includes(ticker)) return new Response(new Uint8Array(0));
         if (slug[3] === "holdings" && stallHoldings) {
           stallHoldings = false;
@@ -563,6 +595,7 @@ function sandbox() {
       } finally { inFlight -= 1; }
     }
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
+    if (url.includes("/PerformanceHistoryBlock/") && performanceJson !== null) return new Response(performanceJson);
     return new Response("not found", { status: 404 });
   }) as unknown as typeof fetch;
   const run = async (env: Record<string, string> = {}, opts: { timings?: [number, number]; lines?: string[] } = {}): Promise<unknown> => {
@@ -594,6 +627,8 @@ function sandbox() {
     setHoldingsSheet: (rows: string[][]) => { holdingsSheet = rows; },
     setHistorySheet: (rows: string[][]) => { historySheet = rows; },
     stallNextHoldings: () => { stallHoldings = true; },
+    setPage: (ticker: string, html: string) => { pages[ticker] = html; },
+    setPerformance: (json: unknown) => { performanceJson = json === null ? null : JSON.stringify(json); },
     peak: () => peak,
   };
 }
@@ -628,12 +663,13 @@ describe("pipeline", () => {
     expect(lines.at(-1)).toMatch(/^\[ done {5}\] counts: 91 funds \/ \d[\d,]* holdings rows \/ \d[\d,]* history rows$/);
   });
 
-  test("a young fund keeps null horizons next to its since-inception figure from the page", async () => {
+  test("a young fund keeps null horizons; the page's cumulative since-inception of a days-old fund is no siAnn", async () => {
     const box = sandbox();
     expect(await box.run({ TICKERS: "VEEM" })).toBeNull();
     const metrics = box.row("VEEM").metrics;
     for (const key of ["ytd", "tr1y", "tr3y", "tr5y", "tr10y", "cagr3y", "cagr5y", "cagr10y"]) expect(metrics[key]).toBeNull();
-    expect(metrics.siAnn).toBe(-1.48);
+    // launched 09/09/2026: -1.48 is cumulative over 9 days (was published as siAnn)
+    expect([metrics.siAnn, box.json("funds/VEEM/meta.json").returns.monthEnd.sinceInception]).toEqual([null, null]);
   });
 
   test("a dataFile is null for a row without meta and set for a row with one", async () => {
@@ -734,6 +770,26 @@ describe("pipeline 2", () => {
 });
 
 describe("pipeline 3", () => {
+  test("a performance block without a NAV row keeps a fund that published tenors; the finder YTD is dated 08-31", async () => {
+    const box = sandbox();
+    // CBON's page shows a SEC yield instead of a YTD stat, so YTD is backfilled from the finder month end (08/31/2026)
+    box.setPage("CBON", GDX_PAGE.replace("GDX VanEck Gold Miners ETF", "CBON VanEck ETF").replace(/<div>YTD RETURNS<\/div><div>11.22%<\/div><div>as of September 18, 2026<\/div>/, "")
+      + '<div data-pageid="123"></div><ve-performancehistoryblock data-blockid="456"></ve-performancehistoryblock>');
+    box.setPerformance({ data: { MonthEndPerformances: [{ Type: "NAV", OneYear: 8.48, ThreeYear: 5.46, FiveYear: 2.05, TenYear: 2.88, Life: 2.46 }], MonthEndAsOfDate: "09/30/2026" } });
+    expect(await box.run({ TICKERS: "CBON" })).toBeNull();
+    const metrics = box.row("CBON").metrics;
+    expect([metrics.ytd, metrics.ytdAsOf, metrics.tr1y, metrics.performanceAsOf]).toEqual([finderForTicker("CBON")?.monthEndYtd, "2026-08-31", 8.48, "2026-09-30"]);
+    const meta = box.readFile("funds/CBON/meta.json");
+    const row = box.row("CBON");
+    // the block answers with a changed payload: no NAV row -> failed source, the fund stays as published (was: nulls over the returns)
+    box.setPerformance({ data: { MonthEndPerformances: [{ Type: "Nav", OneYear: 8.5 }], MonthEndAsOfDate: "10/31/2026" } });
+    const lines: string[] = [];
+    await box.run({ TICKERS: "CBON" }, { lines });
+    expect(box.readFile("funds/CBON/meta.json")).toBe(meta);
+    expect(box.row("CBON")).toEqual(row);
+    expect(lines.some((line) => /CBON .*failed|failed.*CBON/.test(line))).toBe(true);
+  });
+
   test("a closed fund is never fetched or reported failed: its files stay as published, its index row says closed, a rerun writes nothing", async () => {
     const entry = { ticker: "GDX", closed: "2026-10-01", source: "https://www.sec.gov/Archives/edgar/data/1/notice.htm" };
     expect(() => closedFund([{ ...entry, closed: "soon" }], "GDX")).toThrow("CLOSED_FUNDS");

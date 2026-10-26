@@ -611,6 +611,10 @@ export const FINDER_READ_AT = '2026-09-20T00:00:00.000Z';
 export const FINDER_PRICES_AS_OF = '09/18/2026';
 /** As-of date printed by the month-end Performance tab. */
 export const FINDER_MONTH_END_AS_OF = '08/31/2026';
+/** The finder month-end YTD is a YTD only within its own calendar year (`returnsYear`: year of the fund's returns). */
+export function finderYtdUsable(returnsYear: string): boolean {
+  return FINDER_MONTH_END_AS_OF.slice(-4) === returnsYear;
+}
 
 export type FinderMonthEndTenors = {
   ytd: number | null;
@@ -2531,11 +2535,56 @@ export function withReturnsMeta(entry: CatalogEntry): CatalogEntry {
       : null;
   // The date the tenor figures (1Y/3Y/5Y/10Y/since inception) are as of; the fund-page stamp (daily YTD) only when no tenor date is known.
   const iso = toIso(monthEnd?.tenorsAsOf) ?? toIso(monthEnd?.asOfDate);
-  const ytdIso = (rest as Record<string, unknown>).ytd === null || (rest as Record<string, unknown>).ytd === undefined ? null : toIso(monthEnd?.asOfDate);
+  // A backfilled finder YTD carries its own month-end date (`ytdAsOf`); otherwise YTD is the fund-page daily stamp.
+  const ytdStamp = (monthEnd as { ytdAsOf?: unknown } | undefined)?.ytdAsOf;
+  const ytdIso = (rest as Record<string, unknown>).ytd === null || (rest as Record<string, unknown>).ytd === undefined ? null : toIso(ytdStamp) ?? toIso(monthEnd?.asOfDate);
   const basis = typeof returnsBasis === 'string' && returnsBasis.trim() && returnsBasis.trim() !== '-' && returnsBasis.trim() !== '—'
     ? returnsBasis
     : 'not yet refreshed from vaneck.com';
   return { ...entry, metrics: { ...rest, dividendYieldBasis, ytdAsOf: ytdIso, returnsBasis: basis, performanceAsOf: iso } };
+}
+
+/** ISO date of a display stamp ("Sep 30 2026", "09/30/2026"), parsed as UTC; null for '—' or junk. */
+function isoOfStamp(stamp: unknown): string | null {
+  if (typeof stamp !== 'string' || !stamp.trim() || stamp === '—') return null;
+  const parsed = Date.parse(`${stamp} UTC`);
+  return Number.isFinite(parsed) ? new Date(parsed).toISOString().slice(0, 10) : null;
+}
+
+const TENOR_YEARS: Array<{ years: number; metrics: string[]; returns: string[] }> = [
+  { years: 1, metrics: ['tr1y', 'siAnn'], returns: ['yr1', 'sinceInception'] },
+  { years: 3, metrics: ['tr3y', 'cagr3y'], returns: ['yr3'] },
+  { years: 5, metrics: ['tr5y', 'cagr5y'], returns: ['yr5'] },
+  { years: 10, metrics: ['tr10y', 'cagr10y'], returns: ['yr10'] },
+];
+
+/**
+ * A horizon longer than the fund's age at the returns date does not exist: null, never a stand-in. VanEck puts the
+ * CUMULATIVE since-inception figure into the "Life" column of funds younger than one year (TRUF, launched 2026-04-01:
+ * 8.75 as of 2026-09-30) and VSOL (335 days) even into 1 Year; the fund-page "Performance since inception" stat of a
+ * days-old fund (VEEM) is cumulative too. Annualized since inception therefore needs 365 days between inception and the
+ * table date (month-end: `tenorsAsOf`, quarter-end: its own date; today when unknown), 3/5/10Y need 3/5/10 years.
+ * An unknown inception keeps the figures.
+ */
+export function withoutTooYoungTenors(entry: CatalogEntry, today = new Date().toISOString().slice(0, 10)): CatalogEntry {
+  const inception = isoOfStamp(entry.inceptionDate);
+  if (!inception) return entry;
+  const ageDays = (asOf: string | null): number => (Date.parse(`${asOf ?? today}T00:00:00Z`) - Date.parse(`${inception}T00:00:00Z`)) / 86_400_000;
+  const returns = (entry.returns ?? {}) as Record<string, Record<string, unknown> | undefined>;
+  const monthEnd = returns.monthEnd ? { ...returns.monthEnd } : undefined;
+  const quarterEnd = returns.quarterEnd ? { ...returns.quarterEnd } : undefined;
+  const metrics = { ...((entry.metrics as Record<string, unknown>) ?? {}) };
+  const monthAge = ageDays(isoOfStamp(monthEnd?.tenorsAsOf) ?? isoOfStamp(monthEnd?.asOfDate));
+  const quarterAge = ageDays(isoOfStamp(quarterEnd?.asOfDate));
+  for (const tenor of TENOR_YEARS) {
+    const limit = tenor.years * 365;
+    if (monthAge < limit) {
+      for (const key of tenor.metrics) if (key in metrics) metrics[key] = null;
+      if (monthEnd) for (const key of tenor.returns) if (key in monthEnd) monthEnd[key] = null;
+    }
+    if (quarterEnd && quarterAge < limit) for (const key of tenor.returns) if (key in quarterEnd) quarterEnd[key] = null;
+  }
+  return { ...entry, metrics, returns: { ...returns, ...(monthEnd ? { monthEnd } : {}), ...(quarterEnd ? { quarterEnd } : {}) } };
 }
 
 /** Merges a parsed fund page onto a catalog entry. */
@@ -2973,6 +3022,21 @@ async function fetchNportHoldings(ticker: string, config: UpdaterConfig): Promis
   }
 }
 
+/** The published meta.json of a fund (null when it has none). */
+async function publishedMeta(ticker: string): Promise<Record<string, unknown> | null> {
+  try {
+    return JSON.parse(await readFile(path.join(API_ROOT, 'funds', ticker, 'meta.json'), 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+/** True when a published meta carries at least one 1Y/3Y/5Y/10Y/since-inception figure. */
+export function publishedHasTenors(meta: Record<string, unknown> | null): boolean {
+  const metrics = (meta?.metrics ?? {}) as Record<string, unknown>;
+  return ['tr1y', 'cagr3y', 'cagr5y', 'cagr10y', 'siAnn'].some((key) => typeof metrics[key] === 'number');
+}
+
 /** The published holdings manifest of a fund (null when it has no meta). */
 async function publishedHoldings(ticker: string): Promise<{ totalRows?: unknown; asOfDate?: unknown; source?: unknown } | null> {
   try {
@@ -3198,13 +3262,26 @@ export async function updateFund(
   // The fund-page header shows a 30-Day SEC Yield instead of a YTD return for
   // bond funds whose price feed lags (CBON, EMLC, VBNB): backfill YTD from the
   // finder-verified month-end table rather than leaving a hole.
-  if ((metrics.ytd === null || metrics.ytd === undefined) && finder?.monthEndYtd !== null && finder?.monthEndYtd !== undefined) {
+  // The finder YTD is as of FINDER_MONTH_END_AS_OF: it is stamped with that date (`ytdAsOf`, never the newer performance
+  // date) and dropped once the returns are from another calendar year (a 2026 YTD is not a 2027 YTD).
+  const ytdReturnsYear = (isoOfStamp(((entry.returns as Record<string, Record<string, unknown>>).monthEnd ?? {}).tenorsAsOf) ?? new Date().toISOString()).slice(0, 4);
+  if ((metrics.ytd === null || metrics.ytd === undefined) && finder?.monthEndYtd !== null && finder?.monthEndYtd !== undefined && finderYtdUsable(ytdReturnsYear)) {
     metrics.ytd = finder.monthEndYtd;
     const monthEnd = (entry.returns as Record<string, unknown>).monthEnd as Record<string, unknown>;
     monthEnd.ytd = finder.monthEndYtd;
     monthEnd.ytdText = `${finder.monthEndYtd.toFixed(2)}%`;
+    monthEnd.ytdAsOf = formatVanEckDate(FINDER_MONTH_END_AS_OF);
     if (monthEnd.asOfDate === '—') monthEnd.asOfDate = formatVanEckDate(FINDER_MONTH_END_AS_OF);
     metrics.returnsBasis = `${metrics.returnsBasis || 'official VanEck Average Annual Total Returns (NAV)'} + Investment Finder month-end YTD (NAV)`;
+  }
+  // A performance block that answered without a NAV row (payload change), or a fund page without the block ids
+  // (redesign, WAF page answering 200), is a FAILED source when the fund published tenors before: the fund is kept
+  // instead of publishing nulls over good returns. A young fund that never had tenors still publishes honest nulls.
+  if (liveVanEck && parsedPage && !performance && !failedSources.includes('performance')
+    && ['tr1y', 'cagr3y', 'cagr5y', 'cagr10y', 'siAnn'].every((key) => metrics[key] === null || metrics[key] === undefined)
+    && publishedHasTenors(await publishedMeta(ticker))) {
+    outputNote(`[ ${'perf'.padEnd(9)}] ${ticker}: ${parsedPage.pageId && parsedPage.performanceBlockId ? 'performance block has no NAV row' : 'fund page has no performance block id'}; published returns kept`);
+    failedSources.push('performance');
   }
   // 30-Day SEC Yield: the server-rendered fund-page stat wins when present;
   // otherwise the finder-verified value (bond-fund headers often carry it,
@@ -3295,7 +3372,7 @@ export async function updateFund(
       ? yahooFallback.map((d) => ({ 'Ex-Date': d.date, 'Payable Date': '—', Dividend: `$${d.amount.toFixed(4)}` }))
       : [];
 
-  entry = withReturnsMeta(entry);
+  entry = withReturnsMeta(withoutTooYoungTenors(entry));
 
   // --- meta.json -----------------------------------------------------------
   const meta = {
