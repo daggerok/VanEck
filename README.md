@@ -58,7 +58,7 @@ The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/updat
 | Declared distribution frequency, 30-Day SEC / Distribution / 12M yields, YTD + tenor fallbacks | Verified Investment Finder transcription (`VANECK_FINDER` in `scripts/update-data.ts`) (tabs are client-rendered, read 2026-09-20) | Official VanEck figures; the updater prefers them over anything inferred |
 | Listing exchange | Nasdaq Trader symbol directory, Yahoo Finance chart `meta.exchangeName` as fallback | Neither is in the VanEck page payload, so both resolve at refresh time |
 | Fund documents (fact sheet, prospectuses, SAI, reports) | Deterministic VanEck URL schemes (`vaneckFundDocuments()`) | Verified against the finder `?tab=lit` Resources panels |
-| Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download is unavailable (`EDGAR_FALLBACK=true`) |
+| Holdings fallback | SEC EDGAR Form **N-PORT-P**, VanEck ETF Trust **CIK 0001137360** | Used only when the VanEck download fails or is absent (`EDGAR_FALLBACK=true`): the newest filing of the fund's own series (SEC `company_tickers_mf.json` -> series -> EDGAR), and only when its report period is newer than the published holdings. N-PORT positions carry no exchange ticker unless the filing names one |
 | Performance (TR/CAGR/SI Ann.) | VanEck's Average Annual Total Returns block (JSON) | See *Performance and distributions* below |
 | Distribution history | VanEck's own Distribution History block (JSON) | Yahoo Finance chart feed is the fallback for the handful of fund pages without this block |
 
@@ -122,7 +122,7 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | `SEC_UA`* | `daggerok ETF feed daggerok@gmail.com` | User-Agent declared to SEC EDGAR; the repository Actions variable `SEC_UA` overrides it |
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
 | `SKIP_YAHOO`*, `SKIP_VANECK`* | `false` | Skip the Yahoo Finance or vaneck.com fetch stages |
-| `EDGAR_FALLBACK`* | `true` | Use N-PORT-P when a holdings download is unavailable |
+| `EDGAR_FALLBACK`* | `true` | Use the fund's newest N-PORT-P when the holdings download fails or is absent and the filing is newer than the published holdings; `false` sends no SEC request |
 | `VERBOSE`* | `false` | Print per-fund retry and fallback notices |
 | `USE_SYSTEM_CA` | `auto` | TLS trust store: `auto` restarts the updater once with Bun's `--use-system-ca` when a request fails with an untrusted-certificate error; `true` always uses the system CA store; `false` never restarts. Not an individual workflow input: use `advanced`, the config file or the CLI environment. |
 | `PERFORMANCE_YTD` / `_1Y` / `_3Y` / `_5Y` / `_10Y` | `:` | `min:max` filter on the published return percent: YTD and 1Y as published, 3Y/5Y/10Y annualized |
