@@ -1,12 +1,12 @@
 /// <reference types="bun" />
 import { afterEach, beforeEach, describe, expect, test } from "bun:test";
-import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, utimesSync } from "node:fs";
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, utimesSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
 import {
   CLOSED_FUNDS, CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
-  annualizedFromCumulative, applyFundPageSnapshot, nportIsNewer, assertKnownTickers, chunkRows, closedFund, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  annualizedFromCumulative, applyFundPageSnapshot, nportIsFresh, assertKnownTickers, knownTickers, holdingsWeightCount, nportHoldingRows, nportTickers, parseNportFiling, parseSecCompanyNames, chunkRows, closedFund, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, finderYtdUsable, publishedHasTenors, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
@@ -247,8 +247,9 @@ describe("controls 2", () => {
   });
 
   test("unknown TICKERS are an error; the MAX_FETCHES cursor is scoped to the filter set and wraps", () => {
-    expect(() => assertKnownTickers(["GDX", "NOPE"], VAN_ECK_SEED)).toThrow(/NOPE/);
-    expect(() => assertKnownTickers(["GDX"], VAN_ECK_SEED)).not.toThrow();
+    const known = knownTickers(VAN_ECK_SEED.map((f) => f.ticker), [{ ticker: "OLD", dataFile: "./funds/OLD/meta.json" }, { ticker: "TYPO", dataFile: null }]);
+    expect(() => assertKnownTickers(["GDX", "NOPE", "TYPO"], known, "the VanEck catalog or published feed")).toThrow("TICKERS: NOPE, TYPO not in the VanEck catalog or published feed");
+    expect(() => assertKnownTickers(["GDX", "OLD"], known, "x")).not.toThrow();
     const cfg = (extra: Record<string, string> = {}) => readConfig({ ...resolveControls(configFile()), ...extra });
     expect(filterScope(cfg())).not.toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
     expect(filterScope(cfg({ TICKERS: "SMH GDX" }))).toBe(filterScope(cfg({ TICKERS: "GDX SMH" })));
@@ -312,7 +313,10 @@ describe("parsing", () => {
     expect([numberOrNull("$95.67"), numberOrNull("10.89%"), numberOrNull("--"), numberOrNull("—"), numberOrNull(""), numberOrNull("n/a"), numberOrNull(null)]).toEqual([95.67, 10.89, null, null, null, null, null]);
     expect(decodeHtmlEntities("VanEck&nbsp;&amp;&nbsp;Co &lt;ETF&gt; &#39;x&#39; &quot;y&quot;")).toBe("VanEck & Co <ETF> 'x' \"y\"");
     expect([formatVanEckDate("09/18/2026"), formatVanEckDate(""), formatVanEckDate("--")]).toEqual(["Sep 18 2026", "—", "--"]);
-    expect([toIsoDate("9/8/2026"), toIsoDate("Sep 18 2026")]).toEqual(["2026-09-08", "Sep 18 2026"]);
+    for (const tz of ["Asia/Tokyo", "America/Los_Angeles", "UTC"]) {
+      process.env.TZ = tz;
+      expect([toIsoDate("9/8/2026"), toIsoDate("Sep 18 2026"), toIsoDate("September 18, 2026"), toIsoDate("not a date")]).toEqual(["2026-09-08", "2026-09-18", "2026-09-18", "not a date"]);
+    }
     expect(compareDisplayDates("Sep 18 2026", "Sep 17 2026")).toBeGreaterThan(0);
     expect(compareDisplayDates("Sep 18 2026", "Sep 18 2026")).toBe(0);
     expect([formatAumDisplay(22_753_000_000), formatAumDisplay(1_234_567), formatPercentText(0), formatPercentText(null), formatMoneyText(null)]).toEqual(["$22,753.00 M", "$1.23 M", "0.00%", "—", "—"]);
@@ -392,6 +396,20 @@ describe("parsing 2", () => {
 });
 
 describe("parsing 3", () => {
+  test("N-PORT sheet (shared nport-reader): empty missing numbers, the position's own identifier, tickers only for U.S. equities", () => {
+    const filing = parseNportFiling(`<invstOrSec><name>Newmont Corp</name><cusip>651639106</cusip><balance>100.00000000</balance><curCd>USD</curCd><valUSD>6000.50</valUSD><pctVal>60.123456</pctVal><assetCat>EC</assetCat></invstOrSec>
+      <invstOrSec><name>Northern Star Resources Ltd</name><cusip>000000000</cusip><identifiers><isin value="AU000000NST8"/><ticker value="NST"/></identifiers><curCd>AUD</curCd><valUSD>3000</valUSD><pctVal>30</pctVal><assetCat>EC</assetCat></invstOrSec>
+      <invstOrSec><name>GOLD FUTURE</name><cusip>000000000</cusip><identifiers><other otherDesc="Bloomberg Identifier" value="BBG01GOLD123"/></identifiers><valUSD>10</valUSD><assetCat>DCO</assetCat><derivativeInfo><futrDeriv derivCat="FUT"><descRefInstrmnt><otherRefInst><identifiers><ticker value="GLD"/></identifiers></otherRefInst></descRefInstrmnt></futrDeriv></derivativeInfo></invstOrSec>`);
+    const rows = nportHoldingRows(filing, nportTickers(filing.positions, parseSecCompanyNames({ 0: { ticker: "NEM", title: "NEWMONT Corp /DE/" } })));
+    expect(rows).toEqual([
+      ["Newmont Corp", "NEM", "651639106", "60.1235%", "6000.5", "100", "EC"],
+      ["Northern Star Resources Ltd", "", "AU000000NST8", "30%", "3000", "", "EC"],
+      ["GOLD FUTURE", "", "BBG01GOLD123", "", "10", "", "DCO"],
+    ]);
+    expect(rows.every((row) => row.length === HOLDINGS_HEADERS.length)).toBe(true);
+  });
+
+
   test("fund page: gross and net or a single total expense ratio, SI-only young funds, unreadable pages give nulls", () => {
     const gdx = parseVanEckFundPage(GDX_PAGE, "https://www.vaneck.com/us/en/investments/equity/gdx/overview/");
     expect([gdx.nav, gdx.ytdReturn, gdx.totalNetAssets, gdx.inceptionDate, gdx.grossExpenseRatio, gdx.netExpenseRatio]).toEqual([95.67, 11.22, 28_420_000_000, "May 16 2006", 0.51, 0.51]);
@@ -487,6 +505,8 @@ describe("metrics", () => {
     expect([mid.metrics.tr1y, mid.metrics.siAnn, mid.metrics.cagr3y, mid.returns.monthEnd.yr3, mid.returns.quarterEnd.yr1, mid.returns.quarterEnd.sinceInception]).toEqual([5, 5, null, null, 5, 5]);
     const early = withoutTooYoungTenors(entry("Aug 01 2025", 5)) as any;
     expect([early.metrics.siAnn, early.returns.quarterEnd.yr1, early.returns.quarterEnd.sinceInception]).toEqual([5, null, null]);
+    // calendar anniversary, not 365 days: launched Oct 01 2023, the fund is not 3 years old on Sep 30 2026 (1095 days, a leap year between)
+    expect([(withoutTooYoungTenors(entry("Oct 01 2023", 5)) as any).metrics.cagr3y, (withoutTooYoungTenors(entry("Sep 30 2023", 5)) as any).metrics.cagr3y]).toEqual([null, 5]);
     // old fund and unknown inception keep everything
     expect(withoutTooYoungTenors(entry("May 16 2006", 7))).toEqual(entry("May 16 2006", 7));
     expect(withoutTooYoungTenors(entry("—", 7))).toEqual(entry("—", 7));
@@ -883,9 +903,7 @@ describe("pipeline 3", () => {
     box.backdate();
     expect(await box.run({ TICKERS: "GDX", EDGAR_FALLBACK: "true" }, { timings })).toBeNull();
     expect(box.touched()).toEqual([]);
-    expect(nportIsNewer("2026-09-30", { totalRows: 4, asOfDate: "Sep 17 2026" })).toBe(true);
-    expect(nportIsNewer("2026-09-17", { totalRows: 4, asOfDate: "Sep 17 2026" })).toBe(false);
-    expect(nportIsNewer("2026-06-30", { totalRows: 0 })).toBe(true);
+    expect([nportIsFresh("2026-09-30", "2026-09-17", 4), nportIsFresh("2026-09-17", "2026-09-17", 4), nportIsFresh("2026-06-30", null, 0), nportIsFresh("2026-09-30", "Sep 17 2026", 4)]).toEqual([true, false, true, false]);
   });
 
   test("a NAV history download without its header row fails the source once history was published, never deletes the pages", async () => {
@@ -910,6 +928,64 @@ describe("pipeline 3", () => {
     expect(first.cursor).toBe(VAN_ECK_SEED.map((f) => f.ticker).sort((a, b) => a.localeCompare(b))[0]);
     await box.run({ TICKERS: "GDX", MAX_FETCHES: "0" });
     expect(box.json("update-state.json")).toEqual(first);
+  });
+});
+
+describe("pipeline 4", () => {
+  test("a HISTORY_RANGE run keeps the complete published NAV history and writes nothing (Q25)", async () => {
+    const box = sandbox();
+    box.setHistorySheet([...HISTORY_ROWS, ["09/18/2020", "35.10", "0.10", "0.29", "35.12", "1,000", "0.02", "0.06", "1,000,000.00", "100.00"]]);
+    await box.run({ TICKERS: "GDX" });
+    expect(box.json("funds/GDX/meta.json").history.totalRows).toBe(3);
+    box.backdate();
+    expect(await box.run({ TICKERS: "GDX", HISTORY_RANGE: "1y" })).toBeNull();
+    expect(box.touched()).toEqual([]);
+  });
+
+  test("a relaxed guard still keeps numeric published weights from an all-dash sheet (Q24)", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    box.backdate();
+    const mod = await box.load();
+    mod.HOLDINGS_GUARD_RELAX.GDX = ["numeric", "sum"];
+    try {
+      box.setHoldingsSheet(BROKEN_WEIGHT_ROWS);
+      expect(String(await box.run({ TICKERS: "GDX" }))).toContain("every selected fund failed");
+    } finally {
+      delete mod.HOLDINGS_GUARD_RELAX.GDX;
+    }
+    expect(box.touched()).toEqual([]);
+    expect(holdingsWeightCount(["Name", "Weight"], [{ Name: "A", Weight: "--" }, { Name: "B", Weight: "2%" }])).toBe(1);
+  });
+
+  test("TICKERS outside the fund list and the published feed stops the run before any request or write; a stale catalog-only row is dropped (Q27)", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "GDX" });
+    const index = box.json("index.json");
+    writeFileSync(path.join(box.api, "index.json"), JSON.stringify({ ...index, funds: [...index.funds, { ...index.funds.find((row: any) => row.ticker === "SMH"), ticker: "NOPE", dataFile: null }] }));
+    box.backdate();
+    box.urls.length = 0;
+    expect(String(await box.run({ TICKERS: "GDX NOPE" }))).toContain("TICKERS: NOPE not in the VanEck catalog or published feed; nothing was fetched or written");
+    expect([box.urls, box.touched()]).toEqual([[], []]);
+    expect(await box.run({ TICKERS: "GDX" })).toBeNull();
+    expect(box.row("NOPE")).toBeUndefined();
+    expect(box.json("index.json").funds).toHaveLength(91);
+  });
+
+  test("NEW FUNDS announces a fund on its first successful publish, a failed new fund as not published yet (Q28)", async () => {
+    const box = sandbox();
+    await box.run({ TICKERS: "SMH" });
+    const index = box.json("index.json");
+    writeFileSync(path.join(box.api, "index.json"), JSON.stringify({ ...index, funds: index.funds.filter((row: any) => row.ticker !== "EINC") }));
+    const summary = path.join(box.api, "..", "summary.md");
+    process.env.GITHUB_STEP_SUMMARY = summary;
+    const news = async (env: Record<string, string>) => { const lines: string[] = []; await box.run(env, { lines }); return lines.filter((line) => line.startsWith("NEW FUNDS")); };
+    box.setDown("einc", "EINC");
+    expect(await news({ TICKERS: "GDX EINC" })).toEqual(["NEW FUNDS: GDX", "NEW FUNDS (not published yet): EINC"]);
+    expect(readFileSync(summary, "utf8")).toContain("### NEW FUNDS\n\nNEW FUNDS: GDX\nNEW FUNDS (not published yet): EINC\n");
+    expect(await news({ TICKERS: "GDX EINC" })).toEqual([]);
+    box.setDown();
+    expect(await news({ TICKERS: "EINC" })).toEqual(["NEW FUNDS: EINC"]);
   });
 });
 
