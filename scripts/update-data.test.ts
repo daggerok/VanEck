@@ -5,8 +5,8 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 
 import {
-  CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
-  annualizedFromCumulative, applyFundPageSnapshot, nportIsNewer, assertKnownTickers, chunkRows, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
+  CLOSED_FUNDS, CONTROL_NAMES, HOLDINGS_HEADERS, SEC_UA_DEFAULT, VANECK_ETF_TRUST_CIK, VANECK_FINDER, VAN_ECK_SEED,
+  annualizedFromCumulative, applyFundPageSnapshot, nportIsNewer, assertKnownTickers, chunkRows, closedFund, compareDisplayDates, cumulativeFromAnnualized, decodeHtmlEntities,
   fetchWithRetry, filterScope, finderForTicker, holdingsGuard, formatAumDisplay, formatMoneyText, formatPercentText, formatVanEckDate,
   dividendYieldBasisOf, frequencyCode, fundPassesDataFilters, historyWindowStartEpoch, indicatedDividendYield, indicatedYieldAllowed,
   inferDistributionFrequency, installSystemCa, isCertError, loadSharedStrings, nasdaqExchangeDisplayName, normalizeFinderFrequency,
@@ -141,6 +141,8 @@ const EQUITY_HOLDINGS_ROWS = [
   ["4", "--", "Other/Cash", "--", "--", "Cash", "$31,792,656.80", "--", "0.11"],
   ["This information is not recommendations to buy or to sell any security."],
 ];
+/** The equity sheet with every weight cell broken ("--"): the holdings guard rejects it. */
+const BROKEN_WEIGHT_ROWS = EQUITY_HOLDINGS_ROWS.map((row, i) => (i > 2 && row.length > 1 ? [...row.slice(0, -1), "--"] : row));
 const FIXED_INCOME_HOLDINGS_ROWS = [
   ["Daily Holdings (%)  09/17/2026"],
   [],
@@ -222,7 +224,9 @@ describe("controls", () => {
     const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
     expect([c.edgarFallback, c.concurrency, c.requestSleep]).toEqual([true, Number(configFile().CONCURRENCY), Number(configFile().REQUEST_SLEEP)]);
   });
+});
 
+describe("controls 2", () => {
   test("SEC_UA defaults to the daggerok contact and a protected value wins", () => {
     expect(configFile().SEC_UA).toBe("daggerok ETF feed daggerok@gmail.com");
     expect([readConfig({}).secUa, readConfig(resolveControls(configFile())).secUa]).toEqual([SEC_UA_DEFAULT, SEC_UA_DEFAULT]);
@@ -335,7 +339,9 @@ describe("parsing", () => {
     const empty = parseVanEckHoldings([["Nothing here"]]);
     expect([empty.rows, empty.headers]).toEqual([[], HOLDINGS_HEADERS]);
   });
+});
 
+describe("parsing 2", () => {
   test('holdings guard: header-only, renamed weight column, broken weights, a bad weight sum and a halved sheet are rejected', () => {
     const headers = ['Name', 'Ticker', 'Weight'];
     const rows = [{ Name: 'A', Ticker: 'A', Weight: '60%' }, { Name: 'B', Ticker: 'B', Weight: '40%' }];
@@ -383,7 +389,9 @@ describe("parsing", () => {
     expect([bonds.headers.includes("Ticker"), bonds.rows.length]).toEqual([false, 2]);
     expect(parseVanEckHistoryXlsx(buildXlsx(HISTORY_ROWS)).rows[0][0]).toBe("Sep 18 2026");
   });
+});
 
+describe("parsing 3", () => {
   test("fund page: gross and net or a single total expense ratio, SI-only young funds, unreadable pages give nulls", () => {
     const gdx = parseVanEckFundPage(GDX_PAGE, "https://www.vaneck.com/us/en/investments/equity/gdx/overview/");
     expect([gdx.nav, gdx.ytdReturn, gdx.totalNetAssets, gdx.inceptionDate, gdx.grossExpenseRatio, gdx.netExpenseRatio]).toEqual([95.67, 11.22, 28_420_000_000, "May 16 2006", 0.51, 0.51]);
@@ -462,7 +470,9 @@ describe("metrics", () => {
     expect(saneYield(indicatedDividendYield(0.8208, 4, 0.39))).toBeNull();
     expect([saneYield(3.5), saneYield(0), saneYield(null), saneYield(Number.NaN)]).toEqual([3.5, 0, null, null]);
   });
+});
 
+describe("metrics 2", () => {
   test("returnsBasis and performanceAsOf end the metrics, performanceAsOf is the tenor date and never the NAV date, every row shares one key set", () => {
     const seed = seedCatalogEntry(VAN_ECK_SEED[0]);
     expect(Object.keys(seed.metrics as object).slice(-2)).toEqual(["returnsBasis", "performanceAsOf"]);
@@ -575,8 +585,10 @@ function sandbox() {
   const backdate = (): void => { for (const f of files()) utimesSync(path.join(api, f), 1_000_000_000, 1_000_000_000); };
   const touched = (): string[] => files().filter((f) => statSync(path.join(api, f)).mtimeMs !== 1_000_000_000_000);
   const row = (ticker: string) => json("index.json").funds.find((fund: any) => fund.ticker === ticker);
+  /** The sandboxed module itself (its CLOSED_FUNDS is the list main() reads). */
+  const load = () => import(path.join(dir, "scripts", "update-data.ts"));
   return {
-    api, urls, run, readFile, json, files, backdate, touched, row,
+    api, urls, run, load, readFile, json, files, backdate, touched, row,
     setDown: (...parts: string[]) => { down = parts; },
     setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
     setHoldingsSheet: (rows: string[][]) => { holdingsSheet = rows; },
@@ -642,7 +654,9 @@ describe("pipeline", () => {
     for (const t of Object.keys(before)) expect(box.readFile(`funds/${t}/meta.json`)).toBe(before[t]);
     expect(FUNDS.filter((t) => t !== "EINC").map((t) => box.row(t))).toEqual(rows.filter((r) => r.ticker !== "EINC"));
   });
+});
 
+describe("pipeline 2", () => {
   test("a second identical run writes nothing", async () => {
     const box = sandbox();
     await box.run();
@@ -685,14 +699,84 @@ describe("pipeline", () => {
     box.backdate();
     const before = box.files().map((f) => box.readFile(f));
     const noHeader = EQUITY_HOLDINGS_ROWS.filter((row) => !row.includes("Holding Name")); // parses to 0 rows
-    const brokenWeights = EQUITY_HOLDINGS_ROWS.map((row, i) => (i > 2 && row.length > 1 ? [...row.slice(0, -1), "--"] : row));
-    for (const sheet of [noHeader, brokenWeights]) {
+    for (const sheet of [noHeader, BROKEN_WEIGHT_ROWS]) {
       box.setHoldingsSheet(sheet);
       const lines: string[] = [];
       expect(String(await box.run({ TICKERS: "GDX" }, { lines }))).toContain("every selected fund failed");
       expect(lines.find((line) => line.includes(" GDX "))).toMatch(/ failed .*holdings guard: /);
       expect(box.touched()).toEqual([]);
       expect(box.files().map((f) => box.readFile(f))).toEqual(before);
+    }
+  });
+
+  test("a new fund whose holdings fail the guard, or that no source answers, is failed with a catalog-only row and no files", async () => {
+    const box = sandbox();
+    expect(await box.run({ TICKERS: "SMH" })).toBeNull();
+    box.setHoldingsSheet(BROKEN_WEIGHT_ROWS);
+    for (const down of [[], ["gold-miners-etf-gdx", "/GDX"]]) {
+      box.setDown(...down);
+      const lines: string[] = [];
+      expect(String(await box.run({ TICKERS: "GDX" }, { lines }))).toContain("every selected fund failed");
+      expect(lines.find((line) => line.includes(" GDX "))).toMatch(down.length ? / failed .*fund page/ : / failed .*holdings guard: /);
+      expect(box.files().filter((f) => f.startsWith("funds/GDX"))).toEqual([]);
+      expect(box.row("GDX")).toMatchObject({ dataFile: null, holdings: 0, history: 0 });
+      expect(Object.keys(box.row("GDX").metrics).sort()).toEqual(Object.keys(box.row("SMH").metrics).sort());
+      expect(box.row("GDX").metrics.returnsBasis).toBeTruthy();
+    }
+    // the catalog-only row is never read back as the published state: the first good refresh publishes the fund from its sources
+    box.setDown();
+    box.setHoldingsSheet(EQUITY_HOLDINGS_ROWS);
+    expect(await box.run({ TICKERS: "GDX" })).toBeNull();
+    const meta = box.json("funds/GDX/meta.json");
+    expect(meta.asOfDate).not.toBe("—");
+    expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2, asOfDate: meta.asOfDate });
+  });
+});
+
+describe("pipeline 3", () => {
+  test("a closed fund is never fetched or reported failed: its files stay as published, its index row says closed, a rerun writes nothing", async () => {
+    const entry = { ticker: "GDX", closed: "2026-10-01", source: "https://www.sec.gov/Archives/edgar/data/1/notice.htm" };
+    expect(() => closedFund([{ ...entry, closed: "soon" }], "GDX")).toThrow("CLOSED_FUNDS");
+    expect(closedFund([entry], "gdx")).toEqual(entry);
+    for (const fund of CLOSED_FUNDS) expect(closedFund(CLOSED_FUNDS, fund.ticker)).toEqual(fund); // every real entry is well-formed
+    const box = sandbox();
+    expect(await box.run()).toBeNull();
+    box.backdate();
+    const published = box.files().map((f) => [f, box.readFile(f)]);
+    const rows = box.json("index.json").funds;
+    // the guard would reject GDX's holdings now; a closed fund never gets that far
+    const inner = globalThis.fetch;
+    const calls: string[] = [];
+    globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      calls.push(String(input));
+      return /gdx\/downloads\/holdings\/$/.test(String(input)) ? new Response(buildXlsx(BROKEN_WEIGHT_ROWS)) : inner(input, init);
+    }) as unknown as typeof fetch;
+    const lists = [CLOSED_FUNDS, (await box.load()).CLOSED_FUNDS];
+    for (const list of lists) list.push(entry);
+    try {
+      // MAX_FETCHES never spends its budget on a closed fund
+      expect(selectCandidates(VAN_ECK_SEED, readConfig({ ...resolveControls(configFile()), TICKERS: "GDX SMH", MAX_FETCHES: "1" }), null).map((f) => f.ticker)).toEqual(["SMH"]);
+      const lines: string[] = [];
+      expect(await box.run({}, { lines })).toBeNull();
+      expect(calls.filter((url) => /gdx/i.test(url))).toEqual([]);
+      expect(calls.length).toBeGreaterThan(0);
+      expect(process.exitCode).not.toBe(1);
+      expect(lines.filter((line) => / failed /.test(line) && line.includes("GDX"))).toEqual([]);
+      expect(box.touched()).toEqual(["index.json"]);
+      expect(published.filter(([f]) => f !== "index.json").map(([f]) => [f, box.readFile(f)])).toEqual(published.filter(([f]) => f !== "index.json"));
+      const after = box.json("index.json").funds;
+      expect(after).toHaveLength(rows.length);
+      expect(box.row("GDX")).toEqual({ ...rows.find((row: any) => row.ticker === "GDX"), status: "closed", closedDate: "2026-10-01", closedSource: entry.source });
+      expect(after.filter((row: any) => row.ticker !== "GDX")).toEqual(rows.filter((row: any) => row.ticker !== "GDX"));
+      // a rerun, also one that asks for the closed fund alone, writes nothing and requests nothing for it
+      box.backdate();
+      calls.length = 0;
+      expect(await box.run()).toBeNull();
+      expect(await box.run({ TICKERS: "GDX" })).toBeNull();
+      expect(box.touched()).toEqual([]);
+      expect(calls.filter((url) => /gdx/i.test(url))).toEqual([]);
+    } finally {
+      for (const list of lists) list.splice(list.indexOf(entry), 1);
     }
   });
 
@@ -774,9 +858,10 @@ describe("pipeline", () => {
 });
 
 // ===========================================================================
-describe("network", () => {
-  const cfg = () => readConfig({ ...resolveControls(configFile()), REQUEST_SLEEP: "0", MAX_RETRIES: "2" });
+/** Network tests: no pacing, two retries. */
+const networkConfig = () => readConfig({ ...resolveControls(configFile()), REQUEST_SLEEP: "0", MAX_RETRIES: "2" });
 
+describe("network", () => {
   test("a stalled request is aborted by the timeout and retried per MAX_RETRIES", async () => {
     setNetworkTimings(30, 1);
     let calls = 0;
@@ -785,7 +870,7 @@ describe("network", () => {
       if (calls < 3) return new Promise((_resolve, reject) => { init?.signal?.addEventListener("abort", () => reject(init.signal!.reason)); });
       return Promise.resolve(new Response("ok"));
     }) as unknown as typeof fetch;
-    const res = await fetchWithRetry("https://example.test/a", {}, cfg(), "stall");
+    const res = await fetchWithRetry("https://example.test/a", {}, networkConfig(), "stall");
     expect(await res.text()).toBe("ok");
     expect(calls).toBe(3);
   });
@@ -794,11 +879,11 @@ describe("network", () => {
     setNetworkTimings(30, 1);
     let calls = 0;
     globalThis.fetch = (async () => { calls += 1; return new Response("x", { status: 503 }); }) as unknown as typeof fetch;
-    expect((await fetchWithRetry("https://example.test/b", {}, cfg(), "busy")).status).toBe(503);
+    expect((await fetchWithRetry("https://example.test/b", {}, networkConfig(), "busy")).status).toBe(503);
     expect(calls).toBe(3);
     calls = 0;
     globalThis.fetch = (async () => { calls += 1; return new Response("x", { status: 404 }); }) as unknown as typeof fetch;
-    expect((await fetchWithRetry("https://example.test/c", {}, cfg(), "missing")).status).toBe(404);
+    expect((await fetchWithRetry("https://example.test/c", {}, networkConfig(), "missing")).status).toBe(404);
     expect(calls).toBe(1);
   });
 
@@ -809,7 +894,9 @@ describe("network", () => {
     expect(box.urls.filter((url) => url.endsWith("/downloads/holdings/"))).toHaveLength(2);
     expect(box.row("GDX").holdings).toBe(4);
   });
+});
 
+describe("network 2", () => {
   test("in-flight peak is 1 at CONCURRENCY=1 and N at CONCURRENCY=N", async () => {
     const one = sandbox();
     await one.run({ CONCURRENCY: "1" });
@@ -821,7 +908,7 @@ describe("network", () => {
 
   test("request lanes pace independently: a lane waits one REQUEST_SLEEP between starts, separate lanes start together", async () => {
     const clock = fakeClock();
-    const config = { ...cfg(), requestSleep: 1 };
+    const config = { ...networkConfig(), requestSleep: 1 };
     resetPacingLanes(2);
     await Promise.all([paceRequests(config), paceRequests(config), paceRequests(config)]);
     expect(clock.waits).toEqual([1000]);
