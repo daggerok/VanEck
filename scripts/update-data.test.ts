@@ -664,6 +664,9 @@ describe("pipeline", () => {
       expect(Object.keys(fund.metrics).sort()).toEqual(keys);
       expect(fund.metrics.returnsBasis).toBeTruthy();
     }
+    // every row carries the 52-week keys from its history pages (range-52w block)
+    const RANGE_KEYS = ["week52Low", "week52High", "range52w", "range52wClose", "range52wAsOf", "range52wSince", "range52wBasis"];
+    for (const fund of funds) expect(Object.keys(fund.metrics)).toEqual(expect.arrayContaining(RANGE_KEYS));
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2 });
     expect(box.row("GDX").metrics.tr3y).toBeNull();
     for (const fund of funds) expect(fund.metrics.dividendYieldBasis).toBe(fund.metrics.dividendYield === null ? null : fund.metrics.distributionYield === fund.metrics.dividendYield ? "official-distribution-rate" : "indicated");
