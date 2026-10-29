@@ -9,28 +9,28 @@
  "ter": "0.50%",
  "terValue": 0.5,
  "nav": {
-  "display": "$24.20",
-  "value": 24.2,
-  "asOfDate": "Oct 23 2026"
+  "display": "$24.23",
+  "value": 24.23,
+  "asOfDate": "Oct 28 2026"
  },
- "navValue": 24.2,
+ "navValue": 24.23,
  "aum": {
-  "display": "$33.88M",
-  "value": 33878148.32,
-  "asOfDate": "Oct 23 2026",
+  "display": "$33.92M",
+  "value": 33920779.57,
+  "asOfDate": "Oct 28 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 33878148.32,
- "asOfDate": "Oct 23 2026",
+ "aumValue": 33920779.57,
+ "asOfDate": "Oct 28 2026",
  "inceptionDate": "Nov 10 2014",
  "exchange": "NYSE Arca",
  "closePrice": "$24.27",
  "closePriceValue": 24.27,
  "premiumDiscount": {
-  "display": "0.07%",
-  "value": 0.07
+  "display": "0.04%",
+  "value": 0.04
  },
- "premiumDiscountValue": 0.07,
+ "premiumDiscountValue": 0.04,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -159,7 +159,8 @@
    "sinceInception": 2.46,
    "tenorsAsOf": "Sep 30 2026",
    "ytd": 5.43,
-   "ytdText": "5.43%"
+   "ytdText": "5.43%",
+   "ytdAsOf": "Aug 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -189,7 +190,7 @@
   "secYield": 0.97,
   "secYieldText": "0.97%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-09-30",
+  "ytdAsOf": "2026-08-31",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row + Investment Finder month-end YTD (NAV)",
   "performanceAsOf": "2026-09-30"
  },
@@ -197,11 +198,11 @@
  "providerCategory": "International Bond",
  "terGross": "0.91%",
  "terGrossValue": 0.91,
- "netAssetsAsOf": "Oct 23 2026",
+ "netAssetsAsOf": "Oct 28 2026",
  "holdings": {
   "totalRows": 45,
   "pageSize": 250,
-  "asOfDate": "Oct 22 2026",
+  "asOfDate": "Oct 28 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/chinaamc-china-bond-etf-cbon/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -209,9 +210,9 @@
   ]
  },
  "history": {
-  "totalRows": 3366,
+  "totalRows": 3371,
   "pageSize": 1000,
-  "asOfDate": "Oct 23 2026",
+  "asOfDate": "Oct 28 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinaamc-china-bond-etf-cbon/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -221,7 +222,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 33880000,
+ "totalNetAssets": 33920000,
  "secYield": 0.97,
  "secYieldValue": 0.97,
  "secYieldText": "0.97%",
@@ -265,7 +266,7 @@
  "marketPrice": {
   "display": "$24.27",
   "value": 24.27,
-  "asOfDate": "Oct 23 2026"
+  "asOfDate": "Oct 28 2026"
  },
  "yields": {
   "dividendYield": 1.33,

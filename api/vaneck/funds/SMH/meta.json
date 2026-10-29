@@ -9,28 +9,28 @@
  "ter": "0.35%",
  "terValue": 0.35,
  "nav": {
-  "display": "$527.13",
-  "value": 527.13,
-  "asOfDate": "Oct 23 2026"
+  "display": "$567.98",
+  "value": 567.98,
+  "asOfDate": "Oct 28 2026"
  },
- "navValue": 527.13,
+ "navValue": 567.98,
  "aum": {
-  "display": "$66.60B",
-  "value": 66599159112.06,
-  "asOfDate": "Oct 23 2026",
+  "display": "$72.38B",
+  "value": 72384563972.83,
+  "asOfDate": "Oct 28 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 66599159112.06,
- "asOfDate": "Oct 23 2026",
+ "aumValue": 72384563972.83,
+ "asOfDate": "Oct 28 2026",
  "inceptionDate": "Dec 20 2011",
  "exchange": "NASDAQ",
- "closePrice": "$527.20",
- "closePriceValue": 527.2,
+ "closePrice": "$567.67",
+ "closePriceValue": 567.67,
  "premiumDiscount": {
-  "display": "0.07%",
-  "value": 0.07
+  "display": "-0.31%",
+  "value": -0.31
  },
- "premiumDiscountValue": 0.07,
+ "premiumDiscountValue": -0.31,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,9 +116,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 23 2026",
-   "ytd": 46.38,
-   "ytdText": "46.38%",
+   "asOfDate": "Oct 28 2026",
+   "ytd": 57.72,
+   "ytdText": "57.72%",
    "yr1": 86.89,
    "yr3": 62,
    "yr5": 37.37,
@@ -136,7 +136,7 @@
   }
  },
  "metrics": {
-  "ytd": 46.38,
+  "ytd": 57.72,
   "tr1y": 86.89,
   "tr3y": 325.18,
   "tr5y": 389.22,
@@ -154,7 +154,7 @@
   "secYield": 0.17,
   "secYieldText": "0.17%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-23",
+  "ytdAsOf": "2026-10-28",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -162,11 +162,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.35%",
  "terGrossValue": 0.35,
- "netAssetsAsOf": "Oct 23 2026",
+ "netAssetsAsOf": "Oct 28 2026",
  "holdings": {
   "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Oct 22 2026",
+  "asOfDate": "Oct 28 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -174,9 +174,9 @@
   ]
  },
  "history": {
-  "totalRows": 4092,
+  "totalRows": 4097,
   "pageSize": 1000,
-  "asOfDate": "Oct 23 2026",
+  "asOfDate": "Oct 28 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/semiconductor-etf-smh/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -187,7 +187,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 66600000000,
+ "totalNetAssets": 72380000000,
  "indexTicker": "MVSMHTR",
  "indexName": "US Listed Semiconductor 25 Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -226,16 +226,16 @@
   "grossValue": 0.35
  },
  "marketPrice": {
-  "display": "$527.20",
-  "value": 527.2,
-  "asOfDate": "Oct 23 2026"
+  "display": "$567.67",
+  "value": 567.67,
+  "asOfDate": "Oct 28 2026"
  },
  "yields": {
   "dividendYield": 0.19,
   "dividendYieldText": "0.19%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.21,
-  "indicatedYieldText": "0.21%",
+  "indicatedYield": 0.19,
+  "indicatedYieldText": "0.19%",
   "distributionYield": 0.19,
   "distributionYieldText": "0.19%",
   "yield12M": 0.55,

@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4022,
+ "totalRows": 4027,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 02 2016",
+   "NAV": "24.1542",
+   "Close": "24.02",
+   "Volume": "61,090",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "130,432,728.96",
+   "Index Level": "369.87"
+  },
+  {
+   "Date": "Apr 29 2016",
+   "NAV": "24.2012",
+   "Close": "24.08",
+   "Volume": "23,068",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "130,686,498.65",
+   "Index Level": "369.17"
+  },
+  {
+   "Date": "Apr 28 2016",
+   "NAV": "24.0675",
+   "Close": "24.05",
+   "Volume": "6,110",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "129,964,279.48",
+   "Index Level": "367.24"
+  },
+  {
+   "Date": "Apr 27 2016",
+   "NAV": "23.9869",
+   "Close": "23.94",
+   "Volume": "8,527",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "129,529,113.70",
+   "Index Level": "366.00"
+  },
+  {
+   "Date": "Apr 26 2016",
+   "NAV": "23.9514",
+   "Close": "23.83",
+   "Volume": "18,885",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "129,337,545.37",
+   "Index Level": "365.54"
+  },
   {
    "Date": "Apr 25 2016",
    "NAV": "23.9248",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.16",
    "Total Net Assets": "19,799,717.13",
    "Index Level": "293.31"
-  },
-  {
-   "Date": "May 09 2012",
-   "NAV": "24.7109",
-   "Close": "24.94",
-   "Volume": "29,030",
-   "Premium/Discount": "0.23",
-   "Total Net Assets": "19,768,752.05",
-   "Index Level": "292.87"
-  },
-  {
-   "Date": "May 08 2012",
-   "NAV": "24.8738",
-   "Close": "25.00",
-   "Volume": "13,274",
-   "Premium/Discount": "0.13",
-   "Total Net Assets": "19,899,032.73",
-   "Index Level": "294.45"
-  },
-  {
-   "Date": "May 07 2012",
-   "NAV": "24.9515",
-   "Close": "25.16",
-   "Volume": "40,929",
-   "Premium/Discount": "0.21",
-   "Total Net Assets": "19,961,212.41",
-   "Index Level": "295.30"
-  },
-  {
-   "Date": "May 04 2012",
-   "NAV": "25.0057",
-   "Close": "25.12",
-   "Volume": "14,999",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "20,004,525.11",
-   "Index Level": "295.90"
-  },
-  {
-   "Date": "May 03 2012",
-   "NAV": "25.0315",
-   "Close": "25.13",
-   "Volume": "20,497",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "20,025,229.68",
-   "Index Level": "296.25"
   }
  ]
 }

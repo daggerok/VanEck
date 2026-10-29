@@ -1,0 +1,35 @@
+{
+ "ticker": "HYEM",
+ "page": 5,
+ "pageSize": 1000,
+ "totalRows": 4002,
+ "headers": [
+  "Date",
+  "NAV",
+  "Close",
+  "Volume",
+  "Premium/Discount",
+  "Total Net Assets",
+  "Index Level"
+ ],
+ "rows": [
+  {
+   "Date": "May 09 2012",
+   "NAV": "24.9504",
+   "Close": "25.03",
+   "Volume": "",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "9,980,146.98",
+   "Index Level": "181.79"
+  },
+  {
+   "Date": "May 08 2012",
+   "NAV": "25.0309",
+   "Close": "25.03",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "10,012,350.00",
+   "Index Level": "182.28"
+  }
+ ]
+}
