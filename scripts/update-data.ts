@@ -131,7 +131,7 @@ function outputFundLine(index: number, total: number, ticker: string, status: st
     field('sec', outputPercent(data.secYield ?? data.yields?.secYield ?? metrics.secYield)),
     field('wp', data.workplaceRaw),
   ].filter(part => part !== '').join(' ');
-  return `[ ${String(index).padStart(width)}/${String(total).padEnd(width)}  ] ${outputClean(ticker).padEnd(5)} ${status.padEnd(9)}${detail ? ` ${detail}` : ''}${reason ? ` reason=${outputClean(reason)}` : ''}`;
+  return `[ ${`${String(index).padStart(width)}/${total}`.padEnd(8)} ] ${outputClean(ticker).padEnd(5)} ${status.padEnd(9)}${detail ? ` ${detail}` : ''}${reason ? ` reason=${outputClean(reason)}` : ''}`;
 }
 function outputCreateReporter(root: URL | string, total: number) {
   let completed = 0;
@@ -1479,13 +1479,13 @@ export async function fetchWithRetry(
       // retried like a 429 (bounded) rather than treated as "not found".
       if (response.ok || (!RETRY_STATUS.has(response.status) && response.status !== 403)) return response;
       if (attempt >= config.maxRetries) return response;
-      outputNote(`[ ${'retry'.padEnd(9)}] ${label}: HTTP ${response.status} (retry ${attempt + 1}/${config.maxRetries})`);
+      outputNote(`[ ${'retry'.padEnd(8)} ] ${label}: HTTP ${response.status} (retry ${attempt + 1}/${config.maxRetries})`);
     } catch (error) {
       const msg = errorMessage(error);
       const isRedirectLoop = /redirect(ed)? too many times/i.test(msg);
       const isNetwork = isRedirectLoop || isTimeoutError(error) || /fetch failed|network|ECONNRESET|ETIMEDOUT|Client network socket disconnected/i.test(msg);
       if (attempt >= config.maxRetries || (!isNetwork && !isRedirectLoop)) throw error;
-      outputNote(`[ ${'retry'.padEnd(9)}] ${label}: ${msg} (retry ${attempt + 1}/${config.maxRetries})`);
+      outputNote(`[ ${'retry'.padEnd(8)} ] ${label}: ${msg} (retry ${attempt + 1}/${config.maxRetries})`);
       if (isRedirectLoop && isVanEck && attempt < config.maxRetries) {
         // For VanEck a loop is usually a transient WAF hiccup; back off and retry the whole jar
         await sleep(8000 * (attempt + 1));
@@ -1531,7 +1531,7 @@ async function fetchBody<T>(
       return await read(response);
     } catch (error) {
       if (!isTimeoutError(error) || attempt >= config.maxRetries) throw error;
-      outputNote(`[ ${'retry'.padEnd(9)}] ${label}: body timed out (retry ${attempt + 1}/${config.maxRetries})`);
+      outputNote(`[ ${'retry'.padEnd(8)} ] ${label}: body timed out (retry ${attempt + 1}/${config.maxRetries})`);
     }
   }
 }
@@ -1571,7 +1571,7 @@ async function fetchYahooChartJson(ticker: string, config: UpdaterConfig): Promi
   try {
     return JSON.parse(await fetchText(yahooChartUrl(ticker, Date.now(), config.historyRange), yahooHeaders(), config, `${ticker} Yahoo chart`));
   } catch (error) {
-    outputNote(`[ ${'chart'.padEnd(9)}] ${ticker}: Yahoo chart unavailable (${errorMessage(error)})`);
+    outputNote(`[ ${'chart'.padEnd(8)} ] ${ticker}: Yahoo chart unavailable (${errorMessage(error)})`);
     return null;
   }
 }
@@ -1669,7 +1669,7 @@ async function fetchNasdaqExchanges(config: UpdaterConfig): Promise<Map<string, 
     // authoritative over the consolidated tape's duplicate row.
     return nasdaqExchangeCache;
   } catch (error) {
-    outputNote(`[ ${'exchange'.padEnd(9)}] Nasdaq symbol directory unavailable (${errorMessage(error)}); exchange falls back to Yahoo`);
+    outputNote(`[ ${'exchange'.padEnd(8)} ] Nasdaq symbol directory unavailable (${errorMessage(error)}); exchange falls back to Yahoo`);
     return null;
   }
 }
@@ -1794,7 +1794,7 @@ async function fetchVanEckPerformance(
     const json = JSON.parse(await fetchText(url, { ...browserHeaders(), Accept: 'application/json' }, config, `${ticker} performance`));
     return parseVanEckPerformance(json);
   } catch (error) {
-    outputNote(`[ ${'perf'.padEnd(9)}] ${ticker}: performance history unavailable (${errorMessage(error)})`);
+    outputNote(`[ ${'perf'.padEnd(8)} ] ${ticker}: performance history unavailable (${errorMessage(error)})`);
     throw error;
   }
 }
@@ -1832,7 +1832,7 @@ async function fetchVanEckDistributions(
     const json = JSON.parse(await fetchText(url, { ...browserHeaders(), Accept: 'application/json' }, config, `${ticker} distributions`));
     return parseVanEckDistributions(json);
   } catch (error) {
-    outputNote(`[ ${'distrib'.padEnd(9)}] ${ticker}: VanEck distributions unavailable (${errorMessage(error)})`);
+    outputNote(`[ ${'distrib'.padEnd(8)} ] ${ticker}: VanEck distributions unavailable (${errorMessage(error)})`);
     return null;
   }
 }
@@ -2953,7 +2953,7 @@ async function fetchNportHoldings(ticker: string, config: UpdaterConfig): Promis
   try {
     const ref = (await loadFundTickerTable(config)).get(ticker);
     if (!ref) {
-      outputNote(`[ ${'edgar'.padEnd(9)}] ${ticker}: not in the SEC fund ticker table`);
+      outputNote(`[ ${'edgar'.padEnd(8)} ] ${ticker}: not in the SEC fund ticker table`);
       return null;
     }
     const published = await publishedHoldings(ticker);
@@ -2962,18 +2962,18 @@ async function fetchNportHoldings(ticker: string, config: UpdaterConfig): Promis
     const fromNport = /^SEC EDGAR Form N-PORT-P /.test(String(published?.source ?? ''));
     const read = await readNportHoldings({ ticker, cik: ref.cik, seriesId: ref.seriesId }, fromNport ? { rows: 0 } : { asOf: publishedAsOf, rows: publishedRows }, (url, label) => secText(url, config, label), { cache: secState.reader });
     if ('problem' in read) {
-      outputNote(`[ ${'edgar'.padEnd(9)}] ${read.problem}`);
+      outputNote(`[ ${'edgar'.padEnd(8)} ] ${read.problem}`);
       return null;
     }
     const source = `SEC EDGAR Form N-PORT-P (accession ${read.candidate.accession}, report period ${read.filing.repPdDate})`;
     if (fromNport && source !== published?.source && !nportIsFresh(read.filing.repPdDate, publishedAsOf, publishedRows)) {
-      outputNote(`[ ${'edgar'.padEnd(9)}] ${ticker}: N-PORT ${read.filing.repPdDate || 'undated'} is not newer than the published holdings (${String(published?.asOfDate ?? '—')}); not used`);
+      outputNote(`[ ${'edgar'.padEnd(8)} ] ${ticker}: N-PORT ${read.filing.repPdDate || 'undated'} is not newer than the published holdings (${String(published?.asOfDate ?? '—')}); not used`);
       return null;
     }
     const rows = nportHoldingRows(read.filing, nportTickers(read.filing.positions, await loadCompanyNames(config), await loadUsListings((url, label) => fetchText(url, secHeaders(config), config, label))));
     return { asOfDate: isoToVanEckDate(read.filing.repPdDate), rows, source };
   } catch (error) {
-    outputNote(`[ ${'edgar'.padEnd(9)}] ${ticker}: N-PORT fallback unavailable (${errorMessage(error)})`);
+    outputNote(`[ ${'edgar'.padEnd(8)} ] ${ticker}: N-PORT fallback unavailable (${errorMessage(error)})`);
     return null;
   }
 }
@@ -3032,7 +3032,7 @@ export async function updateFund(
       const html = await fetchText(vaneckFundPageUrl(ticker), browserHeaders(), config, `${ticker} fund page`);
       parsedPage = parseVanEckFundPage(html, vaneckFundPageUrl(ticker));
     } catch (error) {
-      outputNote(`[ ${'product'.padEnd(9)}] ${ticker}: fund page unavailable (${errorMessage(error)})`);
+      outputNote(`[ ${'product'.padEnd(8)} ] ${ticker}: fund page unavailable (${errorMessage(error)})`);
       failedSources.push('fund page');
     }
   }
@@ -3060,7 +3060,7 @@ export async function updateFund(
         holdings = parseVanEckHoldingsXlsx(await fetchBytes(legacyUrl, browserHeaders(), config, `${ticker} holdings (legacy)`));
         source.holdingsDownload = legacyUrl;
       } catch (legacyError) {
-        outputNote(`[ ${'holdings'.padEnd(9)}] ${ticker}: holdings unavailable (${errorMessage(error)}; legacy: ${errorMessage(legacyError)})`);
+        outputNote(`[ ${'holdings'.padEnd(8)} ] ${ticker}: holdings unavailable (${errorMessage(error)}; legacy: ${errorMessage(legacyError)})`);
         // A physical metal trust (OUNZ) holds bullion, not securities: its
         // holdings download answers an empty 200. That is an honest absence
         // only while the fund never published holdings; otherwise the
@@ -3112,7 +3112,7 @@ export async function updateFund(
       if (published) throw new Error(`${ticker} NAV history: no rows in the download (${published} published)`);
       history = parsed;
     } catch (error) {
-      outputNote(`[ ${'history'.padEnd(9)}] ${ticker}: NAV history unavailable (${errorMessage(error)})`);
+      outputNote(`[ ${'history'.padEnd(8)} ] ${ticker}: NAV history unavailable (${errorMessage(error)})`);
       if (!isNotFound(error)) failedSources.push('NAV history');
     }
   }
@@ -3231,7 +3231,7 @@ export async function updateFund(
   if (liveVanEck && parsedPage && !performance && !failedSources.includes('performance')
     && ['tr1y', 'cagr3y', 'cagr5y', 'cagr10y', 'siAnn'].every((key) => metrics[key] === null || metrics[key] === undefined)
     && publishedHasTenors(await publishedMeta(ticker))) {
-    outputNote(`[ ${'perf'.padEnd(9)}] ${ticker}: ${parsedPage.pageId && parsedPage.performanceBlockId ? 'performance block has no NAV row' : 'fund page has no performance block id'}; published returns kept`);
+    outputNote(`[ ${'perf'.padEnd(8)} ] ${ticker}: ${parsedPage.pageId && parsedPage.performanceBlockId ? 'performance block has no NAV row' : 'fund page has no performance block id'}; published returns kept`);
     failedSources.push('performance');
   }
   // 30-Day SEC Yield: the server-rendered fund-page stat wins when present;
