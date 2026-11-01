@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 7324,
+ "totalRows": 7326,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 09 2021",
+   "NAV": "28.7818",
+   "Close": "29.20",
+   "Volume": "",
+   "Premium/Discount": "0.42",
+   "Total Net Assets": "57,563,571.60",
+   "Index Level": "1,237.92"
+  },
+  {
+   "Date": "May 08 2021",
+   "NAV": "28.7818",
+   "Close": "29.20",
+   "Volume": "",
+   "Premium/Discount": "0.42",
+   "Total Net Assets": "57,563,571.60",
+   "Index Level": "1,237.92"
+  },
   {
    "Date": "May 07 2021",
    "NAV": "28.7818",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.12",
    "Total Net Assets": "23,891,555.13",
    "Index Level": "805.02"
-  },
-  {
-   "Date": "Aug 13 2018",
-   "NAV": "18.9968",
-   "Close": "18.99",
-   "Volume": "775",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "23,746,044.69",
-   "Index Level": "800.11"
-  },
-  {
-   "Date": "Aug 12 2018",
-   "NAV": "19.0542",
-   "Close": "19.12",
-   "Volume": "",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "23,817,749.34",
-   "Index Level": "802.48"
   }
  ]
 }

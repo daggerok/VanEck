@@ -2,7 +2,7 @@
  "ticker": "SMHC",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 128,
+ "totalRows": 130,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 30 2026",
+   "NAV": "31.2448",
+   "Close": "31.17",
+   "Volume": "8,727",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "10,935,664.03",
+   "Index Level": "1,518.52"
+  },
+  {
+   "Date": "Oct 29 2026",
+   "NAV": "33.6048",
+   "Close": "33.33",
+   "Volume": "26,524",
+   "Premium/Discount": "-0.27",
+   "Total Net Assets": "11,761,662.62",
+   "Index Level": "1,618.06"
+  },
   {
    "Date": "Oct 28 2026",
    "NAV": "36.0804",

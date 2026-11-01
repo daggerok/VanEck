@@ -9,28 +9,28 @@
  "ter": "0.72%",
  "terValue": 0.72,
  "nav": {
-  "display": "$44.16",
-  "value": 44.16,
-  "asOfDate": "Oct 28 2026"
+  "display": "$44.93",
+  "value": 44.93,
+  "asOfDate": "Oct 30 2026"
  },
- "navValue": 44.16,
+ "navValue": 44.93,
  "aum": {
-  "display": "$85.00M",
-  "value": 85001811.95,
-  "asOfDate": "Oct 28 2026",
+  "display": "$86.48M",
+  "value": 86482183.73,
+  "asOfDate": "Oct 30 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 85001811.95,
- "asOfDate": "Oct 28 2026",
+ "aumValue": 86482183.73,
+ "asOfDate": "Oct 30 2026",
  "inceptionDate": "Aug 24 2010",
  "exchange": "NYSE Arca",
- "closePrice": "$43.92",
- "closePriceValue": 43.92,
+ "closePrice": "$44.71",
+ "closePriceValue": 44.71,
  "premiumDiscount": {
-  "display": "-0.24%",
-  "value": -0.24
+  "display": "-0.22%",
+  "value": -0.22
  },
- "premiumDiscountValue": -0.24,
+ "premiumDiscountValue": -0.22,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -116,9 +116,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 28 2026",
-   "ytd": -4.57,
-   "ytdText": "-4.57%",
+   "asOfDate": "Oct 30 2026",
+   "ytd": -2.91,
+   "ytdText": "-2.91%",
    "yr1": -2.57,
    "yr3": 5.76,
    "yr5": 1.87,
@@ -136,7 +136,7 @@
   }
  },
  "metrics": {
-  "ytd": -4.57,
+  "ytd": -2.91,
   "tr1y": -2.57,
   "tr3y": 18.3,
   "tr5y": 9.7,
@@ -154,7 +154,7 @@
   "secYield": 0.18,
   "secYieldText": "0.18%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-28",
+  "ytdAsOf": "2026-10-30",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -162,11 +162,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.80%",
  "terGrossValue": 0.8,
- "netAssetsAsOf": "Oct 28 2026",
+ "netAssetsAsOf": "Oct 30 2026",
  "holdings": {
   "totalRows": 145,
   "pageSize": 250,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 29 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -174,9 +174,9 @@
   ]
  },
  "history": {
-  "totalRows": 4432,
+  "totalRows": 4434,
   "pageSize": 1000,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 30 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-growth-leaders-etf-glin/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -187,7 +187,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 85000000,
+ "totalNetAssets": 86480000,
  "indexTicker": "MGINGRNR",
  "indexName": "MarketGrader India All-Cap Growth Leaders Index",
  "categoryPath": "Equity > Country/Regional",
@@ -226,16 +226,16 @@
   "grossValue": 0.8
  },
  "marketPrice": {
-  "display": "$43.92",
-  "value": 43.92,
-  "asOfDate": "Oct 28 2026"
+  "display": "$44.71",
+  "value": 44.71,
+  "asOfDate": "Oct 30 2026"
  },
  "yields": {
   "dividendYield": 0.86,
   "dividendYieldText": "0.86%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.88,
-  "indicatedYieldText": "0.88%",
+  "indicatedYield": 0.86,
+  "indicatedYieldText": "0.86%",
   "distributionYield": 0.86,
   "distributionYieldText": "0.86%",
   "yield12M": 0.81,

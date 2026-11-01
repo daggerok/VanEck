@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$80.53",
-  "value": 80.53,
-  "asOfDate": "Oct 28 2026"
+  "display": "$80.42",
+  "value": 80.42,
+  "asOfDate": "Oct 30 2026"
  },
- "navValue": 80.53,
+ "navValue": 80.42,
  "aum": {
-  "display": "$4.03M",
-  "value": 4026385.51,
-  "asOfDate": "Oct 28 2026",
+  "display": "$4.02M",
+  "value": 4020790.67,
+  "asOfDate": "Oct 30 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4026385.51,
- "asOfDate": "Oct 28 2026",
+ "aumValue": 4020790.67,
+ "asOfDate": "Oct 30 2026",
  "inceptionDate": "Apr 01 2026",
  "exchange": "NASDAQ",
- "closePrice": "$80.93",
- "closePriceValue": 80.93,
+ "closePrice": "$80.67",
+ "closePriceValue": 80.67,
  "premiumDiscount": {
-  "display": "0.40%",
-  "value": 0.4
+  "display": "0.25%",
+  "value": 0.25
  },
- "premiumDiscountValue": 0.4,
+ "premiumDiscountValue": 0.25,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -95,11 +95,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Oct 28 2026",
+ "netAssetsAsOf": "Oct 30 2026",
  "holdings": {
-  "totalRows": 110,
+  "totalRows": 111,
   "pageSize": 250,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 29 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 211,
+  "totalRows": 213,
   "pageSize": 1000,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 30 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-eafe-analyst-sentiment-etf-vefa/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 4030000,
+ "totalNetAssets": 4020000,
  "indexTicker": "NU763972",
  "indexName": "MSCI EAFE Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -155,9 +155,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$80.93",
-  "value": 80.93,
-  "asOfDate": "Oct 28 2026"
+  "display": "$80.67",
+  "value": 80.67,
+  "asOfDate": "Oct 30 2026"
  },
  "yields": {
   "dividendYield": 0.76,

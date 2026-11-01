@@ -2,7 +2,7 @@
  "ticker": "PPH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4097,
+ "totalRows": 4099,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 04 2016",
+   "NAV": "57.5782",
+   "Close": "57.59",
+   "Volume": "47,591",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "261,297,719.87",
+   "Index Level": "2,461.86"
+  },
+  {
+   "Date": "May 03 2016",
+   "NAV": "58.5293",
+   "Close": "58.53",
+   "Volume": "134,666",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "256,834,811.44",
+   "Index Level": "2,502.41"
+  },
   {
    "Date": "May 02 2016",
    "NAV": "58.4072",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "242,656,327.28",
    "Index Level": "1,457.04"
-  },
-  {
-   "Date": "May 11 2012",
-   "NAV": "38.1058",
-   "Close": "38.08",
-   "Volume": "287,628",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "245,330,394.52",
-   "Index Level": "1,473.09"
-  },
-  {
-   "Date": "May 10 2012",
-   "NAV": "38.0744",
-   "Close": "38.05",
-   "Volume": "10,775",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "245,128,346.36",
-   "Index Level": "1,472.11"
   }
  ]
 }

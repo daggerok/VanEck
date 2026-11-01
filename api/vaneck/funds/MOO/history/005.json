@@ -2,7 +2,7 @@
  "ticker": "MOO",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5182,
+ "totalRows": 5184,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 11 2012",
+   "NAV": "49.6559",
+   "Close": "49.59",
+   "Volume": "319,234",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "5,509,327,556.12",
+   "Index Level": "2,030.30"
+  },
+  {
+   "Date": "May 10 2012",
+   "NAV": "49.8715",
+   "Close": "49.69",
+   "Volume": "611,042",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "5,548,206,406.77",
+   "Index Level": "2,035.41"
+  },
   {
    "Date": "May 09 2012",
    "NAV": "50.1393",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.40",
    "Total Net Assets": "1,728,769,051.05",
    "Index Level": "2,330.67"
-  },
-  {
-   "Date": "May 23 2008",
-   "NAV": "61.1282",
-   "Close": "61.55",
-   "Volume": "375,363",
-   "Premium/Discount": "0.42",
-   "Total Net Assets": "1,751,322,733.21",
-   "Index Level": "2,376.99"
-  },
-  {
-   "Date": "May 22 2008",
-   "NAV": "61.9006",
-   "Close": "62.15",
-   "Volume": "564,162",
-   "Premium/Discount": "0.25",
-   "Total Net Assets": "1,770,358,006.88",
-   "Index Level": "2,397.14"
   }
  ]
 }

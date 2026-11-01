@@ -2,7 +2,7 @@
  "ticker": "LFEQ",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2641,
+ "totalRows": 2643,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 03 2024",
+   "NAV": "41.6935",
+   "Close": "41.72",
+   "Volume": "",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "25,016,113.77",
+   "Index Level": "310,040.46"
+  },
+  {
+   "Date": "Feb 02 2024",
+   "NAV": "41.6935",
+   "Close": "41.72",
+   "Volume": "4,229",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "25,016,113.77",
+   "Index Level": "310,040.46"
+  },
   {
    "Date": "Feb 01 2024",
    "NAV": "41.2702",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.14",
    "Total Net Assets": "41,686,507.49",
    "Index Level": "184,988.78"
-  },
-  {
-   "Date": "Apr 24 2020",
-   "NAV": "26.5147",
-   "Close": "26.46",
-   "Volume": "5,751",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "41,097,852.26",
-   "Index Level": "182,303.21"
-  },
-  {
-   "Date": "Apr 23 2020",
-   "NAV": "26.1382",
-   "Close": "26.09",
-   "Volume": "29,294",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "40,514,235.08",
-   "Index Level": "179,796.56"
   }
  ]
 }

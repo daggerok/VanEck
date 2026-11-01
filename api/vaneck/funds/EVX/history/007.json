@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 7,
  "pageSize": 1000,
- "totalRows": 7324,
+ "totalRows": 7326,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 27 2010",
+   "NAV": "8.5002",
+   "Close": "8.48",
+   "Volume": "19,595",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "25,500,524.88",
+   "Index Level": "312.26"
+  },
+  {
+   "Date": "May 26 2010",
+   "NAV": "8.2194",
+   "Close": "8.27",
+   "Volume": "19,740",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "24,658,307.45",
+   "Index Level": "301.92"
+  },
   {
    "Date": "May 25 2010",
    "NAV": "8.2048",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "30,605,875.25",
    "Index Level": "359.21"
-  },
-  {
-   "Date": "Aug 31 2007",
-   "NAV": "10.2020",
-   "Close": "10.19",
-   "Volume": "6,000",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "30,605,875.25",
-   "Index Level": "359.21"
-  },
-  {
-   "Date": "Aug 30 2007",
-   "NAV": "10.0242",
-   "Close": "10.04",
-   "Volume": "6,500",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "30,072,582.20",
-   "Index Level": "352.95"
   }
  ]
 }

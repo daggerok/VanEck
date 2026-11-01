@@ -2,7 +2,7 @@
  "ticker": "GDXJ",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4629,
+ "totalRows": 4631,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 04 2016",
+   "NAV": "34.8221",
+   "Close": "34.61",
+   "Volume": "17,681,930",
+   "Premium/Discount": "-0.21",
+   "Total Net Assets": "2,597,293,357.54",
+   "Index Level": "816.22"
+  },
+  {
+   "Date": "May 03 2016",
+   "NAV": "36.8121",
+   "Close": "36.82",
+   "Volume": "12,403,200",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "2,666,576,276.85",
+   "Index Level": "862.53"
+  },
   {
    "Date": "May 02 2016",
    "NAV": "37.3606",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "1,881,058,772.62",
    "Index Level": "1,694.74"
-  },
-  {
-   "Date": "May 11 2012",
-   "NAV": "81.4872",
-   "Close": "81.04",
-   "Volume": "736,788",
-   "Premium/Discount": "-0.45",
-   "Total Net Assets": "1,974,027,096.11",
-   "Index Level": "1,776.19"
-  },
-  {
-   "Date": "May 10 2012",
-   "NAV": "82.7719",
-   "Close": "83.04",
-   "Volume": "811,280",
-   "Premium/Discount": "0.27",
-   "Total Net Assets": "1,995,837,312.11",
-   "Index Level": "1,806.89"
   }
  ]
 }

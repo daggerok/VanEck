@@ -2,7 +2,7 @@
  "ticker": "VSOL",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 364,
+ "totalRows": 366,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 30 2026",
+   "NAV": "12.2653",
+   "Close": "12.31",
+   "Volume": "21,501",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "19,011,201.02",
+   "Index Level": "94.31"
+  },
+  {
+   "Date": "Oct 29 2026",
+   "NAV": "13.0243",
+   "Close": "12.98",
+   "Volume": "63,776",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "20,187,663.92",
+   "Index Level": "100.15"
+  },
   {
    "Date": "Oct 28 2026",
    "NAV": "13.2956",

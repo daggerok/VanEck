@@ -2,7 +2,7 @@
  "ticker": "CNXT",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3448,
+ "totalRows": 3450,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 24 2020",
+   "NAV": "29.9088",
+   "Close": "30.05",
+   "Volume": "48,093",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "26,917,909.23",
+   "Index Level": "2,107.30"
+  },
+  {
+   "Date": "Apr 23 2020",
+   "NAV": "29.9635",
+   "Close": "30.29",
+   "Volume": "10,689",
+   "Premium/Discount": "0.33",
+   "Total Net Assets": "26,967,170.34",
+   "Index Level": "2,129.93"
+  },
   {
    "Date": "Apr 22 2020",
    "NAV": "30.2815",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.23",
    "Total Net Assets": "38,950,182.06",
    "Index Level": "2,171.61"
-  },
-  {
-   "Date": "May 04 2016",
-   "NAV": "33.7202",
-   "Close": "33.45",
-   "Volume": "16,071",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "38,778,283.05",
-   "Index Level": "2,164.15"
-  },
-  {
-   "Date": "May 03 2016",
-   "NAV": "33.8645",
-   "Close": "33.51",
-   "Volume": "108,246",
-   "Premium/Discount": "-0.35",
-   "Total Net Assets": "38,944,174.11",
-   "Index Level": "2,178.77"
   }
  ]
 }

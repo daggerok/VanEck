@@ -2,7 +2,7 @@
  "ticker": "GDXJ",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4629,
+ "totalRows": 4631,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 24 2020",
+   "NAV": "41.5521",
+   "Close": "41.70",
+   "Volume": "11,974,185",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "4,599,289,913.69",
+   "Index Level": "1,034.54"
+  },
+  {
+   "Date": "Apr 23 2020",
+   "NAV": "41.0569",
+   "Close": "41.11",
+   "Volume": "20,487,732",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "4,544,478,356.46",
+   "Index Level": "1,021.78"
+  },
   {
    "Date": "Apr 22 2020",
    "NAV": "39.5538",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.08",
    "Total Net Assets": "2,661,464,741.93",
    "Index Level": "835.66"
-  },
-  {
-   "Date": "May 04 2016",
-   "NAV": "34.8221",
-   "Close": "34.61",
-   "Volume": "17,681,930",
-   "Premium/Discount": "-0.21",
-   "Total Net Assets": "2,597,293,357.54",
-   "Index Level": "816.22"
-  },
-  {
-   "Date": "May 03 2016",
-   "NAV": "36.8121",
-   "Close": "36.82",
-   "Volume": "12,403,200",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "2,666,576,276.85",
-   "Index Level": "862.53"
   }
  ]
 }

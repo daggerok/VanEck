@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 6855,
+ "totalRows": 6857,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Aug 13 2018",
+   "NAV": "42.7004",
+   "Close": "42.68",
+   "Volume": "9,880",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "29,890,299.58",
+   "Index Level": "1,089.43"
+  },
+  {
+   "Date": "Aug 12 2018",
+   "NAV": "43.4106",
+   "Close": "43.35",
+   "Volume": "",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "30,387,451.72",
+   "Index Level": "1,107.09"
+  },
   {
    "Date": "Aug 11 2018",
    "NAV": "43.4106",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.22",
    "Total Net Assets": "26,006,808.72",
    "Index Level": "740.49"
-  },
-  {
-   "Date": "Nov 17 2015",
-   "NAV": "32.4655",
-   "Close": "32.39",
-   "Volume": "288",
-   "Premium/Discount": "-0.08",
-   "Total Net Assets": "25,972,385.56",
-   "Index Level": "744.86"
-  },
-  {
-   "Date": "Nov 16 2015",
-   "NAV": "32.4786",
-   "Close": "32.14",
-   "Volume": "1,041",
-   "Premium/Discount": "-0.34",
-   "Total Net Assets": "25,982,910.28",
-   "Index Level": "739.58"
   }
  ]
 }

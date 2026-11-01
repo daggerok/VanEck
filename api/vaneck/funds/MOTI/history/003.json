@@ -2,7 +2,7 @@
  "ticker": "MOTI",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3204,
+ "totalRows": 3206,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 24 2020",
+   "NAV": "25.3130",
+   "Close": "25.21",
+   "Volume": "3,999",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "50,626,009.53",
+   "Index Level": "1,424.87"
+  },
+  {
+   "Date": "Apr 23 2020",
+   "NAV": "25.2050",
+   "Close": "25.04",
+   "Volume": "19,051",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "50,410,047.33",
+   "Index Level": "1,438.28"
+  },
   {
    "Date": "Apr 22 2020",
    "NAV": "25.0888",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.77",
    "Total Net Assets": "10,712,557.04",
    "Index Level": "1,288.97"
-  },
-  {
-   "Date": "May 04 2016",
-   "NAV": "26.9712",
-   "Close": "27.10",
-   "Volume": "625",
-   "Premium/Discount": "0.13",
-   "Total Net Assets": "10,788,485.73",
-   "Index Level": "1,298.33"
-  },
-  {
-   "Date": "May 03 2016",
-   "NAV": "27.2704",
-   "Close": "27.39",
-   "Volume": "1,199",
-   "Premium/Discount": "0.12",
-   "Total Net Assets": "10,908,155.26",
-   "Index Level": "1,311.93"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "TRUC",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 253,
+ "totalRows": 255,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 30 2026",
+   "NAV": "22.3981",
+   "Close": "22.43",
+   "Volume": "875,956",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "87,800,411.99",
+   "Index Level": "3,164.82"
+  },
+  {
+   "Date": "Oct 29 2026",
+   "NAV": "22.6985",
+   "Close": "22.68",
+   "Volume": "1,801,009",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "81,487,686.38",
+   "Index Level": "3,191.78"
+  },
   {
    "Date": "Oct 28 2026",
    "NAV": "23.6723",

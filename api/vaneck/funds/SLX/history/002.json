@@ -2,7 +2,7 @@
  "ticker": "SLX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 5406,
+ "totalRows": 5408,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 03 2024",
+   "NAV": "69.1248",
+   "Close": "69.06",
+   "Volume": "",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "131,337,173.03",
+   "Index Level": "1,362.64"
+  },
+  {
+   "Date": "Feb 02 2024",
+   "NAV": "69.1248",
+   "Close": "69.06",
+   "Volume": "5,778",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "131,337,173.03",
+   "Index Level": "1,362.64"
+  },
   {
    "Date": "Feb 01 2024",
    "NAV": "69.6958",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "34,474,126.91",
    "Index Level": "372.66"
-  },
-  {
-   "Date": "Apr 24 2020",
-   "NAV": "22.0968",
-   "Close": "22.08",
-   "Volume": "10,445",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "33,145,151.14",
-   "Index Level": "358.31"
-  },
-  {
-   "Date": "Apr 23 2020",
-   "NAV": "22.3925",
-   "Close": "22.41",
-   "Volume": "8,616",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "33,588,731.16",
-   "Index Level": "363.09"
   }
  ]
 }

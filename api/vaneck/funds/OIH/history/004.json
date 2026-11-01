@@ -2,7 +2,7 @@
  "ticker": "OIH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4097,
+ "totalRows": 4099,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 04 2016",
+   "NAV": "558.7588",
+   "Close": "558.60",
+   "Volume": "368,357",
+   "Premium/Discount": "-0.16",
+   "Total Net Assets": "873,364,145.76",
+   "Index Level": "1,508.13"
+  },
+  {
+   "Date": "May 03 2016",
+   "NAV": "573.0350",
+   "Close": "572.40",
+   "Volume": "349,967",
+   "Premium/Discount": "-0.64",
+   "Total Net Assets": "938,656,148.26",
+   "Index Level": "1,546.59"
+  },
   {
    "Date": "May 02 2016",
    "NAV": "593.2778",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.38",
    "Total Net Assets": "1,054,302,102.24",
    "Index Level": "1,879.08"
-  },
-  {
-   "Date": "May 11 2012",
-   "NAV": "757.3769",
-   "Close": "757.00",
-   "Volume": "166,891",
-   "Premium/Discount": "-0.38",
-   "Total Net Assets": "1,089,140,629.58",
-   "Index Level": "1,917.52"
-  },
-  {
-   "Date": "May 10 2012",
-   "NAV": "760.9449",
-   "Close": "759.80",
-   "Volume": "232,481",
-   "Premium/Discount": "-1.14",
-   "Total Net Assets": "1,023,884,230.34",
-   "Index Level": "1,926.56"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "GPZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 512,
+ "totalRows": 514,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Oct 30 2026",
+   "NAV": "22.5356",
+   "Close": "22.52",
+   "Volume": "55,706",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "250,708,907.21",
+   "Index Level": "2,834.19"
+  },
+  {
+   "Date": "Oct 29 2026",
+   "NAV": "22.7493",
+   "Close": "22.77",
+   "Volume": "228,992",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "253,086,297.09",
+   "Index Level": "2,859.46"
+  },
   {
    "Date": "Oct 28 2026",
    "NAV": "22.0477",

@@ -9,28 +9,28 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "$23.40",
-  "value": 23.4,
-  "asOfDate": "Oct 28 2026"
+  "display": "$23.46",
+  "value": 23.46,
+  "asOfDate": "Oct 30 2026"
  },
- "navValue": 23.4,
+ "navValue": 23.46,
  "aum": {
-  "display": "$195.38M",
-  "value": 195383825.94,
-  "asOfDate": "Oct 28 2026",
+  "display": "$195.88M",
+  "value": 195875272.66,
+  "asOfDate": "Oct 30 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 195383825.94,
- "asOfDate": "Oct 28 2026",
+ "aumValue": 195875272.66,
+ "asOfDate": "Oct 30 2026",
  "inceptionDate": "Mar 03 2017",
  "exchange": "NYSE Arca",
- "closePrice": "$23.42",
- "closePriceValue": 23.42,
+ "closePrice": "$23.46",
+ "closePriceValue": 23.46,
  "premiumDiscount": {
-  "display": "0.02%",
-  "value": 0.02
+  "display": "0.00%",
+  "value": 0
  },
- "premiumDiscountValue": 0.02,
+ "premiumDiscountValue": 0,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -40,6 +40,11 @@
    "Dividend"
   ],
   "rows": [
+   {
+    "Ex-Date": "Nov 02 2026",
+    "Payable Date": "Nov 05 2026",
+    "Dividend": "$0.0957"
+   },
    {
     "Ex-Date": "Oct 01 2026",
     "Payable Date": "Oct 06 2026",
@@ -621,9 +626,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 28 2026",
-   "ytd": -0.45,
-   "ytdText": "-0.45%",
+   "asOfDate": "Oct 30 2026",
+   "ytd": -0.2,
+   "ytdText": "-0.20%",
    "yr1": -0.64,
    "yr3": 4.93,
    "yr5": 0.37,
@@ -641,7 +646,7 @@
   }
  },
  "metrics": {
-  "ytd": -0.45,
+  "ytd": -0.2,
   "tr1y": -0.64,
   "tr3y": 15.52,
   "tr5y": 1.85,
@@ -656,10 +661,10 @@
   "distributionYieldText": "4.63%",
   "yield12M": 4.3,
   "yield12MText": "4.30%",
-  "secYield": 5.55,
-  "secYieldText": "5.55%",
+  "secYield": 5.54,
+  "secYieldText": "5.54%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-28",
+  "ytdAsOf": "2026-10-30",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-09-30"
  },
@@ -667,11 +672,11 @@
  "providerCategory": "International Bond",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
- "netAssetsAsOf": "Oct 28 2026",
+ "netAssetsAsOf": "Oct 30 2026",
  "holdings": {
   "totalRows": 477,
   "pageSize": 250,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 29 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/green-bond-etf-grnb/downloads/holdings/)",
   "pageCount": 2,
   "pages": [
@@ -680,9 +685,9 @@
   ]
  },
  "history": {
-  "totalRows": 2790,
+  "totalRows": 2792,
   "pageSize": 1000,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 30 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/green-bond-etf-grnb/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -691,10 +696,10 @@
    "history/003.json"
   ]
  },
- "totalNetAssets": 195380000,
- "secYield": 5.55,
- "secYieldValue": 5.55,
- "secYieldText": "5.55%",
+ "totalNetAssets": 195880000,
+ "secYield": 5.54,
+ "secYieldValue": 5.54,
+ "secYieldText": "5.54%",
  "indexTicker": "SPGRUSST",
  "indexName": "S&P Green Bond U.S. Dollar Select Index",
  "categoryPath": "Income > International Bond",
@@ -733,23 +738,23 @@
   "grossValue": 0.2
  },
  "marketPrice": {
-  "display": "$23.42",
-  "value": 23.42,
-  "asOfDate": "Oct 28 2026"
+  "display": "$23.46",
+  "value": 23.46,
+  "asOfDate": "Oct 30 2026"
  },
  "yields": {
   "dividendYield": 4.63,
   "dividendYieldText": "4.63%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 4.43,
-  "indicatedYieldText": "4.43%",
+  "indicatedYield": 4.9,
+  "indicatedYieldText": "4.90%",
   "distributionYield": 4.63,
   "distributionYieldText": "4.63%",
   "yield12M": 4.3,
   "yield12MText": "4.30%",
   "distributionRate": null,
-  "secYield": 5.55,
-  "secYieldText": "5.55%",
+  "secYield": 5.54,
+  "secYieldText": "5.54%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

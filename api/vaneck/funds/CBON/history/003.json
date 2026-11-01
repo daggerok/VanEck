@@ -2,7 +2,7 @@
  "ticker": "CBON",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3371,
+ "totalRows": 3373,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Apr 24 2020",
+   "NAV": "22.2799",
+   "Close": "22.16",
+   "Volume": "1,564",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "4,455,985.79",
+   "Index Level": "118.14"
+  },
+  {
+   "Date": "Apr 23 2020",
+   "NAV": "22.3649",
+   "Close": "22.27",
+   "Volume": "1,799",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "4,472,988.06",
+   "Index Level": "118.25"
+  },
   {
    "Date": "Apr 22 2020",
    "NAV": "22.2743",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.29",
    "Total Net Assets": "12,068,014.89",
    "Index Level": "106.67"
-  },
-  {
-   "Date": "May 04 2016",
-   "NAV": "24.1533",
-   "Close": "23.78",
-   "Volume": "4,435",
-   "Premium/Discount": "-0.37",
-   "Total Net Assets": "12,076,625.34",
-   "Index Level": "106.73"
-  },
-  {
-   "Date": "May 03 2016",
-   "NAV": "24.2162",
-   "Close": "24.00",
-   "Volume": "2,453",
-   "Premium/Discount": "-0.22",
-   "Total Net Assets": "12,108,095.95",
-   "Index Level": "107.05"
   }
  ]
 }

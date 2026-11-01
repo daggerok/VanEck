@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4027,
+ "totalRows": 4029,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 03 2024",
+   "NAV": "20.6179",
+   "Close": "20.61",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "39,173,980.55",
+   "Index Level": "476.67"
+  },
+  {
+   "Date": "Feb 02 2024",
+   "NAV": "20.6179",
+   "Close": "20.61",
+   "Volume": "2,982",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "39,173,980.55",
+   "Index Level": "476.67"
+  },
   {
    "Date": "Feb 01 2024",
    "NAV": "20.6600",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.31",
    "Total Net Assets": "87,752,683.85",
    "Index Level": "412.64"
-  },
-  {
-   "Date": "Apr 24 2020",
-   "NAV": "21.9119",
-   "Close": "21.75",
-   "Volume": "2,874",
-   "Premium/Discount": "-0.16",
-   "Total Net Assets": "87,647,723.35",
-   "Index Level": "411.81"
-  },
-  {
-   "Date": "Apr 23 2020",
-   "NAV": "22.0909",
-   "Close": "21.73",
-   "Volume": "65,700",
-   "Premium/Discount": "-0.36",
-   "Total Net Assets": "88,363,506.86",
-   "Index Level": "413.01"
   }
  ]
 }

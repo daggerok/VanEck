@@ -9,28 +9,28 @@
  "ter": "0.75%",
  "terValue": 0.75,
  "nav": {
-  "display": "$23.18",
-  "value": 23.18,
-  "asOfDate": "Oct 28 2026"
+  "display": "$23.42",
+  "value": 23.42,
+  "asOfDate": "Oct 30 2026"
  },
- "navValue": 23.18,
+ "navValue": 23.42,
  "aum": {
-  "display": "$5.10M",
-  "value": 5100576.75,
-  "asOfDate": "Oct 28 2026",
+  "display": "$5.15M",
+  "value": 5152283.93,
+  "asOfDate": "Oct 30 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 5100576.75,
- "asOfDate": "Oct 28 2026",
+ "aumValue": 5152283.93,
+ "asOfDate": "Oct 30 2026",
  "inceptionDate": "Feb 18 2026",
  "exchange": "NYSE Arca",
- "closePrice": "$23.13",
- "closePriceValue": 23.13,
+ "closePrice": "$23.52",
+ "closePriceValue": 23.52,
  "premiumDiscount": {
-  "display": "-0.05%",
-  "value": -0.05
+  "display": "0.10%",
+  "value": 0.1
  },
- "premiumDiscountValue": -0.05,
+ "premiumDiscountValue": 0.1,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -89,11 +89,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.75%",
  "terGrossValue": 0.75,
- "netAssetsAsOf": "Oct 28 2026",
+ "netAssetsAsOf": "Oct 30 2026",
  "holdings": {
   "totalRows": 72,
   "pageSize": 250,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 29 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 253,
+  "totalRows": 255,
   "pageSize": 1000,
-  "asOfDate": "Oct 28 2026",
+  "asOfDate": "Oct 30 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/india-select-etf-indz/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 5100000,
+ "totalNetAssets": 5150000,
  "categoryPath": "Equity > Country/Regional",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -147,9 +147,9 @@
   "grossValue": 0.75
  },
  "marketPrice": {
-  "display": "$23.13",
-  "value": 23.13,
-  "asOfDate": "Oct 28 2026"
+  "display": "$23.52",
+  "value": 23.52,
+  "asOfDate": "Oct 30 2026"
  },
  "yields": {
   "dividendYield": null,
