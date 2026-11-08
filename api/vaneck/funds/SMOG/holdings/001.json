@@ -15,24 +15,24 @@
  ],
  "rows": [
   {
-   "Name": "Tesla Inc",
-   "Ticker": "TSLA",
-   "Identifier": "BBG000N9MNX3",
-   "Shares Held": "29,301",
-   "Asset Category": "Stock",
-   "Market Value": "$11,817,093.30",
-   "Notional Value": "",
-   "Weight": "9.44%"
-  },
-  {
    "Name": "Iberdrola Sa",
    "Ticker": "IBE SM",
    "Identifier": "BBG000BC49N1",
    "Shares Held": "464,402",
    "Asset Category": "Stock",
-   "Market Value": "$11,462,362.80",
+   "Market Value": "$11,881,103.50",
    "Notional Value": "",
-   "Weight": "9.16%"
+   "Weight": "9.50%"
+  },
+  {
+   "Name": "Tesla Inc",
+   "Ticker": "TSLA",
+   "Identifier": "BBG000N9MNX3",
+   "Shares Held": "29,301",
+   "Asset Category": "Stock",
+   "Market Value": "$10,070,460.69",
+   "Notional Value": "",
+   "Weight": "8.05%"
   },
   {
    "Name": "Nextera Energy Inc",
@@ -40,9 +40,9 @@
    "Identifier": "BBG000BJSBJ0",
    "Shares Held": "114,096",
    "Asset Category": "Stock",
-   "Market Value": "$9,371,845.44",
+   "Market Value": "$10,068,972.00",
    "Notional Value": "",
-   "Weight": "7.49%"
+   "Weight": "8.05%"
   },
   {
    "Name": "Enel Spa",
@@ -50,19 +50,9 @@
    "Identifier": "BBG000BK43F5",
    "Shares Held": "845,221",
    "Asset Category": "Stock",
-   "Market Value": "$8,780,144.43",
+   "Market Value": "$9,234,921.22",
    "Notional Value": "",
-   "Weight": "7.02%"
-  },
-  {
-   "Name": "Bloom Energy Corp",
-   "Ticker": "BE",
-   "Identifier": "BBG000N7KBZ3",
-   "Shares Held": "30,017",
-   "Asset Category": "Stock",
-   "Market Value": "$6,672,779.10",
-   "Notional Value": "",
-   "Weight": "5.33%"
+   "Weight": "7.38%"
   },
   {
    "Name": "Byd Co Ltd",
@@ -70,9 +60,9 @@
    "Identifier": "BBG000G6RLL9",
    "Shares Held": "710,298",
    "Asset Category": "Stock",
-   "Market Value": "$6,248,540.23",
+   "Market Value": "$6,742,780.82",
    "Notional Value": "",
-   "Weight": "4.99%"
+   "Weight": "5.39%"
   },
   {
    "Name": "Vestas Wind Systems A/S",
@@ -80,9 +70,19 @@
    "Identifier": "BBG000BJBK53",
    "Shares Held": "201,347",
    "Asset Category": "Stock",
-   "Market Value": "$5,785,458.63",
+   "Market Value": "$6,190,649.84",
    "Notional Value": "",
-   "Weight": "4.62%"
+   "Weight": "4.95%"
+  },
+  {
+   "Name": "Bloom Energy Corp",
+   "Ticker": "BE",
+   "Identifier": "BBG000N7KBZ3",
+   "Shares Held": "30,017",
+   "Asset Category": "Stock",
+   "Market Value": "$5,028,447.84",
+   "Notional Value": "",
+   "Weight": "4.02%"
   },
   {
    "Name": "Samsung Sdi Co Ltd",
@@ -90,29 +90,9 @@
    "Identifier": "BBG000BCY0Q4",
    "Shares Held": "14,114",
    "Asset Category": "Stock",
-   "Market Value": "$5,673,062.71",
+   "Market Value": "$4,907,555.31",
    "Notional Value": "",
-   "Weight": "4.53%"
-  },
-  {
-   "Name": "Axia Energia Sa",
-   "Ticker": "AXIA3 BZ",
-   "Identifier": "BBG000BDG493",
-   "Shares Held": "435,100",
-   "Asset Category": "Stock",
-   "Market Value": "$3,845,367.98",
-   "Notional Value": "",
-   "Weight": "3.07%"
-  },
-  {
-   "Name": "Kingspan Group Plc",
-   "Ticker": "KSP ID",
-   "Identifier": "BBG000BH1H28",
-   "Shares Held": "34,776",
-   "Asset Category": "Stock",
-   "Market Value": "$3,751,587.76",
-   "Notional Value": "",
-   "Weight": "3.00%"
+   "Weight": "3.92%"
   },
   {
    "Name": "First Solar Inc",
@@ -120,9 +100,29 @@
    "Identifier": "BBG000BFL116",
    "Shares Held": "19,633",
    "Asset Category": "Stock",
-   "Market Value": "$3,472,881.37",
+   "Market Value": "$3,843,356.08",
    "Notional Value": "",
-   "Weight": "2.77%"
+   "Weight": "3.07%"
+  },
+  {
+   "Name": "Axia Energia Sa",
+   "Ticker": "AXIA3 BZ",
+   "Identifier": "BBG000BDG493",
+   "Shares Held": "435,100",
+   "Asset Category": "Stock",
+   "Market Value": "$3,781,582.07",
+   "Notional Value": "",
+   "Weight": "3.02%"
+  },
+  {
+   "Name": "Kingspan Group Plc",
+   "Ticker": "KSP ID",
+   "Identifier": "BBG000BH1H28",
+   "Shares Held": "34,776",
+   "Asset Category": "Stock",
+   "Market Value": "$3,599,068.93",
+   "Notional Value": "",
+   "Weight": "2.88%"
   },
   {
    "Name": "Rivian Automotive Inc",
@@ -130,49 +130,19 @@
    "Identifier": "BBG00741Y1N2",
    "Shares Held": "260,009",
    "Asset Category": "Stock",
-   "Market Value": "$2,977,103.05",
+   "Market Value": "$3,455,519.61",
    "Notional Value": "",
-   "Weight": "2.38%"
+   "Weight": "2.76%"
   },
   {
-   "Name": "Orsted As",
+   "Name": "Oersted As",
    "Ticker": "ORSTED DC",
    "Identifier": "BBG00B2HPN16",
    "Shares Held": "122,451",
    "Asset Category": "Stock",
-   "Market Value": "$2,455,132.17",
+   "Market Value": "$2,701,327.44",
    "Notional Value": "",
-   "Weight": "1.96%"
-  },
-  {
-   "Name": "Lg Energy Solution Ltd",
-   "Ticker": "373220 KS",
-   "Identifier": "BBG00ZN6CKP8",
-   "Shares Held": "8,675",
-   "Asset Category": "Stock",
-   "Market Value": "$2,307,915.59",
-   "Notional Value": "",
-   "Weight": "1.84%"
-  },
-  {
-   "Name": "Nibe Industrier Ab",
-   "Ticker": "NIBEB SS",
-   "Identifier": "BBG000BWPL11",
-   "Shares Held": "434,362",
-   "Asset Category": "Stock",
-   "Market Value": "$2,013,859.88",
-   "Notional Value": "",
-   "Weight": "1.61%"
-  },
-  {
-   "Name": "Owens Corning",
-   "Ticker": "OC",
-   "Identifier": "BBG000M44VW8",
-   "Shares Held": "16,327",
-   "Asset Category": "Stock",
-   "Market Value": "$1,985,363.20",
-   "Notional Value": "",
-   "Weight": "1.59%"
+   "Weight": "2.16%"
   },
   {
    "Name": "Nextpower Inc",
@@ -180,9 +150,19 @@
    "Identifier": "BBG00835TPZ2",
    "Shares Held": "24,509",
    "Asset Category": "Stock",
-   "Market Value": "$1,956,553.47",
+   "Market Value": "$2,440,606.22",
    "Notional Value": "",
-   "Weight": "1.56%"
+   "Weight": "1.95%"
+  },
+  {
+   "Name": "Lg Energy Solution Ltd",
+   "Ticker": "373220 KS",
+   "Identifier": "BBG00ZN6CKP8",
+   "Shares Held": "8,675",
+   "Asset Category": "Stock",
+   "Market Value": "$2,108,306.52",
+   "Notional Value": "",
+   "Weight": "1.69%"
   },
   {
    "Name": "Contemporary Amperex Technology Co Ltd",
@@ -190,19 +170,29 @@
    "Identifier": "BBG01TYB8S12",
    "Shares Held": "43,400",
    "Asset Category": "Stock",
-   "Market Value": "$1,876,635.63",
+   "Market Value": "$2,106,166.39",
    "Notional Value": "",
-   "Weight": "1.50%"
+   "Weight": "1.68%"
   },
   {
-   "Name": "Nio Inc",
-   "Ticker": "NIO",
-   "Identifier": "BBG00LPXZB46",
-   "Shares Held": "511,838",
-   "Asset Category": "Other",
-   "Market Value": "$1,699,302.16",
+   "Name": "Owens Corning",
+   "Ticker": "OC",
+   "Identifier": "BBG000M44VW8",
+   "Shares Held": "16,327",
+   "Asset Category": "Stock",
+   "Market Value": "$2,028,793.02",
    "Notional Value": "",
-   "Weight": "1.36%"
+   "Weight": "1.62%"
+  },
+  {
+   "Name": "Nibe Industrier Ab",
+   "Ticker": "NIBEB SS",
+   "Identifier": "BBG000BWPL11",
+   "Shares Held": "434,362",
+   "Asset Category": "Stock",
+   "Market Value": "$2,027,253.20",
+   "Notional Value": "",
+   "Weight": "1.62%"
   },
   {
    "Name": "Xpeng Inc",
@@ -210,9 +200,9 @@
    "Identifier": "BBG00WKJG3M7",
    "Shares Held": "184,704",
    "Asset Category": "Stock",
-   "Market Value": "$1,695,582.72",
+   "Market Value": "$1,773,158.40",
    "Notional Value": "",
-   "Weight": "1.35%"
+   "Weight": "1.42%"
   },
   {
    "Name": "Li Auto Inc",
@@ -220,19 +210,19 @@
    "Identifier": "BBG00W0KZD98",
    "Shares Held": "146,171",
    "Asset Category": "Stock",
-   "Market Value": "$1,628,344.94",
+   "Market Value": "$1,742,358.32",
    "Notional Value": "",
-   "Weight": "1.30%"
+   "Weight": "1.39%"
   },
   {
-   "Name": "Enlight Renewable Energy Ltd",
-   "Ticker": "ENLT",
-   "Identifier": "BBG00PYR86N0",
-   "Shares Held": "21,480",
-   "Asset Category": "Stock",
-   "Market Value": "$1,479,757.20",
+   "Name": "Nio Inc",
+   "Ticker": "NIO",
+   "Identifier": "BBG00LPXZB46",
+   "Shares Held": "511,838",
+   "Asset Category": "Other",
+   "Market Value": "$1,637,881.60",
    "Notional Value": "",
-   "Weight": "1.18%"
+   "Weight": "1.31%"
   },
   {
    "Name": "Acciona Sa",
@@ -240,9 +230,9 @@
    "Identifier": "BBG000BMJCK9",
    "Shares Held": "6,392",
    "Asset Category": "Stock",
-   "Market Value": "$1,479,664.55",
+   "Market Value": "$1,527,895.70",
    "Notional Value": "",
-   "Weight": "1.18%"
+   "Weight": "1.22%"
   },
   {
    "Name": "Nordex Se",
@@ -250,39 +240,19 @@
    "Identifier": "BBG000BYVJ33",
    "Shares Held": "33,245",
    "Asset Category": "Stock",
-   "Market Value": "$1,436,373.92",
+   "Market Value": "$1,505,642.09",
    "Notional Value": "",
-   "Weight": "1.15%"
+   "Weight": "1.20%"
   },
   {
-   "Name": "Horiba Ltd",
-   "Ticker": "6856 JP",
-   "Identifier": "BBG000BM1VY1",
-   "Shares Held": "8,684",
+   "Name": "Enlight Renewable Energy Ltd",
+   "Ticker": "ENLT",
+   "Identifier": "BBG00PYR86N0",
+   "Shares Held": "21,480",
    "Asset Category": "Stock",
-   "Market Value": "$1,265,453.63",
+   "Market Value": "$1,387,822.80",
    "Notional Value": "",
-   "Weight": "1.01%"
-  },
-  {
-   "Name": "Companhia Paranaense De Energia",
-   "Ticker": "ELPC",
-   "Identifier": "BBG01KK16ZG8",
-   "Shares Held": "116,505",
-   "Asset Category": "Stock",
-   "Market Value": "$1,255,923.90",
-   "Notional Value": "",
-   "Weight": "1.00%"
-  },
-  {
-   "Name": "Enersys",
-   "Ticker": "ENS",
-   "Identifier": "BBG000PWTD92",
-   "Shares Held": "7,067",
-   "Asset Category": "Stock",
-   "Market Value": "$1,211,001.12",
-   "Notional Value": "",
-   "Weight": "0.97%"
+   "Weight": "1.11%"
   },
   {
    "Name": "Edp Renovaveis Sa",
@@ -290,19 +260,19 @@
    "Identifier": "BBG000PRGX02",
    "Shares Held": "81,378",
    "Asset Category": "Stock",
-   "Market Value": "$1,148,399.57",
+   "Market Value": "$1,241,982.54",
    "Notional Value": "",
-   "Weight": "0.92%"
+   "Weight": "0.99%"
   },
   {
-   "Name": "Ecopro Bm Co Ltd",
-   "Ticker": "247540 KS",
-   "Identifier": "BBG00D3DK603",
-   "Shares Held": "16,677",
+   "Name": "Companhia Paranaense De Energia",
+   "Ticker": "ELPC",
+   "Identifier": "BBG01KK16ZG8",
+   "Shares Held": "116,505",
    "Asset Category": "Stock",
-   "Market Value": "$1,146,008.55",
+   "Market Value": "$1,225,632.60",
    "Notional Value": "",
-   "Weight": "0.92%"
+   "Weight": "0.98%"
   },
   {
    "Name": "Ormat Technologies Inc",
@@ -310,9 +280,9 @@
    "Identifier": "BBG000Q5BQ63",
    "Shares Held": "12,214",
    "Asset Category": "Stock",
-   "Market Value": "$1,126,375.08",
+   "Market Value": "$1,135,657.72",
    "Notional Value": "",
-   "Weight": "0.90%"
+   "Weight": "0.91%"
   },
   {
    "Name": "Contact Energy Ltd",
@@ -320,7 +290,7 @@
    "Identifier": "BBG000BBY7X3",
    "Shares Held": "232,477",
    "Asset Category": "Stock",
-   "Market Value": "$1,113,142.77",
+   "Market Value": "$1,112,819.87",
    "Notional Value": "",
    "Weight": "0.89%"
   },
@@ -330,9 +300,9 @@
    "Identifier": "BBG005GS6PX1",
    "Shares Held": "350,682",
    "Asset Category": "Stock",
-   "Market Value": "$1,091,309.63",
+   "Market Value": "$1,101,758.26",
    "Notional Value": "",
-   "Weight": "0.87%"
+   "Weight": "0.88%"
   },
   {
    "Name": "Northland Power Inc",
@@ -340,9 +310,19 @@
    "Identifier": "BBG000C0R327",
    "Shares Held": "65,093",
    "Asset Category": "Stock",
-   "Market Value": "$1,019,413.89",
+   "Market Value": "$1,040,036.79",
    "Notional Value": "",
-   "Weight": "0.81%"
+   "Weight": "0.83%"
+  },
+  {
+   "Name": "Ecopro Bm Co Ltd",
+   "Ticker": "247540 KS",
+   "Identifier": "BBG00D3DK603",
+   "Shares Held": "16,677",
+   "Asset Category": "Stock",
+   "Market Value": "$1,030,356.02",
+   "Notional Value": "",
+   "Weight": "0.82%"
   },
   {
    "Name": "Brookfield Renewable Corp",
@@ -350,7 +330,27 @@
    "Identifier": "BBG01RJ2V7B2",
    "Shares Held": "32,363",
    "Asset Category": "Stock",
-   "Market Value": "$957,621.17",
+   "Market Value": "$1,011,991.01",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Enersys",
+   "Ticker": "ENS",
+   "Identifier": "BBG000PWTD92",
+   "Shares Held": "7,067",
+   "Asset Category": "Stock",
+   "Market Value": "$1,007,612.86",
+   "Notional Value": "",
+   "Weight": "0.81%"
+  },
+  {
+   "Name": "Horiba Ltd",
+   "Ticker": "6856 JP",
+   "Identifier": "BBG000BM1VY1",
+   "Shares Held": "8,684",
+   "Asset Category": "Stock",
+   "Market Value": "$962,101.37",
    "Notional Value": "",
    "Weight": "0.77%"
   },
@@ -360,7 +360,7 @@
    "Identifier": "BBG000BDNS10",
    "Shares Held": "27,053",
    "Asset Category": "Stock",
-   "Market Value": "$881,687.35",
+   "Market Value": "$876,833.56",
    "Notional Value": "",
    "Weight": "0.70%"
   },
@@ -370,9 +370,9 @@
    "Identifier": "BBG000Q7BT54",
    "Shares Held": "74,901",
    "Asset Category": "Stock",
-   "Market Value": "$824,390.11",
+   "Market Value": "$867,077.96",
    "Notional Value": "",
-   "Weight": "0.66%"
+   "Weight": "0.69%"
   },
   {
    "Name": "Hannon Armstrong Sustainable Infrastruc",
@@ -380,19 +380,9 @@
    "Identifier": "BBG0044K5DM4",
    "Shares Held": "20,076",
    "Asset Category": "Stock",
-   "Market Value": "$753,251.52",
+   "Market Value": "$796,615.68",
    "Notional Value": "",
-   "Weight": "0.60%"
-  },
-  {
-   "Name": "Cia Energetica De Minas Gerais",
-   "Ticker": "CIG",
-   "Identifier": "BBG000BBKV10",
-   "Shares Held": "403,603",
-   "Asset Category": "Stock",
-   "Market Value": "$750,701.58",
-   "Notional Value": "",
-   "Weight": "0.60%"
+   "Weight": "0.64%"
   },
   {
    "Name": "Installed Building Products Inc",
@@ -400,19 +390,19 @@
    "Identifier": "BBG005TJKDZ6",
    "Shares Held": "3,519",
    "Asset Category": "Stock",
-   "Market Value": "$746,837.37",
+   "Market Value": "$785,018.52",
    "Notional Value": "",
-   "Weight": "0.60%"
+   "Weight": "0.63%"
   },
   {
-   "Name": "Mercury Nz Ltd",
-   "Ticker": "MCY NZ",
-   "Identifier": "BBG004J7PMT8",
-   "Shares Held": "184,906",
+   "Name": "Cia Energetica De Minas Gerais",
+   "Ticker": "CIG",
+   "Identifier": "BBG000BBKV10",
+   "Shares Held": "403,603",
    "Asset Category": "Stock",
-   "Market Value": "$707,033.30",
+   "Market Value": "$734,557.46",
    "Notional Value": "",
-   "Weight": "0.56%"
+   "Weight": "0.59%"
   },
   {
    "Name": "Hanwha Solutions Corp",
@@ -420,9 +410,9 @@
    "Identifier": "BBG000BCVB56",
    "Shares Held": "38,114",
    "Asset Category": "Stock",
-   "Market Value": "$672,480.29",
+   "Market Value": "$726,224.82",
    "Notional Value": "",
-   "Weight": "0.54%"
+   "Weight": "0.58%"
   },
   {
    "Name": "Verbund Ag",
@@ -430,9 +420,9 @@
    "Identifier": "BBG000BFGPZ2",
    "Shares Held": "8,565",
    "Asset Category": "Stock",
-   "Market Value": "$664,649.64",
+   "Market Value": "$722,173.92",
    "Notional Value": "",
-   "Weight": "0.53%"
+   "Weight": "0.58%"
   },
   {
    "Name": "Enphase Energy Inc",
@@ -440,9 +430,19 @@
    "Identifier": "BBG001R3MNY9",
    "Shares Held": "24,845",
    "Asset Category": "Stock",
-   "Market Value": "$642,491.70",
+   "Market Value": "$719,759.65",
    "Notional Value": "",
-   "Weight": "0.51%"
+   "Weight": "0.58%"
+  },
+  {
+   "Name": "Mercury Nz Ltd",
+   "Ticker": "MCY NZ",
+   "Identifier": "BBG004J7PMT8",
+   "Shares Held": "184,906",
+   "Asset Category": "Stock",
+   "Market Value": "$697,298.02",
+   "Notional Value": "",
+   "Weight": "0.56%"
   },
   {
    "Name": "Rockwool International A/S",
@@ -450,19 +450,9 @@
    "Identifier": "BBG000BQNKQ1",
    "Shares Held": "20,609",
    "Asset Category": "Stock",
-   "Market Value": "$616,669.00",
+   "Market Value": "$636,883.28",
    "Notional Value": "",
-   "Weight": "0.49%"
-  },
-  {
-   "Name": "Simplo Technology Co Ltd",
-   "Ticker": "6121 TT",
-   "Identifier": "BBG000C6GBQ2",
-   "Shares Held": "47,000",
-   "Asset Category": "Stock",
-   "Market Value": "$545,408.90",
-   "Notional Value": "",
-   "Weight": "0.44%"
+   "Weight": "0.51%"
   },
   {
    "Name": "Quantumscape Corp",
@@ -470,9 +460,9 @@
    "Identifier": "BBG00VJ17DS2",
    "Shares Held": "125,954",
    "Asset Category": "Stock",
-   "Market Value": "$529,006.80",
+   "Market Value": "$517,670.94",
    "Notional Value": "",
-   "Weight": "0.42%"
+   "Weight": "0.41%"
   },
   {
    "Name": "China Everbright Environment Group Ltd",
@@ -480,9 +470,9 @@
    "Identifier": "BBG000BC11N1",
    "Shares Held": "830,000",
    "Asset Category": "Stock",
-   "Market Value": "$500,028.26",
+   "Market Value": "$510,548.79",
    "Notional Value": "",
-   "Weight": "0.40%"
+   "Weight": "0.41%"
   },
   {
    "Name": "Gcl-Poly Energy Holdings Ltd",
@@ -490,9 +480,29 @@
    "Identifier": "BBG000TRZNP2",
    "Shares Held": "6,069,000",
    "Asset Category": "Stock",
-   "Market Value": "$466,083.42",
+   "Market Value": "$498,430.71",
    "Notional Value": "",
-   "Weight": "0.37%"
+   "Weight": "0.40%"
+  },
+  {
+   "Name": "Simplo Technology Co Ltd",
+   "Ticker": "6121 TT",
+   "Identifier": "BBG000C6GBQ2",
+   "Shares Held": "47,000",
+   "Asset Category": "Stock",
+   "Market Value": "$493,215.07",
+   "Notional Value": "",
+   "Weight": "0.39%"
+  },
+  {
+   "Name": "Sunrun Inc",
+   "Ticker": "RUN",
+   "Identifier": "BBG0025XVR85",
+   "Shares Held": "43,369",
+   "Asset Category": "Stock",
+   "Market Value": "$428,052.03",
+   "Notional Value": "",
+   "Weight": "0.34%"
   },
   {
    "Name": "Enel Americas Sa",
@@ -500,7 +510,7 @@
    "Identifier": "BBG000BKWZS9",
    "Shares Held": "5,112,115",
    "Asset Category": "Stock",
-   "Market Value": "$428,761.46",
+   "Market Value": "$426,877.59",
    "Notional Value": "",
    "Weight": "0.34%"
   },
@@ -510,29 +520,9 @@
    "Identifier": "BBG004LN7CS3",
    "Shares Held": "6,048",
    "Asset Category": "Stock",
-   "Market Value": "$392,552.16",
+   "Market Value": "$422,673.87",
    "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Erg Spa",
-   "Ticker": "ERG IM",
-   "Identifier": "BBG000BZTR80",
-   "Shares Held": "14,728",
-   "Asset Category": "Stock",
-   "Market Value": "$358,912.42",
-   "Notional Value": "",
-   "Weight": "0.29%"
-  },
-  {
-   "Name": "China Longyuan Power Group Corp Ltd",
-   "Ticker": "916 HK",
-   "Identifier": "BBG000P2MRM9",
-   "Shares Held": "536,000",
-   "Asset Category": "Stock",
-   "Market Value": "$354,237.89",
-   "Notional Value": "",
-   "Weight": "0.28%"
+   "Weight": "0.34%"
   },
   {
    "Name": "Xinyi Solar Holdings Ltd",
@@ -540,9 +530,19 @@
    "Identifier": "BBG001XVDJ15",
    "Shares Held": "1,478,000",
    "Asset Category": "Stock",
-   "Market Value": "$350,397.18",
+   "Market Value": "$394,846.74",
    "Notional Value": "",
-   "Weight": "0.28%"
+   "Weight": "0.32%"
+  },
+  {
+   "Name": "China Longyuan Power Group Corp Ltd",
+   "Ticker": "916 HK",
+   "Identifier": "BBG000P2MRM9",
+   "Shares Held": "536,000",
+   "Asset Category": "Stock",
+   "Market Value": "$387,482.50",
+   "Notional Value": "",
+   "Weight": "0.31%"
   },
   {
    "Name": "Zhejiang Leapmotor Technology Co Ltd",
@@ -550,29 +550,29 @@
    "Identifier": "BBG0169H8NM5",
    "Shares Held": "83,900",
    "Asset Category": "Stock",
-   "Market Value": "$341,054.97",
+   "Market Value": "$374,378.28",
    "Notional Value": "",
-   "Weight": "0.27%"
+   "Weight": "0.30%"
   },
   {
-   "Name": "Sunrun Inc",
-   "Ticker": "RUN",
-   "Identifier": "BBG0025XVR85",
-   "Shares Held": "43,369",
+   "Name": "Erg Spa",
+   "Ticker": "ERG IM",
+   "Identifier": "BBG000BZTR80",
+   "Shares Held": "14,728",
    "Asset Category": "Stock",
-   "Market Value": "$329,170.71",
+   "Market Value": "$364,799.44",
    "Notional Value": "",
-   "Weight": "0.26%"
+   "Weight": "0.29%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "515,192",
+   "Shares Held": "474,216",
    "Asset Category": "Cash Bal",
-   "Market Value": "$515,192.32",
+   "Market Value": "$474,215.64",
    "Notional Value": "",
-   "Weight": "0.41%"
+   "Weight": "0.38%"
   },
   {
    "Name": "",
@@ -580,7 +580,7 @@
    "Identifier": "",
    "Shares Held": "104,804,500",
    "Asset Category": "Cash Bal",
-   "Market Value": "$78,417.13",
+   "Market Value": "$78,089.93",
    "Notional Value": "",
    "Weight": "0.06%"
   },
@@ -590,7 +590,7 @@
    "Identifier": "",
    "Shares Held": "236",
    "Asset Category": "Cash Bal",
-   "Market Value": "$263.87",
+   "Market Value": "$265.38",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -628,9 +628,9 @@
    "Name": "",
    "Ticker": "-CAD CASH-",
    "Identifier": "",
-   "Shares Held": "-767,325",
+   "Shares Held": "-776,512",
    "Asset Category": "Cash Bal",
-   "Market Value": "$-548,971.27",
+   "Market Value": "$-554,869.24",
    "Notional Value": "",
    "Weight": "-0.44%"
   },
@@ -640,9 +640,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$43,243.84",
+   "Market Value": "$72,924.41",
    "Notional Value": "",
-   "Weight": "0.03%"
+   "Weight": "0.06%"
   }
  ]
 }

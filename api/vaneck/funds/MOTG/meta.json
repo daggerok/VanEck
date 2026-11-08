@@ -9,28 +9,28 @@
  "ter": "0.52%",
  "terValue": 0.52,
  "nav": {
-  "display": "$40.08",
-  "value": 40.08,
-  "asOfDate": "Oct 30 2026"
+  "display": "$40.17",
+  "value": 40.17,
+  "asOfDate": "Nov 06 2026"
  },
- "navValue": 40.08,
+ "navValue": 40.17,
  "aum": {
-  "display": "$18.04M",
-  "value": 18036421.5,
-  "asOfDate": "Oct 30 2026",
+  "display": "$18.08M",
+  "value": 18075674.93,
+  "asOfDate": "Nov 06 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 18036421.5,
- "asOfDate": "Oct 30 2026",
+ "aumValue": 18075674.93,
+ "asOfDate": "Nov 06 2026",
  "inceptionDate": "Oct 30 2018",
  "exchange": "Cboe BZX",
- "closePrice": "$40.01",
- "closePriceValue": 40.01,
+ "closePrice": "$40.09",
+ "closePriceValue": 40.09,
  "premiumDiscount": {
-  "display": "-0.07%",
-  "value": -0.07
+  "display": "-0.08%",
+  "value": -0.08
  },
- "premiumDiscountValue": -0.07,
+ "premiumDiscountValue": -0.08,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -86,15 +86,15 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 30 2026",
-   "ytd": 3.78,
-   "ytdText": "3.78%",
-   "yr1": 1.87,
-   "yr3": 15.34,
-   "yr5": 7.13,
+   "asOfDate": "Nov 06 2026",
+   "ytd": 4,
+   "ytdText": "4.00%",
+   "yr1": 4.18,
+   "yr3": 17.89,
+   "yr5": 6.9,
    "yr10": null,
-   "sinceInception": 10.91,
-   "tenorsAsOf": "Sep 30 2026"
+   "sinceInception": 11.14,
+   "tenorsAsOf": "Oct 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -106,15 +106,15 @@
   }
  },
  "metrics": {
-  "ytd": 3.78,
-  "tr1y": 1.87,
-  "tr3y": 53.43,
-  "tr5y": 41.14,
+  "ytd": 4,
+  "tr1y": 4.18,
+  "tr3y": 63.86,
+  "tr5y": 39.63,
   "tr10y": null,
-  "cagr3y": 15.34,
-  "cagr5y": 7.13,
+  "cagr3y": 17.89,
+  "cagr5y": 6.9,
   "cagr10y": null,
-  "siAnn": 10.91,
+  "siAnn": 11.14,
   "dividendYield": 17.62,
   "dividendYieldText": "17.62%",
   "distributionYield": 17.62,
@@ -124,19 +124,19 @@
   "secYield": 1.41,
   "secYieldText": "1.41%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-30",
+  "ytdAsOf": "2026-11-06",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-30"
+  "performanceAsOf": "2026-10-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Moat Investing",
  "terGross": "1.14%",
  "terGrossValue": 1.14,
- "netAssetsAsOf": "Oct 30 2026",
+ "netAssetsAsOf": "Nov 06 2026",
  "holdings": {
   "totalRows": 82,
   "pageSize": 250,
-  "asOfDate": "Oct 29 2026",
+  "asOfDate": "Nov 05 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-global-wide-moat-etf-motg/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -144,9 +144,9 @@
   ]
  },
  "history": {
-  "totalRows": 2373,
+  "totalRows": 2380,
   "pageSize": 1000,
-  "asOfDate": "Oct 30 2026",
+  "asOfDate": "Nov 06 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-global-wide-moat-etf-motg/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -155,7 +155,7 @@
    "history/003.json"
   ]
  },
- "totalNetAssets": 18040000,
+ "totalNetAssets": 18080000,
  "categoryPath": "Equity > Moat Investing",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -192,16 +192,16 @@
   "grossValue": 1.14
  },
  "marketPrice": {
-  "display": "$40.01",
-  "value": 40.01,
-  "asOfDate": "Oct 30 2026"
+  "display": "$40.09",
+  "value": 40.09,
+  "asOfDate": "Nov 06 2026"
  },
  "yields": {
   "dividendYield": 17.62,
   "dividendYieldText": "17.62%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.34,
-  "indicatedYieldText": "2.34%",
+  "indicatedYield": 2.33,
+  "indicatedYieldText": "2.33%",
   "distributionYield": 17.62,
   "distributionYieldText": "17.62%",
   "yield12M": 15.21,

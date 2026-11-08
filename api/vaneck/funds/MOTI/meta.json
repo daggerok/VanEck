@@ -9,28 +9,28 @@
  "ter": "0.58%",
  "terValue": 0.58,
  "nav": {
-  "display": "$36.62",
-  "value": 36.62,
-  "asOfDate": "Oct 30 2026"
+  "display": "$37.19",
+  "value": 37.19,
+  "asOfDate": "Nov 06 2026"
  },
- "navValue": 36.62,
+ "navValue": 37.19,
  "aum": {
-  "display": "$73.25M",
-  "value": 73246253.83,
-  "asOfDate": "Oct 30 2026",
+  "display": "$74.37M",
+  "value": 74372792.86,
+  "asOfDate": "Nov 06 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 73246253.83,
- "asOfDate": "Oct 30 2026",
+ "aumValue": 74372792.86,
+ "asOfDate": "Nov 06 2026",
  "inceptionDate": "Jul 13 2015",
  "exchange": "Cboe BZX",
- "closePrice": "$36.46",
- "closePriceValue": 36.46,
+ "closePrice": "$36.98",
+ "closePriceValue": 36.98,
  "premiumDiscount": {
-  "display": "-0.16%",
-  "value": -0.16
+  "display": "-0.20%",
+  "value": -0.2
  },
- "premiumDiscountValue": -0.16,
+ "premiumDiscountValue": -0.2,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -101,15 +101,15 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 30 2026",
-   "ytd": 0.29,
-   "ytdText": "0.29%",
-   "yr1": -3.63,
-   "yr3": 8.81,
-   "yr5": 4.39,
-   "yr10": 5.66,
-   "sinceInception": 4.52,
-   "tenorsAsOf": "Sep 30 2026"
+   "asOfDate": "Nov 06 2026",
+   "ytd": 1.84,
+   "ytdText": "1.84%",
+   "yr1": -0.11,
+   "yr3": 12.48,
+   "yr5": 5.1,
+   "yr10": 6.55,
+   "sinceInception": 4.98,
+   "tenorsAsOf": "Oct 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -121,15 +121,15 @@
   }
  },
  "metrics": {
-  "ytd": 0.29,
-  "tr1y": -3.63,
-  "tr3y": 28.82,
-  "tr5y": 23.96,
-  "tr10y": 73.44,
-  "cagr3y": 8.81,
-  "cagr5y": 4.39,
-  "cagr10y": 5.66,
-  "siAnn": 4.52,
+  "ytd": 1.84,
+  "tr1y": -0.11,
+  "tr3y": 42.32,
+  "tr5y": 28.24,
+  "tr10y": 88.57,
+  "cagr3y": 12.48,
+  "cagr5y": 5.1,
+  "cagr10y": 6.55,
+  "siAnn": 4.98,
   "dividendYield": 3.38,
   "dividendYieldText": "3.38%",
   "distributionYield": 3.38,
@@ -139,19 +139,19 @@
   "secYield": 2.07,
   "secYieldText": "2.07%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-30",
+  "ytdAsOf": "2026-11-06",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-30"
+  "performanceAsOf": "2026-10-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Moat Investing",
  "terGross": "0.63%",
  "terGrossValue": 0.63,
- "netAssetsAsOf": "Oct 30 2026",
+ "netAssetsAsOf": "Nov 06 2026",
  "holdings": {
   "totalRows": 60,
   "pageSize": 250,
-  "asOfDate": "Oct 29 2026",
+  "asOfDate": "Nov 05 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -159,9 +159,9 @@
   ]
  },
  "history": {
-  "totalRows": 3206,
+  "totalRows": 3213,
   "pageSize": 1000,
-  "asOfDate": "Oct 30 2026",
+  "asOfDate": "Nov 06 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/morningstar-international-moat-etf-moti/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -171,7 +171,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 73250000,
+ "totalNetAssets": 74370000,
  "categoryPath": "Equity > Moat Investing",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -208,16 +208,16 @@
   "grossValue": 0.63
  },
  "marketPrice": {
-  "display": "$36.46",
-  "value": 36.46,
-  "asOfDate": "Oct 30 2026"
+  "display": "$36.98",
+  "value": 36.98,
+  "asOfDate": "Nov 06 2026"
  },
  "yields": {
   "dividendYield": 3.38,
   "dividendYieldText": "3.38%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 3.23,
-  "indicatedYieldText": "3.23%",
+  "indicatedYield": 3.18,
+  "indicatedYieldText": "3.18%",
   "distributionYield": 3.38,
   "distributionYieldText": "3.38%",
   "yield12M": 3.01,

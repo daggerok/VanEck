@@ -9,28 +9,28 @@
  "ter": "0.51%",
  "terValue": 0.51,
  "nav": {
-  "display": "$77.30",
-  "value": 77.3,
-  "asOfDate": "Oct 30 2026"
+  "display": "$87.37",
+  "value": 87.37,
+  "asOfDate": "Nov 06 2026"
  },
- "navValue": 77.3,
+ "navValue": 87.37,
  "aum": {
-  "display": "$23.82B",
-  "value": 23820073780.98,
-  "asOfDate": "Oct 30 2026",
+  "display": "$26.91B",
+  "value": 26905975532.34,
+  "asOfDate": "Nov 06 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 23820073780.98,
- "asOfDate": "Oct 30 2026",
+ "aumValue": 26905975532.34,
+ "asOfDate": "Nov 06 2026",
  "inceptionDate": "May 16 2006",
  "exchange": "NYSE Arca",
- "closePrice": "$77.09",
- "closePriceValue": 77.09,
+ "closePrice": "$87.60",
+ "closePriceValue": 87.6,
  "premiumDiscount": {
-  "display": "-0.21%",
-  "value": -0.21
+  "display": "0.23%",
+  "value": 0.23
  },
- "premiumDiscountValue": -0.21,
+ "premiumDiscountValue": 0.23,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -141,15 +141,15 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 30 2026",
-   "ytd": -10.14,
-   "ytdText": "-10.14%",
-   "yr1": 15.85,
-   "yr3": 49.98,
-   "yr5": 26.11,
-   "yr10": 13.84,
-   "sinceInception": 4.79,
-   "tenorsAsOf": "Sep 30 2026"
+   "asOfDate": "Nov 06 2026",
+   "ytd": 1.57,
+   "ytdText": "1.57%",
+   "yr1": 8.24,
+   "yr3": 41.74,
+   "yr5": 21.11,
+   "yr10": 13.22,
+   "sinceInception": 4.12,
+   "tenorsAsOf": "Oct 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -161,15 +161,15 @@
   }
  },
  "metrics": {
-  "ytd": -10.14,
-  "tr1y": 15.85,
-  "tr3y": 237.34,
-  "tr5y": 218.97,
-  "tr10y": 265.54,
-  "cagr3y": 49.98,
-  "cagr5y": 26.11,
-  "cagr10y": 13.84,
-  "siAnn": 4.79,
+  "ytd": 1.57,
+  "tr1y": 8.24,
+  "tr3y": 184.76,
+  "tr5y": 160.53,
+  "tr10y": 246.02,
+  "cagr3y": 41.74,
+  "cagr5y": 21.11,
+  "cagr10y": 13.22,
+  "siAnn": 4.12,
   "dividendYield": 0.66,
   "dividendYieldText": "0.66%",
   "distributionYield": 0.66,
@@ -179,19 +179,19 @@
   "secYield": 0.41,
   "secYieldText": "0.41%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-30",
+  "ytdAsOf": "2026-11-06",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-30"
+  "performanceAsOf": "2026-10-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
  "terGross": "0.51%",
  "terGrossValue": 0.51,
- "netAssetsAsOf": "Oct 30 2026",
+ "netAssetsAsOf": "Nov 06 2026",
  "holdings": {
-  "totalRows": 66,
+  "totalRows": 67,
   "pageSize": 250,
-  "asOfDate": "Oct 29 2026",
+  "asOfDate": "Nov 05 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -199,9 +199,9 @@
   ]
  },
  "history": {
-  "totalRows": 7473,
+  "totalRows": 7480,
   "pageSize": 1000,
-  "asOfDate": "Oct 30 2026",
+  "asOfDate": "Nov 06 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/gold-miners-etf-gdx/downloads/fundhistoprices/)",
   "pageCount": 8,
   "pages": [
@@ -215,7 +215,7 @@
    "history/008.json"
   ]
  },
- "totalNetAssets": 23820000000,
+ "totalNetAssets": 26910000000,
  "indexTicker": "MVGDXTR",
  "indexName": "MarketVector Global Gold Miners Index",
  "categoryPath": "Equity > Natural Resources",
@@ -254,16 +254,16 @@
   "grossValue": 0.51
  },
  "marketPrice": {
-  "display": "$77.09",
-  "value": 77.09,
-  "asOfDate": "Oct 30 2026"
+  "display": "$87.60",
+  "value": 87.6,
+  "asOfDate": "Nov 06 2026"
  },
  "yields": {
   "dividendYield": 0.66,
   "dividendYieldText": "0.66%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.82,
-  "indicatedYieldText": "0.82%",
+  "indicatedYield": 0.72,
+  "indicatedYieldText": "0.72%",
   "distributionYield": 0.66,
   "distributionYieldText": "0.66%",
   "yield12M": 0.97,

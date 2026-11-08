@@ -9,28 +9,28 @@
  "ter": "0.62%",
  "terValue": 0.62,
  "nav": {
-  "display": "$35.52",
-  "value": 35.52,
-  "asOfDate": "Oct 30 2026"
+  "display": "$35.65",
+  "value": 35.65,
+  "asOfDate": "Nov 06 2026"
  },
- "navValue": 35.52,
+ "navValue": 35.65,
  "aum": {
-  "display": "$30.19M",
-  "value": 30188448.91,
-  "asOfDate": "Oct 30 2026",
+  "display": "$30.30M",
+  "value": 30301370.42,
+  "asOfDate": "Nov 06 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 30188448.91,
- "asOfDate": "Oct 30 2026",
+ "aumValue": 30301370.42,
+ "asOfDate": "Nov 06 2026",
  "inceptionDate": "Nov 09 2021",
  "exchange": "NYSE Arca",
- "closePrice": "$35.38",
- "closePriceValue": 35.38,
+ "closePrice": "$35.40",
+ "closePriceValue": 35.4,
  "premiumDiscount": {
-  "display": "-0.14%",
-  "value": -0.14
+  "display": "-0.24%",
+  "value": -0.24
  },
- "premiumDiscountValue": -0.14,
+ "premiumDiscountValue": -0.24,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -66,15 +66,15 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 30 2026",
-   "ytd": -4.14,
-   "ytdText": "-4.14%",
-   "yr1": 31.26,
-   "yr3": 20.27,
+   "asOfDate": "Nov 06 2026",
+   "ytd": -3.78,
+   "ytdText": "-3.78%",
+   "yr1": 11.6,
+   "yr3": 19.41,
    "yr5": null,
    "yr10": null,
-   "sinceInception": 5.22,
-   "tenorsAsOf": "Sep 30 2026"
+   "sinceInception": 2.14,
+   "tenorsAsOf": "Oct 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -86,15 +86,15 @@
   }
  },
  "metrics": {
-  "ytd": -4.14,
-  "tr1y": 31.26,
-  "tr3y": 73.95,
+  "ytd": -3.78,
+  "tr1y": 11.6,
+  "tr3y": 70.25,
   "tr5y": null,
   "tr10y": null,
-  "cagr3y": 20.27,
+  "cagr3y": 19.41,
   "cagr5y": null,
   "cagr10y": null,
-  "siAnn": 5.22,
+  "siAnn": 2.14,
   "dividendYield": 1.62,
   "dividendYieldText": "1.62%",
   "distributionYield": 1.62,
@@ -104,19 +104,19 @@
   "secYield": 0.66,
   "secYieldText": "0.66%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-30",
+  "ytdAsOf": "2026-11-06",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-30"
+  "performanceAsOf": "2026-10-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Natural Resources",
  "terGross": "0.62%",
  "terGrossValue": 0.62,
- "netAssetsAsOf": "Oct 30 2026",
+ "netAssetsAsOf": "Nov 06 2026",
  "holdings": {
-  "totalRows": 65,
+  "totalRows": 64,
   "pageSize": 250,
-  "asOfDate": "Oct 29 2026",
+  "asOfDate": "Nov 05 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -124,9 +124,9 @@
   ]
  },
  "history": {
-  "totalRows": 1817,
+  "totalRows": 1824,
   "pageSize": 1000,
-  "asOfDate": "Oct 30 2026",
+  "asOfDate": "Nov 06 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/copper-and-electrification-etf-emet/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -134,7 +134,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 30190000,
+ "totalNetAssets": 30300000,
  "indexTicker": "MVGMETTR",
  "indexName": "MarketVector Global Electrification Metals Index",
  "categoryPath": "Equity > Natural Resources",
@@ -173,9 +173,9 @@
   "grossValue": 0.62
  },
  "marketPrice": {
-  "display": "$35.38",
-  "value": 35.38,
-  "asOfDate": "Oct 30 2026"
+  "display": "$35.40",
+  "value": 35.4,
+  "asOfDate": "Nov 06 2026"
  },
  "yields": {
   "dividendYield": 1.62,

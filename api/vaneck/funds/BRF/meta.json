@@ -9,28 +9,28 @@
  "ter": "0.60%",
  "terValue": 0.6,
  "nav": {
-  "display": "$13.03",
-  "value": 13.03,
-  "asOfDate": "Oct 30 2026"
+  "display": "$13.37",
+  "value": 13.37,
+  "asOfDate": "Nov 06 2026"
  },
- "navValue": 13.03,
+ "navValue": 13.37,
  "aum": {
-  "display": "$17.59M",
-  "value": 17593183.45,
-  "asOfDate": "Oct 30 2026",
+  "display": "$18.72M",
+  "value": 18724418.01,
+  "asOfDate": "Nov 06 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 17593183.45,
- "asOfDate": "Oct 30 2026",
+ "aumValue": 18724418.01,
+ "asOfDate": "Nov 06 2026",
  "inceptionDate": "May 12 2009",
  "exchange": "NYSE Arca",
- "closePrice": "$12.96",
- "closePriceValue": 12.96,
+ "closePrice": "$13.42",
+ "closePriceValue": 13.42,
  "premiumDiscount": {
-  "display": "-0.07%",
-  "value": -0.07
+  "display": "0.05%",
+  "value": 0.05
  },
- "premiumDiscountValue": -0.07,
+ "premiumDiscountValue": 0.05,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -141,15 +141,15 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Oct 30 2026",
-   "ytd": -19.29,
-   "ytdText": "-19.29%",
-   "yr1": 5.96,
-   "yr3": 4.7,
-   "yr5": 1.1,
-   "yr10": 3.37,
-   "sinceInception": 1.58,
-   "tenorsAsOf": "Sep 30 2026"
+   "asOfDate": "Nov 06 2026",
+   "ytd": -17.17,
+   "ytdText": "-17.17%",
+   "yr1": -16.04,
+   "yr3": 0.39,
+   "yr5": -0.37,
+   "yr10": 0.11,
+   "sinceInception": 0.26,
+   "tenorsAsOf": "Oct 31 2026"
   },
   "quarterEnd": {
    "asOfDate": "Sep 30 2026",
@@ -161,15 +161,15 @@
   }
  },
  "metrics": {
-  "ytd": -19.29,
-  "tr1y": 5.96,
-  "tr3y": 14.78,
-  "tr5y": 5.6,
-  "tr10y": 39.32,
-  "cagr3y": 4.7,
-  "cagr5y": 1.1,
-  "cagr10y": 3.37,
-  "siAnn": 1.58,
+  "ytd": -17.17,
+  "tr1y": -16.04,
+  "tr3y": 1.17,
+  "tr5y": -1.83,
+  "tr10y": 1.13,
+  "cagr3y": 0.39,
+  "cagr5y": -0.37,
+  "cagr10y": 0.11,
+  "siAnn": 0.26,
   "dividendYield": 5.45,
   "dividendYieldText": "5.45%",
   "distributionYield": 5.45,
@@ -179,19 +179,19 @@
   "secYield": 5.23,
   "secYieldText": "5.23%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-10-30",
+  "ytdAsOf": "2026-11-06",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
-  "performanceAsOf": "2026-09-30"
+  "performanceAsOf": "2026-10-31"
  },
  "distributionFrequency": "12 - Annually",
  "providerCategory": "Country/Regional",
  "terGross": "1.17%",
  "terGrossValue": 1.17,
- "netAssetsAsOf": "Oct 30 2026",
+ "netAssetsAsOf": "Nov 06 2026",
  "holdings": {
   "totalRows": 94,
   "pageSize": 250,
-  "asOfDate": "Oct 29 2026",
+  "asOfDate": "Nov 05 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -199,9 +199,9 @@
   ]
  },
  "history": {
-  "totalRows": 4758,
+  "totalRows": 4765,
   "pageSize": 1000,
-  "asOfDate": "Oct 30 2026",
+  "asOfDate": "Nov 06 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -212,7 +212,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 17590000,
+ "totalNetAssets": 18720000,
  "indexTicker": "MVBRFTR",
  "indexName": "Brazil Small-Cap Index",
  "categoryPath": "Equity > Country/Regional",
@@ -251,16 +251,16 @@
   "grossValue": 1.17
  },
  "marketPrice": {
-  "display": "$12.96",
-  "value": 12.96,
-  "asOfDate": "Oct 30 2026"
+  "display": "$13.42",
+  "value": 13.42,
+  "asOfDate": "Nov 06 2026"
  },
  "yields": {
   "dividendYield": 5.45,
   "dividendYieldText": "5.45%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.82,
-  "indicatedYieldText": "6.82%",
+  "indicatedYield": 6.65,
+  "indicatedYieldText": "6.65%",
   "distributionYield": 5.45,
   "distributionYieldText": "5.45%",
   "yield12M": 5.51,
