@@ -3485,7 +3485,7 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   // Past the soft deadline no chart is read, so the run stays inside the 30-minute job timeout
   const pastDeadline = Date.now() > deadline;
   const funds = await withSwing(API_ROOT, await withRange52w(API_ROOT, markClosedFunds(Object.values(previous).map(withReturnsMeta).map(withDataFile).sort((a, b) => String(a.ticker).localeCompare(String(b.ticker))), CLOSED_FUNDS)), {
-    fetchChart: (url, ticker) => fetchText(url, yahooHeaders(), config, `[ swing    ] ${ticker} Yahoo chart`),
+    fetchChart: (url, ticker) => fetchText(url, yahooHeaders(), config, `${ticker} Yahoo swing chart`),
     tickers: config.skipYahoo || pastDeadline ? [] : Array.from(byTicker.keys()), previous: previousRows, concurrency: config.concurrency,
     onError: (ticker, error) => outputNote(`[ swing    ] ${ticker}: ${errorMessage(error)}; published swing metrics kept`),
   });
