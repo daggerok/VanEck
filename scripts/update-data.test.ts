@@ -576,6 +576,9 @@ const chartPayload = JSON.stringify({ chart: { result: [{
   indicators: { quote: [{ close: [95.3, 95.48] }] },
   events: { dividends: { a: { amount: 0.25, date: ts("2026-06-22") }, b: { amount: 0.25, date: ts("2026-03-23") }, c: { amount: 0.25, date: ts("2025-12-22") } } },
 }] } });
+// the swing block's daily chart (period1=0): 300 closes rising 0.1 a day from 2025-01-02
+const SWING_CHART_URL = /query1\.finance\.yahoo\.com\/v8\/finance\/chart\/[^?]+\?period1=0&period2=\d+&interval=1d&includePrePost=false/;
+const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d" }, timestamp: Array.from({ length: 300 }, (_, i) => Date.UTC(2025, 0, 2) / 1000 + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] } }] } });
 const pageFor = (ticker: string): string => (ticker === "VEEM" ? VEEM_PAGE : GDX_PAGE.replace("GDX VanEck Gold Miners ETF", `${ticker} VanEck ETF`));
 
 function sandbox() {
@@ -614,6 +617,7 @@ function sandbox() {
         return new Response(slug[3] === "holdings" ? buildXlsx(holdingsSheet) : buildXlsx(historySheet));
       } finally { inFlight -= 1; }
     }
+    if (SWING_CHART_URL.test(url)) return new Response(swingChartPayload);
     if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
     if (url.includes("/PerformanceHistoryBlock/") && performanceJson !== null) return new Response(performanceJson);
     return new Response("not found", { status: 404 });
@@ -667,6 +671,12 @@ describe("pipeline", () => {
     // every row carries the 52-week keys from its history pages (range-52w block)
     const RANGE_KEYS = ["week52Low", "week52High", "range52w", "range52wClose", "range52wAsOf", "range52wSince", "range52wBasis"];
     for (const fund of funds) expect(Object.keys(fund.metrics)).toEqual(expect.arrayContaining(RANGE_KEYS));
+    // the swing keys from the Yahoo daily closes (period1=0) of the funds the run updated (swing block); catalog-only rows stay null
+    const SWING_KEYS = ["pctFrom52wHigh", "athPrice", "athDate", "athBasis", "pctFromAth", "volatility1y", "sigmaFromMean60d", "high60d", "low60d"];
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-11, -2)).toEqual(SWING_KEYS);
+    expect(box.urls.filter((url) => SWING_CHART_URL.test(url)).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual(FUNDS);
+    const gdx = box.row("GDX").metrics;
+    expect([gdx.athBasis, gdx.athPrice, gdx.high60d, gdx.volatility1y, box.row("VEEM").metrics.athPrice]).toEqual(["daily closes since 2025-01-02", 69.9, 69.9, expect.any(Number), null]);
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2 });
     expect(box.row("GDX").metrics.tr3y).toBeNull();
     for (const fund of funds) expect(fund.metrics.dividendYieldBasis).toBe(fund.metrics.dividendYield === null ? null : fund.metrics.distributionYield === fund.metrics.dividendYield ? "official-distribution-rate" : "indicated");
@@ -1060,7 +1070,7 @@ describe("network 2", () => {
     expect(yahooChartUrl("GDX", now * 1000, "5y")).toContain(`period1=${fiveYears}&period2=${now}`);
     const box = sandbox();
     await box.run({ TICKERS: "GDX", HISTORY_RANGE: "5y" });
-    const request = new URL(box.urls.find((url) => url.includes("/v8/finance/chart/GDX"))!);
+    const request = new URL(box.urls.find((url) => url.includes("/v8/finance/chart/GDX") && !SWING_CHART_URL.test(url))!);
     const [period1, period2] = [Number(request.searchParams.get("period1")), Number(request.searchParams.get("period2"))];
     expect(period1).toBeGreaterThan(0);
     expect(Math.round((period2 - period1) / 86_400 / 365.25)).toBe(5);
