@@ -103,6 +103,14 @@ NAV, Total Net Assets, returns, SEC yield and distributions are VanEck's own pub
 | **`ytdAsOf`** | ISO date of the YTD figure, just before `returnsBasis`: the daily fund-page stamp, or the finder month-end (`returns.monthEnd.ytdAsOf`) for a YTD backfilled from the finder, which is used only within its own calendar year; `null` when YTD is `null` | YTD is dated separately because it moves daily while the tenors are month-end |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
+- Swing metrics (shared `swing` block, the formulas of the Stocks feed) from the Yahoo Finance daily closes since listing (chart API, split-adjusted, not dividend-adjusted; the published NAV and market price history is not split-adjusted), with the last close as the price. Read for every fund the run updates (none after the 25-minute soft deadline); a failed chart, or one that starts more than 31 days after the published history, keeps the published values; `null` (never `0`) when the history is too short:
+  - `pctFrom52wHigh` - last close against the highest close of the last 52 weeks, in percent
+  - `athPrice`, `athDate`, `athBasis` - highest close of the whole history, its date and the history it covers (`daily closes since <first date>`)
+  - `pctFromAth` - last close against `athPrice`, in percent
+  - `volatility1y` - annualized volatility of the last 252 daily log returns, in percent (needs 253 closes)
+  - `sigmaFromMean60d` - distance of the last close from the mean of the last 60 closes, in sample standard deviations
+  - `high60d`, `low60d` - highest and lowest of the last 60 closes
+
 ### Update controls
 
 Every key of `scripts/update-data.config.json`; all values are strings. Keys marked with * are also individual workflow inputs (lowercase name), all others go through `advanced`.
