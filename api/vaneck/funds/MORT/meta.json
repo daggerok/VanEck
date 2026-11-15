@@ -9,23 +9,23 @@
  "ter": "0.43%",
  "terValue": 0.43,
  "nav": {
-  "display": "$7.62",
-  "value": 7.62,
-  "asOfDate": "Nov 06 2026"
+  "display": "$7.21",
+  "value": 7.21,
+  "asOfDate": "Nov 13 2026"
  },
- "navValue": 7.62,
+ "navValue": 7.21,
  "aum": {
-  "display": "$314.63M",
-  "value": 314625005.6,
-  "asOfDate": "Nov 06 2026",
+  "display": "$296.97M",
+  "value": 296970567.11,
+  "asOfDate": "Nov 13 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 314625005.6,
- "asOfDate": "Nov 06 2026",
+ "aumValue": 296970567.11,
+ "asOfDate": "Nov 13 2026",
  "inceptionDate": "Aug 16 2011",
  "exchange": "NYSE Arca",
- "closePrice": "$7.62",
- "closePriceValue": 7.62,
+ "closePrice": "$7.21",
+ "closePriceValue": 7.21,
  "premiumDiscount": {
   "display": "0.00%",
   "value": 0
@@ -361,9 +361,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 06 2026",
-   "ytd": -18.69,
-   "ytdText": "-18.69%",
+   "asOfDate": "Nov 13 2026",
+   "ytd": -23.06,
+   "ytdText": "-23.06%",
    "yr1": -14.53,
    "yr3": 4.41,
    "yr5": -5.88,
@@ -381,7 +381,7 @@
   }
  },
  "metrics": {
-  "ytd": -18.69,
+  "ytd": -23.06,
   "tr1y": -14.53,
   "tr3y": 13.84,
   "tr5y": -26.14,
@@ -396,10 +396,10 @@
   "distributionYieldText": "18.84%",
   "yield12M": 12.69,
   "yield12MText": "12.69%",
-  "secYield": 17.25,
-  "secYieldText": "17.25%",
+  "secYield": 18.82,
+  "secYieldText": "18.82%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-06",
+  "ytdAsOf": "2026-11-13",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -407,11 +407,11 @@
  "providerCategory": "Equity Income",
  "terGross": "0.43%",
  "terGrossValue": 0.43,
- "netAssetsAsOf": "Nov 06 2026",
+ "netAssetsAsOf": "Nov 13 2026",
  "holdings": {
-  "totalRows": 28,
+  "totalRows": 27,
   "pageSize": 250,
-  "asOfDate": "Nov 05 2026",
+  "asOfDate": "Nov 12 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -419,9 +419,9 @@
   ]
  },
  "history": {
-  "totalRows": 4194,
+  "totalRows": 4201,
   "pageSize": 1000,
-  "asOfDate": "Nov 06 2026",
+  "asOfDate": "Nov 13 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/mortgage-reit-income-mort/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -432,10 +432,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 314630000,
- "secYield": 17.25,
- "secYieldValue": 17.25,
- "secYieldText": "17.25%",
+ "totalNetAssets": 296970000,
+ "secYield": 18.82,
+ "secYieldValue": 18.82,
+ "secYieldText": "18.82%",
  "indexTicker": "MVMORTTG",
  "indexName": "US Mortgage REITs Index",
  "categoryPath": "Income > Equity Income",
@@ -474,23 +474,23 @@
   "grossValue": 0.43
  },
  "marketPrice": {
-  "display": "$7.62",
-  "value": 7.62,
-  "asOfDate": "Nov 06 2026"
+  "display": "$7.21",
+  "value": 7.21,
+  "asOfDate": "Nov 13 2026"
  },
  "yields": {
   "dividendYield": 18.84,
   "dividendYieldText": "18.84%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 16.1,
-  "indicatedYieldText": "16.10%",
+  "indicatedYield": 17.02,
+  "indicatedYieldText": "17.02%",
   "distributionYield": 18.84,
   "distributionYieldText": "18.84%",
   "yield12M": 12.69,
   "yield12MText": "12.69%",
   "distributionRate": null,
-  "secYield": 17.25,
-  "secYieldText": "17.25%",
+  "secYield": 18.82,
+  "secYieldText": "18.82%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

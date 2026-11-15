@@ -2,7 +2,7 @@
  "ticker": "TRUM",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 123,
+ "totalRows": 130,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,76 @@
  ],
  "rows": [
   {
+   "Date": "Nov 13 2026",
+   "NAV": "25.7619",
+   "Close": "25.76",
+   "Volume": "14",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "257,619.17",
+   "Index Level": "2,681.17"
+  },
+  {
+   "Date": "Nov 12 2026",
+   "NAV": "25.7987",
+   "Close": "25.81",
+   "Volume": "15",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "257,987.43",
+   "Index Level": "2,685.84"
+  },
+  {
+   "Date": "Nov 11 2026",
+   "NAV": "26.1881",
+   "Close": "26.19",
+   "Volume": "12",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "261,880.91",
+   "Index Level": "2,729.13"
+  },
+  {
+   "Date": "Nov 10 2026",
+   "NAV": "26.0710",
+   "Close": "26.08",
+   "Volume": "211",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "260,709.96",
+   "Index Level": "2,715.17"
+  },
+  {
+   "Date": "Nov 09 2026",
+   "NAV": "26.2081",
+   "Close": "26.22",
+   "Volume": "141",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "262,081.37",
+   "Index Level": "2,733.06"
+  },
+  {
+   "Date": "Nov 08 2026",
+   "NAV": "25.6567",
+   "Close": "25.68",
+   "Volume": "",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "256,566.87",
+   "Index Level": "2,664.41"
+  },
+  {
+   "Date": "Nov 07 2026",
+   "NAV": "25.6567",
+   "Close": "25.68",
+   "Volume": "",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "256,566.87",
+   "Index Level": "2,664.41"
+  },
+  {
    "Date": "Nov 06 2026",
    "NAV": "25.6567",
    "Close": "25.68",
    "Volume": "75",
    "Premium/Discount": "0.02",
    "Total Net Assets": "256,566.87",
-   "Index Level": "n.a."
+   "Index Level": "2,664.41"
   },
   {
    "Date": "Nov 05 2026",

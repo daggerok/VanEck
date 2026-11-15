@@ -2,7 +2,7 @@
  "ticker": "XMPT",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3888,
+ "totalRows": 3893,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jan 06 2023",
+   "NAV": "21.7067",
+   "Close": "21.74",
+   "Volume": "196,186",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "171,482,981.96",
+   "Index Level": "2,405.66"
+  },
+  {
+   "Date": "Jan 05 2023",
+   "NAV": "21.4897",
+   "Close": "21.54",
+   "Volume": "163,952",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "167,619,724.75",
+   "Index Level": "2,381.64"
+  },
+  {
+   "Date": "Jan 04 2023",
+   "NAV": "21.7210",
+   "Close": "21.78",
+   "Volume": "94,866",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "168,880,366.58",
+   "Index Level": "2,407.18"
+  },
+  {
+   "Date": "Jan 03 2023",
+   "NAV": "21.6638",
+   "Close": "21.70",
+   "Volume": "13,650",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "168,435,997.54",
+   "Index Level": "2,400.84"
+  },
+  {
+   "Date": "Dec 30 2022",
+   "NAV": "21.4733",
+   "Close": "21.48",
+   "Volume": "147,356",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "165,881,087.37",
+   "Index Level": "2,379.58"
+  },
   {
    "Date": "Dec 29 2022",
    "NAV": "21.3058",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "122,827,177.72",
    "Index Level": "2,289.82"
-  },
-  {
-   "Date": "Jan 17 2019",
-   "NAV": "24.8464",
-   "Close": "24.86",
-   "Volume": "19,615",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "122,989,925.11",
-   "Index Level": "2,292.83"
-  },
-  {
-   "Date": "Jan 16 2019",
-   "NAV": "24.8410",
-   "Close": "24.87",
-   "Volume": "27,548",
-   "Premium/Discount": "0.03",
-   "Total Net Assets": "122,962,747.78",
-   "Index Level": "2,292.30"
-  },
-  {
-   "Date": "Jan 15 2019",
-   "NAV": "24.8715",
-   "Close": "24.91",
-   "Volume": "2,270",
-   "Premium/Discount": "0.04",
-   "Total Net Assets": "123,113,937.03",
-   "Index Level": "2,295.10"
-  },
-  {
-   "Date": "Jan 14 2019",
-   "NAV": "24.9099",
-   "Close": "24.93",
-   "Volume": "10,207",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "123,304,137.54",
-   "Index Level": "2,298.62"
-  },
-  {
-   "Date": "Jan 11 2019",
-   "NAV": "24.9311",
-   "Close": "24.90",
-   "Volume": "9,237",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "123,408,804.00",
-   "Index Level": "2,300.49"
   }
  ]
 }
