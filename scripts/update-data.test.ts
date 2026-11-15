@@ -582,7 +582,11 @@ const swingFirstBar = Date.UTC(2025, 0, 2) / 1000;
 const swingLastBar = swingFirstBar + 299 * 86_400;
 // one 0.25 distribution on the last bar of the mock (the dividends block reads it from this same request); listing on the first bar
 const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
-const pageFor = (ticker: string): string => (ticker === "VEEM" ? VEEM_PAGE : GDX_PAGE.replace("GDX VanEck Gold Miners ETF", `${ticker} VanEck ETF`));
+// the pipeline's VEEM is days old on any run date: launched 9 days before the clock, stats as of the clock
+const usDay = (ms: number): string => new Date(ms).toISOString().slice(0, 10).replace(/^(\d{4})-(\d{2})-(\d{2})$/, "$2/$3/$1");
+const longDay = (ms: number): string => new Date(ms).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+const youngVeemPage = (): string => VEEM_PAGE.replace("09/09/2026", usDay(Date.now() - 9 * 86_400_000)).replace(/September 18, 2026/g, longDay(Date.now()));
+const pageFor = (ticker: string): string => (ticker === "VEEM" ? youngVeemPage() : GDX_PAGE.replace("GDX VanEck Gold Miners ETF", `${ticker} VanEck ETF`));
 
 function sandbox() {
   const dir = mkdtempSync(path.join(tmpdir(), "vaneck-test-"));
@@ -709,7 +713,7 @@ describe("pipeline", () => {
     expect(await box.run({ TICKERS: "VEEM" })).toBeNull();
     const metrics = box.row("VEEM").metrics;
     for (const key of ["ytd", "tr1y", "tr3y", "tr5y", "tr10y", "cagr3y", "cagr5y", "cagr10y"]) expect(metrics[key]).toBeNull();
-    // launched 09/09/2026: -1.48 is cumulative over 9 days (was published as siAnn)
+    // launched 9 days ago: -1.48 is cumulative over 9 days (was published as siAnn)
     expect([metrics.siAnn, box.json("funds/VEEM/meta.json").returns.monthEnd.sinceInception]).toEqual([null, null]);
   });
 
