@@ -578,7 +578,10 @@ const chartPayload = JSON.stringify({ chart: { result: [{
 }] } });
 // the swing block's daily chart (period1=0): 300 closes rising 0.1 a day from 2025-01-02
 const SWING_CHART_URL = /query1\.finance\.yahoo\.com\/v8\/finance\/chart\/[^?]+\?period1=0&period2=\d+&interval=1d&includePrePost=false/;
-const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d" }, timestamp: Array.from({ length: 300 }, (_, i) => Date.UTC(2025, 0, 2) / 1000 + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] } }] } });
+const swingFirstBar = Date.UTC(2025, 0, 2) / 1000;
+const swingLastBar = swingFirstBar + 299 * 86_400;
+// one 0.25 distribution on the last bar of the mock (the dividends block reads it from this same request); listing on the first bar
+const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
 const pageFor = (ticker: string): string => (ticker === "VEEM" ? VEEM_PAGE : GDX_PAGE.replace("GDX VanEck Gold Miners ETF", `${ticker} VanEck ETF`));
 
 function sandbox() {
@@ -673,7 +676,12 @@ describe("pipeline", () => {
     for (const fund of funds) expect(Object.keys(fund.metrics)).toEqual(expect.arrayContaining(RANGE_KEYS));
     // the swing keys from the Yahoo daily closes (period1=0) of the funds the run updated (swing block); catalog-only rows stay null
     const SWING_KEYS = ["pctFrom52wHigh", "athPrice", "athDate", "athBasis", "pctFromAth", "volatility1y", "sigmaFromMean60d", "high60d", "low60d"];
-    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-11, -2)).toEqual(SWING_KEYS);
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-17, -8)).toEqual(SWING_KEYS);
+    // the dividend keys after the swing keys; the same Yahoo request feeds them (dividends block, tap mode), no extra request
+    const DIVIDEND_KEYS = ["dividendRate", "dividendGrowth", "dividendGrowth3y", "dividendGrowth5y", "dividendStreak", "dividendCut10y"];
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-8, -2)).toEqual(DIVIDEND_KEYS);
+    const gdxDividends = box.row("GDX").metrics;
+    expect([gdxDividends.dividendRate, gdxDividends.dividendGrowth, gdxDividends.dividendGrowth3y, gdxDividends.dividendGrowth5y, gdxDividends.dividendStreak, gdxDividends.dividendCut10y]).toEqual([0.25, null, null, null, null, null]);
     expect(box.urls.filter((url) => SWING_CHART_URL.test(url)).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual(FUNDS);
     const gdx = box.row("GDX").metrics;
     expect([gdx.athBasis, gdx.athPrice, gdx.high60d, gdx.volatility1y, box.row("VEEM").metrics.athPrice]).toEqual(["daily closes since 2025-01-02", 69.9, 69.9, expect.any(Number), null]);
