@@ -581,7 +581,7 @@ const SWING_CHART_URL = /query1\.finance\.yahoo\.com\/v8\/finance\/chart\/[^?]+\
 const swingFirstBar = Date.UTC(2025, 0, 2) / 1000;
 const swingLastBar = swingFirstBar + 299 * 86_400;
 // one 0.25 distribution on the last bar of the mock (the dividends block reads it from this same request); listing on the first bar
-const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
+const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }], adjclose: [{ adjclose: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
 // the pipeline's VEEM is days old on any run date: launched 9 days before the clock, stats as of the clock
 const usDay = (ms: number): string => new Date(ms).toISOString().slice(0, 10).replace(/^(\d{4})-(\d{2})-(\d{2})$/, "$2/$3/$1");
 const longDay = (ms: number): string => new Date(ms).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
@@ -680,13 +680,22 @@ describe("pipeline", () => {
     for (const fund of funds) expect(Object.keys(fund.metrics)).toEqual(expect.arrayContaining(RANGE_KEYS));
     // the swing keys from the Yahoo daily closes (period1=0) of the funds the run updated (swing block); catalog-only rows stay null
     const SWING_KEYS = ["pctFrom52wHigh", "athPrice", "athDate", "athBasis", "pctFromAth", "volatility1y", "sigmaFromMean60d", "high60d", "low60d"];
-    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-17, -8)).toEqual(SWING_KEYS);
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-51, -42)).toEqual(SWING_KEYS);
     // the dividend keys after the swing keys; the same Yahoo request feeds them (dividends block, tap mode), no extra request
-    const DIVIDEND_KEYS = ["dividendRate", "dividendGrowth", "dividendGrowth3y", "dividendGrowth5y", "dividendStreak", "dividendCut10y"];
-    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-8, -2)).toEqual(DIVIDEND_KEYS);
+    const DIVIDEND_KEYS = ["dividendRate", "dividendGrowth", "dividendGrowth3y", "dividendGrowth5y", "dividendStreak", "dividendCut10y", "paymentsPerYear", "payFrequency"];
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-42, -34)).toEqual(DIVIDEND_KEYS);
+    // the benchmark keys against SPY and QQQ from the same chart (benchmark block, tap mode); the mock gives every ticker the same
+    // 300 bars, so each fund equals the benchmarks: under a year of calendar history (horizons null), beta and correlation 1
+    const BENCHMARK_KEYS = ["perf1y", "perf3y", "perf5y", "perf10y", "perfSi", "maxDrawdown1y", "maxDrawdown3y", "maxDrawdown5y", "maxDrawdown10y",
+      "vsSpy1y", "vsSpy3y", "vsSpy5y", "vsSpy10y", "beta1ySpy", "corr1ySpy", "upCapture3ySpy", "downCapture3ySpy", "relStrength3mSpy", "stressReturnSpy", "stressBasisSpy",
+      "vsQqq1y", "vsQqq3y", "vsQqq5y", "vsQqq10y", "beta1yQqq", "corr1yQqq", "upCapture3yQqq", "downCapture3yQqq", "relStrength3mQqq", "stressReturnQqq", "stressBasisQqq", "benchmarkAsOf"];
+    for (const fund of funds) expect(Object.keys(fund.metrics).slice(-34, -2)).toEqual(BENCHMARK_KEYS);
     const gdxDividends = box.row("GDX").metrics;
     expect([gdxDividends.dividendRate, gdxDividends.dividendGrowth, gdxDividends.dividendGrowth3y, gdxDividends.dividendGrowth5y, gdxDividends.dividendStreak, gdxDividends.dividendCut10y]).toEqual([0.25, null, null, null, null, null]);
-    expect(box.urls.filter((url) => SWING_CHART_URL.test(url)).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual(FUNDS);
+    expect(box.urls.filter((url) => SWING_CHART_URL.test(url)).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual([...FUNDS, "QQQ", "SPY"].sort());
+    const gdxBench = box.row("GDX").metrics;
+    expect([gdxBench.perf1y, gdxBench.vsSpy1y, gdxBench.beta1ySpy, gdxBench.corr1ySpy, gdxBench.relStrength3mQqq, gdxBench.stressReturnSpy]).toEqual([null, null, 1, 1, 0, null]);
+    expect(typeof gdxBench.benchmarkAsOf).toBe("string");
     const gdx = box.row("GDX").metrics;
     expect([gdx.athBasis, gdx.athPrice, gdx.high60d, gdx.volatility1y, box.row("VEEM").metrics.athPrice]).toEqual(["daily closes since 2025-01-02", 69.9, 69.9, expect.any(Number), null]);
     expect(box.row("GDX")).toMatchObject({ dataFile: "./funds/GDX/meta.json", holdings: 4, history: 2 });
