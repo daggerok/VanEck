@@ -2,7 +2,7 @@
  "ticker": "GDX",
  "page": 6,
  "pageSize": 1000,
- "totalRows": 7487,
+ "totalRows": 7492,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 11 2013",
+   "NAV": "36.9592",
+   "Close": "36.96",
+   "Volume": "11,375,585",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "7,336,488,394.14",
+   "Index Level": "1,109.88"
+  },
+  {
+   "Date": "Mar 10 2013",
+   "NAV": "37.0629",
+   "Close": "37.11",
+   "Volume": "",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "7,327,427,896.98",
+   "Index Level": "1,112.95"
+  },
+  {
+   "Date": "Mar 09 2013",
+   "NAV": "37.0629",
+   "Close": "37.11",
+   "Volume": "",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "7,327,427,896.98",
+   "Index Level": "1,112.95"
+  },
+  {
+   "Date": "Mar 08 2013",
+   "NAV": "37.0629",
+   "Close": "37.11",
+   "Volume": "23,003,393",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "7,327,427,896.98",
+   "Index Level": "1,112.95"
+  },
+  {
+   "Date": "Mar 07 2013",
+   "NAV": "36.9526",
+   "Close": "36.91",
+   "Volume": "22,040,798",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "7,233,561,732.92",
+   "Index Level": "1,109.62"
+  },
   {
    "Date": "Mar 06 2013",
    "NAV": "37.4143",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "7,354,029,486.03",
    "Index Level": "1,495.25"
-  },
-  {
-   "Date": "Jun 15 2010",
-   "NAV": "51.1669",
-   "Close": "51.17",
-   "Volume": "6,474,045",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "7,306,766,727.41",
-   "Index Level": "1,481.44"
-  },
-  {
-   "Date": "Jun 14 2010",
-   "NAV": "49.9007",
-   "Close": "49.90",
-   "Volume": "6,662,897",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "7,130,932,190.08",
-   "Index Level": "1,444.71"
-  },
-  {
-   "Date": "Jun 13 2010",
-   "NAV": "50.8108",
-   "Close": "50.79",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "7,260,994,053.55",
-   "Index Level": "1,471.03"
-  },
-  {
-   "Date": "Jun 12 2010",
-   "NAV": "50.8108",
-   "Close": "50.79",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "7,260,994,053.55",
-   "Index Level": "1,471.03"
-  },
-  {
-   "Date": "Jun 11 2010",
-   "NAV": "50.8108",
-   "Close": "50.79",
-   "Volume": "4,276,255",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "7,260,994,053.55",
-   "Index Level": "1,471.03"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.47%",
  "terValue": 0.47,
  "nav": {
-  "display": "$60.05",
-  "value": 60.05,
-  "asOfDate": "Nov 13 2026"
+  "display": "$57.46",
+  "value": 57.46,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 60.05,
+ "navValue": 57.46,
  "aum": {
-  "display": "$100.58M",
-  "value": 100578641.82,
-  "asOfDate": "Nov 13 2026",
+  "display": "$99.12M",
+  "value": 99118839.41,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 100578641.82,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 99118839.41,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "Apr 05 2023",
  "exchange": "NASDAQ",
- "closePrice": "$60.18",
- "closePriceValue": 60.18,
+ "closePrice": "$57.52",
+ "closePriceValue": 57.52,
  "premiumDiscount": {
-  "display": "0.14%",
-  "value": 0.14
+  "display": "0.05%",
+  "value": 0.05
  },
- "premiumDiscountValue": 0.14,
+ "premiumDiscountValue": 0.05,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -61,9 +61,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 13 2026",
-   "ytd": 14.41,
-   "ytdText": "14.41%",
+   "asOfDate": "Nov 18 2026",
+   "ytd": 9.48,
+   "ytdText": "9.48%",
    "yr1": 18.04,
    "yr3": 25.74,
    "yr5": null,
@@ -81,7 +81,7 @@
   }
  },
  "metrics": {
-  "ytd": 14.41,
+  "ytd": 9.48,
   "tr1y": 18.04,
   "tr3y": 98.8,
   "tr5y": null,
@@ -99,7 +99,7 @@
   "secYield": 0.63,
   "secYieldText": "0.63%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-13",
+  "ytdAsOf": "2026-11-18",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -107,11 +107,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.47%",
  "terGrossValue": 0.47,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
   "totalRows": 70,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/robotics-etf-ibot/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -119,9 +119,9 @@
   ]
  },
  "history": {
-  "totalRows": 1273,
+  "totalRows": 1278,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/robotics-etf-ibot/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -129,7 +129,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 100580000,
+ "totalNetAssets": 99120000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -166,16 +166,16 @@
   "grossValue": 0.47
  },
  "marketPrice": {
-  "display": "$60.18",
-  "value": 60.18,
-  "asOfDate": "Nov 13 2026"
+  "display": "$57.52",
+  "value": 57.52,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": 0.32,
   "dividendYieldText": "0.32%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.33,
-  "indicatedYieldText": "0.33%",
+  "indicatedYield": 0.35,
+  "indicatedYieldText": "0.35%",
   "distributionYield": 0.32,
   "distributionYieldText": "0.32%",
   "yield12M": 0.48,

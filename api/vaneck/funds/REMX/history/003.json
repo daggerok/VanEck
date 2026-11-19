@@ -2,7 +2,7 @@
  "ticker": "REMX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4403,
+ "totalRows": 4408,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 21 2020",
+   "NAV": "32.9322",
+   "Close": "32.80",
+   "Volume": "14,235",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "132,551,720.12",
+   "Index Level": "236.93"
+  },
+  {
+   "Date": "May 20 2020",
+   "NAV": "33.0447",
+   "Close": "32.82",
+   "Volume": "37,606",
+   "Premium/Discount": "-0.22",
+   "Total Net Assets": "133,004,341.25",
+   "Index Level": "236.25"
+  },
+  {
+   "Date": "May 19 2020",
+   "NAV": "32.2395",
+   "Close": "32.00",
+   "Volume": "32,470",
+   "Premium/Discount": "-0.24",
+   "Total Net Assets": "129,763,398.13",
+   "Index Level": "232.52"
+  },
+  {
+   "Date": "May 18 2020",
+   "NAV": "32.5494",
+   "Close": "32.60",
+   "Volume": "21,178",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "131,010,882.40",
+   "Index Level": "231.24"
+  },
+  {
+   "Date": "May 15 2020",
+   "NAV": "31.1651",
+   "Close": "30.99",
+   "Volume": "26,486",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "125,438,977.21",
+   "Index Level": "222.95"
+  },
   {
    "Date": "May 14 2020",
    "NAV": "31.1779",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.82",
    "Total Net Assets": "34,902,905.68",
    "Index Level": "301.26"
-  },
-  {
-   "Date": "Jun 01 2016",
-   "NAV": "48.9347",
-   "Close": "49.77",
-   "Volume": "65,735",
-   "Premium/Discount": "0.84",
-   "Total Net Assets": "34,661,493.19",
-   "Index Level": "300.17"
-  },
-  {
-   "Date": "May 31 2016",
-   "NAV": "47.9343",
-   "Close": "48.87",
-   "Volume": "13,398",
-   "Premium/Discount": "0.94",
-   "Total Net Assets": "33,952,865.56",
-   "Index Level": "294.16"
-  },
-  {
-   "Date": "May 27 2016",
-   "NAV": "46.7140",
-   "Close": "47.69",
-   "Volume": "9,426",
-   "Premium/Discount": "0.97",
-   "Total Net Assets": "33,088,475.54",
-   "Index Level": "286.24"
-  },
-  {
-   "Date": "May 26 2016",
-   "NAV": "45.9608",
-   "Close": "46.80",
-   "Volume": "6,212",
-   "Premium/Discount": "0.84",
-   "Total Net Assets": "32,555,013.86",
-   "Index Level": "281.91"
-  },
-  {
-   "Date": "May 25 2016",
-   "NAV": "44.8132",
-   "Close": "45.72",
-   "Volume": "7,129",
-   "Premium/Discount": "0.91",
-   "Total Net Assets": "31,742,137.55",
-   "Index Level": "275.50"
   }
  ]
 }

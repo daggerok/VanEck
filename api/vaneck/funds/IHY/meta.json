@@ -9,28 +9,28 @@
  "ter": "0.40%",
  "terValue": 0.4,
  "nav": {
-  "display": "$20.58",
-  "value": 20.58,
-  "asOfDate": "Nov 13 2026"
+  "display": "$20.43",
+  "value": 20.43,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 20.58,
+ "navValue": 20.43,
  "aum": {
-  "display": "$39.10M",
-  "value": 39098763.43,
-  "asOfDate": "Nov 13 2026",
+  "display": "$38.81M",
+  "value": 38811450.79,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 39098763.43,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 38811450.79,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "Apr 02 2012",
  "exchange": "NYSE Arca",
- "closePrice": "$20.60",
- "closePriceValue": 20.6,
+ "closePrice": "$20.40",
+ "closePriceValue": 20.4,
  "premiumDiscount": {
-  "display": "0.02%",
-  "value": 0.02
+  "display": "-0.03%",
+  "value": -0.03
  },
- "premiumDiscountValue": 0.02,
+ "premiumDiscountValue": -0.03,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -916,9 +916,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 13 2026",
-   "ytd": -1.64,
-   "ytdText": "-1.64%",
+   "asOfDate": "Nov 18 2026",
+   "ytd": -2.36,
+   "ytdText": "-2.36%",
    "yr1": -0.04,
    "yr3": 8.15,
    "yr5": 1.97,
@@ -936,7 +936,7 @@
   }
  },
  "metrics": {
-  "ytd": -1.64,
+  "ytd": -2.36,
   "tr1y": -0.04,
   "tr3y": 26.49,
   "tr5y": 10.25,
@@ -951,10 +951,10 @@
   "distributionYieldText": "5.57%",
   "yield12M": 5.7,
   "yield12MText": "5.70%",
-  "secYield": 6.78,
-  "secYieldText": "6.78%",
+  "secYield": 6.82,
+  "secYieldText": "6.82%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-13",
+  "ytdAsOf": "2026-11-18",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -962,22 +962,23 @@
  "providerCategory": "International Bond",
  "terGross": "0.40%",
  "terGrossValue": 0.4,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
-  "totalRows": 499,
+  "totalRows": 501,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/holdings/)",
-  "pageCount": 2,
+  "pageCount": 3,
   "pages": [
    "holdings/001.json",
-   "holdings/002.json"
+   "holdings/002.json",
+   "holdings/003.json"
   ]
  },
  "history": {
-  "totalRows": 4043,
+  "totalRows": 4048,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/international-high-yield-bond-etf-ihy/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -988,10 +989,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 39100000,
- "secYield": 6.78,
- "secYieldValue": 6.78,
- "secYieldText": "6.78%",
+ "totalNetAssets": 38810000,
+ "secYield": 6.82,
+ "secYieldValue": 6.82,
+ "secYieldText": "6.82%",
  "indexTicker": "HXUS",
  "indexName": "ICE BofA Global ex-US Issuers High Yield Constrained Index",
  "categoryPath": "Income > International Bond",
@@ -1030,23 +1031,23 @@
   "grossValue": 0.4
  },
  "marketPrice": {
-  "display": "$20.60",
-  "value": 20.6,
-  "asOfDate": "Nov 13 2026"
+  "display": "$20.40",
+  "value": 20.4,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": 5.57,
   "dividendYieldText": "5.57%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.26,
-  "indicatedYieldText": "6.26%",
+  "indicatedYield": 6.31,
+  "indicatedYieldText": "6.31%",
   "distributionYield": 5.57,
   "distributionYieldText": "5.57%",
   "yield12M": 5.7,
   "yield12MText": "5.70%",
   "distributionRate": null,
-  "secYield": 6.78,
-  "secYieldText": "6.78%",
+  "secYield": 6.82,
+  "secYieldText": "6.82%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

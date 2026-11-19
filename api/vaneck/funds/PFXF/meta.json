@@ -9,28 +9,28 @@
  "ter": "0.40%",
  "terValue": 0.4,
  "nav": {
-  "display": "$16.30",
-  "value": 16.3,
-  "asOfDate": "Nov 13 2026"
+  "display": "$15.92",
+  "value": 15.92,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 16.3,
+ "navValue": 15.92,
  "aum": {
-  "display": "$2.09B",
-  "value": 2092512785.45,
-  "asOfDate": "Nov 13 2026",
+  "display": "$2.02B",
+  "value": 2015787295.67,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 2092512785.45,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 2015787295.67,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "Jul 16 2012",
  "exchange": "NYSE Arca",
- "closePrice": "$16.27",
- "closePriceValue": 16.27,
+ "closePrice": "$15.88",
+ "closePriceValue": 15.88,
  "premiumDiscount": {
-  "display": "-0.03%",
-  "value": -0.03
+  "display": "-0.04%",
+  "value": -0.04
  },
- "premiumDiscountValue": -0.03,
+ "premiumDiscountValue": -0.04,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -901,9 +901,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 13 2026",
-   "ytd": -3.34,
-   "ytdText": "-3.34%",
+   "asOfDate": "Nov 18 2026",
+   "ytd": -5.6,
+   "ytdText": "-5.60%",
    "yr1": 0.65,
    "yr3": 9.12,
    "yr5": 1.54,
@@ -921,7 +921,7 @@
   }
  },
  "metrics": {
-  "ytd": -3.34,
+  "ytd": -5.6,
   "tr1y": 0.65,
   "tr3y": 29.94,
   "tr5y": 7.96,
@@ -936,10 +936,10 @@
   "distributionYieldText": "4.16%",
   "yield12M": 6.26,
   "yield12MText": "6.26%",
-  "secYield": 6.61,
-  "secYieldText": "6.61%",
+  "secYield": 6.78,
+  "secYieldText": "6.78%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-13",
+  "ytdAsOf": "2026-11-18",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -947,11 +947,11 @@
  "providerCategory": "Equity Income",
  "terGross": "0.40%",
  "terGrossValue": 0.4,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
   "totalRows": 119,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -959,9 +959,9 @@
   ]
  },
  "history": {
-  "totalRows": 3971,
+  "totalRows": 3976,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/preferred-securities-ex-financials-etf-pfxf/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -971,10 +971,10 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 2090000000,
- "secYield": 6.61,
- "secYieldValue": 6.61,
- "secYieldText": "6.61%",
+ "totalNetAssets": 2020000000,
+ "secYield": 6.78,
+ "secYieldValue": 6.78,
+ "secYieldText": "6.78%",
  "indexTicker": "PFAN4PM",
  "indexName": "ICE Exchange-Listed Fixed & Adjustable Rate Non-Financial Preferred Securities Index",
  "categoryPath": "Income > Equity Income",
@@ -1013,23 +1013,23 @@
   "grossValue": 0.4
  },
  "marketPrice": {
-  "display": "$16.27",
-  "value": 16.27,
-  "asOfDate": "Nov 13 2026"
+  "display": "$15.88",
+  "value": 15.88,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": 4.16,
   "dividendYieldText": "4.16%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.94,
-  "indicatedYieldText": "6.94%",
+  "indicatedYield": 7.11,
+  "indicatedYieldText": "7.11%",
   "distributionYield": 4.16,
   "distributionYieldText": "4.16%",
   "yield12M": 6.26,
   "yield12MText": "6.26%",
   "distributionRate": null,
-  "secYield": 6.61,
-  "secYieldText": "6.61%",
+  "secYield": 6.78,
+  "secYieldText": "6.78%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

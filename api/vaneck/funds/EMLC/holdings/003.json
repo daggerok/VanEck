@@ -2,7 +2,7 @@
  "ticker": "EMLC",
  "page": 3,
  "pageSize": 250,
- "totalRows": 524,
+ "totalRows": 522,
  "headers": [
   "Name",
   "Maturity",
@@ -17,37 +17,13 @@
  ],
  "rows": [
   {
-   "Name": "India Government Bond",
-   "Maturity": "Jan 23 2054",
-   "Identifier": "BBG01L0KDGD3",
-   "Coupon": "7.370",
-   "Asset Category": "Bond",
-   "Par Value": "39,470,000",
-   "Market Value": "$415,263.57",
-   "Weight": "0.01%",
-   "Country": "India",
-   "Currency": "INR"
-  },
-  {
-   "Name": "China Government Bond",
-   "Maturity": "Nov 22 2028",
-   "Identifier": "BBG00MJZX4M4",
-   "Coupon": "3.250",
-   "Asset Category": "Bond",
-   "Par Value": "2,020,000",
-   "Market Value": "$321,458.97",
-   "Weight": "0.01%",
-   "Country": "China",
-   "Currency": "CNY"
-  },
-  {
    "Name": "European Investment Bank",
    "Maturity": "Jul 07 2027",
    "Identifier": "BBG00GBC6KR5",
    "Coupon": "6.500",
    "Asset Category": "Bond",
    "Par Value": "5,130,000",
-   "Market Value": "$282,755.75",
+   "Market Value": "$284,630.52",
    "Weight": "0.01%",
    "Country": "Luxembourg",
    "Currency": "MXN"
@@ -59,7 +35,7 @@
    "Coupon": "13.500",
    "Asset Category": "Bond",
    "Par Value": "500,000",
-   "Market Value": "$34,252.18",
+   "Market Value": "$33,859.32",
    "Weight": "0.00%",
    "Country": "South Africa",
    "Currency": "ZAR"
@@ -70,11 +46,11 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "14,233,710",
-   "Market Value": "$645,959.17",
-   "Weight": "0.01%",
-   "Country": "Czech Republic",
-   "Currency": "CZK"
+   "Par Value": "3,396,727",
+   "Market Value": "$3,396,726.66",
+   "Weight": "0.07%",
+   "Country": "United States",
+   "Currency": "USD"
   },
   {
    "Name": "",
@@ -82,8 +58,44 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "31,309,756",
-   "Market Value": "$332,931.98",
+   "Par Value": "11,095,057,397",
+   "Market Value": "$608,114.96",
+   "Weight": "0.01%",
+   "Country": "Indonesia",
+   "Currency": "IDR"
+  },
+  {
+   "Name": "",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "Cash Bal",
+   "Par Value": "1,923,424",
+   "Market Value": "$469,872.72",
+   "Weight": "0.01%",
+   "Country": "Malaysia",
+   "Currency": "MYR"
+  },
+  {
+   "Name": "",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "Cash Bal",
+   "Par Value": "2,595,216",
+   "Market Value": "$389,353.52",
+   "Weight": "0.01%",
+   "Country": "China",
+   "Currency": "CNY"
+  },
+  {
+   "Name": "",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "Cash Bal",
+   "Par Value": "25,796,037",
+   "Market Value": "$275,970.92",
    "Weight": "0.01%",
    "Country": "India",
    "Currency": "INR"
@@ -94,9 +106,9 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "15,377,067",
-   "Market Value": "$305,965.63",
-   "Weight": "0.01%",
+   "Par Value": "7,913,499",
+   "Market Value": "$156,959.38",
+   "Weight": "0.00%",
    "Country": "Turkey",
    "Currency": "TRY"
   },
@@ -106,11 +118,11 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "457,923",
-   "Market Value": "$68,665.40",
+   "Par Value": "1,037,793",
+   "Market Value": "$46,864.26",
    "Weight": "0.00%",
-   "Country": "China",
-   "Currency": "CNY"
+   "Country": "Czech Republic",
+   "Currency": "CZK"
   },
   {
    "Name": "",
@@ -119,7 +131,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "264,129",
-   "Market Value": "$46,907.46",
+   "Market Value": "$45,575.21",
    "Weight": "0.00%",
    "Country": "Brazil",
    "Currency": "BRL"
@@ -130,35 +142,11 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "4,550,254",
-   "Market Value": "$42,819.88",
+   "Par Value": "141,012",
+   "Market Value": "$35,251.77",
    "Weight": "0.00%",
-   "Country": "Serbia",
-   "Currency": "RSD"
-  },
-  {
-   "Name": "",
-   "Maturity": "",
-   "Identifier": "",
-   "Coupon": "",
-   "Asset Category": "Cash Bal",
-   "Par Value": "186,957",
-   "Market Value": "$45,839.56",
-   "Weight": "0.00%",
-   "Country": "Malaysia",
-   "Currency": "MYR"
-  },
-  {
-   "Name": "",
-   "Maturity": "",
-   "Identifier": "",
-   "Coupon": "",
-   "Asset Category": "Cash Bal",
-   "Par Value": "785,314,960",
-   "Market Value": "$43,078.17",
-   "Weight": "0.00%",
-   "Country": "Indonesia",
-   "Currency": "IDR"
+   "Country": "Poland",
+   "Currency": "PLN"
   },
   {
    "Name": "",
@@ -167,7 +155,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "613,739",
-   "Market Value": "$18,171.41",
+   "Market Value": "$18,156.62",
    "Weight": "0.00%",
    "Country": "Thailand",
    "Currency": "THB"
@@ -178,20 +166,8 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "99,332",
-   "Market Value": "$20,556.40",
-   "Weight": "0.00%",
-   "Country": "Romania",
-   "Currency": "RON"
-  },
-  {
-   "Name": "",
-   "Maturity": "",
-   "Identifier": "",
-   "Coupon": "",
-   "Asset Category": "Cash Bal",
-   "Par Value": "337,098",
-   "Market Value": "$18,117.68",
+   "Par Value": "372,834",
+   "Market Value": "$20,154.57",
    "Weight": "0.00%",
    "Country": "Mexico",
    "Currency": "MXN"
@@ -203,7 +179,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "64,356,109",
-   "Market Value": "$19,397.81",
+   "Market Value": "$19,368.33",
    "Weight": "0.00%",
    "Country": "Colombia",
    "Currency": "COP"
@@ -215,7 +191,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "266,579",
-   "Market Value": "$15,897.92",
+   "Market Value": "$15,720.40",
    "Weight": "0.00%",
    "Country": "South Africa",
    "Currency": "ZAR"
@@ -227,7 +203,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "46,672",
-   "Market Value": "$13,718.64",
+   "Market Value": "$13,685.26",
    "Weight": "0.00%",
    "Country": "Peru",
    "Currency": "PEN"
@@ -238,8 +214,8 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "2,704,434",
-   "Market Value": "$8,187.29",
+   "Par Value": "2,735,407",
+   "Market Value": "$8,209.58",
    "Weight": "0.00%",
    "Country": "Hungary",
    "Currency": "HUF"
@@ -251,7 +227,7 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "8,314,629",
-   "Market Value": "$8,351.63",
+   "Market Value": "$8,346.43",
    "Weight": "0.00%",
    "Country": "Chile",
    "Currency": "CLP"
@@ -262,11 +238,23 @@
    "Identifier": "",
    "Coupon": "",
    "Asset Category": "Cash Bal",
-   "Par Value": "7,124",
-   "Market Value": "$1,790.86",
+   "Par Value": "605,489",
+   "Market Value": "$5,664.60",
    "Weight": "0.00%",
-   "Country": "Poland",
-   "Currency": "PLN"
+   "Country": "Serbia",
+   "Currency": "RSD"
+  },
+  {
+   "Name": "",
+   "Maturity": "",
+   "Identifier": "",
+   "Coupon": "",
+   "Asset Category": "Cash Bal",
+   "Par Value": "29,483",
+   "Market Value": "$6,066.30",
+   "Weight": "0.00%",
+   "Country": "Romania",
+   "Currency": "RON"
   },
   {
    "Name": "",
@@ -275,22 +263,10 @@
    "Coupon": "",
    "Asset Category": "Cash Bal",
    "Par Value": "1,484",
-   "Market Value": "$1,642.37",
+   "Market Value": "$1,633.09",
    "Weight": "0.00%",
    "Country": "Europe",
    "Currency": "EUR"
-  },
-  {
-   "Name": "",
-   "Maturity": "",
-   "Identifier": "",
-   "Coupon": "",
-   "Asset Category": "Cash Bal",
-   "Par Value": "-389,393",
-   "Market Value": "$-389,392.56",
-   "Weight": "-0.01%",
-   "Country": "United States",
-   "Currency": "USD"
   },
   {
    "Name": "Other/Cash",
@@ -299,8 +275,8 @@
    "Coupon": "",
    "Asset Category": "Cash",
    "Par Value": "",
-   "Market Value": "$-7,338,573.24",
-   "Weight": "-0.15%",
+   "Market Value": "$-19,244,589.93",
+   "Weight": "-0.40%",
    "Country": "",
    "Currency": "USD"
   }

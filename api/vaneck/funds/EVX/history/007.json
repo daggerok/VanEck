@@ -2,7 +2,7 @@
  "ticker": "EVX",
  "page": 7,
  "pageSize": 1000,
- "totalRows": 7340,
+ "totalRows": 7345,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 15 2010",
+   "NAV": "8.8595",
+   "Close": "8.85",
+   "Volume": "3,725",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "26,578,603.54",
+   "Index Level": "325.57"
+  },
+  {
+   "Date": "Jun 14 2010",
+   "NAV": "8.6677",
+   "Close": "8.68",
+   "Volume": "12,725",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "26,003,003.48",
+   "Index Level": "318.51"
+  },
+  {
+   "Date": "Jun 13 2010",
+   "NAV": "8.6011",
+   "Close": "8.51",
+   "Volume": "",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "25,803,389.74",
+   "Index Level": "316.05"
+  },
+  {
+   "Date": "Jun 12 2010",
+   "NAV": "8.6011",
+   "Close": "8.51",
+   "Volume": "",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "25,803,389.74",
+   "Index Level": "316.05"
+  },
+  {
+   "Date": "Jun 11 2010",
+   "NAV": "8.6011",
+   "Close": "8.51",
+   "Volume": "10,595",
+   "Premium/Discount": "-0.09",
+   "Total Net Assets": "25,803,389.74",
+   "Index Level": "316.05"
+  },
   {
    "Date": "Jun 10 2010",
    "NAV": "8.5224",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "-0.02",
    "Total Net Assets": "31,879,564.50",
    "Index Level": "373.46"
-  },
-  {
-   "Date": "Sep 19 2007",
-   "NAV": "10.6809",
-   "Close": "10.70",
-   "Volume": "20,000",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "32,042,772.43",
-   "Index Level": "376.10"
-  },
-  {
-   "Date": "Sep 18 2007",
-   "NAV": "10.5161",
-   "Close": "10.52",
-   "Volume": "42,000",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "31,548,275.43",
-   "Index Level": "370.30"
-  },
-  {
-   "Date": "Sep 17 2007",
-   "NAV": "10.2081",
-   "Close": "10.21",
-   "Volume": "6,000",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "30,624,365.45",
-   "Index Level": "359.48"
-  },
-  {
-   "Date": "Sep 16 2007",
-   "NAV": "10.2450",
-   "Close": "10.25",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "30,734,878.81",
-   "Index Level": "360.76"
-  },
-  {
-   "Date": "Sep 15 2007",
-   "NAV": "10.2450",
-   "Close": "10.25",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "30,734,878.81",
-   "Index Level": "360.76"
   }
  ]
 }

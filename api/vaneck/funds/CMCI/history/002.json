@@ -2,7 +2,7 @@
  "ticker": "CMCI",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 1179,
+ "totalRows": 1184,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 22 2024",
+   "NAV": "24.1370",
+   "Close": "24.16",
+   "Volume": "3",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "2,413,698.48",
+   "Index Level": "1,500.40"
+  },
+  {
+   "Date": "Feb 21 2024",
+   "NAV": "24.1111",
+   "Close": "24.12",
+   "Volume": "1",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "2,411,111.09",
+   "Index Level": "1,498.74"
+  },
+  {
+   "Date": "Feb 20 2024",
+   "NAV": "23.9719",
+   "Close": "24.03",
+   "Volume": "434",
+   "Premium/Discount": "0.05",
+   "Total Net Assets": "2,397,191.84",
+   "Index Level": "1,490.06"
+  },
+  {
+   "Date": "Feb 19 2024",
+   "NAV": "24.0894",
+   "Close": "24.05",
+   "Volume": "12",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "2,408,937.80",
+   "Index Level": "1,496.47"
+  },
+  {
+   "Date": "Feb 18 2024",
+   "NAV": "24.0894",
+   "Close": "24.05",
+   "Volume": "",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "2,408,937.80",
+   "Index Level": "1,496.47"
+  },
   {
    "Date": "Feb 17 2024",
    "NAV": "24.0894",

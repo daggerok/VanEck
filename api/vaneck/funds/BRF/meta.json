@@ -9,28 +9,28 @@
  "ter": "0.60%",
  "terValue": 0.6,
  "nav": {
-  "display": "$13.32",
-  "value": 13.32,
-  "asOfDate": "Nov 13 2026"
+  "display": "$12.55",
+  "value": 12.55,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 13.32,
+ "navValue": 12.55,
  "aum": {
-  "display": "$18.64M",
-  "value": 18642971.05,
-  "asOfDate": "Nov 13 2026",
+  "display": "$17.57M",
+  "value": 17568248.79,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 18642971.05,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 17568248.79,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "May 12 2009",
  "exchange": "NYSE Arca",
- "closePrice": "$13.43",
- "closePriceValue": 13.43,
+ "closePrice": "$12.56",
+ "closePriceValue": 12.56,
  "premiumDiscount": {
-  "display": "0.11%",
-  "value": 0.11
+  "display": "0.01%",
+  "value": 0.01
  },
- "premiumDiscountValue": 0.11,
+ "premiumDiscountValue": 0.01,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -141,9 +141,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 13 2026",
-   "ytd": -17.53,
-   "ytdText": "-17.53%",
+   "asOfDate": "Nov 18 2026",
+   "ytd": -22.28,
+   "ytdText": "-22.28%",
    "yr1": -16.04,
    "yr3": 0.39,
    "yr5": -0.37,
@@ -161,7 +161,7 @@
   }
  },
  "metrics": {
-  "ytd": -17.53,
+  "ytd": -22.28,
   "tr1y": -16.04,
   "tr3y": 1.17,
   "tr5y": -1.83,
@@ -179,7 +179,7 @@
   "secYield": 5.23,
   "secYieldText": "5.23%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-13",
+  "ytdAsOf": "2026-11-18",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -187,11 +187,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "1.17%",
  "terGrossValue": 1.17,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
   "totalRows": 94,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -199,9 +199,9 @@
   ]
  },
  "history": {
-  "totalRows": 4772,
+  "totalRows": 4777,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/brazil-small-cap-etf-brf/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -212,7 +212,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 18640000,
+ "totalNetAssets": 17570000,
  "indexTicker": "MVBRFTR",
  "indexName": "Brazil Small-Cap Index",
  "categoryPath": "Equity > Country/Regional",
@@ -251,16 +251,16 @@
   "grossValue": 1.17
  },
  "marketPrice": {
-  "display": "$13.43",
-  "value": 13.43,
-  "asOfDate": "Nov 13 2026"
+  "display": "$12.56",
+  "value": 12.56,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": 5.45,
   "dividendYieldText": "5.45%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 6.67,
-  "indicatedYieldText": "6.67%",
+  "indicatedYield": 7.08,
+  "indicatedYieldText": "7.08%",
   "distributionYield": 5.45,
   "distributionYieldText": "5.45%",
   "yield12M": 5.51,

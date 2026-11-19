@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$22.06",
-  "value": 22.06,
-  "asOfDate": "Nov 13 2026"
+  "display": "$20.83",
+  "value": 20.83,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 22.06,
+ "navValue": 20.83,
  "aum": {
-  "display": "$3.31M",
-  "value": 3309063.73,
-  "asOfDate": "Nov 13 2026",
+  "display": "$3.12M",
+  "value": 3124967.9,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 3309063.73,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 3124967.9,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "Sep 09 2026",
  "exchange": "NASDAQ",
- "closePrice": "$21.94",
- "closePriceValue": 21.94,
+ "closePrice": "$20.69",
+ "closePriceValue": 20.69,
  "premiumDiscount": {
-  "display": "-0.12%",
-  "value": -0.12
+  "display": "-0.14%",
+  "value": -0.14
  },
- "premiumDiscountValue": -0.12,
+ "premiumDiscountValue": -0.14,
  "distributions": {
   "frequency": "Semiannually",
   "paymentsPerYear": 2,
@@ -89,11 +89,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.30%",
  "terGrossValue": 0.3,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
-  "totalRows": 104,
+  "totalRows": 105,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -101,16 +101,16 @@
   ]
  },
  "history": {
-  "totalRows": 66,
+  "totalRows": 71,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/msci-em-analyst-sentiment-etf-veem/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 3310000,
+ "totalNetAssets": 3120000,
  "indexTicker": "NU763973",
  "indexName": "MSCI Emerging Markets Analyst Sentiment Select Index",
  "categoryPath": "Equity > Country/Regional",
@@ -149,9 +149,9 @@
   "grossValue": 0.3
  },
  "marketPrice": {
-  "display": "$21.94",
-  "value": 21.94,
-  "asOfDate": "Nov 13 2026"
+  "display": "$20.69",
+  "value": 20.69,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": null,

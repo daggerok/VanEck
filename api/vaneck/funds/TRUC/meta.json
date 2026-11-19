@@ -9,28 +9,28 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$24.06",
-  "value": 24.06,
-  "asOfDate": "Nov 13 2026"
+  "display": "$23.25",
+  "value": 23.25,
+  "asOfDate": "Nov 18 2026"
  },
- "navValue": 24.06,
+ "navValue": 23.25,
  "aum": {
-  "display": "$88.53M",
-  "value": 88526796.36,
-  "asOfDate": "Nov 13 2026",
+  "display": "$86.47M",
+  "value": 86471894.16,
+  "asOfDate": "Nov 18 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 88526796.36,
- "asOfDate": "Nov 13 2026",
+ "aumValue": 86471894.16,
+ "asOfDate": "Nov 18 2026",
  "inceptionDate": "Feb 18 2026",
  "exchange": "NASDAQ",
- "closePrice": "$24.05",
- "closePriceValue": 24.05,
+ "closePrice": "$23.26",
+ "closePriceValue": 23.26,
  "premiumDiscount": {
-  "display": "0.00%",
-  "value": 0
+  "display": "0.02%",
+  "value": 0.02
  },
- "premiumDiscountValue": 0,
+ "premiumDiscountValue": 0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -100,11 +100,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Nov 13 2026",
+ "netAssetsAsOf": "Nov 18 2026",
  "holdings": {
   "totalRows": 8,
   "pageSize": 250,
-  "asOfDate": "Nov 12 2026",
+  "asOfDate": "Nov 17 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -112,16 +112,16 @@
   ]
  },
  "history": {
-  "totalRows": 269,
+  "totalRows": 274,
   "pageSize": 1000,
-  "asOfDate": "Nov 13 2026",
+  "asOfDate": "Nov 18 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/communication-services-trusector-etf-truc/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 88530000,
+ "totalNetAssets": 86470000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -158,16 +158,16 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$24.05",
-  "value": 24.05,
-  "asOfDate": "Nov 13 2026"
+  "display": "$23.26",
+  "value": 23.26,
+  "asOfDate": "Nov 18 2026"
  },
  "yields": {
   "dividendYield": 0.9,
   "dividendYieldText": "0.90%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.89,
-  "indicatedYieldText": "0.89%",
+  "indicatedYield": 0.93,
+  "indicatedYieldText": "0.93%",
   "distributionYield": 0.9,
   "distributionYieldText": "0.90%",
   "yield12M": null,
