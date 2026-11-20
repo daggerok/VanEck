@@ -2,7 +2,7 @@
  "ticker": "HYD",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4844,
+ "totalRows": 4845,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "48.6672",
+   "Close": "48.69",
+   "Volume": "1,745,520",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "4,710,812,240.56",
+   "Index Level": "206.77"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "48.6853",
    "Close": "48.81",
    "Volume": "1,572,414",
    "Premium/Discount": "0.12",
    "Total Net Assets": "4,651,702,303.60",
-   "Index Level": "n.a."
+   "Index Level": "206.84"
   },
   {
    "Date": "Nov 17 2026",
@@ -9000,15 +9009,6 @@
    "NAV": "51.6890",
    "Close": "51.94",
    "Volume": "",
-   "Premium/Discount": "0.25",
-   "Total Net Assets": "2,871,136,724.02",
-   "Index Level": "190.98"
-  },
-  {
-   "Date": "Feb 23 2024",
-   "NAV": "51.6890",
-   "Close": "51.94",
-   "Volume": "340,350",
    "Premium/Discount": "0.25",
    "Total Net Assets": "2,871,136,724.02",
    "Index Level": "190.98"

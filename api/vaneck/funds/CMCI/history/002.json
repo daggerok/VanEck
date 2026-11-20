@@ -2,7 +2,7 @@
  "ticker": "CMCI",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 1184,
+ "totalRows": 1185,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 23 2024",
+   "NAV": "23.9468",
+   "Close": "23.94",
+   "Volume": "131",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "2,394,677.83",
+   "Index Level": "1,488.22"
+  },
   {
    "Date": "Feb 22 2024",
    "NAV": "24.1370",

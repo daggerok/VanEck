@@ -2,7 +2,7 @@
  "ticker": "MOAT",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4033,
+ "totalRows": 4034,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2016",
+   "NAV": "33.3645",
+   "Close": "33.38",
+   "Volume": "73,858",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "683,973,093.27",
+   "Index Level": "6,617.76"
+  },
   {
    "Date": "Jun 01 2016",
    "NAV": "33.2043",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "23,885,766.14",
    "Index Level": "3,539.30"
-  },
-  {
-   "Date": "Jun 11 2012",
-   "NAV": "18.9137",
-   "Close": "18.93",
-   "Volume": "12,022",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "23,642,082.89",
-   "Index Level": "3,503.16"
   }
  ]
 }

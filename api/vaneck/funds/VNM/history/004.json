@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4714,
+ "totalRows": 4715,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2016",
+   "NAV": "14.4496",
+   "Close": "14.49",
+   "Volume": "159,422",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "338,842,843.61",
+   "Index Level": "1,297.06"
+  },
   {
    "Date": "Jun 01 2016",
    "NAV": "14.3557",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.22",
    "Total Net Assets": "310,498,594.53",
    "Index Level": "1,402.77"
-  },
-  {
-   "Date": "Jun 11 2012",
-   "NAV": "18.4723",
-   "Close": "18.31",
-   "Volume": "144,279",
-   "Premium/Discount": "-0.16",
-   "Total Net Assets": "309,410,598.78",
-   "Index Level": "1,408.11"
   }
  ]
 }

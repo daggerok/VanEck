@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 1,
  "pageSize": 250,
- "totalRows": 42,
+ "totalRows": 43,
  "headers": [
   "Name",
   "Ticker",
@@ -15,34 +15,24 @@
  ],
  "rows": [
   {
-   "Name": "Shopify Inc",
-   "Ticker": "SHOP",
-   "Identifier": "BBG008HBD923",
-   "Shares Held": "10,106",
-   "Asset Category": "Stock",
-   "Market Value": "$1,434,041.40",
-   "Notional Value": "",
-   "Weight": "9.51%"
-  },
-  {
-   "Name": "Netease Inc",
-   "Ticker": "NTES",
-   "Identifier": "BBG000BX72V8",
-   "Shares Held": "11,058",
-   "Asset Category": "Stock",
-   "Market Value": "$1,322,757.96",
-   "Notional Value": "",
-   "Weight": "8.77%"
-  },
-  {
    "Name": "Roblox Corp",
    "Ticker": "RBLX",
    "Identifier": "BBG001R1GCT0",
    "Shares Held": "28,921",
    "Asset Category": "Stock",
-   "Market Value": "$1,272,524.00",
+   "Market Value": "$1,340,488.35",
    "Notional Value": "",
-   "Weight": "8.44%"
+   "Weight": "9.20%"
+  },
+  {
+   "Name": "Shopify Inc",
+   "Ticker": "SHOP",
+   "Identifier": "BBG008HBD923",
+   "Shares Held": "10,106",
+   "Asset Category": "Stock",
+   "Market Value": "$1,333,688.82",
+   "Notional Value": "",
+   "Weight": "9.15%"
   },
   {
    "Name": "Take-Two Interactive Software Inc",
@@ -50,9 +40,9 @@
    "Identifier": "BBG000BS1YV5",
    "Shares Held": "6,098",
    "Asset Category": "Stock",
-   "Market Value": "$1,243,565.14",
+   "Market Value": "$1,272,347.70",
    "Notional Value": "",
-   "Weight": "8.25%"
+   "Weight": "8.73%"
   },
   {
    "Name": "Uber Technologies Inc",
@@ -60,9 +50,19 @@
    "Identifier": "BBG002B04MT8",
    "Shares Held": "18,028",
    "Asset Category": "Stock",
-   "Market Value": "$1,240,506.68",
+   "Market Value": "$1,182,636.80",
    "Notional Value": "",
-   "Weight": "8.23%"
+   "Weight": "8.11%"
+  },
+  {
+   "Name": "Netease Inc",
+   "Ticker": "NTES",
+   "Identifier": "BBG000BX72V8",
+   "Shares Held": "11,058",
+   "Asset Category": "Stock",
+   "Market Value": "$1,160,426.52",
+   "Notional Value": "",
+   "Weight": "7.96%"
   },
   {
    "Name": "Charles Schwab Corp/The",
@@ -70,9 +70,9 @@
    "Identifier": "BBG000BSLZY7",
    "Shares Held": "11,888",
    "Asset Category": "Stock",
-   "Market Value": "$1,091,793.92",
+   "Market Value": "$1,095,122.56",
    "Notional Value": "",
-   "Weight": "7.24%"
+   "Weight": "7.51%"
   },
   {
    "Name": "Cme Group Inc",
@@ -80,9 +80,9 @@
    "Identifier": "BBG000BHLYP4",
    "Shares Held": "2,567",
    "Asset Category": "Stock",
-   "Market Value": "$799,774.52",
+   "Market Value": "$786,297.77",
    "Notional Value": "",
-   "Weight": "5.30%"
+   "Weight": "5.39%"
   },
   {
    "Name": "Airbnb Inc",
@@ -90,9 +90,9 @@
    "Identifier": "BBG001Y2XS07",
    "Shares Held": "4,249",
    "Asset Category": "Stock",
-   "Market Value": "$768,814.06",
+   "Market Value": "$734,184.71",
    "Notional Value": "",
-   "Weight": "5.10%"
+   "Weight": "5.04%"
   },
   {
    "Name": "Ebay Inc",
@@ -100,9 +100,9 @@
    "Identifier": "BBG000C43RR5",
    "Shares Held": "5,881",
    "Asset Category": "Stock",
-   "Market Value": "$697,427.79",
+   "Market Value": "$689,370.82",
    "Notional Value": "",
-   "Weight": "4.62%"
+   "Weight": "4.73%"
   },
   {
    "Name": "Doordash Inc",
@@ -110,9 +110,9 @@
    "Identifier": "BBG005D7QCJ3",
    "Shares Held": "3,655",
    "Asset Category": "Stock",
-   "Market Value": "$602,746.05",
+   "Market Value": "$574,310.15",
    "Notional Value": "",
-   "Weight": "4.00%"
+   "Weight": "3.94%"
   },
   {
    "Name": "Draftkings Inc",
@@ -120,9 +120,9 @@
    "Identifier": "BBG0134WCM78",
    "Shares Held": "28,026",
    "Asset Category": "Stock",
-   "Market Value": "$504,468.00",
+   "Market Value": "$471,397.32",
    "Notional Value": "",
-   "Weight": "3.34%"
+   "Weight": "3.23%"
   },
   {
    "Name": "Robinhood Markets Inc",
@@ -130,19 +130,9 @@
    "Identifier": "BBG008NMBXN8",
    "Shares Held": "5,574",
    "Asset Category": "Stock",
-   "Market Value": "$385,665.06",
+   "Market Value": "$382,655.10",
    "Notional Value": "",
-   "Weight": "2.56%"
-  },
-  {
-   "Name": "Flutter Entertainment Plc",
-   "Ticker": "FLUT",
-   "Identifier": "BBG000P2GPN9",
-   "Shares Held": "4,964",
-   "Asset Category": "Stock",
-   "Market Value": "$375,129.48",
-   "Notional Value": "",
-   "Weight": "2.49%"
+   "Weight": "2.63%"
   },
   {
    "Name": "Paypal Holdings Inc",
@@ -150,9 +140,19 @@
    "Identifier": "BBG0077VNXV6",
    "Shares Held": "6,183",
    "Asset Category": "Stock",
-   "Market Value": "$359,294.13",
+   "Market Value": "$348,535.71",
    "Notional Value": "",
-   "Weight": "2.38%"
+   "Weight": "2.39%"
+  },
+  {
+   "Name": "Flutter Entertainment Plc",
+   "Ticker": "FLUT",
+   "Identifier": "BBG000P2GPN9",
+   "Shares Held": "4,964",
+   "Asset Category": "Stock",
+   "Market Value": "$339,636.88",
+   "Notional Value": "",
+   "Weight": "2.33%"
   },
   {
    "Name": "Nu Holdings Ltd/Cayman Islands",
@@ -160,19 +160,9 @@
    "Identifier": "BBG0136WM1M4",
    "Shares Held": "27,185",
    "Asset Category": "Stock",
-   "Market Value": "$335,191.05",
+   "Market Value": "$321,326.70",
    "Notional Value": "",
-   "Weight": "2.22%"
-  },
-  {
-   "Name": "Block Inc",
-   "Ticker": "XYZ",
-   "Identifier": "BBG0018SLC07",
-   "Shares Held": "3,432",
-   "Asset Category": "Stock",
-   "Market Value": "$272,191.92",
-   "Notional Value": "",
-   "Weight": "1.80%"
+   "Weight": "2.20%"
   },
   {
    "Name": "Cboe Global Markets Inc",
@@ -180,9 +170,19 @@
    "Identifier": "BBG000QH56C1",
    "Shares Held": "718",
    "Asset Category": "Stock",
-   "Market Value": "$265,710.26",
+   "Market Value": "$256,821.42",
    "Notional Value": "",
    "Weight": "1.76%"
+  },
+  {
+   "Name": "Block Inc",
+   "Ticker": "XYZ",
+   "Identifier": "BBG0018SLC07",
+   "Shares Held": "3,432",
+   "Asset Category": "Stock",
+   "Market Value": "$254,757.36",
+   "Notional Value": "",
+   "Weight": "1.75%"
   },
   {
    "Name": "Interactive Brokers Group Inc",
@@ -190,9 +190,9 @@
    "Identifier": "BBG000LV0836",
    "Shares Held": "3,274",
    "Asset Category": "Stock",
-   "Market Value": "$250,330.04",
+   "Market Value": "$247,678.10",
    "Notional Value": "",
-   "Weight": "1.66%"
+   "Weight": "1.70%"
   },
   {
    "Name": "Reddit Inc",
@@ -200,9 +200,9 @@
    "Identifier": "BBG005K1D4S0",
    "Shares Held": "2,553",
    "Asset Category": "Stock",
-   "Market Value": "$241,207.44",
+   "Market Value": "$229,463.64",
    "Notional Value": "",
-   "Weight": "1.60%"
+   "Weight": "1.57%"
   },
   {
    "Name": "Coinbase Global Inc",
@@ -210,9 +210,9 @@
    "Identifier": "BBG00ZGF7771",
    "Shares Held": "1,590",
    "Asset Category": "Stock",
-   "Market Value": "$182,881.80",
+   "Market Value": "$173,103.30",
    "Notional Value": "",
-   "Weight": "1.21%"
+   "Weight": "1.19%"
   },
   {
    "Name": "Grab Holdings Ltd",
@@ -220,9 +220,9 @@
    "Identifier": "BBG011768M53",
    "Shares Held": "51,702",
    "Asset Category": "Stock",
-   "Market Value": "$164,412.36",
+   "Market Value": "$151,486.86",
    "Notional Value": "",
-   "Weight": "1.09%"
+   "Weight": "1.04%"
   },
   {
    "Name": "Super Group Sghc Ltd",
@@ -230,7 +230,7 @@
    "Identifier": "BBG014V541D3",
    "Shares Held": "13,767",
    "Asset Category": "Stock",
-   "Market Value": "$150,886.32",
+   "Market Value": "$145,241.85",
    "Notional Value": "",
    "Weight": "1.00%"
   },
@@ -240,9 +240,9 @@
    "Identifier": "BBG00YB1ZD58",
    "Shares Held": "9,790",
    "Asset Category": "Stock",
-   "Market Value": "$139,801.20",
+   "Market Value": "$132,458.70",
    "Notional Value": "",
-   "Weight": "0.93%"
+   "Weight": "0.91%"
   },
   {
    "Name": "Equifax Inc",
@@ -250,9 +250,9 @@
    "Identifier": "BBG000BHPL78",
    "Shares Held": "715",
    "Asset Category": "Stock",
-   "Market Value": "$128,914.50",
+   "Market Value": "$126,204.65",
    "Notional Value": "",
-   "Weight": "0.85%"
+   "Weight": "0.87%"
   },
   {
    "Name": "Maplebear Inc",
@@ -260,9 +260,9 @@
    "Identifier": "BBG00KG5VJF4",
    "Shares Held": "1,951",
    "Asset Category": "Stock",
-   "Market Value": "$114,172.52",
+   "Market Value": "$112,845.84",
    "Notional Value": "",
-   "Weight": "0.76%"
+   "Weight": "0.77%"
   },
   {
    "Name": "Pinterest Inc",
@@ -270,9 +270,9 @@
    "Identifier": "BBG002583CV8",
    "Shares Held": "5,895",
    "Asset Category": "Stock",
-   "Market Value": "$106,522.65",
+   "Market Value": "$99,566.55",
    "Notional Value": "",
-   "Weight": "0.71%"
+   "Weight": "0.68%"
   },
   {
    "Name": "Fair Isaac Corp",
@@ -280,9 +280,9 @@
    "Identifier": "BBG000DW76Y6",
    "Shares Held": "127",
    "Asset Category": "Stock",
-   "Market Value": "$85,918.04",
+   "Market Value": "$86,060.28",
    "Notional Value": "",
-   "Weight": "0.57%"
+   "Weight": "0.59%"
   },
   {
    "Name": "Affirm Holdings Inc",
@@ -290,9 +290,9 @@
    "Identifier": "BBG00Y7BP8Y1",
    "Shares Held": "1,334",
    "Asset Category": "Stock",
-   "Market Value": "$79,292.96",
+   "Market Value": "$75,917.94",
    "Notional Value": "",
-   "Weight": "0.53%"
+   "Weight": "0.52%"
   },
   {
    "Name": "Rush Street Interactive Inc",
@@ -300,9 +300,9 @@
    "Identifier": "BBG00RMKRQM0",
    "Shares Held": "5,744",
    "Asset Category": "Stock",
-   "Market Value": "$66,458.08",
+   "Market Value": "$65,883.68",
    "Notional Value": "",
-   "Weight": "0.44%"
+   "Weight": "0.45%"
   },
   {
    "Name": "Transunion",
@@ -310,7 +310,7 @@
    "Identifier": "BBG002Q7J5Z1",
    "Shares Held": "844",
    "Asset Category": "Stock",
-   "Market Value": "$64,422.52",
+   "Market Value": "$62,852.68",
    "Notional Value": "",
    "Weight": "0.43%"
   },
@@ -320,9 +320,9 @@
    "Identifier": "BBG000BC2R71",
    "Shares Held": "1,689",
    "Asset Category": "Stock",
-   "Market Value": "$63,269.94",
+   "Market Value": "$62,408.55",
    "Notional Value": "",
-   "Weight": "0.42%"
+   "Weight": "0.43%"
   },
   {
    "Name": "Chime Financial Inc",
@@ -330,9 +330,9 @@
    "Identifier": "BBG00QK4M9M3",
    "Shares Held": "1,713",
    "Asset Category": "Stock",
-   "Market Value": "$56,477.61",
+   "Market Value": "$52,846.05",
    "Notional Value": "",
-   "Weight": "0.37%"
+   "Weight": "0.36%"
   },
   {
    "Name": "Futu Holdings Ltd",
@@ -340,29 +340,9 @@
    "Identifier": "BBG00MYXW4R8",
    "Shares Held": "540",
    "Asset Category": "Stock",
-   "Market Value": "$46,920.60",
+   "Market Value": "$47,093.40",
    "Notional Value": "",
-   "Weight": "0.31%"
-  },
-  {
-   "Name": "Marex Group Ltd",
-   "Ticker": "MRX",
-   "Identifier": "BBG023DGDZ18",
-   "Shares Held": "510",
-   "Asset Category": "Stock",
-   "Market Value": "$33,864.00",
-   "Notional Value": "",
-   "Weight": "0.22%"
-  },
-  {
-   "Name": "Klarna Group Plc",
-   "Ticker": "KLAR",
-   "Identifier": "BBG01MG54LV6",
-   "Shares Held": "2,363",
-   "Asset Category": "Stock",
-   "Market Value": "$33,720.01",
-   "Notional Value": "",
-   "Weight": "0.22%"
+   "Weight": "0.32%"
   },
   {
    "Name": "Axos Financial Inc",
@@ -370,7 +350,7 @@
    "Identifier": "BBG000QPHD08",
    "Shares Held": "375",
    "Asset Category": "Stock",
-   "Market Value": "$33,056.25",
+   "Market Value": "$32,396.25",
    "Notional Value": "",
    "Weight": "0.22%"
   },
@@ -380,9 +360,29 @@
    "Identifier": "BBG004RKDWL9",
    "Shares Held": "874",
    "Asset Category": "Stock",
-   "Market Value": "$32,600.20",
+   "Market Value": "$32,040.84",
    "Notional Value": "",
    "Weight": "0.22%"
+  },
+  {
+   "Name": "Marex Group Ltd",
+   "Ticker": "MRX",
+   "Identifier": "BBG023DGDZ18",
+   "Shares Held": "510",
+   "Asset Category": "Stock",
+   "Market Value": "$31,324.20",
+   "Notional Value": "",
+   "Weight": "0.21%"
+  },
+  {
+   "Name": "Klarna Group Plc",
+   "Ticker": "KLAR",
+   "Identifier": "BBG01MG54LV6",
+   "Shares Held": "2,363",
+   "Asset Category": "Stock",
+   "Market Value": "$29,939.21",
+   "Notional Value": "",
+   "Weight": "0.21%"
   },
   {
    "Name": "Remitly Global Inc",
@@ -390,7 +390,7 @@
    "Identifier": "BBG012C7JST2",
    "Shares Held": "1,343",
    "Asset Category": "Stock",
-   "Market Value": "$27,571.79",
+   "Market Value": "$26,940.58",
    "Notional Value": "",
    "Weight": "0.18%"
   },
@@ -398,11 +398,11 @@
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "21,443",
+   "Shares Held": "22,152",
    "Asset Category": "Cash Bal",
-   "Market Value": "$21,443.44",
+   "Market Value": "$22,152.32",
    "Notional Value": "",
-   "Weight": "0.14%"
+   "Weight": "0.15%"
   },
   {
    "Name": "",
@@ -425,14 +425,24 @@
    "Weight": "0.00%"
   },
   {
+   "Name": "",
+   "Ticker": "-JPY CASH-",
+   "Identifier": "",
+   "Shares Held": "-112,299",
+   "Asset Category": "Cash Bal",
+   "Market Value": "$-702.70",
+   "Notional Value": "",
+   "Weight": "-0.00%"
+  },
+  {
    "Name": "Other/Cash",
    "Ticker": "",
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-13,796.26",
+   "Market Value": "$-14,210.78",
    "Notional Value": "",
-   "Weight": "-0.09%"
+   "Weight": "-0.10%"
   }
  ]
 }

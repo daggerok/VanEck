@@ -2,7 +2,7 @@
  "ticker": "MORT",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4206,
+ "totalRows": 4207,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 23 2024",
+   "NAV": "11.0394",
+   "Close": "11.05",
+   "Volume": "110,801",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "254,457,334.00",
+   "Index Level": "1,601.38"
+  },
   {
    "Date": "Feb 22 2024",
    "NAV": "11.0103",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "133,727,217.51",
    "Index Level": "1,170.44"
-  },
-  {
-   "Date": "May 22 2020",
-   "NAV": "11.6815",
-   "Close": "11.68",
-   "Volume": "77,877",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "129,080,376.37",
-   "Index Level": "1,129.63"
   }
  ]
 }

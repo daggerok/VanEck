@@ -9,28 +9,28 @@
  "ter": "0.70%",
  "terValue": 0.7,
  "nav": {
-  "display": "$37.06",
-  "value": 37.06,
-  "asOfDate": "Nov 18 2026"
+  "display": "$37.00",
+  "value": 37,
+  "asOfDate": "Nov 19 2026"
  },
- "navValue": 37.06,
+ "navValue": 37,
  "aum": {
-  "display": "$12.04M",
-  "value": 12043204.67,
-  "asOfDate": "Nov 18 2026",
+  "display": "$12.02M",
+  "value": 12023721.02,
+  "asOfDate": "Nov 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 12043204.67,
- "asOfDate": "Nov 18 2026",
+ "aumValue": 12023721.02,
+ "asOfDate": "Nov 19 2026",
  "inceptionDate": "Feb 15 2022",
  "exchange": "NYSE Arca",
- "closePrice": "$36.89",
- "closePriceValue": 36.89,
+ "closePrice": "$36.88",
+ "closePriceValue": 36.88,
  "premiumDiscount": {
-  "display": "-0.16%",
-  "value": -0.16
+  "display": "-0.12%",
+  "value": -0.12
  },
- "premiumDiscountValue": -0.16,
+ "premiumDiscountValue": -0.12,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -61,9 +61,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 18 2026",
-   "ytd": -9.53,
-   "ytdText": "-9.53%",
+   "asOfDate": "Nov 19 2026",
+   "ytd": -9.68,
+   "ytdText": "-9.68%",
    "yr1": -15.94,
    "yr3": 3.31,
    "yr5": null,
@@ -81,7 +81,7 @@
   }
  },
  "metrics": {
-  "ytd": -9.53,
+  "ytd": -9.68,
   "tr1y": -15.94,
   "tr3y": 10.27,
   "tr5y": null,
@@ -99,7 +99,7 @@
   "secYield": -0.27,
   "secYieldText": "-0.27%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-18",
+  "ytdAsOf": "2026-11-19",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -107,11 +107,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "0.70%",
  "terGrossValue": 0.7,
- "netAssetsAsOf": "Nov 18 2026",
+ "netAssetsAsOf": "Nov 19 2026",
  "holdings": {
   "totalRows": 36,
   "pageSize": 250,
-  "asOfDate": "Nov 17 2026",
+  "asOfDate": "Nov 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-india-etf-dgin/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -119,9 +119,9 @@
   ]
  },
  "history": {
-  "totalRows": 1563,
+  "totalRows": 1564,
   "pageSize": 1000,
-  "asOfDate": "Nov 18 2026",
+  "asOfDate": "Nov 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-india-etf-dgin/downloads/fundhistoprices/)",
   "pageCount": 2,
   "pages": [
@@ -129,7 +129,7 @@
    "history/002.json"
   ]
  },
- "totalNetAssets": 12040000,
+ "totalNetAssets": 12020000,
  "indexTicker": "MVDINDTR",
  "indexName": "Digital India Index",
  "categoryPath": "Equity > Country/Regional",
@@ -168,9 +168,9 @@
   "grossValue": 0.7
  },
  "marketPrice": {
-  "display": "$36.89",
-  "value": 36.89,
-  "asOfDate": "Nov 18 2026"
+  "display": "$36.88",
+  "value": 36.88,
+  "asOfDate": "Nov 19 2026"
  },
  "yields": {
   "dividendYield": 2.12,

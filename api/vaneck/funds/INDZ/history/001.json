@@ -2,7 +2,7 @@
  "ticker": "INDZ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 274,
+ "totalRows": 275,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "25.3601",
+   "Close": "25.51",
+   "Volume": "406",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "5,579,230.97",
+   "Index Level": "2,935.26"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "25.1937",
    "Close": "25.39",
    "Volume": "64",
    "Premium/Discount": "0.20",
    "Total Net Assets": "5,542,612.31",
-   "Index Level": "n.a."
+   "Index Level": "2,898.28"
   },
   {
    "Date": "Nov 17 2026",

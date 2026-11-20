@@ -2,7 +2,7 @@
  "ticker": "ANGL",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4043,
+ "totalRows": 4044,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 23 2024",
+   "NAV": "28.7682",
+   "Close": "28.80",
+   "Volume": "1,489,121",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "3,000,519,970.18",
+   "Index Level": "1,032.29"
+  },
   {
    "Date": "Feb 22 2024",
    "NAV": "28.7369",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.25",
    "Total Net Assets": "1,921,795,621.94",
    "Index Level": "814.94"
-  },
-  {
-   "Date": "May 22 2020",
-   "NAV": "27.3138",
-   "Close": "27.50",
-   "Volume": "832,008",
-   "Premium/Discount": "0.19",
-   "Total Net Assets": "1,895,574,661.08",
-   "Index Level": "805.98"
   }
  ]
 }

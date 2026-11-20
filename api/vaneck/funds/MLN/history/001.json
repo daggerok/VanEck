@@ -2,7 +2,7 @@
  "ticker": "MLN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 5119,
+ "totalRows": 5120,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "16.6225",
+   "Close": "16.59",
+   "Volume": "632,464",
+   "Premium/Discount": "-0.03",
+   "Total Net Assets": "748,012,240.54",
+   "Index Level": "179.58"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "16.6268",
    "Close": "16.63",
    "Volume": "603,620",
    "Premium/Discount": "0.00",
    "Total Net Assets": "748,205,286.66",
-   "Index Level": "n.a."
+   "Index Level": "179.64"
   },
   {
    "Date": "Nov 17 2026",
@@ -9000,15 +9009,6 @@
    "NAV": "18.0211",
    "Close": "18.03",
    "Volume": "",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "437,010,687.14",
-   "Index Level": "174.84"
-  },
-  {
-   "Date": "Feb 23 2024",
-   "NAV": "18.0211",
-   "Close": "18.03",
-   "Volume": "132,253",
    "Premium/Discount": "0.01",
    "Total Net Assets": "437,010,687.14",
    "Index Level": "174.84"

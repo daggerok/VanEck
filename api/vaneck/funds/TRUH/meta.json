@@ -9,28 +9,28 @@
  "ter": "0.10%",
  "terValue": 0.1,
  "nav": {
-  "display": "$31.58",
-  "value": 31.58,
-  "asOfDate": "Nov 18 2026"
+  "display": "$30.93",
+  "value": 30.93,
+  "asOfDate": "Nov 19 2026"
  },
- "navValue": 31.58,
+ "navValue": 30.93,
  "aum": {
-  "display": "$7.58M",
-  "value": 7580206.05,
-  "asOfDate": "Nov 18 2026",
+  "display": "$7.42M",
+  "value": 7423104.87,
+  "asOfDate": "Nov 19 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 7580206.05,
- "asOfDate": "Nov 18 2026",
+ "aumValue": 7423104.87,
+ "asOfDate": "Nov 19 2026",
  "inceptionDate": "Apr 01 2026",
  "exchange": "NASDAQ",
- "closePrice": "$31.60",
- "closePriceValue": 31.6,
+ "closePrice": "$30.96",
+ "closePriceValue": 30.96,
  "premiumDiscount": {
-  "display": "0.01%",
-  "value": 0.01
+  "display": "0.03%",
+  "value": 0.03
  },
- "premiumDiscountValue": 0.01,
+ "premiumDiscountValue": 0.03,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -100,11 +100,11 @@
  "providerCategory": "TruSectors",
  "terGross": "0.10%",
  "terGrossValue": 0.1,
- "netAssetsAsOf": "Nov 18 2026",
+ "netAssetsAsOf": "Nov 19 2026",
  "holdings": {
   "totalRows": 63,
   "pageSize": 250,
-  "asOfDate": "Nov 17 2026",
+  "asOfDate": "Nov 19 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -112,16 +112,16 @@
   ]
  },
  "history": {
-  "totalRows": 232,
+  "totalRows": 233,
   "pageSize": 1000,
-  "asOfDate": "Nov 18 2026",
+  "asOfDate": "Nov 19 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/healthcare-trusector-etf-truh/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 7580000,
+ "totalNetAssets": 7420000,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -158,16 +158,16 @@
   "grossValue": 0.1
  },
  "marketPrice": {
-  "display": "$31.60",
-  "value": 31.6,
-  "asOfDate": "Nov 18 2026"
+  "display": "$30.96",
+  "value": 30.96,
+  "asOfDate": "Nov 19 2026"
  },
  "yields": {
   "dividendYield": 1.15,
   "dividendYieldText": "1.15%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.65,
-  "indicatedYieldText": "1.65%",
+  "indicatedYield": 1.68,
+  "indicatedYieldText": "1.68%",
   "distributionYield": 1.15,
   "distributionYieldText": "1.15%",
   "yield12M": null,

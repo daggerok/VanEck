@@ -2,7 +2,7 @@
  "ticker": "ISRA",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3740,
+ "totalRows": 3741,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 22 2020",
+   "NAV": "32.9308",
+   "Close": "32.85",
+   "Volume": "2,820",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "55,982,411.14",
+   "Index Level": "423.43"
+  },
   {
    "Date": "May 21 2020",
    "NAV": "32.7697",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.14",
    "Total Net Assets": "41,052,711.43",
    "Index Level": "328.42"
-  },
-  {
-   "Date": "Jun 02 2016",
-   "NAV": "27.3999",
-   "Close": "27.35",
-   "Volume": "9,172",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "41,099,783.68",
-   "Index Level": "328.93"
   }
  ]
 }

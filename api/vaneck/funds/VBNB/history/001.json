@@ -2,7 +2,7 @@
  "ticker": "VBNB",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 196,
+ "totalRows": 197,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "22.5676",
+   "Close": "22.53",
+   "Volume": "617",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "76,729,877.20",
+   "Index Level": "581.09"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "22.4484",
    "Close": "22.42",
    "Volume": "2,633",
    "Premium/Discount": "-0.03",
    "Total Net Assets": "76,324,639.60",
-   "Index Level": "n.a."
+   "Index Level": "578.03"
   },
   {
    "Date": "Nov 17 2026",

@@ -2,7 +2,7 @@
  "ticker": "CNXT",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3469,
+ "totalRows": 3470,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 23 2024",
+   "NAV": "22.5980",
+   "Close": "22.49",
+   "Volume": "1,162",
+   "Premium/Discount": "-0.11",
+   "Total Net Assets": "14,688,709.09",
+   "Index Level": "1,797.03"
+  },
   {
    "Date": "Feb 22 2024",
    "NAV": "22.6583",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.13",
    "Total Net Assets": "28,961,985.77",
    "Index Level": "2,170.86"
-  },
-  {
-   "Date": "May 22 2020",
-   "NAV": "30.0762",
-   "Close": "30.26",
-   "Volume": "14,802",
-   "Premium/Discount": "0.19",
-   "Total Net Assets": "28,572,337.78",
-   "Index Level": "2,125.84"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "RSX",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5294,
+ "totalRows": 5295,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 11 2012",
+   "NAV": "24.8832",
+   "Close": "24.59",
+   "Volume": "5,613,044",
+   "Premium/Discount": "-0.29",
+   "Total Net Assets": "1,657,221,230.82",
+   "Index Level": "638.27"
+  },
   {
    "Date": "Jun 08 2012",
    "NAV": "25.0125",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.38",
    "Total Net Assets": "1,539,297,351.12",
    "Index Level": "1,305.26"
-  },
-  {
-   "Date": "Jun 23 2008",
-   "NAV": "54.7550",
-   "Close": "54.82",
-   "Volume": "487,840",
-   "Premium/Discount": "0.07",
-   "Total Net Assets": "1,574,205,467.19",
-   "Index Level": "1,336.96"
   }
  ]
 }

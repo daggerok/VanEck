@@ -2,7 +2,7 @@
  "ticker": "DURA",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2392,
+ "totalRows": 2393,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 23 2024",
+   "NAV": "31.1570",
+   "Close": "31.17",
+   "Volume": "806",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "62,314,009.38",
+   "Index Level": "4,271.78"
+  },
   {
    "Date": "Feb 22 2024",
    "NAV": "31.0514",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "37,243,798.79",
    "Index Level": "3,065.52"
-  },
-  {
-   "Date": "May 22 2020",
-   "NAV": "25.1091",
-   "Close": "25.13",
-   "Volume": "22,560",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "36,408,191.51",
-   "Index Level": "2,996.66"
   }
  ]
 }

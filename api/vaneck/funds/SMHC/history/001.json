@@ -2,7 +2,7 @@
  "ticker": "SMHC",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 149,
+ "totalRows": 150,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 19 2026",
+   "NAV": "31.6464",
+   "Close": "31.97",
+   "Volume": "6,718",
+   "Premium/Discount": "0.32",
+   "Total Net Assets": "11,076,249.35",
+   "Index Level": "1,587.45"
+  },
   {
    "Date": "Nov 18 2026",
    "NAV": "32.5341",

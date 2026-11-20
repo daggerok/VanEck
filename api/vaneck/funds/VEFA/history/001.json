@@ -2,7 +2,7 @@
  "ticker": "VEFA",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 232,
+ "totalRows": 233,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "76.4371",
+   "Close": "76.63",
+   "Volume": "49",
+   "Premium/Discount": "0.19",
+   "Total Net Assets": "3,821,853.52",
+   "Index Level": "3,785.59"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "77.5115",
    "Close": "77.86",
    "Volume": "105",
    "Premium/Discount": "0.34",
    "Total Net Assets": "3,875,576.79",
-   "Index Level": "n.a."
+   "Index Level": "3,808.76"
   },
   {
    "Date": "Nov 17 2026",

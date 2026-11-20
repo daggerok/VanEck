@@ -2,7 +2,7 @@
  "ticker": "ESPO",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 2402,
+ "totalRows": 2403,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "May 22 2020",
+   "NAV": "46.9350",
+   "Close": "47.01",
+   "Volume": "86,512",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "220,594,374.90",
+   "Index Level": "4,563.56"
+  },
   {
    "Date": "May 21 2020",
    "NAV": "46.7067",

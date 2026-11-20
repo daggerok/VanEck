@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4048,
+ "totalRows": 4049,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "20.4159",
+   "Close": "20.40",
+   "Volume": "9,806",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "38,790,143.59",
+   "Index Level": "558.65"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "20.4271",
    "Close": "20.40",
    "Volume": "2,677",
    "Premium/Discount": "-0.03",
    "Total Net Assets": "38,811,450.79",
-   "Index Level": "n.a."
+   "Index Level": "558.88"
   },
   {
    "Date": "Nov 17 2026",
@@ -9000,15 +9009,6 @@
    "NAV": "20.7518",
    "Close": "20.75",
    "Volume": "",
-   "Premium/Discount": "-0.01",
-   "Total Net Assets": "31,127,683.64",
-   "Index Level": "480.54"
-  },
-  {
-   "Date": "Feb 23 2024",
-   "NAV": "20.7518",
-   "Close": "20.75",
-   "Volume": "6,582",
    "Premium/Discount": "-0.01",
    "Total Net Assets": "31,127,683.64",
    "Index Level": "480.54"

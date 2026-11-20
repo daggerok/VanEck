@@ -2,7 +2,7 @@
  "ticker": "VEEM",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 71,
+ "totalRows": 72,
  "headers": [
   "Date",
   "NAV",
@@ -14,13 +14,22 @@
  ],
  "rows": [
   {
+   "Date": "Nov 19 2026",
+   "NAV": "20.3291",
+   "Close": "20.28",
+   "Volume": "11",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "3,049,365.23",
+   "Index Level": "4,382.64"
+  },
+  {
    "Date": "Nov 18 2026",
    "NAV": "20.8331",
    "Close": "20.69",
    "Volume": "10",
    "Premium/Discount": "-0.14",
    "Total Net Assets": "3,124,967.90",
-   "Index Level": "n.a."
+   "Index Level": "4,445.04"
   },
   {
    "Date": "Nov 17 2026",
