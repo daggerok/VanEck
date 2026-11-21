@@ -3002,6 +3002,21 @@ async function publishedHoldings(ticker: string): Promise<{ totalRows?: unknown;
   }
 }
 
+/** Days after inception during which a fund with no published history may lack a VanEck NAV history download. */
+export const NEW_FUND_HISTORY_DAYS = 60;
+/**
+ * A just-launched fund may have no NAV history download at VanEck yet (vaneck.com answers a missing download with its
+ * HTML page and HTTP 200, not a 404): the unreadable download is then not a failed source, the fund is published from
+ * its page and holdings and picks up the history once VanEck has it. Only while nothing is published: a broken download
+ * for a fund with published history stays an outage.
+ */
+export function tooNewForHistory(inception: unknown, today: unknown, publishedHistoryRows: number): boolean {
+  const start = calendarIso(inception), end = calendarIso(today);
+  if (publishedHistoryRows > 0 || !start || !end || !/^\d{4}-\d{2}-\d{2}$/.test(start) || !/^\d{4}-\d{2}-\d{2}$/.test(end)) return false;
+  const days = (Date.parse(`${end}T00:00:00Z`) - Date.parse(`${start}T00:00:00Z`)) / 86_400_000;
+  return days >= 0 && days <= NEW_FUND_HISTORY_DAYS;
+}
+
 export async function updateFund(
   seed: VanEckSeedFund,
   config: UpdaterConfig,
@@ -3113,7 +3128,11 @@ export async function updateFund(
       history = parsed;
     } catch (error) {
       outputNote(`[ ${'history'.padEnd(8)} ] ${ticker}: NAV history unavailable (${errorMessage(error)})`);
-      if (!isNotFound(error)) failedSources.push('NAV history');
+      if (!isNotFound(error)) {
+        if (tooNewForHistory(entry.inceptionDate, new Date().toISOString().slice(0, 10), await publishedRowCount(ticker, 'history'))) {
+          outputNote(`[ ${'history'.padEnd(8)} ] ${ticker}: launched ${entry.inceptionDate}, no NAV history at VanEck yet - published without it`);
+        } else failedSources.push('NAV history');
+      }
     }
   }
   // HISTORY_RANGE bounds only the Yahoo request: the VanEck NAV history download is always complete and a window never
