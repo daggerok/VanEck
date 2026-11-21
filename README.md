@@ -103,7 +103,7 @@ NAV, Total Net Assets, returns, SEC yield and distributions are VanEck's own pub
 | **`ytdAsOf`** | ISO date of the YTD figure, just before `returnsBasis`: the daily fund-page stamp, or the finder month-end (`returns.monthEnd.ytdAsOf`) for a YTD backfilled from the finder, which is used only within its own calendar year; `null` when YTD is `null` | YTD is dated separately because it moves daily while the tenors are month-end |
 | **CUSIP / ISIN** | published where the Fund Details panel server-renders it, otherwise `null` | VanEck's holdings sheet publishes a **FIGI** per holding; CUSIP/ISIN are fund-level only |
 
-- Swing metrics (shared `swing` block, the formulas of the Stocks feed) from the Yahoo Finance daily closes since listing (chart API, split-adjusted, not dividend-adjusted; the published NAV and market price history is not split-adjusted), with the last close as the price. Read for every fund the run updates (none after the 25-minute soft deadline); a failed chart, or one that starts more than 31 days after the published history, keeps the published values; `null` (never `0`) when the history is too short:
+- Swing metrics (shared `swing` block, the formulas of the Stocks feed) from the Yahoo Finance daily closes since listing (chart API, split-adjusted, not dividend-adjusted; the published NAV and market price history is not split-adjusted), with the last close as the price. Read for every fund the run updates (none after the 25-minute soft deadline) from the fund's own Yahoo chart request of the run when `HISTORY_RANGE` is `max` (one Yahoo request per fund), else from a separate full chart request; a failed chart, or one that starts more than 31 days after the published history, keeps the published values; `null` (never `0`) when the history is too short:
   - `pctFrom52wHigh` - last close against the highest close of the last 52 weeks, in percent
   - `athPrice`, `athDate`, `athBasis` - highest close of the whole history, its date and the history it covers (`daily closes since <first date>`)
   - `pctFromAth` - last close against `athPrice`, in percent
@@ -135,13 +135,13 @@ Every key of `scripts/update-data.config.json`; all values are strings. Keys mar
 | --- | --: | --- |
 | `MAX_FETCHES`* | `0` | Funds to process; `0` = full pass. A positive value resumes after the cursor in `api/vaneck/update-state.json` |
 | `REQUEST_SLEEP`* | `2` | Seconds between outgoing request starts |
-| `CONCURRENCY`* | `2` | Parallel fund workers; vaneck.com throttles with `403`, retried with backoff |
+| `CONCURRENCY`* | `4` | Parallel fund workers; vaneck.com throttles with `403`, retried with backoff (a full run at 4 saw none, 2026-11-20) |
 | `AUM`* | `:` | `min:max` AUM range; bounds accept K/M/B/T suffixes, or a preset: `nano`, `micro`, `small`, `mid`, `large` |
 | `TER`*, `DIVIDEND_YIELD`*, `SEC_YIELD`* | `:` | `min:max` percent ranges; the colon is required and `:` means no restriction |
 | `TICKERS`* | `""` | Space or comma separated ticker allowlist; ANDed with the other filters, never overriding them; a ticker that is neither in the fund list nor a published fund is an error before any request (nothing is written) |
 | `CATEGORY`* | `""` | Substring match on the vaneck.com asset class |
 | `HOLDINGS_PAGE_SIZE`*, `HISTORY_PAGE_SIZE`* | `250`, `1000` | Rows per generated JSON page (env alias `HISTORICAL_PAGE_SIZE`) |
-| `HISTORY_RANGE`* | `max` | Yahoo request window (distributions fallback, exchange name): `max` or `Ny` (for example `5y`); the VanEck NAV history is always published complete |
+| `HISTORY_RANGE`* | `max` | Yahoo request window (distributions fallback, exchange name): `max` or `Ny` (for example `5y`); with `max` the same request also feeds the swing, dividend and benchmark metrics, a window costs one more full chart request per fund; the VanEck NAV history is always published complete |
 | `MAX_RETRIES`* | `3` | Retries after the initial request for network errors, 45 s request timeouts (headers and body) and HTTP 408/425/429/403/5xx; integer >= 1 |
 | `SEC_UA`* | `daggerok ETF feed daggerok@gmail.com` | User-Agent declared to SEC EDGAR; the repository Actions variable `SEC_UA` overrides it |
 | `STORE_RAW_DOWNLOADS`* | `false` | Keep the official rendered holdings/NAV downloads under `api/vaneck/raw` |
