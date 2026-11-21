@@ -14,7 +14,7 @@ import {
   parseMaxRetries, parseNasdaqSymdir, parseRange, parseVanEckFundPage, parseVanEckHistory, parseVanEckHistoryXlsx,
   parseVanEckHoldings, parseVanEckHoldingsXlsx, parseVanEckPerformance, parseXlsxSheet, parseYahooExchangeName, paymentsPerYear,
   premiumDiscount, readConfig, resetPacingLanes, resolveControls, runtimeControls, saneYield, sanitizeTicker, seedCatalogEntry,
-  selectCandidates, setNetworkTimings, toIsoDate, vaneckEdgarFilingsUrl, vaneckFactSheetUrl, vaneckFundDocuments,
+  selectCandidates, setNetworkTimings, toIsoDate, tooNewForHistory, vaneckEdgarFilingsUrl, vaneckFactSheetUrl, vaneckFundDocuments,
   vaneckFundPageUrl, vaneckHistoryUrl, vaneckHoldingsUrl, vaneckLegacyHoldingsUrl, withReturnsMeta, withoutTooYoungTenors, yahooChartProvenanceUrl,
   yahooChartUrl,
 } from "./update-data";
@@ -598,6 +598,7 @@ function sandbox() {
   const urls: string[] = [];
   let down: string[] = [];
   let emptyHoldings: string[] = [];
+  let htmlHistory: string[] = [];
   let holdingsSheet = EQUITY_HOLDINGS_ROWS;
   let historySheet = HISTORY_ROWS;
   let stallHoldings = false;
@@ -616,6 +617,8 @@ function sandbox() {
         await new Promise((resolve) => realSetTimeout(resolve, 30));
         if (!slug[2]) return new Response(pages[ticker] ?? pageFor(ticker));
         if (slug[3] === "holdings" && emptyHoldings.includes(ticker)) return new Response(new Uint8Array(0));
+        // vaneck.com answers a missing download with its HTML page and HTTP 200, never a 404
+        if (slug[3] === "fundhistoprices" && htmlHistory.includes(ticker)) return new Response("<html><body>VanEck</body></html>");
         if (slug[3] === "holdings" && stallHoldings) {
           stallHoldings = false;
           const signal = init?.signal;
@@ -655,6 +658,7 @@ function sandbox() {
     api, urls, run, load, readFile, json, files, backdate, touched, row,
     setDown: (...parts: string[]) => { down = parts; },
     setEmptyHoldings: (...tickers: string[]) => { emptyHoldings = tickers; },
+    setHtmlHistory: (...tickers: string[]) => { htmlHistory = tickers; },
     setHoldingsSheet: (rows: string[][]) => { holdingsSheet = rows; },
     setHistorySheet: (rows: string[][]) => { historySheet = rows; },
     stallNextHoldings: () => { stallHoldings = true; },
@@ -1004,6 +1008,21 @@ describe("pipeline 4", () => {
     expect(await box.run({ TICKERS: "GDX" })).toBeNull();
     expect(box.row("NOPE")).toBeUndefined();
     expect(box.json("index.json").funds).toHaveLength(91);
+  });
+
+  test("a just-launched fund without a NAV history download is published, an older one still fails the source", async () => {
+    const box = sandbox();
+    // vaneck.com has no history download in a fund's first days and answers its HTML page instead (CGBI, CGMI in Capital-Group, 2026-11-20)
+    box.setHtmlHistory("VEEM", "GDX");
+    const lines: string[] = [];
+    expect(String(await box.run({ TICKERS: "VEEM GDX" }, { lines }))).not.toContain("every selected fund failed");
+    expect(lines.find((line) => line.includes(" GDX "))).toMatch(/ failed .*NAV history/);
+    expect(box.row("VEEM")).toMatchObject({ dataFile: "./funds/VEEM/meta.json", history: 0, holdings: 4 });
+    expect(box.row("GDX")).toMatchObject({ dataFile: null, history: 0 });
+    expect(await box.run({ TICKERS: "VEEM" })).toBeNull();
+    const today = new Date().toISOString().slice(0, 10);
+    const ago = (days: number) => new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 10);
+    expect([tooNewForHistory(ago(3), today, 0), tooNewForHistory(ago(90), today, 0), tooNewForHistory(ago(3), today, 5), tooNewForHistory("—", today, 0)]).toEqual([true, false, false, false]);
   });
 
   test("NEW FUNDS announces a fund on its first successful publish, a failed new fund as not published yet (Q28)", async () => {
