@@ -1160,7 +1160,7 @@ function parseRanges(env: Record<string, string | undefined>, prefix: 'PERFORMAN
 
 export function readConfig(env: Record<string, string | undefined> = process.env): UpdaterConfig {
   return {
-    concurrency: parsePositiveInt(envValue(env, 'CONCURRENCY'), 2),
+    concurrency: parsePositiveInt(envValue(env, 'CONCURRENCY'), 4),
     requestSleep: parseNonNegativeFloat(envValue(env, 'REQUEST_SLEEP'), 2),
     maxFetches: parseNonNegativeInt(envValue(env, 'MAX_FETCHES'), 0),
     holdingsPageSize: parsePositiveInt(envValue(env, 'HOLDINGS_PAGE_SIZE'), 250),
@@ -1300,7 +1300,7 @@ Every variable below is optional.
                              resumes after the committed cursor in
                              api/vaneck/update-state.json.
   REQUEST_SLEEP        2     Minimum seconds between request starts.
-  CONCURRENCY          2     Parallel fund workers (each worker has its own paced request lane).
+  CONCURRENCY          4     Parallel fund workers (each worker has its own paced request lane).
   MAX_RETRIES          3     Retries for network errors and 408/425/429/5xx (integer >= 1).
   TICKERS              ""    Space/comma separated tickers. ANDed with the other
                              filters, never overriding them.
@@ -1567,9 +1567,23 @@ export function parseYahooDividends(json: unknown): YahooDistribution[] {
     });
 }
 
+/**
+ * Raw answers of this run's per-fund Yahoo daily charts that were full `max` requests. Such a request is the swing block's
+ * own URL (swingChartUrl: same interval, events and adjusted closes, byte-identical answer), so the swing, dividends and
+ * benchmark blocks after the fund pool get this answer from main() instead of asking Yahoo a second time for every fund (one
+ * paced request less per fund). A HISTORY_RANGE window is not kept: those blocks need the full chart and ask for it themselves.
+ */
+let fundChartTexts = new Map<string, string>();
+
 async function fetchYahooChartJson(ticker: string, config: UpdaterConfig): Promise<Record<string, unknown> | null> {
   try {
-    return JSON.parse(await fetchText(yahooChartUrl(ticker, Date.now(), config.historyRange), yahooHeaders(), config, `${ticker} Yahoo chart`));
+    const nowMs = Date.now();
+    const full = historyWindowStartEpoch(config.historyRange, Math.floor(nowMs / 1000)) === 0;
+    const text = await fetchText(full ? swingChartUrl(ticker) : yahooChartUrl(ticker, nowMs, config.historyRange), yahooHeaders(), config, `${ticker} Yahoo chart`);
+    const json = JSON.parse(text);
+    const bars = (json as { chart?: { result?: Array<{ timestamp?: unknown }> } })?.chart?.result?.[0]?.timestamp;
+    if (full && Array.isArray(bars) && bars.length) fundChartTexts.set(ticker, text);
+    return json;
   } catch (error) {
     outputNote(`[ ${'chart'.padEnd(8)} ] ${ticker}: Yahoo chart unavailable (${errorMessage(error)})`);
     return null;
@@ -3468,6 +3482,7 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   const laneCount = Math.max(1, config.concurrency);
   resetPacingLanes(laneCount);
   resetSecState();
+  fundChartTexts = new Map();
   const workers = Array.from({ length: laneCount }, async () => {
     for (;;) {
       if (Date.now() > deadline) return; // soft deadline: stop taking new funds, still write the index
@@ -3505,7 +3520,12 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
   // blocks, no extra request per fund); the SPY and QQQ charts are read once per run before any fund chart.
   // Past the soft deadline no chart is read, so the run stays inside the 30-minute job timeout
   const pastDeadline = Date.now() > deadline;
-  const chartFetch = (url: string, ticker: string) => fetchText(url, yahooHeaders(), config, `${ticker} Yahoo swing chart`);
+  // the full daily chart a fund already read in the pool (same interval, events and adjusted closes) is not asked for again
+  const chartFetch = (url: string, ticker: string): Promise<string> => {
+    const seen = /[?&]period1=0&/.test(url) ? fundChartTexts.get(ticker) : undefined;
+    fundChartTexts.delete(ticker);
+    return seen !== undefined ? Promise.resolve(seen) : fetchText(url, yahooHeaders(), config, `${ticker} Yahoo swing chart`);
+  };
   const benchmarks = config.skipYahoo || pastDeadline ? {} : await benchmarkLoad(chartFetch, (ticker, error) => outputNote(`[ bench    ] ${ticker}: ${errorMessage(error)}; published ${ticker} benchmark metrics kept`));
   const dividendCharts = dividendsTap(chartFetch);
   const benchRows = benchmarkTap(dividendCharts.fetchChart, benchmarks);

@@ -218,7 +218,7 @@ describe("controls", () => {
       expect(help).toContain(tenor ? `${tenor[1]}_YTD|1Y|3Y|5Y|10Y` : name);
     }
     const config = readConfig(resolveControls(configFile()));
-    expect([config.maxFetches, config.requestSleep, config.concurrency, config.maxRetries, config.historyRange, config.tickers]).toEqual([0, 2, 2, 3, "max", []]);
+    expect([config.maxFetches, config.requestSleep, config.concurrency, config.maxRetries, config.historyRange, config.tickers]).toEqual([0, 2, 4, 3, "max", []]);
     expect([config.edgarFallback, config.storeRawDownloads, config.skipYahoo, config.skipVanEck, config.aumRange]).toEqual([true, false, false, false, undefined]);
     expect((await runtimeControls({ TICKERS: "GDX" })).TICKERS).toBe("GDX");
     const c = readConfig({ EDGAR_FALLBACK: "", CONCURRENCY: "", REQUEST_SLEEP: "" });
@@ -569,19 +569,13 @@ describe("metrics 2", () => {
 // Sandbox: the real script is copied into a temp dir so main() writes under <tmp>/api/vaneck
 // ===========================================================================
 const FUNDS = ["EINC", "GDX", "SMH"];
-const ts = (iso: string): number => Date.parse(`${iso}T00:00:00Z`) / 1000;
-const chartPayload = JSON.stringify({ chart: { result: [{
-  meta: { exchangeName: "NYSEArca", regularMarketPrice: 95.5 },
-  timestamp: [ts("2026-09-17"), ts("2026-09-18")],
-  indicators: { quote: [{ close: [95.3, 95.48] }] },
-  events: { dividends: { a: { amount: 0.25, date: ts("2026-06-22") }, b: { amount: 0.25, date: ts("2026-03-23") }, c: { amount: 0.25, date: ts("2025-12-22") } } },
-}] } });
-// the swing block's daily chart (period1=0): 300 closes rising 0.1 a day from 2025-01-02
+// the Yahoo daily chart, read once per fund (period1=0, the swing block's URL) and reused by the swing, dividends and
+// benchmark blocks; a HISTORY_RANGE window gets the same answer: 300 closes rising 0.1 a day from 2025-01-02
 const SWING_CHART_URL = /query1\.finance\.yahoo\.com\/v8\/finance\/chart\/[^?]+\?period1=0&period2=\d+&interval=1d&includePrePost=false/;
 const swingFirstBar = Date.UTC(2025, 0, 2) / 1000;
 const swingLastBar = swingFirstBar + 299 * 86_400;
 // one 0.25 distribution on the last bar of the mock (the dividends block reads it from this same request); listing on the first bar
-const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }], adjclose: [{ adjclose: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
+const swingChartPayload = JSON.stringify({ chart: { result: [{ meta: { exchangeName: "NYSEArca", dataGranularity: "1d", firstTradeDate: swingFirstBar }, timestamp: Array.from({ length: 300 }, (_, i) => swingFirstBar + i * 86_400), indicators: { quote: [{ close: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }], adjclose: [{ adjclose: Array.from({ length: 300 }, (_, i) => Math.round((40 + i / 10) * 100) / 100) }] }, events: { dividends: { [String(swingLastBar)]: { amount: 0.25, date: swingLastBar } } } }] } });
 // the pipeline's VEEM is days old on any run date: launched 9 days before the clock, stats as of the clock
 const usDay = (ms: number): string => new Date(ms).toISOString().slice(0, 10).replace(/^(\d{4})-(\d{2})-(\d{2})$/, "$2/$3/$1");
 const longDay = (ms: number): string => new Date(ms).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
@@ -627,8 +621,7 @@ function sandbox() {
         return new Response(slug[3] === "holdings" ? buildXlsx(holdingsSheet) : buildXlsx(historySheet));
       } finally { inFlight -= 1; }
     }
-    if (SWING_CHART_URL.test(url)) return new Response(swingChartPayload);
-    if (url.includes("/v8/finance/chart/")) return new Response(chartPayload);
+    if (url.includes("/v8/finance/chart/")) return new Response(swingChartPayload);
     if (url.includes("/PerformanceHistoryBlock/") && performanceJson !== null) return new Response(performanceJson);
     return new Response("not found", { status: 404 });
   }) as unknown as typeof fetch;
@@ -696,7 +689,8 @@ describe("pipeline", () => {
     for (const fund of funds) expect(Object.keys(fund.metrics).slice(-34, -2)).toEqual(BENCHMARK_KEYS);
     const gdxDividends = box.row("GDX").metrics;
     expect([gdxDividends.dividendRate, gdxDividends.dividendGrowth, gdxDividends.dividendGrowth3y, gdxDividends.dividendGrowth5y, gdxDividends.dividendStreak, gdxDividends.dividendCut10y]).toEqual([0.25, null, null, null, null, null]);
-    expect(box.urls.filter((url) => SWING_CHART_URL.test(url)).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual([...FUNDS, "QQQ", "SPY"].sort());
+    // one Yahoo chart per fund: the swing, dividends and benchmark blocks reuse the fund's own full daily chart
+    expect(box.urls.filter((url) => url.includes("/v8/finance/chart/")).map((url) => /chart\/([^?]+)/.exec(url)?.[1]).sort()).toEqual([...FUNDS, "QQQ", "SPY"].sort());
     const gdxBench = box.row("GDX").metrics;
     expect([gdxBench.perf1y, gdxBench.vsSpy1y, gdxBench.beta1ySpy, gdxBench.corr1ySpy, gdxBench.relStrength3mQqq, gdxBench.stressReturnSpy]).toEqual([null, null, 1, 1, 0, null]);
     expect(typeof gdxBench.benchmarkAsOf).toBe("string");
