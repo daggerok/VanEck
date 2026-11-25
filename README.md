@@ -45,7 +45,7 @@ bun scripts/update-data.ts --help
 
 `--help` prints every control with its default and usage examples. Defaults live in `scripts/update-data.config.json`; the CLI and the workflow resolve them through the same `resolveControls()` function in `scripts/update-data.ts`, so both accept exactly the same keys and values. Precedence: file defaults < `advanced` JSON < nonblank workflow inputs < protected Actions variable/env (an environment variable always wins when running locally). A blank workflow input inherits the file value, and `advanced` can set a key to an empty string on purpose. Unknown keys, non-scalar values and values containing line breaks are rejected before any request or write.
 
-The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/update-data.yml`) runs every Sunday at 00:00 UTC and on manual dispatch. It exposes the common controls as individual inputs, the rest through the `advanced` JSON input, and commits `api/vaneck/**` and nothing else - a data run never rewrites app code or CI config. The `SEC_UA` repository Actions variable, when set, wins over every other layer. All supplied filters use **AND** logic.
+The **Update VanEck ETF data** GitHub Actions workflow (`.github/workflows/update-data.yml`) runs every workday at 9:37 and 20:17 New York time and on manual dispatch. It exposes the common controls as individual inputs, the rest through the `advanced` JSON input, and commits `api/vaneck/**` and nothing else - a data run never rewrites app code or CI config. The `SEC_UA` repository Actions variable, when set, wins over every other layer. All supplied filters use **AND** logic.
 
 ### Data sources
 
