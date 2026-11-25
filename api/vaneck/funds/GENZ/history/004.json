@@ -2,7 +2,7 @@
  "ticker": "GENZ",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 6877,
+ "totalRows": 6882,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Sep 07 2018",
+   "NAV": "39.8581",
+   "Close": "39.78",
+   "Volume": "10,706",
+   "Premium/Discount": "-0.08",
+   "Total Net Assets": "27,900,657.41",
+   "Index Level": "1,017.49"
+  },
+  {
+   "Date": "Sep 06 2018",
+   "NAV": "40.3419",
+   "Close": "40.40",
+   "Volume": "13,691",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "28,239,346.73",
+   "Index Level": "1,029.97"
+  },
+  {
+   "Date": "Sep 05 2018",
+   "NAV": "41.5813",
+   "Close": "41.59",
+   "Volume": "3,014",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "29,106,915.16",
+   "Index Level": "1,060.82"
+  },
+  {
+   "Date": "Sep 04 2018",
+   "NAV": "42.1605",
+   "Close": "42.03",
+   "Volume": "3,374",
+   "Premium/Discount": "-0.13",
+   "Total Net Assets": "29,512,355.07",
+   "Index Level": "1,075.51"
+  },
+  {
+   "Date": "Sep 03 2018",
+   "NAV": "42.9391",
+   "Close": "42.76",
+   "Volume": "",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "30,057,376.85",
+   "Index Level": "1,088.00"
+  },
   {
    "Date": "Sep 02 2018",
    "NAV": "42.9391",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "-0.27",
    "Total Net Assets": "21,818,080.45",
    "Index Level": "719.96"
-  },
-  {
-   "Date": "Dec 12 2015",
-   "NAV": "31.1687",
-   "Close": "30.90",
-   "Volume": "3,157",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "21,818,080.45",
-   "Index Level": "719.96"
-  },
-  {
-   "Date": "Dec 11 2015",
-   "NAV": "31.1687",
-   "Close": "30.90",
-   "Volume": "3,157",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "21,818,080.45",
-   "Index Level": "719.96"
-  },
-  {
-   "Date": "Dec 10 2015",
-   "NAV": "31.9932",
-   "Close": "31.80",
-   "Volume": "1,167",
-   "Premium/Discount": "-0.19",
-   "Total Net Assets": "22,395,250.74",
-   "Index Level": "733.58"
-  },
-  {
-   "Date": "Dec 09 2015",
-   "NAV": "32.0318",
-   "Close": "31.75",
-   "Volume": "3,546",
-   "Premium/Discount": "-0.28",
-   "Total Net Assets": "22,422,277.93",
-   "Index Level": "737.35"
-  },
-  {
-   "Date": "Dec 08 2015",
-   "NAV": "31.8616",
-   "Close": "31.64",
-   "Volume": "8,537",
-   "Premium/Discount": "-0.22",
-   "Total Net Assets": "22,303,110.46",
-   "Index Level": "731.77"
   }
  ]
 }

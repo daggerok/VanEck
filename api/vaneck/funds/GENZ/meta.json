@@ -9,28 +9,28 @@
  "ter": "0.51%",
  "terValue": 0.51,
  "nav": {
-  "display": "$34.29",
-  "value": 34.29,
-  "asOfDate": "Nov 19 2026"
+  "display": "$34.76",
+  "value": 34.76,
+  "asOfDate": "Nov 24 2026"
  },
- "navValue": 34.29,
+ "navValue": 34.76,
  "aum": {
-  "display": "$14.57M",
-  "value": 14574998.08,
-  "asOfDate": "Nov 19 2026",
+  "display": "$14.77M",
+  "value": 14772053.14,
+  "asOfDate": "Nov 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 14574998.08,
- "asOfDate": "Nov 19 2026",
+ "aumValue": 14772053.14,
+ "asOfDate": "Nov 24 2026",
  "inceptionDate": "Jan 22 2008",
  "exchange": "NASDAQ",
- "closePrice": "$34.25",
- "closePriceValue": 34.25,
+ "closePrice": "$34.63",
+ "closePriceValue": 34.63,
  "premiumDiscount": {
-  "display": "-0.04%",
-  "value": -0.04
+  "display": "-0.12%",
+  "value": -0.12
  },
- "premiumDiscountValue": -0.04,
+ "premiumDiscountValue": -0.12,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -136,9 +136,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 19 2026",
-   "ytd": -15.86,
-   "ytdText": "-15.86%",
+   "asOfDate": "Nov 24 2026",
+   "ytd": -14.72,
+   "ytdText": "-14.72%",
    "yr1": -10.84,
    "yr3": 0.68,
    "yr5": -4.77,
@@ -156,7 +156,7 @@
   }
  },
  "metrics": {
-  "ytd": -15.86,
+  "ytd": -14.72,
   "tr1y": -10.84,
   "tr3y": 2.05,
   "tr5y": -21.69,
@@ -174,7 +174,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-19",
+  "ytdAsOf": "2026-11-24",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -182,11 +182,11 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.51%",
  "terGrossValue": 0.51,
- "netAssetsAsOf": "Nov 19 2026",
+ "netAssetsAsOf": "Nov 24 2026",
  "holdings": {
-  "totalRows": 43,
+  "totalRows": 42,
   "pageSize": 250,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -194,9 +194,9 @@
   ]
  },
  "history": {
-  "totalRows": 6877,
+  "totalRows": 6882,
   "pageSize": 1000,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/digital-native-economy-etf-genz/downloads/fundhistoprices/)",
   "pageCount": 7,
   "pages": [
@@ -209,7 +209,7 @@
    "history/007.json"
   ]
  },
- "totalNetAssets": 14570000,
+ "totalNetAssets": 14770000,
  "indexTicker": "MVGENZTR",
  "indexName": "Digital Native Economy Index",
  "categoryPath": "Equity > Equity Thematic",
@@ -248,16 +248,16 @@
   "grossValue": 0.51
  },
  "marketPrice": {
-  "display": "$34.25",
-  "value": 34.25,
-  "asOfDate": "Nov 19 2026"
+  "display": "$34.63",
+  "value": 34.63,
+  "asOfDate": "Nov 24 2026"
  },
  "yields": {
   "dividendYield": 3.63,
   "dividendYieldText": "3.63%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 3.98,
-  "indicatedYieldText": "3.98%",
+  "indicatedYield": 3.92,
+  "indicatedYieldText": "3.92%",
   "distributionYield": 3.63,
   "distributionYieldText": "3.63%",
   "yield12M": 2.72,

@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$24.11",
-  "value": 24.11,
-  "asOfDate": "Nov 19 2026"
+  "display": "$24.06",
+  "value": 24.06,
+  "asOfDate": "Nov 24 2026"
  },
- "navValue": 24.11,
+ "navValue": 24.06,
  "aum": {
-  "display": "$4.72B",
-  "value": 4716320903.72,
-  "asOfDate": "Nov 19 2026",
+  "display": "$4.63B",
+  "value": 4634918905.44,
+  "asOfDate": "Nov 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4716320903.72,
- "asOfDate": "Nov 19 2026",
+ "aumValue": 4634918905.44,
+ "asOfDate": "Nov 24 2026",
  "inceptionDate": "Jul 22 2010",
  "exchange": "NYSE Arca",
- "closePrice": "$23.99",
- "closePriceValue": 23.99,
+ "closePrice": "$24.02",
+ "closePriceValue": 24.02,
  "premiumDiscount": {
-  "display": "-0.12%",
-  "value": -0.12
+  "display": "-0.04%",
+  "value": -0.04
  },
- "premiumDiscountValue": -0.12,
+ "premiumDiscountValue": -0.04,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -1017,8 +1017,8 @@
   "distributionYieldText": "6.21%",
   "yield12M": 6.27,
   "yield12MText": "6.27%",
-  "secYield": 6.57,
-  "secYieldText": "6.57%",
+  "secYield": 6.54,
+  "secYieldText": "6.54%",
   "dividendYieldBasis": "official-distribution-rate",
   "ytdAsOf": "2026-08-31",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row + Investment Finder month-end YTD (NAV)",
@@ -1028,11 +1028,11 @@
  "providerCategory": "International Bond",
  "terGross": "0.31%",
  "terGrossValue": 0.31,
- "netAssetsAsOf": "Nov 19 2026",
+ "netAssetsAsOf": "Nov 24 2026",
  "holdings": {
   "totalRows": 523,
   "pageSize": 250,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/holdings/)",
   "pageCount": 3,
   "pages": [
@@ -1042,9 +1042,9 @@
   ]
  },
  "history": {
-  "totalRows": 4477,
+  "totalRows": 4482,
   "pageSize": 1000,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -1055,10 +1055,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 4720000000,
- "secYield": 6.57,
- "secYieldValue": 6.57,
- "secYieldText": "6.57%",
+ "totalNetAssets": 4630000000,
+ "secYield": 6.54,
+ "secYieldValue": 6.54,
+ "secYieldText": "6.54%",
  "indexTicker": "GBIEMCOR",
  "indexName": "J.P. Morgan GBI-EM Global Core Index",
  "categoryPath": "Income > International Bond",
@@ -1097,23 +1097,23 @@
   "grossValue": 0.31
  },
  "marketPrice": {
-  "display": "$23.99",
-  "value": 23.99,
-  "asOfDate": "Nov 19 2026"
+  "display": "$24.02",
+  "value": 24.02,
+  "asOfDate": "Nov 24 2026"
  },
  "yields": {
   "dividendYield": 6.21,
   "dividendYieldText": "6.21%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 7.03,
-  "indicatedYieldText": "7.03%",
+  "indicatedYield": 7.05,
+  "indicatedYieldText": "7.05%",
   "distributionYield": 6.21,
   "distributionYieldText": "6.21%",
   "yield12M": 6.27,
   "yield12MText": "6.27%",
   "distributionRate": null,
-  "secYield": 6.57,
-  "secYieldText": "6.57%",
+  "secYield": 6.54,
+  "secYieldText": "6.54%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

@@ -2,7 +2,7 @@
  "ticker": "TRUC",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 275,
+ "totalRows": 280,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 24 2026",
+   "NAV": "22.9284",
+   "Close": "22.93",
+   "Volume": "58,358",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "89,879,177.52",
+   "Index Level": "3,156.81"
+  },
+  {
+   "Date": "Nov 23 2026",
+   "NAV": "22.8858",
+   "Close": "22.90",
+   "Volume": "60,273",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "88,796,716.15",
+   "Index Level": "3,172.22"
+  },
+  {
+   "Date": "Nov 22 2026",
+   "NAV": "21.9188",
+   "Close": "21.90",
+   "Volume": "",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "82,852,965.54",
+   "Index Level": "3,018.45"
+  },
+  {
+   "Date": "Nov 21 2026",
+   "NAV": "21.9188",
+   "Close": "21.90",
+   "Volume": "",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "82,852,965.54",
+   "Index Level": "3,018.45"
+  },
+  {
+   "Date": "Nov 20 2026",
+   "NAV": "21.9188",
+   "Close": "21.90",
+   "Volume": "504,987",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "82,852,965.54",
+   "Index Level": "3,018.45"
+  },
   {
    "Date": "Nov 19 2026",
    "NAV": "22.5822",

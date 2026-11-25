@@ -2,7 +2,7 @@
  "ticker": "OIH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4119,
+ "totalRows": 4124,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 28 2024",
+   "NAV": "297.7909",
+   "Close": "298.02",
+   "Volume": "259,801",
+   "Premium/Discount": "0.23",
+   "Total Net Assets": "1,950,691,788.07",
+   "Index Level": "908.28"
+  },
+  {
+   "Date": "Feb 27 2024",
+   "NAV": "300.3059",
+   "Close": "300.53",
+   "Volume": "224,247",
+   "Premium/Discount": "0.22",
+   "Total Net Assets": "1,967,166,426.07",
+   "Index Level": "915.94"
+  },
+  {
+   "Date": "Feb 26 2024",
+   "NAV": "299.8081",
+   "Close": "299.96",
+   "Volume": "218,145",
+   "Premium/Discount": "0.15",
+   "Total Net Assets": "1,963,905,868.49",
+   "Index Level": "914.42"
+  },
+  {
+   "Date": "Feb 25 2024",
+   "NAV": "300.4711",
+   "Close": "300.69",
+   "Volume": "",
+   "Premium/Discount": "0.22",
+   "Total Net Assets": "1,968,248,666.90",
+   "Index Level": "916.41"
+  },
+  {
+   "Date": "Feb 24 2024",
+   "NAV": "300.4711",
+   "Close": "300.69",
+   "Volume": "",
+   "Premium/Discount": "0.22",
+   "Total Net Assets": "1,968,248,666.90",
+   "Index Level": "916.41"
+  },
   {
    "Date": "Feb 23 2024",
    "NAV": "300.4711",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.12",
    "Total Net Assets": "502,183,455.00",
    "Index Level": "362.64"
-  },
-  {
-   "Date": "Jun 01 2020",
-   "NAV": "119.7217",
-   "Close": "119.68",
-   "Volume": "620,706",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "478,951,956.68",
-   "Index Level": "345.86"
-  },
-  {
-   "Date": "May 29 2020",
-   "NAV": "118.6543",
-   "Close": "118.76",
-   "Volume": "759,598",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "480,614,452.50",
-   "Index Level": "342.78"
-  },
-  {
-   "Date": "May 28 2020",
-   "NAV": "121.8960",
-   "Close": "121.99",
-   "Volume": "1,104,959",
-   "Premium/Discount": "0.09",
-   "Total Net Assets": "499,839,741.71",
-   "Index Level": "352.16"
-  },
-  {
-   "Date": "May 27 2020",
-   "NAV": "121.7158",
-   "Close": "121.77",
-   "Volume": "593,668",
-   "Premium/Discount": "0.05",
-   "Total Net Assets": "499,100,853.82",
-   "Index Level": "351.65"
-  },
-  {
-   "Date": "May 26 2020",
-   "NAV": "117.5627",
-   "Close": "117.68",
-   "Volume": "1,006,695",
-   "Premium/Discount": "0.12",
-   "Total Net Assets": "470,314,583.39",
-   "Index Level": "339.63"
   }
  ]
 }

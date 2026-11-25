@@ -2,7 +2,7 @@
  "ticker": "BIZD",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3834,
+ "totalRows": 3839,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,51 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 24 2026",
+   "NAV": "12.2257",
+   "Close": "12.21",
+   "Volume": "2,675,496",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "1,456,074,561.75",
+   "Index Level": "2,654.49"
+  },
+  {
+   "Date": "Nov 23 2026",
+   "NAV": "12.1433",
+   "Close": "12.13",
+   "Volume": "2,549,751",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "1,446,270,163.77",
+   "Index Level": "2,636.52"
+  },
+  {
+   "Date": "Nov 22 2026",
+   "NAV": "11.9056",
+   "Close": "11.92",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,423,903,880.14",
+   "Index Level": "2,584.29"
+  },
+  {
+   "Date": "Nov 21 2026",
+   "NAV": "11.9056",
+   "Close": "11.92",
+   "Volume": "",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,423,903,880.14",
+   "Index Level": "2,584.29"
+  },
+  {
+   "Date": "Nov 20 2026",
+   "NAV": "11.9056",
+   "Close": "11.92",
+   "Volume": "3,444,530",
+   "Premium/Discount": "0.01",
+   "Total Net Assets": "1,423,903,880.14",
+   "Index Level": "2,584.29"
+  },
   {
    "Date": "Nov 19 2026",
    "NAV": "12.0333",
@@ -8967,51 +9012,6 @@
    "Premium/Discount": "0.01",
    "Total Net Assets": "930,476,581.11",
    "Index Level": "2,577.16"
-  },
-  {
-   "Date": "Feb 28 2024",
-   "NAV": "16.1830",
-   "Close": "16.20",
-   "Volume": "323,487",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "925,664,628.02",
-   "Index Level": "2,563.80"
-  },
-  {
-   "Date": "Feb 27 2024",
-   "NAV": "16.3329",
-   "Close": "16.35",
-   "Volume": "562,775",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "933,422,939.58",
-   "Index Level": "2,587.61"
-  },
-  {
-   "Date": "Feb 26 2024",
-   "NAV": "16.3458",
-   "Close": "16.37",
-   "Volume": "624,923",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "929,667,859.73",
-   "Index Level": "2,589.66"
-  },
-  {
-   "Date": "Feb 25 2024",
-   "NAV": "16.3889",
-   "Close": "16.40",
-   "Volume": "",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "931,299,673.32",
-   "Index Level": "2,596.53"
-  },
-  {
-   "Date": "Feb 24 2024",
-   "NAV": "16.3889",
-   "Close": "16.40",
-   "Volume": "",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "931,299,673.32",
-   "Index Level": "2,596.53"
   }
  ]
 }

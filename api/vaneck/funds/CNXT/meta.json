@@ -9,28 +9,28 @@
  "ter": "0.65%",
  "terValue": 0.65,
  "nav": {
-  "display": "$32.14",
-  "value": 32.14,
-  "asOfDate": "Nov 19 2026"
+  "display": "$32.59",
+  "value": 32.59,
+  "asOfDate": "Nov 24 2026"
  },
- "navValue": 32.14,
+ "navValue": 32.59,
  "aum": {
-  "display": "$54.64M",
-  "value": 54644651.93,
-  "asOfDate": "Nov 19 2026",
+  "display": "$55.41M",
+  "value": 55408818.2,
+  "asOfDate": "Nov 24 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 54644651.93,
- "asOfDate": "Nov 19 2026",
+ "aumValue": 55408818.2,
+ "asOfDate": "Nov 24 2026",
  "inceptionDate": "Jul 23 2014",
  "exchange": "NYSE Arca",
- "closePrice": "$32.05",
- "closePriceValue": 32.05,
+ "closePrice": "$32.51",
+ "closePriceValue": 32.51,
  "premiumDiscount": {
-  "display": "-0.09%",
-  "value": -0.09
+  "display": "-0.08%",
+  "value": -0.08
  },
- "premiumDiscountValue": -0.09,
+ "premiumDiscountValue": -0.08,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -71,9 +71,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 19 2026",
-   "ytd": -27.06,
-   "ytdText": "-27.06%",
+   "asOfDate": "Nov 24 2026",
+   "ytd": -26.04,
+   "ytdText": "-26.04%",
    "yr1": -19.02,
    "yr3": 11.97,
    "yr5": -6.53,
@@ -91,7 +91,7 @@
   }
  },
  "metrics": {
-  "ytd": -27.06,
+  "ytd": -26.04,
   "tr1y": -19.02,
   "tr3y": 40.4,
   "tr5y": -28.67,
@@ -109,7 +109,7 @@
   "secYield": -0.04,
   "secYieldText": "-0.04%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-19",
+  "ytdAsOf": "2026-11-24",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -117,11 +117,11 @@
  "providerCategory": "Country/Regional",
  "terGross": "1.00%",
  "terGrossValue": 1,
- "netAssetsAsOf": "Nov 19 2026",
+ "netAssetsAsOf": "Nov 24 2026",
  "holdings": {
   "totalRows": 100,
   "pageSize": 250,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 23 2026",
   "source": "VanEck daily holdings download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/holdings/)",
   "pageCount": 1,
   "pages": [
@@ -129,9 +129,9 @@
   ]
  },
  "history": {
-  "totalRows": 3470,
+  "totalRows": 3475,
   "pageSize": 1000,
-  "asOfDate": "Nov 19 2026",
+  "asOfDate": "Nov 24 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/chinext-innovators-etf-cnxt/downloads/fundhistoprices/)",
   "pageCount": 4,
   "pages": [
@@ -141,7 +141,7 @@
    "history/004.json"
   ]
  },
- "totalNetAssets": 54640000,
+ "totalNetAssets": 55410000,
  "indexTicker": "SZ988107",
  "indexName": "ChiNext Index",
  "categoryPath": "Equity > Country/Regional",
@@ -180,16 +180,16 @@
   "grossValue": 1
  },
  "marketPrice": {
-  "display": "$32.05",
-  "value": 32.05,
-  "asOfDate": "Nov 19 2026"
+  "display": "$32.51",
+  "value": 32.51,
+  "asOfDate": "Nov 24 2026"
  },
  "yields": {
   "dividendYield": 0.16,
   "dividendYieldText": "0.16%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.25,
-  "indicatedYieldText": "0.25%",
+  "indicatedYield": 0.24,
+  "indicatedYieldText": "0.24%",
   "distributionYield": 0.16,
   "distributionYieldText": "0.16%",
   "yield12M": 0.21,
