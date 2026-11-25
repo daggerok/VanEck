@@ -2,7 +2,7 @@
  "ticker": "PIT",
  "page": 1,
  "pageSize": 250,
- "totalRows": 40,
+ "totalRows": 39,
  "headers": [
   "Name",
   "Ticker",
@@ -20,9 +20,9 @@
    "Identifier": "BBG023Z8H1H6",
    "Shares Held": "136,208,000",
    "Asset Category": "Bond",
-   "Market Value": "$135,084,910.55",
+   "Market Value": "$135,101,503.41",
    "Notional Value": "",
-   "Weight": "34.25%"
+   "Weight": "34.48%"
   },
   {
    "Name": "United States Treasury Bill",
@@ -30,9 +30,9 @@
    "Identifier": "BBG023C7WHV5",
    "Shares Held": "133,664,000",
    "Asset Category": "Bond",
-   "Market Value": "$132,998,551.11",
+   "Market Value": "$133,013,807.51",
    "Notional Value": "",
-   "Weight": "33.72%"
+   "Weight": "33.94%"
   },
   {
    "Name": "United States Treasury Bill",
@@ -40,9 +40,59 @@
    "Identifier": "BBG02444V9G5",
    "Shares Held": "122,503,000",
    "Asset Category": "Bond",
-   "Market Value": "$122,317,918.79",
+   "Market Value": "$122,330,585.60",
    "Notional Value": "",
-   "Weight": "31.01%"
+   "Weight": "31.22%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "4,875",
+   "Asset Category": "other",
+   "Market Value": "$13,515,596.25",
+   "Notional Value": "",
+   "Weight": "3.45%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "3,650",
+   "Asset Category": "other",
+   "Market Value": "$12,578,155.50",
+   "Notional Value": "",
+   "Weight": "3.21%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "8,680,000",
+   "Asset Category": "other",
+   "Market Value": "$4,897,690.00",
+   "Notional Value": "",
+   "Weight": "1.25%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "150",
+   "Asset Category": "other",
+   "Market Value": "$1,773,970.50",
+   "Notional Value": "",
+   "Weight": "0.45%"
+  },
+  {
+   "Name": "Other",
+   "Ticker": "",
+   "Identifier": "",
+   "Shares Held": "10",
+   "Asset Category": "other",
+   "Market Value": "$395,298.80",
+   "Notional Value": "",
+   "Weight": "0.10%"
   },
   {
    "Name": "Gold 100 Oz Futr Feb27",
@@ -51,17 +101,7 @@
    "Shares Held": "131",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "48230270.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Copper Future Mar27",
-   "Ticker": "HGH7",
-   "Identifier": "BBG0147CGS07",
-   "Shares Held": "198",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "28323900.00",
+   "Notional Value": "47043410.00",
    "Weight": "0.00%"
   },
   {
@@ -71,7 +111,17 @@
    "Shares Held": "333",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "27096210.00",
+   "Notional Value": "27765540.00",
+   "Weight": "0.00%"
+  },
+  {
+   "Name": "Copper Future Mar27",
+   "Ticker": "HGH7",
+   "Identifier": "BBG0147CGS07",
+   "Shares Held": "198",
+   "Asset Category": "Future",
+   "Market Value": "$.00",
+   "Notional Value": "26992350.00",
    "Weight": "0.00%"
   },
   {
@@ -81,7 +131,7 @@
    "Shares Held": "234",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "23521352.40",
+   "Notional Value": "23986216.80",
    "Weight": "0.00%"
   },
   {
@@ -91,7 +141,7 @@
    "Shares Held": "268",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "23230240.00",
+   "Notional Value": "23793040.00",
    "Weight": "0.00%"
   },
   {
@@ -101,7 +151,7 @@
    "Shares Held": "149",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "20615729.40",
+   "Notional Value": "20770302.00",
    "Weight": "0.00%"
   },
   {
@@ -111,7 +161,7 @@
    "Shares Held": "263",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "19940660.00",
+   "Notional Value": "20448250.00",
    "Weight": "0.00%"
   },
   {
@@ -121,7 +171,7 @@
    "Shares Held": "197",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "15793490.00",
+   "Notional Value": "16163850.00",
    "Weight": "0.00%"
   },
   {
@@ -131,17 +181,7 @@
    "Shares Held": "251",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "15420812.50",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Silver Future Mar27",
-   "Ticker": "SIH7",
-   "Identifier": "BBG01T1PD995",
-   "Shares Held": "68",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "14861060.00",
+   "Notional Value": "15486700.00",
    "Weight": "0.00%"
   },
   {
@@ -151,7 +191,7 @@
    "Shares Held": "88",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "14710520.00",
+   "Notional Value": "14647600.00",
    "Weight": "0.00%"
   },
   {
@@ -161,27 +201,17 @@
    "Shares Held": "639",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "14369512.50",
+   "Notional Value": "14385487.50",
    "Weight": "0.00%"
   },
   {
-   "Name": "Lme Pri Alum Futr Dec26",
-   "Ticker": "LAZ26",
-   "Identifier": "BBG00DLJZY76",
-   "Shares Held": "189",
+   "Name": "Silver Future Mar27",
+   "Ticker": "SIH7",
+   "Identifier": "BBG01T1PD995",
+   "Shares Held": "68",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "14326200.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Lme Zinc Future Dec26",
-   "Ticker": "LXZ6",
-   "Identifier": "BBG012CHSZP8",
-   "Shares Held": "145",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "13039632.50",
+   "Notional Value": "14025680.00",
    "Weight": "0.00%"
   },
   {
@@ -191,17 +221,17 @@
    "Shares Held": "119",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "12619950.00",
+   "Notional Value": "12462275.00",
    "Weight": "0.00%"
   },
   {
-   "Name": "Live Cattle Futr Dec26",
-   "Ticker": "LCZ6",
-   "Identifier": "BBG01VF40LW3",
-   "Shares Held": "123",
+   "Name": "Live Cattle Futr Feb27",
+   "Ticker": "LCG7",
+   "Identifier": "BBG01VRQC312",
+   "Shares Held": "122",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "11047860.00",
+   "Notional Value": "11215704.00",
    "Weight": "0.00%"
   },
   {
@@ -211,7 +241,7 @@
    "Shares Held": "346",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "10302150.00",
+   "Notional Value": "10194025.00",
    "Weight": "0.00%"
   },
   {
@@ -221,7 +251,7 @@
    "Shares Held": "94",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "9438187.50",
+   "Notional Value": "9256650.00",
    "Weight": "0.00%"
   },
   {
@@ -231,7 +261,7 @@
    "Shares Held": "184",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "7485120.00",
+   "Notional Value": "7548600.00",
    "Weight": "0.00%"
   },
   {
@@ -241,7 +271,7 @@
    "Shares Held": "183",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "6538590.00",
+   "Notional Value": "6403536.00",
    "Weight": "0.00%"
   },
   {
@@ -251,17 +281,7 @@
    "Shares Held": "146",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "5029700.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Lean Hogs Future Dec26",
-   "Ticker": "LHZ6",
-   "Identifier": "BBG01VGC3V04",
-   "Shares Held": "235",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "4930300.00",
+   "Notional Value": "5126060.00",
    "Weight": "0.00%"
   },
   {
@@ -271,7 +291,7 @@
    "Shares Held": "29",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "4384191.00",
+   "Notional Value": "4404897.00",
    "Weight": "0.00%"
   },
   {
@@ -281,7 +301,7 @@
    "Shares Held": "220",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "4339104.00",
+   "Notional Value": "4351424.00",
    "Weight": "0.00%"
   },
   {
@@ -291,7 +311,7 @@
    "Shares Held": "124",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "3952500.00",
+   "Notional Value": "3919950.00",
    "Weight": "0.00%"
   },
   {
@@ -301,7 +321,7 @@
    "Shares Held": "157",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "3766430.00",
+   "Notional Value": "3866910.00",
    "Weight": "0.00%"
   },
   {
@@ -311,7 +331,7 @@
    "Shares Held": "96",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "3382080.00",
+   "Notional Value": "3516480.00",
    "Weight": "0.00%"
   },
   {
@@ -321,7 +341,7 @@
    "Shares Held": "27",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "2650050.00",
+   "Notional Value": "2632500.00",
    "Weight": "0.00%"
   },
   {
@@ -331,17 +351,7 @@
    "Shares Held": "37",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1960630.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Lme Copper Future Dec26",
-   "Ticker": "LPZ26",
-   "Identifier": "BBG00DLJZY67",
-   "Shares Held": "6",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "1877785.50",
+   "Notional Value": "2002810.00",
    "Weight": "0.00%"
   },
   {
@@ -351,17 +361,7 @@
    "Shares Held": "21",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "1390410.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Lme Tin Future Dec26",
-   "Ticker": "LTZ6",
-   "Identifier": "BBG01X06P264",
-   "Shares Held": "2",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "427204.60",
+   "Notional Value": "1320690.00",
    "Weight": "0.00%"
   },
   {
@@ -371,28 +371,18 @@
    "Shares Held": "14",
    "Asset Category": "Future",
    "Market Value": "$.00",
-   "Notional Value": "282030.00",
-   "Weight": "0.00%"
-  },
-  {
-   "Name": "Live Cattle Futr Feb27",
-   "Ticker": "LCG7",
-   "Identifier": "BBG01VRQC312",
-   "Shares Held": "1",
-   "Asset Category": "Future",
-   "Market Value": "$.00",
-   "Notional Value": "91500.00",
+   "Notional Value": "275940.00",
    "Weight": "0.00%"
   },
   {
    "Name": "",
    "Ticker": "-USD CASH-",
    "Identifier": "",
-   "Shares Held": "39,934,094",
+   "Shares Held": "37,516,676",
    "Asset Category": "Cash Bal",
-   "Market Value": "$39,934,094.00",
+   "Market Value": "$37,516,675.64",
    "Notional Value": "",
-   "Weight": "10.12%"
+   "Weight": "9.57%"
   },
   {
    "Name": "",
@@ -400,7 +390,7 @@
    "Identifier": "",
    "Shares Held": "-77",
    "Asset Category": "Cash Bal",
-   "Market Value": "$-99.77",
+   "Market Value": "$-100.51",
    "Notional Value": "",
    "Weight": "0.00%"
   },
@@ -410,9 +400,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-35,919,104.68",
+   "Market Value": "$-36,096,459.65",
    "Notional Value": "",
-   "Weight": "-9.11%"
+   "Weight": "-17.67%"
   }
  ]
 }
