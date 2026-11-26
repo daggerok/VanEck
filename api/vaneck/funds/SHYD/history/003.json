@@ -2,7 +2,7 @@
  "ticker": "SHYD",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3607,
+ "totalRows": 3608,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2020",
+   "NAV": "23.4504",
+   "Close": "23.28",
+   "Volume": "422,607",
+   "Premium/Discount": "-0.17",
+   "Total Net Assets": "235,676,325.29",
+   "Index Level": "147.13"
+  },
   {
    "Date": "Jun 01 2020",
    "NAV": "23.4309",
@@ -9002,15 +9011,6 @@
    "Volume": "2,219",
    "Premium/Discount": "0.03",
    "Total Net Assets": "113,390,141.22",
-   "Index Level": "132.97"
-  },
-  {
-   "Date": "Jun 10 2016",
-   "NAV": "25.1574",
-   "Close": "25.24",
-   "Volume": "9,775",
-   "Premium/Discount": "0.08",
-   "Total Net Assets": "113,208,522.41",
    "Index Level": "132.97"
   }
  ]

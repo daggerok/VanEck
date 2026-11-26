@@ -2,7 +2,7 @@
  "ticker": "BBH",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4124,
+ "totalRows": 4125,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2020",
+   "NAV": "159.9472",
+   "Close": "159.93",
+   "Volume": "21,773",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "463,287,645.79",
+   "Index Level": "3,869.50"
+  },
   {
    "Date": "Jun 01 2020",
    "NAV": "160.2328",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "537,045,121.38",
    "Index Level": "2,466.43"
-  },
-  {
-   "Date": "Jun 10 2016",
-   "NAV": "105.6373",
-   "Close": "105.59",
-   "Volume": "77,449",
-   "Premium/Discount": "-0.05",
-   "Total Net Assets": "543,662,451.41",
-   "Index Level": "2,496.77"
   }
  ]
 }

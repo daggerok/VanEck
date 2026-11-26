@@ -2,7 +2,7 @@
  "ticker": "EINC",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4510,
+ "totalRows": 4511,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2020",
+   "NAV": "40.0779",
+   "Close": "39.95",
+   "Volume": "1,196",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "25,638,600.33",
+   "Index Level": "905.63"
+  },
   {
    "Date": "Jun 01 2020",
    "NAV": "39.1807",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.14",
    "Total Net Assets": "91,732,017.80",
    "Index Level": "1,163.87"
-  },
-  {
-   "Date": "Jun 10 2016",
-   "NAV": "70.5410",
-   "Close": "70.20",
-   "Volume": "6,576",
-   "Premium/Discount": "-0.34",
-   "Total Net Assets": "93,584,353.60",
-   "Index Level": "1,187.33"
   }
  ]
 }

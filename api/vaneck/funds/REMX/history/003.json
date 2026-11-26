@@ -2,7 +2,7 @@
  "ticker": "REMX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4414,
+ "totalRows": 4415,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2020",
+   "NAV": "35.0081",
+   "Close": "35.00",
+   "Volume": "25,406",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "140,907,116.82",
+   "Index Level": "250.93"
+  },
   {
    "Date": "Jun 01 2020",
    "NAV": "34.6167",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.09",
    "Total Net Assets": "37,988,679.95",
    "Index Level": "301.76"
-  },
-  {
-   "Date": "Jun 10 2016",
-   "NAV": "49.8687",
-   "Close": "49.74",
-   "Volume": "16,343",
-   "Premium/Discount": "-0.13",
-   "Total Net Assets": "38,647,588.48",
-   "Index Level": "307.88"
   }
  ]
 }

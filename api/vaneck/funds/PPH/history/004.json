@@ -2,7 +2,7 @@
  "ticker": "PPH",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4124,
+ "totalRows": 4125,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 10 2016",
+   "NAV": "58.2503",
+   "Close": "58.24",
+   "Volume": "66,994",
+   "Premium/Discount": "-0.01",
+   "Total Net Assets": "261,435,597.80",
+   "Index Level": "2,490.62"
+  },
   {
    "Date": "Jun 09 2016",
    "NAV": "59.2446",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.03",
    "Total Net Assets": "179,266,562.02",
    "Index Level": "1,478.19"
-  },
-  {
-   "Date": "Jun 19 2012",
-   "NAV": "38.2322",
-   "Close": "38.21",
-   "Volume": "",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "179,237,823.21",
-   "Index Level": "1,477.93"
   }
  ]
 }

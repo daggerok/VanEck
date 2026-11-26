@@ -2,7 +2,7 @@
  "ticker": "EINC",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4510,
+ "totalRows": 4511,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 10 2016",
+   "NAV": "70.5410",
+   "Close": "70.20",
+   "Volume": "6,576",
+   "Premium/Discount": "-0.34",
+   "Total Net Assets": "93,584,353.60",
+   "Index Level": "1,187.33"
+  },
   {
    "Date": "Jun 09 2016",
    "NAV": "71.8440",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.85",
    "Total Net Assets": "n.a.",
    "Index Level": "3,354.00"
-  },
-  {
-   "Date": "Aug 04 2013",
-   "NAV": "279.9787",
-   "Close": "280.50",
-   "Volume": "4,653",
-   "Premium/Discount": "0.52",
-   "Total Net Assets": "n.a.",
-   "Index Level": "3,362.26"
   }
  ]
 }

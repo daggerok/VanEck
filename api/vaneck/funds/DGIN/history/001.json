@@ -2,7 +2,7 @@
  "ticker": "DGIN",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 1569,
+ "totalRows": 1570,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 25 2026",
+   "NAV": "37.5709",
+   "Close": "37.32",
+   "Volume": "3,823",
+   "Premium/Discount": "-0.25",
+   "Total Net Assets": "12,210,538.13",
+   "Index Level": "3,003.82"
+  },
   {
    "Date": "Nov 24 2026",
    "NAV": "37.4412",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.37",
    "Total Net Assets": "17,620,843.02",
    "Index Level": "2,941.37"
-  },
-  {
-   "Date": "Feb 29 2024",
-   "NAV": "38.9155",
-   "Close": "39.16",
-   "Volume": "7,861",
-   "Premium/Discount": "0.24",
-   "Total Net Assets": "17,511,967.24",
-   "Index Level": "2,931.38"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "FLTR",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4291,
+ "totalRows": 4292,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 10 2016",
+   "NAV": "24.8233",
+   "Close": "24.73",
+   "Volume": "7,001",
+   "Premium/Discount": "-0.10",
+   "Total Net Assets": "76,952,215.48",
+   "Index Level": "1,075.45"
+  },
   {
    "Date": "Jun 09 2016",
    "NAV": "24.8229",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.32",
    "Total Net Assets": "7,258,510.42",
    "Index Level": "1,001.30"
-  },
-  {
-   "Date": "Jun 19 2012",
-   "NAV": "24.1802",
-   "Close": "23.91",
-   "Volume": "100",
-   "Premium/Discount": "-0.27",
-   "Total Net Assets": "7,254,070.46",
-   "Index Level": "1,000.94"
   }
  ]
 }

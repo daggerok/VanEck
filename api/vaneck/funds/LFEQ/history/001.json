@@ -2,7 +2,7 @@
  "ticker": "LFEQ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 2668,
+ "totalRows": 2669,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 25 2026",
+   "NAV": "57.0673",
+   "Close": "57.13",
+   "Volume": "1,260",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "25,680,265.61",
+   "Index Level": "438,689.35"
+  },
   {
    "Date": "Nov 24 2026",
    "NAV": "57.2274",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "25,949,884.32",
    "Index Level": "321,697.97"
-  },
-  {
-   "Date": "Feb 29 2024",
-   "NAV": "42.8372",
-   "Close": "42.94",
-   "Volume": "510",
-   "Premium/Discount": "0.10",
-   "Total Net Assets": "25,702,301.15",
-   "Index Level": "319,123.62"
   }
  ]
 }

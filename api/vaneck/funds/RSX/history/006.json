@@ -2,7 +2,7 @@
  "ticker": "RSX",
  "page": 6,
  "pageSize": 1000,
- "totalRows": 5300,
+ "totalRows": 5301,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jul 01 2008",
+   "NAV": "52.8912",
+   "Close": "52.60",
+   "Volume": "865,483",
+   "Premium/Discount": "-0.29",
+   "Total Net Assets": "1,520,621,072.85",
+   "Index Level": "1,288.03"
+  },
   {
    "Date": "Jun 30 2008",
    "NAV": "53.9641",

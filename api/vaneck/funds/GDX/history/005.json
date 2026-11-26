@@ -2,7 +2,7 @@
  "ticker": "GDX",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 7498,
+ "totalRows": 7499,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Dec 13 2015",
+   "NAV": "14.3166",
+   "Close": "14.38",
+   "Volume": "47,148,460",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "4,497,588,629.74",
+   "Index Level": "441.19"
+  },
   {
    "Date": "Dec 12 2015",
    "NAV": "14.3166",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.06",
    "Total Net Assets": "7,409,195,987.99",
    "Index Level": "1,127.11"
-  },
-  {
-   "Date": "Mar 18 2013",
-   "NAV": "37.4640",
-   "Close": "37.48",
-   "Volume": "9,938,275",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "7,399,240,495.03",
-   "Index Level": "1,125.21"
   }
  ]
 }

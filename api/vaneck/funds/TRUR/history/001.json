@@ -2,7 +2,7 @@
  "ticker": "TRUR",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 141,
+ "totalRows": 142,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 25 2026",
+   "NAV": "24.7904",
+   "Close": "24.83",
+   "Volume": "14",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "247,904.10",
+   "Index Level": "1,731.29"
+  },
   {
    "Date": "Nov 24 2026",
    "NAV": "24.5845",

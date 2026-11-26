@@ -2,7 +2,7 @@
  "ticker": "GRNB",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2817,
+ "totalRows": 2818,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 29 2024",
+   "NAV": "23.5406",
+   "Close": "23.61",
+   "Volume": "2,777",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "89,454,217.77",
+   "Index Level": "118.30"
+  },
   {
    "Date": "Feb 28 2024",
    "NAV": "23.5192",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.11",
    "Total Net Assets": "32,518,365.67",
    "Index Level": "123.01"
-  },
-  {
-   "Date": "Jun 02 2020",
-   "NAV": "27.1000",
-   "Close": "27.22",
-   "Volume": "2,781",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "32,520,019.87",
-   "Index Level": "123.04"
   }
  ]
 }

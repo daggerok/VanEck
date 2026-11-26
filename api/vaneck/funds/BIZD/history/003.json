@@ -2,7 +2,7 @@
  "ticker": "BIZD",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3839,
+ "totalRows": 3840,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 02 2020",
+   "NAV": "12.3396",
+   "Close": "12.38",
+   "Volume": "151,775",
+   "Premium/Discount": "0.04",
+   "Total Net Assets": "208,539,183.95",
+   "Index Level": "1,318.00"
+  },
   {
    "Date": "Jun 01 2020",
    "NAV": "12.2955",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "87,269,158.47",
    "Index Level": "1,204.06"
-  },
-  {
-   "Date": "Jun 10 2016",
-   "NAV": "16.3338",
-   "Close": "16.35",
-   "Volume": "14,972",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "87,385,737.95",
-   "Index Level": "1,205.74"
   }
  ]
 }

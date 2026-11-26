@@ -2,7 +2,7 @@
  "ticker": "GDX",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 7498,
+ "totalRows": 7499,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 04 2021",
+   "NAV": "38.6244",
+   "Close": "38.68",
+   "Volume": "16,935,270",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "15,971,293,548.87",
+   "Index Level": "1,258.43"
+  },
   {
    "Date": "Jun 03 2021",
    "NAV": "38.2744",
@@ -8997,15 +9006,6 @@
   },
   {
    "Date": "Sep 09 2018",
-   "NAV": "17.8980",
-   "Close": "17.90",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "7,842,937,462.00",
-   "Index Level": "568.91"
-  },
-  {
-   "Date": "Sep 08 2018",
    "NAV": "17.8980",
    "Close": "17.90",
    "Volume": "",

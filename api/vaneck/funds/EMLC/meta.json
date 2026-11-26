@@ -9,28 +9,28 @@
  "ter": "0.30%",
  "terValue": 0.3,
  "nav": {
-  "display": "$24.06",
-  "value": 24.06,
-  "asOfDate": "Nov 24 2026"
+  "display": "$23.96",
+  "value": 23.96,
+  "asOfDate": "Nov 25 2026"
  },
- "navValue": 24.06,
+ "navValue": 23.96,
  "aum": {
-  "display": "$4.63B",
-  "value": 4634918905.44,
-  "asOfDate": "Nov 24 2026",
+  "display": "$4.62B",
+  "value": 4615484140.45,
+  "asOfDate": "Nov 25 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 4634918905.44,
- "asOfDate": "Nov 24 2026",
+ "aumValue": 4615484140.45,
+ "asOfDate": "Nov 25 2026",
  "inceptionDate": "Jul 22 2010",
  "exchange": "NYSE Arca",
- "closePrice": "$24.02",
- "closePriceValue": 24.02,
+ "closePrice": "$24.03",
+ "closePriceValue": 24.03,
  "premiumDiscount": {
-  "display": "-0.04%",
-  "value": -0.04
+  "display": "0.07%",
+  "value": 0.07
  },
- "premiumDiscountValue": -0.04,
+ "premiumDiscountValue": 0.07,
  "distributions": {
   "frequency": "Monthly",
   "paymentsPerYear": 12,
@@ -1028,7 +1028,7 @@
  "providerCategory": "International Bond",
  "terGross": "0.31%",
  "terGrossValue": 0.31,
- "netAssetsAsOf": "Nov 24 2026",
+ "netAssetsAsOf": "Nov 25 2026",
  "holdings": {
   "totalRows": 523,
   "pageSize": 250,
@@ -1042,9 +1042,9 @@
   ]
  },
  "history": {
-  "totalRows": 4482,
+  "totalRows": 4483,
   "pageSize": 1000,
-  "asOfDate": "Nov 24 2026",
+  "asOfDate": "Nov 25 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/jp-morgan-em-local-currency-bond-etf-emlc/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -1055,7 +1055,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 4630000000,
+ "totalNetAssets": 4620000000,
  "secYield": 6.54,
  "secYieldValue": 6.54,
  "secYieldText": "6.54%",
@@ -1097,16 +1097,16 @@
   "grossValue": 0.31
  },
  "marketPrice": {
-  "display": "$24.02",
-  "value": 24.02,
-  "asOfDate": "Nov 24 2026"
+  "display": "$24.03",
+  "value": 24.03,
+  "asOfDate": "Nov 25 2026"
  },
  "yields": {
   "dividendYield": 6.21,
   "dividendYieldText": "6.21%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 7.05,
-  "indicatedYieldText": "7.05%",
+  "indicatedYield": 7.08,
+  "indicatedYieldText": "7.08%",
   "distributionYield": 6.21,
   "distributionYieldText": "6.21%",
   "yield12M": 6.27,

@@ -2,7 +2,7 @@
  "ticker": "VNM",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4720,
+ "totalRows": 4721,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Feb 29 2024",
+   "NAV": "13.4165",
+   "Close": "13.51",
+   "Volume": "383,356",
+   "Premium/Discount": "0.09",
+   "Total Net Assets": "546,050,652.18",
+   "Index Level": "1,456.00"
+  },
   {
    "Date": "Feb 28 2024",
    "NAV": "13.3744",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.28",
    "Total Net Assets": "336,234,104.58",
    "Index Level": "1,351.11"
-  },
-  {
-   "Date": "Jun 02 2020",
-   "NAV": "13.8369",
-   "Close": "14.09",
-   "Volume": "259,785",
-   "Premium/Discount": "0.25",
-   "Total Net Assets": "333,468,302.18",
-   "Index Level": "1,342.81"
   }
  ]
 }

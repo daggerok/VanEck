@@ -9,28 +9,28 @@
  "ter": "0.56%",
  "terValue": 0.56,
  "nav": {
-  "display": "$78.65",
-  "value": 78.65,
-  "asOfDate": "Nov 24 2026"
+  "display": "$79.77",
+  "value": 79.77,
+  "asOfDate": "Nov 25 2026"
  },
- "navValue": 78.65,
+ "navValue": 79.77,
  "aum": {
-  "display": "$991.00M",
-  "value": 990996960.05,
-  "asOfDate": "Nov 24 2026",
+  "display": "$989.14M",
+  "value": 989137496.47,
+  "asOfDate": "Nov 25 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 990996960.05,
- "asOfDate": "Nov 24 2026",
+ "aumValue": 989137496.47,
+ "asOfDate": "Nov 25 2026",
  "inceptionDate": "Aug 31 2007",
  "exchange": "NYSE Arca",
- "closePrice": "$78.58",
- "closePriceValue": 78.58,
+ "closePrice": "$79.83",
+ "closePriceValue": 79.83,
  "premiumDiscount": {
-  "display": "-0.07%",
-  "value": -0.07
+  "display": "0.06%",
+  "value": 0.06
  },
- "premiumDiscountValue": -0.07,
+ "premiumDiscountValue": 0.06,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -146,9 +146,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 24 2026",
-   "ytd": 8.15,
-   "ytdText": "8.15%",
+   "asOfDate": "Nov 25 2026",
+   "ytd": 9.68,
+   "ytdText": "9.68%",
    "yr1": 17.73,
    "yr3": 7.23,
    "yr5": -0.62,
@@ -166,7 +166,7 @@
   }
  },
  "metrics": {
-  "ytd": 8.15,
+  "ytd": 9.68,
   "tr1y": 17.73,
   "tr3y": 23.3,
   "tr5y": -3.07,
@@ -184,7 +184,7 @@
   "secYield": 1.44,
   "secYieldText": "1.44%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-24",
+  "ytdAsOf": "2026-11-25",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -192,7 +192,7 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.56%",
  "terGrossValue": 0.56,
- "netAssetsAsOf": "Nov 24 2026",
+ "netAssetsAsOf": "Nov 25 2026",
  "holdings": {
   "totalRows": 56,
   "pageSize": 250,
@@ -204,9 +204,9 @@
   ]
  },
  "history": {
-  "totalRows": 5209,
+  "totalRows": 5210,
   "pageSize": 1000,
-  "asOfDate": "Nov 24 2026",
+  "asOfDate": "Nov 25 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/agribusiness-etf-moo/downloads/fundhistoprices/)",
   "pageCount": 6,
   "pages": [
@@ -218,7 +218,7 @@
    "history/006.json"
   ]
  },
- "totalNetAssets": 991000000,
+ "totalNetAssets": 989140000,
  "indexTicker": "MVMOOTR",
  "indexName": "Global Agribusiness Index",
  "categoryPath": "Equity > Natural Resources",
@@ -257,16 +257,16 @@
   "grossValue": 0.56
  },
  "marketPrice": {
-  "display": "$78.58",
-  "value": 78.58,
-  "asOfDate": "Nov 24 2026"
+  "display": "$79.83",
+  "value": 79.83,
+  "asOfDate": "Nov 25 2026"
  },
  "yields": {
   "dividendYield": 2.12,
   "dividendYieldText": "2.12%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 2.29,
-  "indicatedYieldText": "2.29%",
+  "indicatedYield": 2.25,
+  "indicatedYieldText": "2.25%",
   "distributionYield": 2.12,
   "distributionYieldText": "2.12%",
   "yield12M": 2.82,

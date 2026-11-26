@@ -2,7 +2,7 @@
  "ticker": "MLN",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5125,
+ "totalRows": 5126,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 19 2012",
+   "NAV": "19.7463",
+   "Close": "19.77",
+   "Volume": "62,997",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "91,820,358.55",
+   "Index Level": "119.82"
+  },
   {
    "Date": "Jun 18 2012",
    "NAV": "19.7378",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "23,800,170.71",
    "Index Level": "90.33"
-  },
-  {
-   "Date": "Jul 01 2008",
-   "NAV": "18.9527",
-   "Close": "18.87",
-   "Volume": "11,775",
-   "Premium/Discount": "-0.08",
-   "Total Net Assets": "23,690,853.86",
-   "Index Level": "89.93"
   }
  ]
 }

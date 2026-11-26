@@ -2,7 +2,7 @@
  "ticker": "ITM",
  "page": 5,
  "pageSize": 1000,
- "totalRows": 5144,
+ "totalRows": 5145,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 19 2012",
+   "NAV": "46.4034",
+   "Close": "46.52",
+   "Volume": "75,507",
+   "Premium/Discount": "0.12",
+   "Total Net Assets": "501,156,585.63",
+   "Index Level": "114.11"
+  },
   {
    "Date": "Jun 18 2012",
    "NAV": "46.4019",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.09",
    "Total Net Assets": "20,433,935.52",
    "Index Level": "85.08"
-  },
-  {
-   "Date": "Jul 01 2008",
-   "NAV": "40.7568",
-   "Close": "40.78",
-   "Volume": "760",
-   "Premium/Discount": "0.02",
-   "Total Net Assets": "20,378,423.91",
-   "Index Level": "84.85"
   }
  ]
 }

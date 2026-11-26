@@ -2,7 +2,7 @@
  "ticker": "PFXF",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 3982,
+ "totalRows": 3983,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 25 2026",
+   "NAV": "15.7462",
+   "Close": "15.68",
+   "Volume": "2,178,776",
+   "Premium/Discount": "-0.07",
+   "Total Net Assets": "1,969,854,174.87",
+   "Index Level": "n.a."
+  },
   {
    "Date": "Nov 24 2026",
    "NAV": "15.7379",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.02",
    "Total Net Assets": "1,516,375,472.86",
    "Index Level": "93.41"
-  },
-  {
-   "Date": "Feb 29 2024",
-   "NAV": "17.7614",
-   "Close": "17.77",
-   "Volume": "630,705",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "1,523,040,536.42",
-   "Index Level": "93.63"
   }
  ]
 }

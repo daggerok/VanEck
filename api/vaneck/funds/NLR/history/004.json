@@ -2,7 +2,7 @@
  "ticker": "NLR",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 5223,
+ "totalRows": 5224,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 10 2016",
+   "NAV": "49.1843",
+   "Close": "49.28",
+   "Volume": "972",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "37,706,293.66",
+   "Index Level": "1,076.90"
+  },
   {
    "Date": "Jun 09 2016",
    "NAV": "49.6221",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "-0.21",
    "Total Net Assets": "77,067,560.07",
    "Index Level": "838.81"
-  },
-  {
-   "Date": "Jun 19 2012",
-   "NAV": "41.9855",
-   "Close": "41.73",
-   "Volume": "8,634",
-   "Premium/Discount": "-0.26",
-   "Total Net Assets": "76,973,392.56",
-   "Index Level": "836.36"
   }
  ]
 }

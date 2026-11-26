@@ -2,7 +2,7 @@
  "ticker": "GDXJ",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 4656,
+ "totalRows": 4657,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,15 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 25 2026",
+   "NAV": "87.2146",
+   "Close": "87.66",
+   "Volume": "7,555,057",
+   "Premium/Discount": "0.45",
+   "Total Net Assets": "6,444,064,888.37",
+   "Index Level": "2,467.09"
+  },
   {
    "Date": "Nov 24 2026",
    "NAV": "84.3689",
@@ -9003,15 +9012,6 @@
    "Premium/Discount": "0.31",
    "Total Net Assets": "3,748,582,403.73",
    "Index Level": "874.63"
-  },
-  {
-   "Date": "Feb 29 2024",
-   "NAV": "31.7009",
-   "Close": "31.88",
-   "Volume": "6,759,796",
-   "Premium/Discount": "0.18",
-   "Total Net Assets": "3,608,749,630.83",
-   "Index Level": "845.04"
   }
  ]
 }
