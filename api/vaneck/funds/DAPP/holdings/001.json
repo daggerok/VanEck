@@ -2,7 +2,7 @@
  "ticker": "DAPP",
  "page": 1,
  "pageSize": 250,
- "totalRows": 23,
+ "totalRows": 21,
  "headers": [
   "Name",
   "Ticker",
@@ -20,9 +20,9 @@
    "Identifier": "BBG0018SLC07",
    "Shares Held": "272,589",
    "Asset Category": "Stock",
-   "Market Value": "$20,212,474.35",
+   "Market Value": "$20,744,022.90",
    "Notional Value": "",
-   "Weight": "13.71%"
+   "Weight": "13.91%"
   },
   {
    "Name": "Coinbase Global Inc",
@@ -30,9 +30,9 @@
    "Identifier": "BBG00ZGF7771",
    "Shares Held": "124,049",
    "Asset Category": "Stock",
-   "Market Value": "$12,695,794.91",
+   "Market Value": "$12,866,362.28",
    "Notional Value": "",
-   "Weight": "8.61%"
+   "Weight": "8.63%"
   },
   {
    "Name": "Riot Platforms Inc",
@@ -40,9 +40,9 @@
    "Identifier": "BBG000BQ4512",
    "Shares Held": "613,096",
    "Asset Category": "Stock",
-   "Market Value": "$10,017,988.64",
+   "Market Value": "$10,208,048.40",
    "Notional Value": "",
-   "Weight": "6.80%"
+   "Weight": "6.84%"
   },
   {
    "Name": "Circle Internet Group Inc",
@@ -50,9 +50,9 @@
    "Identifier": "BBG01T61V2V3",
    "Shares Held": "203,770",
    "Asset Category": "Stock",
-   "Market Value": "$9,723,904.40",
+   "Market Value": "$9,835,977.90",
    "Notional Value": "",
-   "Weight": "6.60%"
+   "Weight": "6.59%"
   },
   {
    "Name": "Bitmine Immersion Technologies Inc",
@@ -60,9 +60,9 @@
    "Identifier": "BBG000BWFL03",
    "Shares Held": "670,537",
    "Asset Category": "Stock",
-   "Market Value": "$8,837,677.66",
+   "Market Value": "$9,012,017.28",
    "Notional Value": "",
-   "Weight": "6.00%"
+   "Weight": "6.04%"
   },
   {
    "Name": "Figure Technology Solutions Inc",
@@ -70,9 +70,9 @@
    "Identifier": "BBG01NGH78G1",
    "Shares Held": "319,526",
    "Asset Category": "Stock",
-   "Market Value": "$7,857,144.34",
+   "Market Value": "$8,294,894.96",
    "Notional Value": "",
-   "Weight": "5.33%"
+   "Weight": "5.56%"
   },
   {
    "Name": "Hut 8 Corp",
@@ -80,29 +80,9 @@
    "Identifier": "BBG00K8H39V2",
    "Shares Held": "155,278",
    "Asset Category": "Stock",
-   "Market Value": "$7,490,610.72",
+   "Market Value": "$7,582,224.74",
    "Notional Value": "",
    "Weight": "5.08%"
-  },
-  {
-   "Name": "Core Scientific Inc",
-   "Ticker": "CORZ",
-   "Identifier": "BBG01L5GH011",
-   "Shares Held": "673,236",
-   "Asset Category": "Stock",
-   "Market Value": "$7,398,863.64",
-   "Notional Value": "",
-   "Weight": "5.02%"
-  },
-  {
-   "Name": "Terawulf Inc",
-   "Ticker": "WULF",
-   "Identifier": "BBG0122MC900",
-   "Shares Held": "710,946",
-   "Asset Category": "Stock",
-   "Market Value": "$7,116,569.46",
-   "Notional Value": "",
-   "Weight": "4.83%"
   },
   {
    "Name": "Strategy Inc",
@@ -110,19 +90,29 @@
    "Identifier": "BBG000GQJPZ0",
    "Shares Held": "91,729",
    "Asset Category": "Stock",
-   "Market Value": "$7,113,583.95",
+   "Market Value": "$7,334,650.84",
    "Notional Value": "",
-   "Weight": "4.83%"
+   "Weight": "4.92%"
   },
   {
-   "Name": "Metaplanet Inc",
-   "Ticker": "3350 JP",
-   "Identifier": "BBG000QCBL87",
-   "Shares Held": "5,351,500",
+   "Name": "Core Scientific Inc",
+   "Ticker": "CORZ",
+   "Identifier": "BBG01L5GH011",
+   "Shares Held": "673,236",
    "Asset Category": "Stock",
-   "Market Value": "$5,912,060.16",
+   "Market Value": "$7,284,413.52",
    "Notional Value": "",
-   "Weight": "4.01%"
+   "Weight": "4.88%"
+  },
+  {
+   "Name": "Terawulf Inc",
+   "Ticker": "WULF",
+   "Identifier": "BBG0122MC900",
+   "Shares Held": "710,946",
+   "Asset Category": "Stock",
+   "Market Value": "$7,130,788.38",
+   "Notional Value": "",
+   "Weight": "4.78%"
   },
   {
    "Name": "Bullish",
@@ -130,9 +120,19 @@
    "Identifier": "BBG01W8QW0N1",
    "Shares Held": "298,934",
    "Asset Category": "Stock",
-   "Market Value": "$5,781,383.56",
+   "Market Value": "$5,874,053.10",
    "Notional Value": "",
-   "Weight": "3.92%"
+   "Weight": "3.94%"
+  },
+  {
+   "Name": "Metaplanet Inc",
+   "Ticker": "3350 JP",
+   "Identifier": "BBG000QCBL87",
+   "Shares Held": "5,351,500",
+   "Asset Category": "Stock",
+   "Market Value": "$5,661,055.95",
+   "Notional Value": "",
+   "Weight": "3.80%"
   },
   {
    "Name": "Galaxy Digital Inc",
@@ -140,9 +140,9 @@
    "Identifier": "BBG0120SWLS0",
    "Shares Held": "484,278",
    "Asset Category": "Stock",
-   "Market Value": "$5,593,410.90",
+   "Market Value": "$5,598,253.68",
    "Notional Value": "",
-   "Weight": "3.79%"
+   "Weight": "3.75%"
   },
   {
    "Name": "Mara Holdings Inc",
@@ -150,9 +150,9 @@
    "Identifier": "BBG001K7WBT8",
    "Shares Held": "1,021,650",
    "Asset Category": "Stock",
-   "Market Value": "$5,527,126.50",
+   "Market Value": "$5,537,343.00",
    "Notional Value": "",
-   "Weight": "3.75%"
+   "Weight": "3.71%"
   },
   {
    "Name": "Applied Digital Corp",
@@ -160,9 +160,9 @@
    "Identifier": "BBG000DSJYS8",
    "Shares Held": "448,593",
    "Asset Category": "Stock",
-   "Market Value": "$5,481,806.46",
+   "Market Value": "$5,513,207.97",
    "Notional Value": "",
-   "Weight": "3.72%"
+   "Weight": "3.70%"
   },
   {
    "Name": "Iren Ltd",
@@ -170,9 +170,9 @@
    "Identifier": "BBG010J28KQ2",
    "Shares Held": "387,622",
    "Asset Category": "Stock",
-   "Market Value": "$5,019,704.90",
+   "Market Value": "$4,980,942.70",
    "Notional Value": "",
-   "Weight": "3.41%"
+   "Weight": "3.34%"
   },
   {
    "Name": "Cleanspark Inc",
@@ -180,7 +180,7 @@
    "Identifier": "BBG001MB89V6",
    "Shares Held": "916,873",
    "Asset Category": "Stock",
-   "Market Value": "$4,689,805.40",
+   "Market Value": "$4,749,402.14",
    "Notional Value": "",
    "Weight": "3.18%"
   },
@@ -190,9 +190,9 @@
    "Identifier": "BBG002WJ3406",
    "Shares Held": "3,912,000",
    "Asset Category": "Stock",
-   "Market Value": "$4,204,666.15",
+   "Market Value": "$3,988,194.99",
    "Notional Value": "",
-   "Weight": "2.85%"
+   "Weight": "2.67%"
   },
   {
    "Name": "Cipher Mining Inc",
@@ -200,9 +200,9 @@
    "Identifier": "BBG00XYHY0K2",
    "Shares Held": "720,585",
    "Asset Category": "Stock",
-   "Market Value": "$3,977,629.20",
+   "Market Value": "$3,970,423.35",
    "Notional Value": "",
-   "Weight": "2.70%"
+   "Weight": "2.66%"
   },
   {
    "Name": "Bitdeer Technologies Group",
@@ -210,29 +210,9 @@
    "Identifier": "BBG0142Q8P97",
    "Shares Held": "987,515",
    "Asset Category": "Stock",
-   "Market Value": "$2,745,291.70",
+   "Market Value": "$3,011,920.75",
    "Notional Value": "",
-   "Weight": "1.86%"
-  },
-  {
-   "Name": "",
-   "Ticker": "-USD CASH-",
-   "Identifier": "",
-   "Shares Held": "32,523",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$32,522.59",
-   "Notional Value": "",
-   "Weight": "0.02%"
-  },
-  {
-   "Name": "",
-   "Ticker": "-EUR CASH-",
-   "Identifier": "",
-   "Shares Held": "229",
-   "Asset Category": "Cash Bal",
-   "Market Value": "$250.97",
-   "Notional Value": "",
-   "Weight": "0.00%"
+   "Weight": "2.02%"
   },
   {
    "Name": "Other/Cash",
@@ -240,9 +220,9 @@
    "Identifier": "",
    "Shares Held": "",
    "Asset Category": "Cash",
-   "Market Value": "$-38,890.56",
+   "Market Value": "$-7,279.40",
    "Notional Value": "",
-   "Weight": "-0.03%"
+   "Weight": "-0.00%"
   }
  ]
 }
