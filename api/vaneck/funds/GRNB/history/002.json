@@ -2,7 +2,7 @@
  "ticker": "GRNB",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 2818,
+ "totalRows": 2820,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 02 2024",
+   "NAV": "23.5260",
+   "Close": "23.61",
+   "Volume": "",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "89,398,864.28",
+   "Index Level": "118.51"
+  },
+  {
+   "Date": "Mar 01 2024",
+   "NAV": "23.5260",
+   "Close": "23.61",
+   "Volume": "13,273",
+   "Premium/Discount": "0.08",
+   "Total Net Assets": "89,398,864.28",
+   "Index Level": "118.51"
+  },
   {
    "Date": "Feb 29 2024",
    "NAV": "23.5406",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.13",
    "Total Net Assets": "32,474,250.23",
    "Index Level": "122.86"
-  },
-  {
-   "Date": "Jun 04 2020",
-   "NAV": "27.0828",
-   "Close": "27.19",
-   "Volume": "9,426",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "32,499,396.29",
-   "Index Level": "122.88"
-  },
-  {
-   "Date": "Jun 03 2020",
-   "NAV": "27.0986",
-   "Close": "27.21",
-   "Volume": "5,891",
-   "Premium/Discount": "0.11",
-   "Total Net Assets": "32,518,365.67",
-   "Index Level": "123.01"
   }
  ]
 }

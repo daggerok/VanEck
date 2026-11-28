@@ -2,7 +2,7 @@
  "ticker": "VAVX",
  "page": 1,
  "pageSize": 1000,
- "totalRows": 338,
+ "totalRows": 340,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Nov 27 2026",
+   "NAV": "13.7981",
+   "Close": "13.78",
+   "Volume": "2,495",
+   "Premium/Discount": "-0.02",
+   "Total Net Assets": "13,108,174.46",
+   "Index Level": "6.64"
+  },
+  {
+   "Date": "Nov 26 2026",
+   "NAV": "13.7088",
+   "Close": "13.77",
+   "Volume": "6,538",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "13,023,375.81",
+   "Index Level": "6.65"
+  },
   {
    "Date": "Nov 25 2026",
    "NAV": "13.7088",

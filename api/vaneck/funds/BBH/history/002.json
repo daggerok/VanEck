@@ -2,7 +2,7 @@
  "ticker": "BBH",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4125,
+ "totalRows": 4127,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 02 2024",
+   "NAV": "165.9758",
+   "Close": "165.80",
+   "Volume": "",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "460,002,371.92",
+   "Index Level": "4,094.19"
+  },
+  {
+   "Date": "Mar 01 2024",
+   "NAV": "165.9758",
+   "Close": "165.80",
+   "Volume": "10,023",
+   "Premium/Discount": "-0.18",
+   "Total Net Assets": "460,002,371.92",
+   "Index Level": "4,094.19"
+  },
   {
    "Date": "Feb 29 2024",
    "NAV": "162.9393",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.11",
    "Total Net Assets": "454,882,532.86",
    "Index Level": "3,799.44"
-  },
-  {
-   "Date": "Jun 04 2020",
-   "NAV": "157.6287",
-   "Close": "157.49",
-   "Volume": "36,599",
-   "Premium/Discount": "-0.14",
-   "Total Net Assets": "456,572,020.28",
-   "Index Level": "3,813.51"
-  },
-  {
-   "Date": "Jun 03 2020",
-   "NAV": "159.0610",
-   "Close": "158.97",
-   "Volume": "25,886",
-   "Premium/Discount": "-0.09",
-   "Total Net Assets": "460,720,588.70",
-   "Index Level": "3,848.10"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "ticker": "GLIN",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4460,
+ "totalRows": 4462,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 14 2016",
+   "NAV": "40.9203",
+   "Close": "40.88",
+   "Volume": "15,262",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "185,163,119.80",
+   "Index Level": "239.34"
+  },
+  {
+   "Date": "Jun 13 2016",
+   "NAV": "40.5710",
+   "Close": "40.32",
+   "Volume": "55,307",
+   "Premium/Discount": "-0.26",
+   "Total Net Assets": "183,582,543.20",
+   "Index Level": "237.77"
+  },
   {
    "Date": "Jun 10 2016",
    "NAV": "40.9806",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.29",
    "Total Net Assets": "42,732,916.49",
    "Index Level": "211.23"
-  },
-  {
-   "Date": "Jun 21 2012",
-   "NAV": "38.8173",
-   "Close": "38.04",
-   "Volume": "9,663",
-   "Premium/Discount": "-0.78",
-   "Total Net Assets": "42,699,024.80",
-   "Index Level": "213.38"
-  },
-  {
-   "Date": "Jun 20 2012",
-   "NAV": "38.8293",
-   "Close": "38.36",
-   "Volume": "5,806",
-   "Premium/Discount": "-0.47",
-   "Total Net Assets": "42,712,235.00",
-   "Index Level": "211.24"
   }
  ]
 }

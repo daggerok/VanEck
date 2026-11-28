@@ -2,7 +2,7 @@
  "ticker": "CBON",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 3399,
+ "totalRows": 3401,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 14 2016",
+   "NAV": "23.9088",
+   "Close": "23.59",
+   "Volume": "608",
+   "Premium/Discount": "-0.32",
+   "Total Net Assets": "9,563,500.01",
+   "Index Level": "105.99"
+  },
+  {
+   "Date": "Jun 13 2016",
+   "NAV": "23.8800",
+   "Close": "23.61",
+   "Volume": "2,224",
+   "Premium/Discount": "-0.27",
+   "Total Net Assets": "11,939,978.50",
+   "Index Level": "105.98"
+  },
   {
    "Date": "Jun 10 2016",
    "NAV": "23.8695",

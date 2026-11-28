@@ -2,7 +2,7 @@
  "ticker": "ISRA",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 3747,
+ "totalRows": 3749,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 04 2020",
+   "NAV": "33.8487",
+   "Close": "33.95",
+   "Volume": "1,966",
+   "Premium/Discount": "0.10",
+   "Total Net Assets": "57,542,697.44",
+   "Index Level": "436.82"
+  },
+  {
+   "Date": "Jun 03 2020",
+   "NAV": "34.0242",
+   "Close": "34.06",
+   "Volume": "5,798",
+   "Premium/Discount": "0.03",
+   "Total Net Assets": "57,841,200.67",
+   "Index Level": "438.29"
+  },
   {
    "Date": "Jun 02 2020",
    "NAV": "34.0122",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.11",
    "Total Net Assets": "39,834,076.74",
    "Index Level": "319.53"
-  },
-  {
-   "Date": "Jun 14 2016",
-   "NAV": "26.7470",
-   "Close": "26.62",
-   "Volume": "5,235",
-   "Premium/Discount": "-0.13",
-   "Total Net Assets": "40,120,494.30",
-   "Index Level": "321.36"
-  },
-  {
-   "Date": "Jun 13 2016",
-   "NAV": "26.5787",
-   "Close": "26.56",
-   "Volume": "3,792",
-   "Premium/Discount": "-0.02",
-   "Total Net Assets": "39,867,997.70",
-   "Index Level": "320.05"
   }
  ]
 }

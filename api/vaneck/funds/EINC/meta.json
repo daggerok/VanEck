@@ -9,28 +9,28 @@
  "ter": "0.46%",
  "terValue": 0.46,
  "nav": {
-  "display": "$113.53",
-  "value": 113.53,
-  "asOfDate": "Nov 25 2026"
+  "display": "$114.40",
+  "value": 114.4,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 113.53,
+ "navValue": 114.4,
  "aum": {
-  "display": "$81.14M",
-  "value": 81139666.72,
-  "asOfDate": "Nov 25 2026",
+  "display": "$81.76M",
+  "value": 81760720.45,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 81139666.72,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 81760720.45,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "Mar 12 2012",
  "exchange": "NYSE Arca",
- "closePrice": "$113.76",
- "closePriceValue": 113.76,
+ "closePrice": "$114.53",
+ "closePriceValue": 114.53,
  "premiumDiscount": {
-  "display": "0.23%",
-  "value": 0.23
+  "display": "0.13%",
+  "value": 0.13
  },
- "premiumDiscountValue": 0.23,
+ "premiumDiscountValue": 0.13,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -341,9 +341,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 25 2026",
-   "ytd": 22.59,
-   "ytdText": "22.59%",
+   "asOfDate": "Nov 27 2026",
+   "ytd": 23.53,
+   "ytdText": "23.53%",
    "yr1": 38.92,
    "yr3": 28.91,
    "yr5": 21.19,
@@ -361,7 +361,7 @@
   }
  },
  "metrics": {
-  "ytd": 22.59,
+  "ytd": 23.53,
   "tr1y": 38.92,
   "tr3y": 114.24,
   "tr5y": 161.4,
@@ -376,10 +376,10 @@
   "distributionYieldText": "6.76%",
   "yield12M": 5.78,
   "yield12MText": "5.78%",
-  "secYield": 3.77,
-  "secYieldText": "3.77%",
+  "secYield": 3.72,
+  "secYieldText": "3.72%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-25",
+  "ytdAsOf": "2026-11-27",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -387,7 +387,7 @@
  "providerCategory": "Equity Income",
  "terGross": "0.46%",
  "terGrossValue": 0.46,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "totalRows": 31,
   "pageSize": 250,
@@ -399,9 +399,9 @@
   ]
  },
  "history": {
-  "totalRows": 4511,
+  "totalRows": 4513,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/energy-income-etf-einc/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -412,10 +412,10 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 81140000,
- "secYield": 3.77,
- "secYieldValue": 3.77,
- "secYieldText": "3.77%",
+ "totalNetAssets": 81760000,
+ "secYield": 3.72,
+ "secYieldValue": 3.72,
+ "secYieldText": "3.72%",
  "indexTicker": "MVEINCTG",
  "indexName": "North America Energy Infrastructure Index",
  "categoryPath": "Income > Equity Income",
@@ -454,23 +454,23 @@
   "grossValue": 0.46
  },
  "marketPrice": {
-  "display": "$113.76",
-  "value": 113.76,
-  "asOfDate": "Nov 25 2026"
+  "display": "$114.53",
+  "value": 114.53,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
   "dividendYield": 6.76,
   "dividendYieldText": "6.76%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 3.67,
-  "indicatedYieldText": "3.67%",
+  "indicatedYield": 3.64,
+  "indicatedYieldText": "3.64%",
   "distributionYield": 6.76,
   "distributionYieldText": "6.76%",
   "yield12M": 5.78,
   "yield12MText": "5.78%",
   "distributionRate": null,
-  "secYield": 3.77,
-  "secYieldText": "3.77%",
+  "secYield": 3.72,
+  "secYieldText": "3.72%",
   "secYieldKind": "official VanEck fund page, server-rendered for this fund"
  }
 }

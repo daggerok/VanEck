@@ -2,7 +2,7 @@
  "ticker": "MOTG",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 2399,
+ "totalRows": 2401,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 04 2020",
+   "NAV": "30.4715",
+   "Close": "30.42",
+   "Volume": "981",
+   "Premium/Discount": "-0.05",
+   "Total Net Assets": "9,141,438.62",
+   "Index Level": "2,850.30"
+  },
+  {
+   "Date": "Jun 03 2020",
+   "NAV": "30.6144",
+   "Close": "30.64",
+   "Volume": "2,614",
+   "Premium/Discount": "0.02",
+   "Total Net Assets": "9,184,312.81",
+   "Index Level": "2,859.88"
+  },
   {
    "Date": "Jun 02 2020",
    "NAV": "30.1594",

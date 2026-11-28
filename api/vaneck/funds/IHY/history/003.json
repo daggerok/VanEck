@@ -2,7 +2,7 @@
  "ticker": "IHY",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4055,
+ "totalRows": 4057,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 04 2020",
+   "NAV": "23.6846",
+   "Close": "23.78",
+   "Volume": "6,463",
+   "Premium/Discount": "0.09",
+   "Total Net Assets": "94,738,267.79",
+   "Index Level": "448.77"
+  },
+  {
+   "Date": "Jun 03 2020",
+   "NAV": "23.5270",
+   "Close": "23.67",
+   "Volume": "21,489",
+   "Premium/Discount": "0.14",
+   "Total Net Assets": "94,108,108.63",
+   "Index Level": "445.71"
+  },
   {
    "Date": "Jun 02 2020",
    "NAV": "23.3215",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.05",
    "Total Net Assets": "129,178,141.02",
    "Index Level": "368.71"
-  },
-  {
-   "Date": "Jun 14 2016",
-   "NAV": "23.8699",
-   "Close": "23.81",
-   "Volume": "25,920",
-   "Premium/Discount": "-0.06",
-   "Total Net Assets": "128,897,311.26",
-   "Index Level": "367.89"
-  },
-  {
-   "Date": "Jun 13 2016",
-   "NAV": "24.0806",
-   "Close": "23.99",
-   "Volume": "11,003",
-   "Premium/Discount": "-0.09",
-   "Total Net Assets": "130,035,089.90",
-   "Index Level": "370.94"
   }
  ]
 }

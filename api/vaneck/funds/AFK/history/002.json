@@ -2,7 +2,7 @@
  "ticker": "AFK",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 4995,
+ "totalRows": 4997,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 02 2024",
+   "NAV": "13.3798",
+   "Close": "13.44",
+   "Volume": "",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "38,132,542.39",
+   "Index Level": "1,035.30"
+  },
+  {
+   "Date": "Mar 01 2024",
+   "NAV": "13.3798",
+   "Close": "13.44",
+   "Volume": "4,503",
+   "Premium/Discount": "0.06",
+   "Total Net Assets": "38,132,542.39",
+   "Index Level": "1,035.30"
+  },
   {
    "Date": "Feb 29 2024",
    "NAV": "13.2722",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.15",
    "Total Net Assets": "39,918,792.79",
    "Index Level": "987.12"
-  },
-  {
-   "Date": "Jun 04 2020",
-   "NAV": "16.2570",
-   "Close": "16.23",
-   "Volume": "4,087",
-   "Premium/Discount": "-0.03",
-   "Total Net Assets": "39,016,695.71",
-   "Index Level": "966.72"
-  },
-  {
-   "Date": "Jun 03 2020",
-   "NAV": "16.2899",
-   "Close": "16.30",
-   "Volume": "7,171",
-   "Premium/Discount": "0.01",
-   "Total Net Assets": "39,095,707.89",
-   "Index Level": "966.60"
   }
  ]
 }

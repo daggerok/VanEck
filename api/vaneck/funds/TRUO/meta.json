@@ -9,28 +9,28 @@
  "ter": "0.14%",
  "terValue": 0.14,
  "nav": {
-  "display": "$28.27",
-  "value": 28.27,
-  "asOfDate": "Nov 25 2026"
+  "display": "$28.42",
+  "value": 28.42,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 28.27,
+ "navValue": 28.42,
  "aum": {
-  "display": "$848101.48",
-  "value": 848101.48,
-  "asOfDate": "Nov 25 2026",
+  "display": "$852496.35",
+  "value": 852496.35,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 848101.48,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 852496.35,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "Jun 02 2026",
  "exchange": "NASDAQ",
- "closePrice": "$28.31",
- "closePriceValue": 28.31,
+ "closePrice": "$28.40",
+ "closePriceValue": 28.4,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "-0.02%",
+  "value": -0.02
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": -0.02,
  "distributions": {
   "frequency": "Quarterly",
   "paymentsPerYear": 4,
@@ -78,8 +78,8 @@
   "cagr5y": null,
   "cagr10y": null,
   "siAnn": null,
-  "dividendYield": 2.55,
-  "dividendYieldText": "2.55%",
+  "dividendYield": 2.54,
+  "dividendYieldText": "2.54%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,
@@ -95,7 +95,7 @@
  "providerCategory": "TruSectors",
  "terGross": "0.14%",
  "terGrossValue": 0.14,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "totalRows": 35,
   "pageSize": 250,
@@ -107,16 +107,16 @@
   ]
  },
  "history": {
-  "totalRows": 177,
+  "totalRows": 179,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/consumer-staples-trusector-etf-truo/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 848100,
+ "totalNetAssets": 852500,
  "categoryPath": "Equity > TruSectors",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -153,16 +153,16 @@
   "grossValue": 0.14
  },
  "marketPrice": {
-  "display": "$28.31",
-  "value": 28.31,
-  "asOfDate": "Nov 25 2026"
+  "display": "$28.40",
+  "value": 28.4,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
-  "dividendYield": 2.55,
-  "dividendYieldText": "2.55%",
+  "dividendYield": 2.54,
+  "dividendYieldText": "2.54%",
   "dividendYieldKind": "indicated (latest distribution x payments per year / NAV), from VanEck Distribution History (official)",
-  "indicatedYield": 2.55,
-  "indicatedYieldText": "2.55%",
+  "indicatedYield": 2.54,
+  "indicatedYieldText": "2.54%",
   "distributionYield": null,
   "distributionYieldText": "—",
   "yield12M": null,

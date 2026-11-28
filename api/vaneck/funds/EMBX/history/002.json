@@ -2,7 +2,7 @@
  "ticker": "EMBX",
  "page": 2,
  "pageSize": 1000,
- "totalRows": 3614,
+ "totalRows": 3616,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Mar 02 2024",
+   "NAV": "47.2123",
+   "Close": "47.21",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "75,177,153.23",
+   "Index Level": "7,999.67"
+  },
+  {
+   "Date": "Mar 01 2024",
+   "NAV": "47.2123",
+   "Close": "47.21",
+   "Volume": "",
+   "Premium/Discount": "0.00",
+   "Total Net Assets": "75,177,153.23",
+   "Index Level": "7,999.67"
+  },
   {
    "Date": "Feb 29 2024",
    "NAV": "47.1239",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.00",
    "Total Net Assets": "32,015,388.56",
    "Index Level": "8,807.83"
-  },
-  {
-   "Date": "Jun 06 2021",
-   "NAV": "59.2365",
-   "Close": "59.24",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "31,990,867.80",
-   "Index Level": "8,805.87"
-  },
-  {
-   "Date": "Jun 05 2021",
-   "NAV": "59.2365",
-   "Close": "59.24",
-   "Volume": "",
-   "Premium/Discount": "0.00",
-   "Total Net Assets": "31,990,867.80",
-   "Index Level": "8,805.87"
   }
  ]
 }

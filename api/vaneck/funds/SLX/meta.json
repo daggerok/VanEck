@@ -9,28 +9,28 @@
  "ter": "0.55%",
  "terValue": 0.55,
  "nav": {
-  "display": "$90.39",
-  "value": 90.39,
-  "asOfDate": "Nov 25 2026"
+  "display": "$93.29",
+  "value": 93.29,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 90.39,
+ "navValue": 93.29,
  "aum": {
-  "display": "$131.06M",
-  "value": 131059195.53,
-  "asOfDate": "Nov 25 2026",
+  "display": "$135.27M",
+  "value": 135265136.56,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 131059195.53,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 135265136.56,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "Oct 10 2006",
  "exchange": "NYSE Arca",
- "closePrice": "$90.42",
- "closePriceValue": 90.42,
+ "closePrice": "$93.12",
+ "closePriceValue": 93.12,
  "premiumDiscount": {
-  "display": "0.04%",
-  "value": 0.04
+  "display": "-0.16%",
+  "value": -0.16
  },
- "premiumDiscountValue": 0.04,
+ "premiumDiscountValue": -0.16,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -156,9 +156,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 25 2026",
-   "ytd": 6.6,
-   "ytdText": "6.60%",
+   "asOfDate": "Nov 27 2026",
+   "ytd": 10.02,
+   "ytdText": "10.02%",
    "yr1": 27.7,
    "yr3": 19.83,
    "yr5": 16.53,
@@ -176,7 +176,7 @@
   }
  },
  "metrics": {
-  "ytd": 6.6,
+  "ytd": 10.02,
   "tr1y": 27.7,
   "tr3y": 72.06,
   "tr5y": 114.91,
@@ -194,7 +194,7 @@
   "secYield": 2.54,
   "secYieldText": "2.54%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-25",
+  "ytdAsOf": "2026-11-27",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -202,7 +202,7 @@
  "providerCategory": "Natural Resources",
  "terGross": "0.64%",
  "terGrossValue": 0.64,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "totalRows": 40,
   "pageSize": 250,
@@ -214,9 +214,9 @@
   ]
  },
  "history": {
-  "totalRows": 5434,
+  "totalRows": 5436,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/steel-etf-slx/downloads/fundhistoprices/)",
   "pageCount": 6,
   "pages": [
@@ -228,7 +228,7 @@
    "history/006.json"
   ]
  },
- "totalNetAssets": 131060000,
+ "totalNetAssets": 135270000,
  "indexTicker": "MVSLXTR",
  "indexName": "MarketVector Global Steel Index",
  "categoryPath": "Equity > Natural Resources",
@@ -267,16 +267,16 @@
   "grossValue": 0.64
  },
  "marketPrice": {
-  "display": "$90.42",
-  "value": 90.42,
-  "asOfDate": "Nov 25 2026"
+  "display": "$93.12",
+  "value": 93.12,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
   "dividendYield": 1.24,
   "dividendYieldText": "1.24%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 1.46,
-  "indicatedYieldText": "1.46%",
+  "indicatedYield": 1.41,
+  "indicatedYieldText": "1.41%",
   "distributionYield": 1.24,
   "distributionYieldText": "1.24%",
   "yield12M": 2.25,

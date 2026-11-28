@@ -2,7 +2,7 @@
  "ticker": "HYEM",
  "page": 4,
  "pageSize": 1000,
- "totalRows": 4030,
+ "totalRows": 4032,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 14 2016",
+   "NAV": "23.4058",
+   "Close": "23.29",
+   "Volume": "98,460",
+   "Premium/Discount": "-0.12",
+   "Total Net Assets": "290,231,743.36",
+   "Index Level": "228.20"
+  },
+  {
+   "Date": "Jun 13 2016",
+   "NAV": "23.4919",
+   "Close": "23.45",
+   "Volume": "30,525",
+   "Premium/Discount": "-0.04",
+   "Total Net Assets": "291,299,390.57",
+   "Index Level": "229.00"
+  },
   {
    "Date": "Jun 10 2016",
    "NAV": "23.5400",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "0.53",
    "Total Net Assets": "9,801,517.02",
    "Index Level": "179.22"
-  },
-  {
-   "Date": "Jun 21 2012",
-   "NAV": "24.4879",
-   "Close": "25.03",
-   "Volume": "",
-   "Premium/Discount": "0.54",
-   "Total Net Assets": "9,795,149.35",
-   "Index Level": "179.18"
-  },
-  {
-   "Date": "Jun 20 2012",
-   "NAV": "24.6173",
-   "Close": "24.98",
-   "Volume": "",
-   "Premium/Discount": "0.36",
-   "Total Net Assets": "9,846,930.70",
-   "Index Level": "179.69"
   }
  ]
 }

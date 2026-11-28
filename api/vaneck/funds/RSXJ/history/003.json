@@ -2,7 +2,7 @@
  "ticker": "RSXJ",
  "page": 3,
  "pageSize": 1000,
- "totalRows": 4299,
+ "totalRows": 4301,
  "headers": [
   "Date",
   "NAV",
@@ -13,6 +13,24 @@
   "Index Level"
  ],
  "rows": [
+  {
+   "Date": "Jun 04 2020",
+   "NAV": "31.3834",
+   "Close": "31.12",
+   "Volume": "4,121",
+   "Premium/Discount": "-0.27",
+   "Total Net Assets": "29,290,731.42",
+   "Index Level": "530.87"
+  },
+  {
+   "Date": "Jun 03 2020",
+   "NAV": "31.3368",
+   "Close": "31.28",
+   "Volume": "7,787",
+   "Premium/Discount": "-0.06",
+   "Total Net Assets": "29,247,187.65",
+   "Index Level": "529.81"
+  },
   {
    "Date": "Jun 02 2020",
    "NAV": "30.7168",
@@ -8994,24 +9012,6 @@
    "Premium/Discount": "-0.01",
    "Total Net Assets": "52,763,361.00",
    "Index Level": "366.56"
-  },
-  {
-   "Date": "Jun 14 2016",
-   "NAV": "25.4603",
-   "Close": "25.42",
-   "Volume": "48,504",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "51,768,825.39",
-   "Index Level": "359.23"
-  },
-  {
-   "Date": "Jun 13 2016",
-   "NAV": "25.3100",
-   "Close": "25.27",
-   "Volume": "86,686",
-   "Premium/Discount": "-0.04",
-   "Total Net Assets": "50,197,756.18",
-   "Index Level": "357.82"
   }
  ]
 }

@@ -9,28 +9,28 @@
  "ter": "0.20%",
  "terValue": 0.2,
  "nav": {
-  "display": "$24.58",
-  "value": 24.58,
-  "asOfDate": "Nov 25 2026"
+  "display": "$24.33",
+  "value": 24.33,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 24.58,
+ "navValue": 24.33,
  "aum": {
-  "display": "$73.74M",
-  "value": 73740704.99,
-  "asOfDate": "Nov 25 2026",
+  "display": "$72.99M",
+  "value": 72989383.22,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 73740704.99,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 72989383.22,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "Jun 25 2024",
  "exchange": "Cboe BZX",
- "closePrice": "$24.65",
- "closePriceValue": 24.65,
+ "closePrice": "$24.30",
+ "closePriceValue": 24.3,
  "premiumDiscount": {
-  "display": "0.07%",
-  "value": 0.07
+  "display": "-0.03%",
+  "value": -0.03
  },
- "premiumDiscountValue": 0.07,
+ "premiumDiscountValue": -0.03,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -45,9 +45,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 25 2026",
-   "ytd": -43.34,
-   "ytdText": "-43.34%",
+   "asOfDate": "Nov 27 2026",
+   "ytd": -43.92,
+   "ytdText": "-43.92%",
    "yr1": -42.52,
    "yr3": null,
    "yr5": null,
@@ -65,7 +65,7 @@
   }
  },
  "metrics": {
-  "ytd": -43.34,
+  "ytd": -43.92,
   "tr1y": -42.52,
   "tr3y": null,
   "tr5y": null,
@@ -83,7 +83,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": null,
-  "ytdAsOf": "2026-11-25",
+  "ytdAsOf": "2026-11-27",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -91,7 +91,7 @@
  "providerCategory": "Equity Thematic",
  "terGross": "0.20%",
  "terGrossValue": 0.2,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
@@ -103,16 +103,16 @@
   ]
  },
  "history": {
-  "totalRows": 884,
+  "totalRows": 886,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/ethereum-etf-ethv/downloads/fundhistoprices/)",
   "pageCount": 1,
   "pages": [
    "history/001.json"
   ]
  },
- "totalNetAssets": 73740000,
+ "totalNetAssets": 72990000,
  "categoryPath": "Equity > Equity Thematic",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -149,9 +149,9 @@
   "grossValue": 0.2
  },
  "marketPrice": {
-  "display": "$24.65",
-  "value": 24.65,
-  "asOfDate": "Nov 25 2026"
+  "display": "$24.30",
+  "value": 24.3,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
   "dividendYield": null,

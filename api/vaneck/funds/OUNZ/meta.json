@@ -9,28 +9,28 @@
  "ter": "0.25%",
  "terValue": 0.25,
  "nav": {
-  "display": "$34.33",
-  "value": 34.33,
-  "asOfDate": "Nov 25 2026"
+  "display": "$35.00",
+  "value": 35,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 34.33,
+ "navValue": 35,
  "aum": {
-  "display": "$2.33B",
-  "value": 2334831497.7,
-  "asOfDate": "Nov 25 2026",
+  "display": "$2.38B",
+  "value": 2380272579.52,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 2334831497.7,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 2380272579.52,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "May 16 2014",
  "exchange": "NYSE Arca",
- "closePrice": "$34.34",
- "closePriceValue": 34.34,
+ "closePrice": "$35.02",
+ "closePriceValue": 35.02,
  "premiumDiscount": {
-  "display": "0.02%",
-  "value": 0.02
+  "display": "-0.06%",
+  "value": -0.06
  },
- "premiumDiscountValue": 0.02,
+ "premiumDiscountValue": -0.06,
  "distributions": {
   "frequency": "Unknown",
   "paymentsPerYear": null,
@@ -45,9 +45,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 25 2026",
-   "ytd": -17.3,
-   "ytdText": "-17.30%",
+   "asOfDate": "Nov 27 2026",
+   "ytd": -15.69,
+   "ytdText": "-15.69%",
    "yr1": -3.19,
    "yr3": 24.75,
    "yr5": 16.73,
@@ -65,7 +65,7 @@
   }
  },
  "metrics": {
-  "ytd": -17.3,
+  "ytd": -15.69,
   "tr1y": -3.19,
   "tr3y": 94.12,
   "tr5y": 116.76,
@@ -83,7 +83,7 @@
   "secYield": null,
   "secYieldText": "—",
   "dividendYieldBasis": null,
-  "ytdAsOf": "2026-11-25",
+  "ytdAsOf": "2026-11-27",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -91,7 +91,7 @@
  "providerCategory": "Commodity",
  "terGross": "0.25%",
  "terGrossValue": 0.25,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "pages": [],
   "pageSize": 250,
@@ -100,9 +100,9 @@
   "source": "—"
  },
  "history": {
-  "totalRows": 4577,
+  "totalRows": 4579,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/merk-gold-trust-etf-ounz/downloads/fundhistoprices/)",
   "pageCount": 5,
   "pages": [
@@ -113,7 +113,7 @@
    "history/005.json"
   ]
  },
- "totalNetAssets": 2330000000,
+ "totalNetAssets": 2380000000,
  "categoryPath": "Real Assets | Commodities > Commodity",
  "source": {
   "provider": "Van Eck Associates Corporation (VanEck US ETFs)",
@@ -150,9 +150,9 @@
   "grossValue": 0.25
  },
  "marketPrice": {
-  "display": "$34.34",
-  "value": 34.34,
-  "asOfDate": "Nov 25 2026"
+  "display": "$35.02",
+  "value": 35.02,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
   "dividendYield": null,

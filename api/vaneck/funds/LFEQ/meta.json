@@ -9,28 +9,28 @@
  "ter": "0.58%",
  "terValue": 0.58,
  "nav": {
-  "display": "$57.07",
-  "value": 57.07,
-  "asOfDate": "Nov 25 2026"
+  "display": "$58.01",
+  "value": 58.01,
+  "asOfDate": "Nov 27 2026"
  },
- "navValue": 57.07,
+ "navValue": 58.01,
  "aum": {
-  "display": "$25.68M",
-  "value": 25680265.61,
-  "asOfDate": "Nov 25 2026",
+  "display": "$26.11M",
+  "value": 26105482.74,
+  "asOfDate": "Nov 27 2026",
   "source": "https://www.vaneck.com/us/en/vaneck-etfs-fees.pdf"
  },
- "aumValue": 25680265.61,
- "asOfDate": "Nov 25 2026",
+ "aumValue": 26105482.74,
+ "asOfDate": "Nov 27 2026",
  "inceptionDate": "Oct 04 2017",
  "exchange": "NYSE Arca",
- "closePrice": "$57.13",
- "closePriceValue": 57.13,
+ "closePrice": "$57.87",
+ "closePriceValue": 57.87,
  "premiumDiscount": {
-  "display": "0.06%",
-  "value": 0.06
+  "display": "-0.14%",
+  "value": -0.14
  },
- "premiumDiscountValue": 0.06,
+ "premiumDiscountValue": -0.14,
  "distributions": {
   "frequency": "Annually",
   "paymentsPerYear": 1,
@@ -91,9 +91,9 @@
  "returns": {
   "derivedFrom": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "monthEnd": {
-   "asOfDate": "Nov 25 2026",
-   "ytd": 5.4,
-   "ytdText": "5.40%",
+   "asOfDate": "Nov 27 2026",
+   "ytd": 7.15,
+   "ytdText": "7.15%",
    "yr1": 11.44,
    "yr3": 19.14,
    "yr5": 8.11,
@@ -111,7 +111,7 @@
   }
  },
  "metrics": {
-  "ytd": 5.4,
+  "ytd": 7.15,
   "tr1y": 11.44,
   "tr3y": 69.11,
   "tr5y": 47.66,
@@ -129,7 +129,7 @@
   "secYield": 0.5,
   "secYieldText": "0.50%",
   "dividendYieldBasis": "official-distribution-rate",
-  "ytdAsOf": "2026-11-25",
+  "ytdAsOf": "2026-11-27",
   "returnsBasis": "official VanEck Average Annual Total Returns (NAV) + quarter-end NAV row",
   "performanceAsOf": "2026-10-31"
  },
@@ -137,7 +137,7 @@
  "providerCategory": "U.S. Equity",
  "terGross": "0.83%",
  "terGrossValue": 0.83,
- "netAssetsAsOf": "Nov 25 2026",
+ "netAssetsAsOf": "Nov 27 2026",
  "holdings": {
   "totalRows": 2,
   "pageSize": 250,
@@ -149,9 +149,9 @@
   ]
  },
  "history": {
-  "totalRows": 2669,
+  "totalRows": 2671,
   "pageSize": 1000,
-  "asOfDate": "Nov 25 2026",
+  "asOfDate": "Nov 27 2026",
   "source": "VanEck NAV & premium/discount history download (https://www.vaneck.com/us/en/investments/long-flat-trend-etf-lfeq/downloads/fundhistoprices/)",
   "pageCount": 3,
   "pages": [
@@ -160,7 +160,7 @@
    "history/003.json"
   ]
  },
- "totalNetAssets": 25680000,
+ "totalNetAssets": 26110000,
  "indexTicker": "NDRCMGLF",
  "indexName": "Flat Index",
  "categoryPath": "Equity > U.S. Equity",
@@ -199,16 +199,16 @@
   "grossValue": 0.83
  },
  "marketPrice": {
-  "display": "$57.13",
-  "value": 57.13,
-  "asOfDate": "Nov 25 2026"
+  "display": "$57.87",
+  "value": 57.87,
+  "asOfDate": "Nov 27 2026"
  },
  "yields": {
   "dividendYield": 0.81,
   "dividendYieldText": "0.81%",
   "dividendYieldKind": "official VanEck Investment Finder Distribution Yield (as of Sep 18 2026)",
-  "indicatedYield": 0.86,
-  "indicatedYieldText": "0.86%",
+  "indicatedYield": 0.84,
+  "indicatedYieldText": "0.84%",
   "distributionYield": 0.81,
   "distributionYieldText": "0.81%",
   "yield12M": 1.04,
